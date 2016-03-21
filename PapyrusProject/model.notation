@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_83DZoO-LEeWk15GF5Liqxw" type="RequirementDiagram" name="DiagramaDeRequerimiento" measurementUnit="Pixel">
   <children xmi:type="notation:Shape" xmi:id="_BImHUO-MEeWk15GF5Liqxw" type="shape_sysml_requirement_as_classifier">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BItcEO-MEeWk15GF5Liqxw" source="Stereotype_Annotation">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BItcFu-MEeWk15GF5Liqxw" key="StereotypeWithQualifiedNameList" value=""/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BItcF--MEeWk15GF5Liqxw" key="StereotypeList" value=""/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BItcGO-MEeWk15GF5Liqxw" key="Stereotype_Presentation_Kind" value="Compartment"/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BItcGe-MEeWk15GF5Liqxw" key="PropStereoDisplay" value="SysML::Requirements::Requirement.id,SysML::Requirements::Requirement.text"/>
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BItcGu-MEeWk15GF5Liqxw" key="StereotypePropertyLocation" value="Compartment"/>
-    </eAnnotations>
     <children xmi:type="notation:DecorationNode" xmi:id="_BImHUu-MEeWk15GF5Liqxw" type="5029"/>
     <children xmi:type="notation:BasicCompartment" xmi:id="_BImHU--MEeWk15GF5Liqxw" type="7017">
       <styles xmi:type="notation:TitleStyle" xmi:id="_BImHVO-MEeWk15GF5Liqxw"/>
@@ -35,8 +28,30 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_BImHZe-MEeWk15GF5Liqxw"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BImHZu-MEeWk15GF5Liqxw"/>
     </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_t3qFUO-PEeWFwedhW3nQyA" visible="false" type="StereotypeLabel">
+      <styles xmi:type="notation:StringValueStyle" xmi:id="_t3qFUe-PEeWFwedhW3nQyA" name="stereotype" stringValue="SysML::Requirements::Requirement"/>
+      <element xmi:type="uml:Stereotype" href="pathmap://SysML_PROFILES/SysML.profile.uml#_xajygLXqEduHWpAaWjM62w"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t3qFUu-PEeWFwedhW3nQyA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_t4DG4O-PEeWFwedhW3nQyA" type="StereotypeCompartment">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t4RwYO-PEeWFwedhW3nQyA" source="PapyrusCSSForceValue">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_t4RwYe-PEeWFwedhW3nQyA" key="visible" value="true"/>
+      </eAnnotations>
+      <children xmi:type="notation:DecorationNode" xmi:id="_t4GKMO-PEeWFwedhW3nQyA" type="StereotypeProperty">
+        <element xmi:type="uml:Property" href="pathmap://SysML_PROFILES/SysML.profile.uml#_3YlQILXqEduHWpAaWjM62w"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_t4GKMe-PEeWFwedhW3nQyA"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_t4FjIO-PEeWFwedhW3nQyA" type="StereotypeProperty">
+        <element xmi:type="uml:Property" href="pathmap://SysML_PROFILES/SysML.profile.uml#_3DxdwLXqEduHWpAaWjM62w"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_t4FjIe-PEeWFwedhW3nQyA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_t4DG4e-PEeWFwedhW3nQyA" showTitle="true"/>
+      <styles xmi:type="notation:StringValueStyle" xmi:id="_t4DG4u-PEeWFwedhW3nQyA" name="stereotype" stringValue="SysML::Requirements::Requirement"/>
+      <element xmi:type="uml:Stereotype" href="pathmap://SysML_PROFILES/SysML.profile.uml#_xajygLXqEduHWpAaWjM62w"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_t4DG4--PEeWFwedhW3nQyA"/>
+    </children>
     <element xmi:type="uml:Class" href="model.uml#_BIjEAO-MEeWk15GF5Liqxw"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BImHUe-MEeWk15GF5Liqxw" x="413" y="128"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_BImHUe-MEeWk15GF5Liqxw" x="296" y="128" width="217"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_BK9e0O-MEeWk15GF5Liqxw" type="StereotypeComment">
     <styles xmi:type="notation:TitleStyle" xmi:id="_BK9e0e-MEeWk15GF5Liqxw" showTitle="true"/>

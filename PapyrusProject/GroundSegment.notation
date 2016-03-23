@@ -23,7 +23,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Y0UCBe_JEeWKvdyQmgvJqA" y="5"/>
       </children>
       <element xmi:type="uml:Actor" href="GroundSegment.uml#_Yz_48O_JEeWKvdyQmgvJqA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y0QXoe_JEeWKvdyQmgvJqA" x="189" y="134"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y0QXoe_JEeWKvdyQmgvJqA" x="238" y="128"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_Zq0zQO_JEeWKvdyQmgvJqA" type="2013">
       <children xmi:type="notation:DecorationNode" xmi:id="_Zq0zQu_JEeWKvdyQmgvJqA" type="5016"/>
@@ -36,7 +36,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zq1aVe_JEeWKvdyQmgvJqA"/>
       </children>
       <element xmi:type="uml:UseCase" href="GroundSegment.uml#_ZqrpUO_JEeWKvdyQmgvJqA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zq0zQe_JEeWKvdyQmgvJqA" x="395" y="138"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Zq0zQe_JEeWKvdyQmgvJqA" x="555" y="123"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_Xa27we_JEeWKvdyQmgvJqA" name="diagram_compatibility_version" stringValue="1.1.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_Xa27wu_JEeWKvdyQmgvJqA"/>
@@ -44,5 +44,18 @@
       <owner xmi:type="uml:Model" href="GroundSegment.uml#_Vc7E4O_IEeWKvdyQmgvJqA"/>
     </styles>
     <element xmi:type="uml:Model" href="GroundSegment.uml#_Vc7E4O_IEeWKvdyQmgvJqA"/>
+    <edges xmi:type="notation:Connector" xmi:id="_fLVh4PDvEeWINaVfsr1yeA" type="4013" source="_Zq0zQO_JEeWKvdyQmgvJqA" target="_Y0QXoO_JEeWKvdyQmgvJqA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_fLX-IPDvEeWINaVfsr1yeA" type="6010">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fLX-IfDvEeWINaVfsr1yeA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_fLYlMPDvEeWINaVfsr1yeA" type="6034">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_fLYlMfDvEeWINaVfsr1yeA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_fLWI8PDvEeWINaVfsr1yeA"/>
+      <element xmi:type="uml:Dependency" href="GroundSegment.uml#_fLGRUPDvEeWINaVfsr1yeA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fLWI8fDvEeWINaVfsr1yeA" points="[-50, -29, 302, 1]$[-359, -5, -7, 25]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fMVAYPDvEeWINaVfsr1yeA" id=""/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fMVAYfDvEeWINaVfsr1yeA" id="(1.0,0.66)"/>
+    </edges>
   </notation:Diagram>
 </xmi:XMI>

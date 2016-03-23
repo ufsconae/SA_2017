@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_cg6hgO_HEeWKvdyQmgvJqA" name="RootElement">
   <packagedElement xmi:type="uml:Model" xmi:id="_Vc7E4O_IEeWKvdyQmgvJqA" name="ControlUnit">
-    <packagedElement xmi:type="uml:Actor" xmi:id="_Yz_48O_JEeWKvdyQmgvJqA" name="Actor1"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_ZqrpUO_JEeWKvdyQmgvJqA" name="Test"/>
-    <packagedElement xmi:type="uml:Dependency" xmi:id="_fLGRUPDvEeWINaVfsr1yeA" client="_ZqrpUO_JEeWKvdyQmgvJqA" supplier="_Yz_48O_JEeWKvdyQmgvJqA"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_djv-YPECEeWINaVfsr1yeA" name="CasosDeUso" URI="">
+      <packagedElement xmi:type="uml:Actor" xmi:id="_lqRZkPECEeWINaVfsr1yeA" name="Actor1"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_l5gIYPECEeWINaVfsr1yeA" name="UseCase1"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_nkEz0PECEeWINaVfsr1yeA" client="_lqRZkPECEeWINaVfsr1yeA" supplier="_l5gIYPECEeWINaVfsr1yeA"/>
+    </packagedElement>
   </packagedElement>
   <packagedElement xmi:type="uml:Model" xmi:id="_a6aBQO_IEeWKvdyQmgvJqA" name="MissionUnit"/>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_csZ_0O_HEeWKvdyQmgvJqA">

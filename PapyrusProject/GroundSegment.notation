@@ -80,6 +80,19 @@
       <element xmi:type="uml:UseCase" href="GroundSegment.uml#_ATXJgPEuEeWNkdU7mkVSUg"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ATYXofEuEeWNkdU7mkVSUg" x="1027" y="224"/>
     </children>
+    <children xmi:type="notation:Shape" xmi:id="_R-orYPTyEeWlhvRknaVmsA" type="2013">
+      <children xmi:type="notation:DecorationNode" xmi:id="_R-orYvTyEeWlhvRknaVmsA" type="5016"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_R-orY_TyEeWlhvRknaVmsA" type="6038">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_R-orZPTyEeWlhvRknaVmsA" y="5"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_R-pScPTyEeWlhvRknaVmsA" type="7009">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_R-pScfTyEeWlhvRknaVmsA"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_R-pScvTyEeWlhvRknaVmsA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R-pSc_TyEeWlhvRknaVmsA"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="GroundSegment.uml#_R-mPIPTyEeWlhvRknaVmsA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_R-orYfTyEeWlhvRknaVmsA" x="648" y="49" width="223" height="78"/>
+    </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_k5igMfECEeWINaVfsr1yeA" name="diagram_compatibility_version" stringValue="1.1.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_k5igMvECEeWINaVfsr1yeA"/>
     <styles xmi:type="style:PapyrusViewStyle" xmi:id="_k5igM_ECEeWINaVfsr1yeA">
@@ -124,6 +137,19 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EcF5cvEuEeWNkdU7mkVSUg" points="[-40, 24, 147, -75]$[-118, 94, 69, -5]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EcuLkPEuEeWNkdU7mkVSUg" id="(0.07142857142857142,1.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EcuLkfEuEeWNkdU7mkVSUg" id="(1.0,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_d6pxcPTyEeWlhvRknaVmsA" type="4011" source="_lqVD8PECEeWINaVfsr1yeA" target="_R-orYPTyEeWlhvRknaVmsA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_d6pxc_TyEeWlhvRknaVmsA" type="6008">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_d6qYgPTyEeWlhvRknaVmsA" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_d6qYgfTyEeWlhvRknaVmsA" type="6033">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_d6qYgvTyEeWlhvRknaVmsA" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_d6pxcfTyEeWlhvRknaVmsA"/>
+      <element xmi:type="uml:Association" href="GroundSegment.uml#_d6gngPTyEeWlhvRknaVmsA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_d6pxcvTyEeWlhvRknaVmsA" points="[15, -5, -300, 88]$[287, -95, -28, -2]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d7YxQPTyEeWlhvRknaVmsA" id="(1.0,0.36)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d7ZYUPTyEeWlhvRknaVmsA" id="(0.0,0.6282051282051282)"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_6Iq68PEDEeWINaVfsr1yeA" type="RequirementDiagram" name="GSReq" measurementUnit="Pixel">

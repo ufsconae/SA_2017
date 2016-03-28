@@ -14,6 +14,14 @@
           <extend xmi:type="uml:Extend" xmi:id="_Eb0MoPEuEeWNkdU7mkVSUg" extendedCase="_8rcAkPEtEeWNkdU7mkVSUg" extensionLocation="_Eb1awPEuEeWNkdU7mkVSUg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Usage" xmi:id="_DIVLgPEuEeWNkdU7mkVSUg" client="_xpsKYPEtEeWNkdU7mkVSUg" supplier="_8rcAkPEtEeWNkdU7mkVSUg"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_R-mPIPTyEeWlhvRknaVmsA" name="Guardar Historico Telemetria"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_d6gngPTyEeWlhvRknaVmsA" memberEnd="_d6mHEPTyEeWlhvRknaVmsA _d6muIPTyEeWlhvRknaVmsA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_d6kR4PTyEeWlhvRknaVmsA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_d6kR4fTyEeWlhvRknaVmsA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_d6mHEPTyEeWlhvRknaVmsA" name="guardar historico telemetria" type="_R-mPIPTyEeWlhvRknaVmsA" association="_d6gngPTyEeWlhvRknaVmsA"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_d6muIPTyEeWlhvRknaVmsA" name="operador" type="_lqRZkPECEeWINaVfsr1yeA" association="_d6gngPTyEeWlhvRknaVmsA"/>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_a6aBQO_IEeWKvdyQmgvJqA" name="MissionUnit"/>

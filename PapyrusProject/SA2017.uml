@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
   <uml:Model xmi:id="_n8xeEPacEeWtq5JQ7557FA" name="RootElement">
-    <packagedElement xmi:type="uml:Class" xmi:id="_cHyFsPafEeWtq5JQ7557FA" name="L1-010"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_ptwWsPagEeWtq5JQ7557FA" name="Flight Segment" URI=""/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mcHKUPahEeWtq5JQ7557FA" name="ABC"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_n-vM8PacEeWtq5JQ7557FA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_n-vM8facEeWtq5JQ7557FA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -69,5 +70,5 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_neZmMLX8EduFmqQsrNB9lw"/>
     </profileApplication>
   </uml:Model>
-  <Requirements:Requirement xmi:id="_cJsxQPafEeWtq5JQ7557FA" text="The Ground Segment shall include a Mission Station, which shall provide the following&#xA;high level functions: user access, acquisition planning, raw data processing and data&#xA;storage management." id="L1-010" base_Class="_cHyFsPafEeWtq5JQ7557FA"/>
+  <Requirements:Requirement xmi:id="_mcSJcPahEeWtq5JQ7557FA" base_Class="_mcHKUPahEeWtq5JQ7557FA"/>
 </xmi:XMI>

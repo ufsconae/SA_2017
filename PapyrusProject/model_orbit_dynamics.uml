@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
-  <uml:Model xmi:id="_dkf9wPEtEeWOSpgalrXMqg" name="RootElement">
-    <packagedElement xmi:type="uml:Class" xmi:id="_zXAAwPEtEeWOSpgalrXMqg" name="L2-SYS-XXX-CETT_PASS_PLAN" visibility="private"/>
+  <uml:Model xmi:id="_dkf9wPEtEeWOSpgalrXMqg" name="RootElement" URI="">
+    <packagedElement xmi:type="uml:Class" xmi:id="_zXAAwPEtEeWOSpgalrXMqg" name="L2-SYS-770-CETT_PASS_PLAN" visibility="private"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_a0MWkPgCEeWsD4MqqCA26g" name="L2-SYS-771-EVENTS" visibility="package"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_Lg7EAPgGEeWsD4MqqCA26g" name="L2-SYS-XXX-COLD-SKY-MANEUVER"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_dhu-EPgGEeWsD4MqqCA26g" name="L2-SYS-XXX-MOON-CAL-MANEUVER"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_DS6rUPgHEeWsD4MqqCA26g" name="L2-SYS-XXX-EARTH-DOTS-CAL"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_uRem8PgIEeWsD4MqqCA26g" name="L2-SYS-XXX-ORBIT-EPHEMERIS"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Lg7EAPgGEeWsD4MqqCA26g" name="L2-SYS-772-COLD-SKY-MANEUVER"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_dhu-EPgGEeWsD4MqqCA26g" name="L2-SYS-774-MOON-CAL-MANEUVER"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_DS6rUPgHEeWsD4MqqCA26g" name="L2-SYS-773-EARTH-DOTS-CAL"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_uRem8PgIEeWsD4MqqCA26g" name="L2-SYS-779-ORBIT-EPHEMERIS"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dqaYgPEtEeWOSpgalrXMqg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dqc0wPEtEeWOSpgalrXMqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -74,10 +74,10 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_neZmMLX8EduFmqQsrNB9lw"/>
     </profileApplication>
   </uml:Model>
-  <Requirements:Requirement xmi:id="_za7egPEtEeWOSpgalrXMqg" text="Control Station shall provide pass plan to CETT" id="L2-SYS-XXX" base_Class="_zXAAwPEtEeWOSpgalrXMqg"/>
-  <Requirements:Requirement xmi:id="_a03sAPgCEeWsD4MqqCA26g" text="CU shall provide Events Chronogram&#xA;" id="L2" base_Class="_a0MWkPgCEeWsD4MqqCA26g"/>
-  <Requirements:Requirement xmi:id="_LhRCQPgGEeWsD4MqqCA26g" text="CC shall provide Cold Sky Calibration's maneuvers chronogram " id="" base_Class="_Lg7EAPgGEeWsD4MqqCA26g"/>
-  <Requirements:Requirement xmi:id="_diFjYPgGEeWsD4MqqCA26g" text="CC shall provide Moon Calibration's maneuverschronogram" id="" base_Class="_dhu-EPgGEeWsD4MqqCA26g"/>
-  <Requirements:Requirement xmi:id="_DTUT8PgHEeWsD4MqqCA26g" text="CC shall provide Terrestrial's maneuver chronogram" id="" base_Class="_DS6rUPgHEeWsD4MqqCA26g"/>
-  <Requirements:Requirement xmi:id="_uSALYPgIEeWsD4MqqCA26g" text="CC shall provide Orbit Ephemeris&#xA;" id="" base_Class="_uRem8PgIEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_za7egPEtEeWOSpgalrXMqg" text="Control Unit shall provide pass plan to CETT" id="L2-770" base_Class="_zXAAwPEtEeWOSpgalrXMqg"/>
+  <Requirements:Requirement xmi:id="_a03sAPgCEeWsD4MqqCA26g" text="Control Unit shall provide Events Chronogram&#xA;" id="L2-771" base_Class="_a0MWkPgCEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_LhRCQPgGEeWsD4MqqCA26g" text="Control Unit shall provide Cold Sky Calibration's maneuvers chronogram" id="L2-772" base_Class="_Lg7EAPgGEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_diFjYPgGEeWsD4MqqCA26g" text="Control Unit shall provide Moon Calibration's maneuvers chronogram" id="L2-774" base_Class="_dhu-EPgGEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_DTUT8PgHEeWsD4MqqCA26g" text="Control Unit shall provide Terrestrial's maneuver chronogram" id="L2-773" base_Class="_DS6rUPgHEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_uSALYPgIEeWsD4MqqCA26g" text="Control Unit shall provide Orbit Ephemeris&#xA;" id="L2-779" base_Class="_uRem8PgIEeWsD4MqqCA26g"/>
 </xmi:XMI>

@@ -8,6 +8,9 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_Lt1pMPgHEeWab4iQ1I7RWQ" name="L1-012"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_R61-APgHEeWab4iQ1I7RWQ" name="L1-013"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_O6YLwPgJEeWab4iQ1I7RWQ" name="L1-008"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Mk7nQPgdEeWsD4MqqCA26g" name="DeriveReqt1" client="_nJSvwPEXEeWINaVfsr1yeA">
+        <supplier xmi:type="uml:Class" href="model_orbit_dynamics.uml#_DS6rUPgHEeWsD4MqqCA26g"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_csZ_0O_HEeWKvdyQmgvJqA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_csccEO_HEeWKvdyQmgvJqA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -82,4 +85,5 @@
   <Requirements:Requirement xmi:id="_Lt2QQPgHEeWab4iQ1I7RWQ" text="Both the Control and the Mission Stations, as a whole, shall be fully compatible with&#xA;existing CONAE Ground Station infrastructure." id="L1-012" base_Class="_Lt1pMPgHEeWab4iQ1I7RWQ"/>
   <Requirements:Requirement xmi:id="_R62lEPgHEeWab4iQ1I7RWQ" text="As a technology demonstration mission, all the flight-related data including telemetry,&#xA;trending, raw data and resulting value-added products, shall be available via web to the&#xA;SA2017 community on a regular basis.&#xA;" id="L1-013" base_Class="_R61-APgHEeWab4iQ1I7RWQ"/>
   <Requirements:Requirement xmi:id="_O6Yy0PgJEeWab4iQ1I7RWQ" text="For relative calibration and sensor degradation analysis, the Technology Demonstration&#xA;Camera shall obtain data throughout the entire mission operational lifetime from&#xA;terrestrial and extra-terrestrial areas with known and stable reflectance signatures and/or&#xA;with radiometric sensors measuring the radiance locally. The following calibration&#xA;scenarios shall be used:a) Lunar calibration (at least two snapshots, once a month)&#xA;b) Cold Sky calibration (at least two snapshots, twice a month)&#xA;c) Terrestrial Calibration Site 1: Atacama dessert (at least two snapshots, once a week).&#xA;d) Terrestrial Calibration Site 2: Marine Optical Buoy (MOBY), deployed 20 km offshore&#xA;Lanai, Hawaii (at least two snapshots, once a week).&#xA;e) Terrestrial Calibration Site 3: Bouée pour l'acquisition de Séries Optiques à Long Terme&#xA;(BOUSSOLE), deployed in the Mediterranean Sea between the French Riviera coast and&#xA;Corsica (at least two snapshots, once a week)." id="L1-008" base_Class="_O6YLwPgJEeWab4iQ1I7RWQ"/>
+  <Requirements:DeriveReqt xmi:id="_Mlyi4PgdEeWsD4MqqCA26g" base_Abstraction="_Mk7nQPgdEeWsD4MqqCA26g"/>
 </xmi:XMI>

@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
   <uml:Model xmi:id="_dkf9wPEtEeWOSpgalrXMqg" name="RootElement" URI="">
-    <packagedElement xmi:type="uml:Class" xmi:id="_zXAAwPEtEeWOSpgalrXMqg" name="L2-SYS-770-CETT_PASS_PLAN" visibility="private"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zXAAwPEtEeWOSpgalrXMqg" name="L2-SYS-770-CETT_PASS_PLAN" visibility="protected"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_a0MWkPgCEeWsD4MqqCA26g" name="L2-SYS-771-EVENTS" visibility="package"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_Lg7EAPgGEeWsD4MqqCA26g" name="L2-SYS-772-COLD-SKY-MANEUVER"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Lg7EAPgGEeWsD4MqqCA26g" name="L2-SYS-772-COLD-SKY-MANEUVER">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Rg4ZUPgcEeWsD4MqqCA26g" name="l1-008" association="_Rg2kIPgcEeWsD4MqqCA26g">
+        <type xmi:type="uml:Class" href="GroundSegment.uml#_O6YLwPgJEeWab4iQ1I7RWQ"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Association" xmi:id="_Rg2kIPgcEeWsD4MqqCA26g" memberEnd="_Rg4ZUPgcEeWsD4MqqCA26g _Rg4ZUfgcEeWsD4MqqCA26g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Rg3yQPgcEeWsD4MqqCA26g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Rg3yQfgcEeWsD4MqqCA26g" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Rg4ZUfgcEeWsD4MqqCA26g" name="l2-sys-772-cold-sky-maneuver" type="_Lg7EAPgGEeWsD4MqqCA26g" association="_Rg2kIPgcEeWsD4MqqCA26g"/>
+      </nestedClassifier>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_dhu-EPgGEeWsD4MqqCA26g" name="L2-SYS-774-MOON-CAL-MANEUVER"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_DS6rUPgHEeWsD4MqqCA26g" name="L2-SYS-773-EARTH-DOTS-CAL"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_DS6rUPgHEeWsD4MqqCA26g" name="L2-SYS-773-EARTH-SITES-CAL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_uRem8PgIEeWsD4MqqCA26g" name="L2-SYS-779-ORBIT-EPHEMERIS"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_-P2_IPgcEeWsD4MqqCA26g" name="DeriveReqt1" client="_a0MWkPgCEeWsD4MqqCA26g" supplier="_zXAAwPEtEeWOSpgalrXMqg"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dqaYgPEtEeWOSpgalrXMqg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dqc0wPEtEeWOSpgalrXMqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -78,6 +89,7 @@
   <Requirements:Requirement xmi:id="_a03sAPgCEeWsD4MqqCA26g" text="Control Unit shall provide Events Chronogram&#xA;" id="L2-771" base_Class="_a0MWkPgCEeWsD4MqqCA26g"/>
   <Requirements:Requirement xmi:id="_LhRCQPgGEeWsD4MqqCA26g" text="Control Unit shall provide Cold Sky Calibration's maneuvers chronogram" id="L2-772" base_Class="_Lg7EAPgGEeWsD4MqqCA26g"/>
   <Requirements:Requirement xmi:id="_diFjYPgGEeWsD4MqqCA26g" text="Control Unit shall provide Moon Calibration's maneuvers chronogram" id="L2-774" base_Class="_dhu-EPgGEeWsD4MqqCA26g"/>
-  <Requirements:Requirement xmi:id="_DTUT8PgHEeWsD4MqqCA26g" text="Control Unit shall provide Terrestrial's maneuver chronogram" id="L2-773" base_Class="_DS6rUPgHEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_DTUT8PgHEeWsD4MqqCA26g" text="Control Unit shall provide Terrestrial Calibration sites Acquisition&#xA;" id="L2-773" base_Class="_DS6rUPgHEeWsD4MqqCA26g"/>
   <Requirements:Requirement xmi:id="_uSALYPgIEeWsD4MqqCA26g" text="Control Unit shall provide Orbit Ephemeris&#xA;" id="L2-779" base_Class="_uRem8PgIEeWsD4MqqCA26g"/>
+  <Requirements:DeriveReqt xmi:id="_-RBcwPgcEeWsD4MqqCA26g" base_Abstraction="_-P2_IPgcEeWsD4MqqCA26g"/>
 </xmi:XMI>

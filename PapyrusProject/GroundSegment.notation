@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:configuration="http://www.eclipse.org/papyrus/infra/viewpoints/configuration" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:nattable="http://www.eclipse.org/papyrus/nattable/model" xmlns:nattableaxis="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis" xmlns:nattableaxisconfiguration="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration" xmlns:nattableaxisprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider" xmlns:nattableconfiguration="http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis http://www.eclipse.org/papyrus/nattable/model#//nattableaxis http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model#//nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableconfiguration">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:configuration="http://www.eclipse.org/papyrus/infra/viewpoints/configuration" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:nattable="http://www.eclipse.org/papyrus/nattable/model" xmlns:nattableaxis="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis" xmlns:nattableaxisconfiguration="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration" xmlns:nattableaxisprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider" xmlns:nattableconfiguration="http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration" xmlns:nattablestyle="http://www.eclipse.org/papyrus/nattable/model/table/nattablestyle" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis http://www.eclipse.org/papyrus/nattable/model#//nattableaxis http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model#//nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattablestyle http://www.eclipse.org/papyrus/nattable/model#//nattablestyle">
   <notation:Diagram xmi:id="_5qYyEO_HEeWKvdyQmgvJqA" type="RequirementDiagram" name="GroundSegmentReq" measurementUnit="Pixel">
     <styles xmi:type="notation:DiagramStyle" xmi:id="_5qYyEe_HEeWKvdyQmgvJqA"/>
     <styles xmi:type="style:PapyrusViewStyle" xmi:id="_5qYyEu_HEeWKvdyQmgvJqA">
@@ -60,7 +60,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LdKp_facEeWtq5JQ7557FA"/>
       </children>
       <element xmi:type="uml:Class" href="GroundSegment.uml#_nJSvwPEXEeWINaVfsr1yeA"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nJVzEfEXEeWINaVfsr1yeA" x="86" y="47" width="342" height="182"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nJVzEfEXEeWINaVfsr1yeA" x="86" y="47" width="271" height="124"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_6Iq68fEDEeWINaVfsr1yeA"/>
     <styles xmi:type="style:PapyrusViewStyle" xmi:id="_6Iq68vEDEeWINaVfsr1yeA">
@@ -83,95 +83,13 @@
         <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
       </axis>
       <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_Q32NFPagEeWtq5JQ7557FA" element="property_of_stereotype:/SysML::Requirements::Requirement::text">
+        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_235R4PgCEeWab4iQ1I7RWQ" name="axisWidth" intValue="420"/>
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
       </axis>
     </columnAxisProvidersHistory>
     <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_Q32NFfagEeWtq5JQ7557FA" description="Provides the requirements directly owned by the context of the table" name="Requirement Axis Provider" disconnectSlave="true"/>
   </nattable:Table>
   <notation:Diagram xmi:id="__eGaEPf_EeWab4iQ1I7RWQ" type="PapyrusUMLComponentDiagram" name="NewComponentDiagram" measurementUnit="Pixel">
-    <children xmi:type="notation:Shape" xmi:id="_CYr74PgAEeWab4iQ1I7RWQ" type="3202">
-      <children xmi:type="notation:DecorationNode" xmi:id="_CYr74vgAEeWab4iQ1I7RWQ" type="5262"/>
-      <children xmi:type="notation:DecorationNode" xmi:id="_CYr74_gAEeWab4iQ1I7RWQ" type="7006">
-        <children xmi:type="notation:Shape" xmi:id="_F8n8sPgAEeWab4iQ1I7RWQ" type="2002">
-          <children xmi:type="notation:DecorationNode" xmi:id="_F8n8sfgAEeWab4iQ1I7RWQ" type="5004"/>
-          <children xmi:type="notation:DecorationNode" xmi:id="_F8n8svgAEeWab4iQ1I7RWQ" type="6030">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_F8n8s_gAEeWab4iQ1I7RWQ" y="5"/>
-          </children>
-          <children xmi:type="notation:BasicCompartment" xmi:id="_F8n8tPgAEeWab4iQ1I7RWQ" type="7001">
-            <styles xmi:type="notation:TitleStyle" xmi:id="_F8n8tfgAEeWab4iQ1I7RWQ"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F8n8tvgAEeWab4iQ1I7RWQ"/>
-          </children>
-          <element xmi:type="uml:Component" href="GroundSegment.uml#_F8nVoPgAEeWab4iQ1I7RWQ"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F8n8uvgAEeWab4iQ1I7RWQ" x="32" y="90"/>
-        </children>
-        <children xmi:type="notation:Shape" xmi:id="_HyuisPgAEeWab4iQ1I7RWQ" type="3071">
-          <children xmi:type="notation:DecorationNode" xmi:id="_HyvJwfgAEeWab4iQ1I7RWQ" type="5257"/>
-          <children xmi:type="notation:DecorationNode" xmi:id="_HyvJwvgAEeWab4iQ1I7RWQ" type="6027">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_HyvJw_gAEeWab4iQ1I7RWQ" y="5"/>
-          </children>
-          <children xmi:type="notation:BasicCompartment" xmi:id="_HyvJxPgAEeWab4iQ1I7RWQ" type="7004">
-            <styles xmi:type="notation:TitleStyle" xmi:id="_HyvJxfgAEeWab4iQ1I7RWQ"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HyvJxvgAEeWab4iQ1I7RWQ"/>
-          </children>
-          <children xmi:type="notation:BasicCompartment" xmi:id="_Hy2egPgAEeWab4iQ1I7RWQ" type="compartment_shape_display">
-            <styles xmi:type="notation:TitleStyle" xmi:id="_Hy2egfgAEeWab4iQ1I7RWQ"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hy2egvgAEeWab4iQ1I7RWQ"/>
-          </children>
-          <children xmi:type="notation:Shape" xmi:id="_1X7l4PgAEeWab4iQ1I7RWQ" type="3069">
-            <children xmi:type="notation:DecorationNode" xmi:id="_1X7l4vgAEeWab4iQ1I7RWQ" type="5006">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_1X7l4_gAEeWab4iQ1I7RWQ" x="25" y="4"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_1X7l5PgAEeWab4iQ1I7RWQ" type="5007">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_1X7l5fgAEeWab4iQ1I7RWQ" x="25" y="-10"/>
-            </children>
-            <element xmi:type="uml:Port" href="GroundSegment.uml#_1X0RIPgAEeWab4iQ1I7RWQ"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1X7l4fgAEeWab4iQ1I7RWQ" y="53" width="20" height="20"/>
-          </children>
-          <children xmi:type="notation:Shape" xmi:id="_4Ln1gPgAEeWab4iQ1I7RWQ" type="3069">
-            <children xmi:type="notation:DecorationNode" xmi:id="_4LockPgAEeWab4iQ1I7RWQ" type="5006">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_4LockfgAEeWab4iQ1I7RWQ" y="5"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_4LockvgAEeWab4iQ1I7RWQ" type="5007">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_4Lock_gAEeWab4iQ1I7RWQ" x="25" y="-10"/>
-            </children>
-            <element xmi:type="uml:Port" href="GroundSegment.uml#_4LkLIPgAEeWab4iQ1I7RWQ"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4Ln1gfgAEeWab4iQ1I7RWQ" x="-10" y="88" width="20" height="20"/>
-          </children>
-          <element xmi:type="uml:Component" href="GroundSegment.uml#_Hyq4UPgAEeWab4iQ1I7RWQ"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HyvJwPgAEeWab4iQ1I7RWQ" x="333" y="91" width="151" height="112"/>
-        </children>
-        <children xmi:type="notation:Shape" xmi:id="_IW2jcPgAEeWab4iQ1I7RWQ" type="3071">
-          <children xmi:type="notation:DecorationNode" xmi:id="_IW2jcvgAEeWab4iQ1I7RWQ" type="5257"/>
-          <children xmi:type="notation:DecorationNode" xmi:id="_IW2jc_gAEeWab4iQ1I7RWQ" type="6027">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_IW2jdPgAEeWab4iQ1I7RWQ" y="5"/>
-          </children>
-          <children xmi:type="notation:BasicCompartment" xmi:id="_IW2jdfgAEeWab4iQ1I7RWQ" type="7004">
-            <styles xmi:type="notation:TitleStyle" xmi:id="_IW2jdvgAEeWab4iQ1I7RWQ"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IW2jd_gAEeWab4iQ1I7RWQ"/>
-          </children>
-          <children xmi:type="notation:BasicCompartment" xmi:id="_IW6N0PgAEeWab4iQ1I7RWQ" type="compartment_shape_display">
-            <styles xmi:type="notation:TitleStyle" xmi:id="_IW6N0fgAEeWab4iQ1I7RWQ"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IW6N0vgAEeWab4iQ1I7RWQ"/>
-          </children>
-          <children xmi:type="notation:Shape" xmi:id="_5MgqwPgAEeWab4iQ1I7RWQ" type="3069">
-            <children xmi:type="notation:DecorationNode" xmi:id="_5MgqwvgAEeWab4iQ1I7RWQ" type="5006">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_5Mgqw_gAEeWab4iQ1I7RWQ" y="5"/>
-            </children>
-            <children xmi:type="notation:DecorationNode" xmi:id="_5MgqxPgAEeWab4iQ1I7RWQ" type="5007">
-              <layoutConstraint xmi:type="notation:Location" xmi:id="_5MgqxfgAEeWab4iQ1I7RWQ" x="25" y="-10"/>
-            </children>
-            <element xmi:type="uml:Port" href="GroundSegment.uml#_5MYH4PgAEeWab4iQ1I7RWQ"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5MgqwfgAEeWab4iQ1I7RWQ" x="140" y="52" width="20" height="20"/>
-          </children>
-          <element xmi:type="uml:Component" href="GroundSegment.uml#_IWy5EPgAEeWab4iQ1I7RWQ"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IW2jcfgAEeWab4iQ1I7RWQ" x="622" y="89"/>
-        </children>
-        <styles xmi:type="notation:TitleStyle" xmi:id="_CYr75PgAEeWab4iQ1I7RWQ"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CYr75fgAEeWab4iQ1I7RWQ"/>
-      </children>
-      <element xmi:type="uml:Model" href="GroundSegment.uml#_CYqGsPgAEeWab4iQ1I7RWQ"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CYr74fgAEeWab4iQ1I7RWQ" x="29" y="51" width="839" height="344"/>
-    </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="__eGaEff_EeWab4iQ1I7RWQ" name="diagram_compatibility_version" stringValue="1.1.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="__eGaEvf_EeWab4iQ1I7RWQ"/>
     <styles xmi:type="style:PapyrusViewStyle" xmi:id="__eGaE_f_EeWab4iQ1I7RWQ">

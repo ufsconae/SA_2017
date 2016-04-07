@@ -38,6 +38,9 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_pFBQUPzCEeWpMIpi0KVNxQ" name="Satellite Emulator"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_izxfQPzDEeWpMIpi0KVNxQ" name="Command manager"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_67POgPzDEeWpMIpi0KVNxQ" name="Telemetry report"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_E2g58PzGEeWpMIpi0KVNxQ" name="Science data process"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_NKOckPzGEeWpMIpi0KVNxQ" name="Science data publication portal and web services"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_S3XlkPzGEeWpMIpi0KVNxQ" name="General information publication portal and web services"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_4rzC4Pv8EeWFgNfF-6x_dw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4r2GMPv8EeWFgNfF-6x_dw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -132,4 +135,7 @@
   <Requirements:Requirement xmi:id="_pFB3YPzCEeWpMIpi0KVNxQ" text="The emulator for SA2017 shall be available in (T0+07)" id="L2B-SYS-503" base_Class="_pFBQUPzCEeWpMIpi0KVNxQ"/>
   <Requirements:Requirement xmi:id="_izyGUPzDEeWpMIpi0KVNxQ" text="The command manager web software shall be available in (T0+08)" id="L2B-SYS-504" base_Class="_izxfQPzDEeWpMIpi0KVNxQ"/>
   <Requirements:Requirement xmi:id="_67QcoPzDEeWpMIpi0KVNxQ" text="The telemetry report web software shall be available in (T0+09)" id="L2B-SYS-505" base_Class="_67POgPzDEeWpMIpi0KVNxQ"/>
+  <Requirements:Requirement xmi:id="_E2iIEPzGEeWpMIpi0KVNxQ" text="" id="L2B-SYS-506" base_Class="_E2g58PzGEeWpMIpi0KVNxQ"/>
+  <Requirements:Requirement xmi:id="_NKPDoPzGEeWpMIpi0KVNxQ" id="L2B-SYS-507" base_Class="_NKOckPzGEeWpMIpi0KVNxQ"/>
+  <Requirements:Requirement xmi:id="_S3YMoPzGEeWpMIpi0KVNxQ" id="L2B-SYS-508" base_Class="_S3XlkPzGEeWpMIpi0KVNxQ"/>
 </xmi:XMI>

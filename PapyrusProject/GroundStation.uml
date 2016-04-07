@@ -12,6 +12,39 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_zFMhsPz3EeWWH817x0Adtw" name="Requirement9"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_4B4eIPz3EeWWH817x0Adtw" name="Requirement10"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_9Y_FsPz3EeWWH817x0Adtw" name="Requirement11"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_nFNsMPz4EeWWH817x0Adtw" name="DeriveReqt1" client="_qMWRsPz3EeWWH817x0Adtw">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_nnG4UPz4EeWWH817x0Adtw" name="DeriveReqt2" client="_udk2UPz3EeWWH817x0Adtw">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_n_b4wPz4EeWWH817x0Adtw" name="DeriveReqt3" client="_zFMhsPz3EeWWH817x0Adtw">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_oegaYPz4EeWWH817x0Adtw" name="DeriveReqt4" client="_4B4eIPz3EeWWH817x0Adtw">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_o2KscPz4EeWWH817x0Adtw" name="DeriveReqt5" client="_9Y_FsPz3EeWWH817x0Adtw">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_xCdYcPz4EeWWH817x0Adtw" name="DeriveReqt6" client="_mcX1cPz2EeWWH817x0Adtw">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_yUnj4Pz4EeWWH817x0Adtw" name="DeriveReqt7" client="_M3Ox0Pz3EeWWH817x0Adtw">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_y3UoUPz4EeWWH817x0Adtw" name="DeriveReqt8" client="_Snh8gPz3EeWWH817x0Adtw">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_zVE7UPz4EeWWH817x0Adtw" name="DeriveReqt9" client="_ERH3oPz3EeWWH817x0Adtw">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_zymk0Pz4EeWWH817x0Adtw" name="DeriveReqt10" client="_ep8lgPz3EeWWH817x0Adtw">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_0Wdf0Pz4EeWWH817x0Adtw" name="DeriveReqt11" client="_k-nBgPz3EeWWH817x0Adtw">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_M0gDYPz2EeWWH817x0Adtw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_M0gqcPz2EeWWH817x0Adtw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -90,4 +123,15 @@
   <Requirements:Requirement xmi:id="_zFNIwPz3EeWWH817x0Adtw" text="The Ground Station shall input the digital data acquired from UHF antenna into a centralized database." id="L2B-SYS-708" base_Class="_zFMhsPz3EeWWH817x0Adtw"/>
   <Requirements:Requirement xmi:id="_4B5FMPz3EeWWH817x0Adtw" text="The Ground Station shall establish collaborative working links with ground stations of another spatiale agencies to provide support during launch fase and orbital transition. (TBD)" id="L2B-SYS-709" base_Class="_4B4eIPz3EeWWH817x0Adtw"/>
   <Requirements:Requirement xmi:id="_9ZA64Pz3EeWWH817x0Adtw" text="A Ground Segment test shall be performed prior to launch to verify end-to-end performance of ground command generation, telemetry monitoring, satellite capabilities, UHF and S band communications and science data processing." id="L2B-SYS-710" base_Class="_9Y_FsPz3EeWWH817x0Adtw"/>
+  <Requirements:DeriveReqt xmi:id="_nHoHAPz4EeWWH817x0Adtw" base_Abstraction="_nFNsMPz4EeWWH817x0Adtw"/>
+  <Requirements:DeriveReqt xmi:id="_noRV8Pz4EeWWH817x0Adtw" base_Abstraction="_nnG4UPz4EeWWH817x0Adtw"/>
+  <Requirements:DeriveReqt xmi:id="_oALfoPz4EeWWH817x0Adtw" base_Abstraction="_n_b4wPz4EeWWH817x0Adtw"/>
+  <Requirements:DeriveReqt xmi:id="_ofX9EPz4EeWWH817x0Adtw" base_Abstraction="_oegaYPz4EeWWH817x0Adtw"/>
+  <Requirements:DeriveReqt xmi:id="_o3BoEPz4EeWWH817x0Adtw" base_Abstraction="_o2KscPz4EeWWH817x0Adtw"/>
+  <Requirements:DeriveReqt xmi:id="_xDSe4Pz4EeWWH817x0Adtw" base_Abstraction="_xCdYcPz4EeWWH817x0Adtw"/>
+  <Requirements:DeriveReqt xmi:id="_yVY_8Pz4EeWWH817x0Adtw" base_Abstraction="_yUnj4Pz4EeWWH817x0Adtw"/>
+  <Requirements:DeriveReqt xmi:id="_y4DBEPz4EeWWH817x0Adtw" base_Abstraction="_y3UoUPz4EeWWH817x0Adtw"/>
+  <Requirements:DeriveReqt xmi:id="_zWB9kPz4EeWWH817x0Adtw" base_Abstraction="_zVE7UPz4EeWWH817x0Adtw"/>
+  <Requirements:DeriveReqt xmi:id="_zzdgcPz4EeWWH817x0Adtw" base_Abstraction="_zymk0Pz4EeWWH817x0Adtw"/>
+  <Requirements:DeriveReqt xmi:id="_0XjE8Pz4EeWWH817x0Adtw" base_Abstraction="_0Wdf0Pz4EeWWH817x0Adtw"/>
 </xmi:XMI>

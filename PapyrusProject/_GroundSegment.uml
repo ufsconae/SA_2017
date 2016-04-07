@@ -16,6 +16,21 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_EAQY4PwtEeWZO5s3t9VRdw" name="L1_013"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_G5TpoPwtEeWZO5s3t9VRdw" name="L1_014"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_KuaS8PwtEeWZO5s3t9VRdw" name="L1_015"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_bay2EPxAEeWweNjpjFUT8A" client="_78BcsPwsEeWZO5s3t9VRdw">
+      <supplier xmi:type="uml:Class" href="model_orbit_dynamics.uml#_a0MWkPgCEeWsD4MqqCA26g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_nhm24PxAEeWweNjpjFUT8A" client="_xjvaQPwsEeWZO5s3t9VRdw">
+      <supplier xmi:type="uml:Class" href="model_orbit_dynamics.uml#_Lg7EAPgGEeWsD4MqqCA26g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_ugO14PxAEeWweNjpjFUT8A" client="_xjvaQPwsEeWZO5s3t9VRdw">
+      <supplier xmi:type="uml:Class" href="model_orbit_dynamics.uml#_DS6rUPgHEeWsD4MqqCA26g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_PsY4wPxBEeWweNjpjFUT8A" client="_xjvaQPwsEeWZO5s3t9VRdw">
+      <supplier xmi:type="uml:Class" href="model_orbit_dynamics.uml#_dhu-EPgGEeWsD4MqqCA26g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_WbB7APxBEeWweNjpjFUT8A" client="_78BcsPwsEeWZO5s3t9VRdw">
+      <supplier xmi:type="uml:Class" href="model_orbit_dynamics.uml#_uRem8PgIEeWsD4MqqCA26g"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_4rzC4Pv8EeWFgNfF-6x_dw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4r2GMPv8EeWFgNfF-6x_dw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -98,4 +113,10 @@
   <Requirements:Requirement xmi:id="_EAQ_8PwtEeWZO5s3t9VRdw" text="As a technology demonstration mission, all the flight-related data including telemetry,&#xA;trending, raw data and resulting value-added products, shall be available via web to the&#xA;SA2017 community on a regular basis." id="L1_013" base_Class="_EAQY4PwtEeWZO5s3t9VRdw"/>
   <Requirements:Requirement xmi:id="_G5UQsPwtEeWZO5s3t9VRdw" text="The main mission deliverables shall be available according to the following schedule&#xA;(where T0 is the project kick off milestone):&#xA;a) Cubesat Engineering Model: (T0+13m) (TBC)&#xA;b) Cubesat Partial Qualification Model: (T0+16m) (TBC)&#xA;c) Control &amp; Mission stations Engineering model (T0+13m) (TBC)&#xA;d) Control &amp; Mission stations Acceptance model (T0+16m) (TBC)&#xA;e) Cubesat Proto-Flight Model: (T0+TBD)" id="L1_014" base_Class="_G5TpoPwtEeWZO5s3t9VRdw"/>
   <Requirements:Requirement xmi:id="_Kua6APwtEeWZO5s3t9VRdw" text="The costs of the entire SA2017 mission -excluding launch and manpower- shall be&#xA;restricted to an assigned budget of 300,000 US dollars." id="L1_015" base_Class="_KuaS8PwtEeWZO5s3t9VRdw"/>
+  <Requirements:DeriveReqt xmi:id="_E9_R0PxAEeWweNjpjFUT8A"/>
+  <Requirements:DeriveReqt xmi:id="_bbXd0PxAEeWweNjpjFUT8A" base_Abstraction="_bay2EPxAEeWweNjpjFUT8A"/>
+  <Requirements:DeriveReqt xmi:id="_niIbUPxAEeWweNjpjFUT8A" base_Abstraction="_nhm24PxAEeWweNjpjFUT8A"/>
+  <Requirements:DeriveReqt xmi:id="_ug0rwPxAEeWweNjpjFUT8A" base_Abstraction="_ugO14PxAEeWweNjpjFUT8A"/>
+  <Requirements:DeriveReqt xmi:id="_Ps_8wPxBEeWweNjpjFUT8A" base_Abstraction="_PsY4wPxBEeWweNjpjFUT8A"/>
+  <Requirements:DeriveReqt xmi:id="_Wbnw4PxBEeWweNjpjFUT8A" base_Abstraction="_WbB7APxBEeWweNjpjFUT8A"/>
 </xmi:XMI>

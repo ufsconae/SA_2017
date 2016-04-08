@@ -120,6 +120,14 @@ publish all data and information
           <end xmi:type="uml:ConnectorEnd" xmi:id="_DJHOAf24EeWZ6PYrGLcTxA" partWithPort="_8IyU8P2uEeWZ6PYrGLcTxA" role="_8bk_AP23EeWZ6PYrGLcTxA"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_DJHOAv24EeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_9GYPgP23EeWZ6PYrGLcTxA"/>
         </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_-MSK0P27EeWZ6PYrGLcTxA" name="Tlmy/Telecommands">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_-MSK0f27EeWZ6PYrGLcTxA" partWithPort="_9rNxAP2uEeWZ6PYrGLcTxA" role="_9KIKQP27EeWZ6PYrGLcTxA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_-MSK0v27EeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_3eRM8P22EeWZ6PYrGLcTxA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_GyNe0P28EeWZ6PYrGLcTxA" name="Science data">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_GyOF4P28EeWZ6PYrGLcTxA" partWithPort="_9rNxAP2uEeWZ6PYrGLcTxA" role="_8En6wP27EeWZ6PYrGLcTxA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_GyOF4f28EeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_ci8ZgP23EeWZ6PYrGLcTxA"/>
+        </ownedConnector>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_vx4CoP2uEeWZ6PYrGLcTxA" name="Ground Segment Unit">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_F7LNUP21EeWZ6PYrGLcTxA" name="Mission DB" type="_GI7VcP21EeWZ6PYrGLcTxA" aggregation="composite" association="_GI78gf21EeWZ6PYrGLcTxA"/>
@@ -127,6 +135,8 @@ publish all data and information
         <ownedAttribute xmi:type="uml:Port" xmi:id="_3eRM8P22EeWZ6PYrGLcTxA" name="flowport3" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_ci8ZgP23EeWZ6PYrGLcTxA" name="flowport4" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_9GYPgP23EeWZ6PYrGLcTxA" name="flowport5" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_8En6wP27EeWZ6PYrGLcTxA" name="flowport6" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_9KIKQP27EeWZ6PYrGLcTxA" name="flowport7" aggregation="composite"/>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_01TmoP22EeWZ6PYrGLcTxA" name="Tlmy/Telecommand">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_01Tmof22EeWZ6PYrGLcTxA" partWithPort="_F7LNUP21EeWZ6PYrGLcTxA" role="_MyaK4P21EeWZ6PYrGLcTxA"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_01Tmov22EeWZ6PYrGLcTxA" role="_whxU4P22EeWZ6PYrGLcTxA"/>
@@ -375,4 +385,6 @@ publish all data and information
   <Requirements:DeriveReqt xmi:id="_2YtywP25EeWFwtaYqXT6rw" base_Abstraction="_2XrQ8P25EeWFwtaYqXT6rw"/>
   <Requirements:DeriveReqt xmi:id="_2-DUcP25EeWFwtaYqXT6rw" base_Abstraction="_29ALkP25EeWFwtaYqXT6rw"/>
   <Requirements:DeriveReqt xmi:id="_3axssP25EeWFwtaYqXT6rw" base_Abstraction="_3ZqSYP25EeWFwtaYqXT6rw"/>
+  <PortAndFlows:FlowPort xmi:id="_8Eoh0P27EeWZ6PYrGLcTxA" base_Port="_8En6wP27EeWZ6PYrGLcTxA" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_9KIxUP27EeWZ6PYrGLcTxA" base_Port="_9KIKQP27EeWZ6PYrGLcTxA"/>
 </xmi:XMI>

@@ -9,9 +9,10 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_k-nBgPz3EeWWH817x0Adtw" name="CORTEX-ACCESS"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_qMWRsPz3EeWWH817x0Adtw" name="UHF-ANTENNA"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_udk2UPz3EeWWH817x0Adtw" name="UHF-EQUIPMENT"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_zFMhsPz3EeWWH817x0Adtw" name="UHF-DATA-ACCESS"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zFMhsPz3EeWWH817x0Adtw" name="DOWNLINK-TLMY"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_4B4eIPz3EeWWH817x0Adtw" name="SUPPORT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_9Y_FsPz3EeWWH817x0Adtw" name="VALIDATION"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_MXrYsP2fEeWmqevIwVQGpw" name="UPLINK-TLCMD"/>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_nFNsMPz4EeWWH817x0Adtw" name="DeriveReqt1" client="_qMWRsPz3EeWWH817x0Adtw">
       <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
     </packagedElement>
@@ -43,6 +44,9 @@
       <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_0Wdf0Pz4EeWWH817x0Adtw" name="DeriveReqt11" client="_k-nBgPz3EeWWH817x0Adtw">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_-LjbwP2fEeWmqevIwVQGpw" name="DeriveReqt12" client="_MXrYsP2fEeWmqevIwVQGpw">
       <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_M0gDYPz2EeWWH817x0Adtw">
@@ -134,4 +138,6 @@
   <Requirements:DeriveReqt xmi:id="_zWB9kPz4EeWWH817x0Adtw" base_Abstraction="_zVE7UPz4EeWWH817x0Adtw"/>
   <Requirements:DeriveReqt xmi:id="_zzdgcPz4EeWWH817x0Adtw" base_Abstraction="_zymk0Pz4EeWWH817x0Adtw"/>
   <Requirements:DeriveReqt xmi:id="_0XjE8Pz4EeWWH817x0Adtw" base_Abstraction="_0Wdf0Pz4EeWWH817x0Adtw"/>
+  <Requirements:Requirement xmi:id="_MX2X0P2fEeWmqevIwVQGpw" text="The Ground Station shall obtain the telecommands from the centralized database to uplink to spacecraft." id="L2B-SYS-711" base_Class="_MXrYsP2fEeWmqevIwVQGpw"/>
+  <Requirements:DeriveReqt xmi:id="_-MsrQP2fEeWmqevIwVQGpw" base_Abstraction="_-LjbwP2fEeWmqevIwVQGpw"/>
 </xmi:XMI>

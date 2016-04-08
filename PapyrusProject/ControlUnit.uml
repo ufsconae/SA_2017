@@ -2,16 +2,18 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
   <uml:Model xmi:id="_Iz6IUPf_EeWab4iQ1I7RWQ" name="ControlUnit">
     <packagedElement xmi:type="uml:Model" xmi:id="_6FdHIPgPEeWrWMXdyrR5uQ" name="RequirementControlUnit">
-      <packagedElement xmi:type="uml:Class" xmi:id="_4-Mf8PgWEeWrWMXdyrR5uQ" name="L2B-SYS-751-Planning"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_q1x-UPgXEeWrWMXdyrR5uQ" name="L2B-SYS-752-XXXXX"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_vs5MUPgZEeWrWMXdyrR5uQ" name="L2B-SYS-753-XXXXX"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_YY_ykPgaEeWrWMXdyrR5uQ" name="L2B-SYS-754-XXXXX"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_4-Mf8PgWEeWrWMXdyrR5uQ" name="L2B-SYS-751"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_q1x-UPgXEeWrWMXdyrR5uQ" name="L2B-SYS-752"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vs5MUPgZEeWrWMXdyrR5uQ" name="L2B-SYS-753"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YY_ykPgaEeWrWMXdyrR5uQ" name="L2B-SYS-754"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_QNwdMPgfEeWrWMXdyrR5uQ" client="_4-Mf8PgWEeWrWMXdyrR5uQ">
         <supplier xmi:type="uml:Class" href="GroundSegment.uml#_nJSvwPEXEeWINaVfsr1yeA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_f2hZcPgtEeWISYGibq9i4A" name="L2B-SYS-755-XXXXX"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_cogzEPgyEeWISYGibq9i4A" name="L2B-SYS-756-XXXXX"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_nwYfYPgyEeWISYGibq9i4A" name="L2B-SYS-757-XXXXX"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_f2hZcPgtEeWISYGibq9i4A" name="L2B-SYS-755"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_cogzEPgyEeWISYGibq9i4A" name="L2B-SYS-756"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nwYfYPgyEeWISYGibq9i4A" name="L2B-SYS-757"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ypsNAP2dEeWad7IgZOVsfA" name="L2B-SYS-758"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MzWh4P28EeWad7IgZOVsfA" name="L2B-SYS-759" visibility="package"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_L7U7gPgbEeWrWMXdyrR5uQ" name="DiagramBlockControlUnit"/>
     <packagedElement xmi:type="uml:Model" xmi:id="_p2IAsPguEeWISYGibq9i4A" name="UseCaseControlUnit">
@@ -86,11 +88,13 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_neZmMLX8EduFmqQsrNB9lw"/>
     </profileApplication>
   </uml:Model>
-  <Requirements:Requirement xmi:id="_4-NHAPgWEeWrWMXdyrR5uQ" text="The Control Unit should be provide information to the Mission Unit for planning operations" id="L2B-SYS-751" base_Class="_4-Mf8PgWEeWrWMXdyrR5uQ"/>
-  <Requirements:Requirement xmi:id="_q1zMcPgXEeWrWMXdyrR5uQ" text="The Control Unit should be sent the plan of past and pointing to the earth station antenna for the downlink data." id="L2B-SYS-752" base_Class="_q1x-UPgXEeWrWMXdyrR5uQ"/>
-  <Requirements:Requirement xmi:id="_vs5zYPgZEeWrWMXdyrR5uQ" text="The Control Unit should provide the necessary software for operations" id="L2B-SYS-753" base_Class="_vs5MUPgZEeWrWMXdyrR5uQ"/>
-  <Requirements:Requirement xmi:id="_YZC14PgaEeWrWMXdyrR5uQ" text="The Control Unit should make contingency plan in case of failure." id="L2B-SYS-754" base_Class="_YY_ykPgaEeWrWMXdyrR5uQ"/>
-  <Requirements:Requirement xmi:id="_f2kcwPgtEeWISYGibq9i4A" text="&#xA;The Control Unit should determine the health status of the satellite." id="L2B-SYS-755" base_Class="_f2hZcPgtEeWISYGibq9i4A"/>
-  <Requirements:Requirement xmi:id="_cohaIPgyEeWISYGibq9i4A" text="&#xA;The Control Unit should approve the preliminary plan acquisitions submitted by the Mission Unit&#xA;" id="L2B-SYS-756" base_Class="_cogzEPgyEeWISYGibq9i4A"/>
-  <Requirements:Requirement xmi:id="_nwZtgPgyEeWISYGibq9i4A" text="&#xA;The control unit must generate a final plan based on orbital past events, state of health, Mission Unit acquisitions and maintenance operations" id="L2B-SYS-757" base_Class="_nwYfYPgyEeWISYGibq9i4A"/>
+  <Requirements:Requirement xmi:id="_4-NHAPgWEeWrWMXdyrR5uQ" text="The Control Unit shall  provide information to the Mission Unit for planning operations" id="L2B-SYS-751" base_Class="_4-Mf8PgWEeWrWMXdyrR5uQ"/>
+  <Requirements:Requirement xmi:id="_q1zMcPgXEeWrWMXdyrR5uQ" text="The Control Unit shall send the pass plan and antenna pointing instructions to the ground station" id="L2B-SYS-752" base_Class="_q1x-UPgXEeWrWMXdyrR5uQ"/>
+  <Requirements:Requirement xmi:id="_vs5zYPgZEeWrWMXdyrR5uQ" text="The Control Unit shall provide the necessary software for operations" id="L2B-SYS-753" base_Class="_vs5MUPgZEeWrWMXdyrR5uQ"/>
+  <Requirements:Requirement xmi:id="_YZC14PgaEeWrWMXdyrR5uQ" text="Control Unit shall define which resources available to build the final pass plan" id="L2B-SYS-754" base_Class="_YY_ykPgaEeWrWMXdyrR5uQ"/>
+  <Requirements:Requirement xmi:id="_f2kcwPgtEeWISYGibq9i4A" text="&#xA;The Control Unit shall determine the health status of the satellite." id="L2B-SYS-755" base_Class="_f2hZcPgtEeWISYGibq9i4A"/>
+  <Requirements:Requirement xmi:id="_cohaIPgyEeWISYGibq9i4A" text="The Control Unit shall approve the preliminary plan acquisitions submitted by the Mission Unit&#xA;" id="L2B-SYS-756" base_Class="_cogzEPgyEeWISYGibq9i4A"/>
+  <Requirements:Requirement xmi:id="_nwZtgPgyEeWISYGibq9i4A" text="&#xA;The Control Unit shall generate a final plan based on orbital past events, state of health, Mission Unit acquisitions and maintenance operations" id="L2B-SYS-757" base_Class="_nwYfYPgyEeWISYGibq9i4A"/>
+  <Requirements:Requirement xmi:id="_ytiLMP2dEeWad7IgZOVsfA" text="Control Unit shall prepare a pass plan" id="L2B-SYS-758" base_Class="_ypsNAP2dEeWad7IgZOVsfA"/>
+  <Requirements:Requirement xmi:id="_MzYXEP28EeWad7IgZOVsfA" text="The Control Unit shall make contingency plan in case of telemetry variables out off nominal range." id="L2B-SYS-759" base_Class="_MzWh4P28EeWad7IgZOVsfA"/>
 </xmi:XMI>

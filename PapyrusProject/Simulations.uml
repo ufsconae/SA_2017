@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks">
   <uml:Model xmi:id="_eug9cPgKEeWQ4eVJqQgS_A" name="Simulations">
-    <packagedElement xmi:type="uml:Package" xmi:id="_LAgk8PgOEeWQ4eVJqQgS_A" name="Dia_BBD"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_endWYPgOEeWQ4eVJqQgS_A" name="Dia_UseCase"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_v6uGkPgREeWQ4eVJqQgS_A" name="Simulators">
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_fi_foPgQEeWQ4eVJqQgS_A" name="Power Sim" visibility="public"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_h4c7IPgQEeWQ4eVJqQgS_A" name="Orbit Sim"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_iIBBIPgQEeWQ4eVJqQgS_A" name="RF Sim"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_eTIk0PgREeWQ4eVJqQgS_A" name="Plant Sim"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_gSvsIPgREeWQ4eVJqQgS_A" name="Flight Segment">
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_maz2kPgREeWQ4eVJqQgS_A" name="OBC"/>
-      </nestedClassifier>
+    <packagedElement xmi:type="uml:Package" xmi:id="_BN7vQPgcEeWQ4eVJqQgS_A" name="Dia_BBD">
+      <packagedElement xmi:type="uml:Package" xmi:id="_dP0FoPgcEeWQ4eVJqQgS_A" name="Simulators Structure">
+        <packagedElement xmi:type="uml:Package" xmi:id="_aCEDUPg0EeWQ4eVJqQgS_A" name="FS">
+          <packagedElement xmi:type="uml:Class" xmi:id="_j_UEsPg2EeWQ4eVJqQgS_A" name="Battery">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_j_UEsfg2EeWQ4eVJqQgS_A" name="OBC"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_nr6HsPg1EeWQ4eVJqQgS_A" name="OBT">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_nr6Hsfg1EeWQ4eVJqQgS_A" name="OBC"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_L38moPg3EeWQ4eVJqQgS_A" name="GS"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_feE4sPg3EeWQ4eVJqQgS_A" name="Simulators">
+          <packagedElement xmi:type="uml:Class" xmi:id="_iVfKsPg3EeWQ4eVJqQgS_A" name="Orbit Sim"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_exPhUPgKEeWQ4eVJqQgS_A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_exQvcPgKEeWQ4eVJqQgS_A" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -79,11 +85,9 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_neZmMLX8EduFmqQsrNB9lw"/>
     </profileApplication>
   </uml:Model>
-  <Blocks:Block xmi:id="_fjAGsPgQEeWQ4eVJqQgS_A" base_Class="_fi_foPgQEeWQ4eVJqQgS_A"/>
-  <Blocks:Block xmi:id="_h4diMPgQEeWQ4eVJqQgS_A" base_Class="_h4c7IPgQEeWQ4eVJqQgS_A"/>
-  <Blocks:Block xmi:id="_iIBoMPgQEeWQ4eVJqQgS_A" base_Class="_iIBBIPgQEeWQ4eVJqQgS_A"/>
-  <Blocks:Block xmi:id="_eTJL4PgREeWQ4eVJqQgS_A" base_Class="_eTIk0PgREeWQ4eVJqQgS_A"/>
-  <Blocks:Block xmi:id="_gSvsIfgREeWQ4eVJqQgS_A" base_Class="_gSvsIPgREeWQ4eVJqQgS_A"/>
-  <Blocks:Block xmi:id="_ma1EsPgREeWQ4eVJqQgS_A" base_Class="_maz2kPgREeWQ4eVJqQgS_A"/>
-  <Blocks:Block xmi:id="_v6vUsPgREeWQ4eVJqQgS_A" base_Class="_v6uGkPgREeWQ4eVJqQgS_A"/>
+  <Blocks:Block xmi:id="_nr7V0Pg1EeWQ4eVJqQgS_A" base_Class="_nr6Hsfg1EeWQ4eVJqQgS_A"/>
+  <Blocks:Block xmi:id="_nr7V0fg1EeWQ4eVJqQgS_A" base_Class="_nr6HsPg1EeWQ4eVJqQgS_A"/>
+  <Blocks:Block xmi:id="_j_UrwPg2EeWQ4eVJqQgS_A" base_Class="_j_UEsPg2EeWQ4eVJqQgS_A"/>
+  <Blocks:Block xmi:id="_j_VS0Pg2EeWQ4eVJqQgS_A" base_Class="_j_UEsfg2EeWQ4eVJqQgS_A"/>
+  <Blocks:Block xmi:id="_iVfKsfg3EeWQ4eVJqQgS_A" base_Class="_iVfKsPg3EeWQ4eVJqQgS_A"/>
 </xmi:XMI>

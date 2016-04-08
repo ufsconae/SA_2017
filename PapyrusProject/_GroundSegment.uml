@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
   <uml:Model xmi:id="_4kzqEPv8EeWFgNfF-6x_dw" name="RootElement">
     <packagedElement xmi:type="uml:Class" xmi:id="_AICK8Pv9EeWFgNfF-6x_dw" name="L1_001"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_Z84CAPv9EeWFgNfF-6x_dw" name="L1_002"/>
@@ -49,6 +49,50 @@
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_vM8vsPz1EeWx7Ki9vH_xfA" name="DeriveReqt6" client="_G5TpoPwtEeWZO5s3t9VRdw" supplier="_S3XlkPzGEeWpMIpi0KVNxQ"/>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_vyfFsPz1EeWx7Ki9vH_xfA" name="DeriveReqt7" client="_G5TpoPwtEeWZO5s3t9VRdw" supplier="_67POgPzDEeWpMIpi0KVNxQ"/>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_wyWAMPz1EeWx7Ki9vH_xfA" name="DeriveReqt8" client="_G5TpoPwtEeWZO5s3t9VRdw" supplier="_izxfQPzDEeWpMIpi0KVNxQ"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_yzqK4P2pEeWZ6PYrGLcTxA" name="Blocks" URI="">
+      <packagedElement xmi:type="uml:Class" xmi:id="_PfQzsP2qEeWZ6PYrGLcTxA" name="GroundSegment">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Urg2I_2qEeWZ6PYrGLcTxA" name="block2_1" type="_P9BGsP2qEeWZ6PYrGLcTxA" association="_UrgPEP2qEeWZ6PYrGLcTxA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cCcncP2qEeWZ6PYrGLcTxA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cCd1kP2qEeWZ6PYrGLcTxA" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_VOMsdP2qEeWZ6PYrGLcTxA" name="block3_1" type="_QMUG8P2qEeWZ6PYrGLcTxA" association="_VOMscP2qEeWZ6PYrGLcTxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_P9BGsP2qEeWZ6PYrGLcTxA" name="GroundStation">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Urg2Iv2qEeWZ6PYrGLcTxA" name="block1_1" type="_PfQzsP2qEeWZ6PYrGLcTxA" aggregation="composite" association="_UrgPEP2qEeWZ6PYrGLcTxA"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_2wxOwP2rEeWZ6PYrGLcTxA" name="Port1" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_aNOq4f2tEeWZ6PYrGLcTxA" name="uhf/s-band antenna_1" type="_yzeSwP2rEeWZ6PYrGLcTxA" association="_aNOD0P2tEeWZ6PYrGLcTxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_QMUG8P2qEeWZ6PYrGLcTxA" name="ControlUnit">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_VOMsc_2qEeWZ6PYrGLcTxA" name="block1_1" type="_PfQzsP2qEeWZ6PYrGLcTxA" aggregation="composite" association="_VOMscP2qEeWZ6PYrGLcTxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_VOMscP2qEeWZ6PYrGLcTxA" memberEnd="_VOMsc_2qEeWZ6PYrGLcTxA _VOMsdP2qEeWZ6PYrGLcTxA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VOMscf2qEeWZ6PYrGLcTxA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VOMscv2qEeWZ6PYrGLcTxA" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UrgPEP2qEeWZ6PYrGLcTxA" memberEnd="_Urg2Iv2qEeWZ6PYrGLcTxA _Urg2I_2qEeWZ6PYrGLcTxA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Urg2IP2qEeWZ6PYrGLcTxA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Urg2If2qEeWZ6PYrGLcTxA" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_yzeSwP2rEeWZ6PYrGLcTxA" name="UHF/S-Band Antenna"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Kvd8YP2tEeWZ6PYrGLcTxA" name="MissionUnit">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_NQmcY_2tEeWZ6PYrGLcTxA" name="groundsegment_1" type="_PfQzsP2qEeWZ6PYrGLcTxA" aggregation="composite" association="_NQmcYP2tEeWZ6PYrGLcTxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NQmcYP2tEeWZ6PYrGLcTxA" memberEnd="_NQmcY_2tEeWZ6PYrGLcTxA _NQmcZP2tEeWZ6PYrGLcTxA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NQmcYf2tEeWZ6PYrGLcTxA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NQmcYv2tEeWZ6PYrGLcTxA" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_NQmcZP2tEeWZ6PYrGLcTxA" name="missionunit_1" type="_Kvd8YP2tEeWZ6PYrGLcTxA" association="_NQmcYP2tEeWZ6PYrGLcTxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_aNOD0P2tEeWZ6PYrGLcTxA" memberEnd="_aNOq4f2tEeWZ6PYrGLcTxA _aNOq4v2tEeWZ6PYrGLcTxA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aNOD0f2tEeWZ6PYrGLcTxA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aNOq4P2tEeWZ6PYrGLcTxA" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_aNOq4v2tEeWZ6PYrGLcTxA" name="groundstation_1" type="_P9BGsP2qEeWZ6PYrGLcTxA" association="_aNOD0P2tEeWZ6PYrGLcTxA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nPp_YP2tEeWZ6PYrGLcTxA" name="Block1"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_4rzC4Pv8EeWFgNfF-6x_dw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4r2GMPv8EeWFgNfF-6x_dw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -152,4 +196,9 @@
   <Requirements:DeriveReqt xmi:id="_vNuy0Pz1EeWx7Ki9vH_xfA" base_Abstraction="_vM8vsPz1EeWx7Ki9vH_xfA"/>
   <Requirements:DeriveReqt xmi:id="_vzPToPz1EeWx7Ki9vH_xfA" base_Abstraction="_vyfFsPz1EeWx7Ki9vH_xfA"/>
   <Requirements:DeriveReqt xmi:id="_wzMUwPz1EeWx7Ki9vH_xfA" base_Abstraction="_wyWAMPz1EeWx7Ki9vH_xfA"/>
+  <Blocks:Block xmi:id="_PfRawP2qEeWZ6PYrGLcTxA" base_Class="_PfQzsP2qEeWZ6PYrGLcTxA"/>
+  <Blocks:Block xmi:id="_P9BtwP2qEeWZ6PYrGLcTxA" base_Class="_P9BGsP2qEeWZ6PYrGLcTxA"/>
+  <Blocks:Block xmi:id="_QMUuAP2qEeWZ6PYrGLcTxA" base_Class="_QMUG8P2qEeWZ6PYrGLcTxA"/>
+  <Blocks:Block xmi:id="_Kvd8Yf2tEeWZ6PYrGLcTxA" base_Class="_Kvd8YP2tEeWZ6PYrGLcTxA"/>
+  <Blocks:Block xmi:id="_nPp_Yf2tEeWZ6PYrGLcTxA" base_Class="_nPp_YP2tEeWZ6PYrGLcTxA"/>
 </xmi:XMI>

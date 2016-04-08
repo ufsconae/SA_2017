@@ -94,38 +94,55 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_nPp_YP2tEeWZ6PYrGLcTxA" name="Block1"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_-FMMsP2tEeWZ6PYrGLcTxA" name="Ground Segment">
         <ownedComment xmi:type="uml:Comment" xmi:id="_kuJkkP2wEeWZ6PYrGLcTxA" annotatedElement="_9rNxAP2uEeWZ6PYrGLcTxA">
-          <body>GS shall had a 7*24 service/deamon to receive tcp/ip 
+          <body>GS shall has a 7*24 service/deamon to receive tcp/ip 
 tlmy to stored in a relational standar database. 
 The same service/deamon shall send telecommands
 to the spacecraft  </body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_v1XesP2yEeWZ6PYrGLcTxA" annotatedElement="_vSy58P2uEeWZ6PYrGLcTxA">
+          <body>Mission Unit is responsible for the maintein and administration 
+of database. 
+For this reason the Mission Unit is a central node to share and 
+publish all data and information
+</body>
         </ownedComment>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_NqPO8P2uEeWZ6PYrGLcTxA" name="Tlmy/Telecommand" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_hct68P2uEeWZ6PYrGLcTxA" name="Science data customer" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_qnMGcP2uEeWZ6PYrGLcTxA" name="General Comunitu" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_vSy58P2uEeWZ6PYrGLcTxA" name="Mission Unit" type="_vx4CoP2uEeWZ6PYrGLcTxA" aggregation="composite" association="_vx4psP2uEeWZ6PYrGLcTxA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_8IyU8P2uEeWZ6PYrGLcTxA" name="Control Unit" type="_8R5NoP2uEeWZ6PYrGLcTxA" aggregation="composite" association="_8R50sP2uEeWZ6PYrGLcTxA"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_9rNxAP2uEeWZ6PYrGLcTxA" name="Ground Station" type="_95-lwP2uEeWZ6PYrGLcTxA" aggregation="composite" association="_95-lwv2uEeWZ6PYrGLcTxA"/>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_K4JsYP2vEeWZ6PYrGLcTxA" name="TCP/IP Tlmy/Telecommand stream">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_K4NWwP2vEeWZ6PYrGLcTxA" partWithPort="_9rNxAP2uEeWZ6PYrGLcTxA" role="_HsFZAP2vEeWZ6PYrGLcTxA"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_K4N90P2vEeWZ6PYrGLcTxA" role="_NqPO8P2uEeWZ6PYrGLcTxA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_9rNxAP2uEeWZ6PYrGLcTxA" name="Ground Station" type="_vx4CoP2uEeWZ6PYrGLcTxA" aggregation="composite" association="_95-lwv2uEeWZ6PYrGLcTxA"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_ziWJ8P22EeWZ6PYrGLcTxA" name="Tlmy/Telecommand">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_ziWJ8f22EeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_whxU4P22EeWZ6PYrGLcTxA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_ziWJ8v22EeWZ6PYrGLcTxA" partWithPort="_8IyU8P2uEeWZ6PYrGLcTxA" role="_x4EZcP22EeWZ6PYrGLcTxA"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_mAr_8P2vEeWZ6PYrGLcTxA" name="Telecommand">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_mAtOEP2vEeWZ6PYrGLcTxA" partWithPort="_8IyU8P2uEeWZ6PYrGLcTxA" role="_ftPr8P2vEeWZ6PYrGLcTxA"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_mAtOEf2vEeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_W0kbEP2vEeWZ6PYrGLcTxA"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_mu2tgP2vEeWZ6PYrGLcTxA" name="Tlmy">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_mu3UkP2vEeWZ6PYrGLcTxA" partWithPort="_8IyU8P2uEeWZ6PYrGLcTxA" role="_g-SdEP2vEeWZ6PYrGLcTxA"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_mu3Ukf2vEeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_Y2yxgP2vEeWZ6PYrGLcTxA"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_WYQdEP2wEeWZ6PYrGLcTxA" name="Ad. Request and status">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_WYREIP2wEeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_QUYPEP2wEeWZ6PYrGLcTxA"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_WYREIf2wEeWZ6PYrGLcTxA" partWithPort="_8IyU8P2uEeWZ6PYrGLcTxA" role="_PD43kP2wEeWZ6PYrGLcTxA"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_DJHOAP24EeWZ6PYrGLcTxA" name="Orbital Products Generation/Orbital product Queries">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_DJHOAf24EeWZ6PYrGLcTxA" partWithPort="_8IyU8P2uEeWZ6PYrGLcTxA" role="_8bk_AP23EeWZ6PYrGLcTxA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_DJHOAv24EeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_9GYPgP23EeWZ6PYrGLcTxA"/>
         </ownedConnector>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_vx4CoP2uEeWZ6PYrGLcTxA" name="Block3">
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_W0kbEP2vEeWZ6PYrGLcTxA" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_Y2yxgP2vEeWZ6PYrGLcTxA" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_QUYPEP2wEeWZ6PYrGLcTxA" name="flowport1" aggregation="composite"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vx4CoP2uEeWZ6PYrGLcTxA" name="Ground Segment Unit">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_F7LNUP21EeWZ6PYrGLcTxA" name="Mission DB" type="_GI7VcP21EeWZ6PYrGLcTxA" aggregation="composite" association="_GI78gf21EeWZ6PYrGLcTxA"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_whxU4P22EeWZ6PYrGLcTxA" name="flowport2" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_3eRM8P22EeWZ6PYrGLcTxA" name="flowport3" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_ci8ZgP23EeWZ6PYrGLcTxA" name="flowport4" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_9GYPgP23EeWZ6PYrGLcTxA" name="flowport5" aggregation="composite"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_01TmoP22EeWZ6PYrGLcTxA" name="Tlmy/Telecommand">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_01Tmof22EeWZ6PYrGLcTxA" partWithPort="_F7LNUP21EeWZ6PYrGLcTxA" role="_MyaK4P21EeWZ6PYrGLcTxA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_01Tmov22EeWZ6PYrGLcTxA" role="_whxU4P22EeWZ6PYrGLcTxA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_AuHAoP23EeWZ6PYrGLcTxA" name="Tlmy/Telecommands">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_AuHAof23EeWZ6PYrGLcTxA" role="_3eRM8P22EeWZ6PYrGLcTxA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_AuHAov23EeWZ6PYrGLcTxA" partWithPort="_F7LNUP21EeWZ6PYrGLcTxA" role="__YyMcP22EeWZ6PYrGLcTxA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_f2nwwP23EeWZ6PYrGLcTxA" name="Science data">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_f2oX0P23EeWZ6PYrGLcTxA" role="_ci8ZgP23EeWZ6PYrGLcTxA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_f2oX0f23EeWZ6PYrGLcTxA" partWithPort="_F7LNUP21EeWZ6PYrGLcTxA" role="_dtDcMP23EeWZ6PYrGLcTxA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_EeRDEP24EeWZ6PYrGLcTxA" name="Orbital Products Generation/Orbital product Queries">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_EeRDEf24EeWZ6PYrGLcTxA" role="_9GYPgP23EeWZ6PYrGLcTxA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_EeRDEv24EeWZ6PYrGLcTxA" partWithPort="_F7LNUP21EeWZ6PYrGLcTxA" role="_9z4OsP23EeWZ6PYrGLcTxA"/>
+        </ownedConnector>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_vx4psP2uEeWZ6PYrGLcTxA" name="Association1" memberEnd="_vSy58P2uEeWZ6PYrGLcTxA _vx4ps_2uEeWZ6PYrGLcTxA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vx4psf2uEeWZ6PYrGLcTxA" source="org.eclipse.papyrus">
@@ -134,9 +151,8 @@ to the spacecraft  </body>
         <ownedEnd xmi:type="uml:Property" xmi:id="_vx4ps_2uEeWZ6PYrGLcTxA" name="block2" type="_-FMMsP2tEeWZ6PYrGLcTxA" association="_vx4psP2uEeWZ6PYrGLcTxA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_8R5NoP2uEeWZ6PYrGLcTxA" name="Block4">
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_ftPr8P2vEeWZ6PYrGLcTxA" name="flowport1" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_g-SdEP2vEeWZ6PYrGLcTxA" name="flowport2" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_PD43kP2wEeWZ6PYrGLcTxA" name="flowport3" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_x4EZcP22EeWZ6PYrGLcTxA" name="flowport4" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_8bk_AP23EeWZ6PYrGLcTxA" name="flowport5" aggregation="composite"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_8R50sP2uEeWZ6PYrGLcTxA" name="Association2" memberEnd="_8IyU8P2uEeWZ6PYrGLcTxA _8R50s_2uEeWZ6PYrGLcTxA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8R50sf2uEeWZ6PYrGLcTxA" source="org.eclipse.papyrus">
@@ -146,6 +162,8 @@ to the spacecraft  </body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_95-lwP2uEeWZ6PYrGLcTxA" name="Block5">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_HsFZAP2vEeWZ6PYrGLcTxA" name="flowport1" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_48fecP22EeWZ6PYrGLcTxA" name="flowport2" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_bdz9cP23EeWZ6PYrGLcTxA" name="flowport3" aggregation="composite"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_95-lwv2uEeWZ6PYrGLcTxA" name="Association3" memberEnd="_9rNxAP2uEeWZ6PYrGLcTxA _95-lxf2uEeWZ6PYrGLcTxA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_95-lw_2uEeWZ6PYrGLcTxA" source="org.eclipse.papyrus">
@@ -154,6 +172,18 @@ to the spacecraft  </body>
         <ownedEnd xmi:type="uml:Property" xmi:id="_95-lxf2uEeWZ6PYrGLcTxA" name="ground segment" type="_-FMMsP2tEeWZ6PYrGLcTxA" association="_95-lwv2uEeWZ6PYrGLcTxA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_-kYNoP2uEeWZ6PYrGLcTxA" name="Actor1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GI7VcP21EeWZ6PYrGLcTxA" name="Block6">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_MyaK4P21EeWZ6PYrGLcTxA" name="flowport1" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="__YyMcP22EeWZ6PYrGLcTxA" name="flowport2" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_dtDcMP23EeWZ6PYrGLcTxA" name="flowport3" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_9z4OsP23EeWZ6PYrGLcTxA" name="flowport4" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_GI78gf21EeWZ6PYrGLcTxA" name="Association4" memberEnd="_F7LNUP21EeWZ6PYrGLcTxA _GI78hP21EeWZ6PYrGLcTxA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GI78gv21EeWZ6PYrGLcTxA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GI78g_21EeWZ6PYrGLcTxA" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_GI78hP21EeWZ6PYrGLcTxA" name="block3" type="_vx4CoP2uEeWZ6PYrGLcTxA" association="_GI78gf21EeWZ6PYrGLcTxA"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_4rzC4Pv8EeWFgNfF-6x_dw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4r2GMPv8EeWFgNfF-6x_dw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -247,7 +277,7 @@ to the spacecraft  </body>
   <Requirements:Requirement xmi:id="_ctc2sPzCEeWpMIpi0KVNxQ" text="The telemetry view web software shall be available in (T0+07)" id="L2B-SYS-502" base_Class="_ctcPoPzCEeWpMIpi0KVNxQ"/>
   <Requirements:Requirement xmi:id="_izyGUPzDEeWpMIpi0KVNxQ" text="The command manager web software shall be available in (T0+08)" id="L2B-SYS-503" base_Class="_izxfQPzDEeWpMIpi0KVNxQ"/>
   <Requirements:Requirement xmi:id="_67QcoPzDEeWpMIpi0KVNxQ" text="The telemetry report web software shall be available in (T0+09)" id="L2B-SYS-504" base_Class="_67POgPzDEeWpMIpi0KVNxQ"/>
-  <Requirements:Requirement xmi:id="_E2iIEPzGEeWpMIpi0KVNxQ" text="The science data process producto shall be available in (T0+12)" id="L2B-SYS-505" base_Class="_E2g58PzGEeWpMIpi0KVNxQ"/>
+  <Requirements:Requirement xmi:id="_E2iIEPzGEeWpMIpi0KVNxQ" text="The science data process products shall be available in (T0+12)" id="L2B-SYS-505" base_Class="_E2g58PzGEeWpMIpi0KVNxQ"/>
   <Requirements:Requirement xmi:id="_NKPDoPzGEeWpMIpi0KVNxQ" text="The science data publication portal and web services shall be available in (T0+13)" id="L2B-SYS-506" base_Class="_NKOckPzGEeWpMIpi0KVNxQ"/>
   <Requirements:Requirement xmi:id="_S3YMoPzGEeWpMIpi0KVNxQ" text="The general information publication portal and web services shall be available in (T0+13)" id="L2B-SYS-507" base_Class="_S3XlkPzGEeWpMIpi0KVNxQ"/>
   <Requirements:DeriveReqt xmi:id="_sAZUIPz1EeWx7Ki9vH_xfA" base_Abstraction="_r-sD8Pz1EeWx7Ki9vH_xfA"/>
@@ -271,10 +301,17 @@ to the spacecraft  </body>
   <Blocks:Block xmi:id="_8R5Nof2uEeWZ6PYrGLcTxA" base_Class="_8R5NoP2uEeWZ6PYrGLcTxA"/>
   <Blocks:Block xmi:id="_95-lwf2uEeWZ6PYrGLcTxA" base_Class="_95-lwP2uEeWZ6PYrGLcTxA"/>
   <PortAndFlows:FlowPort xmi:id="_HsFZAf2vEeWZ6PYrGLcTxA" base_Port="_HsFZAP2vEeWZ6PYrGLcTxA"/>
-  <PortAndFlows:FlowPort xmi:id="_W0lCIP2vEeWZ6PYrGLcTxA" base_Port="_W0kbEP2vEeWZ6PYrGLcTxA" direction="in"/>
-  <PortAndFlows:FlowPort xmi:id="_Y2zYkP2vEeWZ6PYrGLcTxA" base_Port="_Y2yxgP2vEeWZ6PYrGLcTxA" direction="out"/>
-  <PortAndFlows:FlowPort xmi:id="_ftQTAP2vEeWZ6PYrGLcTxA" base_Port="_ftPr8P2vEeWZ6PYrGLcTxA" direction="out"/>
-  <PortAndFlows:FlowPort xmi:id="_g-TEIP2vEeWZ6PYrGLcTxA" base_Port="_g-SdEP2vEeWZ6PYrGLcTxA" direction="in"/>
-  <PortAndFlows:FlowPort xmi:id="_PD5eoP2wEeWZ6PYrGLcTxA" base_Port="_PD43kP2wEeWZ6PYrGLcTxA"/>
-  <PortAndFlows:FlowPort xmi:id="_QUYPEf2wEeWZ6PYrGLcTxA" base_Port="_QUYPEP2wEeWZ6PYrGLcTxA"/>
+  <Blocks:Block xmi:id="_GI78gP21EeWZ6PYrGLcTxA" base_Class="_GI7VcP21EeWZ6PYrGLcTxA"/>
+  <PortAndFlows:FlowPort xmi:id="_MyaK4f21EeWZ6PYrGLcTxA" base_Port="_MyaK4P21EeWZ6PYrGLcTxA"/>
+  <PortAndFlows:FlowPort xmi:id="_whx78P22EeWZ6PYrGLcTxA" base_Port="_whxU4P22EeWZ6PYrGLcTxA"/>
+  <PortAndFlows:FlowPort xmi:id="_x4EZcf22EeWZ6PYrGLcTxA" base_Port="_x4EZcP22EeWZ6PYrGLcTxA"/>
+  <PortAndFlows:FlowPort xmi:id="_3eRM8f22EeWZ6PYrGLcTxA" base_Port="_3eRM8P22EeWZ6PYrGLcTxA"/>
+  <PortAndFlows:FlowPort xmi:id="_48fecf22EeWZ6PYrGLcTxA" base_Port="_48fecP22EeWZ6PYrGLcTxA"/>
+  <PortAndFlows:FlowPort xmi:id="__YyMcf22EeWZ6PYrGLcTxA" base_Port="__YyMcP22EeWZ6PYrGLcTxA"/>
+  <PortAndFlows:FlowPort xmi:id="_bd0kgP23EeWZ6PYrGLcTxA" base_Port="_bdz9cP23EeWZ6PYrGLcTxA" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_ci8Zgf23EeWZ6PYrGLcTxA" base_Port="_ci8ZgP23EeWZ6PYrGLcTxA" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_dtEDQP23EeWZ6PYrGLcTxA" base_Port="_dtDcMP23EeWZ6PYrGLcTxA" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_8bk_Af23EeWZ6PYrGLcTxA" base_Port="_8bk_AP23EeWZ6PYrGLcTxA"/>
+  <PortAndFlows:FlowPort xmi:id="_9GYPgf23EeWZ6PYrGLcTxA" base_Port="_9GYPgP23EeWZ6PYrGLcTxA"/>
+  <PortAndFlows:FlowPort xmi:id="_9z5c0P23EeWZ6PYrGLcTxA" base_Port="_9z4OsP23EeWZ6PYrGLcTxA"/>
 </xmi:XMI>

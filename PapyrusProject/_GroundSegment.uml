@@ -112,6 +112,11 @@ publish all data and information
         <ownedAttribute xmi:type="uml:Property" xmi:id="_vSy58P2uEeWZ6PYrGLcTxA" name="Mission Unit" type="_vx4CoP2uEeWZ6PYrGLcTxA" aggregation="composite" association="_vx4psP2uEeWZ6PYrGLcTxA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_8IyU8P2uEeWZ6PYrGLcTxA" name="Control Unit" type="_8R5NoP2uEeWZ6PYrGLcTxA" aggregation="composite" association="_8R50sP2uEeWZ6PYrGLcTxA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_9rNxAP2uEeWZ6PYrGLcTxA" name="Ground Station" type="_vx4CoP2uEeWZ6PYrGLcTxA" aggregation="composite" association="_95-lwv2uEeWZ6PYrGLcTxA"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_GSfocP52EeWH8ZFDcq738Q" name="flowport1" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_SRZ1AP53EeWH8ZFDcq738Q" name="flowport2" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_T3_YUP53EeWH8ZFDcq738Q" name="flowport3" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_ZItEAP53EeWH8ZFDcq738Q" name="flowport5" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_6h_j8P53EeWH8ZFDcq738Q" name="flowport6" aggregation="composite"/>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_ziWJ8P22EeWZ6PYrGLcTxA" name="Tlmy/Telecommand">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_ziWJ8f22EeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_whxU4P22EeWZ6PYrGLcTxA"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_ziWJ8v22EeWZ6PYrGLcTxA" partWithPort="_8IyU8P2uEeWZ6PYrGLcTxA" role="_x4EZcP22EeWZ6PYrGLcTxA"/>
@@ -128,6 +133,30 @@ publish all data and information
           <end xmi:type="uml:ConnectorEnd" xmi:id="_GyOF4P28EeWZ6PYrGLcTxA" partWithPort="_9rNxAP2uEeWZ6PYrGLcTxA" role="_8En6wP27EeWZ6PYrGLcTxA"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_GyOF4f28EeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_ci8ZgP23EeWZ6PYrGLcTxA"/>
         </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_R14MEP52EeWH8ZFDcq738Q" name="Tlmy/Telecommand">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_R14zIP52EeWH8ZFDcq738Q" role="_NqPO8P2uEeWZ6PYrGLcTxA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_R14zIf52EeWH8ZFDcq738Q" partWithPort="_9rNxAP2uEeWZ6PYrGLcTxA" role="_QQ81oP52EeWH8ZFDcq738Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_StrWwP52EeWH8ZFDcq738Q" name="Science Data/Stored Tlmy (TBC)">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Str90P52EeWH8ZFDcq738Q" role="_GSfocP52EeWH8ZFDcq738Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_Str90f52EeWH8ZFDcq738Q" partWithPort="_9rNxAP2uEeWZ6PYrGLcTxA" role="_PfKzYP52EeWH8ZFDcq738Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_dzJZ4P53EeWH8ZFDcq738Q" name="Science Products">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_dzJZ4f53EeWH8ZFDcq738Q" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_Klf5QP53EeWH8ZFDcq738Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_dzJZ4v53EeWH8ZFDcq738Q" role="_T3_YUP53EeWH8ZFDcq738Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_eb1KgP53EeWH8ZFDcq738Q" name="Adquisition/Calibration Request">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_eb1xkP53EeWH8ZFDcq738Q" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_HvxpUP53EeWH8ZFDcq738Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_eb1xkf53EeWH8ZFDcq738Q" role="_SRZ1AP53EeWH8ZFDcq738Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_fhVaAP53EeWH8ZFDcq738Q" name="General Mission Information">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_fhWBEP53EeWH8ZFDcq738Q" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_YUCs4P53EeWH8ZFDcq738Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_fhWoIP53EeWH8ZFDcq738Q" role="_ZItEAP53EeWH8ZFDcq738Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_8o8pYP53EeWH8ZFDcq738Q" name="Support Request/Response">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_8o9QcP53EeWH8ZFDcq738Q" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_5ypKoP53EeWH8ZFDcq738Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_8o9Qcf53EeWH8ZFDcq738Q" role="_6h_j8P53EeWH8ZFDcq738Q"/>
+        </ownedConnector>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_vx4CoP2uEeWZ6PYrGLcTxA" name="Ground Segment Unit">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_F7LNUP21EeWZ6PYrGLcTxA" name="Mission DB" type="_GI7VcP21EeWZ6PYrGLcTxA" aggregation="composite" association="_GI78gf21EeWZ6PYrGLcTxA"/>
@@ -137,6 +166,12 @@ publish all data and information
         <ownedAttribute xmi:type="uml:Port" xmi:id="_9GYPgP23EeWZ6PYrGLcTxA" name="flowport5" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_8En6wP27EeWZ6PYrGLcTxA" name="flowport6" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_9KIKQP27EeWZ6PYrGLcTxA" name="flowport7" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_PfKzYP52EeWH8ZFDcq738Q" name="flowport8" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_QQ81oP52EeWH8ZFDcq738Q" name="flowport9" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_HvxpUP53EeWH8ZFDcq738Q" name="flowport10" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_Klf5QP53EeWH8ZFDcq738Q" name="flowport11" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_YUCs4P53EeWH8ZFDcq738Q" name="flowport13" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_5ypKoP53EeWH8ZFDcq738Q" name="flowport14" aggregation="composite"/>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_01TmoP22EeWZ6PYrGLcTxA" name="Tlmy/Telecommand">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_01Tmof22EeWZ6PYrGLcTxA" partWithPort="_F7LNUP21EeWZ6PYrGLcTxA" role="_MyaK4P21EeWZ6PYrGLcTxA"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_01Tmov22EeWZ6PYrGLcTxA" role="_whxU4P22EeWZ6PYrGLcTxA"/>
@@ -152,6 +187,22 @@ publish all data and information
         <ownedConnector xmi:type="uml:Connector" xmi:id="_EeRDEP24EeWZ6PYrGLcTxA" name="Orbital Products Generation/Orbital product Queries">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_EeRDEf24EeWZ6PYrGLcTxA" role="_9GYPgP23EeWZ6PYrGLcTxA"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_EeRDEv24EeWZ6PYrGLcTxA" partWithPort="_F7LNUP21EeWZ6PYrGLcTxA" role="_9z4OsP23EeWZ6PYrGLcTxA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_9PjWYP53EeWH8ZFDcq738Q">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_9PjWYf53EeWH8ZFDcq738Q" partWithPort="_F7LNUP21EeWZ6PYrGLcTxA" role="_7NAP0P53EeWH8ZFDcq738Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_9Pj9cP53EeWH8ZFDcq738Q" role="_5ypKoP53EeWH8ZFDcq738Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_tnqmEP54EeWH8ZFDcq738Q" name="Connector1">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_tnqmEf54EeWH8ZFDcq738Q" role="_HvxpUP53EeWH8ZFDcq738Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_tnqmEv54EeWH8ZFDcq738Q" partWithPort="_F7LNUP21EeWZ6PYrGLcTxA" role="_OCg9QP54EeWH8ZFDcq738Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_uVPdwP54EeWH8ZFDcq738Q" name="Connector2">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_uVPdwf54EeWH8ZFDcq738Q" partWithPort="_F7LNUP21EeWZ6PYrGLcTxA" role="_IU5TIP54EeWH8ZFDcq738Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_uVPdwv54EeWH8ZFDcq738Q" role="_Klf5QP53EeWH8ZFDcq738Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_vIXj0P54EeWH8ZFDcq738Q" name="Connector3">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_vIXj0f54EeWH8ZFDcq738Q" partWithPort="_F7LNUP21EeWZ6PYrGLcTxA" role="_QBM3gP54EeWH8ZFDcq738Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_vIXj0v54EeWH8ZFDcq738Q" role="_YUCs4P53EeWH8ZFDcq738Q"/>
         </ownedConnector>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_vx4psP2uEeWZ6PYrGLcTxA" name="Association1" memberEnd="_vSy58P2uEeWZ6PYrGLcTxA _vx4ps_2uEeWZ6PYrGLcTxA">
@@ -181,12 +232,15 @@ publish all data and information
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_95-lxf2uEeWZ6PYrGLcTxA" name="ground segment" type="_-FMMsP2tEeWZ6PYrGLcTxA" association="_95-lwv2uEeWZ6PYrGLcTxA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_-kYNoP2uEeWZ6PYrGLcTxA" name="Actor1"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_GI7VcP21EeWZ6PYrGLcTxA" name="Block6">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_MyaK4P21EeWZ6PYrGLcTxA" name="flowport1" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="__YyMcP22EeWZ6PYrGLcTxA" name="flowport2" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_dtDcMP23EeWZ6PYrGLcTxA" name="flowport3" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_9z4OsP23EeWZ6PYrGLcTxA" name="flowport4" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_7NAP0P53EeWH8ZFDcq738Q" name="flowport5" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_IU5TIP54EeWH8ZFDcq738Q" name="flowport6" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_OCg9QP54EeWH8ZFDcq738Q" name="flowport7" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_QBM3gP54EeWH8ZFDcq738Q" name="flowport8" aggregation="composite"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_GI78gf21EeWZ6PYrGLcTxA" name="Association4" memberEnd="_F7LNUP21EeWZ6PYrGLcTxA _GI78hP21EeWZ6PYrGLcTxA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GI78gv21EeWZ6PYrGLcTxA" source="org.eclipse.papyrus">
@@ -423,4 +477,19 @@ publish all data and information
   <Requirements:DeriveReqt xmi:id="_rVoREP2_EeWad7IgZOVsfA" base_Abstraction="_rU1m4P2_EeWad7IgZOVsfA"/>
   <Requirements:DeriveReqt xmi:id="_v4-gcP2_EeWad7IgZOVsfA" base_Abstraction="_v4MdUP2_EeWad7IgZOVsfA"/>
   <Requirements:DeriveReqt xmi:id="_wVxxMP2_EeWad7IgZOVsfA" base_Abstraction="_wU9R0P2_EeWad7IgZOVsfA"/>
+  <PortAndFlows:FlowPort xmi:id="_GSjS0P52EeWH8ZFDcq738Q" base_Port="_GSfocP52EeWH8ZFDcq738Q" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_PfMBgP52EeWH8ZFDcq738Q" base_Port="_PfKzYP52EeWH8ZFDcq738Q" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_QQ-q0P52EeWH8ZFDcq738Q" base_Port="_QQ81oP52EeWH8ZFDcq738Q"/>
+  <PortAndFlows:FlowPort xmi:id="_Hvy3cP53EeWH8ZFDcq738Q" base_Port="_HvxpUP53EeWH8ZFDcq738Q" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_KlhucP53EeWH8ZFDcq738Q" base_Port="_Klf5QP53EeWH8ZFDcq738Q" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_SRbDIP53EeWH8ZFDcq738Q" base_Port="_SRZ1AP53EeWH8ZFDcq738Q" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_T4AmcP53EeWH8ZFDcq738Q" base_Port="_T3_YUP53EeWH8ZFDcq738Q" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_YUDT8P53EeWH8ZFDcq738Q" base_Port="_YUCs4P53EeWH8ZFDcq738Q" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_ZIuSIP53EeWH8ZFDcq738Q" base_Port="_ZItEAP53EeWH8ZFDcq738Q" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_5yqYwP53EeWH8ZFDcq738Q" base_Port="_5ypKoP53EeWH8ZFDcq738Q"/>
+  <PortAndFlows:FlowPort xmi:id="_6iAyEP53EeWH8ZFDcq738Q" base_Port="_6h_j8P53EeWH8ZFDcq738Q"/>
+  <PortAndFlows:FlowPort xmi:id="_7NBd8P53EeWH8ZFDcq738Q" base_Port="_7NAP0P53EeWH8ZFDcq738Q"/>
+  <PortAndFlows:FlowPort xmi:id="_IU56MP54EeWH8ZFDcq738Q" base_Port="_IU5TIP54EeWH8ZFDcq738Q" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_OCoSAP54EeWH8ZFDcq738Q" base_Port="_OCg9QP54EeWH8ZFDcq738Q" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_QBNekP54EeWH8ZFDcq738Q" base_Port="_QBM3gP54EeWH8ZFDcq738Q" direction="out"/>
 </xmi:XMI>

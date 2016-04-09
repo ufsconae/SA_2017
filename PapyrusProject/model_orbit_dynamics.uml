@@ -6,6 +6,21 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_dhu-EPgGEeWsD4MqqCA26g" name="MOON-CAL-MANEUVER" visibility="package"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_DS6rUPgHEeWsD4MqqCA26g" name="EARTH-SITES-CAL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_uRem8PgIEeWsD4MqqCA26g" name="ORBIT-EPHEMERIS AND TLE."/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_Xj6NQP5zEeWH8ZFDcq738Q" name="DeriveReqt1" client="_Lg7EAPgGEeWsD4MqqCA26g">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_xjvaQPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_YvOw4P5zEeWH8ZFDcq738Q" name="DeriveReqt2" client="_DS6rUPgHEeWsD4MqqCA26g">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_xjvaQPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_Zb5poP5zEeWH8ZFDcq738Q" name="DeriveReqt3" client="_dhu-EPgGEeWsD4MqqCA26g">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_xjvaQPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_aFagsP5zEeWH8ZFDcq738Q" name="DeriveReqt4" client="_a0MWkPgCEeWsD4MqqCA26g">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_blRw8P5zEeWH8ZFDcq738Q" name="DeriveReqt5" client="_uRem8PgIEeWsD4MqqCA26g">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dqaYgPEtEeWOSpgalrXMqg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dqc0wPEtEeWOSpgalrXMqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -84,4 +99,9 @@
   <Requirements:Requirement xmi:id="_diFjYPgGEeWsD4MqqCA26g" text="Control Unit shall provide Moon Calibration's maneuvers schedule" id="L2B-SYS-774" base_Class="_dhu-EPgGEeWsD4MqqCA26g"/>
   <Requirements:Requirement xmi:id="_DTUT8PgHEeWsD4MqqCA26g" text="Control Unit shall provide Terrestrial's maneuver schedule" id="L2B-SYS-773" base_Class="_DS6rUPgHEeWsD4MqqCA26g"/>
   <Requirements:Requirement xmi:id="_uSALYPgIEeWsD4MqqCA26g" text="Control Unit shall provide Orbit Ephemeris and TLE.&#xA;&#xA;" id="L2B-SYS-779" base_Class="_uRem8PgIEeWsD4MqqCA26g"/>
+  <Requirements:DeriveReqt xmi:id="_Xl040P5zEeWH8ZFDcq738Q" base_Abstraction="_Xj6NQP5zEeWH8ZFDcq738Q"/>
+  <Requirements:DeriveReqt xmi:id="_YxD84P5zEeWH8ZFDcq738Q" base_Abstraction="_YvOw4P5zEeWH8ZFDcq738Q"/>
+  <Requirements:DeriveReqt xmi:id="_ZdxR4P5zEeWH8ZFDcq738Q" base_Abstraction="_Zb5poP5zEeWH8ZFDcq738Q"/>
+  <Requirements:DeriveReqt xmi:id="_aHsYoP5zEeWH8ZFDcq738Q" base_Abstraction="_aFagsP5zEeWH8ZFDcq738Q"/>
+  <Requirements:DeriveReqt xmi:id="_bnCrgP5zEeWH8ZFDcq738Q" base_Abstraction="_blRw8P5zEeWH8ZFDcq738Q"/>
 </xmi:XMI>

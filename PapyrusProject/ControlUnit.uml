@@ -14,6 +14,33 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_nwYfYPgyEeWISYGibq9i4A" name="L2B-SYS-757"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_ypsNAP2dEeWad7IgZOVsfA" name="L2B-SYS-758"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_MzWh4P28EeWad7IgZOVsfA" name="L2B-SYS-759" visibility="package"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Lb4-wP90EeWdU9Mpd1PczA" name="DeriveReqt1" client="_4-Mf8PgWEeWrWMXdyrR5uQ">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_MEfP0P90EeWdU9Mpd1PczA" name="DeriveReqt2" client="_YY_ykPgaEeWrWMXdyrR5uQ">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_MfiNEP90EeWdU9Mpd1PczA" name="DeriveReqt3" client="_f2hZcPgtEeWISYGibq9i4A">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_M46WYP90EeWdU9Mpd1PczA" name="DeriveReqt4" client="_MzWh4P28EeWad7IgZOVsfA">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_NUzBIP90EeWdU9Mpd1PczA" name="DeriveReqt5" client="_ypsNAP2dEeWad7IgZOVsfA">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_NxgLQP90EeWdU9Mpd1PczA" name="DeriveReqt6" client="_nwYfYPgyEeWISYGibq9i4A">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_OMRbsP90EeWdU9Mpd1PczA" name="DeriveReqt7" client="_vs5MUPgZEeWrWMXdyrR5uQ">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_SO0EEP90EeWdU9Mpd1PczA" name="DeriveReqt8" client="_q1x-UPgXEeWrWMXdyrR5uQ">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_St_TYP90EeWdU9Mpd1PczA" name="DeriveReqt9" client="_cogzEPgyEeWISYGibq9i4A">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_xjvaQPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_L7U7gPgbEeWrWMXdyrR5uQ" name="DiagramBlockControlUnit"/>
     <packagedElement xmi:type="uml:Model" xmi:id="_p2IAsPguEeWISYGibq9i4A" name="UseCaseControlUnit">
@@ -97,4 +124,13 @@
   <Requirements:Requirement xmi:id="_nwZtgPgyEeWISYGibq9i4A" text="&#xA;The Control Unit shall generate a final plan based on orbital past events, state of health, Mission Unit acquisitions and maintenance operations" id="L2B-SYS-757" base_Class="_nwYfYPgyEeWISYGibq9i4A"/>
   <Requirements:Requirement xmi:id="_ytiLMP2dEeWad7IgZOVsfA" text="Control Unit shall prepare a pass plan" id="L2B-SYS-758" base_Class="_ypsNAP2dEeWad7IgZOVsfA"/>
   <Requirements:Requirement xmi:id="_MzYXEP28EeWad7IgZOVsfA" text="The Control Unit shall make contingency plan in case of telemetry variables out off nominal range." id="L2B-SYS-759" base_Class="_MzWh4P28EeWad7IgZOVsfA"/>
+  <Requirements:DeriveReqt xmi:id="_LeK2sP90EeWdU9Mpd1PczA" base_Abstraction="_Lb4-wP90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_MG2nUP90EeWdU9Mpd1PczA" base_Abstraction="_MEfP0P90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_MhvzkP90EeWdU9Mpd1PczA" base_Abstraction="_MfiNEP90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_M7Rt4P90EeWdU9Mpd1PczA" base_Abstraction="_M46WYP90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_NXM04P90EeWdU9Mpd1PczA" base_Abstraction="_NUzBIP90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_Nz3iwP90EeWdU9Mpd1PczA" base_Abstraction="_NxgLQP90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_OO0ZYP90EeWdU9Mpd1PczA" base_Abstraction="_OMRbsP90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_SRUlgP90EeWdU9Mpd1PczA" base_Abstraction="_SO0EEP90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_SwkGQP90EeWdU9Mpd1PczA" base_Abstraction="_St_TYP90EeWdU9Mpd1PczA"/>
 </xmi:XMI>

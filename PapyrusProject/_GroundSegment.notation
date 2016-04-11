@@ -799,7 +799,13 @@
         <children xmi:type="notation:Shape" xmi:id="_vx7tAP2uEeWZ6PYrGLcTxA" type="shape_sysml_blockproperty_as_composite">
           <children xmi:type="notation:DecorationNode" xmi:id="_vx8UEP2uEeWZ6PYrGLcTxA" type="label_uml_property_label"/>
           <children xmi:type="notation:BasicCompartment" xmi:id="_vx8UEf2uEeWZ6PYrGLcTxA" type="compartment_sysml_blockproperty_structure">
-            <children xmi:type="notation:Shape" xmi:id="_GI9KoP21EeWZ6PYrGLcTxA" type="shape_sysml_blockproperty_as_composite">
+            <children xmi:type="notation:Shape" xmi:id="_GI9KoP21EeWZ6PYrGLcTxA" type="shape_sysml_blockproperty_as_composite" fillColor="10265827">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RioWQP_yEeW0M5ET-0aZsw" source="QualifiedName">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Rio9UP_yEeW0M5ET-0aZsw" key="QualifiedNameDepth" value="3"/>
+              </eAnnotations>
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YWNi4P_yEeW0M5ET-0aZsw" source="ShadowFigure">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YWOJ8P_yEeW0M5ET-0aZsw" key="ShadowFigure_Value" value="true"/>
+              </eAnnotations>
               <children xmi:type="notation:DecorationNode" xmi:id="_GI9Kov21EeWZ6PYrGLcTxA" type="label_uml_property_label"/>
               <children xmi:type="notation:BasicCompartment" xmi:id="_GI9xsP21EeWZ6PYrGLcTxA" type="compartment_sysml_blockproperty_structure">
                 <styles xmi:type="notation:TitleStyle" xmi:id="_GI9xsf21EeWZ6PYrGLcTxA"/>
@@ -888,6 +894,7 @@
                 <element xmi:type="uml:Port" href="_GroundSegment.uml#_QBM3gP54EeWH8ZFDcq738Q"/>
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QBP60f54EeWH8ZFDcq738Q" x="173" y="90" width="20" height="20"/>
               </children>
+              <styles xmi:type="notation:BooleanValueStyle" xmi:id="_XwMEsP_yEeW0M5ET-0aZsw" name="shapeVisibility" booleanValue="true"/>
               <element xmi:type="uml:Property" href="_GroundSegment.uml#_F7LNUP21EeWZ6PYrGLcTxA"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GI9Kof21EeWZ6PYrGLcTxA" x="20" y="160" width="200" height="100"/>
             </children>

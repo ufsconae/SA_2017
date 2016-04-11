@@ -13,7 +13,15 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_cogzEPgyEeWISYGibq9i4A" name="L2B-SYS-756"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_nwYfYPgyEeWISYGibq9i4A" name="L2B-SYS-757"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_ypsNAP2dEeWad7IgZOVsfA" name="L2B-SYS-758"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_MzWh4P28EeWad7IgZOVsfA" name="L2B-SYS-759" visibility="package"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MzWh4P28EeWad7IgZOVsfA" name="L2B-SYS-759" visibility="package">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_dCUJAQAbEea5T4llK3lKBA" name="solicitarhistoricotelemetria" type="_HEEJAAAbEea5T4llK3lKBA" association="_dCS64AAbEea5T4llK3lKBA"/>
+        <nestedClassifier xmi:type="uml:Association" xmi:id="_dCS64AAbEea5T4llK3lKBA" memberEnd="_dCUJAQAbEea5T4llK3lKBA _dCUJAgAbEea5T4llK3lKBA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dCTh8AAbEea5T4llK3lKBA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dCUJAAAbEea5T4llK3lKBA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_dCUJAgAbEea5T4llK3lKBA" name="l2b-sys-759" type="_MzWh4P28EeWad7IgZOVsfA" association="_dCS64AAbEea5T4llK3lKBA"/>
+        </nestedClassifier>
+      </packagedElement>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_Lb4-wP90EeWdU9Mpd1PczA" name="DeriveReqt1" client="_4-Mf8PgWEeWrWMXdyrR5uQ">
         <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
       </packagedElement>
@@ -47,6 +55,22 @@
       <packagedElement xmi:type="uml:Package" xmi:id="_Cdv2sPgvEeWISYGibq9i4A" name="Control Unit"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_LaP3oPgvEeWISYGibq9i4A" name="Operador"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_QrFfIPgvEeWISYGibq9i4A" name=""/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_YyB1AAAaEeanufZ0Q3TMLA" name="ConsultarHistoricoTelemetria"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_baV7EAAaEeanufZ0Q3TMLA" memberEnd="_baV7EwAaEeanufZ0Q3TMLA _baV7FAAaEeanufZ0Q3TMLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_baV7EQAaEeanufZ0Q3TMLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_baV7EgAaEeanufZ0Q3TMLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_baV7EwAaEeanufZ0Q3TMLA" name="usecase1" type="_YyB1AAAaEeanufZ0Q3TMLA" association="_baV7EAAaEeanufZ0Q3TMLA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_baV7FAAaEeanufZ0Q3TMLA" name="operador" type="_LaP3oPgvEeWISYGibq9i4A" association="_baV7EAAaEeanufZ0Q3TMLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_HEEJAAAbEea5T4llK3lKBA" name="SolicitarHistoricoTelemetria"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_JJEGoAAbEea5T4llK3lKBA" memberEnd="_JJF70AAbEea5T4llK3lKBA _JJF70QAbEea5T4llK3lKBA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JJEtsAAbEea5T4llK3lKBA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JJFUwAAbEea5T4llK3lKBA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_JJF70AAbEea5T4llK3lKBA" name="solicitarhistoricotelemetria" type="_HEEJAAAbEea5T4llK3lKBA" association="_JJEGoAAbEea5T4llK3lKBA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_JJF70QAbEea5T4llK3lKBA" name="operador" type="_LaP3oPgvEeWISYGibq9i4A" association="_JJEGoAAbEea5T4llK3lKBA"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_I2JkAPf_EeWab4iQ1I7RWQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I2KyIPf_EeWab4iQ1I7RWQ" source="http://www.eclipse.org/uml2/2.0.0/UML">

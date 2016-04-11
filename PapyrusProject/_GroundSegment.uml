@@ -115,16 +115,25 @@ publish all data and information
 </body>
         </ownedComment>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_NqPO8P2uEeWZ6PYrGLcTxA" name="Tlmy/Telecommand" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_hct68P2uEeWZ6PYrGLcTxA" name="Science data customer" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_qnMGcP2uEeWZ6PYrGLcTxA" name="General Comunitu" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_vSy58P2uEeWZ6PYrGLcTxA" name="Mission Unit" type="_vx4CoP2uEeWZ6PYrGLcTxA" aggregation="composite" association="_vx4psP2uEeWZ6PYrGLcTxA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_8IyU8P2uEeWZ6PYrGLcTxA" name="Control Unit" type="_8R5NoP2uEeWZ6PYrGLcTxA" aggregation="composite" association="_8R50sP2uEeWZ6PYrGLcTxA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_9rNxAP2uEeWZ6PYrGLcTxA" name="Ground Station" type="_vx4CoP2uEeWZ6PYrGLcTxA" aggregation="composite" association="_95-lwv2uEeWZ6PYrGLcTxA"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_GSfocP52EeWH8ZFDcq738Q" name="flowport1" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_SRZ1AP53EeWH8ZFDcq738Q" name="flowport2" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_T3_YUP53EeWH8ZFDcq738Q" name="flowport3" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_ZItEAP53EeWH8ZFDcq738Q" name="flowport5" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_6h_j8P53EeWH8ZFDcq738Q" name="flowport6" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_SRZ1AP53EeWH8ZFDcq738Q" name="Science User" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_T3_YUP53EeWH8ZFDcq738Q" name="Science User_" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_ZItEAP53EeWH8ZFDcq738Q" name="Community" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_6h_j8P53EeWH8ZFDcq738Q" name="Registered Science User" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_HJmfMP_tEeW0M5ET-0aZsw" name="NORAD" aggregation="composite">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_WrvXYP_tEeW0M5ET-0aZsw" annotatedElement="_HJmfMP_tEeW0M5ET-0aZsw">
+            <body>North American Aerospace Defense Command</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_HztMIP_tEeW0M5ET-0aZsw" name="IERS" aggregation="composite">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_ZsqxwP_tEeW0M5ET-0aZsw" annotatedElement="_HztMIP_tEeW0M5ET-0aZsw">
+            <body>International Earth Rotation Service</body>
+          </ownedComment>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_JjdyMP_wEeW0M5ET-0aZsw" name="SEC" aggregation="composite"/>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_ziWJ8P22EeWZ6PYrGLcTxA" name="Tlmy/Telecommand">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_ziWJ8f22EeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_whxU4P22EeWZ6PYrGLcTxA"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_ziWJ8v22EeWZ6PYrGLcTxA" partWithPort="_8IyU8P2uEeWZ6PYrGLcTxA" role="_x4EZcP22EeWZ6PYrGLcTxA"/>
@@ -164,6 +173,18 @@ publish all data and information
         <ownedConnector xmi:type="uml:Connector" xmi:id="_8o8pYP53EeWH8ZFDcq738Q" name="Support Request/Response">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_8o9QcP53EeWH8ZFDcq738Q" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_5ypKoP53EeWH8ZFDcq738Q"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_8o9Qcf53EeWH8ZFDcq738Q" role="_6h_j8P53EeWH8ZFDcq738Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_g4A-IP_tEeW0M5ET-0aZsw" name="TLE">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_g4DaYP_tEeW0M5ET-0aZsw" role="_HJmfMP_tEeW0M5ET-0aZsw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_g4EBcP_tEeW0M5ET-0aZsw" partWithPort="_8IyU8P2uEeWZ6PYrGLcTxA" role="_DYQUgP_tEeW0M5ET-0aZsw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_hchZYP_tEeW0M5ET-0aZsw" name="Sistemas de referencias">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_hcingP_tEeW0M5ET-0aZsw" role="_HztMIP_tEeW0M5ET-0aZsw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_hcjOkP_tEeW0M5ET-0aZsw" partWithPort="_8IyU8P2uEeWZ6PYrGLcTxA" role="_ELrVgP_tEeW0M5ET-0aZsw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_MWbCAP_wEeW0M5ET-0aZsw" name="Space Environment Information">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_MWcQIP_wEeW0M5ET-0aZsw" role="_JjdyMP_wEeW0M5ET-0aZsw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_MWcQIf_wEeW0M5ET-0aZsw" partWithPort="_8IyU8P2uEeWZ6PYrGLcTxA" role="_KQsroP_wEeW0M5ET-0aZsw"/>
         </ownedConnector>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_vx4CoP2uEeWZ6PYrGLcTxA" name="Ground Segment Unit">
@@ -222,6 +243,9 @@ publish all data and information
       <packagedElement xmi:type="uml:Class" xmi:id="_8R5NoP2uEeWZ6PYrGLcTxA" name="Block4">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_x4EZcP22EeWZ6PYrGLcTxA" name="flowport4" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_8bk_AP23EeWZ6PYrGLcTxA" name="flowport5" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_DYQUgP_tEeW0M5ET-0aZsw" name="NORAD" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_ELrVgP_tEeW0M5ET-0aZsw" name="flowport7" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_KQsroP_wEeW0M5ET-0aZsw" name="flowport8" aggregation="composite"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_8R50sP2uEeWZ6PYrGLcTxA" name="Association2" memberEnd="_8IyU8P2uEeWZ6PYrGLcTxA _8R50s_2uEeWZ6PYrGLcTxA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8R50sf2uEeWZ6PYrGLcTxA" source="org.eclipse.papyrus">
@@ -440,8 +464,6 @@ publish all data and information
   <Blocks:Block xmi:id="_nPp_Yf2tEeWZ6PYrGLcTxA" base_Class="_nPp_YP2tEeWZ6PYrGLcTxA"/>
   <Blocks:Block xmi:id="_-FMMsf2tEeWZ6PYrGLcTxA" base_Class="_-FMMsP2tEeWZ6PYrGLcTxA"/>
   <PortAndFlows:FlowPort xmi:id="_NqP2AP2uEeWZ6PYrGLcTxA" base_Port="_NqPO8P2uEeWZ6PYrGLcTxA"/>
-  <PortAndFlows:FlowPort xmi:id="_hcuiAP2uEeWZ6PYrGLcTxA" base_Port="_hct68P2uEeWZ6PYrGLcTxA"/>
-  <PortAndFlows:FlowPort xmi:id="_qnNUkP2uEeWZ6PYrGLcTxA" base_Port="_qnMGcP2uEeWZ6PYrGLcTxA"/>
   <Blocks:Block xmi:id="_vx4Cof2uEeWZ6PYrGLcTxA" base_Class="_vx4CoP2uEeWZ6PYrGLcTxA"/>
   <Blocks:Block xmi:id="_8R5Nof2uEeWZ6PYrGLcTxA" base_Class="_8R5NoP2uEeWZ6PYrGLcTxA"/>
   <Blocks:Block xmi:id="_95-lwf2uEeWZ6PYrGLcTxA" base_Class="_95-lwP2uEeWZ6PYrGLcTxA"/>
@@ -508,4 +530,10 @@ publish all data and information
   <Requirements:DeriveReqt xmi:id="_zpMJIP90EeWdU9Mpd1PczA" base_Abstraction="_znuwkP90EeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_0BZNwP90EeWdU9Mpd1PczA" base_Abstraction="_z_yEMP90EeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_0a2PkP90EeWdU9Mpd1PczA" base_Abstraction="_0ZTXcP90EeWdU9Mpd1PczA"/>
+  <PortAndFlows:FlowPort xmi:id="_DYtngP_tEeW0M5ET-0aZsw" base_Port="_DYQUgP_tEeW0M5ET-0aZsw" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_ELr8kP_tEeW0M5ET-0aZsw" base_Port="_ELrVgP_tEeW0M5ET-0aZsw" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_HJoUYP_tEeW0M5ET-0aZsw" base_Port="_HJmfMP_tEeW0M5ET-0aZsw" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_HztzMP_tEeW0M5ET-0aZsw" base_Port="_HztMIP_tEeW0M5ET-0aZsw" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_JjfAUP_wEeW0M5ET-0aZsw" base_Port="_JjdyMP_wEeW0M5ET-0aZsw" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_KQtSsP_wEeW0M5ET-0aZsw" base_Port="_KQsroP_wEeW0M5ET-0aZsw" direction="in"/>
 </xmi:XMI>

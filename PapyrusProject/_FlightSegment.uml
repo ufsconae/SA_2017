@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows">
   <uml:Model xmi:id="_IPVlwPEnEeWlWYkLg4cEXg" name="RootElement">
     <packagedElement xmi:type="uml:Model" xmi:id="_dDvQMPT1EeW6gsroH5vU0g" name="MMP">
-      <packagedElement xmi:type="uml:Class" xmi:id="_E9nZsAJnEeaJW-cSZfJk0g" name="MMP"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_E9nZsAJnEeaJW-cSZfJk0g" name="MMP">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_K4ts4AJsEeaJW-cSZfJk0g" name="flowport1" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_ONEZkAJsEeaJW-cSZfJk0g" name="flowport2" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_3k8EMAJtEeaJW-cSZfJk0g" name="flowport3" aggregation="composite"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_0dk_0AGrEeajHqwUCOgvUA" name="Requirements"/>
     <packagedElement xmi:type="uml:Model" xmi:id="_dhCBwAI-EeagKebOtQfZOg" name="Payload">
-      <packagedElement xmi:type="uml:Class" xmi:id="_K81KIAJnEeaJW-cSZfJk0g" name="Payload"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_K81KIAJnEeaJW-cSZfJk0g" name="Payload">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_U_AAYAJsEeaJW-cSZfJk0g" name="flowport1" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_WyIK4AJsEeaJW-cSZfJk0g" name="flowport2" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_X9-S8AJsEeaJW-cSZfJk0g" name="flowport3" aggregation="composite"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_JSTlMAJrEeaJW-cSZfJk0g" name="Architecture_FS">
       <packagedElement xmi:type="uml:Class" xmi:id="_LWXusAJrEeaJW-cSZfJk0g" name="FS">
@@ -96,4 +104,10 @@
   <Blocks:Block xmi:id="_E9oAwAJnEeaJW-cSZfJk0g" base_Class="_E9nZsAJnEeaJW-cSZfJk0g"/>
   <Blocks:Block xmi:id="_K82_UAJnEeaJW-cSZfJk0g" base_Class="_K81KIAJnEeaJW-cSZfJk0g"/>
   <Blocks:Block xmi:id="_LWYVwAJrEeaJW-cSZfJk0g" base_Class="_LWXusAJrEeaJW-cSZfJk0g"/>
+  <PortAndFlows:FlowPort xmi:id="_K47IQAJsEeaJW-cSZfJk0g" base_Port="_K4ts4AJsEeaJW-cSZfJk0g"/>
+  <PortAndFlows:FlowPort xmi:id="_ONFAoAJsEeaJW-cSZfJk0g" base_Port="_ONEZkAJsEeaJW-cSZfJk0g" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_U_AncAJsEeaJW-cSZfJk0g" base_Port="_U_AAYAJsEeaJW-cSZfJk0g" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_WyIx8AJsEeaJW-cSZfJk0g" base_Port="_WyIK4AJsEeaJW-cSZfJk0g"/>
+  <PortAndFlows:FlowPort xmi:id="_X9_hEAJsEeaJW-cSZfJk0g" base_Port="_X9-S8AJsEeaJW-cSZfJk0g" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_3k8EMQJtEeaJW-cSZfJk0g" base_Port="_3k8EMAJtEeaJW-cSZfJk0g"/>
 </xmi:XMI>

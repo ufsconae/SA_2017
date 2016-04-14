@@ -35,24 +35,24 @@
     <packagedElement xmi:type="uml:Model" xmi:id="_39HNQAJlEeaJW-cSZfJk0g" name="UseCases"/>
     <packagedElement xmi:type="uml:Model" xmi:id="_4obbIAJlEeaJW-cSZfJk0g" name="ArchitectureDiagram">
       <packagedElement xmi:type="uml:Class" xmi:id="_K1QX8AJmEeaJW-cSZfJk0g" name="SA2017">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_xBCPIAJpEeaJW-cSZfJk0g" name="reference3" association="_xBDdQAJpEeaJW-cSZfJk0g">
-          <type xmi:type="uml:Class" href="_GroundSegment.uml#_PfQzsP2qEeWZ6PYrGLcTxA"/>
-        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_S2eqIAJrEeaJW-cSZfJk0g" name="reference4" association="_S2gfUAJrEeaJW-cSZfJk0g">
           <type xmi:type="uml:Class" href="_FlightSegment.uml#_LWXusAJrEeaJW-cSZfJk0g"/>
         </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_xBDdQAJpEeaJW-cSZfJk0g" name="Association3" memberEnd="_xBCPIAJpEeaJW-cSZfJk0g _xBDdQwJpEeaJW-cSZfJk0g">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xBDdQQJpEeaJW-cSZfJk0g" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xBDdQgJpEeaJW-cSZfJk0g" key="nature" value="SysML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_xBDdQwJpEeaJW-cSZfJk0g" name="sa2017" type="_K1QX8AJmEeaJW-cSZfJk0g" association="_xBDdQAJpEeaJW-cSZfJk0g"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_8JpJAAJuEeaJW-cSZfJk0g" name="reference5" association="_8JpwEAJuEeaJW-cSZfJk0g">
+          <type xmi:type="uml:Class" href="_GroundSegment.uml#_PfQzsP2qEeWZ6PYrGLcTxA"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_S2gfUAJrEeaJW-cSZfJk0g" name="Association4" memberEnd="_S2eqIAJrEeaJW-cSZfJk0g _S2gfUwJrEeaJW-cSZfJk0g">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S2gfUQJrEeaJW-cSZfJk0g" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S2gfUgJrEeaJW-cSZfJk0g" key="nature" value="SysML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_S2gfUwJrEeaJW-cSZfJk0g" name="sa2017" type="_K1QX8AJmEeaJW-cSZfJk0g" association="_S2gfUAJrEeaJW-cSZfJk0g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_8JpwEAJuEeaJW-cSZfJk0g" name="Association5" memberEnd="_8JpJAAJuEeaJW-cSZfJk0g _8JpwEwJuEeaJW-cSZfJk0g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8JpwEQJuEeaJW-cSZfJk0g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8JpwEgJuEeaJW-cSZfJk0g" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_8JpwEwJuEeaJW-cSZfJk0g" name="sa2017" type="_K1QX8AJmEeaJW-cSZfJk0g" association="_8JpwEAJuEeaJW-cSZfJk0g"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1aQOwAJAEeagKebOtQfZOg">

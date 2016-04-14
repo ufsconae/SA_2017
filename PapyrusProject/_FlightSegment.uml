@@ -8,6 +8,24 @@
     <packagedElement xmi:type="uml:Model" xmi:id="_dhCBwAI-EeagKebOtQfZOg" name="Payload">
       <packagedElement xmi:type="uml:Class" xmi:id="_K81KIAJnEeaJW-cSZfJk0g" name="Payload"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_JSTlMAJrEeaJW-cSZfJk0g" name="Architecture_FS">
+      <packagedElement xmi:type="uml:Class" xmi:id="_LWXusAJrEeaJW-cSZfJk0g" name="FS">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_WiHOYAJrEeaJW-cSZfJk0g" name="reference1" type="_K81KIAJnEeaJW-cSZfJk0g" association="_WiHOYQJrEeaJW-cSZfJk0g"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XxRJIAJrEeaJW-cSZfJk0g" name="reference2" type="_E9nZsAJnEeaJW-cSZfJk0g" association="_XxRJIQJrEeaJW-cSZfJk0g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_WiHOYQJrEeaJW-cSZfJk0g" name="Association1" memberEnd="_WiHOYAJrEeaJW-cSZfJk0g _WiHOZAJrEeaJW-cSZfJk0g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WiHOYgJrEeaJW-cSZfJk0g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WiHOYwJrEeaJW-cSZfJk0g" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_WiHOZAJrEeaJW-cSZfJk0g" name="fs" type="_LWXusAJrEeaJW-cSZfJk0g" association="_WiHOYQJrEeaJW-cSZfJk0g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XxRJIQJrEeaJW-cSZfJk0g" name="Association2" memberEnd="_XxRJIAJrEeaJW-cSZfJk0g _XxRJJAJrEeaJW-cSZfJk0g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XxRJIgJrEeaJW-cSZfJk0g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XxRJIwJrEeaJW-cSZfJk0g" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_XxRJJAJrEeaJW-cSZfJk0g" name="fs" type="_LWXusAJrEeaJW-cSZfJk0g" association="_XxRJIQJrEeaJW-cSZfJk0g"/>
+      </packagedElement>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ISXEkPEnEeWlWYkLg4cEXg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ISYSsPEnEeWlWYkLg4cEXg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -77,4 +95,5 @@
   </uml:Model>
   <Blocks:Block xmi:id="_E9oAwAJnEeaJW-cSZfJk0g" base_Class="_E9nZsAJnEeaJW-cSZfJk0g"/>
   <Blocks:Block xmi:id="_K82_UAJnEeaJW-cSZfJk0g" base_Class="_K81KIAJnEeaJW-cSZfJk0g"/>
+  <Blocks:Block xmi:id="_LWYVwAJrEeaJW-cSZfJk0g" base_Class="_LWXusAJrEeaJW-cSZfJk0g"/>
 </xmi:XMI>

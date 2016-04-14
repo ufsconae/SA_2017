@@ -2,8 +2,6 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
   <uml:Model xmi:id="_1XwUYAJAEeagKebOtQfZOg" name="RootElement">
     <packagedElement xmi:type="uml:Model" xmi:id="_3-1EUAJAEeagKebOtQfZOg" name="L1_Requirements">
-      <packagedElement xmi:type="uml:Class" xmi:id="_uVYPEAJGEeaJW-cSZfJk0g" name="B"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_uVYPEQJGEeaJW-cSZfJk0g" name="name : String [0..1]"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_uVYPEgJGEeaJW-cSZfJk0g" name="L1_001"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_uVYPEwJGEeaJW-cSZfJk0g" name="L1_002"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_uVYPFAJGEeaJW-cSZfJk0g" name="L1_003"/>
@@ -25,14 +23,14 @@
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_kGUcQAJVEeaJW-cSZfJk0g" client="_uVYPFgJGEeaJW-cSZfJk0g" supplier="_uVYPEgJGEeaJW-cSZfJk0g"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_2D6DMAJVEeaJW-cSZfJk0g" client="_uVYPFwJGEeaJW-cSZfJk0g" supplier="_uVYPFgJGEeaJW-cSZfJk0g"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="__iUeYAJVEeaJW-cSZfJk0g" name="" client="_uVYPGAJGEeaJW-cSZfJk0g" supplier="_uVYPEgJGEeaJW-cSZfJk0g"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Al-TwAJWEeaJW-cSZfJk0g" name="" client="_uVYPGQJGEeaJW-cSZfJk0g" supplier="_3-1EUAJAEeagKebOtQfZOg"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_BghQcAJWEeaJW-cSZfJk0g" name="" client="_uVYPGgJGEeaJW-cSZfJk0g" supplier="_uVYPGAJGEeaJW-cSZfJk0g"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_YdOcwAJWEeaJW-cSZfJk0g" name="" client="_uVYPGwJGEeaJW-cSZfJk0g" supplier="_3-1EUAJAEeagKebOtQfZOg"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_bl6E8AJWEeaJW-cSZfJk0g" name="" client="_uVYPHAJGEeaJW-cSZfJk0g" supplier="_uVYPEgJGEeaJW-cSZfJk0g"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_dHw5QAJWEeaJW-cSZfJk0g" name="" client="_uVYPHQJGEeaJW-cSZfJk0g" supplier="_uVYPEgJGEeaJW-cSZfJk0g"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_fHDQcAJWEeaJW-cSZfJk0g" name="" client="_uVYPHgJGEeaJW-cSZfJk0g" supplier="_uVYPEgJGEeaJW-cSZfJk0g"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_0oR9QAJWEeaJW-cSZfJk0g" name="" client="_uVYPHwJGEeaJW-cSZfJk0g" supplier="_uVYPEgJGEeaJW-cSZfJk0g"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_1yBMgAJWEeaJW-cSZfJk0g" name="" client="_uVYPIAJGEeaJW-cSZfJk0g" supplier="_uVYPEgJGEeaJW-cSZfJk0g"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_qvn_oAJiEeaZ3u6hN4KPoA" name="" client="_uVYPGwJGEeaJW-cSZfJk0g" supplier="_uVYPEgJGEeaJW-cSZfJk0g"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_v2nuoAJiEeaZ3u6hN4KPoA" name="" client="_uVYPGQJGEeaJW-cSZfJk0g" supplier="_uVYPGAJGEeaJW-cSZfJk0g"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1aQOwAJAEeagKebOtQfZOg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1aRc4AJAEeagKebOtQfZOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -101,8 +99,6 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_neZmMLX8EduFmqQsrNB9lw"/>
     </profileApplication>
   </uml:Model>
-  <Requirements:Requirement xmi:id="_uVZdMAJGEeaJW-cSZfJk0g" text="C" id="A" base_Class="_uVYPEAJGEeaJW-cSZfJk0g"/>
-  <Requirements:Requirement xmi:id="_uVZdMQJGEeaJW-cSZfJk0g" text="text : String [1]" id="id : String [1]" base_Class="_uVYPEQJGEeaJW-cSZfJk0g"/>
   <Requirements:Requirement xmi:id="_uVZdMgJGEeaJW-cSZfJk0g" text="The SA2017 mission shall be a technology demonstration mission with the objective of space-flight qualification/validation of a 3U Cubesat and two on-board instruments: a Data Collection Receiver and a Technology Demonstration Camera." id="L1_001" base_Class="_uVYPEgJGEeaJW-cSZfJk0g"/>
   <Requirements:Requirement xmi:id="_uVZdMwJGEeaJW-cSZfJk0g" text="A 3U Cubesat shall provide all the mechanical, thermal, power and data interfaces necessary for hosting and operating the two on-board instruments; while being compliant with the criteria set forth in the document &quot;CubeSat Design Specification&quot;, Rev.13 (or a later edition, if available), issued by the CubeSat Program of the California Polytechnic State University." id="L1_002" base_Class="_uVYPEwJGEeaJW-cSZfJk0g"/>
   <Requirements:Requirement xmi:id="_uVZdNAJGEeaJW-cSZfJk0g" text="The operational lifetime of the satellite shall not be less than six months." id="L1_003" base_Class="_uVYPFAJGEeaJW-cSZfJk0g"/>
@@ -124,12 +120,12 @@
   <Requirements:DeriveReqt xmi:id="_kHUh0AJVEeaJW-cSZfJk0g" base_Abstraction="_kGUcQAJVEeaJW-cSZfJk0g"/>
   <Requirements:DeriveReqt xmi:id="_2EqRIAJVEeaJW-cSZfJk0g" base_Abstraction="_2D6DMAJVEeaJW-cSZfJk0g"/>
   <Requirements:DeriveReqt xmi:id="__jSHsAJVEeaJW-cSZfJk0g" base_Abstraction="__iUeYAJVEeaJW-cSZfJk0g"/>
-  <Requirements:DeriveReqt xmi:id="_AmssgAJWEeaJW-cSZfJk0g" base_Abstraction="_Al-TwAJWEeaJW-cSZfJk0g"/>
   <Requirements:DeriveReqt xmi:id="_Bhgu8AJWEeaJW-cSZfJk0g" base_Abstraction="_BghQcAJWEeaJW-cSZfJk0g"/>
-  <Requirements:DeriveReqt xmi:id="_YeBG8AJWEeaJW-cSZfJk0g" base_Abstraction="_YdOcwAJWEeaJW-cSZfJk0g"/>
   <Requirements:DeriveReqt xmi:id="_bm7_sAJWEeaJW-cSZfJk0g" base_Abstraction="_bl6E8AJWEeaJW-cSZfJk0g"/>
   <Requirements:DeriveReqt xmi:id="_dIhHMAJWEeaJW-cSZfJk0g" base_Abstraction="_dHw5QAJWEeaJW-cSZfJk0g"/>
   <Requirements:DeriveReqt xmi:id="_fIKqwAJWEeaJW-cSZfJk0g" base_Abstraction="_fHDQcAJWEeaJW-cSZfJk0g"/>
   <Requirements:DeriveReqt xmi:id="_0pW7UAJWEeaJW-cSZfJk0g" base_Abstraction="_0oR9QAJWEeaJW-cSZfJk0g"/>
   <Requirements:DeriveReqt xmi:id="_1y2S8AJWEeaJW-cSZfJk0g" base_Abstraction="_1yBMgAJWEeaJW-cSZfJk0g"/>
+  <Requirements:DeriveReqt xmi:id="_qxC78AJiEeaZ3u6hN4KPoA" base_Abstraction="_qvn_oAJiEeaZ3u6hN4KPoA"/>
+  <Requirements:DeriveReqt xmi:id="_v4DSAAJiEeaZ3u6hN4KPoA" base_Abstraction="_v2nuoAJiEeaZ3u6hN4KPoA"/>
 </xmi:XMI>

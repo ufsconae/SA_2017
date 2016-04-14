@@ -286,6 +286,107 @@ publish all data and information
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="__okZ4__wEeW0M5ET-0aZsw" name="ground segment" type="_-FMMsP2tEeWZ6PYrGLcTxA" association="__okZ4P_wEeW0M5ET-0aZsw"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Model" xmi:id="_ody3AAJOEeaPs89mCaPmzg" name="MissionUnit">
+        <packagedElement xmi:type="uml:Class" xmi:id="_rxDXgAJOEeaPs89mCaPmzg" name="MissionUnit">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_UHe90AJREeaPs89mCaPmzg" annotatedElement="_AqQwIAJREeaPs89mCaPmzg">
+            <body>Including Payload calibration
+and adjustment</body>
+          </ownedComment>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_x65DkAJOEeaPs89mCaPmzg" name="Data Storage" type="_rxDXgAJOEeaPs89mCaPmzg" aggregation="composite" association="_yH_EYAJOEeaPs89mCaPmzg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DJ8wkAJPEeaPs89mCaPmzg" name="User Services" type="_rxDXgAJOEeaPs89mCaPmzg" aggregation="composite" association="_DVUTEAJPEeaPs89mCaPmzg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FR7wwAJPEeaPs89mCaPmzg" name="Adquisition Planning" type="_rxDXgAJOEeaPs89mCaPmzg" aggregation="composite" association="_FmxYUAJPEeaPs89mCaPmzg"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_-VlXwAJQEeaPs89mCaPmzg" name="Register Science User_" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_AqQwIAJREeaPs89mCaPmzg" name="Register Science User" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_Jp-dIAJREeaPs89mCaPmzg" name="Science User/General Community" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_Rm5lgAJTEeaPs89mCaPmzg" name="flowport5" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_VhlSYAJTEeaPs89mCaPmzg" name="flowport6" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_YeiLsAJTEeaPs89mCaPmzg" name="flowport7" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_lFfsMAJTEeaPs89mCaPmzg" name="flowport8" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_m2HVQAJTEeaPs89mCaPmzg" name="flowport10" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ofjYQAJTEeaPs89mCaPmzg" name="flowport11" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_sXWwQAJTEeaPs89mCaPmzg" name="flowport12" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_tF0YwAJTEeaPs89mCaPmzg" name="flowport13" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_t15K0AJTEeaPs89mCaPmzg" name="flowport14" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_KCxQQAJUEeaPs89mCaPmzg" name="Processors" type="_rxDXgAJOEeaPs89mCaPmzg" aggregation="composite" association="_KM9HAQJUEeaPs89mCaPmzg"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_PDh0YAJUEeaPs89mCaPmzg" name="flowport15" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_QvKPwAJUEeaPs89mCaPmzg" name="flowport16" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_3Y110AJVEeaPs89mCaPmzg" name="flowport17" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_4GhbMAJVEeaPs89mCaPmzg" name="flowport18" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_N9tJ4AJWEeaPs89mCaPmzg" name="Control Unit" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_QOqf4AJWEeaPs89mCaPmzg" name="Ground Station" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_VOaXYAJWEeaPs89mCaPmzg" name="flowport21" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_WCQ2MAJWEeaPs89mCaPmzg" name="flowport22" aggregation="composite"/>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_CYxgYAJREeaPs89mCaPmzg" name="Adquisition Request">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_CYyHcAJREeaPs89mCaPmzg" role="_-VlXwAJQEeaPs89mCaPmzg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_CYyHcQJREeaPs89mCaPmzg" partWithPort="_DJ8wkAJPEeaPs89mCaPmzg" role="_Rm5lgAJTEeaPs89mCaPmzg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_E-wrMAJREeaPs89mCaPmzg" name="User Care">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_E-xSQAJREeaPs89mCaPmzg" role="_AqQwIAJREeaPs89mCaPmzg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_E-x5UAJREeaPs89mCaPmzg" partWithPort="_DJ8wkAJPEeaPs89mCaPmzg" role="_YeiLsAJTEeaPs89mCaPmzg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_Kzr3MAJREeaPs89mCaPmzg" name="L2 Products">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_Kzr3MQJREeaPs89mCaPmzg" role="_Jp-dIAJREeaPs89mCaPmzg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_Kzr3MgJREeaPs89mCaPmzg" partWithPort="_DJ8wkAJPEeaPs89mCaPmzg" role="_VhlSYAJTEeaPs89mCaPmzg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_12arsAJTEeaPs89mCaPmzg" name="Adquisition Request_">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_12bSwAJTEeaPs89mCaPmzg" partWithPort="_DJ8wkAJPEeaPs89mCaPmzg" role="_sXWwQAJTEeaPs89mCaPmzg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_12bSwQJTEeaPs89mCaPmzg" partWithPort="_x65DkAJOEeaPs89mCaPmzg" role="_lFfsMAJTEeaPs89mCaPmzg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_2kNl0AJTEeaPs89mCaPmzg" name="L2 Products_">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_2kNl0QJTEeaPs89mCaPmzg" partWithPort="_DJ8wkAJPEeaPs89mCaPmzg" role="_tF0YwAJTEeaPs89mCaPmzg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_2kNl0gJTEeaPs89mCaPmzg" partWithPort="_x65DkAJOEeaPs89mCaPmzg" role="_ofjYQAJTEeaPs89mCaPmzg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_3TOA4AJTEeaPs89mCaPmzg" name="User Care_">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_3TOA4QJTEeaPs89mCaPmzg" partWithPort="_DJ8wkAJPEeaPs89mCaPmzg" role="_t15K0AJTEeaPs89mCaPmzg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_3TOA4gJTEeaPs89mCaPmzg" partWithPort="_x65DkAJOEeaPs89mCaPmzg" role="_m2HVQAJTEeaPs89mCaPmzg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_UBXAUAJUEeaPs89mCaPmzg" name="Raw Data/L0/L1 Products">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_UBXAUQJUEeaPs89mCaPmzg" partWithPort="_x65DkAJOEeaPs89mCaPmzg" role="_PDh0YAJUEeaPs89mCaPmzg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_UBXAUgJUEeaPs89mCaPmzg" partWithPort="_KCxQQAJUEeaPs89mCaPmzg" role="_QvKPwAJUEeaPs89mCaPmzg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_6dPa8AJVEeaPs89mCaPmzg" name="Adquisition/Calibration request">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_6dPa8QJVEeaPs89mCaPmzg" partWithPort="_FR7wwAJPEeaPs89mCaPmzg" role="_3Y110AJVEeaPs89mCaPmzg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_6dPa8gJVEeaPs89mCaPmzg" partWithPort="_x65DkAJOEeaPs89mCaPmzg" role="_4GhbMAJVEeaPs89mCaPmzg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_f8uUMAJWEeaPs89mCaPmzg" name="Tlmy/Telecommand/Science Data">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_f8u7QAJWEeaPs89mCaPmzg" role="_QOqf4AJWEeaPs89mCaPmzg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_f8u7QQJWEeaPs89mCaPmzg" partWithPort="_x65DkAJOEeaPs89mCaPmzg" role="_VOaXYAJWEeaPs89mCaPmzg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_giJVcAJWEeaPs89mCaPmzg" name="Tlmy/Telecommand">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_giJ8gAJWEeaPs89mCaPmzg" role="_N9tJ4AJWEeaPs89mCaPmzg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_giJ8gQJWEeaPs89mCaPmzg" partWithPort="_x65DkAJOEeaPs89mCaPmzg" role="_WCQ2MAJWEeaPs89mCaPmzg"/>
+          </ownedConnector>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_yH9PMAJOEeaPs89mCaPmzg" name="Block1"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_yH_EYAJOEeaPs89mCaPmzg" name="Association1" memberEnd="_x65DkAJOEeaPs89mCaPmzg _yH_EYwJOEeaPs89mCaPmzg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yH_EYQJOEeaPs89mCaPmzg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yH_EYgJOEeaPs89mCaPmzg" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_yH_EYwJOEeaPs89mCaPmzg" name="missionunit" type="_rxDXgAJOEeaPs89mCaPmzg" association="_yH_EYAJOEeaPs89mCaPmzg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DVTE8AJPEeaPs89mCaPmzg" name="Block2"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_DVUTEAJPEeaPs89mCaPmzg" name="Association2" memberEnd="_DJ8wkAJPEeaPs89mCaPmzg _DVUTEwJPEeaPs89mCaPmzg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DVUTEQJPEeaPs89mCaPmzg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DVUTEgJPEeaPs89mCaPmzg" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_DVUTEwJPEeaPs89mCaPmzg" name="missionunit" type="_rxDXgAJOEeaPs89mCaPmzg" association="_DVUTEAJPEeaPs89mCaPmzg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FmwKMAJPEeaPs89mCaPmzg" name="Block3"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_FmxYUAJPEeaPs89mCaPmzg" name="Association3" memberEnd="_FR7wwAJPEeaPs89mCaPmzg _FmxYUwJPEeaPs89mCaPmzg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FmxYUQJPEeaPs89mCaPmzg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FmxYUgJPEeaPs89mCaPmzg" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_FmxYUwJPEeaPs89mCaPmzg" name="missionunit" type="_rxDXgAJOEeaPs89mCaPmzg" association="_FmxYUAJPEeaPs89mCaPmzg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_GSLs0AJPEeaPs89mCaPmzg" name="Block4"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_KM8f8AJUEeaPs89mCaPmzg" name="Block5"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_KM9HAQJUEeaPs89mCaPmzg" name="Association4" memberEnd="_KCxQQAJUEeaPs89mCaPmzg _KM9HBAJUEeaPs89mCaPmzg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KM9HAgJUEeaPs89mCaPmzg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KM9HAwJUEeaPs89mCaPmzg" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_KM9HBAJUEeaPs89mCaPmzg" name="missionunit" type="_rxDXgAJOEeaPs89mCaPmzg" association="_KM9HAQJUEeaPs89mCaPmzg"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_Y3iz4P25EeWFwtaYqXT6rw" name="DeriveReqt9" client="_d-QBYPwsEeWZO5s3t9VRdw">
       <supplier xmi:type="uml:Class" href="MissionUnit.uml#_NLenoP20EeWFwtaYqXT6rw"/>
@@ -544,4 +645,30 @@ publish all data and information
   <PortAndFlows:FlowPort xmi:id="_I1rpsf_xEeW0M5ET-0aZsw" base_Port="_I1rpsP_xEeW0M5ET-0aZsw" direction="in"/>
   <PortAndFlows:FlowPort xmi:id="_JXkOwP_xEeW0M5ET-0aZsw" base_Port="_JXjnsP_xEeW0M5ET-0aZsw" direction="in"/>
   <PortAndFlows:FlowPort xmi:id="_KAHcgP_xEeW0M5ET-0aZsw" base_Port="_KAGOYP_xEeW0M5ET-0aZsw" direction="in"/>
+  <Blocks:Block xmi:id="_rxD-kAJOEeaPs89mCaPmzg" base_Class="_rxDXgAJOEeaPs89mCaPmzg"/>
+  <Blocks:Block xmi:id="_yH92QAJOEeaPs89mCaPmzg" base_Class="_yH9PMAJOEeaPs89mCaPmzg"/>
+  <Blocks:Block xmi:id="_DVTsAAJPEeaPs89mCaPmzg" base_Class="_DVTE8AJPEeaPs89mCaPmzg"/>
+  <Blocks:Block xmi:id="_FmwxQAJPEeaPs89mCaPmzg" base_Class="_FmwKMAJPEeaPs89mCaPmzg"/>
+  <Blocks:Block xmi:id="_GSLs0QJPEeaPs89mCaPmzg" base_Class="_GSLs0AJPEeaPs89mCaPmzg"/>
+  <PortAndFlows:FlowPort xmi:id="_-VobEAJQEeaPs89mCaPmzg" base_Port="_-VlXwAJQEeaPs89mCaPmzg" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_AqRXMAJREeaPs89mCaPmzg" base_Port="_AqQwIAJREeaPs89mCaPmzg"/>
+  <PortAndFlows:FlowPort xmi:id="_Jp_rQAJREeaPs89mCaPmzg" base_Port="_Jp-dIAJREeaPs89mCaPmzg" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_Rm6zoAJTEeaPs89mCaPmzg" base_Port="_Rm5lgAJTEeaPs89mCaPmzg" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_VhmggAJTEeaPs89mCaPmzg" base_Port="_VhlSYAJTEeaPs89mCaPmzg" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_YekA4AJTEeaPs89mCaPmzg" base_Port="_YeiLsAJTEeaPs89mCaPmzg"/>
+  <PortAndFlows:FlowPort xmi:id="_lFgTQAJTEeaPs89mCaPmzg" base_Port="_lFfsMAJTEeaPs89mCaPmzg" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_m2HVQQJTEeaPs89mCaPmzg" base_Port="_m2HVQAJTEeaPs89mCaPmzg"/>
+  <PortAndFlows:FlowPort xmi:id="_ofkmYAJTEeaPs89mCaPmzg" base_Port="_ofjYQAJTEeaPs89mCaPmzg" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_sXYlcAJTEeaPs89mCaPmzg" base_Port="_sXWwQAJTEeaPs89mCaPmzg" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_tF0YwQJTEeaPs89mCaPmzg" base_Port="_tF0YwAJTEeaPs89mCaPmzg" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_t15x4AJTEeaPs89mCaPmzg" base_Port="_t15K0AJTEeaPs89mCaPmzg"/>
+  <Blocks:Block xmi:id="_KM9HAAJUEeaPs89mCaPmzg" base_Class="_KM8f8AJUEeaPs89mCaPmzg"/>
+  <PortAndFlows:FlowPort xmi:id="_PDibcAJUEeaPs89mCaPmzg" base_Port="_PDh0YAJUEeaPs89mCaPmzg"/>
+  <PortAndFlows:FlowPort xmi:id="_QvK20AJUEeaPs89mCaPmzg" base_Port="_QvKPwAJUEeaPs89mCaPmzg"/>
+  <PortAndFlows:FlowPort xmi:id="_3Y3D8AJVEeaPs89mCaPmzg" base_Port="_3Y110AJVEeaPs89mCaPmzg"/>
+  <PortAndFlows:FlowPort xmi:id="_4GiCQAJVEeaPs89mCaPmzg" base_Port="_4GhbMAJVEeaPs89mCaPmzg"/>
+  <PortAndFlows:FlowPort xmi:id="_N9uYAAJWEeaPs89mCaPmzg" base_Port="_N9tJ4AJWEeaPs89mCaPmzg"/>
+  <PortAndFlows:FlowPort xmi:id="_QOrG8AJWEeaPs89mCaPmzg" base_Port="_QOqf4AJWEeaPs89mCaPmzg"/>
+  <PortAndFlows:FlowPort xmi:id="_VOblgAJWEeaPs89mCaPmzg" base_Port="_VOaXYAJWEeaPs89mCaPmzg"/>
+  <PortAndFlows:FlowPort xmi:id="_WCRdQAJWEeaPs89mCaPmzg" base_Port="_WCQ2MAJWEeaPs89mCaPmzg"/>
 </xmi:XMI>

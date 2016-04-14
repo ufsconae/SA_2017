@@ -286,6 +286,42 @@ publish all data and information
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="__okZ4__wEeW0M5ET-0aZsw" name="ground segment" type="_-FMMsP2tEeWZ6PYrGLcTxA" association="__okZ4P_wEeW0M5ET-0aZsw"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Model" xmi:id="_ody3AAJOEeaPs89mCaPmzg" name="MissionUnit">
+        <packagedElement xmi:type="uml:Class" xmi:id="_rxDXgAJOEeaPs89mCaPmzg" name="MissionUnit">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_x65DkAJOEeaPs89mCaPmzg" name="Mission DB" type="_yH9PMAJOEeaPs89mCaPmzg" aggregation="composite" association="_yH_EYAJOEeaPs89mCaPmzg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DJ8wkAJPEeaPs89mCaPmzg" name="part1" type="_DVTE8AJPEeaPs89mCaPmzg" aggregation="composite" association="_DVUTEAJPEeaPs89mCaPmzg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FR7wwAJPEeaPs89mCaPmzg" name="part2" type="_FmwKMAJPEeaPs89mCaPmzg" aggregation="composite" association="_FmxYUAJPEeaPs89mCaPmzg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GHQPMAJPEeaPs89mCaPmzg" name="part3" type="_GSLs0AJPEeaPs89mCaPmzg" aggregation="composite" association="_GSMT4AJPEeaPs89mCaPmzg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_yH9PMAJOEeaPs89mCaPmzg" name="Block1"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_yH_EYAJOEeaPs89mCaPmzg" name="Association1" memberEnd="_x65DkAJOEeaPs89mCaPmzg _yH_EYwJOEeaPs89mCaPmzg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yH_EYQJOEeaPs89mCaPmzg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yH_EYgJOEeaPs89mCaPmzg" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_yH_EYwJOEeaPs89mCaPmzg" name="missionunit" type="_rxDXgAJOEeaPs89mCaPmzg" association="_yH_EYAJOEeaPs89mCaPmzg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DVTE8AJPEeaPs89mCaPmzg" name="Block2"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_DVUTEAJPEeaPs89mCaPmzg" name="Association2" memberEnd="_DJ8wkAJPEeaPs89mCaPmzg _DVUTEwJPEeaPs89mCaPmzg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DVUTEQJPEeaPs89mCaPmzg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DVUTEgJPEeaPs89mCaPmzg" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_DVUTEwJPEeaPs89mCaPmzg" name="missionunit" type="_rxDXgAJOEeaPs89mCaPmzg" association="_DVUTEAJPEeaPs89mCaPmzg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_FmwKMAJPEeaPs89mCaPmzg" name="Block3"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_FmxYUAJPEeaPs89mCaPmzg" name="Association3" memberEnd="_FR7wwAJPEeaPs89mCaPmzg _FmxYUwJPEeaPs89mCaPmzg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FmxYUQJPEeaPs89mCaPmzg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FmxYUgJPEeaPs89mCaPmzg" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_FmxYUwJPEeaPs89mCaPmzg" name="missionunit" type="_rxDXgAJOEeaPs89mCaPmzg" association="_FmxYUAJPEeaPs89mCaPmzg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_GSLs0AJPEeaPs89mCaPmzg" name="Block4"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_GSMT4AJPEeaPs89mCaPmzg" name="Association4" memberEnd="_GHQPMAJPEeaPs89mCaPmzg _GSMT4wJPEeaPs89mCaPmzg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GSMT4QJPEeaPs89mCaPmzg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GSMT4gJPEeaPs89mCaPmzg" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_GSMT4wJPEeaPs89mCaPmzg" name="missionunit" type="_rxDXgAJOEeaPs89mCaPmzg" association="_GSMT4AJPEeaPs89mCaPmzg"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_Y3iz4P25EeWFwtaYqXT6rw" name="DeriveReqt9" client="_d-QBYPwsEeWZO5s3t9VRdw">
       <supplier xmi:type="uml:Class" href="MissionUnit.uml#_NLenoP20EeWFwtaYqXT6rw"/>
@@ -548,4 +584,9 @@ publish all data and information
   <PortAndFlows:FlowPort xmi:id="_I1rpsf_xEeW0M5ET-0aZsw" base_Port="_I1rpsP_xEeW0M5ET-0aZsw" direction="in"/>
   <PortAndFlows:FlowPort xmi:id="_JXkOwP_xEeW0M5ET-0aZsw" base_Port="_JXjnsP_xEeW0M5ET-0aZsw" direction="in"/>
   <PortAndFlows:FlowPort xmi:id="_KAHcgP_xEeW0M5ET-0aZsw" base_Port="_KAGOYP_xEeW0M5ET-0aZsw" direction="in"/>
+  <Blocks:Block xmi:id="_rxD-kAJOEeaPs89mCaPmzg" base_Class="_rxDXgAJOEeaPs89mCaPmzg"/>
+  <Blocks:Block xmi:id="_yH92QAJOEeaPs89mCaPmzg" base_Class="_yH9PMAJOEeaPs89mCaPmzg"/>
+  <Blocks:Block xmi:id="_DVTsAAJPEeaPs89mCaPmzg" base_Class="_DVTE8AJPEeaPs89mCaPmzg"/>
+  <Blocks:Block xmi:id="_FmwxQAJPEeaPs89mCaPmzg" base_Class="_FmwKMAJPEeaPs89mCaPmzg"/>
+  <Blocks:Block xmi:id="_GSLs0QJPEeaPs89mCaPmzg" base_Class="_GSLs0AJPEeaPs89mCaPmzg"/>
 </xmi:XMI>

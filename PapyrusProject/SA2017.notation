@@ -1210,4 +1210,38 @@
     </columnAxisProvidersHistory>
     <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_Pj-z5AJFEeaJW-cSZfJk0g" description="Provides the requirements directly owned by the context of the table" name="Requirement Axis Provider" disconnectSlave="true"/>
   </nattable:Table>
+  <notation:Diagram xmi:id="_MOElAAJmEeaJW-cSZfJk0g" type="InternalBlock" name="SA2017_Architecture" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_MOI2cAJmEeaJW-cSZfJk0g" type="shape_sysml_block_as_composite">
+      <children xmi:type="notation:DecorationNode" xmi:id="_MOJdgAJmEeaJW-cSZfJk0g" type="label_sysml_block_name"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_MOKEkAJmEeaJW-cSZfJk0g" type="compartment_sysml_structure">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_MOKEkQJmEeaJW-cSZfJk0g"/>
+      </children>
+      <element xmi:type="uml:Class" href="SA2017.uml#_K1QX8AJmEeaJW-cSZfJk0g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MOI2cQJmEeaJW-cSZfJk0g" x="113" y="94" width="422" height="265"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_MX0W4wJmEeaJW-cSZfJk0g" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_MX0W5AJmEeaJW-cSZfJk0g" showTitle="true"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_MX0W5gJmEeaJW-cSZfJk0g" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SA2017.uml#_K1QX8AJmEeaJW-cSZfJk0g"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MX0W5QJmEeaJW-cSZfJk0g" x="240" y="40"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_MOElAQJmEeaJW-cSZfJk0g"/>
+    <styles xmi:type="style:PapyrusViewStyle" xmi:id="_MOElAgJmEeaJW-cSZfJk0g">
+      <owner xmi:type="uml:Model" href="SA2017.uml#_4obbIAJlEeaJW-cSZfJk0g"/>
+    </styles>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_MRwyMAJmEeaJW-cSZfJk0g" name="diagram_compatibility_version" stringValue="1.1.0"/>
+    <element xmi:type="uml:Class" href="SA2017.uml#_K1QX8AJmEeaJW-cSZfJk0g"/>
+    <edges xmi:type="notation:Connector" xmi:id="_MX0W5wJmEeaJW-cSZfJk0g" type="StereotypeCommentLink" source="_MOI2cAJmEeaJW-cSZfJk0g" target="_MX0W4wJmEeaJW-cSZfJk0g">
+      <styles xmi:type="notation:FontStyle" xmi:id="_MX0W6AJmEeaJW-cSZfJk0g"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_MX098QJmEeaJW-cSZfJk0g" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Class" href="SA2017.uml#_K1QX8AJmEeaJW-cSZfJk0g"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_MX0W6QJmEeaJW-cSZfJk0g" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MX0W6gJmEeaJW-cSZfJk0g"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MX098AJmEeaJW-cSZfJk0g"/>
+    </edges>
+  </notation:Diagram>
 </xmi:XMI>

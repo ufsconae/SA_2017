@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
   <uml:Model xmi:id="_1XwUYAJAEeagKebOtQfZOg" name="RootElement">
     <packagedElement xmi:type="uml:Model" xmi:id="_3-1EUAJAEeagKebOtQfZOg" name="L1_Requirements">
       <packagedElement xmi:type="uml:Class" xmi:id="_uVYPEgJGEeaJW-cSZfJk0g" name="L1_001"/>
@@ -33,7 +33,9 @@
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_v2nuoAJiEeaZ3u6hN4KPoA" name="" client="_uVYPGQJGEeaJW-cSZfJk0g" supplier="_uVYPGAJGEeaJW-cSZfJk0g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_39HNQAJlEeaJW-cSZfJk0g" name="UseCases"/>
-    <packagedElement xmi:type="uml:Model" xmi:id="_4obbIAJlEeaJW-cSZfJk0g" name="ArchitectureDiagram"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_4obbIAJlEeaJW-cSZfJk0g" name="ArchitectureDiagram">
+      <packagedElement xmi:type="uml:Class" xmi:id="_K1QX8AJmEeaJW-cSZfJk0g" name="SA2017"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1aQOwAJAEeagKebOtQfZOg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1aRc4AJAEeagKebOtQfZOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -130,4 +132,5 @@
   <Requirements:DeriveReqt xmi:id="_1y2S8AJWEeaJW-cSZfJk0g" base_Abstraction="_1yBMgAJWEeaJW-cSZfJk0g"/>
   <Requirements:DeriveReqt xmi:id="_qxC78AJiEeaZ3u6hN4KPoA" base_Abstraction="_qvn_oAJiEeaZ3u6hN4KPoA"/>
   <Requirements:DeriveReqt xmi:id="_v4DSAAJiEeaZ3u6hN4KPoA" base_Abstraction="_v2nuoAJiEeaZ3u6hN4KPoA"/>
+  <Blocks:Block xmi:id="_K1Q_AAJmEeaJW-cSZfJk0g" base_Class="_K1QX8AJmEeaJW-cSZfJk0g"/>
 </xmi:XMI>

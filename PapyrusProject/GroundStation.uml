@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
   <uml:Model xmi:id="_MxvqUPz2EeWWH817x0Adtw" name="RootElement">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_Bq6rIAJtEeahyZ7v9m1gXQ" annotatedElement="_hgw_MAJpEeahyZ7v9m1gXQ">
+      <body>Este caso de uso se relaciona con el equipamiento e infraestructura necesarios para que la Estación TT&amp;C lleve a cabo sus actividades, como así también, se realciona con el posible convenio con estaciones externas para el control y monitoreo del satélite en su estapa de lanzamiento y primeras órbitas.</body>
+    </ownedComment>
     <packagedElement xmi:type="uml:Class" xmi:id="_mcX1cPz2EeWWH817x0Adtw" name="WORK-LINKS"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_ERH3oPz3EeWWH817x0Adtw" name="S-BAND-ANTENNA"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_M3Ox0Pz3EeWWH817x0Adtw" name="PERFORMANCE"/>
@@ -48,6 +51,131 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_-LjbwP2fEeWmqevIwVQGpw" name="DeriveReqt12" client="_MXrYsP2fEeWmqevIwVQGpw">
       <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_aqmYoAJpEeahyZ7v9m1gXQ" name="Estación TT&amp;C"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hgw_MAJpEeahyZ7v9m1gXQ" name="Gestionar recursos  de infraestructura y equipamiento"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ttNG4AJpEeahyZ7v9m1gXQ" name="Controlar la disponibilidad de los recursos"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_8XnF0AJpEeahyZ7v9m1gXQ" name="Controlar el nivel de éxito de las pasadas"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_BrOUgAJqEeahyZ7v9m1gXQ" name="Adquirir datos de ciencia en banda S"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_UyHs4AJqEeahyZ7v9m1gXQ" name="Adquirir telemetría almacenada en banda S"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_1glHIAJqEeahyZ7v9m1gXQ" name="Adquirir datos digitales de Cortex">
+      <include xmi:type="uml:Include" xmi:id="_B8AtEAJrEeahyZ7v9m1gXQ" addition="_6qUBEAJqEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_6qUBEAJqEeahyZ7v9m1gXQ" name="Ingresar al Cortex">
+      <include xmi:type="uml:Include" xmi:id="_Qhd6kAJrEeahyZ7v9m1gXQ" addition="_LAwEAAJrEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_8jJyAAJqEeahyZ7v9m1gXQ" name="Insertar datos en la BD centralizada"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_LAwEAAJrEeahyZ7v9m1gXQ" name="Seleccionar datos">
+      <include xmi:type="uml:Include" xmi:id="_UEOPoAJrEeahyZ7v9m1gXQ" addition="_8jJyAAJqEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_n8bwMAJrEeahyZ7v9m1gXQ" name="Adquirir telemetría UHF"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_sRr5MAJrEeahyZ7v9m1gXQ" name="Subir telecomandos UHF"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2g8igAJrEeahyZ7v9m1gXQ" memberEnd="_2g9JkgJrEeahyZ7v9m1gXQ _2g9woAJrEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2g9JkAJrEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2g9JkQJrEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2g9JkgJrEeahyZ7v9m1gXQ" name="controlar la disponibilidad de los recursos" type="_ttNG4AJpEeahyZ7v9m1gXQ" association="_2g8igAJrEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2g9woAJrEeahyZ7v9m1gXQ" name="estación tt&amp;c" type="_aqmYoAJpEeahyZ7v9m1gXQ" association="_2g8igAJrEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_50tZUAJrEeahyZ7v9m1gXQ" memberEnd="_50uAYQJrEeahyZ7v9m1gXQ _50uAYgJrEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_50tZUQJrEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_50uAYAJrEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_50uAYQJrEeahyZ7v9m1gXQ" name="gestionar recursos  de infraestructura y equipamiento" type="_hgw_MAJpEeahyZ7v9m1gXQ" association="_50tZUAJrEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_50uAYgJrEeahyZ7v9m1gXQ" name="estación tt&amp;c" type="_aqmYoAJpEeahyZ7v9m1gXQ" association="_50tZUAJrEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8DGjgAJrEeahyZ7v9m1gXQ" memberEnd="_8DHxoQJrEeahyZ7v9m1gXQ _8DIYsAJrEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8DHKkAJrEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8DHxoAJrEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_8DHxoQJrEeahyZ7v9m1gXQ" name="controlar el nivel de éxito de las pasadas" type="_8XnF0AJpEeahyZ7v9m1gXQ" association="_8DGjgAJrEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_8DIYsAJrEeahyZ7v9m1gXQ" name="estación tt&amp;c" type="_aqmYoAJpEeahyZ7v9m1gXQ" association="_8DGjgAJrEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-H668AJrEeahyZ7v9m1gXQ" memberEnd="_-H7iAgJrEeahyZ7v9m1gXQ _-H7iAwJrEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-H7iAAJrEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-H7iAQJrEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-H7iAgJrEeahyZ7v9m1gXQ" name="adquirir datos de ciencia en banda s" type="_BrOUgAJqEeahyZ7v9m1gXQ" association="_-H668AJrEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_-H7iAwJrEeahyZ7v9m1gXQ" name="estación tt&amp;c" type="_aqmYoAJpEeahyZ7v9m1gXQ" association="_-H668AJrEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_AF3OUAJsEeahyZ7v9m1gXQ" memberEnd="_AF31YQJsEeahyZ7v9m1gXQ _AF31YgJsEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AF3OUQJsEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AF31YAJsEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_AF31YQJsEeahyZ7v9m1gXQ" name="adquirir telemetría almacenada en banda s" type="_UyHs4AJqEeahyZ7v9m1gXQ" association="_AF3OUAJsEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_AF31YgJsEeahyZ7v9m1gXQ" name="estación tt&amp;c" type="_aqmYoAJpEeahyZ7v9m1gXQ" association="_AF3OUAJsEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_A5sfAAJsEeahyZ7v9m1gXQ" memberEnd="_A5ttIQJsEeahyZ7v9m1gXQ _A5ttIgJsEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A5tGEAJsEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A5ttIAJsEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_A5ttIQJsEeahyZ7v9m1gXQ" name="adquirir datos digitales de cortex" type="_1glHIAJqEeahyZ7v9m1gXQ" association="_A5sfAAJsEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_A5ttIgJsEeahyZ7v9m1gXQ" name="estación tt&amp;c" type="_aqmYoAJpEeahyZ7v9m1gXQ" association="_A5sfAAJsEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_IxjMEAJsEeahyZ7v9m1gXQ" memberEnd="_IxjzIgJsEeahyZ7v9m1gXQ _IxkaMAJsEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IxjzIAJsEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IxjzIQJsEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_IxjzIgJsEeahyZ7v9m1gXQ" name="adquirir telemetría uhf" type="_n8bwMAJrEeahyZ7v9m1gXQ" association="_IxjMEAJsEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_IxkaMAJsEeahyZ7v9m1gXQ" name="estación tt&amp;c" type="_aqmYoAJpEeahyZ7v9m1gXQ" association="_IxjMEAJsEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Jjke4AJsEeahyZ7v9m1gXQ" memberEnd="_JjlF8gJsEeahyZ7v9m1gXQ _JjlF8wJsEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JjlF8AJsEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JjlF8QJsEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_JjlF8gJsEeahyZ7v9m1gXQ" name="subir telecomandos uhf" type="_sRr5MAJrEeahyZ7v9m1gXQ" association="_Jjke4AJsEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_JjlF8wJsEeahyZ7v9m1gXQ" name="estación tt&amp;c" type="_aqmYoAJpEeahyZ7v9m1gXQ" association="_Jjke4AJsEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_dayg8AJsEeahyZ7v9m1gXQ" name="CONAE Ground Station"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_fMo5EAJsEeahyZ7v9m1gXQ" name="Estación Externa"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lOj_QAJsEeahyZ7v9m1gXQ" memberEnd="_lOkmUgJsEeahyZ7v9m1gXQ _lOkmUwJsEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lOkmUAJsEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lOkmUQJsEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_lOkmUgJsEeahyZ7v9m1gXQ" name="gestionar recursos  de infraestructura y equipamiento" type="_hgw_MAJpEeahyZ7v9m1gXQ" association="_lOj_QAJsEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_lOkmUwJsEeahyZ7v9m1gXQ" name="conae ground station" type="_dayg8AJsEeahyZ7v9m1gXQ" association="_lOj_QAJsEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m9owMAJsEeahyZ7v9m1gXQ" memberEnd="_m9pXQgJsEeahyZ7v9m1gXQ _m9p-UAJsEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m9pXQAJsEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m9pXQQJsEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_m9pXQgJsEeahyZ7v9m1gXQ" name="controlar la disponibilidad de los recursos" type="_ttNG4AJpEeahyZ7v9m1gXQ" association="_m9owMAJsEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_m9p-UAJsEeahyZ7v9m1gXQ" name="conae ground station" type="_dayg8AJsEeahyZ7v9m1gXQ" association="_m9owMAJsEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_w8bUkAJsEeahyZ7v9m1gXQ" memberEnd="_w8b7ogJsEeahyZ7v9m1gXQ _w8b7owJsEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_w8b7oAJsEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_w8b7oQJsEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_w8b7ogJsEeahyZ7v9m1gXQ" name="controlar el nivel de éxito de las pasadas" type="_8XnF0AJpEeahyZ7v9m1gXQ" association="_w8bUkAJsEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_w8b7owJsEeahyZ7v9m1gXQ" name="conae ground station" type="_dayg8AJsEeahyZ7v9m1gXQ" association="_w8bUkAJsEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_x7e90AJsEeahyZ7v9m1gXQ" memberEnd="_x7fk4AJsEeahyZ7v9m1gXQ _x7fk4QJsEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_x7e90QJsEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_x7e90gJsEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_x7fk4AJsEeahyZ7v9m1gXQ" name="adquirir datos de ciencia en banda s" type="_BrOUgAJqEeahyZ7v9m1gXQ" association="_x7e90AJsEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_x7fk4QJsEeahyZ7v9m1gXQ" name="conae ground station" type="_dayg8AJsEeahyZ7v9m1gXQ" association="_x7e90AJsEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zLGLkAJsEeahyZ7v9m1gXQ" memberEnd="_zLGyogJsEeahyZ7v9m1gXQ _zLGyowJsEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zLGyoAJsEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zLGyoQJsEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_zLGyogJsEeahyZ7v9m1gXQ" name="adquirir telemetría almacenada en banda s" type="_UyHs4AJqEeahyZ7v9m1gXQ" association="_zLGLkAJsEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_zLGyowJsEeahyZ7v9m1gXQ" name="conae ground station" type="_dayg8AJsEeahyZ7v9m1gXQ" association="_zLGLkAJsEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_1YgeUAJsEeahyZ7v9m1gXQ" memberEnd="_1YhFYgJsEeahyZ7v9m1gXQ _1YhscAJsEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1YhFYAJsEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1YhFYQJsEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_1YhFYgJsEeahyZ7v9m1gXQ" name="ingresar al cortex" type="_6qUBEAJqEeahyZ7v9m1gXQ" association="_1YgeUAJsEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_1YhscAJsEeahyZ7v9m1gXQ" name="conae ground station" type="_dayg8AJsEeahyZ7v9m1gXQ" association="_1YgeUAJsEeahyZ7v9m1gXQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_2YmCUAJsEeahyZ7v9m1gXQ" memberEnd="_2YmpYgJsEeahyZ7v9m1gXQ _2YnQcAJsEeahyZ7v9m1gXQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2YmpYAJsEeahyZ7v9m1gXQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2YmpYQJsEeahyZ7v9m1gXQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2YmpYgJsEeahyZ7v9m1gXQ" name="gestionar recursos  de infraestructura y equipamiento" type="_hgw_MAJpEeahyZ7v9m1gXQ" association="_2YmCUAJsEeahyZ7v9m1gXQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2YnQcAJsEeahyZ7v9m1gXQ" name="estación externa" type="_fMo5EAJsEeahyZ7v9m1gXQ" association="_2YmCUAJsEeahyZ7v9m1gXQ"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_M0gDYPz2EeWWH817x0Adtw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_M0gqcPz2EeWWH817x0Adtw" source="http://www.eclipse.org/uml2/2.0.0/UML">

@@ -421,15 +421,15 @@ and adjustment</body>
             <end xmi:type="uml:ConnectorEnd" xmi:id="_HRcOwAJtEeaitrP0YzxO6w" role="_QdSlMAJrEeaitrP0YzxO6w"/>
             <end xmi:type="uml:ConnectorEnd" xmi:id="_HRcOwQJtEeaitrP0YzxO6w" role="_7C45IAJqEeaitrP0YzxO6w"/>
           </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_La0e8AJtEeaitrP0YzxO6w" name="Connector9">
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_La0e8AJtEeaitrP0YzxO6w" name="TLE">
             <end xmi:type="uml:ConnectorEnd" xmi:id="_La0e8QJtEeaitrP0YzxO6w" role="_Wk-8MAJrEeaitrP0YzxO6w"/>
             <end xmi:type="uml:ConnectorEnd" xmi:id="_La0e8gJtEeaitrP0YzxO6w" role="_53qcIAJqEeaitrP0YzxO6w"/>
           </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_L_GQsAJtEeaitrP0YzxO6w" name="Connector10">
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_L_GQsAJtEeaitrP0YzxO6w" name="Earth Orientation Parameters">
             <end xmi:type="uml:ConnectorEnd" xmi:id="_L_GQsQJtEeaitrP0YzxO6w" role="_9uJJAAJrEeaitrP0YzxO6w"/>
             <end xmi:type="uml:ConnectorEnd" xmi:id="_L_G3wAJtEeaitrP0YzxO6w" role="_53qcIAJqEeaitrP0YzxO6w"/>
           </ownedConnector>
-          <ownedConnector xmi:type="uml:Connector" xmi:id="_MxG8cAJtEeaitrP0YzxO6w" name="Connector11">
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_MxG8cAJtEeaitrP0YzxO6w" name="Space Environmental Auxiliary Data">
             <end xmi:type="uml:ConnectorEnd" xmi:id="_MxG8cQJtEeaitrP0YzxO6w" role="_-Zmg0AJrEeaitrP0YzxO6w"/>
             <end xmi:type="uml:ConnectorEnd" xmi:id="_MxG8cgJtEeaitrP0YzxO6w" role="_53qcIAJqEeaitrP0YzxO6w"/>
           </ownedConnector>
@@ -456,7 +456,15 @@ and adjustment</body>
           <ownedEnd xmi:type="uml:Property" xmi:id="_7OUGBAJqEeaitrP0YzxO6w" name="controlunit" type="_zirQAAJqEeaitrP0YzxO6w" association="_7OUGAQJqEeaitrP0YzxO6w"/>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_jezn8AJjEeaPs89mCaPmzg" name="Block8"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_jezn8AJjEeaPs89mCaPmzg" name="Block8">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_japDMAJvEeaitrP0YzxO6w" name="reference1" type="_QMUG8P2qEeWZ6PYrGLcTxA" association="_jaqRUAJvEeaitrP0YzxO6w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_jaqRUAJvEeaitrP0YzxO6w" name="Association6" memberEnd="_japDMAJvEeaitrP0YzxO6w _jaqRUwJvEeaitrP0YzxO6w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jaqRUQJvEeaitrP0YzxO6w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jaqRUgJvEeaitrP0YzxO6w" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_jaqRUwJvEeaitrP0YzxO6w" name="block8" type="_jezn8AJjEeaPs89mCaPmzg" association="_jaqRUAJvEeaitrP0YzxO6w"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_Y3iz4P25EeWFwtaYqXT6rw" name="DeriveReqt9" client="_d-QBYPwsEeWZO5s3t9VRdw">
       <supplier xmi:type="uml:Class" href="MissionUnit.uml#_NLenoP20EeWFwtaYqXT6rw"/>

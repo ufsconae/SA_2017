@@ -387,6 +387,36 @@ and adjustment</body>
           <ownedEnd xmi:type="uml:Property" xmi:id="_KM9HBAJUEeaPs89mCaPmzg" name="missionunit" type="_rxDXgAJOEeaPs89mCaPmzg" association="_KM9HAQJUEeaPs89mCaPmzg"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Model" xmi:id="_Ia-qsAJiEeaPs89mCaPmzg" name="ControlUnit">
+        <packagedElement xmi:type="uml:Class" xmi:id="_M0wHUAJiEeaPs89mCaPmzg" name="ControlUnit">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Uh7OYAJiEeaPs89mCaPmzg" name="Pass Planning" type="_M0wHUAJiEeaPs89mCaPmzg" aggregation="composite" association="_UtLcIQJiEeaPs89mCaPmzg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VJzGsAJiEeaPs89mCaPmzg" name="Orbit Dynamic" type="_M0wHUAJiEeaPs89mCaPmzg" aggregation="composite" association="_VU9N0QJiEeaPs89mCaPmzg"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Vr01sAJiEeaPs89mCaPmzg" name="Operation Center" type="_M0wHUAJiEeaPs89mCaPmzg" aggregation="composite" association="_V3U7EQJiEeaPs89mCaPmzg"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_-uhXAAJiEeaPs89mCaPmzg" name="Control Unit" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UtK1EAJiEeaPs89mCaPmzg" name="Block1"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_UtLcIQJiEeaPs89mCaPmzg" name="Association1" memberEnd="_Uh7OYAJiEeaPs89mCaPmzg _UtLcJAJiEeaPs89mCaPmzg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UtLcIgJiEeaPs89mCaPmzg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UtLcIwJiEeaPs89mCaPmzg" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_UtLcJAJiEeaPs89mCaPmzg" name="controlunit" type="_M0wHUAJiEeaPs89mCaPmzg" association="_UtLcIQJiEeaPs89mCaPmzg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_VU8mwAJiEeaPs89mCaPmzg" name="Block2"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_VU9N0QJiEeaPs89mCaPmzg" name="Association2" memberEnd="_VJzGsAJiEeaPs89mCaPmzg _VU9N1AJiEeaPs89mCaPmzg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VU9N0gJiEeaPs89mCaPmzg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VU9N0wJiEeaPs89mCaPmzg" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_VU9N1AJiEeaPs89mCaPmzg" name="controlunit" type="_M0wHUAJiEeaPs89mCaPmzg" association="_VU9N0QJiEeaPs89mCaPmzg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_V3UUAAJiEeaPs89mCaPmzg" name="Block3"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_V3U7EQJiEeaPs89mCaPmzg" name="Association3" memberEnd="_Vr01sAJiEeaPs89mCaPmzg _V3U7FAJiEeaPs89mCaPmzg">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_V3U7EgJiEeaPs89mCaPmzg" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_V3U7EwJiEeaPs89mCaPmzg" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_V3U7FAJiEeaPs89mCaPmzg" name="controlunit" type="_M0wHUAJiEeaPs89mCaPmzg" association="_V3U7EQJiEeaPs89mCaPmzg"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_jezn8AJjEeaPs89mCaPmzg" name="Block8"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_Y3iz4P25EeWFwtaYqXT6rw" name="DeriveReqt9" client="_d-QBYPwsEeWZO5s3t9VRdw">
       <supplier xmi:type="uml:Class" href="MissionUnit.uml#_NLenoP20EeWFwtaYqXT6rw"/>
@@ -675,4 +705,9 @@ and adjustment</body>
   <PortAndFlows:FlowPort xmi:id="_QOrG8AJWEeaPs89mCaPmzg" base_Port="_QOqf4AJWEeaPs89mCaPmzg"/>
   <PortAndFlows:FlowPort xmi:id="_VOblgAJWEeaPs89mCaPmzg" base_Port="_VOaXYAJWEeaPs89mCaPmzg"/>
   <PortAndFlows:FlowPort xmi:id="_WCRdQAJWEeaPs89mCaPmzg" base_Port="_WCQ2MAJWEeaPs89mCaPmzg"/>
+  <Blocks:Block xmi:id="_M0wHUQJiEeaPs89mCaPmzg" base_Class="_M0wHUAJiEeaPs89mCaPmzg"/>
+  <Blocks:Block xmi:id="_UtLcIAJiEeaPs89mCaPmzg" base_Class="_UtK1EAJiEeaPs89mCaPmzg"/>
+  <Blocks:Block xmi:id="_VU9N0AJiEeaPs89mCaPmzg" base_Class="_VU8mwAJiEeaPs89mCaPmzg"/>
+  <Blocks:Block xmi:id="_V3U7EAJiEeaPs89mCaPmzg" base_Class="_V3UUAAJiEeaPs89mCaPmzg"/>
+  <Blocks:Block xmi:id="_je0PAAJjEeaPs89mCaPmzg" base_Class="_jezn8AJjEeaPs89mCaPmzg"/>
 </xmi:XMI>

@@ -49,20 +49,20 @@
     <packagedElement xmi:type="uml:Model" xmi:id="_L7U7gPgbEeWrWMXdyrR5uQ" name="DiagramBlockControlUnit"/>
     <packagedElement xmi:type="uml:Model" xmi:id="_p2IAsPguEeWISYGibq9i4A" name="UseCaseControlUnit">
       <packagedElement xmi:type="uml:Package" xmi:id="_Cdv2sPgvEeWISYGibq9i4A" name="Control Unit">
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_l1Ms0AI9EeaVFpkttV2Ddw" name="Evaluar telemetria de HK">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_l1Ms0AI9EeaVFpkttV2Ddw" name="Telemetria de HK">
           <extend xmi:type="uml:Extend" xmi:id="_B-eSYAJDEeaVFpkttV2Ddw" extendedCase="_KqJ7AAJBEeaVFpkttV2Ddw" extensionLocation="_B-fggAJDEeaVFpkttV2Ddw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_NXZrwAI-EeaVFpkttV2Ddw" name="Generar Plan Final de Pasadas">
           <include xmi:type="uml:Include" xmi:id="_Gx56QAJFEeaVFpkttV2Ddw" addition="_ol6ZkAJAEeaVFpkttV2Ddw"/>
           <include xmi:type="uml:Include" xmi:id="_Hj9CQAJFEeaVFpkttV2Ddw" addition="_yFd5sAI_EeaVFpkttV2Ddw"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_or0fMAI-EeaVFpkttV2Ddw" name="Evaluar Plan Pasada Mission Unit"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_yFd5sAI_EeaVFpkttV2Ddw" name="Datos de Orbitales"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_or0fMAI-EeaVFpkttV2Ddw" name="Plan Pasada Mission Unit"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_yFd5sAI_EeaVFpkttV2Ddw" name="Info. Orbital"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_ol6ZkAJAEeaVFpkttV2Ddw" name="Verificar recursos"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_KqJ7AAJBEeaVFpkttV2Ddw" name="Generar plan de Contingencia">
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_B-fggAJDEeaVFpkttV2Ddw" name="ExtensionPoint1"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_flCZgAJBEeaVFpkttV2Ddw" name="Proveer Plan de Operaciones"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_flCZgAJBEeaVFpkttV2Ddw" name="Plan de Operaciones"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_QrFfIPgvEeWISYGibq9i4A" name="Ing.de Vuelo"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_YyB1AAAaEeanufZ0Q3TMLA" name="ConsultarHistoricoTelemetria"/>
@@ -83,14 +83,14 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_vcnoIAI_EeaVFpkttV2Ddw" name="Ceci"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_LaP3oPgvEeWISYGibq9i4A" name="Operador"/>
-      <packagedElement xmi:type="uml:Association" xmi:id="_qadD4AJBEeaVFpkttV2Ddw" memberEnd="_qah8YAJBEeaVFpkttV2Ddw _qaijcAJBEeaVFpkttV2Ddw">
+      <packagedElement xmi:type="uml:Association" xmi:id="_qadD4AJBEeaVFpkttV2Ddw" name="evaluar" memberEnd="_qah8YAJBEeaVFpkttV2Ddw _qaijcAJBEeaVFpkttV2Ddw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qagHMAJBEeaVFpkttV2Ddw" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qaguQAJBEeaVFpkttV2Ddw" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_qah8YAJBEeaVFpkttV2Ddw" name="evaluar telemetria de hk" type="_l1Ms0AI9EeaVFpkttV2Ddw" association="_qadD4AJBEeaVFpkttV2Ddw"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_qaijcAJBEeaVFpkttV2Ddw" name="ing.de vuelo" type="_QrFfIPgvEeWISYGibq9i4A" association="_qadD4AJBEeaVFpkttV2Ddw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_EtCKYAJDEeaVFpkttV2Ddw" memberEnd="_EtCxcgJDEeaVFpkttV2Ddw _EtCxcwJDEeaVFpkttV2Ddw">
+      <packagedElement xmi:type="uml:Association" xmi:id="_EtCKYAJDEeaVFpkttV2Ddw" name="proveer" memberEnd="_EtCxcgJDEeaVFpkttV2Ddw _EtCxcwJDEeaVFpkttV2Ddw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EtCxcAJDEeaVFpkttV2Ddw" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EtCxcQJDEeaVFpkttV2Ddw" key="nature" value="UML_Nature"/>
         </eAnnotations>
@@ -104,7 +104,7 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_FjPZoAJDEeaVFpkttV2Ddw" name="datos de orbitales" type="_yFd5sAI_EeaVFpkttV2Ddw" association="_FjOykAJDEeaVFpkttV2Ddw"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_FjPZoQJDEeaVFpkttV2Ddw" name="ceci" type="_vcnoIAI_EeaVFpkttV2Ddw" association="_FjOykAJDEeaVFpkttV2Ddw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_MKbwEAJDEeaVFpkttV2Ddw" memberEnd="_MKcXIgJDEeaVFpkttV2Ddw _MKcXIwJDEeaVFpkttV2Ddw">
+      <packagedElement xmi:type="uml:Association" xmi:id="_MKbwEAJDEeaVFpkttV2Ddw" name="evaluar" memberEnd="_MKcXIgJDEeaVFpkttV2Ddw _MKcXIwJDEeaVFpkttV2Ddw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MKcXIAJDEeaVFpkttV2Ddw" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MKcXIQJDEeaVFpkttV2Ddw" key="nature" value="UML_Nature"/>
         </eAnnotations>

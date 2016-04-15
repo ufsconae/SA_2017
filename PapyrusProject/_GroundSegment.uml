@@ -48,9 +48,11 @@
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_znuwkP90EeWdU9Mpd1PczA" name="DeriveReqt6" client="_izxfQPzDEeWpMIpi0KVNxQ" supplier="_G5TpoPwtEeWZO5s3t9VRdw"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_z_yEMP90EeWdU9Mpd1PczA" name="DeriveReqt7" client="_ctcPoPzCEeWpMIpi0KVNxQ" supplier="_G5TpoPwtEeWZO5s3t9VRdw"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_0ZTXcP90EeWdU9Mpd1PczA" name="DeriveReqt8" client="_QC0MkPzBEeWpMIpi0KVNxQ" supplier="_G5TpoPwtEeWZO5s3t9VRdw"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_pZwE4AM-Eeam46Rh5krVVg" name="Requirement1"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_p0oqEAM-Eeam46Rh5krVVg" name="Requirement2"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_qXhUsAM-Eeam46Rh5krVVg" name="Requirement3"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_pZwE4AM-Eeam46Rh5krVVg" name="Maintenance"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_p0oqEAM-Eeam46Rh5krVVg" name="Product Staff"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qXhUsAM-Eeam46Rh5krVVg" name="Planning Staff"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GcfzoANFEeam46Rh5krVVg" name="Control Staff"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VK0MwANGEeam46Rh5krVVg" name="Requirement1"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_r-sD8Pz1EeWx7Ki9vH_xfA" name="DeriveReqt1" client="_G5TpoPwtEeWZO5s3t9VRdw" supplier="_ctcPoPzCEeWpMIpi0KVNxQ"/>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_tQJr0Pz1EeWx7Ki9vH_xfA" name="DeriveReqt2" client="_G5TpoPwtEeWZO5s3t9VRdw" supplier="_QC0MkPzBEeWpMIpi0KVNxQ"/>
@@ -693,7 +695,9 @@ and adjustment</body>
   <PortAndFlows:FlowPort xmi:id="_9uJwEAJrEeaitrP0YzxO6w" base_Port="_9uJJAAJrEeaitrP0YzxO6w" direction="in"/>
   <PortAndFlows:FlowPort xmi:id="_-ZnH4AJrEeaitrP0YzxO6w" base_Port="_-Zmg0AJrEeaitrP0YzxO6w" direction="in"/>
   <Blocks:Block xmi:id="_6-2-kAM3Eeam46Rh5krVVg" base_Class="_6-1wcAM3Eeam46Rh5krVVg"/>
-  <Requirements:Requirement xmi:id="_pZwr8AM-Eeam46Rh5krVVg" base_Class="_pZwE4AM-Eeam46Rh5krVVg"/>
-  <Requirements:Requirement xmi:id="_p0pRIAM-Eeam46Rh5krVVg" base_Class="_p0oqEAM-Eeam46Rh5krVVg"/>
-  <Requirements:Requirement xmi:id="_qXh7wAM-Eeam46Rh5krVVg" base_Class="_qXhUsAM-Eeam46Rh5krVVg"/>
+  <Requirements:Requirement xmi:id="_pZwr8AM-Eeam46Rh5krVVg" text="The Ground Station shall have technical staff to maintenance infraestructure tasks" id="L2B-SYS-508" base_Class="_pZwE4AM-Eeam46Rh5krVVg"/>
+  <Requirements:Requirement xmi:id="_p0pRIAM-Eeam46Rh5krVVg" text="The Ground Segment shall have technical staff for adquisition request, calibration request and user care task." id="L2B-SYS-509" base_Class="_p0oqEAM-Eeam46Rh5krVVg"/>
+  <Requirements:Requirement xmi:id="_qXh7wAM-Eeam46Rh5krVVg" text="The Ground Segment shall have technical staff for adquisition long time planning" id="L2B-SYS-510" base_Class="_qXhUsAM-Eeam46Rh5krVVg"/>
+  <Requirements:Requirement xmi:id="_GcgasANFEeam46Rh5krVVg" text="The Mission Unit shall have technical staff for adquisition long time planning" id="" base_Class="_GcfzoANFEeam46Rh5krVVg"/>
+  <Requirements:Requirement xmi:id="_VK0z0ANGEeam46Rh5krVVg" text="The Mission Unit shall define role-based access control for users." id="" base_Class="_VK0MwANGEeam46Rh5krVVg"/>
 </xmi:XMI>

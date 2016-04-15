@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks">
   <uml:Model xmi:id="_IPVlwPEnEeWlWYkLg4cEXg" name="FS_RootElement">
-    <packagedElement xmi:type="uml:Model" xmi:id="_0dk_0AGrEeajHqwUCOgvUA" name="Requirements"/>
-    <packagedElement xmi:type="uml:Model" xmi:id="_dhCBwAI-EeagKebOtQfZOg" name="Payload">
-      <packagedElement xmi:type="uml:Class" xmi:id="_K81KIAJnEeaJW-cSZfJk0g" name="Payload">
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_U_AAYAJsEeaJW-cSZfJk0g" name="flowport1" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_WyIK4AJsEeaJW-cSZfJk0g" name="flowport2" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_X9-S8AJsEeaJW-cSZfJk0g" name="flowport3" aggregation="composite"/>
-      </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_0dk_0AGrEeajHqwUCOgvUA" name="FS_L2BRequirements"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_JSTlMAJrEeaJW-cSZfJk0g" name="FS_Architecture">
+      <packagedElement xmi:type="uml:Class" xmi:id="_LWXusAJrEeaJW-cSZfJk0g" name="FS"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Model" xmi:id="_JSTlMAJrEeaJW-cSZfJk0g" name="Architecture_FS">
-      <packagedElement xmi:type="uml:Class" xmi:id="_LWXusAJrEeaJW-cSZfJk0g" name="FS">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_WiHOYAJrEeaJW-cSZfJk0g" name="reference1" type="_K81KIAJnEeaJW-cSZfJk0g" association="_WiHOYQJrEeaJW-cSZfJk0g"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_WiHOYQJrEeaJW-cSZfJk0g" name="Association1" memberEnd="_WiHOYAJrEeaJW-cSZfJk0g _WiHOZAJrEeaJW-cSZfJk0g">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WiHOYgJrEeaJW-cSZfJk0g" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WiHOYwJrEeaJW-cSZfJk0g" key="nature" value="SysML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_WiHOZAJrEeaJW-cSZfJk0g" name="fs" type="_LWXusAJrEeaJW-cSZfJk0g" association="_WiHOYQJrEeaJW-cSZfJk0g"/>
-      </packagedElement>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_f0LRkAMZEeaA6aMLnBNluA" name="FS_UseCases"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ISXEkPEnEeWlWYkLg4cEXg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ISYSsPEnEeWlWYkLg4cEXg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -87,9 +73,5 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_neZmMLX8EduFmqQsrNB9lw"/>
     </profileApplication>
   </uml:Model>
-  <Blocks:Block xmi:id="_K82_UAJnEeaJW-cSZfJk0g" base_Class="_K81KIAJnEeaJW-cSZfJk0g"/>
   <Blocks:Block xmi:id="_LWYVwAJrEeaJW-cSZfJk0g" base_Class="_LWXusAJrEeaJW-cSZfJk0g"/>
-  <PortAndFlows:FlowPort xmi:id="_U_AncAJsEeaJW-cSZfJk0g" base_Port="_U_AAYAJsEeaJW-cSZfJk0g" direction="in"/>
-  <PortAndFlows:FlowPort xmi:id="_WyIx8AJsEeaJW-cSZfJk0g" base_Port="_WyIK4AJsEeaJW-cSZfJk0g"/>
-  <PortAndFlows:FlowPort xmi:id="_X9_hEAJsEeaJW-cSZfJk0g" base_Port="_X9-S8AJsEeaJW-cSZfJk0g" direction="out"/>
 </xmi:XMI>

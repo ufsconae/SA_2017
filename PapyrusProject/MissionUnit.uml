@@ -8,7 +8,6 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_OA07QP20EeWFwtaYqXT6rw" name="CAL_VAL_PLATAFORM"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_OjI-IP20EeWFwtaYqXT6rw" name="ACCESS_PRODUCTS"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_O4b4sP20EeWFwtaYqXT6rw" name="ACCESS_OPERATIONS_DATA"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_PMzmMP20EeWFwtaYqXT6rw" name="ROLE_BASED_ACCESS"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_Pgwc8P20EeWFwtaYqXT6rw" name="PRODUCTS"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_P4FX0P20EeWFwtaYqXT6rw" name="STORAGE_RAW_DATA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_Rfid0P20EeWFwtaYqXT6rw" name="STORAGE_PRODUCTS"/>
@@ -53,9 +52,6 @@ computer science and the general community)</body>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_D_cQwP9zEeWdU9Mpd1PczA" name="DeriveReqt10" client="_Pgwc8P20EeWFwtaYqXT6rw">
         <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Ee-scP9zEeWdU9Mpd1PczA" name="DeriveReqt11" client="_PMzmMP20EeWFwtaYqXT6rw">
-        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_FdzsMP9zEeWdU9Mpd1PczA" name="DeriveReqt12" client="_O4b4sP20EeWFwtaYqXT6rw">
         <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
       </packagedElement>
@@ -68,15 +64,7 @@ computer science and the general community)</body>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_JTTXEP9zEeWdU9Mpd1PczA" name="DeriveReqt15" client="_crVn4P20EeWFwtaYqXT6rw">
         <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_EAQY4PwtEeWZO5s3t9VRdw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_nVbZUAMVEeam46Rh5krVVg" name="SCIENCE_PROCESS_PLUGINS"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_o98dAAMaEeam46Rh5krVVg" name="INFRAESTRUCTURE_TASKS">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_dES5AAMbEeam46Rh5krVVg" annotatedElement="_o98dAAMaEeam46Rh5krVVg">
-          <body>Incluye base de datos, servicios web, portales, 
-administracion de usuarios, perfiles y accesos</body>
-        </ownedComment>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_uLS2MAMbEeam46Rh5krVVg" name="SCIENCE_DATA_TASKS"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_RA9ioAMeEeam46Rh5krVVg" name="ADQUISITION_PLANNING_TASKS"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nVbZUAMVEeam46Rh5krVVg" name="SCIENCE_PROCESS"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_W1Kh8PgSEeWLKsanECnEMg" name="UseCaseDiagram"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_TztdwPf_EeWab4iQ1I7RWQ">
@@ -152,7 +140,6 @@ administracion de usuarios, perfiles y accesos</body>
   <Requirements:Requirement xmi:id="_OA07Qf20EeWFwtaYqXT6rw" text="The Mission Unit shall provide a CAL/VAL platform to allow users to download CAL/VAL data and submit CAL/VAL requests." id="L2B-SYS-723" base_Class="_OA07QP20EeWFwtaYqXT6rw"/>
   <Requirements:Requirement xmi:id="_OjI-If20EeWFwtaYqXT6rw" text="The Mission Unit shall provide a platform for user access to products." id="L2B-SYS-724" base_Class="_OjI-IP20EeWFwtaYqXT6rw"/>
   <Requirements:Requirement xmi:id="_O4cfwP20EeWFwtaYqXT6rw" text="The Mission Unit shall provide a platform for user access to telemetry, telecommands and housekepping." id="L2B-SYS-725" base_Class="_O4b4sP20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_PM0NQP20EeWFwtaYqXT6rw" text="The Mission Unit shall define role-based access control for users." id="L2B-SYS-726" base_Class="_PMzmMP20EeWFwtaYqXT6rw"/>
   <Requirements:Requirement xmi:id="_PgxEAP20EeWFwtaYqXT6rw" text="The Mission Unit shall process science data up to L1B / L2 products, according to the definitions set forth by the Committe on Earth Observation Satellites (CEOS)(TBC)." id="L2B-SYS-727" base_Class="_Pgwc8P20EeWFwtaYqXT6rw"/>
   <Requirements:Requirement xmi:id="_P4F-4P20EeWFwtaYqXT6rw" text="The Mission Unit shall store raw data." id="L2B-SYS-728" base_Class="_P4FX0P20EeWFwtaYqXT6rw"/>
   <Requirements:Requirement xmi:id="_Rfid0f20EeWFwtaYqXT6rw" text="The Mission Unit shall store products (TBC)." id="L2B-SYS-729" base_Class="_Rfid0P20EeWFwtaYqXT6rw"/>
@@ -171,13 +158,9 @@ administracion de usuarios, perfiles y accesos</body>
   <Requirements:DeriveReqt xmi:id="_C-9rMP9zEeWdU9Mpd1PczA" base_Abstraction="_C76-QP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_Dm84QP9zEeWdU9Mpd1PczA" base_Abstraction="_DjulIP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_ECT-kP9zEeWdU9Mpd1PczA" base_Abstraction="_D_cQwP9zEeWdU9Mpd1PczA"/>
-  <Requirements:DeriveReqt xmi:id="_EiWwkP9zEeWdU9Mpd1PczA" base_Abstraction="_Ee-scP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_FhU6QP9zEeWdU9Mpd1PczA" base_Abstraction="_FdzsMP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_GDFjgP9zEeWdU9Mpd1PczA" base_Abstraction="_GAErwP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_ILpLcP9zEeWdU9Mpd1PczA" base_Abstraction="_IIaRQP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_JWUO0P9zEeWdU9Mpd1PczA" base_Abstraction="_JTTXEP9zEeWdU9Mpd1PczA"/>
-  <Requirements:Requirement xmi:id="_nVd1kAMVEeam46Rh5krVVg" text="The Mission Unit shall publish plug-in mechanisms to enable the &#xA;incorporation of algorithms process science data for the external agents" id="L2B-SYS-735" base_Class="_nVbZUAMVEeam46Rh5krVVg"/>
-  <Requirements:Requirement xmi:id="_o99EEAMaEeam46Rh5krVVg" text="The Mission Unit shall have technical staff to maintenance infraestructure tasks." id="L2B-SYS-736" base_Class="_o98dAAMaEeam46Rh5krVVg"/>
-  <Requirements:Requirement xmi:id="_uLTdQAMbEeam46Rh5krVVg" text="The Mission Unit shall have technical staff for adquisition request, calibration request and user care task." id="L2B-SYS-737" base_Class="_uLS2MAMbEeam46Rh5krVVg"/>
-  <Requirements:Requirement xmi:id="_RA-JsAMeEeam46Rh5krVVg" text="The Mission Unit shall have technical staff for adquisition long time planning" id="L2B-SYS-738" base_Class="_RA9ioAMeEeam46Rh5krVVg"/>
+  <Requirements:Requirement xmi:id="_nVd1kAMVEeam46Rh5krVVg" text="The Mission Unit shall process science data by algorithms provided for SAVIAMAR science team." id="L2B-SYS-735" base_Class="_nVbZUAMVEeam46Rh5krVVg"/>
 </xmi:XMI>

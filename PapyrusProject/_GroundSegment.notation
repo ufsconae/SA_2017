@@ -791,7 +791,7 @@
     </columnAxisProvidersHistory>
     <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_X95pRfzAEeWpMIpi0KVNxQ" description="Provides the requirements directly owned by the context of the table" name="Requirement Axis Provider" disconnectSlave="true"/>
     <localRowHeaderAxisConfiguration xmi:type="nattableaxisconfiguration:LocalTableHeaderAxisConfiguration" xmi:id="_pB9xwPzBEeWpMIpi0KVNxQ" indexStyle="NUMERIC">
-      <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_pB-Y0PzBEeWpMIpi0KVNxQ" name="rowLabelWidth" intValue="253"/>
+      <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_pB-Y0PzBEeWpMIpi0KVNxQ" name="rowLabelWidth" intValue="280"/>
       <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_4qYlYPzzEeWx7Ki9vH_xfA" name="rowIndexWidth" intValue="25"/>
     </localRowHeaderAxisConfiguration>
   </nattable:Table>
@@ -1242,7 +1242,7 @@
               <layoutConstraint xmi:type="notation:Location" xmi:id="_JXk11f_xEeW0M5ET-0aZsw" x="30" y="-20"/>
             </children>
             <element xmi:type="uml:Port" href="_GroundSegment.uml#_JXjnsP_xEeW0M5ET-0aZsw"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JXk10f_xEeW0M5ET-0aZsw" x="141" y="157" width="20" height="20"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JXk10f_xEeW0M5ET-0aZsw" x="141" y="96" width="20" height="20"/>
           </children>
           <children xmi:type="notation:Shape" xmi:id="_KAKf0P_xEeW0M5ET-0aZsw" type="shape_sysml_flowport_as_affixed">
             <children xmi:type="notation:DecorationNode" xmi:id="_KALG4P_xEeW0M5ET-0aZsw" visible="false" type="affixedlabel_sysml_flowport_label">
@@ -1252,10 +1252,10 @@
               <layoutConstraint xmi:type="notation:Location" xmi:id="_KALG4__xEeW0M5ET-0aZsw" x="30" y="-20"/>
             </children>
             <element xmi:type="uml:Port" href="_GroundSegment.uml#_KAGOYP_xEeW0M5ET-0aZsw"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KAKf0f_xEeW0M5ET-0aZsw" x="141" y="247" width="20" height="20"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KAKf0f_xEeW0M5ET-0aZsw" x="141" y="171" width="20" height="20"/>
           </children>
           <element xmi:type="uml:Property" href="_GroundSegment.uml#__ViwMP_wEeW0M5ET-0aZsw"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="__pGlYf_wEeW0M5ET-0aZsw" x="1186" y="278" width="151" height="275"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="__pGlYf_wEeW0M5ET-0aZsw" x="1181" y="285" width="151" height="275"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_FM0FkP_xEeW0M5ET-0aZsw" type="StereotypeComment">
           <styles xmi:type="notation:TitleStyle" xmi:id="_FM0Fkf_xEeW0M5ET-0aZsw" showTitle="true"/>
@@ -1346,7 +1346,7 @@
           <layoutConstraint xmi:type="notation:Location" xmi:id="_NqSSRf2uEeWZ6PYrGLcTxA" x="30" y="-20"/>
         </children>
         <element xmi:type="uml:Port" href="_GroundSegment.uml#_NqPO8P2uEeWZ6PYrGLcTxA"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NqSSQf2uEeWZ6PYrGLcTxA" x="-10" y="87" width="20" height="20"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NqSSQf2uEeWZ6PYrGLcTxA" x="-10" y="113" width="20" height="20"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_GTmbsP52EeWH8ZFDcq738Q" type="shape_sysml_flowport_as_affixed">
         <children xmi:type="notation:DecorationNode" xmi:id="_GTnp0P52EeWH8ZFDcq738Q" visible="false" type="affixedlabel_sysml_flowport_label">
@@ -1356,7 +1356,7 @@
           <layoutConstraint xmi:type="notation:Location" xmi:id="_GTo38f52EeWH8ZFDcq738Q" x="30" y="-20"/>
         </children>
         <element xmi:type="uml:Port" href="_GroundSegment.uml#_GSfocP52EeWH8ZFDcq738Q"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GTmbsf52EeWH8ZFDcq738Q" x="-10" y="130" width="20" height="20"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GTmbsf52EeWH8ZFDcq738Q" x="-10" y="146" width="20" height="20"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_SSNtUP53EeWH8ZFDcq738Q" type="shape_sysml_flowport_as_affixed">
         <children xmi:type="notation:DecorationNode" xmi:id="_SSOUYP53EeWH8ZFDcq738Q" type="affixedlabel_sysml_flowport_label">
@@ -1388,7 +1388,7 @@
           <layoutConstraint xmi:type="notation:Location" xmi:id="_T5Gyof53EeWH8ZFDcq738Q" x="-52" y="27"/>
         </children>
         <element xmi:type="uml:Port" href="_GroundSegment.uml#_T3_YUP53EeWH8ZFDcq738Q"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T5GLkP53EeWH8ZFDcq738Q" x="694" y="800" width="20" height="20"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T5GLkP53EeWH8ZFDcq738Q" x="686" y="800" width="20" height="20"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_ZJ3hoP53EeWH8ZFDcq738Q" type="shape_sysml_flowport_as_affixed">
         <children xmi:type="notation:DecorationNode" xmi:id="_ZJ4IsP53EeWH8ZFDcq738Q" type="affixedlabel_sysml_flowport_label">
@@ -1404,7 +1404,7 @@
           <layoutConstraint xmi:type="notation:Location" xmi:id="_ZJ4vwf53EeWH8ZFDcq738Q" x="38" y="29"/>
         </children>
         <element xmi:type="uml:Port" href="_GroundSegment.uml#_ZItEAP53EeWH8ZFDcq738Q"/>
-        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZJ3hof53EeWH8ZFDcq738Q" x="869" y="800" width="20" height="20"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZJ3hof53EeWH8ZFDcq738Q" x="865" y="800" width="20" height="20"/>
       </children>
       <children xmi:type="notation:Shape" xmi:id="_6i6xAP53EeWH8ZFDcq738Q" type="shape_sysml_flowport_as_affixed">
         <children xmi:type="notation:DecorationNode" xmi:id="_6i7YEP53EeWH8ZFDcq738Q" type="affixedlabel_sysml_flowport_label">
@@ -2027,7 +2027,7 @@
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yykNQP_vEeW0M5ET-0aZsw" source="PapyrusCSSForceValue">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yykNQf_vEeW0M5ET-0aZsw" key="visible" value="true"/>
         </eAnnotations>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_hc83M__tEeW0M5ET-0aZsw" x="7" y="1"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_hc83M__tEeW0M5ET-0aZsw" x="74" y="-32"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_hc83NP_tEeW0M5ET-0aZsw" type="linklabel_uml_connector_source_multiplicity">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yykNQv_vEeW0M5ET-0aZsw" source="PapyrusCSSForceValue">
@@ -2160,7 +2160,7 @@
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_orqekQM4Eeam46Rh5krVVg"/>
       <element xmi:type="uml:Connector" href="_GroundSegment.uml#_orpQcAM4Eeam46Rh5krVVg"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_orqekgM4Eeam46Rh5krVVg" points="[0, 4, 113, -56]$[-10, 6, 103, -54]$[-10, 66, 103, 6]$[-57, 66, 56, 6]$[-113, 66, 0, 6]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_orqekgM4Eeam46Rh5krVVg" points="[0, 1, 113, -59]$[-10, 0, 103, -60]$[-10, 66, 103, 6]$[-57, 66, 56, 6]$[-113, 66, 0, 6]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_osx44AM4Eeam46Rh5krVVg" id="(0.0,0.36666666666666287)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_osx44QM4Eeam46Rh5krVVg" id="(1.0,0.3813131313131307)"/>
     </edges>

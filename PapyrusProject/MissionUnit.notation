@@ -1461,21 +1461,23 @@
     </styles>
     <element xmi:type="uml:Model" href="MissionUnit.uml#_W1Kh8PgSEeWLKsanECnEMg"/>
   </notation:Diagram>
-  <nattable:Table xmi:id="_tzFocP2zEeWFwtaYqXT6rw" name="MissionUnitL2BRequirementTable" currentRowAxisProvider="_tzFodf2zEeWFwtaYqXT6rw" currentColumnAxisProvider="_tzFocf2zEeWFwtaYqXT6rw">
+  <nattable:Table xmi:id="_tzFocP2zEeWFwtaYqXT6rw" description="" name="MissionUnitL2BRequirementTable" currentRowAxisProvider="_tzFodf2zEeWFwtaYqXT6rw" currentColumnAxisProvider="_tzFocf2zEeWFwtaYqXT6rw">
     <context xmi:type="uml:Model" href="MissionUnit.uml#_cWcEEPgQEeWLKsanECnEMg"/>
     <owner xmi:type="uml:Model" href="MissionUnit.uml#_cWcEEPgQEeWLKsanECnEMg"/>
     <prototype xmi:type="configuration:PapyrusSyncTable" href="platform:/plugin/org.eclipse.papyrus.infra.viewpoints.policy/builtin/default.configuration#_7wNb3txhEeOqHvRyiN87hA"/>
     <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#/"/>
     <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_tzFocf2zEeWFwtaYqXT6rw" description="Provides the columns of the tables with a default configuration" name="Requirements Feature Columns Provider">
       <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_tzFocv2zEeWFwtaYqXT6rw" element="property_of_stereotype:/SysML::Requirements::Requirement::id">
+        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_hrWhgAMMEeam46Rh5krVVg" name="axisWidth" intValue="119"/>
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
       </axis>
       <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_tzFoc_2zEeWFwtaYqXT6rw">
+        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_H43hQAMUEeam46Rh5krVVg" name="axisWidth" intValue="340"/>
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
         <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
       </axis>
       <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_tzFodP2zEeWFwtaYqXT6rw" element="property_of_stereotype:/SysML::Requirements::Requirement::text">
-        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_3Ho9AP2zEeWFwtaYqXT6rw" name="axisWidth" intValue="521"/>
+        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_3Ho9AP2zEeWFwtaYqXT6rw" name="axisWidth" intValue="838"/>
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
       </axis>
       <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_vGP0UP9yEeWdU9Mpd1PczA" element="property_of_stereotype:/SysML::Requirements::Requirement::derivedFrom">
@@ -1483,5 +1485,9 @@
       </axis>
     </columnAxisProvidersHistory>
     <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_tzFodf2zEeWFwtaYqXT6rw" description="Provides the requirements directly owned by the context of the table" name="Requirement Axis Provider" disconnectSlave="true"/>
+    <localRowHeaderAxisConfiguration xmi:type="nattableaxisconfiguration:LocalTableHeaderAxisConfiguration" xmi:id="_gvNpYAMMEeam46Rh5krVVg" indexStyle="NUMERIC">
+      <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_gvOQcAMMEeam46Rh5krVVg" name="rowIndexWidth" intValue="50"/>
+      <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_hEnRoAMMEeam46Rh5krVVg" name="rowLabelWidth" intValue="195"/>
+    </localRowHeaderAxisConfiguration>
   </nattable:Table>
 </xmi:XMI>

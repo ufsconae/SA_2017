@@ -69,6 +69,14 @@ computer science and the general community)</body>
         <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_EAQY4PwtEeWZO5s3t9VRdw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_nVbZUAMVEeam46Rh5krVVg" name="SCIENCE_PROCESS_PLUGINS"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_o98dAAMaEeam46Rh5krVVg" name="INFRAESTRUCTURE_TASKS">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_dES5AAMbEeam46Rh5krVVg" annotatedElement="_o98dAAMaEeam46Rh5krVVg">
+          <body>Incluye base de datos, servicios web, portales, 
+administracion de usuarios, perfiles y accesos</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_uLS2MAMbEeam46Rh5krVVg" name="SCIENCE_DATA_TASKS"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_RA9ioAMeEeam46Rh5krVVg" name="ADQUISITION PLANNING"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_W1Kh8PgSEeWLKsanECnEMg" name="UseCaseDiagram"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_TztdwPf_EeWab4iQ1I7RWQ">
@@ -169,4 +177,7 @@ computer science and the general community)</body>
   <Requirements:DeriveReqt xmi:id="_ILpLcP9zEeWdU9Mpd1PczA" base_Abstraction="_IIaRQP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_JWUO0P9zEeWdU9Mpd1PczA" base_Abstraction="_JTTXEP9zEeWdU9Mpd1PczA"/>
   <Requirements:Requirement xmi:id="_nVd1kAMVEeam46Rh5krVVg" text="The Mission Unit shall publish plug-in mechanisms to enable the &#xA;incorporation of algorithms process science data for the external agents" id="L2B-SYS-735" base_Class="_nVbZUAMVEeam46Rh5krVVg"/>
+  <Requirements:Requirement xmi:id="_o99EEAMaEeam46Rh5krVVg" text="The Mission Unit shall have technical staff to maintenance infraestructure tasks." id="L2B-SYS-736" base_Class="_o98dAAMaEeam46Rh5krVVg"/>
+  <Requirements:Requirement xmi:id="_uLTdQAMbEeam46Rh5krVVg" text="The Mission Unit shall have technical staff for adquisition request, calibration request and user care task." id="L2B-SYS-737" base_Class="_uLS2MAMbEeam46Rh5krVVg"/>
+  <Requirements:Requirement xmi:id="_RA-JsAMeEeam46Rh5krVVg" text="The Mission Unit shall have technical staff for adquisition long time planning" id="L2B-SYS-738" base_Class="_RA9ioAMeEeam46Rh5krVVg"/>
 </xmi:XMI>

@@ -525,11 +525,33 @@ depend of the
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_LOxLcAWYEeaUXvHpBJhe8Q" name="ActivityDiagram">
-      <packagedElement xmi:type="uml:Activity" xmi:id="_piTekAWcEeaUXvHpBJhe8Q" name="Failure Detect" node="_MMAdgAWdEeaUXvHpBJhe8Q _SkNVsAWdEeaUXvHpBJhe8Q" group="_6sq40AWcEeaUXvHpBJhe8Q _8E8TUAWcEeaUXvHpBJhe8Q">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_piTekAWcEeaUXvHpBJhe8Q" name="Failure Detect" node="_MMAdgAWdEeaUXvHpBJhe8Q _SkNVsAWdEeaUXvHpBJhe8Q _py0T4AWpEeaw3qDBYidk1w _4vEQwAWpEeaw3qDBYidk1w _hd73IAWqEeaw3qDBYidk1w _8FuOEAWqEeaw3qDBYidk1w _MhpN8AWrEeaw3qDBYidk1w _in0a4AWrEeaw3qDBYidk1w _lIF_QAWrEeaw3qDBYidk1w _u3mxgAWrEeaw3qDBYidk1w" group="_6sq40AWcEeaUXvHpBJhe8Q _8E8TUAWcEeaUXvHpBJhe8Q _aRjI8AWqEeaw3qDBYidk1w">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_kdbjkAWpEeaw3qDBYidk1w" target="_MMAdgAWdEeaUXvHpBJhe8Q" source="_SkNVsAWdEeaUXvHpBJhe8Q"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_w8fFQAWpEeaw3qDBYidk1w" target="_uAGMoAWpEeaw3qDBYidk1w" source="_MMAdgAWdEeaUXvHpBJhe8Q"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="__nQ3oAWpEeaw3qDBYidk1w" target="_4vEQwAWpEeaw3qDBYidk1w" source="_py0T4AWpEeaw3qDBYidk1w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_pxoysAWqEeaw3qDBYidk1w" name="No" target="_hd73IAWqEeaw3qDBYidk1w" source="_4vEQwAWpEeaw3qDBYidk1w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_B7CboAWrEeaw3qDBYidk1w" target="_8FuOEAWqEeaw3qDBYidk1w" source="_hd73IAWqEeaw3qDBYidk1w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_N_Us4AWrEeaw3qDBYidk1w" target="_MhpN8AWrEeaw3qDBYidk1w" source="_8FuOEAWqEeaw3qDBYidk1w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_yyf5wAWrEeaw3qDBYidk1w" name="Yes" target="_u3mxgAWrEeaw3qDBYidk1w" source="_4vEQwAWpEeaw3qDBYidk1w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_B-PrMAWsEeaw3qDBYidk1w" target="_in0a4AWrEeaw3qDBYidk1w" source="_u3mxgAWrEeaw3qDBYidk1w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_CbUowAWsEeaw3qDBYidk1w" target="_lIF_QAWrEeaw3qDBYidk1w" source="_u3mxgAWrEeaw3qDBYidk1w"/>
         <group xmi:type="uml:ActivityPartition" xmi:id="_6sq40AWcEeaUXvHpBJhe8Q" name="Subsystems" node="_MMAdgAWdEeaUXvHpBJhe8Q _SkNVsAWdEeaUXvHpBJhe8Q"/>
-        <group xmi:type="uml:ActivityPartition" xmi:id="_8E8TUAWcEeaUXvHpBJhe8Q" name="FDIR Module"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_MMAdgAWdEeaUXvHpBJhe8Q" name="Housekeeping from subsystems" inPartition="_6sq40AWcEeaUXvHpBJhe8Q"/>
-        <node xmi:type="uml:InitialNode" xmi:id="_SkNVsAWdEeaUXvHpBJhe8Q" name="InitialNode1" inPartition="_6sq40AWcEeaUXvHpBJhe8Q"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_8E8TUAWcEeaUXvHpBJhe8Q" name="FDIR Module" node="_py0T4AWpEeaw3qDBYidk1w _4vEQwAWpEeaw3qDBYidk1w _in0a4AWrEeaw3qDBYidk1w _lIF_QAWrEeaw3qDBYidk1w _u3mxgAWrEeaw3qDBYidk1w"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_aRjI8AWqEeaw3qDBYidk1w" name="C&amp;DH" node="_hd73IAWqEeaw3qDBYidk1w _8FuOEAWqEeaw3qDBYidk1w _MhpN8AWrEeaw3qDBYidk1w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_MMAdgAWdEeaUXvHpBJhe8Q" name="Housekeeping from subsystems" incoming="_kdbjkAWpEeaw3qDBYidk1w" outgoing="_w8fFQAWpEeaw3qDBYidk1w" inPartition="_6sq40AWcEeaUXvHpBJhe8Q"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_SkNVsAWdEeaUXvHpBJhe8Q" name="Start" outgoing="_kdbjkAWpEeaw3qDBYidk1w" inPartition="_6sq40AWcEeaUXvHpBJhe8Q"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_py0T4AWpEeaw3qDBYidk1w" name="Check Table Value" outgoing="__nQ3oAWpEeaw3qDBYidk1w" inPartition="_8E8TUAWcEeaUXvHpBJhe8Q">
+          <inputValue xmi:type="uml:ValuePin" xmi:id="_uAGMoAWpEeaw3qDBYidk1w" name="HK" incoming="_w8fFQAWpEeaw3qDBYidk1w">
+            <upperBound xmi:type="uml:LiteralInteger" xmi:id="_uAJ3AAWpEeaw3qDBYidk1w" value="1"/>
+          </inputValue>
+        </node>
+        <node xmi:type="uml:DecisionNode" xmi:id="_4vEQwAWpEeaw3qDBYidk1w" name="Error?" incoming="__nQ3oAWpEeaw3qDBYidk1w" outgoing="_pxoysAWqEeaw3qDBYidk1w _yyf5wAWrEeaw3qDBYidk1w" inPartition="_8E8TUAWcEeaUXvHpBJhe8Q"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_hd73IAWqEeaw3qDBYidk1w" name="Subsystems OK" incoming="_pxoysAWqEeaw3qDBYidk1w" outgoing="_B7CboAWrEeaw3qDBYidk1w" inPartition="_aRjI8AWqEeaw3qDBYidk1w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_8FuOEAWqEeaw3qDBYidk1w" name="Save Housekeeping" incoming="_B7CboAWrEeaw3qDBYidk1w" outgoing="_N_Us4AWrEeaw3qDBYidk1w" inPartition="_aRjI8AWqEeaw3qDBYidk1w"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_MhpN8AWrEeaw3qDBYidk1w" name="End" incoming="_N_Us4AWrEeaw3qDBYidk1w" inPartition="_aRjI8AWqEeaw3qDBYidk1w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_in0a4AWrEeaw3qDBYidk1w" name="Change Cubesat Mode" incoming="_B-PrMAWsEeaw3qDBYidk1w" inPartition="_8E8TUAWcEeaUXvHpBJhe8Q"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_lIF_QAWrEeaw3qDBYidk1w" name="Inform Failure" incoming="_CbUowAWsEeaw3qDBYidk1w" inPartition="_8E8TUAWcEeaUXvHpBJhe8Q"/>
+        <node xmi:type="uml:ForkNode" xmi:id="_u3mxgAWrEeaw3qDBYidk1w" incoming="_yyf5wAWrEeaw3qDBYidk1w" outgoing="_B-PrMAWsEeaw3qDBYidk1w _CbUowAWsEeaw3qDBYidk1w" inPartition="_8E8TUAWcEeaUXvHpBJhe8Q"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sKAVMAGtEeajHqwUCOgvUA">

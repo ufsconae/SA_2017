@@ -12,14 +12,112 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_f2hZcPgtEeWISYGibq9i4A" name="L2B-SYS-755"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_cogzEPgyEeWISYGibq9i4A" name="L2B-SYS-756"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_nwYfYPgyEeWISYGibq9i4A" name="L2B-SYS-757"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_ypsNAP2dEeWad7IgZOVsfA" name="L2B-SYS-758"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_MzWh4P28EeWad7IgZOVsfA" name="L2B-SYS-759" visibility="package"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MzWh4P28EeWad7IgZOVsfA" name="L2B-SYS-758" visibility="package">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_dCUJAQAbEea5T4llK3lKBA" name="solicitarhistoricotelemetria" type="_HEEJAAAbEea5T4llK3lKBA" association="_dCS64AAbEea5T4llK3lKBA"/>
+        <nestedClassifier xmi:type="uml:Association" xmi:id="_dCS64AAbEea5T4llK3lKBA" memberEnd="_dCUJAQAbEea5T4llK3lKBA _dCUJAgAbEea5T4llK3lKBA">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dCTh8AAbEea5T4llK3lKBA" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dCUJAAAbEea5T4llK3lKBA" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_dCUJAgAbEea5T4llK3lKBA" name="l2b-sys-759" type="_MzWh4P28EeWad7IgZOVsfA" association="_dCS64AAbEea5T4llK3lKBA"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Lb4-wP90EeWdU9Mpd1PczA" name="DeriveReqt1" client="_4-Mf8PgWEeWrWMXdyrR5uQ">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_MEfP0P90EeWdU9Mpd1PczA" name="DeriveReqt2" client="_YY_ykPgaEeWrWMXdyrR5uQ">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_MfiNEP90EeWdU9Mpd1PczA" name="DeriveReqt3" client="_f2hZcPgtEeWISYGibq9i4A">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_M46WYP90EeWdU9Mpd1PczA" name="DeriveReqt4" client="_MzWh4P28EeWad7IgZOVsfA">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_NxgLQP90EeWdU9Mpd1PczA" name="DeriveReqt6" client="_nwYfYPgyEeWISYGibq9i4A">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_OMRbsP90EeWdU9Mpd1PczA" name="DeriveReqt7" client="_vs5MUPgZEeWrWMXdyrR5uQ">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_SO0EEP90EeWdU9Mpd1PczA" name="DeriveReqt8" client="_q1x-UPgXEeWrWMXdyrR5uQ">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_St_TYP90EeWdU9Mpd1PczA" name="DeriveReqt9" client="_cogzEPgyEeWISYGibq9i4A">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_xjvaQPwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_L7U7gPgbEeWrWMXdyrR5uQ" name="DiagramBlockControlUnit"/>
     <packagedElement xmi:type="uml:Model" xmi:id="_p2IAsPguEeWISYGibq9i4A" name="UseCaseControlUnit">
-      <packagedElement xmi:type="uml:Package" xmi:id="_Cdv2sPgvEeWISYGibq9i4A" name="Control Unit"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Cdv2sPgvEeWISYGibq9i4A" name="Control Unit">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_l1Ms0AI9EeaVFpkttV2Ddw" name="Telemetria de HK">
+          <extend xmi:type="uml:Extend" xmi:id="_B-eSYAJDEeaVFpkttV2Ddw" extendedCase="_KqJ7AAJBEeaVFpkttV2Ddw" extensionLocation="_B-fggAJDEeaVFpkttV2Ddw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_NXZrwAI-EeaVFpkttV2Ddw" name="Generar Plan Final de Pasadas">
+          <include xmi:type="uml:Include" xmi:id="_Gx56QAJFEeaVFpkttV2Ddw" addition="_ol6ZkAJAEeaVFpkttV2Ddw"/>
+          <include xmi:type="uml:Include" xmi:id="_Hj9CQAJFEeaVFpkttV2Ddw" addition="_yFd5sAI_EeaVFpkttV2Ddw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_or0fMAI-EeaVFpkttV2Ddw" name="Plan Pasada Mission Unit"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_yFd5sAI_EeaVFpkttV2Ddw" name="Info. Orbital"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_ol6ZkAJAEeaVFpkttV2Ddw" name="Verificar recursos"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_KqJ7AAJBEeaVFpkttV2Ddw" name="Generar plan de Contingencia">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_B-fggAJDEeaVFpkttV2Ddw" name="ExtensionPoint1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_flCZgAJBEeaVFpkttV2Ddw" name="Plan de Operaciones"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_QrFfIPgvEeWISYGibq9i4A" name="Ing.de Vuelo"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_YyB1AAAaEeanufZ0Q3TMLA" name="ConsultarHistoricoTelemetria"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_baV7EAAaEeanufZ0Q3TMLA" memberEnd="_baV7EwAaEeanufZ0Q3TMLA _baV7FAAaEeanufZ0Q3TMLA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_baV7EQAaEeanufZ0Q3TMLA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_baV7EgAaEeanufZ0Q3TMLA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_baV7EwAaEeanufZ0Q3TMLA" name="usecase1" type="_YyB1AAAaEeanufZ0Q3TMLA" association="_baV7EAAaEeanufZ0Q3TMLA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_baV7FAAaEeanufZ0Q3TMLA" name="operador" type="_LaP3oPgvEeWISYGibq9i4A" association="_baV7EAAaEeanufZ0Q3TMLA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_HEEJAAAbEea5T4llK3lKBA" name="SolicitarHistoricoTelemetria"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_JJEGoAAbEea5T4llK3lKBA" memberEnd="_JJF70AAbEea5T4llK3lKBA _JJF70QAbEea5T4llK3lKBA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JJEtsAAbEea5T4llK3lKBA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JJFUwAAbEea5T4llK3lKBA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_JJF70AAbEea5T4llK3lKBA" name="solicitarhistoricotelemetria" type="_HEEJAAAbEea5T4llK3lKBA" association="_JJEGoAAbEea5T4llK3lKBA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_JJF70QAbEea5T4llK3lKBA" name="operador" type="_LaP3oPgvEeWISYGibq9i4A" association="_JJEGoAAbEea5T4llK3lKBA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_vcnoIAI_EeaVFpkttV2Ddw" name="Ceci"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_LaP3oPgvEeWISYGibq9i4A" name="Operador"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_QrFfIPgvEeWISYGibq9i4A" name=""/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_qadD4AJBEeaVFpkttV2Ddw" name="evaluar" memberEnd="_qah8YAJBEeaVFpkttV2Ddw _qaijcAJBEeaVFpkttV2Ddw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qagHMAJBEeaVFpkttV2Ddw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qaguQAJBEeaVFpkttV2Ddw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_qah8YAJBEeaVFpkttV2Ddw" name="evaluar telemetria de hk" type="_l1Ms0AI9EeaVFpkttV2Ddw" association="_qadD4AJBEeaVFpkttV2Ddw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_qaijcAJBEeaVFpkttV2Ddw" name="ing.de vuelo" type="_QrFfIPgvEeWISYGibq9i4A" association="_qadD4AJBEeaVFpkttV2Ddw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_EtCKYAJDEeaVFpkttV2Ddw" name="proveer" memberEnd="_EtCxcgJDEeaVFpkttV2Ddw _EtCxcwJDEeaVFpkttV2Ddw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EtCxcAJDEeaVFpkttV2Ddw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EtCxcQJDEeaVFpkttV2Ddw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_EtCxcgJDEeaVFpkttV2Ddw" name="preveer plan de operaciones" type="_flCZgAJBEeaVFpkttV2Ddw" association="_EtCKYAJDEeaVFpkttV2Ddw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_EtCxcwJDEeaVFpkttV2Ddw" name="operador" type="_LaP3oPgvEeWISYGibq9i4A" association="_EtCKYAJDEeaVFpkttV2Ddw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_FjOykAJDEeaVFpkttV2Ddw" memberEnd="_FjPZoAJDEeaVFpkttV2Ddw _FjPZoQJDEeaVFpkttV2Ddw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FjOykQJDEeaVFpkttV2Ddw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FjOykgJDEeaVFpkttV2Ddw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_FjPZoAJDEeaVFpkttV2Ddw" name="datos de orbitales" type="_yFd5sAI_EeaVFpkttV2Ddw" association="_FjOykAJDEeaVFpkttV2Ddw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_FjPZoQJDEeaVFpkttV2Ddw" name="ceci" type="_vcnoIAI_EeaVFpkttV2Ddw" association="_FjOykAJDEeaVFpkttV2Ddw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_MKbwEAJDEeaVFpkttV2Ddw" name="evaluar" memberEnd="_MKcXIgJDEeaVFpkttV2Ddw _MKcXIwJDEeaVFpkttV2Ddw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MKcXIAJDEeaVFpkttV2Ddw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MKcXIQJDEeaVFpkttV2Ddw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_MKcXIgJDEeaVFpkttV2Ddw" name="evaluar plan pasada mission unit" type="_or0fMAI-EeaVFpkttV2Ddw" association="_MKbwEAJDEeaVFpkttV2Ddw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_MKcXIwJDEeaVFpkttV2Ddw" name="operador" type="_LaP3oPgvEeWISYGibq9i4A" association="_MKbwEAJDEeaVFpkttV2Ddw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_54ySwAJEEeaVFpkttV2Ddw" memberEnd="_54y50AJEEeaVFpkttV2Ddw _54y50QJEEeaVFpkttV2Ddw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_54ySwQJEEeaVFpkttV2Ddw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_54ySwgJEEeaVFpkttV2Ddw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_54y50AJEEeaVFpkttV2Ddw" name="generar plan final de pasadas" type="_NXZrwAI-EeaVFpkttV2Ddw" association="_54ySwAJEEeaVFpkttV2Ddw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_54y50QJEEeaVFpkttV2Ddw" name="operador" type="_LaP3oPgvEeWISYGibq9i4A" association="_54ySwAJEEeaVFpkttV2Ddw"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_I2JkAPf_EeWab4iQ1I7RWQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I2KyIPf_EeWab4iQ1I7RWQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -95,6 +193,13 @@
   <Requirements:Requirement xmi:id="_f2kcwPgtEeWISYGibq9i4A" text="&#xA;The Control Unit shall determine the health status of the satellite." id="L2B-SYS-755" base_Class="_f2hZcPgtEeWISYGibq9i4A"/>
   <Requirements:Requirement xmi:id="_cohaIPgyEeWISYGibq9i4A" text="The Control Unit shall approve the preliminary plan acquisitions submitted by the Mission Unit&#xA;" id="L2B-SYS-756" base_Class="_cogzEPgyEeWISYGibq9i4A"/>
   <Requirements:Requirement xmi:id="_nwZtgPgyEeWISYGibq9i4A" text="&#xA;The Control Unit shall generate a final plan based on orbital past events, state of health, Mission Unit acquisitions and maintenance operations" id="L2B-SYS-757" base_Class="_nwYfYPgyEeWISYGibq9i4A"/>
-  <Requirements:Requirement xmi:id="_ytiLMP2dEeWad7IgZOVsfA" text="Control Unit shall prepare a pass plan" id="L2B-SYS-758" base_Class="_ypsNAP2dEeWad7IgZOVsfA"/>
-  <Requirements:Requirement xmi:id="_MzYXEP28EeWad7IgZOVsfA" text="The Control Unit shall make contingency plan in case of telemetry variables out off nominal range." id="L2B-SYS-759" base_Class="_MzWh4P28EeWad7IgZOVsfA"/>
+  <Requirements:Requirement xmi:id="_MzYXEP28EeWad7IgZOVsfA" text="The Control Unit shall make contingency plan in case of telemetry variables out off nominal range." id="L2B-SYS-758" base_Class="_MzWh4P28EeWad7IgZOVsfA"/>
+  <Requirements:DeriveReqt xmi:id="_LeK2sP90EeWdU9Mpd1PczA" base_Abstraction="_Lb4-wP90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_MG2nUP90EeWdU9Mpd1PczA" base_Abstraction="_MEfP0P90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_MhvzkP90EeWdU9Mpd1PczA" base_Abstraction="_MfiNEP90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_M7Rt4P90EeWdU9Mpd1PczA" base_Abstraction="_M46WYP90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_Nz3iwP90EeWdU9Mpd1PczA" base_Abstraction="_NxgLQP90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_OO0ZYP90EeWdU9Mpd1PczA" base_Abstraction="_OMRbsP90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_SRUlgP90EeWdU9Mpd1PczA" base_Abstraction="_SO0EEP90EeWdU9Mpd1PczA"/>
+  <Requirements:DeriveReqt xmi:id="_SwkGQP90EeWdU9Mpd1PczA" base_Abstraction="_St_TYP90EeWdU9Mpd1PczA"/>
 </xmi:XMI>

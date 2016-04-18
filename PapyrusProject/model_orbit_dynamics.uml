@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
   <uml:Model xmi:id="_dkf9wPEtEeWOSpgalrXMqg" name="RootElement" visibility="public" URI="">
     <packagedElement xmi:type="uml:Class" xmi:id="_a0MWkPgCEeWsD4MqqCA26g" name="EVENTS" visibility="package"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_Lg7EAPgGEeWsD4MqqCA26g" name="COLD-SKY-MANEUVER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_dhu-EPgGEeWsD4MqqCA26g" name="MOON-CAL-MANEUVER" visibility="package"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_DS6rUPgHEeWsD4MqqCA26g" name="EARTH-SITES-CAL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_uRem8PgIEeWsD4MqqCA26g" name="ORBIT-EPHEMERIS AND TLE."/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_Xj6NQP5zEeWH8ZFDcq738Q" name="DeriveReqt1" client="_Lg7EAPgGEeWsD4MqqCA26g">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_xjvaQPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_YvOw4P5zEeWH8ZFDcq738Q" name="DeriveReqt2" client="_DS6rUPgHEeWsD4MqqCA26g">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_xjvaQPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_Zb5poP5zEeWH8ZFDcq738Q" name="DeriveReqt3" client="_dhu-EPgGEeWsD4MqqCA26g">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_xjvaQPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_aFagsP5zEeWH8ZFDcq738Q" name="DeriveReqt4" client="_a0MWkPgCEeWsD4MqqCA26g">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_blRw8P5zEeWH8ZFDcq738Q" name="DeriveReqt5" client="_uRem8PgIEeWsD4MqqCA26g">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_CCVocAJ0EeaFPMgPLVXT7g" client="_Lg7EAPgGEeWsD4MqqCA26g">
+      <supplier xmi:type="uml:Property" href="_GroundSegment.uml#_53qcIAJqEeaitrP0YzxO6w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_hEeq0AJ0EeaFPMgPLVXT7g" client="_DS6rUPgHEeWsD4MqqCA26g">
+      <supplier xmi:type="uml:Property" href="_GroundSegment.uml#_53qcIAJqEeaitrP0YzxO6w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_hJSK8AJ3EeaFPMgPLVXT7g" name="Actor1"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_i4BksAJ3EeaFPMgPLVXT7g" name="calcular apuntamiento a la luna"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dqaYgPEtEeWOSpgalrXMqg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dqc0wPEtEeWOSpgalrXMqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -79,9 +102,15 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
   </uml:Model>
-  <Requirements:Requirement xmi:id="_a03sAPgCEeWsD4MqqCA26g" text="Control Unit shall provide Events schedule&#xA;" id="L2B-SYS-771" base_Class="_a0MWkPgCEeWsD4MqqCA26g"/>
-  <Requirements:Requirement xmi:id="_LhRCQPgGEeWsD4MqqCA26g" text="Control Unit shall provide Cold Sky Calibration's maneuvers schedule&#xA;" id="L2B-SYS-772" base_Class="_Lg7EAPgGEeWsD4MqqCA26g"/>
-  <Requirements:Requirement xmi:id="_diFjYPgGEeWsD4MqqCA26g" text="Control Unit shall provide Moon Calibration's maneuvers schedule" id="L2B-SYS-774" base_Class="_dhu-EPgGEeWsD4MqqCA26g"/>
-  <Requirements:Requirement xmi:id="_DTUT8PgHEeWsD4MqqCA26g" text="Control Unit shall provide Terrestrial's maneuver schedule" id="L2B-SYS-773" base_Class="_DS6rUPgHEeWsD4MqqCA26g"/>
-  <Requirements:Requirement xmi:id="_uSALYPgIEeWsD4MqqCA26g" text="Control Unit shall provide Orbit Ephemeris and TLE.&#xA;&#xA;" id="L2B-SYS-779" base_Class="_uRem8PgIEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_a03sAPgCEeWsD4MqqCA26g" text="Control Unit shall provide Events schedule&#xA;" id="L2B-SYS-G-771" base_Class="_a0MWkPgCEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_LhRCQPgGEeWsD4MqqCA26g" text="Control Unit shall provide Cold Sky Calibration's maneuvers schedule in order to be able to realize two snapshots, twice a month&#xA;&#xA;" id="L2B-SYS-G-772" base_Class="_Lg7EAPgGEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_diFjYPgGEeWsD4MqqCA26g" text="Control Unit shall provide Moon Calibration's maneuvers schedule in order to be able to realize at least two snapshots, once a month.&#xA;" id="L2B-SYS-G-774" base_Class="_dhu-EPgGEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_DTUT8PgHEeWsD4MqqCA26g" text="Control Unit shall provide Terrestrial's maneuver schedule in order to be able to realize two snapshots once a wekk&#xA;" id="L2B-SYS-G-773" base_Class="_DS6rUPgHEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_uSALYPgIEeWsD4MqqCA26g" text="Control Unit shall provide Orbit Ephemeris and TLE.&#xA;&#xA;" id="L2B-SYS-G-779" base_Class="_uRem8PgIEeWsD4MqqCA26g"/>
+  <Requirements:DeriveReqt xmi:id="_Xl040P5zEeWH8ZFDcq738Q" base_Abstraction="_Xj6NQP5zEeWH8ZFDcq738Q"/>
+  <Requirements:DeriveReqt xmi:id="_YxD84P5zEeWH8ZFDcq738Q" base_Abstraction="_YvOw4P5zEeWH8ZFDcq738Q"/>
+  <Requirements:DeriveReqt xmi:id="_ZdxR4P5zEeWH8ZFDcq738Q" base_Abstraction="_Zb5poP5zEeWH8ZFDcq738Q"/>
+  <Requirements:DeriveReqt xmi:id="_aHsYoP5zEeWH8ZFDcq738Q" base_Abstraction="_aFagsP5zEeWH8ZFDcq738Q"/>
+  <Requirements:DeriveReqt xmi:id="_bnCrgP5zEeWH8ZFDcq738Q" base_Abstraction="_blRw8P5zEeWH8ZFDcq738Q"/>
+  <standard:Trace xmi:id="_CCag8AJ0EeaFPMgPLVXT7g" base_Abstraction="_CCVocAJ0EeaFPMgPLVXT7g"/>
 </xmi:XMI>

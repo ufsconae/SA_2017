@@ -19,6 +19,12 @@
         <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_DDOrsPz4EeWWH817x0Adtw" name="axisWidth" intValue="784"/>
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
       </axis>
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_YM7XEAWwEea9i7Pqul4slw" element="property_of_stereotype:/SysML::Requirements::Requirement::derived">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
+      </axis>
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_YM7XEQWwEea9i7Pqul4slw" element="property_of_stereotype:/SysML::Requirements::Requirement::derivedFrom">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
+      </axis>
     </columnAxisProvidersHistory>
     <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_kIiKlfz2EeWWH817x0Adtw" description="Provides the requirements directly owned by the context of the table" name="Requirement Axis Provider" disconnectSlave="true"/>
   </nattable:Table>

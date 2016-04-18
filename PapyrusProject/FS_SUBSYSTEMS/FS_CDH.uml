@@ -85,6 +85,9 @@
         <body>TBC
 </body>
       </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_XiCbQAWVEeaRM-Du8o1hOg" annotatedElement="_RM8KcAGwEeajHqwUCOgvUA">
+        <body>processing telecommand that come from ground segment</body>
+      </ownedComment>
       <packagedElement xmi:type="uml:Actor" xmi:id="_KKHvQAJxEeaCSucAKdgDDQ" name="Subsystems"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_dsnegAJxEeaCSucAKdgDDQ" name="C&amp;DH">
         <generalization xmi:type="uml:Generalization" xmi:id="_Mtk4kAJzEeaCSucAKdgDDQ" general="_KKHvQAJxEeaCSucAKdgDDQ"/>
@@ -255,7 +258,134 @@
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_atCGgAVnEeadIoYsHc90eg" name="Inform Failure"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_eB-XIAVpEeadIoYsHc90eg" name="Set Cubesat Status"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_Vx9hkAWREeaRM-Du8o1hOg" name="UseCase1"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Vx9hkAWREeaRM-Du8o1hOg" name="Send Command">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_KZQnIAWVEeaRM-Du8o1hOg" annotatedElement="_Vx9hkAWREeaRM-Du8o1hOg">
+          <body>The OBC Send Command to any subsystem inside the cubesat</body>
+        </ownedComment>
+        <include xmi:type="uml:Include" xmi:id="_S0GBQAWcEeaRM-Du8o1hOg" addition="_rJX_gAWbEeaRM-Du8o1hOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_SWY9IAWSEeaRM-Du8o1hOg" name="Process telecommand">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_dpHuQAWVEeaRM-Du8o1hOg" annotatedElement="_SWY9IAWSEeaRM-Du8o1hOg">
+          <body>processing telecommand that come from ground segment</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Sm3CEAWSEeaRM-Du8o1hOg" name="Verify upload command integrity">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_u60fkAWVEeaRM-Du8o1hOg" annotatedElement="_Sm3CEAWSEeaRM-Du8o1hOg">
+          <body>verify that the upload commands from ground station are correct (with check sum )</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ttJ58AWSEeaRM-Du8o1hOg" memberEnd="_ttNkUAWSEeaRM-Du8o1hOg _ttOLYAWSEeaRM-Du8o1hOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ttLIEAWSEeaRM-Du8o1hOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ttLvIAWSEeaRM-Du8o1hOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ttNkUAWSEeaRM-Du8o1hOg" name="verify upload command integrity" type="_Sm3CEAWSEeaRM-Du8o1hOg" association="_ttJ58AWSEeaRM-Du8o1hOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ttOLYAWSEeaRM-Du8o1hOg" name="c&amp;dh" type="_dsnegAJxEeaCSucAKdgDDQ" association="_ttJ58AWSEeaRM-Du8o1hOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_9XQbUAWSEeaRM-Du8o1hOg" memberEnd="_9XRCYgWSEeaRM-Du8o1hOg _9XRpcAWSEeaRM-Du8o1hOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9XRCYAWSEeaRM-Du8o1hOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9XRCYQWSEeaRM-Du8o1hOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_9XRCYgWSEeaRM-Du8o1hOg" name="send command" type="_Vx9hkAWREeaRM-Du8o1hOg" association="_9XQbUAWSEeaRM-Du8o1hOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_9XRpcAWSEeaRM-Du8o1hOg" name="c&amp;dh" type="_dsnegAJxEeaCSucAKdgDDQ" association="_9XQbUAWSEeaRM-Du8o1hOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_95SKUAWSEeaRM-Du8o1hOg" memberEnd="_95SKUwWSEeaRM-Du8o1hOg _95SxYAWSEeaRM-Du8o1hOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_95SKUQWSEeaRM-Du8o1hOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_95SKUgWSEeaRM-Du8o1hOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_95SKUwWSEeaRM-Du8o1hOg" name="usecase2" type="_SWY9IAWSEeaRM-Du8o1hOg" association="_95SKUAWSEeaRM-Du8o1hOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_95SxYAWSEeaRM-Du8o1hOg" name="c&amp;dh" type="_dsnegAJxEeaCSucAKdgDDQ" association="_95SKUAWSEeaRM-Du8o1hOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_CE_VwAWTEeaRM-Du8o1hOg" name="Store telecommand">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_7CIPoAWVEeaRM-Du8o1hOg" annotatedElement="_CE_VwAWTEeaRM-Du8o1hOg">
+          <body>store time tagged command that come from ground segment</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_EpwYkAWTEeaRM-Du8o1hOg" memberEnd="_Epw_oQWTEeaRM-Du8o1hOg _Epw_ogWTEeaRM-Du8o1hOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EpwYkQWTEeaRM-Du8o1hOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Epw_oAWTEeaRM-Du8o1hOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Epw_oQWTEeaRM-Du8o1hOg" name="c&amp;dh" type="_dsnegAJxEeaCSucAKdgDDQ" association="_EpwYkAWTEeaRM-Du8o1hOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Epw_ogWTEeaRM-Du8o1hOg" name="store telecommand" type="_CE_VwAWTEeaRM-Du8o1hOg" association="_EpwYkAWTEeaRM-Du8o1hOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_kdTbAAWZEeaRM-Du8o1hOg" name="Ground Segment"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_K7djAAWaEeaRM-Du8o1hOg" memberEnd="_K7eKEAWaEeaRM-Du8o1hOg _K7eKEQWaEeaRM-Du8o1hOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K7djAQWaEeaRM-Du8o1hOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K7djAgWaEeaRM-Du8o1hOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_K7eKEAWaEeaRM-Du8o1hOg" name="ground segment" type="_kdTbAAWZEeaRM-Du8o1hOg" association="_K7djAAWaEeaRM-Du8o1hOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_K7eKEQWaEeaRM-Du8o1hOg" name="verify upload command integrity" type="_Sm3CEAWSEeaRM-Du8o1hOg" association="_K7djAAWaEeaRM-Du8o1hOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_OhaWAAWaEeaRM-Du8o1hOg" memberEnd="_Oha9EQWaEeaRM-Du8o1hOg _Oha9EgWaEeaRM-Du8o1hOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OhaWAQWaEeaRM-Du8o1hOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Oha9EAWaEeaRM-Du8o1hOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Oha9EQWaEeaRM-Du8o1hOg" name="ground segment" type="_kdTbAAWZEeaRM-Du8o1hOg" association="_OhaWAAWaEeaRM-Du8o1hOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Oha9EgWaEeaRM-Du8o1hOg" name="process telecommand" type="_SWY9IAWSEeaRM-Du8o1hOg" association="_OhaWAAWaEeaRM-Du8o1hOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Q8kJ0AWaEeaRM-Du8o1hOg" memberEnd="_Q8kJ0wWaEeaRM-Du8o1hOg _Q8kJ1AWaEeaRM-Du8o1hOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q8kJ0QWaEeaRM-Du8o1hOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Q8kJ0gWaEeaRM-Du8o1hOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Q8kJ0wWaEeaRM-Du8o1hOg" name="ground segment" type="_kdTbAAWZEeaRM-Du8o1hOg" association="_Q8kJ0AWaEeaRM-Du8o1hOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Q8kJ1AWaEeaRM-Du8o1hOg" name="store telecommand" type="_CE_VwAWTEeaRM-Du8o1hOg" association="_Q8kJ0AWaEeaRM-Du8o1hOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_LkDXkAWbEeaRM-Du8o1hOg" memberEnd="_LkDXkwWbEeaRM-Du8o1hOg _LkDXlAWbEeaRM-Du8o1hOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LkDXkQWbEeaRM-Du8o1hOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LkDXkgWbEeaRM-Du8o1hOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_LkDXkwWbEeaRM-Du8o1hOg" name="send command" type="_Vx9hkAWREeaRM-Du8o1hOg" association="_LkDXkAWbEeaRM-Du8o1hOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_LkDXlAWbEeaRM-Du8o1hOg" name="subsystems" type="_KKHvQAJxEeaCSucAKdgDDQ" association="_LkDXkAWbEeaRM-Du8o1hOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_rJX_gAWbEeaRM-Du8o1hOg" name="Communicate with subsystems">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_yNdGQAWbEeaRM-Du8o1hOg" annotatedElement="_rJX_gAWbEeaRM-Du8o1hOg">
+          <body>Communicate with the different subsyste inside the cubesat</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_y0k7MAWcEeaRM-Du8o1hOg" name="Generate OBT">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_7I-aUAWcEeaRM-Du8o1hOg" annotatedElement="_y0k7MAWcEeaRM-Du8o1hOg">
+          <body>generate on board time to the subsystem </body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ze_xMAWcEeaRM-Du8o1hOg" memberEnd="_ze_xMwWcEeaRM-Du8o1hOg _ze_xNAWcEeaRM-Du8o1hOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ze_xMQWcEeaRM-Du8o1hOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ze_xMgWcEeaRM-Du8o1hOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ze_xMwWcEeaRM-Du8o1hOg" name="usecase1" type="_y0k7MAWcEeaRM-Du8o1hOg" association="_ze_xMAWcEeaRM-Du8o1hOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ze_xNAWcEeaRM-Du8o1hOg" name="c&amp;dh" type="_dsnegAJxEeaCSucAKdgDDQ" association="_ze_xMAWcEeaRM-Du8o1hOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_0QjxAAWcEeaRM-Du8o1hOg" memberEnd="_0QjxAwWcEeaRM-Du8o1hOg _0QjxBAWcEeaRM-Du8o1hOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0QjxAQWcEeaRM-Du8o1hOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0QjxAgWcEeaRM-Du8o1hOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_0QjxAwWcEeaRM-Du8o1hOg" name="subsystems" type="_KKHvQAJxEeaCSucAKdgDDQ" association="_0QjxAAWcEeaRM-Du8o1hOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_0QjxBAWcEeaRM-Du8o1hOg" name="usecase1" type="_y0k7MAWcEeaRM-Du8o1hOg" association="_0QjxAAWcEeaRM-Du8o1hOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_0tHKIAWcEeaRM-Du8o1hOg" memberEnd="_0tHxMQWcEeaRM-Du8o1hOg _0tHxMgWcEeaRM-Du8o1hOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0tHKIQWcEeaRM-Du8o1hOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0tHxMAWcEeaRM-Du8o1hOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_0tHxMQWcEeaRM-Du8o1hOg" name="payload" type="_g1e3cAJyEeaCSucAKdgDDQ" association="_0tHKIAWcEeaRM-Du8o1hOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_0tHxMgWcEeaRM-Du8o1hOg" name="usecase1" type="_y0k7MAWcEeaRM-Du8o1hOg" association="_0tHKIAWcEeaRM-Du8o1hOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_H9GNEAWdEeaRM-Du8o1hOg" name="Run algorithms">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_NtPmwAWdEeaRM-Du8o1hOg" annotatedElement="_H9GNEAWdEeaRM-Du8o1hOg">
+          <body>Running algorithms necessary for the correctness functioning of the subsystems</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_P9RvsAWdEeaRM-Du8o1hOg" memberEnd="_P9RvswWdEeaRM-Du8o1hOg _P9RvtAWdEeaRM-Du8o1hOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_P9RvsQWdEeaRM-Du8o1hOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_P9RvsgWdEeaRM-Du8o1hOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_P9RvswWdEeaRM-Du8o1hOg" name="run algorithms" type="_H9GNEAWdEeaRM-Du8o1hOg" association="_P9RvsAWdEeaRM-Du8o1hOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_P9RvtAWdEeaRM-Du8o1hOg" name="c&amp;dh" type="_dsnegAJxEeaCSucAKdgDDQ" association="_P9RvsAWdEeaRM-Du8o1hOg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_RjeRcAWdEeaRM-Du8o1hOg" memberEnd="_Rje4gQWdEeaRM-Du8o1hOg _Rje4ggWdEeaRM-Du8o1hOg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RjeRcQWdEeaRM-Du8o1hOg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Rje4gAWdEeaRM-Du8o1hOg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Rje4gQWdEeaRM-Du8o1hOg" name="subsystems" type="_KKHvQAJxEeaCSucAKdgDDQ" association="_RjeRcAWdEeaRM-Du8o1hOg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Rje4ggWdEeaRM-Du8o1hOg" name="run algorithms" type="_H9GNEAWdEeaRM-Du8o1hOg" association="_RjeRcAWdEeaRM-Du8o1hOg"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_SdZswAGwEeajHqwUCOgvUA" name="ArchitectureDiagram"/>
     <packagedElement xmi:type="uml:Model" xmi:id="_WaTGMAWMEeaUXvHpBJhe8Q" name="StateMachines">

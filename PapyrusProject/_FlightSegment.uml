@@ -3,7 +3,10 @@
   <uml:Model xmi:id="_IPVlwPEnEeWlWYkLg4cEXg" name="FS_RootElement">
     <packagedElement xmi:type="uml:Model" xmi:id="_0dk_0AGrEeajHqwUCOgvUA" name="FS_L2BRequirements"/>
     <packagedElement xmi:type="uml:Model" xmi:id="_JSTlMAJrEeaJW-cSZfJk0g" name="FS_Architecture">
-      <packagedElement xmi:type="uml:Class" xmi:id="_LWXusAJrEeaJW-cSZfJk0g" name="FS"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_LWXusAJrEeaJW-cSZfJk0g" name="FS">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_dkjCAAVuEeaWm6feVnw5dg" name="UHF" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_e0niwAVuEeaWm6feVnw5dg" name="S BAND" aggregation="composite"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_f0LRkAMZEeaA6aMLnBNluA" name="FS_UseCases"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ISXEkPEnEeWlWYkLg4cEXg">

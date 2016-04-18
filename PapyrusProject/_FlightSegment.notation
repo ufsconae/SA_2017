@@ -6,6 +6,47 @@
       <children xmi:type="notation:BasicCompartment" xmi:id="_Mn0IcwJrEeaJW-cSZfJk0g" type="compartment_sysml_structure">
         <styles xmi:type="notation:TitleStyle" xmi:id="_Mn0IdAJrEeaJW-cSZfJk0g"/>
       </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_dDwCEAVuEeaWm6feVnw5dg" type="StereotypeLabel">
+        <styles xmi:type="notation:StringValueStyle" xmi:id="_dDwCEQVuEeaWm6feVnw5dg" name="stereotype" stringValue="SysML::Blocks::Block"/>
+        <element xmi:type="uml:Stereotype" href="pathmap://SysML_PROFILES/SysML.profile.uml#_8J2A8LVAEdu2ieF4ON8UjA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dDwCEgVuEeaWm6feVnw5dg"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_dDzFYAVuEeaWm6feVnw5dg" type="StereotypeBrace">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_dDzFYQVuEeaWm6feVnw5dg" showTitle="true"/>
+        <styles xmi:type="notation:StringValueStyle" xmi:id="_dDzFYgVuEeaWm6feVnw5dg" name="stereotype" stringValue="SysML::Blocks::Block"/>
+        <element xmi:type="uml:Stereotype" href="pathmap://SysML_PROFILES/SysML.profile.uml#_8J2A8LVAEdu2ieF4ON8UjA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dDzFYwVuEeaWm6feVnw5dg"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_dDzscgVuEeaWm6feVnw5dg" type="compartment_shape_display">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_dDzscwVuEeaWm6feVnw5dg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dDzsdAVuEeaWm6feVnw5dg"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_dD0TjAVuEeaWm6feVnw5dg" type="StereotypeCompartment">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_dD0TjQVuEeaWm6feVnw5dg" showTitle="true"/>
+        <styles xmi:type="notation:StringValueStyle" xmi:id="_dD0TjgVuEeaWm6feVnw5dg" name="stereotype" stringValue="SysML::Blocks::Block"/>
+        <element xmi:type="uml:Stereotype" href="pathmap://SysML_PROFILES/SysML.profile.uml#_8J2A8LVAEdu2ieF4ON8UjA"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dD0TjwVuEeaWm6feVnw5dg"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_dksL8AVuEeaWm6feVnw5dg" type="shape_uml_port_as_affixed">
+        <children xmi:type="notation:DecorationNode" xmi:id="_dkszAAVuEeaWm6feVnw5dg" type="affixedlabel_uml_port_label">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_dkszAQVuEeaWm6feVnw5dg" x="30"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_dktaEAVuEeaWm6feVnw5dg" type="affixedlabel_uml_appliedstereotype">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_dktaEQVuEeaWm6feVnw5dg" x="30" y="-20"/>
+        </children>
+        <element xmi:type="uml:Port" href="_FlightSegment.uml#_dkjCAAVuEeaWm6feVnw5dg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dksL8QVuEeaWm6feVnw5dg" x="490" y="94" width="20" height="20"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_e0rNIAVuEeaWm6feVnw5dg" type="shape_uml_port_as_affixed">
+        <children xmi:type="notation:DecorationNode" xmi:id="_e0r0MAVuEeaWm6feVnw5dg" type="affixedlabel_uml_port_label">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_e0r0MQVuEeaWm6feVnw5dg" x="30"/>
+        </children>
+        <children xmi:type="notation:DecorationNode" xmi:id="_e0r0MgVuEeaWm6feVnw5dg" type="affixedlabel_uml_appliedstereotype">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_e0r0MwVuEeaWm6feVnw5dg" x="30" y="-20"/>
+        </children>
+        <element xmi:type="uml:Port" href="_FlightSegment.uml#_e0niwAVuEeaWm6feVnw5dg"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e0rNIQVuEeaWm6feVnw5dg" x="490" y="175" width="20" height="20"/>
+      </children>
       <element xmi:type="uml:Class" href="_FlightSegment.uml#_LWXusAJrEeaJW-cSZfJk0g"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Mn0IcQJrEeaJW-cSZfJk0g" x="40" y="40" width="500" height="250"/>
     </children>

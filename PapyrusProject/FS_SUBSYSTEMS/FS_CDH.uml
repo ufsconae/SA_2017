@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
   <uml:Model xmi:id="_sIGQsAGtEeajHqwUCOgvUA" name="RootElement">
     <packagedElement xmi:type="uml:Model" xmi:id="_QDnK4AGwEeajHqwUCOgvUA" name="Requirements">
       <packagedElement xmi:type="uml:Class" xmi:id="_8Cu0EAI_EeaCSucAKdgDDQ" name="L2B-SYS-M-150"/>
@@ -351,8 +351,55 @@ depend of the
       <packagedElement xmi:type="uml:StateMachine" xmi:id="_H0JfsAWNEeaUXvHpBJhe8Q" name="CD&amp;H Modes">
         <region xmi:type="uml:Region" xmi:id="_Jd7g8AWNEeaUXvHpBJhe8Q" name="Region1"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:StateMachine" xmi:id="_Svv_sAWPEeaUXvHpBJhe8Q" name="StateMachine1">
-        <region xmi:type="uml:Region" xmi:id="_UYpQIAWPEeaUXvHpBJhe8Q" name="Region1"/>
+      <packagedElement xmi:type="uml:StateMachine" xmi:id="_Svv_sAWPEeaUXvHpBJhe8Q" name="Inform Failure">
+        <region xmi:type="uml:Region" xmi:id="_UYpQIAWPEeaUXvHpBJhe8Q" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_GViIcAWUEeaUXvHpBJhe8Q" source="_g3CGoAWTEeaUXvHpBJhe8Q" target="_h1J7wAWTEeaUXvHpBJhe8Q"/>
+          <transition xmi:type="uml:Transition" xmi:id="_HPvt8AWUEeaUXvHpBJhe8Q" name="Failure description" source="_h1J7wAWTEeaUXvHpBJhe8Q" target="_qkdOMAWTEeaUXvHpBJhe8Q"/>
+          <transition xmi:type="uml:Transition" xmi:id="_IW9NoAWUEeaUXvHpBJhe8Q" name="Saving" source="_qkdOMAWTEeaUXvHpBJhe8Q" target="_qkdOMAWTEeaUXvHpBJhe8Q"/>
+          <transition xmi:type="uml:Transition" xmi:id="_i_t08AWUEeaUXvHpBJhe8Q" name="OK" source="_qkdOMAWTEeaUXvHpBJhe8Q" target="_h2C3IAWUEeaUXvHpBJhe8Q"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_g3CGoAWTEeaUXvHpBJhe8Q" name="Start"/>
+          <subvertex xmi:type="uml:State" xmi:id="_h1J7wAWTEeaUXvHpBJhe8Q" name="Type of failure"/>
+          <subvertex xmi:type="uml:State" xmi:id="_qkdOMAWTEeaUXvHpBJhe8Q" name="Save failure flag"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_h2C3IAWUEeaUXvHpBJhe8Q" name="End"/>
+        </region>
+      </packagedElement>
+      <packagedElement xmi:type="uml:StateMachine" xmi:id="_CDDxMAWVEeaUXvHpBJhe8Q" name="FDIR Abort">
+        <region xmi:type="uml:Region" xmi:id="_DJDI4AWVEeaUXvHpBJhe8Q" name="FDIR Abort">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_kpRh0AWWEeaUXvHpBJhe8Q" annotatedElement="_Sz9GEAWWEeaUXvHpBJhe8Q">
+            <body>TBC
+</body>
+          </ownedComment>
+          <transition xmi:type="uml:Transition" xmi:id="_YNbhoAWVEeaUXvHpBJhe8Q" source="_Gt2sYAWVEeaUXvHpBJhe8Q"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Y-Tk8AWVEeaUXvHpBJhe8Q" name="Persistent Failure"/>
+          <transition xmi:type="uml:Transition" xmi:id="_-YzQgAWVEeaUXvHpBJhe8Q" source="_Gt2sYAWVEeaUXvHpBJhe8Q" target="_8Xdq4AWVEeaUXvHpBJhe8Q"/>
+          <transition xmi:type="uml:Transition" xmi:id="_FyjFQAWWEeaUXvHpBJhe8Q" name="Abort Failure" source="_8Xdq4AWVEeaUXvHpBJhe8Q" target="_-vXWYAWVEeaUXvHpBJhe8Q"/>
+          <transition xmi:type="uml:Transition" xmi:id="_HJbYoAWWEeaUXvHpBJhe8Q" name="Recover State" source="_-vXWYAWVEeaUXvHpBJhe8Q" target="_-vXWYAWVEeaUXvHpBJhe8Q"/>
+          <transition xmi:type="uml:Transition" xmi:id="_ZUk6cAWWEeaUXvHpBJhe8Q" name="Ok" source="_-vXWYAWVEeaUXvHpBJhe8Q" target="_Sz9GEAWWEeaUXvHpBJhe8Q"/>
+          <transition xmi:type="uml:Transition" xmi:id="_tInFoAWWEeaUXvHpBJhe8Q" source="_Sz9GEAWWEeaUXvHpBJhe8Q" target="_sBDnsAWWEeaUXvHpBJhe8Q"/>
+          <transition xmi:type="uml:Transition" xmi:id="_yaWFAAWWEeaUXvHpBJhe8Q" name="Error" source="_Sz9GEAWWEeaUXvHpBJhe8Q" target="_-vXWYAWVEeaUXvHpBJhe8Q"/>
+          <transition xmi:type="uml:Transition" xmi:id="_WuP78AWXEeaUXvHpBJhe8Q" name="Imposible Recovery" source="_-vXWYAWVEeaUXvHpBJhe8Q" target="_8Xdq4AWVEeaUXvHpBJhe8Q"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_Gt2sYAWVEeaUXvHpBJhe8Q" name="Start"/>
+          <subvertex xmi:type="uml:State" xmi:id="_8Xdq4AWVEeaUXvHpBJhe8Q" name="Ground Segment "/>
+          <subvertex xmi:type="uml:State" xmi:id="_-vXWYAWVEeaUXvHpBJhe8Q" name="Failure Recovery">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_DnbRgAWWEeaUXvHpBJhe8Q">
+              <body></body>
+            </ownedComment>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_Sz9GEAWWEeaUXvHpBJhe8Q" name="Set Cubesat Normal Mode">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_YMDzMAWWEeaUXvHpBJhe8Q">
+              <body></body>
+            </ownedComment>
+          </subvertex>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_sBDnsAWWEeaUXvHpBJhe8Q" name="End"/>
+        </region>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_LOxLcAWYEeaUXvHpBJhe8Q" name="ActivityDiagram">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_piTekAWcEeaUXvHpBJhe8Q" name="Failure Detect" node="_MMAdgAWdEeaUXvHpBJhe8Q _SkNVsAWdEeaUXvHpBJhe8Q" group="_6sq40AWcEeaUXvHpBJhe8Q _8E8TUAWcEeaUXvHpBJhe8Q">
+        <group xmi:type="uml:ActivityPartition" xmi:id="_6sq40AWcEeaUXvHpBJhe8Q" name="Subsystems" node="_MMAdgAWdEeaUXvHpBJhe8Q _SkNVsAWdEeaUXvHpBJhe8Q"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_8E8TUAWcEeaUXvHpBJhe8Q" name="FDIR Module"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_MMAdgAWdEeaUXvHpBJhe8Q" name="Housekeeping from subsystems" inPartition="_6sq40AWcEeaUXvHpBJhe8Q"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_SkNVsAWdEeaUXvHpBJhe8Q" name="InitialNode1" inPartition="_6sq40AWcEeaUXvHpBJhe8Q"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sKAVMAGtEeajHqwUCOgvUA">
@@ -446,4 +493,6 @@ depend of the
   <Requirements:Requirement xmi:id="_O5MuUAJBEeaCSucAKdgDDQ" text="The C&amp;DH subsystem software shall implement a mechanism to check memory correctness to avoid mainly Single Event Upsets (SEU)." id="L2B-SYS-M-165" base_Class="_O4s_EAJBEeaCSucAKdgDDQ"/>
   <Requirements:Requirement xmi:id="_PxPJkAJBEeaCSucAKdgDDQ" text="The C&amp;DH subsystem shall implement a mechanism to check if current remains under nominal values, in order to detect current excursions which could means the presence of a Single Event Latch-up (SEL)." id="L2B-SYS-M-166" base_Class="_Pwp6wAJBEeaCSucAKdgDDQ"/>
   <Requirements:Requirement xmi:id="_QsEaIAJBEeaCSucAKdgDDQ" text="The C&amp;DH subsystem shall implement a mechanism to reboot itself ." id="L2B-SYS-M-167" base_Class="_Qrd9MAJBEeaCSucAKdgDDQ"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_DncfoAWWEeaUXvHpBJhe8Q" base_Comment="_DnbRgAWWEeaUXvHpBJhe8Q" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_YMFBUAWWEeaUXvHpBJhe8Q" base_Comment="_YMDzMAWWEeaUXvHpBJhe8Q" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
 </xmi:XMI>

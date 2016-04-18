@@ -106,7 +106,7 @@ publish all data and information
         <ownedAttribute xmi:type="uml:Port" xmi:id="_NqPO8P2uEeWZ6PYrGLcTxA" name="Tlmy/Telecommand" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_vSy58P2uEeWZ6PYrGLcTxA" name="Mission Unit" type="_vx4CoP2uEeWZ6PYrGLcTxA" aggregation="composite" association="_vx4psP2uEeWZ6PYrGLcTxA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_9rNxAP2uEeWZ6PYrGLcTxA" name="Ground Station" type="_vx4CoP2uEeWZ6PYrGLcTxA" aggregation="composite" association="_95-lwv2uEeWZ6PYrGLcTxA"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_GSfocP52EeWH8ZFDcq738Q" name="flowport1" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_GSfocP52EeWH8ZFDcq738Q" name="Science Data/Stored Tlmy (TBC)" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_SRZ1AP53EeWH8ZFDcq738Q" name="Science User" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_T3_YUP53EeWH8ZFDcq738Q" name="Science User_" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_ZItEAP53EeWH8ZFDcq738Q" name="Community" aggregation="composite"/>
@@ -422,6 +422,9 @@ and adjustment</body>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6-4zwgM3Eeam46Rh5krVVg" key="nature" value="SysML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_6-4zwwM3Eeam46Rh5krVVg" name="ground segment unit" type="_vx4CoP2uEeWZ6PYrGLcTxA" association="_6-4zwAM3Eeam46Rh5krVVg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_2n0cwAVvEeaWm6feVnw5dg" client="_NqPO8P2uEeWZ6PYrGLcTxA">
+        <supplier xmi:type="uml:Port" href="_FlightSegment.uml#_dkjCAAVuEeaWm6feVnw5dg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_Y3iz4P25EeWFwtaYqXT6rw" name="DeriveReqt9" client="_d-QBYPwsEeWZO5s3t9VRdw">

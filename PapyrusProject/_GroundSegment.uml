@@ -73,6 +73,10 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_P9BGsP2qEeWZ6PYrGLcTxA" name="GroundStation">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_Urg2Iv2qEeWZ6PYrGLcTxA" name="block1_1" type="_PfQzsP2qEeWZ6PYrGLcTxA" aggregation="composite" association="_UrgPEP2qEeWZ6PYrGLcTxA"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_2wxOwP2rEeWZ6PYrGLcTxA" name="Port1" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_L9K3wAaDEeahqNSunh6J0w" name="Science Data/Stored Telemetry" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_NavB8AaDEeahqNSunh6J0w" name="Telemetry/Telecommand" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_SCkvwAaDEeahqNSunh6J0w" name="flowport3" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_St3vgAaDEeahqNSunh6J0w" name="flowport4" aggregation="composite"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_QMUG8P2qEeWZ6PYrGLcTxA" name="ControlUnit">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_VOMsc_2qEeWZ6PYrGLcTxA" name="block1_1" type="_PfQzsP2qEeWZ6PYrGLcTxA" aggregation="composite" association="_VOMscP2qEeWZ6PYrGLcTxA"/>
@@ -88,7 +92,10 @@
         </eAnnotations>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_yzeSwP2rEeWZ6PYrGLcTxA" name="UHF/S-Band Antenna"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Kvd8YP2tEeWZ6PYrGLcTxA" name="MissionUnit"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Kvd8YP2tEeWZ6PYrGLcTxA" name="MissionUnit">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_OmMvgAaDEeahqNSunh6J0w" name="flowport1" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_P4ZXMAaDEeahqNSunh6J0w" name="flowport2" aggregation="composite"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_-FMMsP2tEeWZ6PYrGLcTxA" name="Ground Segment">
         <ownedComment xmi:type="uml:Comment" xmi:id="_kuJkkP2wEeWZ6PYrGLcTxA" annotatedElement="_9rNxAP2uEeWZ6PYrGLcTxA">
           <body>GS shall have a 7*24 service/deamon to receive tcp/ip 
@@ -423,6 +430,40 @@ and adjustment</body>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_6-4zwwM3Eeam46Rh5krVVg" name="ground segment unit" type="_vx4CoP2uEeWZ6PYrGLcTxA" association="_6-4zwAM3Eeam46Rh5krVVg"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_d4u64AaCEeahqNSunh6J0w" name="Ground Segment_">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_m88GUAaCEeahqNSunh6J0w" name="CONAE-Cortex-Banda S" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_1r6cMAaCEeahqNSunh6J0w" name="UHF Antena Eq" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_7npa0AaCEeahqNSunh6J0w" name="part1" type="_P9BGsP2qEeWZ6PYrGLcTxA" aggregation="composite" association="_AHfDMAaDEeahqNSunh6J0w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_CIn0gAaDEeahqNSunh6J0w" name="part2" type="_Kvd8YP2tEeWZ6PYrGLcTxA" aggregation="composite" association="_Eh8cUAaDEeahqNSunh6J0w"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_m630UAaDEeahqNSunh6J0w" name="Science Data/Stored Tlmy (TBC)">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_m64bYAaDEeahqNSunh6J0w" partWithPort="_7npa0AaCEeahqNSunh6J0w" role="_L9K3wAaDEeahqNSunh6J0w"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_m65CcAaDEeahqNSunh6J0w" role="_m88GUAaCEeahqNSunh6J0w"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_njcQMAaDEeahqNSunh6J0w" name="Telemetry/Telecommand">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_njcQMQaDEeahqNSunh6J0w" partWithPort="_7npa0AaCEeahqNSunh6J0w" role="_NavB8AaDEeahqNSunh6J0w"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_njcQMgaDEeahqNSunh6J0w" role="_1r6cMAaCEeahqNSunh6J0w"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_w7_7AAaDEeahqNSunh6J0w" name="Connector1">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_w7_7AQaDEeahqNSunh6J0w" partWithPort="_7npa0AaCEeahqNSunh6J0w" role="_SCkvwAaDEeahqNSunh6J0w"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_w7_7AgaDEeahqNSunh6J0w" partWithPort="_CIn0gAaDEeahqNSunh6J0w" role="_OmMvgAaDEeahqNSunh6J0w"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_xl5MkAaDEeahqNSunh6J0w" name="Connector2">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_xl5MkQaDEeahqNSunh6J0w" partWithPort="_7npa0AaCEeahqNSunh6J0w" role="_St3vgAaDEeahqNSunh6J0w"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_xl5MkgaDEeahqNSunh6J0w" partWithPort="_CIn0gAaDEeahqNSunh6J0w" role="_P4ZXMAaDEeahqNSunh6J0w"/>
+        </ownedConnector>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_AHfDMAaDEeahqNSunh6J0w" name="Association7" memberEnd="_7npa0AaCEeahqNSunh6J0w _AHfDMwaDEeahqNSunh6J0w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AHfDMQaDEeahqNSunh6J0w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AHfDMgaDEeahqNSunh6J0w" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_AHfDMwaDEeahqNSunh6J0w" name="ground segment_" type="_d4u64AaCEeahqNSunh6J0w" association="_AHfDMAaDEeahqNSunh6J0w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Eh8cUAaDEeahqNSunh6J0w" name="Association8" memberEnd="_CIn0gAaDEeahqNSunh6J0w _Eh8cUwaDEeahqNSunh6J0w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Eh8cUQaDEeahqNSunh6J0w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Eh8cUgaDEeahqNSunh6J0w" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Eh8cUwaDEeahqNSunh6J0w" name="ground segment_" type="_d4u64AaCEeahqNSunh6J0w" association="_Eh8cUAaDEeahqNSunh6J0w"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_Y3iz4P25EeWFwtaYqXT6rw" name="DeriveReqt9" client="_d-QBYPwsEeWZO5s3t9VRdw">
       <supplier xmi:type="uml:Class" href="MissionUnit.uml#_NLenoP20EeWFwtaYqXT6rw"/>
@@ -700,4 +741,13 @@ and adjustment</body>
   <Requirements:Requirement xmi:id="_qXh7wAM-Eeam46Rh5krVVg" text="The Ground Segment shall have technical staff for adquisition long time planning" id="L2B-SYS-510" base_Class="_qXhUsAM-Eeam46Rh5krVVg"/>
   <Requirements:Requirement xmi:id="_GcgasANFEeam46Rh5krVVg" text="The Ground Segment shall have technical staff for adquisition long time planning" id="L2B-SYS-511" base_Class="_GcfzoANFEeam46Rh5krVVg"/>
   <Requirements:Requirement xmi:id="_VK0z0ANGEeam46Rh5krVVg" text="The complete segment shall have access to functionality and data permissions, &#xD;&#xA;roles and profiles configuration. No access restriction referred to attribute level." id="L2B-SYS-512" base_Class="_VK0MwANGEeam46Rh5krVVg"/>
+  <Blocks:Block xmi:id="_d5S7kAaCEeahqNSunh6J0w" base_Class="_d4u64AaCEeahqNSunh6J0w"/>
+  <PortAndFlows:FlowPort xmi:id="_m9F3UAaCEeahqNSunh6J0w" base_Port="_m88GUAaCEeahqNSunh6J0w" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_1sDmIAaCEeahqNSunh6J0w" base_Port="_1r6cMAaCEeahqNSunh6J0w"/>
+  <PortAndFlows:FlowPort xmi:id="_L9K3wQaDEeahqNSunh6J0w" base_Port="_L9K3wAaDEeahqNSunh6J0w" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_NavB8QaDEeahqNSunh6J0w" base_Port="_NavB8AaDEeahqNSunh6J0w"/>
+  <PortAndFlows:FlowPort xmi:id="_OmMvgQaDEeahqNSunh6J0w" base_Port="_OmMvgAaDEeahqNSunh6J0w" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_P4ZXMQaDEeahqNSunh6J0w" base_Port="_P4ZXMAaDEeahqNSunh6J0w"/>
+  <PortAndFlows:FlowPort xmi:id="_SCkvwQaDEeahqNSunh6J0w" base_Port="_SCkvwAaDEeahqNSunh6J0w" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_St3vgQaDEeahqNSunh6J0w" base_Port="_St3vgAaDEeahqNSunh6J0w"/>
 </xmi:XMI>

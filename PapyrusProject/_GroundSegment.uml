@@ -53,6 +53,10 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_qXhUsAM-Eeam46Rh5krVVg" name="Planning Staff"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_GcfzoANFEeam46Rh5krVVg" name="Control Staff"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_VK0MwANGEeam46Rh5krVVg" name="Access Control"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_70fLcAcbEeasC4DF8p7png" name="Mission Unit"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_JOQB4AccEeasC4DF8p7png" name="Control Unit"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_U_dmIAccEeasC4DF8p7png" name="DeriveReqt9" client="_70fLcAcbEeasC4DF8p7png" supplier="_4nCd4PwsEeWZO5s3t9VRdw"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_VjqfYAccEeasC4DF8p7png" name="DeriveReqt10" client="_JOQB4AccEeasC4DF8p7png" supplier="_78BcsPwsEeWZO5s3t9VRdw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_r-sD8Pz1EeWx7Ki9vH_xfA" name="DeriveReqt1" client="_G5TpoPwtEeWZO5s3t9VRdw" supplier="_ctcPoPzCEeWpMIpi0KVNxQ"/>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_tQJr0Pz1EeWx7Ki9vH_xfA" name="DeriveReqt2" client="_G5TpoPwtEeWZO5s3t9VRdw" supplier="_QC0MkPzBEeWpMIpi0KVNxQ"/>
@@ -847,4 +851,8 @@ and adjustment</body>
   <PortAndFlows:FlowPort xmi:id="_P4ZXMQaDEeahqNSunh6J0w" base_Port="_P4ZXMAaDEeahqNSunh6J0w"/>
   <PortAndFlows:FlowPort xmi:id="_SCkvwQaDEeahqNSunh6J0w" base_Port="_SCkvwAaDEeahqNSunh6J0w" direction="out"/>
   <PortAndFlows:FlowPort xmi:id="_St3vgQaDEeahqNSunh6J0w" base_Port="_St3vgAaDEeahqNSunh6J0w"/>
+  <Requirements:Requirement xmi:id="_71ClEAcbEeasC4DF8p7png" text="The Ground Segment shall include a Mission Unit, which shall provide the following&#xA;high level functions: user access, acquisition planning, raw data processing and data&#xA;storage management." id="L2B-SYS-513" base_Class="_70fLcAcbEeasC4DF8p7png"/>
+  <Requirements:Requirement xmi:id="_JOvxIAccEeasC4DF8p7png" text="The Ground Segment shall include a Control Station, which shall provide the following&#xA;high level functions: operations planning, orbit dynamics, operations and on-the-ground&#xA;simulation." id="L2B-SYS-514" base_Class="_JOQB4AccEeasC4DF8p7png"/>
+  <Requirements:DeriveReqt xmi:id="_VAQ3YAccEeasC4DF8p7png" base_Abstraction="_U_dmIAccEeasC4DF8p7png"/>
+  <Requirements:DeriveReqt xmi:id="_VkV00AccEeasC4DF8p7png" base_Abstraction="_VjqfYAccEeasC4DF8p7png"/>
 </xmi:XMI>

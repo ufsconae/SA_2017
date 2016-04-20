@@ -35,9 +35,30 @@
     <packagedElement xmi:type="uml:Model" xmi:id="_39HNQAJlEeaJW-cSZfJk0g" name="SA2017_UseCases"/>
     <packagedElement xmi:type="uml:Model" xmi:id="_4obbIAJlEeaJW-cSZfJk0g" name="SA2017_ArchitectureDiagram">
       <packagedElement xmi:type="uml:Package" xmi:id="_98pUIAcCEeafd7GiqJXkMg" name="SA2017 Project">
-        <packagedElement xmi:type="uml:Class" xmi:id="_lLX9cAcDEeafd7GiqJXkMg" name="MMP"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_nuZ64AcDEeafd7GiqJXkMg" name="PAYLOAD"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_ovMCcAcDEeafd7GiqJXkMg" name="GroundSegment"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ovMCcAcDEeafd7GiqJXkMg" name="GroundSegment">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_1B70MAcIEeafd7GiqJXkMg" name="Port1" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_-SmuUAcIEeafd7GiqJXkMg" name="Port2" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_-0R4AAcIEeafd7GiqJXkMg" name="Port3" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="__VypoAcIEeafd7GiqJXkMg" name="Port4" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_nl5lgAcLEeafd7GiqJXkMg" name="Port5" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_3TOE4AcJEeafd7GiqJXkMg" name="FlightSegment">
+          <packagedElement xmi:type="uml:Class" xmi:id="_lLX9cAcDEeafd7GiqJXkMg" name="MMP">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_hFs50AcJEeafd7GiqJXkMg" name="Port1" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_xQlNAAcJEeafd7GiqJXkMg" name="Port2" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_SdjvQAcKEeafd7GiqJXkMg" name="Port3" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_smV2AAcKEeafd7GiqJXkMg" name="Port4" aggregation="composite"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_nuZ64AcDEeafd7GiqJXkMg" name="PAYLOAD">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_yXDs4AcJEeafd7GiqJXkMg" name="Port2" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_TEWCcAcKEeafd7GiqJXkMg" name="Port3" aggregation="composite"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_p_ehcAcKEeafd7GiqJXkMg" name="TM-Science data" client="_yXDs4AcJEeafd7GiqJXkMg" supplier="_xQlNAAcJEeafd7GiqJXkMg"/>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_Eqa6EAcLEeafd7GiqJXkMg" name="TM-Science data" client="_hFs50AcJEeafd7GiqJXkMg" supplier="_nl5lgAcLEeafd7GiqJXkMg"/>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_M0O50AcLEeafd7GiqJXkMg" name="TC" client="_xQlNAAcJEeafd7GiqJXkMg" supplier="_yXDs4AcJEeafd7GiqJXkMg"/>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_aFIIIAcLEeafd7GiqJXkMg" name="Power" client="_SdjvQAcKEeafd7GiqJXkMg" supplier="_TEWCcAcKEeafd7GiqJXkMg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_kTJ30AcKEeafd7GiqJXkMg" name="TC" client="_nl5lgAcLEeafd7GiqJXkMg" supplier="_hFs50AcJEeafd7GiqJXkMg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_LYbAQAWkEeau0KhIeHix4w" name="SA2017" URI="">
@@ -59,6 +80,10 @@
         <packagedElement xmi:type="uml:UseCase" xmi:id="_ikVegAWqEeau0KhIeHix4w" name="Send commands to satellite"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_NgQyUAWrEeau0KhIeHix4w" name="Receive housekeeping telemetry">
           <include xmi:type="uml:Include" xmi:id="_yVVnMAWsEeau0KhIeHix4w" addition="_nxjxUAWqEeau0KhIeHix4w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_wEsq4AcYEeafd7GiqJXkMg" name="Set Orbital information">
+          <include xmi:type="uml:Include" xmi:id="_5D4MYAcYEeafd7GiqJXkMg" addition="_ikVegAWqEeau0KhIeHix4w"/>
+          <include xmi:type="uml:Include" xmi:id="_8PlTYAcYEeafd7GiqJXkMg" addition="_NgQyUAWrEeau0KhIeHix4w"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_YAnP0AWkEeau0KhIeHix4w" name="Flight Segment" URI="">
@@ -84,31 +109,16 @@
         </packagedElement>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_4hlnsAWkEeau0KhIeHix4w" name="Final Users"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_-dvdEAWkEeau0KhIeHix4w" name="Calibration Data"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_NaXNYAWlEeau0KhIeHix4w" name="Argentine National Glacier Inventory"/>
     <packagedElement xmi:type="uml:Actor" xmi:id="_k_2Q8AWlEeau0KhIeHix4w" name="SABIAMAR Proyect"/>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_Drh7IAWmEeau0KhIeHix4w" name="Science and Applications (MAIE)"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Drh7IAWmEeau0KhIeHix4w" name="Science user - Community"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_wdPE0AWmEeau0KhIeHix4w" memberEnd="_wdRhEAWmEeau0KhIeHix4w _wdRhEQWmEeau0KhIeHix4w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wdQS8AWmEeau0KhIeHix4w" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wdQS8QWmEeau0KhIeHix4w" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_wdRhEAWmEeau0KhIeHix4w" name="send weather and surveillance data " type="_iXypkAWlEeau0KhIeHix4w" association="_wdPE0AWmEeau0KhIeHix4w"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_wdRhEQWmEeau0KhIeHix4w" name="argentine national glacier inventory" type="_NaXNYAWlEeau0KhIeHix4w" association="_wdPE0AWmEeau0KhIeHix4w"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_-yfTIAWmEeau0KhIeHix4w" memberEnd="_-yf6MgWmEeau0KhIeHix4w _-yghQAWmEeau0KhIeHix4w">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-yf6MAWmEeau0KhIeHix4w" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-yf6MQWmEeau0KhIeHix4w" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_-yf6MgWmEeau0KhIeHix4w" name="request science data" type="_4EVZEAWmEeau0KhIeHix4w" association="_-yfTIAWmEeau0KhIeHix4w"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_-yghQAWmEeau0KhIeHix4w" name="final users" type="_4hlnsAWkEeau0KhIeHix4w" association="_-yfTIAWmEeau0KhIeHix4w"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_XT7BkAWnEeau0KhIeHix4w" memberEnd="_XT7BkwWnEeau0KhIeHix4w _XT7BlAWnEeau0KhIeHix4w">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XT7BkQWnEeau0KhIeHix4w" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XT7BkgWnEeau0KhIeHix4w" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_XT7BkwWnEeau0KhIeHix4w" name="get science data" type="_In4q8AWnEeau0KhIeHix4w" association="_XT7BkAWnEeau0KhIeHix4w"/>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_XT7BlAWnEeau0KhIeHix4w" name="final users" type="_4hlnsAWkEeau0KhIeHix4w" association="_XT7BkAWnEeau0KhIeHix4w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_avJLQAWnEeau0KhIeHix4w" memberEnd="_avJyUgWnEeau0KhIeHix4w _avKZYAWnEeau0KhIeHix4w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_avJyUAWnEeau0KhIeHix4w" source="org.eclipse.papyrus">
@@ -181,6 +191,19 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_TPRjkwWrEeau0KhIeHix4w" name="operators" type="_ZFHLAAWqEeau0KhIeHix4w" association="_TPRjkAWrEeau0KhIeHix4w"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_TPSKoAWrEeau0KhIeHix4w" name="receive housekeeping telemetry" type="_NgQyUAWrEeau0KhIeHix4w" association="_TPRjkAWrEeau0KhIeHix4w"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_gUN9EAcKEeafd7GiqJXkMg" name="Science products - calibration data" client="_k_2Q8AWlEeau0KhIeHix4w" supplier="_1B70MAcIEeafd7GiqJXkMg"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_jIie0AcKEeafd7GiqJXkMg" name="Science products" client="_Drh7IAWmEeau0KhIeHix4w" supplier="_-SmuUAcIEeafd7GiqJXkMg"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_jh5aAAcKEeafd7GiqJXkMg" name="Calibration data" client="_-dvdEAWkEeau0KhIeHix4w" supplier="__VypoAcIEeafd7GiqJXkMg"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_u3NscAcKEeafd7GiqJXkMg" name="DCS data" client="_NaXNYAWlEeau0KhIeHix4w" supplier="_smV2AAcKEeafd7GiqJXkMg"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_xjbwMAcMEeafd7GiqJXkMg" name="External orbital agent"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_06nQ8AcYEeafd7GiqJXkMg" memberEnd="_06riYAcYEeafd7GiqJXkMg _06sJcAcYEeafd7GiqJXkMg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_06ptMAcYEeafd7GiqJXkMg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_06ptMQcYEeafd7GiqJXkMg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_06riYAcYEeafd7GiqJXkMg" name="set orbital information" type="_wEsq4AcYEeafd7GiqJXkMg" association="_06nQ8AcYEeafd7GiqJXkMg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_06sJcAcYEeafd7GiqJXkMg" name="external orbital agent" type="_xjbwMAcMEeafd7GiqJXkMg" association="_06nQ8AcYEeafd7GiqJXkMg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_g1u7cAcaEeafd7GiqJXkMg" name="Orbital information data" client="_xjbwMAcMEeafd7GiqJXkMg" supplier="_-0R4AAcIEeafd7GiqJXkMg"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1aQOwAJAEeagKebOtQfZOg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1aRc4AJAEeagKebOtQfZOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>

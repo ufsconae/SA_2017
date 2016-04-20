@@ -535,10 +535,11 @@ and adjustment</body>
     <packagedElement xmi:type="uml:Model" xmi:id="_q2vuwAJ3EeaZiLBogC6_iQ" name="UseCases">
       <packagedElement xmi:type="uml:Package" xmi:id="_kvw_gAcDEeasC4DF8p7png" name="Permisos">
         <packagedElement xmi:type="uml:Actor" xmi:id="_FZdYcAJ4EeaZiLBogC6_iQ" name="Supervisor"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_o-YVAAcDEeasC4DF8p7png" name="Crear Usuario"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_o-YVAAcDEeasC4DF8p7png" name="Crear Usuario">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_4XEZcAcHEeasC4DF8p7png" annotatedElement="_o-YVAAcDEeasC4DF8p7png"/>
+        </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_pKEAkAcDEeasC4DF8p7png" name="Crear Roles"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_pZxQgAcDEeasC4DF8p7png" name="Asignar Roles a Usuarios"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_xJ6MAAcDEeasC4DF8p7png" name="Login"/>
         <packagedElement xmi:type="uml:Usage" xmi:id="_0mLekAcDEeasC4DF8p7png" client="_o-YVAAcDEeasC4DF8p7png" supplier="_xJ6MAAcDEeasC4DF8p7png"/>
         <packagedElement xmi:type="uml:Usage" xmi:id="_09-6kAcDEeasC4DF8p7png" client="_pKEAkAcDEeasC4DF8p7png" supplier="_xJ6MAAcDEeasC4DF8p7png"/>
         <packagedElement xmi:type="uml:Usage" xmi:id="_1THdEAcDEeasC4DF8p7png" client="_pZxQgAcDEeasC4DF8p7png" supplier="_xJ6MAAcDEeasC4DF8p7png"/>
@@ -588,6 +589,47 @@ and adjustment</body>
         <node xmi:type="uml:FlowFinalNode" xmi:id="_TgehoAcGEeasC4DF8p7png" name="Usuario Logueado" incoming="_gbSLMAcGEeasC4DF8p7png _6MuwAAcGEeasC4DF8p7png _Dx7vsAcHEeasC4DF8p7png" inPartition="_z-pvEAcEEeasC4DF8p7png"/>
         <node xmi:type="uml:DecisionNode" xmi:id="_tJfjMAcGEeasC4DF8p7png" name="Confirma la operacion" incoming="__9GzMAcGEeasC4DF8p7png" outgoing="_Dx7vsAcHEeasC4DF8p7png" inPartition="_yRRnQAcEEeasC4DF8p7png"/>
         <node xmi:type="uml:DecisionNode" xmi:id="_1ULFoAcGEeasC4DF8p7png" name="Confirma la operacion" incoming="_5bZZsAcGEeasC4DF8p7png" outgoing="_6MuwAAcGEeasC4DF8p7png _JRa3MAcHEeasC4DF8p7png" inPartition="_z-pvEAcEEeasC4DF8p7png"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_AgMf4AcMEeasC4DF8p7png" name="Operacion">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_xJ6MAAcDEeasC4DF8p7png" name="Login"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_E4k1YAcMEeasC4DF8p7png" name="Crear Plantilla de Comandos"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_IFgEYAcMEeasC4DF8p7png" name="Crear Plan de pasada"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_YklF8AcMEeasC4DF8p7png" name="Analizar Telemetria Historica"/>
+        <packagedElement xmi:type="uml:Actor" xmi:id="_e5KpcAcMEeasC4DF8p7png" name="Operador"/>
+        <packagedElement xmi:type="uml:Actor" xmi:id="_9nNEEAcMEeasC4DF8p7png" name="Ingeniero de Vuelo"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_E1kIMAcNEeasC4DF8p7png" client="_E4k1YAcMEeasC4DF8p7png" supplier="_xJ6MAAcDEeasC4DF8p7png"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_FRi5kAcNEeasC4DF8p7png" client="_IFgEYAcMEeasC4DF8p7png" supplier="_xJ6MAAcDEeasC4DF8p7png"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_F6iMMAcNEeasC4DF8p7png" client="_YklF8AcMEeasC4DF8p7png" supplier="_xJ6MAAcDEeasC4DF8p7png"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_ddFQgAcNEeasC4DF8p7png" name="Analizar Telemetria en Tiempo Real"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_gNdtcAcNEeasC4DF8p7png" client="_ddFQgAcNEeasC4DF8p7png" supplier="_xJ6MAAcDEeasC4DF8p7png"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_AVyxQAcNEeasC4DF8p7png" memberEnd="_AVzYUAcNEeasC4DF8p7png _AVzYUQcNEeasC4DF8p7png">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AVyxQQcNEeasC4DF8p7png" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AVyxQgcNEeasC4DF8p7png" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_AVzYUAcNEeasC4DF8p7png" name="crear plan de pasada" type="_IFgEYAcMEeasC4DF8p7png" association="_AVyxQAcNEeasC4DF8p7png"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_AVzYUQcNEeasC4DF8p7png" name="operador" type="_e5KpcAcMEeasC4DF8p7png" association="_AVyxQAcNEeasC4DF8p7png"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_AzjEQAcNEeasC4DF8p7png" memberEnd="_AzjEQwcNEeasC4DF8p7png _AzjERAcNEeasC4DF8p7png">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AzjEQQcNEeasC4DF8p7png" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AzjEQgcNEeasC4DF8p7png" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_AzjEQwcNEeasC4DF8p7png" name="crear plantilla de comandos" type="_E4k1YAcMEeasC4DF8p7png" association="_AzjEQAcNEeasC4DF8p7png"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_AzjERAcNEeasC4DF8p7png" name="operador" type="_e5KpcAcMEeasC4DF8p7png" association="_AzjEQAcNEeasC4DF8p7png"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Bd5o0AcNEeasC4DF8p7png" memberEnd="_Bd6P4gcNEeasC4DF8p7png _Bd628AcNEeasC4DF8p7png">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Bd6P4AcNEeasC4DF8p7png" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Bd6P4QcNEeasC4DF8p7png" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Bd6P4gcNEeasC4DF8p7png" name="analizar telemetria" type="_YklF8AcMEeasC4DF8p7png" association="_Bd5o0AcNEeasC4DF8p7png"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Bd628AcNEeasC4DF8p7png" name="ingeniero de vuelo" type="_9nNEEAcMEeasC4DF8p7png" association="_Bd5o0AcNEeasC4DF8p7png"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_hYA1AAcNEeasC4DF8p7png" memberEnd="_hYBcEgcNEeasC4DF8p7png _hYBcEwcNEeasC4DF8p7png">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hYBcEAcNEeasC4DF8p7png" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hYBcEQcNEeasC4DF8p7png" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_hYBcEgcNEeasC4DF8p7png" name="analizar telemetria en tiempo real" type="_ddFQgAcNEeasC4DF8p7png" association="_hYA1AAcNEeasC4DF8p7png"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_hYBcEwcNEeasC4DF8p7png" name="operador" type="_e5KpcAcMEeasC4DF8p7png" association="_hYA1AAcNEeasC4DF8p7png"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_4rzC4Pv8EeWFgNfF-6x_dw">

@@ -48,18 +48,22 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_L7U7gPgbEeWrWMXdyrR5uQ" name="DiagramBlockControlUnit"/>
     <packagedElement xmi:type="uml:Model" xmi:id="_p2IAsPguEeWISYGibq9i4A" name="UseCaseControlUnit">
-      <packagedElement xmi:type="uml:Package" xmi:id="_Cdv2sPgvEeWISYGibq9i4A" name="Control Unit">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Cdv2sPgvEeWISYGibq9i4A" name="Control Unit" visibility="private">
         <packagedElement xmi:type="uml:UseCase" xmi:id="_l1Ms0AI9EeaVFpkttV2Ddw" name="Telemetria de HK">
-          <extend xmi:type="uml:Extend" xmi:id="_B-eSYAJDEeaVFpkttV2Ddw" extendedCase="_KqJ7AAJBEeaVFpkttV2Ddw" extensionLocation="_B-fggAJDEeaVFpkttV2Ddw"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_WvaQ4AcIEeaSu9bmsjxcdg" name="ExtensionPoint1"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_NXZrwAI-EeaVFpkttV2Ddw" name="Generar Plan Final de Pasadas">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_NXZrwAI-EeaVFpkttV2Ddw" name="Plan Final de Pasadas">
+          <extend xmi:type="uml:Extend" xmi:id="_tzftAAcHEeaSu9bmsjxcdg" extendedCase="_or0fMAI-EeaVFpkttV2Ddw" extensionLocation="_tzhiMAcHEeaSu9bmsjxcdg"/>
           <include xmi:type="uml:Include" xmi:id="_Gx56QAJFEeaVFpkttV2Ddw" addition="_ol6ZkAJAEeaVFpkttV2Ddw"/>
           <include xmi:type="uml:Include" xmi:id="_Hj9CQAJFEeaVFpkttV2Ddw" addition="_yFd5sAI_EeaVFpkttV2Ddw"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_or0fMAI-EeaVFpkttV2Ddw" name="Plan Pasada Mission Unit"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_or0fMAI-EeaVFpkttV2Ddw" name="Plan Pasada Mission Unit">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_tzhiMAcHEeaSu9bmsjxcdg" name="ExtensionPoint1"/>
+        </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_yFd5sAI_EeaVFpkttV2Ddw" name="Info. Orbital"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_ol6ZkAJAEeaVFpkttV2Ddw" name="Verificar recursos"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_KqJ7AAJBEeaVFpkttV2Ddw" name="Generar plan de Contingencia">
+          <extend xmi:type="uml:Extend" xmi:id="_WvZp0AcIEeaSu9bmsjxcdg" extendedCase="_l1Ms0AI9EeaVFpkttV2Ddw" extensionLocation="_WvaQ4AcIEeaSu9bmsjxcdg"/>
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_B-fggAJDEeaVFpkttV2Ddw" name="ExtensionPoint1"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_flCZgAJBEeaVFpkttV2Ddw" name="Plan de Operaciones"/>
@@ -81,7 +85,7 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_JJF70AAbEea5T4llK3lKBA" name="solicitarhistoricotelemetria" type="_HEEJAAAbEea5T4llK3lKBA" association="_JJEGoAAbEea5T4llK3lKBA"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_JJF70QAbEea5T4llK3lKBA" name="operador" type="_LaP3oPgvEeWISYGibq9i4A" association="_JJEGoAAbEea5T4llK3lKBA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_vcnoIAI_EeaVFpkttV2Ddw" name="Ceci"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_vcnoIAI_EeaVFpkttV2Ddw" name="Orbita"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_LaP3oPgvEeWISYGibq9i4A" name="Operador"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_qadD4AJBEeaVFpkttV2Ddw" name="evaluar" memberEnd="_qah8YAJBEeaVFpkttV2Ddw _qaijcAJBEeaVFpkttV2Ddw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qagHMAJBEeaVFpkttV2Ddw" source="org.eclipse.papyrus">
@@ -111,7 +115,7 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_MKcXIgJDEeaVFpkttV2Ddw" name="evaluar plan pasada mission unit" type="_or0fMAI-EeaVFpkttV2Ddw" association="_MKbwEAJDEeaVFpkttV2Ddw"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_MKcXIwJDEeaVFpkttV2Ddw" name="operador" type="_LaP3oPgvEeWISYGibq9i4A" association="_MKbwEAJDEeaVFpkttV2Ddw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_54ySwAJEEeaVFpkttV2Ddw" memberEnd="_54y50AJEEeaVFpkttV2Ddw _54y50QJEEeaVFpkttV2Ddw">
+      <packagedElement xmi:type="uml:Association" xmi:id="_54ySwAJEEeaVFpkttV2Ddw" name="generar" memberEnd="_54y50AJEEeaVFpkttV2Ddw _54y50QJEEeaVFpkttV2Ddw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_54ySwQJEEeaVFpkttV2Ddw" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_54ySwgJEEeaVFpkttV2Ddw" key="nature" value="UML_Nature"/>
         </eAnnotations>
@@ -188,7 +192,7 @@
   </uml:Model>
   <Requirements:Requirement xmi:id="_4-NHAPgWEeWrWMXdyrR5uQ" text="The Control Unit shall  provide information to the Mission Unit for planning operations" id="L2B-SYS-751" base_Class="_4-Mf8PgWEeWrWMXdyrR5uQ"/>
   <Requirements:Requirement xmi:id="_q1zMcPgXEeWrWMXdyrR5uQ" text="The Control Unit shall send the pass plan and antenna pointing instructions to the ground station" id="L2B-SYS-752" base_Class="_q1x-UPgXEeWrWMXdyrR5uQ"/>
-  <Requirements:Requirement xmi:id="_vs5zYPgZEeWrWMXdyrR5uQ" text="The Control Unit shall provide the necessary software for operations" id="L2B-SYS-753" base_Class="_vs5MUPgZEeWrWMXdyrR5uQ"/>
+  <Requirements:Requirement xmi:id="_vs5zYPgZEeWrWMXdyrR5uQ" text="The Control Unit shall provide the necessary software tools for operations" id="L2B-SYS-753" base_Class="_vs5MUPgZEeWrWMXdyrR5uQ"/>
   <Requirements:Requirement xmi:id="_YZC14PgaEeWrWMXdyrR5uQ" text="Control Unit shall define which resources available to build the final pass plan" id="L2B-SYS-754" base_Class="_YY_ykPgaEeWrWMXdyrR5uQ"/>
   <Requirements:Requirement xmi:id="_f2kcwPgtEeWISYGibq9i4A" text="&#xA;The Control Unit shall determine the health status of the satellite." id="L2B-SYS-755" base_Class="_f2hZcPgtEeWISYGibq9i4A"/>
   <Requirements:Requirement xmi:id="_cohaIPgyEeWISYGibq9i4A" text="The Control Unit shall approve the preliminary plan acquisitions submitted by the Mission Unit&#xA;" id="L2B-SYS-756" base_Class="_cogzEPgyEeWISYGibq9i4A"/>

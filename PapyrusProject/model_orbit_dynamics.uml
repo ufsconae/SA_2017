@@ -27,8 +27,20 @@
     <packagedElement xmi:type="uml:Realization" xmi:id="_hEeq0AJ0EeaFPMgPLVXT7g" client="_DS6rUPgHEeWsD4MqqCA26g">
       <supplier xmi:type="uml:Property" href="_GroundSegment.uml#_53qcIAJqEeaitrP0YzxO6w"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_hJSK8AJ3EeaFPMgPLVXT7g" name="Actor1"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_i4BksAJ3EeaFPMgPLVXT7g" name="calcular apuntamiento a la luna"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_UZt38AcgEeaHELLrj2GR8A" name="Orbit Dynamics Module" URI="">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_o_L5YAcbEeaHELLrj2GR8A" name="Get Auxiliary Data"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_PUNooAceEeaHELLrj2GR8A" name="Editar TLE"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_PVMs0AcuEeaHELLrj2GR8A" name="Generar Eventos"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_rXplkAcbEeaHELLrj2GR8A" name="Get Antena Data"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_tqNeEAcbEeaHELLrj2GR8A" name="Get Orbit Telemtry Data"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_VWCBIAceEeaHELLrj2GR8A" name="Calcular Maniobras"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Yiv0wAceEeaHELLrj2GR8A" name="Calcular Efemérides"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_owxQoAcgEeaHELLrj2GR8A" name="MU - DB"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_6Ii0wAcgEeaHELLrj2GR8A" name="NORAD"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_-UHdUAcgEeaHELLrj2GR8A" name="IERS"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_D2C00AchEeaHELLrj2GR8A" name="SEC"/>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_hVj68AcuEeaHELLrj2GR8A" name="Activity1"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dqaYgPEtEeWOSpgalrXMqg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dqc0wPEtEeWOSpgalrXMqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>

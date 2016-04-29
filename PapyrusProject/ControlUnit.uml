@@ -53,12 +53,13 @@
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_WvaQ4AcIEeaSu9bmsjxcdg" name="ExtensionPoint1"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_NXZrwAI-EeaVFpkttV2Ddw" name="Plan Final de Pasadas">
-          <extend xmi:type="uml:Extend" xmi:id="_tzftAAcHEeaSu9bmsjxcdg" extendedCase="_or0fMAI-EeaVFpkttV2Ddw" extensionLocation="_tzhiMAcHEeaSu9bmsjxcdg"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Jmf1UA4YEeamoLR2pjZu6w" name="ExtensionPoint1"/>
           <include xmi:type="uml:Include" xmi:id="_Gx56QAJFEeaVFpkttV2Ddw" addition="_ol6ZkAJAEeaVFpkttV2Ddw"/>
           <include xmi:type="uml:Include" xmi:id="_Hj9CQAJFEeaVFpkttV2Ddw" addition="_yFd5sAI_EeaVFpkttV2Ddw"/>
           <include xmi:type="uml:Include" xmi:id="_t9_QUAcIEeaSu9bmsjxcdg" addition="_l1Ms0AI9EeaVFpkttV2Ddw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_or0fMAI-EeaVFpkttV2Ddw" name="Plan Pasada Mission Unit">
+          <extend xmi:type="uml:Extend" xmi:id="_Jma80A4YEeamoLR2pjZu6w" extendedCase="_NXZrwAI-EeaVFpkttV2Ddw" extensionLocation="_Jmf1UA4YEeamoLR2pjZu6w"/>
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_tzhiMAcHEeaSu9bmsjxcdg" name="ExtensionPoint1"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_yFd5sAI_EeaVFpkttV2Ddw" name="Info. Orbital"/>
@@ -122,6 +123,28 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_54y50AJEEeaVFpkttV2Ddw" name="generar plan final de pasadas" type="_NXZrwAI-EeaVFpkttV2Ddw" association="_54ySwAJEEeaVFpkttV2Ddw"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_54y50QJEEeaVFpkttV2Ddw" name="operador" type="_LaP3oPgvEeWISYGibq9i4A" association="_54ySwAJEEeaVFpkttV2Ddw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_L-s7cA4bEeamoLR2pjZu6w" name="ActivityDiagram">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_WAo6cA4bEeamoLR2pjZu6w" name="PlanOperaciones" group="_OStI8A4cEeamoLR2pjZu6w _X4iawA4cEeamoLR2pjZu6w _Fm4L0A4dEeamoLR2pjZu6w">
+        <group xmi:type="uml:ActivityPartition" xmi:id="_OStI8A4cEeamoLR2pjZu6w" name="Operador"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_X4iawA4cEeamoLR2pjZu6w" name="MissionCenter"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_Fm4L0A4dEeamoLR2pjZu6w" name="MissionDB"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_IgnZEA4dEeamoLR2pjZu6w" name="PlanFinalPasada">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_DXeDEA4fEeamoLR2pjZu6w" name="ControlCenter"/>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_QdA9AA4fEeamoLR2pjZu6w" name="MissionCenter" node="_zl42IA4dEeamoLR2pjZu6w _Nw1gEA4eEeamoLR2pjZu6w">
+          <node xmi:type="uml:InitialNode" xmi:id="_zl42IA4dEeamoLR2pjZu6w" name="Start" outgoing="_eIwwwA4eEeamoLR2pjZu6w"/>
+          <node xmi:type="uml:CreateObjectAction" xmi:id="_Nw1gEA4eEeamoLR2pjZu6w" name="Plan de pasada" incoming="_eIwwwA4eEeamoLR2pjZu6w"/>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_WBsGgA4fEeamoLR2pjZu6w" name="Orbitas" node="_5XTJMA4fEeamoLR2pjZu6w">
+          <node xmi:type="uml:CreateObjectAction" xmi:id="_5XTJMA4fEeamoLR2pjZu6w" name="Datos Orbitales"/>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_cKU4sA4fEeamoLR2pjZu6w" name="MissionDB" node="_9EtEgA4eEeamoLR2pjZu6w _Gd-rkA4gEeamoLR2pjZu6w">
+          <node xmi:type="uml:CreateObjectAction" xmi:id="_9EtEgA4eEeamoLR2pjZu6w" name="Almacenar Plan Final"/>
+          <node xmi:type="uml:CreateObjectAction" xmi:id="_Gd-rkA4gEeamoLR2pjZu6w" name="Telemetria HK"/>
+        </ownedBehavior>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_eIwwwA4eEeamoLR2pjZu6w" name="Genero" target="_Nw1gEA4eEeamoLR2pjZu6w" source="_zl42IA4dEeamoLR2pjZu6w"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_I2JkAPf_EeWab4iQ1I7RWQ">

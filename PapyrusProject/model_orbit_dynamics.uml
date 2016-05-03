@@ -28,19 +28,94 @@
       <supplier xmi:type="uml:Property" href="_GroundSegment.uml#_53qcIAJqEeaitrP0YzxO6w"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_UZt38AcgEeaHELLrj2GR8A" name="Orbit Dynamics Module" URI="">
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_o_L5YAcbEeaHELLrj2GR8A" name="Get Auxiliary Data"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_PUNooAceEeaHELLrj2GR8A" name="Editar TLE"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_PVMs0AcuEeaHELLrj2GR8A" name="Generar Eventos"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_rXplkAcbEeaHELLrj2GR8A" name="Get Antena Data"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_PVMs0AcuEeaHELLrj2GR8A" name="Generar Eventos">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_kYqDEAcvEeaHELLrj2GR8A" name=""/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_rXplkAcbEeaHELLrj2GR8A" name="Provide Antena Data"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_tqNeEAcbEeaHELLrj2GR8A" name="Get Orbit Telemtry Data"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_VWCBIAceEeaHELLrj2GR8A" name="Calcular Maniobras"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_Yiv0wAceEeaHELLrj2GR8A" name="Calcular Efemérides"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_FnI6YBFmEeaNmsYUWjX85A" name="Provide External Data"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_owxQoAcgEeaHELLrj2GR8A" name="MU - DB"/>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_6Ii0wAcgEeaHELLrj2GR8A" name="NORAD"/>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_-UHdUAcgEeaHELLrj2GR8A" name="IERS"/>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_D2C00AchEeaHELLrj2GR8A" name="SEC"/>
-    <packagedElement xmi:type="uml:Activity" xmi:id="_hVj68AcuEeaHELLrj2GR8A" name="Activity1"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_6Ii0wAcgEeaHELLrj2GR8A" name="Auxilliary Data Suppliers">
+      <generalization xmi:type="uml:Generalization" xmi:id="_eZc9cBFmEeaNmsYUWjX85A" general="_FnI6YBFmEeaNmsYUWjX85A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_hVj68AcuEeaHELLrj2GR8A" name="Generación de Tablas de Eventos" node="_8n7qgAcvEeaHELLrj2GR8A">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_Gm5OAAcwEeaHELLrj2GR8A" name="Solicitar un Evento"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_8n7qgAcvEeaHELLrj2GR8A" name="Start"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_GrE14BFhEeaNmsYUWjX85A" name="Actor1"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_L7eYgBFhEeaNmsYUWjX85A" name="Actor2"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_QtxC0BFhEeaNmsYUWjX85A" name="Interaction1"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_bMtt8BFhEeaNmsYUWjX85A" name="Orbit Dynamics Responsible"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_fkzIgBFhEeaNmsYUWjX85A" name="Auxilliary Data Supplier"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_mhZHMBFhEeaNmsYUWjX85A" name="NORAD">
+      <generalization xmi:type="uml:Generalization" xmi:id="_1_LD0BFhEeaNmsYUWjX85A" general="_fkzIgBFhEeaNmsYUWjX85A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_p4wroBFhEeaNmsYUWjX85A" name="IERS">
+      <generalization xmi:type="uml:Generalization" xmi:id="_21g18BFhEeaNmsYUWjX85A" general="_fkzIgBFhEeaNmsYUWjX85A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_sxkEwBFhEeaNmsYUWjX85A" name="SWPC">
+      <generalization xmi:type="uml:Generalization" xmi:id="_3iepoBFhEeaNmsYUWjX85A" general="_fkzIgBFhEeaNmsYUWjX85A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_GHLCIBFiEeaNmsYUWjX85A" memberEnd="_GHM3UBFiEeaNmsYUWjX85A _GHM3URFiEeaNmsYUWjX85A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GHMQQBFiEeaNmsYUWjX85A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GHMQQRFiEeaNmsYUWjX85A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_GHM3UBFiEeaNmsYUWjX85A" name="orbit dynamics responsible" type="_bMtt8BFhEeaNmsYUWjX85A" association="_GHLCIBFiEeaNmsYUWjX85A"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_GHM3URFiEeaNmsYUWjX85A" name="auxilliary data supplier" type="_fkzIgBFhEeaNmsYUWjX85A" association="_GHLCIBFiEeaNmsYUWjX85A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_LyfmMBFiEeaNmsYUWjX85A" name="Orbital Data Users"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_fu-iwBFiEeaNmsYUWjX85A" name="Ground Stations"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_jHf9wBFiEeaNmsYUWjX85A" memberEnd="_jHhL4RFiEeaNmsYUWjX85A _jHhL4hFiEeaNmsYUWjX85A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jHgk0BFiEeaNmsYUWjX85A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jHhL4BFiEeaNmsYUWjX85A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_jHhL4RFiEeaNmsYUWjX85A" name="orbital data users" type="_LyfmMBFiEeaNmsYUWjX85A" association="_jHf9wBFiEeaNmsYUWjX85A"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_jHhL4hFiEeaNmsYUWjX85A" name="orbit dynamics responsible" type="_bMtt8BFhEeaNmsYUWjX85A" association="_jHf9wBFiEeaNmsYUWjX85A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kJXDYBFiEeaNmsYUWjX85A" memberEnd="_kJXqcRFiEeaNmsYUWjX85A _kJXqchFiEeaNmsYUWjX85A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kJXDYRFiEeaNmsYUWjX85A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_kJXqcBFiEeaNmsYUWjX85A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_kJXqcRFiEeaNmsYUWjX85A" name="ground stations" type="_fu-iwBFiEeaNmsYUWjX85A" association="_kJXDYBFiEeaNmsYUWjX85A"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_kJXqchFiEeaNmsYUWjX85A" name="orbital data users" type="_LyfmMBFiEeaNmsYUWjX85A" association="_kJXDYBFiEeaNmsYUWjX85A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_l1VdABFiEeaNmsYUWjX85A" name="CETT">
+      <generalization xmi:type="uml:Generalization" xmi:id="_0GmjMBFiEeaNmsYUWjX85A" general="_fu-iwBFiEeaNmsYUWjX85A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_oDXa0BFiEeaNmsYUWjX85A" name="DCS - CAL Sites">
+      <generalization xmi:type="uml:Generalization" xmi:id="_0x90YBFiEeaNmsYUWjX85A" general="_fu-iwBFiEeaNmsYUWjX85A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_7eYCABFiEeaNmsYUWjX85A" name="Mission Unit"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_Ki1fsBFjEeaNmsYUWjX85A" name="Science Team"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_OGX34BFjEeaNmsYUWjX85A" name="MAIE">
+      <generalization xmi:type="uml:Generalization" xmi:id="_OGX34RFjEeaNmsYUWjX85A" general="_fu-iwBFiEeaNmsYUWjX85A"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_XvpfQBFjEeaNmsYUWjX85A" general="_Ki1fsBFjEeaNmsYUWjX85A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_RYdTsBFjEeaNmsYUWjX85A" name="Organismo de Glaciares">
+      <generalization xmi:type="uml:Generalization" xmi:id="_RYdTsRFjEeaNmsYUWjX85A" general="_fu-iwBFiEeaNmsYUWjX85A"/>
+      <generalization xmi:type="uml:Generalization" xmi:id="_YSFd8BFjEeaNmsYUWjX85A" general="_Ki1fsBFjEeaNmsYUWjX85A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WGeiABFjEeaNmsYUWjX85A" memberEnd="_WGfJEhFjEeaNmsYUWjX85A _WGfwIBFjEeaNmsYUWjX85A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WGfJEBFjEeaNmsYUWjX85A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WGfJERFjEeaNmsYUWjX85A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WGfJEhFjEeaNmsYUWjX85A" name="mission unit" type="_7eYCABFiEeaNmsYUWjX85A" association="_WGeiABFjEeaNmsYUWjX85A"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WGfwIBFjEeaNmsYUWjX85A" name="orbital data users" type="_LyfmMBFiEeaNmsYUWjX85A" association="_WGeiABFjEeaNmsYUWjX85A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_WrTGUBFjEeaNmsYUWjX85A" memberEnd="_WrTtYRFjEeaNmsYUWjX85A _WrTtYhFjEeaNmsYUWjX85A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WrTGURFjEeaNmsYUWjX85A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WrTtYBFjEeaNmsYUWjX85A" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WrTtYRFjEeaNmsYUWjX85A" name="science team" type="_Ki1fsBFjEeaNmsYUWjX85A" association="_WrTGUBFjEeaNmsYUWjX85A"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_WrTtYhFjEeaNmsYUWjX85A" name="orbital data users" type="_LyfmMBFiEeaNmsYUWjX85A" association="_WrTGUBFjEeaNmsYUWjX85A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_shcL0BFmEeaNmsYUWjX85A" name="Ground Stations">
+      <generalization xmi:type="uml:Generalization" xmi:id="_IWF-gBFnEeaNmsYUWjX85A" general="_rXplkAcbEeaHELLrj2GR8A"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dqaYgPEtEeWOSpgalrXMqg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dqc0wPEtEeWOSpgalrXMqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>

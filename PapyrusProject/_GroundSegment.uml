@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
   <uml:Model xmi:id="_4kzqEPv8EeWFgNfF-6x_dw" name="RootElement">
     <packagedElement xmi:type="uml:Class" xmi:id="_AICK8Pv9EeWFgNfF-6x_dw" name="L1_001"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_Z84CAPv9EeWFgNfF-6x_dw" name="L1_002"/>
@@ -629,19 +629,19 @@ Fuentes: Pablo Soligo</body>
           <include xmi:type="uml:Include" xmi:id="_GxZbEBI3EeaNYfgnhNpD2w" addition="_vW01wBIwEeaNYfgnhNpD2w"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_vW01wBIwEeaNYfgnhNpD2w" name="SeleccionarPasada"/>
-        <packagedElement xmi:type="uml:Association" xmi:id="_xasK8BIwEeaNYfgnhNpD2w" memberEnd="_xatZERIwEeaNYfgnhNpD2w _xauAIBIwEeaNYfgnhNpD2w">
-          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xasyABIwEeaNYfgnhNpD2w" source="org.eclipse.papyrus">
-            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xatZEBIwEeaNYfgnhNpD2w" key="nature" value="UML_Nature"/>
-          </eAnnotations>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_xatZERIwEeaNYfgnhNpD2w" name="seleccionarpasada" type="_vW01wBIwEeaNYfgnhNpD2w" association="_xasK8BIwEeaNYfgnhNpD2w"/>
-          <ownedEnd xmi:type="uml:Property" xmi:id="_xauAIBIwEeaNYfgnhNpD2w" name="operador" type="_IIa8kBIwEeaNYfgnhNpD2w" association="_xasK8BIwEeaNYfgnhNpD2w"/>
-        </packagedElement>
         <packagedElement xmi:type="uml:Association" xmi:id="_LJeEABI2EeaNYfgnhNpD2w" memberEnd="_LJerEhI2EeaNYfgnhNpD2w _LJerExI2EeaNYfgnhNpD2w">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LJerEBI2EeaNYfgnhNpD2w" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LJerERI2EeaNYfgnhNpD2w" key="nature" value="UML_Nature"/>
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_LJerEhI2EeaNYfgnhNpD2w" name="crearplanpasada" type="_lQ68wBIwEeaNYfgnhNpD2w" association="_LJeEABI2EeaNYfgnhNpD2w"/>
           <ownedEnd xmi:type="uml:Property" xmi:id="_LJerExI2EeaNYfgnhNpD2w" name="operador" type="_IIa8kBIwEeaNYfgnhNpD2w" association="_LJeEABI2EeaNYfgnhNpD2w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_F2YSYBI5EeaNYfgnhNpD2w" memberEnd="_F2Y5chI5EeaNYfgnhNpD2w _F2Y5cxI5EeaNYfgnhNpD2w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_F2Y5cBI5EeaNYfgnhNpD2w" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_F2Y5cRI5EeaNYfgnhNpD2w" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_F2Y5chI5EeaNYfgnhNpD2w" name="seleccionarpasada" type="_vW01wBIwEeaNYfgnhNpD2w" association="_F2YSYBI5EeaNYfgnhNpD2w"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_F2Y5cxI5EeaNYfgnhNpD2w" name="planificador" type="_IIa8kBIwEeaNYfgnhNpD2w" association="_F2YSYBI5EeaNYfgnhNpD2w"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_Bd5o0AcNEeasC4DF8p7png" memberEnd="_Bd6P4gcNEeasC4DF8p7png _Bd628AcNEeasC4DF8p7png">
@@ -665,6 +665,55 @@ Fuentes: Pablo Soligo</body>
         <ownedEnd xmi:type="uml:Property" xmi:id="_bsnU8BIwEeaNYfgnhNpD2w" name="analizar telemetria en tiempo real" type="_ddFQgAcNEeasC4DF8p7png" association="_bslfwBIwEeaNYfgnhNpD2w"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_bsnU8RIwEeaNYfgnhNpD2w" name="operador" type="_IIa8kBIwEeaNYfgnhNpD2w" association="_bslfwBIwEeaNYfgnhNpD2w"/>
       </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_TR3N0BI-EeaNYfgnhNpD2w" name="StateDiagram">
+      <packagedElement xmi:type="uml:Model" xmi:id="_NkkbMBI7EeaNYfgnhNpD2w" name="SolicitudAdquisicion">
+        <packagedElement xmi:type="uml:StateMachine" xmi:id="_QZKpwBI7EeaNYfgnhNpD2w" name="Solicitud de adquisicion">
+          <region xmi:type="uml:Region" xmi:id="_S43mYBI7EeaNYfgnhNpD2w" name="Region1">
+            <transition xmi:type="uml:Transition" xmi:id="_rBo9MBI7EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_rmBcoBI7EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_hnxY4BI9EeaNYfgnhNpD2w" name="Rechazar" kind="local" source="_3HcRYBI7EeaNYfgnhNpD2w" target="_6seeYBI7EeaNYfgnhNpD2w">
+              <ownedComment xmi:type="uml:Comment" xmi:id="__9VXMBI_EeaNYfgnhNpD2w" annotatedElement="_hnxY4BI9EeaNYfgnhNpD2w">
+                <body>Posibles motivos de rechazo:
+Cliente/Usuario no autorizado o temporalmente suspendido (Mala configuracion del rol)
+Incapacidad de cumplir por nivel de prioridad del cliente
+Incapacidad tecnica para cumplir la peticion
+Incapacidad para cumplir con la peticion por restricciones de tiempo</body>
+              </ownedComment>
+              <effect xmi:type="uml:Activity" xmi:id="_24ngUBI9EeaNYfgnhNpD2w" name="Rechazo"/>
+              <trigger xmi:type="uml:Trigger" xmi:id="_gzwQEBI_EeaNYfgnhNpD2w" name="ControlDeSolicitud" event="_G18DMBI_EeaNYfgnhNpD2w"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_kdwukBI9EeaNYfgnhNpD2w" name="Ingreso" source="_aep2kBI8EeaNYfgnhNpD2w" target="_3HcRYBI7EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_E_ebYBJAEeaNYfgnhNpD2w" name="Suspender" source="_46MBYBI7EeaNYfgnhNpD2w" target="_9pzyMBI7EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_HBU-YBJAEeaNYfgnhNpD2w" name="Aceptar" source="_3HcRYBI7EeaNYfgnhNpD2w" target="_46MBYBI7EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_Raw3YBJAEeaNYfgnhNpD2w" name="Activar" source="_9pzyMBI7EeaNYfgnhNpD2w" target="_46MBYBI7EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_VBjX4BJAEeaNYfgnhNpD2w" name="Cancelar" source="_46MBYBI7EeaNYfgnhNpD2w" target="_KIm4YBJAEeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_YAvs4BJAEeaNYfgnhNpD2w" name="Cancelar" source="_DNI34BI8EeaNYfgnhNpD2w" target="_KIm4YBJAEeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_a-l-EBJAEeaNYfgnhNpD2w" name="Obtener" source="_46MBYBI7EeaNYfgnhNpD2w" target="_DNI34BI8EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_eO87kBJAEeaNYfgnhNpD2w" name="Descartar" source="_DNI34BI8EeaNYfgnhNpD2w" target="_J8Mw4BI8EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_fpBs4BJAEeaNYfgnhNpD2w" name="Descartar" source="_FwJAIBI8EeaNYfgnhNpD2w" target="_J8Mw4BI8EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_hpAAkBJAEeaNYfgnhNpD2w" name="Publicar" source="_FwJAIBI8EeaNYfgnhNpD2w" target="_G8_NwBI8EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_v6DrYBJAEeaNYfgnhNpD2w" source="_G8_NwBI8EeaNYfgnhNpD2w" target="_ODCqcBI8EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_wS2l4BJAEeaNYfgnhNpD2w" source="_KIm4YBJAEeaNYfgnhNpD2w" target="_ODCqcBI8EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_wsNhEBJAEeaNYfgnhNpD2w" source="_9pzyMBI7EeaNYfgnhNpD2w" target="_ODCqcBI8EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_xHXzEBJAEeaNYfgnhNpD2w" source="_6seeYBI7EeaNYfgnhNpD2w" target="_ODCqcBI8EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_0CuJ4BJAEeaNYfgnhNpD2w" source="_J8Mw4BI8EeaNYfgnhNpD2w" target="_ODCqcBI8EeaNYfgnhNpD2w"/>
+            <transition xmi:type="uml:Transition" xmi:id="_2-LOYBJAEeaNYfgnhNpD2w" name="Generar" source="_DNI34BI8EeaNYfgnhNpD2w" target="_FwJAIBI8EeaNYfgnhNpD2w"/>
+            <subvertex xmi:type="uml:State" xmi:id="_3HcRYBI7EeaNYfgnhNpD2w" name="Pendiente"/>
+            <subvertex xmi:type="uml:State" xmi:id="_46MBYBI7EeaNYfgnhNpD2w" name="Aceptada"/>
+            <subvertex xmi:type="uml:State" xmi:id="_6seeYBI7EeaNYfgnhNpD2w" name="Rechazada"/>
+            <subvertex xmi:type="uml:State" xmi:id="_9pzyMBI7EeaNYfgnhNpD2w" name="Suspendida"/>
+            <subvertex xmi:type="uml:State" xmi:id="_DNI34BI8EeaNYfgnhNpD2w" name="Obtenida"/>
+            <subvertex xmi:type="uml:State" xmi:id="_FwJAIBI8EeaNYfgnhNpD2w" name="Generada"/>
+            <subvertex xmi:type="uml:State" xmi:id="_G8_NwBI8EeaNYfgnhNpD2w" name="Publicada"/>
+            <subvertex xmi:type="uml:State" xmi:id="_J8Mw4BI8EeaNYfgnhNpD2w" name="Descartada"/>
+            <subvertex xmi:type="uml:FinalState" xmi:id="_ODCqcBI8EeaNYfgnhNpD2w" name=""/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_aep2kBI8EeaNYfgnhNpD2w" name=""/>
+            <subvertex xmi:type="uml:State" xmi:id="_KIm4YBJAEeaNYfgnhNpD2w" name="Cancelada"/>
+          </region>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_G18DMBI_EeaNYfgnhNpD2w" name="ControlDeSolicitud"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_4rzC4Pv8EeWFgNfF-6x_dw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4r2GMPv8EeWFgNfF-6x_dw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -731,6 +780,12 @@ Fuentes: Pablo Soligo</body>
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#//usecases"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_neZmMLX8EduFmqQsrNB9lw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_SK20YBI8EeaNYfgnhNpD2w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SK4CgBI8EeaNYfgnhNpD2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
     </profileApplication>
   </uml:Model>
   <Requirements:Requirement xmi:id="_AIHqgPv9EeWFgNfF-6x_dw" text="The SA2017 mission shall be a technology demonstration mission with the objective of&#xA;space-flight qualification/validation of a 3U Cubesat and two on-board instruments: a&#xA;Data Collection Receiver and a Technology Demonstration Camera." id="L1_001" base_Class="_AICK8Pv9EeWFgNfF-6x_dw"/>
@@ -885,4 +940,8 @@ Fuentes: Pablo Soligo</body>
   <Requirements:Requirement xmi:id="_JOvxIAccEeasC4DF8p7png" text="The Ground Segment shall include a Control Station, which shall provide the following&#xA;high level functions: operations planning, orbit dynamics, operations and on-the-ground&#xA;simulation." id="L2B-SYS-514" base_Class="_JOQB4AccEeasC4DF8p7png"/>
   <Requirements:DeriveReqt xmi:id="_VAQ3YAccEeasC4DF8p7png" base_Abstraction="_U_dmIAccEeasC4DF8p7png"/>
   <Requirements:DeriveReqt xmi:id="_VkV00AccEeasC4DF8p7png" base_Abstraction="_VjqfYAccEeasC4DF8p7png"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_SK9iEBI8EeaNYfgnhNpD2w" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_e7ZHoBI8EeaNYfgnhNpD2w" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_r56MgBI8EeaNYfgnhNpD2w" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
+  <ActionLanguage:TextualRepresentation xmi:id="_fXoiQBI9EeaNYfgnhNpD2w" language="org.eclipse.papyrus.uml.textedit.transition.xtext.UmlTransition"/>
 </xmi:XMI>

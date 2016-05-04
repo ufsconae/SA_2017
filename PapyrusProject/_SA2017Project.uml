@@ -208,6 +208,28 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_06sJcAcYEeafd7GiqJXkMg" name="external orbital agent" type="_xjbwMAcMEeafd7GiqJXkMg" association="_06nQ8AcYEeafd7GiqJXkMg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_g1u7cAcaEeafd7GiqJXkMg" name="Orbital information data" client="_xjbwMAcMEeafd7GiqJXkMg" supplier="_-0R4AAcIEeafd7GiqJXkMg"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_N-7u4BIuEea0GI8mm9ohKQ" name="System_Of_Interest">
+      <packagedElement xmi:type="uml:Class" xmi:id="_SVY8UBIvEea0GI8mm9ohKQ" name="Enabling system: Launch segment">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wP3WkxIwEea0GI8mm9ohKQ" name="system of interest: sa2017_1" type="_WrVB0BIvEea0GI8mm9ohKQ" association="_wP2vgBIwEea0GI8mm9ohKQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_WrVB0BIvEea0GI8mm9ohKQ" name="System of interest: SA2017">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_vybzshIwEea0GI8mm9ohKQ" name="interoperating system: users_1" type="_YVuHEBIvEea0GI8mm9ohKQ" association="_vybMoBIwEea0GI8mm9ohKQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wP3WkhIwEea0GI8mm9ohKQ" name="enabling system: launch segment_1" type="_SVY8UBIvEea0GI8mm9ohKQ" association="_wP2vgBIwEea0GI8mm9ohKQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YVuHEBIvEea0GI8mm9ohKQ" name="Interoperating system: Users">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_vybzsRIwEea0GI8mm9ohKQ" name="system of interest: sa2017_1" type="_WrVB0BIvEea0GI8mm9ohKQ" association="_vybMoBIwEea0GI8mm9ohKQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_vybMoBIwEea0GI8mm9ohKQ" memberEnd="_vybzsRIwEea0GI8mm9ohKQ _vybzshIwEea0GI8mm9ohKQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vybMoRIwEea0GI8mm9ohKQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vybzsBIwEea0GI8mm9ohKQ" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_wP2vgBIwEea0GI8mm9ohKQ" memberEnd="_wP3WkhIwEea0GI8mm9ohKQ _wP3WkxIwEea0GI8mm9ohKQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wP3WkBIwEea0GI8mm9ohKQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wP3WkRIwEea0GI8mm9ohKQ" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+      </packagedElement>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1aQOwAJAEeagKebOtQfZOg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1aRc4AJAEeagKebOtQfZOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -307,4 +329,7 @@
   <Blocks:Block xmi:id="_lLZyoAcDEeafd7GiqJXkMg" base_Class="_lLX9cAcDEeafd7GiqJXkMg"/>
   <Blocks:Block xmi:id="_nuah8AcDEeafd7GiqJXkMg" base_Class="_nuZ64AcDEeafd7GiqJXkMg"/>
   <Blocks:Block xmi:id="_ovMpgAcDEeafd7GiqJXkMg" base_Class="_ovMCcAcDEeafd7GiqJXkMg"/>
+  <Blocks:Block xmi:id="_SVaKcBIvEea0GI8mm9ohKQ" base_Class="_SVY8UBIvEea0GI8mm9ohKQ"/>
+  <Blocks:Block xmi:id="_WrVo4BIvEea0GI8mm9ohKQ" base_Class="_WrVB0BIvEea0GI8mm9ohKQ"/>
+  <Blocks:Block xmi:id="_YVuuIBIvEea0GI8mm9ohKQ" base_Class="_YVuHEBIvEea0GI8mm9ohKQ"/>
 </xmi:XMI>

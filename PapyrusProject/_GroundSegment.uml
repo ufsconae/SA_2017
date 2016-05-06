@@ -598,37 +598,13 @@ and adjustment</body>
         <node xmi:type="uml:DecisionNode" xmi:id="_1ULFoAcGEeasC4DF8p7png" name="Confirma la operacion" incoming="_5bZZsAcGEeasC4DF8p7png" outgoing="_6MuwAAcGEeasC4DF8p7png _JRa3MAcHEeasC4DF8p7png" inPartition="_z-pvEAcEEeasC4DF8p7png"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_AgMf4AcMEeasC4DF8p7png" name="Operacion">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_AgAVgBI3EeaNYfgnhNpD2w">
-          <body>Extend: No es indispensable que ocurra
-Include: Es indispensable
-Estamos imaginando que la unica forma de 
-editar pasada es entrando por seleccion</body>
-        </ownedComment>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_xJ6MAAcDEeasC4DF8p7png" name="Login"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_E4k1YAcMEeasC4DF8p7png" name="Crear Plantilla de Comandos">
-          <extend xmi:type="uml:Extend" xmi:id="_pkifUBI2EeaNYfgnhNpD2w" extendedCase="_lQ68wBIwEeaNYfgnhNpD2w" extensionLocation="_pkifURI2EeaNYfgnhNpD2w"/>
-          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Yqn74BI2EeaNYfgnhNpD2w" name="ExtensionPoint1"/>
-        </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_YklF8AcMEeasC4DF8p7png" name="Analizar Telemetria Historica"/>
         <packagedElement xmi:type="uml:Actor" xmi:id="_9nNEEAcMEeasC4DF8p7png" name="Ingeniero de Vuelo"/>
         <packagedElement xmi:type="uml:Usage" xmi:id="_E1kIMAcNEeasC4DF8p7png" client="_E4k1YAcMEeasC4DF8p7png" supplier="_xJ6MAAcDEeasC4DF8p7png"/>
         <packagedElement xmi:type="uml:Usage" xmi:id="_F6iMMAcNEeasC4DF8p7png" client="_YklF8AcMEeasC4DF8p7png" supplier="_xJ6MAAcDEeasC4DF8p7png"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_ddFQgAcNEeasC4DF8p7png" name="Analizar Telemetria en Tiempo Real"/>
         <packagedElement xmi:type="uml:Usage" xmi:id="_gNdtcAcNEeasC4DF8p7png" client="_ddFQgAcNEeasC4DF8p7png" supplier="_xJ6MAAcDEeasC4DF8p7png"/>
-        <packagedElement xmi:type="uml:Actor" xmi:id="_IIa8kBIwEeaNYfgnhNpD2w" name="Planificador">
-          <ownedComment xmi:type="uml:Comment" xmi:id="_bC5v8BI4EeaNYfgnhNpD2w" annotatedElement="_IIa8kBIwEeaNYfgnhNpD2w">
-            <body>Descripcion: personal del control unit responsable de la planificacion y generacion de comandos al satelite
-Responsabilidades: Es el responsable de calendandarizar adquisiciones, tareas mantenimiento de salud y calibraciones
-Fuentes: Pablo Soligo</body>
-          </ownedComment>
-          <generalization xmi:type="uml:Generalization" xmi:id="_KlHogBIwEeaNYfgnhNpD2w" general="_C60PQBIwEeaNYfgnhNpD2w"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_lQ68wBIwEeaNYfgnhNpD2w" name="CrearPlanPasada">
-          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_pKbWMBI2EeaNYfgnhNpD2w" name="ExtensionPoint1"/>
-          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_pkifURI2EeaNYfgnhNpD2w" name="ExtensionPoint2"/>
-          <include xmi:type="uml:Include" xmi:id="_GxZbEBI3EeaNYfgnhNpD2w" addition="_vW01wBIwEeaNYfgnhNpD2w"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_vW01wBIwEeaNYfgnhNpD2w" name="SeleccionarPasada"/>
         <packagedElement xmi:type="uml:Association" xmi:id="_LJeEABI2EeaNYfgnhNpD2w" memberEnd="_LJerEhI2EeaNYfgnhNpD2w _LJerExI2EeaNYfgnhNpD2w">
           <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LJerEBI2EeaNYfgnhNpD2w" source="org.eclipse.papyrus">
             <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LJerERI2EeaNYfgnhNpD2w" key="nature" value="UML_Nature"/>
@@ -642,6 +618,33 @@ Fuentes: Pablo Soligo</body>
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_F2Y5chI5EeaNYfgnhNpD2w" name="seleccionarpasada" type="_vW01wBIwEeaNYfgnhNpD2w" association="_F2YSYBI5EeaNYfgnhNpD2w"/>
           <ownedEnd xmi:type="uml:Property" xmi:id="_F2Y5cxI5EeaNYfgnhNpD2w" name="planificador" type="_IIa8kBIwEeaNYfgnhNpD2w" association="_F2YSYBI5EeaNYfgnhNpD2w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_0qFUQBOSEeaP0b0FXSN1Zg" name="Operacion"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="__eSdsBOSEeaP0b0FXSN1Zg" name="Operacion">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_AgAVgBI3EeaNYfgnhNpD2w">
+            <body>Extend: No es indispensable que ocurra
+Include: Es indispensable
+Estamos imaginando que la unica forma de 
+editar pasada es entrando por seleccion</body>
+          </ownedComment>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_E4k1YAcMEeasC4DF8p7png" name="Crear Plantilla de Comandos">
+            <extend xmi:type="uml:Extend" xmi:id="_pkifUBI2EeaNYfgnhNpD2w" extendedCase="_lQ68wBIwEeaNYfgnhNpD2w" extensionLocation="_pkifURI2EeaNYfgnhNpD2w"/>
+            <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Yqn74BI2EeaNYfgnhNpD2w" name="ExtensionPoint1"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_lQ68wBIwEeaNYfgnhNpD2w" name="CrearPlanPasada">
+            <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_pKbWMBI2EeaNYfgnhNpD2w" name="ExtensionPoint1"/>
+            <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_pkifURI2EeaNYfgnhNpD2w" name="ExtensionPoint2"/>
+            <include xmi:type="uml:Include" xmi:id="_GxZbEBI3EeaNYfgnhNpD2w" addition="_vW01wBIwEeaNYfgnhNpD2w"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Actor" xmi:id="_IIa8kBIwEeaNYfgnhNpD2w" name="Planificador">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_bC5v8BI4EeaNYfgnhNpD2w" annotatedElement="_IIa8kBIwEeaNYfgnhNpD2w">
+              <body>Descripcion: personal del control unit responsable de la planificacion y generacion de comandos al satelite
+Responsabilidades: Es el responsable de calendandarizar adquisiciones, tareas mantenimiento de salud y calibraciones
+Fuentes: Pablo Soligo</body>
+            </ownedComment>
+            <generalization xmi:type="uml:Generalization" xmi:id="_KlHogBIwEeaNYfgnhNpD2w" general="_C60PQBIwEeaNYfgnhNpD2w"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_vW01wBIwEeaNYfgnhNpD2w" name="SeleccionarPasada"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_Bd5o0AcNEeasC4DF8p7png" memberEnd="_Bd6P4gcNEeasC4DF8p7png _Bd628AcNEeasC4DF8p7png">

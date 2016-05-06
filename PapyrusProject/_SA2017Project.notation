@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:configuration="http://www.eclipse.org/papyrus/infra/viewpoints/configuration" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:nattable="http://www.eclipse.org/papyrus/nattable/model" xmlns:nattableaxis="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis" xmlns:nattableaxisconfiguration="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration" xmlns:nattableaxisprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider" xmlns:nattableconfiguration="http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration" xmlns:nattablestyle="http://www.eclipse.org/papyrus/nattable/model/table/nattablestyle" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis http://www.eclipse.org/papyrus/nattable/model#//nattableaxis http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableaxisconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model#//nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model/nattableconfiguration http://www.eclipse.org/papyrus/nattable/model#//nattableconfiguration http://www.eclipse.org/papyrus/nattable/model/table/nattablestyle http://www.eclipse.org/papyrus/nattable/model#//nattablestyle">
-  <notation:Diagram xmi:id="_twKbcAJBEeagKebOtQfZOg" type="RequirementDiagram" name="L1_Requirements" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_twKbcAJBEeagKebOtQfZOg" type="RequirementDiagram" name="SA2017-L1_RequirementsDiagram" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_yjvF4AJGEeaJW-cSZfJk0g" type="shape_sysml_requirement_as_classifier">
       <children xmi:type="notation:DecorationNode" xmi:id="_yjw7EAJGEeaJW-cSZfJk0g" type="5029"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_yjw7EQJGEeaJW-cSZfJk0g" type="7017">
@@ -1191,7 +1191,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v4Z3WwJiEeaZ3u6hN4KPoA"/>
     </edges>
   </notation:Diagram>
-  <nattable:Table xmi:id="_Pj-M0AJFEeaJW-cSZfJk0g" name="L1RequirementTable" currentRowAxisProvider="_Pj-z5AJFEeaJW-cSZfJk0g" currentColumnAxisProvider="_Pj-z4AJFEeaJW-cSZfJk0g">
+  <nattable:Table xmi:id="_Pj-M0AJFEeaJW-cSZfJk0g" name="SA2017-L1RequirementTable" currentRowAxisProvider="_Pj-z5AJFEeaJW-cSZfJk0g" currentColumnAxisProvider="_Pj-z4AJFEeaJW-cSZfJk0g">
     <context xmi:type="uml:Model" href="_SA2017Project.uml#_3-1EUAJAEeagKebOtQfZOg"/>
     <owner xmi:type="uml:Model" href="_SA2017Project.uml#_3-1EUAJAEeagKebOtQfZOg"/>
     <prototype xmi:type="configuration:PapyrusSyncTable" href="platform:/plugin/org.eclipse.papyrus.infra.viewpoints.policy/builtin/default.configuration#_7wNb3txhEeOqHvRyiN87hA"/>
@@ -1581,7 +1581,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_8Qi8sAcYEeafd7GiqJXkMg" id="(1.0022522522522517,0.13636363636363635)"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_zVXzcAcCEeafd7GiqJXkMg" type="BlockDefinition" name="PSA2017_BlockDefinitionDiagram" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_zVXzcAcCEeafd7GiqJXkMg" type="BlockDefinition" name="SA2017-ArchitectureDiagram" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_9839oAcCEeafd7GiqJXkMg" type="2007">
       <children xmi:type="notation:DecorationNode" xmi:id="_984ksAcCEeafd7GiqJXkMg" type="5026"/>
       <children xmi:type="notation:BasicCompartment" xmi:id="_985LwAcCEeafd7GiqJXkMg" type="7016">
@@ -2247,7 +2247,7 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_21Zl0QccEeafd7GiqJXkMg" id="(0.0,0.21666666666666667)"/>
     </edges>
   </notation:Diagram>
-  <notation:Diagram xmi:id="_bjijYBIuEea0GI8mm9ohKQ" type="BlockDefinition" name="System_of_interest" measurementUnit="Pixel">
+  <notation:Diagram xmi:id="_bjijYBIuEea0GI8mm9ohKQ" type="BlockDefinition" name="SystemOfInterest" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_SXrbUBIvEea0GI8mm9ohKQ" type="shape_sysml_block_as_classifier">
       <children xmi:type="notation:DecorationNode" xmi:id="_SXspcBIvEea0GI8mm9ohKQ" type="label_sysml_block_name"/>
       <children xmi:type="notation:ListCompartment" xmi:id="_SXspcRIvEea0GI8mm9ohKQ" visible="false" type="compartment_sysml_property_as_list">
@@ -2310,10 +2310,25 @@
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SX3okhIvEea0GI8mm9ohKQ" x="200"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_WrW3ABIvEea0GI8mm9ohKQ" type="shape_sysml_block_as_classifier" fillColor="10265827">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WbLw4BOLEeazi40Hrf1lPQ" source="PapyrusHyperLink_Object" references="_zVXzcAcCEeafd7GiqJXkMg">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WbLw4ROLEeazi40Hrf1lPQ" key="tooltip_text"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WbLw4hOLEeazi40Hrf1lPQ" key="pageName" value="PapyrusHyperLink_Object"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WbLw4xOLEeazi40Hrf1lPQ" key="is_default_navigation" value="false"/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lXQe4BOcEeaTPIt3xC9bng" source="PapyrusHyperLink_Object" references="_DMTjYBOaEeaTPIt3xC9bng">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lXQe4ROcEeaTPIt3xC9bng" key="tooltip_text"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lXQe4hOcEeaTPIt3xC9bng" key="pageName" value="PapyrusHyperLink_Object"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lXQe4xOcEeaTPIt3xC9bng" key="is_default_navigation" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lXQe5BOcEeaTPIt3xC9bng" source="PapyrusHyperLink_Object" references="_zVXzcAcCEeafd7GiqJXkMg">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lXQe5ROcEeaTPIt3xC9bng" key="tooltip_text"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lXQe5hOcEeaTPIt3xC9bng" key="pageName" value="PapyrusHyperLink_Object"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lXQe5xOcEeaTPIt3xC9bng" key="is_default_navigation" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lXRF8BOcEeaTPIt3xC9bng" source="PapyrusHyperLink_Object" references="_FaawwAWkEeau0KhIeHix4w">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lXRF8ROcEeaTPIt3xC9bng" key="tooltip_text"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lXRF8hOcEeaTPIt3xC9bng" key="pageName" value="PapyrusHyperLink_Object"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lXRF8xOcEeaTPIt3xC9bng" key="is_default_navigation" value="false"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lXRF9BOcEeaTPIt3xC9bng" source="PapyrusHyperLink_Object" references="_twKbcAJBEeagKebOtQfZOg">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lXRF9ROcEeaTPIt3xC9bng" key="tooltip_text"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lXRF9hOcEeaTPIt3xC9bng" key="pageName" value="PapyrusHyperLink_Object"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lXRF9xOcEeaTPIt3xC9bng" key="is_default_navigation" value="false"/>
       </eAnnotations>
       <children xmi:type="notation:DecorationNode" xmi:id="_WrXeEBIvEea0GI8mm9ohKQ" type="label_sysml_block_name"/>
       <children xmi:type="notation:ListCompartment" xmi:id="_WrXeERIvEea0GI8mm9ohKQ" visible="false" type="compartment_sysml_property_as_list">

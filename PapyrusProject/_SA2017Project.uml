@@ -41,6 +41,7 @@
           <ownedAttribute xmi:type="uml:Port" xmi:id="_-0R4AAcIEeafd7GiqJXkMg" name="Port3" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="__VypoAcIEeafd7GiqJXkMg" name="Port4" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_nl5lgAcLEeafd7GiqJXkMg" name="Port5" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1ubm0BOKEeazi40Hrf1lPQ" name="mmp_1" type="_lLX9cAcDEeafd7GiqJXkMg" association="_1uU5IBOKEeazi40Hrf1lPQ"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_3TOE4AcJEeafd7GiqJXkMg" name="FlightSegment">
           <packagedElement xmi:type="uml:Class" xmi:id="_lLX9cAcDEeafd7GiqJXkMg" name="MMP">
@@ -48,10 +49,13 @@
             <ownedAttribute xmi:type="uml:Port" xmi:id="_xQlNAAcJEeafd7GiqJXkMg" name="Port2" aggregation="composite"/>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_SdjvQAcKEeafd7GiqJXkMg" name="Port3" aggregation="composite"/>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_smV2AAcKEeafd7GiqJXkMg" name="Port4" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_1ucN4BOKEeazi40Hrf1lPQ" name="groundsegment_1" type="_ovMCcAcDEeafd7GiqJXkMg" association="_1uU5IBOKEeazi40Hrf1lPQ"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_2QGJchOKEeazi40Hrf1lPQ" name="payload_1" type="_nuZ64AcDEeafd7GiqJXkMg" association="_2QFiYBOKEeazi40Hrf1lPQ"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_nuZ64AcDEeafd7GiqJXkMg" name="PAYLOAD">
             <ownedAttribute xmi:type="uml:Port" xmi:id="_yXDs4AcJEeafd7GiqJXkMg" name="Port2" aggregation="composite"/>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_TEWCcAcKEeafd7GiqJXkMg" name="Port3" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_2QGwgBOKEeazi40Hrf1lPQ" name="mmp_1" type="_lLX9cAcDEeafd7GiqJXkMg" association="_2QFiYBOKEeazi40Hrf1lPQ"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Dependency" xmi:id="_p_ehcAcKEeafd7GiqJXkMg" name="TM-Science data" client="_yXDs4AcJEeafd7GiqJXkMg" supplier="_xQlNAAcJEeafd7GiqJXkMg"/>
           <packagedElement xmi:type="uml:Dependency" xmi:id="_Eqa6EAcLEeafd7GiqJXkMg" name="TM-Science data" client="_hFs50AcJEeafd7GiqJXkMg" supplier="_nl5lgAcLEeafd7GiqJXkMg"/>
@@ -227,6 +231,16 @@
       <packagedElement xmi:type="uml:Association" xmi:id="_wP2vgBIwEea0GI8mm9ohKQ" memberEnd="_wP3WkhIwEea0GI8mm9ohKQ _wP3WkxIwEea0GI8mm9ohKQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wP3WkBIwEea0GI8mm9ohKQ" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wP3WkRIwEea0GI8mm9ohKQ" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_1uU5IBOKEeazi40Hrf1lPQ" memberEnd="_1ubm0BOKEeazi40Hrf1lPQ _1ucN4BOKEeazi40Hrf1lPQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1uaYsBOKEeazi40Hrf1lPQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1ua_wBOKEeazi40Hrf1lPQ" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_2QFiYBOKEeazi40Hrf1lPQ" memberEnd="_2QGJchOKEeazi40Hrf1lPQ _2QGwgBOKEeazi40Hrf1lPQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2QGJcBOKEeazi40Hrf1lPQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2QGJcROKEeazi40Hrf1lPQ" key="nature" value="SysML_Nature"/>
         </eAnnotations>
       </packagedElement>
     </packagedElement>

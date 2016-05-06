@@ -73,7 +73,6 @@ computer science and the general community)</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_0exsIBLiEeaoiaVY6tukow" name="Science User"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_00gEgBLiEeaoiaVY6tukow" name="Catalog"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_sYiIUBLjEeaoiaVY6tukow" name="Community"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_wLMhoBLjEeaoiaVY6tukow" name="Solicitar Productos" memberEnd="_wLOW0BLjEeaoiaVY6tukow _wLOW0RLjEeaoiaVY6tukow">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wLNvwBLjEeaoiaVY6tukow" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wLNvwRLjEeaoiaVY6tukow" key="nature" value="UML_Nature"/>
@@ -90,7 +89,7 @@ computer science and the general community)</body>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_NdIEYBFUEeak_5lhOjdy1A" name="Mission Unit" isActive="true">
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_2ka8YBFVEeak_5lhOjdy1A" name="Processor" type="_NdIEYBFUEeak_5lhOjdy1A" aggregation="composite" association="_29Y2ABFVEeak_5lhOjdy1A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2ka8YBFVEeak_5lhOjdy1A" name="Processors" type="_NdIEYBFUEeak_5lhOjdy1A" aggregation="composite" association="_29Y2ABFVEeak_5lhOjdy1A"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_N6wwsBFWEeak_5lhOjdy1A" name="Catalog" type="_NdIEYBFUEeak_5lhOjdy1A" aggregation="composite" association="_OMsOMRFWEeak_5lhOjdy1A"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_R8jyMBFWEeak_5lhOjdy1A" name="User Care" type="_NdIEYBFUEeak_5lhOjdy1A" aggregation="composite" association="_SL9gIBFWEeak_5lhOjdy1A"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_W3-jUBFWEeak_5lhOjdy1A" name="Mission Planning" type="_NdIEYBFUEeak_5lhOjdy1A" aggregation="composite" association="_XFxHsBFWEeak_5lhOjdy1A"/>
@@ -123,11 +122,12 @@ computer science and the general community)</body>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_YnWCcBO3EeaupMsSc_JFqg" name="flowport22" aggregation="composite"/>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_r8CmQBO3EeaupMsSc_JFqg" name="Science User" aggregation="composite"/>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_sld9wBO3EeaupMsSc_JFqg" name="flowport24" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_swSPMBPOEeaWKdiwT8okVw" name="Port1" aggregation="composite"/>
       <ownedConnector xmi:type="uml:Connector" xmi:id="_pjya0BFZEeak_5lhOjdy1A" name="TL/TLMY">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_pjzo8BFZEeak_5lhOjdy1A" partWithPort="_arnNABFWEeak_5lhOjdy1A" role="_z_MrwBO0EeaupMsSc_JFqg"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_pjzo8RFZEeak_5lhOjdy1A" role="_weiBYBO0EeaupMsSc_JFqg"/>
       </ownedConnector>
-      <ownedConnector xmi:type="uml:Connector" xmi:id="_8LTIgBFZEeak_5lhOjdy1A" name="Orbital Products Generation/Orbital product Queries">
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_8LTIgBFZEeak_5lhOjdy1A" name="Orbital Products Generation/Orbital product Queries/Adquisition Request-Response">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_8LTIgRFZEeak_5lhOjdy1A" partWithPort="_arnNABFWEeak_5lhOjdy1A" role="__rAyoBO0EeaupMsSc_JFqg"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_8LTIghFZEeak_5lhOjdy1A" role="_5UumABO0EeaupMsSc_JFqg"/>
       </ownedConnector>
@@ -230,7 +230,7 @@ computer science and the general community)</body>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_pyjfUhO5EeaWKdiwT8okVw" name="block4_1" type="_VvG_IBO5EeaWKdiwT8okVw" association="_pyi4QBO5EeaWKdiwT8okVw"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_P4IksBO5EeaWKdiwT8okVw" name="System In Operational Environment">
+    <packagedElement xmi:type="uml:Package" xmi:id="_P4IksBO5EeaWKdiwT8okVw" name="System In Operational Environment" visibility="public">
       <packagedElement xmi:type="uml:Class" xmi:id="_S1fGoBO5EeaWKdiwT8okVw" name="Science Users">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_lqNJ4RO5EeaWKdiwT8okVw" name="block1_1" type="_Z6Fx0BO5EeaWKdiwT8okVw" association="_lqL7wBO5EeaWKdiwT8okVw"/>
       </packagedElement>
@@ -268,6 +268,63 @@ computer science and the general community)</body>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pyjfUBO5EeaWKdiwT8okVw" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pyjfURO5EeaWKdiwT8okVw" key="nature" value="SysML_Nature"/>
       </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6EEpMBO9EeaWKdiwT8okVw" name="Processors">
+      <generalization xmi:type="uml:Generalization" xmi:id="_ijC88BO_EeaWKdiwT8okVw" general="_NdIEYBFUEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6W4QcBO9EeaWKdiwT8okVw" name="Mission Planning">
+      <generalization xmi:type="uml:Generalization" xmi:id="_nd9-0BO_EeaWKdiwT8okVw" general="_NdIEYBFUEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6mO7EBO9EeaWKdiwT8okVw" name="User Care">
+      <generalization xmi:type="uml:Generalization" xmi:id="_6_2DABO_EeaWKdiwT8okVw" general="_NdIEYBFUEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_C-jbcBO_EeaWKdiwT8okVw" name="Catalog">
+      <generalization xmi:type="uml:Generalization" xmi:id="_7f74UBO_EeaWKdiwT8okVw" general="_NdIEYBFUEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_E9AsMBO_EeaWKdiwT8okVw" name="Mission Database">
+      <generalization xmi:type="uml:Generalization" xmi:id="_goc4gBO_EeaWKdiwT8okVw" general="_NdIEYBFUEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_URlNABPAEeaWKdiwT8okVw" name="Community">
+      <generalization xmi:type="uml:Generalization" xmi:id="_c79WoBPVEeaWKdiwT8okVw" general="_TWTrABPVEeaWKdiwT8okVw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_WBFbwBPAEeaWKdiwT8okVw" name="Operator"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_TWTrABPVEeaWKdiwT8okVw" name="User"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_XPPrcBPVEeaWKdiwT8okVw" name="Registered Science User">
+      <generalization xmi:type="uml:Generalization" xmi:id="_cKYIsBPVEeaWKdiwT8okVw" general="_TWTrABPVEeaWKdiwT8okVw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gJtsEBPVEeaWKdiwT8okVw" memberEnd="_gJ1A0hPVEeaWKdiwT8okVw _gJ1n4BPVEeaWKdiwT8okVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gJ1A0BPVEeaWKdiwT8okVw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gJ1A0RPVEeaWKdiwT8okVw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gJ1A0hPVEeaWKdiwT8okVw" name="users" type="_TWTrABPVEeaWKdiwT8okVw" association="_gJtsEBPVEeaWKdiwT8okVw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gJ1n4BPVEeaWKdiwT8okVw" name="operator" type="_WBFbwBPAEeaWKdiwT8okVw" association="_gJtsEBPVEeaWKdiwT8okVw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_3gX0ABPWEeaWKdiwT8okVw" name="Science &amp; Applications"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="__ks20BPWEeaWKdiwT8okVw" name="Ground Station"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_BEMToBPXEeaWKdiwT8okVw" name="Control Unit"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Cv_uIBPXEeaWKdiwT8okVw" memberEnd="_CwAVMBPXEeaWKdiwT8okVw _CwAVMRPXEeaWKdiwT8okVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Cv_uIRPXEeaWKdiwT8okVw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Cv_uIhPXEeaWKdiwT8okVw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_CwAVMBPXEeaWKdiwT8okVw" name="operator" type="_WBFbwBPAEeaWKdiwT8okVw" association="_Cv_uIBPXEeaWKdiwT8okVw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_CwAVMRPXEeaWKdiwT8okVw" name="control unit" type="_BEMToBPXEeaWKdiwT8okVw" association="_Cv_uIBPXEeaWKdiwT8okVw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_D_86IBPXEeaWKdiwT8okVw" memberEnd="_D_9hMhPXEeaWKdiwT8okVw _D_9hMxPXEeaWKdiwT8okVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D_9hMBPXEeaWKdiwT8okVw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D_9hMRPXEeaWKdiwT8okVw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_D_9hMhPXEeaWKdiwT8okVw" name="operator" type="_WBFbwBPAEeaWKdiwT8okVw" association="_D_86IBPXEeaWKdiwT8okVw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_D_9hMxPXEeaWKdiwT8okVw" name="science &amp; applications" type="_3gX0ABPWEeaWKdiwT8okVw" association="_D_86IBPXEeaWKdiwT8okVw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EbpXoBPXEeaWKdiwT8okVw" memberEnd="_Ebp-shPXEeaWKdiwT8okVw _Ebp-sxPXEeaWKdiwT8okVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ebp-sBPXEeaWKdiwT8okVw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ebp-sRPXEeaWKdiwT8okVw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ebp-shPXEeaWKdiwT8okVw" name="operator" type="_WBFbwBPAEeaWKdiwT8okVw" association="_EbpXoBPXEeaWKdiwT8okVw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ebp-sxPXEeaWKdiwT8okVw" name="ground station" type="__ks20BPWEeaWKdiwT8okVw" association="_EbpXoBPXEeaWKdiwT8okVw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_6IYioBPXEeaWKdiwT8okVw" name="Science User">
+      <generalization xmi:type="uml:Generalization" xmi:id="_EM4GYBPYEeaWKdiwT8okVw" general="_TWTrABPVEeaWKdiwT8okVw"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_TztdwPf_EeWab4iQ1I7RWQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tztdwff_EeWab4iQ1I7RWQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -406,4 +463,9 @@ computer science and the general community)</body>
   <Blocks:Block xmi:id="_VvHmMBO5EeaWKdiwT8okVw" base_Class="_VvG_IBO5EeaWKdiwT8okVw"/>
   <Blocks:Block xmi:id="_Z6GY4BO5EeaWKdiwT8okVw" base_Class="_Z6Fx0BO5EeaWKdiwT8okVw"/>
   <Blocks:Block xmi:id="_adjrQBO5EeaWKdiwT8okVw" base_Class="_adjEMBO5EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_6EFQQBO9EeaWKdiwT8okVw" base_Class="_6EEpMBO9EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_6W43gBO9EeaWKdiwT8okVw" base_Class="_6W4QcBO9EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_6mPiIBO9EeaWKdiwT8okVw" base_Class="_6mO7EBO9EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_C-kCgBO_EeaWKdiwT8okVw" base_Class="_C-jbcBO_EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_E9BTQBO_EeaWKdiwT8okVw" base_Class="_E9AsMBO_EeaWKdiwT8okVw"/>
 </xmi:XMI>

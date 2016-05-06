@@ -82,7 +82,7 @@
           </packagedElement>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_EP8xyROaEeaTPIt3xC9bng" name="Flight Segment" URI="">
-          <packagedElement xmi:type="uml:UseCase" xmi:id="_EP8xyhOaEeaTPIt3xC9bng" name="Get DCS science data"/>
+          <packagedElement xmi:type="uml:UseCase" xmi:id="_EP8xyhOaEeaTPIt3xC9bng" name="Set DCS science data"/>
           <packagedElement xmi:type="uml:UseCase" xmi:id="_EP8xyxOaEeaTPIt3xC9bng" name="Send science data">
             <include xmi:type="uml:Include" xmi:id="_EP8xzBOaEeaTPIt3xC9bng" addition="_EP8xyhOaEeaTPIt3xC9bng"/>
             <include xmi:type="uml:Include" xmi:id="_EP8xzROaEeaTPIt3xC9bng" addition="_EP8xzxOaEeaTPIt3xC9bng"/>
@@ -175,6 +175,7 @@
     <packagedElement xmi:type="uml:Model" xmi:id="_4obbIAJlEeaJW-cSZfJk0g" name="SA2017_ArchitectureDiagram">
       <packagedElement xmi:type="uml:Package" xmi:id="_98pUIAcCEeafd7GiqJXkMg" name="SA2017 Project">
         <packagedElement xmi:type="uml:Class" xmi:id="_ovMCcAcDEeafd7GiqJXkMg" name="GroundSegment">
+          <generalization xmi:type="uml:Generalization" xmi:id="_Igpu4BO7EeaTPIt3xC9bng" general="_knvnUBO5EeaTPIt3xC9bng"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_1B70MAcIEeafd7GiqJXkMg" name="Port1" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_-SmuUAcIEeafd7GiqJXkMg" name="Port2" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_-0R4AAcIEeafd7GiqJXkMg" name="Port3" aggregation="composite"/>
@@ -184,6 +185,7 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_3TOE4AcJEeafd7GiqJXkMg" name="FlightSegment">
           <packagedElement xmi:type="uml:Class" xmi:id="_lLX9cAcDEeafd7GiqJXkMg" name="MMP">
+            <generalization xmi:type="uml:Generalization" xmi:id="_JhruEBO7EeaTPIt3xC9bng" general="_oGN5UBO5EeaTPIt3xC9bng"/>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_hFs50AcJEeafd7GiqJXkMg" name="Port1" aggregation="composite"/>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_xQlNAAcJEeafd7GiqJXkMg" name="Port2" aggregation="composite"/>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_SdjvQAcKEeafd7GiqJXkMg" name="Port3" aggregation="composite"/>
@@ -192,6 +194,7 @@
             <ownedAttribute xmi:type="uml:Property" xmi:id="_2QGJchOKEeazi40Hrf1lPQ" name="payload_1" type="_nuZ64AcDEeafd7GiqJXkMg" association="_2QFiYBOKEeazi40Hrf1lPQ"/>
           </packagedElement>
           <packagedElement xmi:type="uml:Class" xmi:id="_nuZ64AcDEeafd7GiqJXkMg" name="PAYLOAD">
+            <generalization xmi:type="uml:Generalization" xmi:id="_JMKxEBO7EeaTPIt3xC9bng" general="_oGN5UBO5EeaTPIt3xC9bng"/>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_yXDs4AcJEeafd7GiqJXkMg" name="Port2" aggregation="composite"/>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_TEWCcAcKEeafd7GiqJXkMg" name="Port3" aggregation="composite"/>
             <ownedAttribute xmi:type="uml:Property" xmi:id="_2QGwgBOKEeazi40Hrf1lPQ" name="mmp_1" type="_lLX9cAcDEeafd7GiqJXkMg" association="_2QFiYBOKEeazi40Hrf1lPQ"/>
@@ -420,6 +423,12 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_RFKupBOwEeaTPIt3xC9bng" name="operators" type="_ZFHLAAWqEeau0KhIeHix4w" association="_RFKuoBOwEeaTPIt3xC9bng"/>
       </packagedElement>
     </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_2HLvIBO4EeaTPIt3xC9bng" name="SA2017-ProductTree">
+      <packagedElement xmi:type="uml:Class" xmi:id="_knvnUBO5EeaTPIt3xC9bng" name="SA2017"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_oGN5UBO5EeaTPIt3xC9bng" name="Flight Segment">
+        <generalization xmi:type="uml:Generalization" xmi:id="_I5RqQBO7EeaTPIt3xC9bng" general="_knvnUBO5EeaTPIt3xC9bng"/>
+      </packagedElement>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1aQOwAJAEeagKebOtQfZOg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1aRc4AJAEeagKebOtQfZOg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -522,4 +531,6 @@
   <Blocks:Block xmi:id="_SVaKcBIvEea0GI8mm9ohKQ" base_Class="_SVY8UBIvEea0GI8mm9ohKQ"/>
   <Blocks:Block xmi:id="_WrVo4BIvEea0GI8mm9ohKQ" base_Class="_WrVB0BIvEea0GI8mm9ohKQ"/>
   <Blocks:Block xmi:id="_YVuuIBIvEea0GI8mm9ohKQ" base_Class="_YVuHEBIvEea0GI8mm9ohKQ"/>
+  <Blocks:Block xmi:id="_knwOYBO5EeaTPIt3xC9bng" base_Class="_knvnUBO5EeaTPIt3xC9bng"/>
+  <Blocks:Block xmi:id="_oGN5URO5EeaTPIt3xC9bng" base_Class="_oGN5UBO5EeaTPIt3xC9bng"/>
 </xmi:XMI>

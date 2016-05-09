@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
-  <uml:Model xmi:id="_dkf9wPEtEeWOSpgalrXMqg" name="RootElement" visibility="public" URI="">
+  <uml:Model xmi:id="_dkf9wPEtEeWOSpgalrXMqg" name="Orbit Dynamics Products" visibility="public" URI="">
     <packagedElement xmi:type="uml:Class" xmi:id="_a0MWkPgCEeWsD4MqqCA26g" name="EVENTS" visibility="package"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_Lg7EAPgGEeWsD4MqqCA26g" name="COLD-SKY-MANEUVER"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_dhu-EPgGEeWsD4MqqCA26g" name="MOON-CAL-MANEUVER" visibility="package"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_DS6rUPgHEeWsD4MqqCA26g" name="EARTH-SITES-CAL"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_uRem8PgIEeWsD4MqqCA26g" name="ORBIT-EPHEMERIS AND TLE."/>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_Xj6NQP5zEeWH8ZFDcq738Q" name="DeriveReqt1" client="_Lg7EAPgGEeWsD4MqqCA26g">
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_Xj6NQP5zEeWH8ZFDcq738Q" client="_Lg7EAPgGEeWsD4MqqCA26g">
       <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_xjvaQPwsEeWZO5s3t9VRdw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_YvOw4P5zEeWH8ZFDcq738Q" name="DeriveReqt2" client="_DS6rUPgHEeWsD4MqqCA26g">
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_YvOw4P5zEeWH8ZFDcq738Q" name="" client="_DS6rUPgHEeWsD4MqqCA26g">
       <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_xjvaQPwsEeWZO5s3t9VRdw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_Zb5poP5zEeWH8ZFDcq738Q" name="DeriveReqt3" client="_dhu-EPgGEeWsD4MqqCA26g">
-      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_xjvaQPwsEeWZO5s3t9VRdw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_aFagsP5zEeWH8ZFDcq738Q" name="DeriveReqt4" client="_a0MWkPgCEeWsD4MqqCA26g">
-      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Abstraction" xmi:id="_blRw8P5zEeWH8ZFDcq738Q" name="DeriveReqt5" client="_uRem8PgIEeWsD4MqqCA26g">
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_blRw8P5zEeWH8ZFDcq738Q" client="_dkf9wPEtEeWOSpgalrXMqg">
       <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_CCVocAJ0EeaFPMgPLVXT7g" client="_Lg7EAPgGEeWsD4MqqCA26g">
@@ -82,7 +76,7 @@
     <packagedElement xmi:type="uml:Actor" xmi:id="_l1VdABFiEeaNmsYUWjX85A" name="CETT">
       <generalization xmi:type="uml:Generalization" xmi:id="_0GmjMBFiEeaNmsYUWjX85A" general="_fu-iwBFiEeaNmsYUWjX85A"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_oDXa0BFiEeaNmsYUWjX85A" name="DCS - CAL Sites">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_oDXa0BFiEeaNmsYUWjX85A" name="DCS / CAL Sites">
       <generalization xmi:type="uml:Generalization" xmi:id="_0x90YBFiEeaNmsYUWjX85A" general="_fu-iwBFiEeaNmsYUWjX85A"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_7eYCABFiEeaNmsYUWjX85A" name="Mission Unit"/>
@@ -91,7 +85,7 @@
       <generalization xmi:type="uml:Generalization" xmi:id="_OGX34RFjEeaNmsYUWjX85A" general="_fu-iwBFiEeaNmsYUWjX85A"/>
       <generalization xmi:type="uml:Generalization" xmi:id="_XvpfQBFjEeaNmsYUWjX85A" general="_Ki1fsBFjEeaNmsYUWjX85A"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_RYdTsBFjEeaNmsYUWjX85A" name="Organismo de Glaciares">
+    <packagedElement xmi:type="uml:Actor" xmi:id="_RYdTsBFjEeaNmsYUWjX85A" name="Glaciers Organisms">
       <generalization xmi:type="uml:Generalization" xmi:id="_RYdTsRFjEeaNmsYUWjX85A" general="_fu-iwBFiEeaNmsYUWjX85A"/>
       <generalization xmi:type="uml:Generalization" xmi:id="_YSFd8BFjEeaNmsYUWjX85A" general="_Ki1fsBFjEeaNmsYUWjX85A"/>
     </packagedElement>
@@ -218,7 +212,7 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_MSzckhOUEea7gegZc09Zkg" name="ángulos de apuntamiento de antena" type="_befV4BOPEea7gegZc09Zkg" association="_MSyOcBOUEea7gegZc09Zkg"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_MS0DoBOUEea7gegZc09Zkg" name="data base" type="_Y7uaQBL3Eea4rsHwmR5jDQ" association="_MSyOcBOUEea7gegZc09Zkg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Activity" xmi:id="_prqs0BO8Eea7gegZc09Zkg" name="" node="_Gkq_cBXhEea0S91tL-Z6pQ _xYWysBXgEea0S91tL-Z6pQ _cHuGoBXgEea0S91tL-Z6pQ _YVUzEBXgEea0S91tL-Z6pQ _GaTX8BXgEea0S91tL-Z6pQ _EVSzQBXgEea0S91tL-Z6pQ __gJCMBXfEea0S91tL-Z6pQ _8x2P8BXfEea0S91tL-Z6pQ _qcbX0BXfEea0S91tL-Z6pQ _jxyr0BXfEea0S91tL-Z6pQ _HLjgABPCEea7gegZc09Zkg _7tUCcBO-Eea7gegZc09Zkg _tm9BMBO9Eea7gegZc09Zkg _jky_wBO9Eea7gegZc09Zkg _NlJRkBO9Eea7gegZc09Zkg" group="_99WA0BO9Eea7gegZc09Zkg _DpnckBO9Eea7gegZc09Zkg _z1Z88BO8Eea7gegZc09Zkg">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_prqs0BO8Eea7gegZc09Zkg" name="Generate Events" visibility="private" node="_Gkq_cBXhEea0S91tL-Z6pQ _xYWysBXgEea0S91tL-Z6pQ _cHuGoBXgEea0S91tL-Z6pQ _YVUzEBXgEea0S91tL-Z6pQ _GaTX8BXgEea0S91tL-Z6pQ _EVSzQBXgEea0S91tL-Z6pQ __gJCMBXfEea0S91tL-Z6pQ _8x2P8BXfEea0S91tL-Z6pQ _qcbX0BXfEea0S91tL-Z6pQ _jxyr0BXfEea0S91tL-Z6pQ _HLjgABPCEea7gegZc09Zkg _7tUCcBO-Eea7gegZc09Zkg _tm9BMBO9Eea7gegZc09Zkg _jky_wBO9Eea7gegZc09Zkg _NlJRkBO9Eea7gegZc09Zkg" group="_99WA0BO9Eea7gegZc09Zkg _DpnckBO9Eea7gegZc09Zkg _z1Z88BO8Eea7gegZc09Zkg">
       <edge xmi:type="uml:ControlFlow" xmi:id="_MXdS4BXgEea0S91tL-Z6pQ" target="_qcbX0BXfEea0S91tL-Z6pQ" source="_7tUCcBO-Eea7gegZc09Zkg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_Q4P9gBXgEea0S91tL-Z6pQ" target="_8x2P8BXfEea0S91tL-Z6pQ" source="_7tUCcBO-Eea7gegZc09Zkg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_SFcwcBXgEea0S91tL-Z6pQ" name="YES" target="__gJCMBXfEea0S91tL-Z6pQ" source="_qcbX0BXfEea0S91tL-Z6pQ"/>
@@ -252,6 +246,11 @@
       <node xmi:type="uml:OpaqueAction" xmi:id="_xYWysBXgEea0S91tL-Z6pQ" name="Generate Events" incoming="_f1SSoBXiEea0S91tL-Z6pQ _gX_XEBXiEea0S91tL-Z6pQ" outgoing="_o18a0BXiEea0S91tL-Z6pQ" inPartition="_z1Z88BO8Eea7gegZc09Zkg"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_Gkq_cBXhEea0S91tL-Z6pQ" name="Events Store" incoming="_o18a0BXiEea0S91tL-Z6pQ" outgoing="_rXTkUBXiEea0S91tL-Z6pQ" inPartition="_DpnckBO9Eea7gegZc09Zkg"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_QaeYMBXnEea0S91tL-Z6pQ" name="" client="_dhu-EPgGEeWsD4MqqCA26g">
+      <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_xjvaQPwsEeWZO5s3t9VRdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_wg0pkBXnEea0S91tL-Z6pQ" client="_a0MWkPgCEeWsD4MqqCA26g" supplier="_dkf9wPEtEeWOSpgalrXMqg"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_XqO4kBXpEea0S91tL-Z6pQ" name="Orbit Dynamics L2 Requirements"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dqaYgPEtEeWOSpgalrXMqg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dqc0wPEtEeWOSpgalrXMqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -325,15 +324,15 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
   </uml:Model>
-  <Requirements:Requirement xmi:id="_a03sAPgCEeWsD4MqqCA26g" text="Control Unit shall provide Events schedule&#xA;" id="L2B-SYS-G-771" base_Class="_a0MWkPgCEeWsD4MqqCA26g"/>
-  <Requirements:Requirement xmi:id="_LhRCQPgGEeWsD4MqqCA26g" text="Control Unit shall provide Cold Sky Calibration's maneuvers schedule in order to be able to realize two snapshots, twice a month&#xA;&#xA;" id="L2B-SYS-G-772" base_Class="_Lg7EAPgGEeWsD4MqqCA26g"/>
-  <Requirements:Requirement xmi:id="_diFjYPgGEeWsD4MqqCA26g" text="Control Unit shall provide Moon Calibration's maneuvers schedule in order to be able to realize at least two snapshots, once a month.&#xA;" id="L2B-SYS-G-774" base_Class="_dhu-EPgGEeWsD4MqqCA26g"/>
-  <Requirements:Requirement xmi:id="_DTUT8PgHEeWsD4MqqCA26g" text="Control Unit shall provide Terrestrial's maneuver schedule in order to be able to realize two snapshots once a wekk&#xA;" id="L2B-SYS-G-773" base_Class="_DS6rUPgHEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_a03sAPgCEeWsD4MqqCA26g" text="Control Unit shall provide Events schedule." id="L2B-SYS-G-771" base_Class="_a0MWkPgCEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_LhRCQPgGEeWsD4MqqCA26g" text="Control Unit shall provide Cold Sky Calibration's maneuvers schedule.&#xA;Period TBD.&#xA;&#xA;&#xA;" id="L2B-SYS-G-772" base_Class="_Lg7EAPgGEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_diFjYPgGEeWsD4MqqCA26g" text="Control Unit shall provide Moon Calibration's maneuvers schedule.&#xA;Period TBD." id="L2B-SYS-G-774" base_Class="_dhu-EPgGEeWsD4MqqCA26g"/>
+  <Requirements:Requirement xmi:id="_DTUT8PgHEeWsD4MqqCA26g" text="Control Unit shall provide Terrestrial's maneuver schedule.&#xA;Period TBD.&#xA;" id="L2B-SYS-G-773" base_Class="_DS6rUPgHEeWsD4MqqCA26g"/>
   <Requirements:Requirement xmi:id="_uSALYPgIEeWsD4MqqCA26g" text="Control Unit shall provide Orbit Ephemeris and TLE.&#xA;&#xA;" id="L2B-SYS-G-779" base_Class="_uRem8PgIEeWsD4MqqCA26g"/>
   <Requirements:DeriveReqt xmi:id="_Xl040P5zEeWH8ZFDcq738Q" base_Abstraction="_Xj6NQP5zEeWH8ZFDcq738Q"/>
   <Requirements:DeriveReqt xmi:id="_YxD84P5zEeWH8ZFDcq738Q" base_Abstraction="_YvOw4P5zEeWH8ZFDcq738Q"/>
-  <Requirements:DeriveReqt xmi:id="_ZdxR4P5zEeWH8ZFDcq738Q" base_Abstraction="_Zb5poP5zEeWH8ZFDcq738Q"/>
-  <Requirements:DeriveReqt xmi:id="_aHsYoP5zEeWH8ZFDcq738Q" base_Abstraction="_aFagsP5zEeWH8ZFDcq738Q"/>
   <Requirements:DeriveReqt xmi:id="_bnCrgP5zEeWH8ZFDcq738Q" base_Abstraction="_blRw8P5zEeWH8ZFDcq738Q"/>
   <standard:Trace xmi:id="_CCag8AJ0EeaFPMgPLVXT7g" base_Abstraction="_CCVocAJ0EeaFPMgPLVXT7g"/>
+  <Requirements:DeriveReqt xmi:id="_QbFcMBXnEea0S91tL-Z6pQ" base_Abstraction="_QaeYMBXnEea0S91tL-Z6pQ"/>
+  <Requirements:DeriveReqt xmi:id="_whafcBXnEea0S91tL-Z6pQ" base_Abstraction="_wg0pkBXnEea0S91tL-Z6pQ"/>
 </xmi:XMI>

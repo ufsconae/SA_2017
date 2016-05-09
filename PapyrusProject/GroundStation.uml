@@ -301,7 +301,7 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_wz4WAwchEeaPoMVAaBtLiQ" name="adqurir datos digitales del cortex" type="_UqwPgAceEeaPoMVAaBtLiQ" association="_wz4WAAchEeaPoMVAaBtLiQ"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_wz49EAchEeaPoMVAaBtLiQ" name="operador tt&amp;c" type="_nsRGsAcgEeaPoMVAaBtLiQ" association="_wz4WAAchEeaPoMVAaBtLiQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Activity" xmi:id="_9IdkIA4TEeaKZ_WNlDwISg" name="Uplink &amp; Downlink data" node="_5Jpy8A4YEeaKZ_WNlDwISg _9n9xUA4YEeaKZ_WNlDwISg _RLWRYA4ZEeaKZ_WNlDwISg _XdLb0A4ZEeaKZ_WNlDwISg _Z6qK4A4ZEeaKZ_WNlDwISg _gFQE4A4ZEeaKZ_WNlDwISg _nsY1YA4ZEeaKZ_WNlDwISg _yqStYA4ZEeaKZ_WNlDwISg" group="_STIOQA4YEeaKZ_WNlDwISg _VRF0MA4YEeaKZ_WNlDwISg _eW6wQA4YEeaKZ_WNlDwISg _e3REQA4YEeaKZ_WNlDwISg _xA6xQA4YEeaKZ_WNlDwISg">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_9IdkIA4TEeaKZ_WNlDwISg" name="Uplink &amp; Downlink data" node="_5Jpy8A4YEeaKZ_WNlDwISg _9n9xUA4YEeaKZ_WNlDwISg _RLWRYA4ZEeaKZ_WNlDwISg _XdLb0A4ZEeaKZ_WNlDwISg _Z6qK4A4ZEeaKZ_WNlDwISg _gFQE4A4ZEeaKZ_WNlDwISg _nsY1YA4ZEeaKZ_WNlDwISg _yqStYA4ZEeaKZ_WNlDwISg _XDSFIBYcEeaI8O9tCDxvLw" group="_STIOQA4YEeaKZ_WNlDwISg _VRF0MA4YEeaKZ_WNlDwISg _eW6wQA4YEeaKZ_WNlDwISg _e3REQA4YEeaKZ_WNlDwISg _xA6xQA4YEeaKZ_WNlDwISg">
       <edge xmi:type="uml:ControlFlow" xmi:id="_9Dze4A4ZEeaKZ_WNlDwISg" target="_9n9xUA4YEeaKZ_WNlDwISg" source="_5Jpy8A4YEeaKZ_WNlDwISg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_VRbggA4aEeaKZ_WNlDwISg" target="_gFQE4A4ZEeaKZ_WNlDwISg" source="_RLWRYA4ZEeaKZ_WNlDwISg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_AqdnEA4bEeaKZ_WNlDwISg" target="_nsY1YA4ZEeaKZ_WNlDwISg" source="_gFQE4A4ZEeaKZ_WNlDwISg"/>
@@ -312,11 +312,12 @@
       <edge xmi:type="uml:ControlFlow" xmi:id="_KWZ2AA4dEeaKZ_WNlDwISg" target="_gFQE4A4ZEeaKZ_WNlDwISg" source="_XdLb0A4ZEeaKZ_WNlDwISg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_QFv-cA4dEeaKZ_WNlDwISg" target="_gFQE4A4ZEeaKZ_WNlDwISg" source="_Z6qK4A4ZEeaKZ_WNlDwISg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_aDD8IA4dEeaKZ_WNlDwISg" target="_Z6qK4A4ZEeaKZ_WNlDwISg" source="_9n9xUA4YEeaKZ_WNlDwISg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_g0F34BYcEeaI8O9tCDxvLw" target="_XDSFIBYcEeaI8O9tCDxvLw" source="_yqStYA4ZEeaKZ_WNlDwISg"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_STIOQA4YEeaKZ_WNlDwISg" name="Módulo de Payload" node="_RLWRYA4ZEeaKZ_WNlDwISg"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_VRF0MA4YEeaKZ_WNlDwISg" name="Módulo de Servicios" node="_XdLb0A4ZEeaKZ_WNlDwISg _Z6qK4A4ZEeaKZ_WNlDwISg"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_eW6wQA4YEeaKZ_WNlDwISg" name="CopyOf_Módulo de Payload_1"/>
       <group xmi:type="uml:ActivityPartition" xmi:id="_e3REQA4YEeaKZ_WNlDwISg" name="Estación TT&amp;C" node="_5Jpy8A4YEeaKZ_WNlDwISg _9n9xUA4YEeaKZ_WNlDwISg _gFQE4A4ZEeaKZ_WNlDwISg _nsY1YA4ZEeaKZ_WNlDwISg"/>
-      <group xmi:type="uml:ActivityPartition" xmi:id="_xA6xQA4YEeaKZ_WNlDwISg" name="Mission Unit" node="_yqStYA4ZEeaKZ_WNlDwISg"/>
+      <group xmi:type="uml:ActivityPartition" xmi:id="_xA6xQA4YEeaKZ_WNlDwISg" name="Mission Unit" node="_yqStYA4ZEeaKZ_WNlDwISg _XDSFIBYcEeaI8O9tCDxvLw"/>
       <node xmi:type="uml:InitialNode" xmi:id="_5Jpy8A4YEeaKZ_WNlDwISg" name="Inicio" outgoing="_9Dze4A4ZEeaKZ_WNlDwISg" inPartition="_e3REQA4YEeaKZ_WNlDwISg"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_9n9xUA4YEeaKZ_WNlDwISg" name="Establecer contacto con spacecraft" incoming="_9Dze4A4ZEeaKZ_WNlDwISg" outgoing="_hstDgA4cEeaKZ_WNlDwISg _rnAJcA4cEeaKZ_WNlDwISg _aDD8IA4dEeaKZ_WNlDwISg" inPartition="_e3REQA4YEeaKZ_WNlDwISg"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_RLWRYA4ZEeaKZ_WNlDwISg" name="Descargar datos de Ciencia" incoming="_rnAJcA4cEeaKZ_WNlDwISg" outgoing="_VRbggA4aEeaKZ_WNlDwISg" inPartition="_STIOQA4YEeaKZ_WNlDwISg"/>
@@ -324,7 +325,8 @@
       <node xmi:type="uml:OpaqueAction" xmi:id="_Z6qK4A4ZEeaKZ_WNlDwISg" name="Subir telecomandos" incoming="_aDD8IA4dEeaKZ_WNlDwISg" outgoing="_QFv-cA4dEeaKZ_WNlDwISg" inPartition="_VRF0MA4YEeaKZ_WNlDwISg"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_gFQE4A4ZEeaKZ_WNlDwISg" name="Fin del contacto" incoming="_VRbggA4aEeaKZ_WNlDwISg _aG-dsA4bEeaKZ_WNlDwISg _KWZ2AA4dEeaKZ_WNlDwISg _QFv-cA4dEeaKZ_WNlDwISg" outgoing="_AqdnEA4bEeaKZ_WNlDwISg" inPartition="_e3REQA4YEeaKZ_WNlDwISg"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_nsY1YA4ZEeaKZ_WNlDwISg" name="Obtener Data Package" incoming="_AqdnEA4bEeaKZ_WNlDwISg" outgoing="_CBjV0A4bEeaKZ_WNlDwISg" inPartition="_e3REQA4YEeaKZ_WNlDwISg"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_yqStYA4ZEeaKZ_WNlDwISg" name="Guardar Data Package" incoming="_CBjV0A4bEeaKZ_WNlDwISg" inPartition="_xA6xQA4YEeaKZ_WNlDwISg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_yqStYA4ZEeaKZ_WNlDwISg" name="Guardar Data Package" incoming="_CBjV0A4bEeaKZ_WNlDwISg" outgoing="_g0F34BYcEeaI8O9tCDxvLw" inPartition="_xA6xQA4YEeaKZ_WNlDwISg"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_XDSFIBYcEeaI8O9tCDxvLw" name="" incoming="_g0F34BYcEeaI8O9tCDxvLw" inPartition="_xA6xQA4YEeaKZ_WNlDwISg"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_M0gDYPz2EeWWH817x0Adtw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_M0gqcPz2EeWWH817x0Adtw" source="http://www.eclipse.org/uml2/2.0.0/UML">

@@ -198,6 +198,71 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_cMkisxXmEeam5Iguh0hLZg" name="implement technology demostration" type="_BiT8ABXlEeam5Iguh0hLZg" association="_cMkisBXmEeam5Iguh0hLZg"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_cMkitBXmEeam5Iguh0hLZg" name="sabiamar science team" type="_k_2Q8AWlEeau0KhIeHix4w" association="_cMkisBXmEeam5Iguh0hLZg"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_LL5lEBXoEeaPHKsw-GqHDg" name="SA2017-L1General">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_RPEocBXoEeaPHKsw-GqHDg" name="Provide CubeSat thermal, mechanical, power and data interfaces"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_Xt7s0BXpEeaPHKsw-GqHDg" name="Provide DCS functionalities"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_mOxgEBXpEeaPHKsw-GqHDg" name="Provide Camera functionalities">
+          <extend xmi:type="uml:Extend" xmi:id="_DSGFUBXqEeaPHKsw-GqHDg" extendedCase="_urbjUBXpEeaPHKsw-GqHDg" extensionLocation="_DSGsYBXqEeaPHKsw-GqHDg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_urbjUBXpEeaPHKsw-GqHDg" name="Obtain calibration and sensor degradation data">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_DSGsYBXqEeaPHKsw-GqHDg" name="ExtensionPoint1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_zzAhIBXpEeaPHKsw-GqHDg" name="Provide ground segment functionalities"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_sU7bcBXoEeaPHKsw-GqHDg" name="MTS">
+        <generalization xmi:type="uml:Generalization" xmi:id="_Xdp_sBXqEeaPHKsw-GqHDg" general="_0oaRYBXkEeam5Iguh0hLZg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_fnwIwBXpEeaPHKsw-GqHDg" name="MIS">
+        <generalization xmi:type="uml:Generalization" xmi:id="_XD2YkBXqEeaPHKsw-GqHDg" general="_0oaRYBXkEeam5Iguh0hLZg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_gSGGQBXpEeaPHKsw-GqHDg" name="MAIE">
+        <generalization xmi:type="uml:Generalization" xmi:id="_WhAKMBXqEeaPHKsw-GqHDg" general="_0oaRYBXkEeam5Iguh0hLZg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_hRAlkBXpEeaPHKsw-GqHDg" name="MDIAE">
+        <generalization xmi:type="uml:Generalization" xmi:id="_V6zs4BXqEeaPHKsw-GqHDg" general="_0oaRYBXkEeam5Iguh0hLZg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__cRqUBXpEeaPHKsw-GqHDg" memberEnd="__cTfgBXpEeaPHKsw-GqHDg __cTfgRXpEeaPHKsw-GqHDg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__cS4cBXpEeaPHKsw-GqHDg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__cS4cRXpEeaPHKsw-GqHDg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="__cTfgBXpEeaPHKsw-GqHDg" name="provide cubesat thermal, mechanical, power and data interfaces" type="_RPEocBXoEeaPHKsw-GqHDg" association="__cRqUBXpEeaPHKsw-GqHDg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="__cTfgRXpEeaPHKsw-GqHDg" name="mts" type="_sU7bcBXoEeaPHKsw-GqHDg" association="__cRqUBXpEeaPHKsw-GqHDg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="__8XfoBXpEeaPHKsw-GqHDg" memberEnd="__8YGshXpEeaPHKsw-GqHDg __8YGsxXpEeaPHKsw-GqHDg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__8YGsBXpEeaPHKsw-GqHDg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__8YGsRXpEeaPHKsw-GqHDg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="__8YGshXpEeaPHKsw-GqHDg" name="provide dcs functionalities" type="_Xt7s0BXpEeaPHKsw-GqHDg" association="__8XfoBXpEeaPHKsw-GqHDg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="__8YGsxXpEeaPHKsw-GqHDg" name="mis" type="_fnwIwBXpEeaPHKsw-GqHDg" association="__8XfoBXpEeaPHKsw-GqHDg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_AVjbsBXqEeaPHKsw-GqHDg" memberEnd="_AVkCwBXqEeaPHKsw-GqHDg _AVkCwRXqEeaPHKsw-GqHDg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AVjbsRXqEeaPHKsw-GqHDg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AVjbshXqEeaPHKsw-GqHDg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_AVkCwBXqEeaPHKsw-GqHDg" name="provide camera functionalities" type="_mOxgEBXpEeaPHKsw-GqHDg" association="_AVjbsBXqEeaPHKsw-GqHDg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_AVkCwRXqEeaPHKsw-GqHDg" name="maie" type="_gSGGQBXpEeaPHKsw-GqHDg" association="_AVjbsBXqEeaPHKsw-GqHDg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_BawwQBXqEeaPHKsw-GqHDg" memberEnd="_BaxXUBXqEeaPHKsw-GqHDg _BaxXURXqEeaPHKsw-GqHDg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BawwQRXqEeaPHKsw-GqHDg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BawwQhXqEeaPHKsw-GqHDg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_BaxXUBXqEeaPHKsw-GqHDg" name="provide dcs functionalities" type="_Xt7s0BXpEeaPHKsw-GqHDg" association="_BawwQBXqEeaPHKsw-GqHDg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_BaxXURXqEeaPHKsw-GqHDg" name="maie" type="_gSGGQBXpEeaPHKsw-GqHDg" association="_BawwQBXqEeaPHKsw-GqHDg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_B0gF8BXqEeaPHKsw-GqHDg" memberEnd="_B0gF8xXqEeaPHKsw-GqHDg _B0gtABXqEeaPHKsw-GqHDg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B0gF8RXqEeaPHKsw-GqHDg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_B0gF8hXqEeaPHKsw-GqHDg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_B0gF8xXqEeaPHKsw-GqHDg" name="provide camera functionalities" type="_mOxgEBXpEeaPHKsw-GqHDg" association="_B0gF8BXqEeaPHKsw-GqHDg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_B0gtABXqEeaPHKsw-GqHDg" name="mis" type="_fnwIwBXpEeaPHKsw-GqHDg" association="_B0gF8BXqEeaPHKsw-GqHDg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ETreIBXqEeaPHKsw-GqHDg" memberEnd="_ETsFMhXqEeaPHKsw-GqHDg _ETsFMxXqEeaPHKsw-GqHDg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ETsFMBXqEeaPHKsw-GqHDg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ETsFMRXqEeaPHKsw-GqHDg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ETsFMhXqEeaPHKsw-GqHDg" name="provide ground segment functionalities" type="_zzAhIBXpEeaPHKsw-GqHDg" association="_ETreIBXqEeaPHKsw-GqHDg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ETsFMxXqEeaPHKsw-GqHDg" name="mdiae" type="_hRAlkBXpEeaPHKsw-GqHDg" association="_ETreIBXqEeaPHKsw-GqHDg"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_4obbIAJlEeaJW-cSZfJk0g" name="SA2017_ArchitectureDiagram">
       <packagedElement xmi:type="uml:Package" xmi:id="_98pUIAcCEeafd7GiqJXkMg" name="SA2017 Project">
@@ -448,6 +513,27 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_RFKuoxOwEeaTPIt3xC9bng" name="calibration data" type="_-dvdEAWkEeau0KhIeHix4w" association="_RFKuoBOwEeaTPIt3xC9bng"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_RFKupBOwEeaTPIt3xC9bng" name="operators" type="_ZFHLAAWqEeau0KhIeHix4w" association="_RFKuoBOwEeaTPIt3xC9bng"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ugDu4BXrEea6_s4xvclxKQ" memberEnd="_ugJOcBXrEea6_s4xvclxKQ _ugJ1gBXrEea6_s4xvclxKQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ugInYBXrEea6_s4xvclxKQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ugInYRXrEea6_s4xvclxKQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ugJOcBXrEea6_s4xvclxKQ" name="operators" type="_ZFHLAAWqEeau0KhIeHix4w" association="_ugDu4BXrEea6_s4xvclxKQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ugJ1gBXrEea6_s4xvclxKQ" name="ufs" type="_0oaRYBXkEeam5Iguh0hLZg" association="_ugDu4BXrEea6_s4xvclxKQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_w_KOkBXrEea6_s4xvclxKQ" memberEnd="_w_K1ohXrEea6_s4xvclxKQ _w_LcsBXrEea6_s4xvclxKQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_w_K1oBXrEea6_s4xvclxKQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_w_K1oRXrEea6_s4xvclxKQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_w_K1ohXrEea6_s4xvclxKQ" name="sabiamar science team" type="_k_2Q8AWlEeau0KhIeHix4w" association="_w_KOkBXrEea6_s4xvclxKQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_w_LcsBXrEea6_s4xvclxKQ" name="ufs" type="_0oaRYBXkEeam5Iguh0hLZg" association="_w_KOkBXrEea6_s4xvclxKQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_zcZtEBXrEea6_s4xvclxKQ" memberEnd="_zcZtExXrEea6_s4xvclxKQ _zcaUIBXrEea6_s4xvclxKQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zcZtERXrEea6_s4xvclxKQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zcZtEhXrEea6_s4xvclxKQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_zcZtExXrEea6_s4xvclxKQ" name="ufs" type="_0oaRYBXkEeam5Iguh0hLZg" association="_zcZtEBXrEea6_s4xvclxKQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_zcaUIBXrEea6_s4xvclxKQ" name="sa2017 science team" type="_Drh7IAWmEeau0KhIeHix4w" association="_zcZtEBXrEea6_s4xvclxKQ"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_2HLvIBO4EeaTPIt3xC9bng" name="SA2017-ProductTree">

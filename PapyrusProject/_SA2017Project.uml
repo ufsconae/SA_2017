@@ -197,14 +197,14 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_LL5lEBXoEeaPHKsw-GqHDg" name="SA2017-L1General">
         <packagedElement xmi:type="uml:UseCase" xmi:id="_RPEocBXoEeaPHKsw-GqHDg" name="Provide CubeSat thermal, mechanical, power and data interfaces"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_Xt7s0BXpEeaPHKsw-GqHDg" name="Provide DCS functionalities"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_mOxgEBXpEeaPHKsw-GqHDg" name="Provide Camera functionalities">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_Xt7s0BXpEeaPHKsw-GqHDg" name="Provide DCS capabilities"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_mOxgEBXpEeaPHKsw-GqHDg" name="Provide Camera capabilities">
           <extend xmi:type="uml:Extend" xmi:id="_DSGFUBXqEeaPHKsw-GqHDg" extendedCase="_urbjUBXpEeaPHKsw-GqHDg" extensionLocation="_DSGsYBXqEeaPHKsw-GqHDg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_urbjUBXpEeaPHKsw-GqHDg" name="Obtain calibration and sensor degradation data">
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_DSGsYBXqEeaPHKsw-GqHDg" name="ExtensionPoint1"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_zzAhIBXpEeaPHKsw-GqHDg" name="Provide ground segment functionalities"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_zzAhIBXpEeaPHKsw-GqHDg" name="Provide ground segment capabilities"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_JuqG0BXvEea6_s4xvclxKQ" client="_RPEocBXoEeaPHKsw-GqHDg" supplier="_6CsPIBXsEea6_s4xvclxKQ"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_KWI9kBXvEea6_s4xvclxKQ" client="_mOxgEBXpEeaPHKsw-GqHDg" supplier="_6CsPIBXsEea6_s4xvclxKQ"/>
         <packagedElement xmi:type="uml:Dependency" xmi:id="_Krs94BXvEea6_s4xvclxKQ" client="_Xt7s0BXpEeaPHKsw-GqHDg" supplier="_6CsPIBXsEea6_s4xvclxKQ"/>
@@ -264,6 +264,13 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_ETsFMhXqEeaPHKsw-GqHDg" name="provide ground segment functionalities" type="_zzAhIBXpEeaPHKsw-GqHDg" association="_ETreIBXqEeaPHKsw-GqHDg"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_ETsFMxXqEeaPHKsw-GqHDg" name="mdiae" type="_hRAlkBXpEeaPHKsw-GqHDg" association="_ETreIBXqEeaPHKsw-GqHDg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Gt9yoBYTEeazbuZoQUAOMg" memberEnd="_GuBdABYTEeazbuZoQUAOMg _GuCEEBYTEeazbuZoQUAOMg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GuA18BYTEeazbuZoQUAOMg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GuA18RYTEeazbuZoQUAOMg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_GuBdABYTEeazbuZoQUAOMg" name="train ufs students in a whole space mission" type="_BD9WoBXmEeam5Iguh0hLZg" association="_Gt9yoBYTEeazbuZoQUAOMg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_GuCEEBYTEeazbuZoQUAOMg" name="ufs" type="_0oaRYBXkEeam5Iguh0hLZg" association="_Gt9yoBYTEeazbuZoQUAOMg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_4obbIAJlEeaJW-cSZfJk0g" name="SA2017_ArchitectureDiagram">

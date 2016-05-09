@@ -1,28 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
   <uml:Model xmi:id="_TxyLIPf_EeWab4iQ1I7RWQ" name="MissionUnit">
     <packagedElement xmi:type="uml:Model" xmi:id="_cWcEEPgQEeWLKsanECnEMg" name="RequirementsL2B">
-      <packagedElement xmi:type="uml:Class" xmi:id="_u-edgP2zEeWFwtaYqXT6rw" name="OPERATIONAL_LIFETIME"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_NLenoP20EeWFwtaYqXT6rw" name="PUBLISHING_LIFETIME"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_Ni9TgP20EeWFwtaYqXT6rw" name="CALIBRATION_PLATFORM"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_OA07QP20EeWFwtaYqXT6rw" name="CALIBRATION_ACCESS"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OA07QP20EeWFwtaYqXT6rw" name="CAL_VAL_PLATAFORM"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_OjI-IP20EeWFwtaYqXT6rw" name="ACCESS_PRODUCTS"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_O4b4sP20EeWFwtaYqXT6rw" name="ACCESS_OPERATIONS_DATA"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_PMzmMP20EeWFwtaYqXT6rw" name="ROLE_BASED_ACCESS"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Pgwc8P20EeWFwtaYqXT6rw" name="PRODUCTS"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_P4FX0P20EeWFwtaYqXT6rw" name="STORAGE_RAW_DATA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_Rfid0P20EeWFwtaYqXT6rw" name="STORAGE_PRODUCTS"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_R12FAP20EeWFwtaYqXT6rw" name="STORAGE_OPERATIONS_DATA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_SgEtwP20EeWFwtaYqXT6rw" name="ACQUISITION_PLANNING"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Y8mFQP20EeWFwtaYqXT6rw" name="INTERFASE"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Y8mFQP20EeWFwtaYqXT6rw" name="MISSION_DATABASE">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_GukncAMLEeam46Rh5krVVg" annotatedElement="_Y8mFQP20EeWFwtaYqXT6rw">
+          <body>The mission unit shall implement standard interfaces that enable controlled 
+access to mission data. (Including control unit, 
+computer science and the general community)</body>
+        </ownedComment>
+      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_aFaHcP20EeWFwtaYqXT6rw" name="COMPATIBILITY_INFRAESTRUCTURE"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_crVn4P20EeWFwtaYqXT6rw" name="COMMUNITY_ACCESS"/>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_5bctkP9yEeWdU9Mpd1PczA" name="DeriveReqt1" client="_NLenoP20EeWFwtaYqXT6rw">
-        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_d-QBYPwsEeWZO5s3t9VRdw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_6Boj0P9yEeWdU9Mpd1PczA" name="DeriveReqt2" client="_u-edgP2zEeWFwtaYqXT6rw">
-        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_d-QBYPwsEeWZO5s3t9VRdw"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_7_QHEP9yEeWdU9Mpd1PczA" name="DeriveReqt3" client="_OA07QP20EeWFwtaYqXT6rw">
         <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_xjvaQPwsEeWZO5s3t9VRdw"/>
       </packagedElement>
@@ -44,12 +40,6 @@
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_DjulIP9zEeWdU9Mpd1PczA" name="DeriveReqt9" client="_P4FX0P20EeWFwtaYqXT6rw">
         <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_D_cQwP9zEeWdU9Mpd1PczA" name="DeriveReqt10" client="_Pgwc8P20EeWFwtaYqXT6rw">
-        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Ee-scP9zEeWdU9Mpd1PczA" name="DeriveReqt11" client="_PMzmMP20EeWFwtaYqXT6rw">
-        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_FdzsMP9zEeWdU9Mpd1PczA" name="DeriveReqt12" client="_O4b4sP20EeWFwtaYqXT6rw">
         <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
       </packagedElement>
@@ -62,8 +52,271 @@
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_JTTXEP9zEeWdU9Mpd1PczA" name="DeriveReqt15" client="_crVn4P20EeWFwtaYqXT6rw">
         <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_EAQY4PwtEeWZO5s3t9VRdw"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_nVbZUAMVEeam46Rh5krVVg" name="PROCESSOR_L0"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_t_B1EBPgEeaWKdiwT8okVw" name="PROCESSOR_L1A"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_wNge0BPgEeaWKdiwT8okVw" name="PROCESSOR_L1B"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_58NRYBPjEeaWKdiwT8okVw" name="PROCESSOR_L2"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Model" xmi:id="_W1Kh8PgSEeWLKsanECnEMg" name="UseCaseDiagram"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_W1Kh8PgSEeWLKsanECnEMg" name="UseCaseDiagram">
+      <packagedElement xmi:type="uml:Package" xmi:id="_rUl0gBLiEeaoiaVY6tukow" name="Package1">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_OHpjwBLjEeaoiaVY6tukow" name="UseCase1"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_OZaCIBLjEeaoiaVY6tukow" name="UseCase2"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_0exsIBLiEeaoiaVY6tukow" name="Science User"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_00gEgBLiEeaoiaVY6tukow" name="Catalog"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_wLMhoBLjEeaoiaVY6tukow" name="Solicitar Productos" memberEnd="_wLOW0BLjEeaoiaVY6tukow _wLOW0RLjEeaoiaVY6tukow">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wLNvwBLjEeaoiaVY6tukow" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wLNvwRLjEeaoiaVY6tukow" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_wLOW0BLjEeaoiaVY6tukow" name="usecase1" type="_OHpjwBLjEeaoiaVY6tukow" association="_wLMhoBLjEeaoiaVY6tukow"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_wLOW0RLjEeaoiaVY6tukow" name="science user" type="_0exsIBLiEeaoiaVY6tukow" association="_wLMhoBLjEeaoiaVY6tukow"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_7QCvIBLjEeaoiaVY6tukow" memberEnd="_7QDWMhLjEeaoiaVY6tukow _7QDWMxLjEeaoiaVY6tukow">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7QDWMBLjEeaoiaVY6tukow" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7QDWMRLjEeaoiaVY6tukow" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_7QDWMhLjEeaoiaVY6tukow" name="catalog" type="_00gEgBLiEeaoiaVY6tukow" association="_7QCvIBLjEeaoiaVY6tukow"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_7QDWMxLjEeaoiaVY6tukow" name="usecase1" type="_OHpjwBLjEeaoiaVY6tukow" association="_7QCvIBLjEeaoiaVY6tukow"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NdIEYBFUEeak_5lhOjdy1A" name="Mission Unit" isActive="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_2ka8YBFVEeak_5lhOjdy1A" name="Processors" type="_NdIEYBFUEeak_5lhOjdy1A" aggregation="composite" association="_29Y2ABFVEeak_5lhOjdy1A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_N6wwsBFWEeak_5lhOjdy1A" name="Catalog" type="_NdIEYBFUEeak_5lhOjdy1A" aggregation="composite" association="_OMsOMRFWEeak_5lhOjdy1A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_R8jyMBFWEeak_5lhOjdy1A" name="User Care" type="_NdIEYBFUEeak_5lhOjdy1A" aggregation="composite" association="_SL9gIBFWEeak_5lhOjdy1A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_W3-jUBFWEeak_5lhOjdy1A" name="Mission Planning" type="_NdIEYBFUEeak_5lhOjdy1A" aggregation="composite" association="_XFxHsBFWEeak_5lhOjdy1A"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_arnNABFWEeak_5lhOjdy1A" name="Mission Database" type="_NdIEYBFUEeak_5lhOjdy1A" aggregation="composite" association="_a5lXkRFWEeak_5lhOjdy1A"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_weiBYBO0EeaupMsSc_JFqg" name="Control Unit" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_z_MrwBO0EeaupMsSc_JFqg" name="flowport1" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_5UumABO0EeaupMsSc_JFqg" name="Control Unit" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="__rAyoBO0EeaupMsSc_JFqg" name="flowport2" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_D5eXIBO1EeaupMsSc_JFqg" name="flowport3" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_EiYKMBO1EeaupMsSc_JFqg" name="flowport4" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_FiT9MBO1EeaupMsSc_JFqg" name="flowport5" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_GHoQwBO1EeaupMsSc_JFqg" name="flowport6" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_GxRqsBO1EeaupMsSc_JFqg" name="Science User" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_HSs8wBO1EeaupMsSc_JFqg" name="Community" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_xeInwBO1EeaupMsSc_JFqg" name="flowport7" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_yWl5wBO1EeaupMsSc_JFqg" name="flowport8" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_znPCQBO1EeaupMsSc_JFqg" name="flowport9" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_0KoqQBO1EeaupMsSc_JFqg" name="flowport10" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_CRnMABO2EeaupMsSc_JFqg" name="flowport11" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_FmYvcBO2EeaupMsSc_JFqg" name="flowport12" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_VVaNEBO2EeaupMsSc_JFqg" name="flowport13" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_dl-8IBO2EeaupMsSc_JFqg" name="flowport14" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_lVoIYBO2EeaupMsSc_JFqg" name="flowport15" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_mVnlwBO2EeaupMsSc_JFqg" name="flowport16" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_rPfewBO2EeaupMsSc_JFqg" name="Ground Station" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_sPY1gBO2EeaupMsSc_JFqg" name="Ground Station" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_tX25cBO2EeaupMsSc_JFqg" name="flowport19" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_F2qxsBO3EeaupMsSc_JFqg" name="flowport20" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_X73cgBO3EeaupMsSc_JFqg" name="Registered Science User" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_YnWCcBO3EeaupMsSc_JFqg" name="flowport22" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_r8CmQBO3EeaupMsSc_JFqg" name="Science User" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_sld9wBO3EeaupMsSc_JFqg" name="flowport24" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_swSPMBPOEeaWKdiwT8okVw" name="Port1" aggregation="composite"/>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_pjya0BFZEeak_5lhOjdy1A" name="TL/TLMY">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_pjzo8BFZEeak_5lhOjdy1A" partWithPort="_arnNABFWEeak_5lhOjdy1A" role="_z_MrwBO0EeaupMsSc_JFqg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_pjzo8RFZEeak_5lhOjdy1A" role="_weiBYBO0EeaupMsSc_JFqg"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_8LTIgBFZEeak_5lhOjdy1A" name="Orbital Products Generation/Orbital product Queries/Adquisition Request-Response">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_8LTIgRFZEeak_5lhOjdy1A" partWithPort="_arnNABFWEeak_5lhOjdy1A" role="__rAyoBO0EeaupMsSc_JFqg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_8LTIghFZEeak_5lhOjdy1A" role="_5UumABO0EeaupMsSc_JFqg"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_cWp3kBLMEeaoiaVY6tukow" name="Support Request/Response">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_cWsT0BLMEeaoiaVY6tukow" role="_X73cgBO3EeaupMsSc_JFqg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_cWsT0RLMEeaoiaVY6tukow" partWithPort="_R8jyMBFWEeak_5lhOjdy1A" role="_YnWCcBO3EeaupMsSc_JFqg"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_faM2MBLOEeaoiaVY6tukow" name="Science Data">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_faNdQBLOEeaoiaVY6tukow" partWithPort="_2ka8YBFVEeak_5lhOjdy1A" role="_mVnlwBO2EeaupMsSc_JFqg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_faNdQRLOEeaoiaVY6tukow" partWithPort="_arnNABFWEeak_5lhOjdy1A" role="_lVoIYBO2EeaupMsSc_JFqg"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_ykaBQBLOEeaoiaVY6tukow" name="Acquisition/Calibration Requests">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_ykaBQRLOEeaoiaVY6tukow" partWithPort="_W3-jUBFWEeak_5lhOjdy1A" role="_xeInwBO1EeaupMsSc_JFqg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_ykaBQhLOEeaoiaVY6tukow" partWithPort="_R8jyMBFWEeak_5lhOjdy1A" role="_yWl5wBO1EeaupMsSc_JFqg"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_LGG88BO1EeaupMsSc_JFqg" name="Products">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_LGHkABO1EeaupMsSc_JFqg" partWithPort="_arnNABFWEeak_5lhOjdy1A" role="_EiYKMBO1EeaupMsSc_JFqg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_LGHkARO1EeaupMsSc_JFqg" partWithPort="_N6wwsBFWEeak_5lhOjdy1A" role="_D5eXIBO1EeaupMsSc_JFqg"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_OgeLABO1EeaupMsSc_JFqg" name="Science Products">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_OgeyEBO1EeaupMsSc_JFqg" partWithPort="_N6wwsBFWEeak_5lhOjdy1A" role="_FiT9MBO1EeaupMsSc_JFqg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_OgeyERO1EeaupMsSc_JFqg" role="_GxRqsBO1EeaupMsSc_JFqg"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_O_N8gBO1EeaupMsSc_JFqg" name="General Mission Information">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_O_OjkBO1EeaupMsSc_JFqg" partWithPort="_N6wwsBFWEeak_5lhOjdy1A" role="_GHoQwBO1EeaupMsSc_JFqg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_O_OjkRO1EeaupMsSc_JFqg" role="_HSs8wBO1EeaupMsSc_JFqg"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_IujaQBO2EeaupMsSc_JFqg" name="Planning">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_IukBUBO2EeaupMsSc_JFqg" partWithPort="_W3-jUBFWEeak_5lhOjdy1A" role="_CRnMABO2EeaupMsSc_JFqg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_IukBURO2EeaupMsSc_JFqg" partWithPort="_arnNABFWEeak_5lhOjdy1A" role="_FmYvcBO2EeaupMsSc_JFqg"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_Xeq_oBO2EeaupMsSc_JFqg" name="TLMY">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_XermsBO2EeaupMsSc_JFqg" partWithPort="_arnNABFWEeak_5lhOjdy1A" role="_0KoqQBO1EeaupMsSc_JFqg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_XermsRO2EeaupMsSc_JFqg" partWithPort="_2ka8YBFVEeak_5lhOjdy1A" role="_VVaNEBO2EeaupMsSc_JFqg"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_g150wBO2EeaupMsSc_JFqg" name="Ancillary data">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_g16b0BO2EeaupMsSc_JFqg" partWithPort="_arnNABFWEeak_5lhOjdy1A" role="_znPCQBO1EeaupMsSc_JFqg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_g16b0RO2EeaupMsSc_JFqg" partWithPort="_2ka8YBFVEeak_5lhOjdy1A" role="_dl-8IBO2EeaupMsSc_JFqg"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_1Lq0ABO2EeaupMsSc_JFqg" name="Science Data">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_1Lq0ARO2EeaupMsSc_JFqg" role="_sPY1gBO2EeaupMsSc_JFqg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_1Lq0AhO2EeaupMsSc_JFqg" partWithPort="_arnNABFWEeak_5lhOjdy1A" role="_tX25cBO2EeaupMsSc_JFqg"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_KyEUsBO3EeaupMsSc_JFqg" name="TL/TLMY">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_KyEUsRO3EeaupMsSc_JFqg" role="_rPfewBO2EeaupMsSc_JFqg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_KyE7wBO3EeaupMsSc_JFqg" partWithPort="_arnNABFWEeak_5lhOjdy1A" role="_F2qxsBO3EeaupMsSc_JFqg"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_3nDb4BO3EeaupMsSc_JFqg" name="Adquisition/Calibration Requests">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_3nDb4RO3EeaupMsSc_JFqg" role="_r8CmQBO3EeaupMsSc_JFqg"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_3nDb4hO3EeaupMsSc_JFqg" partWithPort="_R8jyMBFWEeak_5lhOjdy1A" role="_sld9wBO3EeaupMsSc_JFqg"/>
+      </ownedConnector>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_29VysBFVEeak_5lhOjdy1A" name="Block1"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_29Y2ABFVEeak_5lhOjdy1A" name="Association1" memberEnd="_2ka8YBFVEeak_5lhOjdy1A _29Y2AxFVEeak_5lhOjdy1A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_29Y2ARFVEeak_5lhOjdy1A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_29Y2AhFVEeak_5lhOjdy1A" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_29Y2AxFVEeak_5lhOjdy1A" name="mission unit" type="_NdIEYBFUEeak_5lhOjdy1A" association="_29Y2ABFVEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_OMrnIBFWEeak_5lhOjdy1A" name="Block2"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OMsOMRFWEeak_5lhOjdy1A" name="Association2" memberEnd="_N6wwsBFWEeak_5lhOjdy1A _OMsONBFWEeak_5lhOjdy1A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OMsOMhFWEeak_5lhOjdy1A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_OMsOMxFWEeak_5lhOjdy1A" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_OMsONBFWEeak_5lhOjdy1A" name="mission unit" type="_NdIEYBFUEeak_5lhOjdy1A" association="_OMsOMRFWEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SL85EBFWEeak_5lhOjdy1A" name="Block3"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SL9gIBFWEeak_5lhOjdy1A" name="Association3" memberEnd="_R8jyMBFWEeak_5lhOjdy1A _SL9gIxFWEeak_5lhOjdy1A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SL9gIRFWEeak_5lhOjdy1A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SL9gIhFWEeak_5lhOjdy1A" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_SL9gIxFWEeak_5lhOjdy1A" name="mission unit" type="_NdIEYBFUEeak_5lhOjdy1A" association="_SL9gIBFWEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XFwgoBFWEeak_5lhOjdy1A" name="Block4"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XFxHsBFWEeak_5lhOjdy1A" name="Association4" memberEnd="_W3-jUBFWEeak_5lhOjdy1A _XFxHsxFWEeak_5lhOjdy1A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XFxHsRFWEeak_5lhOjdy1A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XFxHshFWEeak_5lhOjdy1A" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_XFxHsxFWEeak_5lhOjdy1A" name="mission unit" type="_NdIEYBFUEeak_5lhOjdy1A" association="_XFxHsBFWEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_a5kwgBFWEeak_5lhOjdy1A" name="Block5"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_a5lXkRFWEeak_5lhOjdy1A" name="Association5" memberEnd="_arnNABFWEeak_5lhOjdy1A _a5lXlBFWEeak_5lhOjdy1A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_a5lXkhFWEeak_5lhOjdy1A" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_a5lXkxFWEeak_5lhOjdy1A" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_a5lXlBFWEeak_5lhOjdy1A" name="mission unit" type="_NdIEYBFUEeak_5lhOjdy1A" association="_a5lXkRFWEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_tbIAIBFWEeak_5lhOjdy1A" name="Block6"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_PUQbkBO5EeaWKdiwT8okVw" name="Enabling System">
+      <packagedElement xmi:type="uml:Class" xmi:id="_adjEMBO5EeaWKdiwT8okVw" name="Simulators">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jIrBQBO5EeaWKdiwT8okVw" name="block1_1" type="_Z6Fx0BO5EeaWKdiwT8okVw" association="_jIolABO5EeaWKdiwT8okVw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_PoHLsBO5EeaWKdiwT8okVw" name="System Of Interest">
+      <packagedElement xmi:type="uml:Class" xmi:id="_Z6Fx0BO5EeaWKdiwT8okVw" name="Mission Unit">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jIrBQRO5EeaWKdiwT8okVw" name="block1_1" type="_adjEMBO5EeaWKdiwT8okVw" association="_jIolABO5EeaWKdiwT8okVw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_lqNJ4BO5EeaWKdiwT8okVw" name="block1_1" type="_S1fGoBO5EeaWKdiwT8okVw" association="_lqL7wBO5EeaWKdiwT8okVw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_m-v68BO5EeaWKdiwT8okVw" name="block2_1" type="_TsDiQBO5EeaWKdiwT8okVw" association="_m-us0BO5EeaWKdiwT8okVw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ob1kABO5EeaWKdiwT8okVw" name="block3_1" type="_VP1pMBO5EeaWKdiwT8okVw" association="_ob088BO5EeaWKdiwT8okVw"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_pyjfUhO5EeaWKdiwT8okVw" name="block4_1" type="_VvG_IBO5EeaWKdiwT8okVw" association="_pyi4QBO5EeaWKdiwT8okVw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_P4IksBO5EeaWKdiwT8okVw" name="System In Operational Environment" visibility="public">
+      <packagedElement xmi:type="uml:Class" xmi:id="_S1fGoBO5EeaWKdiwT8okVw" name="Science Users">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_lqNJ4RO5EeaWKdiwT8okVw" name="block1_1" type="_Z6Fx0BO5EeaWKdiwT8okVw" association="_lqL7wBO5EeaWKdiwT8okVw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_TsDiQBO5EeaWKdiwT8okVw" name="Community">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_m-v68RO5EeaWKdiwT8okVw" name="block1_1" type="_Z6Fx0BO5EeaWKdiwT8okVw" association="_m-us0BO5EeaWKdiwT8okVw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VP1pMBO5EeaWKdiwT8okVw" name="Control Unit">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ob1kARO5EeaWKdiwT8okVw" name="block1_1" type="_Z6Fx0BO5EeaWKdiwT8okVw" association="_ob088BO5EeaWKdiwT8okVw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_VvG_IBO5EeaWKdiwT8okVw" name="Ground Station">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_pyjfUxO5EeaWKdiwT8okVw" name="block1_1" type="_Z6Fx0BO5EeaWKdiwT8okVw" association="_pyi4QBO5EeaWKdiwT8okVw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_jIolABO5EeaWKdiwT8okVw" memberEnd="_jIrBQBO5EeaWKdiwT8okVw _jIrBQRO5EeaWKdiwT8okVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jIpzIBO5EeaWKdiwT8okVw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jIqaMBO5EeaWKdiwT8okVw" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_lqL7wBO5EeaWKdiwT8okVw" memberEnd="_lqNJ4BO5EeaWKdiwT8okVw _lqNJ4RO5EeaWKdiwT8okVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lqMi0BO5EeaWKdiwT8okVw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lqMi0RO5EeaWKdiwT8okVw" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_m-us0BO5EeaWKdiwT8okVw" memberEnd="_m-v68BO5EeaWKdiwT8okVw _m-v68RO5EeaWKdiwT8okVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_m-vT4BO5EeaWKdiwT8okVw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_m-vT4RO5EeaWKdiwT8okVw" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ob088BO5EeaWKdiwT8okVw" memberEnd="_ob1kABO5EeaWKdiwT8okVw _ob1kARO5EeaWKdiwT8okVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ob088RO5EeaWKdiwT8okVw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ob088hO5EeaWKdiwT8okVw" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pyi4QBO5EeaWKdiwT8okVw" memberEnd="_pyjfUhO5EeaWKdiwT8okVw _pyjfUxO5EeaWKdiwT8okVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pyjfUBO5EeaWKdiwT8okVw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pyjfURO5EeaWKdiwT8okVw" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6EEpMBO9EeaWKdiwT8okVw" name="Processors">
+      <generalization xmi:type="uml:Generalization" xmi:id="_ijC88BO_EeaWKdiwT8okVw" general="_NdIEYBFUEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6W4QcBO9EeaWKdiwT8okVw" name="Mission Planning">
+      <generalization xmi:type="uml:Generalization" xmi:id="_nd9-0BO_EeaWKdiwT8okVw" general="_NdIEYBFUEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6mO7EBO9EeaWKdiwT8okVw" name="User Care">
+      <generalization xmi:type="uml:Generalization" xmi:id="_6_2DABO_EeaWKdiwT8okVw" general="_NdIEYBFUEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_C-jbcBO_EeaWKdiwT8okVw" name="Catalog">
+      <generalization xmi:type="uml:Generalization" xmi:id="_7f74UBO_EeaWKdiwT8okVw" general="_NdIEYBFUEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_E9AsMBO_EeaWKdiwT8okVw" name="Mission Database">
+      <generalization xmi:type="uml:Generalization" xmi:id="_goc4gBO_EeaWKdiwT8okVw" general="_NdIEYBFUEeak_5lhOjdy1A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_URlNABPAEeaWKdiwT8okVw" name="Community">
+      <generalization xmi:type="uml:Generalization" xmi:id="_c79WoBPVEeaWKdiwT8okVw" general="_TWTrABPVEeaWKdiwT8okVw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_WBFbwBPAEeaWKdiwT8okVw" name="Operator"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_TWTrABPVEeaWKdiwT8okVw" name="User"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_XPPrcBPVEeaWKdiwT8okVw" name="Registered Science User">
+      <generalization xmi:type="uml:Generalization" xmi:id="_cKYIsBPVEeaWKdiwT8okVw" general="_TWTrABPVEeaWKdiwT8okVw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_gJtsEBPVEeaWKdiwT8okVw" memberEnd="_gJ1A0hPVEeaWKdiwT8okVw _gJ1n4BPVEeaWKdiwT8okVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gJ1A0BPVEeaWKdiwT8okVw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gJ1A0RPVEeaWKdiwT8okVw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gJ1A0hPVEeaWKdiwT8okVw" name="users" type="_TWTrABPVEeaWKdiwT8okVw" association="_gJtsEBPVEeaWKdiwT8okVw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_gJ1n4BPVEeaWKdiwT8okVw" name="operator" type="_WBFbwBPAEeaWKdiwT8okVw" association="_gJtsEBPVEeaWKdiwT8okVw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_3gX0ABPWEeaWKdiwT8okVw" name="Science &amp; Applications"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="__ks20BPWEeaWKdiwT8okVw" name="Ground Station"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_BEMToBPXEeaWKdiwT8okVw" name="Control Unit"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Cv_uIBPXEeaWKdiwT8okVw" memberEnd="_CwAVMBPXEeaWKdiwT8okVw _CwAVMRPXEeaWKdiwT8okVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Cv_uIRPXEeaWKdiwT8okVw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Cv_uIhPXEeaWKdiwT8okVw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_CwAVMBPXEeaWKdiwT8okVw" name="operator" type="_WBFbwBPAEeaWKdiwT8okVw" association="_Cv_uIBPXEeaWKdiwT8okVw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_CwAVMRPXEeaWKdiwT8okVw" name="control unit" type="_BEMToBPXEeaWKdiwT8okVw" association="_Cv_uIBPXEeaWKdiwT8okVw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_D_86IBPXEeaWKdiwT8okVw" memberEnd="_D_9hMhPXEeaWKdiwT8okVw _D_9hMxPXEeaWKdiwT8okVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D_9hMBPXEeaWKdiwT8okVw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D_9hMRPXEeaWKdiwT8okVw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_D_9hMhPXEeaWKdiwT8okVw" name="operator" type="_WBFbwBPAEeaWKdiwT8okVw" association="_D_86IBPXEeaWKdiwT8okVw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_D_9hMxPXEeaWKdiwT8okVw" name="science &amp; applications" type="_3gX0ABPWEeaWKdiwT8okVw" association="_D_86IBPXEeaWKdiwT8okVw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EbpXoBPXEeaWKdiwT8okVw" memberEnd="_Ebp-shPXEeaWKdiwT8okVw _Ebp-sxPXEeaWKdiwT8okVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ebp-sBPXEeaWKdiwT8okVw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ebp-sRPXEeaWKdiwT8okVw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ebp-shPXEeaWKdiwT8okVw" name="operator" type="_WBFbwBPAEeaWKdiwT8okVw" association="_EbpXoBPXEeaWKdiwT8okVw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ebp-sxPXEeaWKdiwT8okVw" name="ground station" type="__ks20BPWEeaWKdiwT8okVw" association="_EbpXoBPXEeaWKdiwT8okVw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_6IYioBPXEeaWKdiwT8okVw" name="Science User">
+      <generalization xmi:type="uml:Generalization" xmi:id="_EM4GYBPYEeaWKdiwT8okVw" general="_TWTrABPVEeaWKdiwT8okVw"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_TztdwPf_EeWab4iQ1I7RWQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Tztdwff_EeWab4iQ1I7RWQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -131,23 +384,17 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_neZmMLX8EduFmqQsrNB9lw"/>
     </profileApplication>
   </uml:Model>
-  <Requirements:Requirement xmi:id="_u-fEkP2zEeWFwtaYqXT6rw" text="The Mission Unit shall be designed for acquiring data for a period of time not less than six months." id="L2B-SYS-720" base_Class="_u-edgP2zEeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_NLfOsP20EeWFwtaYqXT6rw" text="The Mission Unit shall be designed for archiving and publishing data for a period of time not less than six months once the spaacecraft is decommissioned." id="L2B-SYS-721" base_Class="_NLenoP20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_Ni96kP20EeWFwtaYqXT6rw" text="The Mission Unit shall provide a CAL/VAL platform to handle calibration-related data." id="L2B-SYS-722" base_Class="_Ni9TgP20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_OA07Qf20EeWFwtaYqXT6rw" text="The Mission Unit shall provide a CAL/VAL platform to allow users to download CAL/VAL data and submit CAL/VAL requests." id="L2B-SYS-723" base_Class="_OA07QP20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_OjI-If20EeWFwtaYqXT6rw" text="The Mission Unit shall provide a platform for user access to products." id="L2B-SYS-724" base_Class="_OjI-IP20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_O4cfwP20EeWFwtaYqXT6rw" text="The Mission Unit shall provide a platform for user access to telemetry, telecommands and housekepping." id="L2B-SYS-725" base_Class="_O4b4sP20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_PM0NQP20EeWFwtaYqXT6rw" text="The Mission Unit shall define role-based access control for users." id="L2B-SYS-726" base_Class="_PMzmMP20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_PgxEAP20EeWFwtaYqXT6rw" text="The Mission Unit shall process science data up to L1B / L2 products, according to the definitions set forth by the Committe on Earth Observation Satellites (CEOS)(TBC)." id="L2B-SYS-727" base_Class="_Pgwc8P20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_P4F-4P20EeWFwtaYqXT6rw" text="The Mission Unit shall store raw data." id="L2B-SYS-728" base_Class="_P4FX0P20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_Rfid0f20EeWFwtaYqXT6rw" text="The Mission Unit shall store products (TBC)." id="L2B-SYS-729" base_Class="_Rfid0P20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_R12FAf20EeWFwtaYqXT6rw" text="The Mission Unit shall store telemetry, telecommands and housekepping." id="L2B-SYS-730" base_Class="_R12FAP20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_SgFU0P20EeWFwtaYqXT6rw" text="The Mission Unit shall supply acquisition planning." id="L2B-SYS-731" base_Class="_SgEtwP20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_Y8msUP20EeWFwtaYqXT6rw" text="The Mission Unit shall implement an interfase with Control Unit." id="L2B-SYS-732" base_Class="_Y8mFQP20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_aFaHcf20EeWFwtaYqXT6rw" text="The Mission Unit shall download science data via the SA2017 station." id="L2B-SYS-733" base_Class="_aFaHcP20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_crVn4f20EeWFwtaYqXT6rw" text="The Mission Unit shall bring SA2017 community access through a web platform on a regular basis." id="L2B-SYS-734" base_Class="_crVn4P20EeWFwtaYqXT6rw"/>
-  <Requirements:DeriveReqt xmi:id="_5fRdoP9yEeWdU9Mpd1PczA" base_Abstraction="_5bctkP9yEeWdU9Mpd1PczA"/>
-  <Requirements:DeriveReqt xmi:id="_6Fmd0P9yEeWdU9Mpd1PczA" base_Abstraction="_6Boj0P9yEeWdU9Mpd1PczA"/>
+  <Requirements:Requirement xmi:id="_Ni96kP20EeWFwtaYqXT6rw" text="The Mission Unit shall provide platforms to handle calibration-related data, atmospheric-related data and collection-related data." id="L2B-SYS-720" base_Class="_Ni9TgP20EeWFwtaYqXT6rw"/>
+  <Requirements:Requirement xmi:id="_OA07Qf20EeWFwtaYqXT6rw" text="The Mission Unit shall provide a web platform to allow users to download calibration-related data, atmospheric-related data and collection-related data and submit requests." id="L2B-SYS-721" base_Class="_OA07QP20EeWFwtaYqXT6rw"/>
+  <Requirements:Requirement xmi:id="_OjI-If20EeWFwtaYqXT6rw" text="The Mission Unit shall provide a web platform for user access to products." id="L2B-SYS-722" base_Class="_OjI-IP20EeWFwtaYqXT6rw"/>
+  <Requirements:Requirement xmi:id="_O4cfwP20EeWFwtaYqXT6rw" text="The Mission Unit shall provide a web platform for user access to telemetry, telecommands and housekeeping." id="L2B-SYS-723" base_Class="_O4b4sP20EeWFwtaYqXT6rw"/>
+  <Requirements:Requirement xmi:id="_P4F-4P20EeWFwtaYqXT6rw" text="The Mission Unit shall store raw data." id="L2B-SYS-724" base_Class="_P4FX0P20EeWFwtaYqXT6rw"/>
+  <Requirements:Requirement xmi:id="_Rfid0f20EeWFwtaYqXT6rw" text="The Mission Unit shall store products." id="L2B-SYS-725" base_Class="_Rfid0P20EeWFwtaYqXT6rw"/>
+  <Requirements:Requirement xmi:id="_R12FAf20EeWFwtaYqXT6rw" text="The Mission Unit shall store telemetry and telecommands." id="L2B-SYS-726" base_Class="_R12FAP20EeWFwtaYqXT6rw"/>
+  <Requirements:Requirement xmi:id="_SgFU0P20EeWFwtaYqXT6rw" text="The Mission Unit shall supply acquisition planning." id="L2B-SYS-727" base_Class="_SgEtwP20EeWFwtaYqXT6rw"/>
+  <Requirements:Requirement xmi:id="_Y8msUP20EeWFwtaYqXT6rw" text="The Mission Unit shall implement a mission level database which shall be the repository and the interface with Control Unit and Ground Station." id="L2B-SYS-728" base_Class="_Y8mFQP20EeWFwtaYqXT6rw"/>
+  <Requirements:Requirement xmi:id="_aFaHcf20EeWFwtaYqXT6rw" text="The Mission Unit shall download science data via the ground station." id="L2B-SYS-729" base_Class="_aFaHcP20EeWFwtaYqXT6rw"/>
+  <Requirements:Requirement xmi:id="_crVn4f20EeWFwtaYqXT6rw" text="The Mission Unit shall bring SA2017 community access through a web platform on a regular basis." id="L2B-SYS-730" base_Class="_crVn4P20EeWFwtaYqXT6rw"/>
   <Requirements:DeriveReqt xmi:id="_8CuR0P9yEeWdU9Mpd1PczA" base_Abstraction="_7_QHEP9yEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_8iq9MP9yEeWdU9Mpd1PczA" base_Abstraction="_8fGr0P9yEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_BNtwAP9zEeWdU9Mpd1PczA" base_Abstraction="_BKnYsP9zEeWdU9Mpd1PczA"/>
@@ -155,10 +402,58 @@
   <Requirements:DeriveReqt xmi:id="_CeFLsP9zEeWdU9Mpd1PczA" base_Abstraction="_CbNd4P9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_C-9rMP9zEeWdU9Mpd1PczA" base_Abstraction="_C76-QP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_Dm84QP9zEeWdU9Mpd1PczA" base_Abstraction="_DjulIP9zEeWdU9Mpd1PczA"/>
-  <Requirements:DeriveReqt xmi:id="_ECT-kP9zEeWdU9Mpd1PczA" base_Abstraction="_D_cQwP9zEeWdU9Mpd1PczA"/>
-  <Requirements:DeriveReqt xmi:id="_EiWwkP9zEeWdU9Mpd1PczA" base_Abstraction="_Ee-scP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_FhU6QP9zEeWdU9Mpd1PczA" base_Abstraction="_FdzsMP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_GDFjgP9zEeWdU9Mpd1PczA" base_Abstraction="_GAErwP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_ILpLcP9zEeWdU9Mpd1PczA" base_Abstraction="_IIaRQP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_JWUO0P9zEeWdU9Mpd1PczA" base_Abstraction="_JTTXEP9zEeWdU9Mpd1PczA"/>
+  <Requirements:Requirement xmi:id="_nVd1kAMVEeam46Rh5krVVg" text="The Mission Unit shall develop L0 algorithm to process raw data." id="L2B-SYS-731" base_Class="_nVbZUAMVEeam46Rh5krVVg"/>
+  <Blocks:Block xmi:id="_NdR1YBFUEeak_5lhOjdy1A" base_Class="_NdIEYBFUEeak_5lhOjdy1A"/>
+  <Blocks:Block xmi:id="_29WZwBFVEeak_5lhOjdy1A" base_Class="_29VysBFVEeak_5lhOjdy1A"/>
+  <Blocks:Block xmi:id="_OMsOMBFWEeak_5lhOjdy1A" base_Class="_OMrnIBFWEeak_5lhOjdy1A"/>
+  <Blocks:Block xmi:id="_SL85ERFWEeak_5lhOjdy1A" base_Class="_SL85EBFWEeak_5lhOjdy1A"/>
+  <Blocks:Block xmi:id="_XFwgoRFWEeak_5lhOjdy1A" base_Class="_XFwgoBFWEeak_5lhOjdy1A"/>
+  <Blocks:Block xmi:id="_a5lXkBFWEeak_5lhOjdy1A" base_Class="_a5kwgBFWEeak_5lhOjdy1A"/>
+  <Blocks:Block xmi:id="_tbInMBFWEeak_5lhOjdy1A" base_Class="_tbIAIBFWEeak_5lhOjdy1A"/>
+  <PortAndFlows:FlowPort xmi:id="_wejPgBO0EeaupMsSc_JFqg" base_Port="_weiBYBO0EeaupMsSc_JFqg"/>
+  <PortAndFlows:FlowPort xmi:id="_z_N54BO0EeaupMsSc_JFqg" base_Port="_z_MrwBO0EeaupMsSc_JFqg"/>
+  <PortAndFlows:FlowPort xmi:id="_5UxCQBO0EeaupMsSc_JFqg" base_Port="_5UumABO0EeaupMsSc_JFqg"/>
+  <PortAndFlows:FlowPort xmi:id="__rBZsBO0EeaupMsSc_JFqg" base_Port="__rAyoBO0EeaupMsSc_JFqg"/>
+  <PortAndFlows:FlowPort xmi:id="_D5j2sBO1EeaupMsSc_JFqg" base_Port="_D5eXIBO1EeaupMsSc_JFqg" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_EiZ_YBO1EeaupMsSc_JFqg" base_Port="_EiYKMBO1EeaupMsSc_JFqg" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_FiUkQBO1EeaupMsSc_JFqg" base_Port="_FiT9MBO1EeaupMsSc_JFqg" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_GHo30BO1EeaupMsSc_JFqg" base_Port="_GHoQwBO1EeaupMsSc_JFqg" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_GxSRwBO1EeaupMsSc_JFqg" base_Port="_GxRqsBO1EeaupMsSc_JFqg" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_HSuK4BO1EeaupMsSc_JFqg" base_Port="_HSs8wBO1EeaupMsSc_JFqg" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_xeInwRO1EeaupMsSc_JFqg" base_Port="_xeInwBO1EeaupMsSc_JFqg"/>
+  <PortAndFlows:FlowPort xmi:id="_yWmg0BO1EeaupMsSc_JFqg" base_Port="_yWl5wBO1EeaupMsSc_JFqg"/>
+  <PortAndFlows:FlowPort xmi:id="_znPpUBO1EeaupMsSc_JFqg" base_Port="_znPCQBO1EeaupMsSc_JFqg" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_0KpRUBO1EeaupMsSc_JFqg" base_Port="_0KoqQBO1EeaupMsSc_JFqg" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_CRpBMBO2EeaupMsSc_JFqg" base_Port="_CRnMABO2EeaupMsSc_JFqg" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_FmakoBO2EeaupMsSc_JFqg" base_Port="_FmYvcBO2EeaupMsSc_JFqg" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_VVa0IBO2EeaupMsSc_JFqg" base_Port="_VVaNEBO2EeaupMsSc_JFqg" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_dmAxUBO2EeaupMsSc_JFqg" base_Port="_dl-8IBO2EeaupMsSc_JFqg" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_lVp9kBO2EeaupMsSc_JFqg" base_Port="_lVoIYBO2EeaupMsSc_JFqg"/>
+  <PortAndFlows:FlowPort xmi:id="_mVoM0BO2EeaupMsSc_JFqg" base_Port="_mVnlwBO2EeaupMsSc_JFqg"/>
+  <PortAndFlows:FlowPort xmi:id="_rPhT8BO2EeaupMsSc_JFqg" base_Port="_rPfewBO2EeaupMsSc_JFqg"/>
+  <PortAndFlows:FlowPort xmi:id="_sPZckBO2EeaupMsSc_JFqg" base_Port="_sPY1gBO2EeaupMsSc_JFqg" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_tX3ggBO2EeaupMsSc_JFqg" base_Port="_tX25cBO2EeaupMsSc_JFqg" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_F2rYwBO3EeaupMsSc_JFqg" base_Port="_F2qxsBO3EeaupMsSc_JFqg"/>
+  <PortAndFlows:FlowPort xmi:id="_X74qoBO3EeaupMsSc_JFqg" base_Port="_X73cgBO3EeaupMsSc_JFqg"/>
+  <PortAndFlows:FlowPort xmi:id="_YnWpgBO3EeaupMsSc_JFqg" base_Port="_YnWCcBO3EeaupMsSc_JFqg"/>
+  <PortAndFlows:FlowPort xmi:id="_r8EbcBO3EeaupMsSc_JFqg" base_Port="_r8CmQBO3EeaupMsSc_JFqg" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_slek0BO3EeaupMsSc_JFqg" base_Port="_sld9wBO3EeaupMsSc_JFqg" direction="in"/>
+  <Blocks:Block xmi:id="_S1gUwBO5EeaWKdiwT8okVw" base_Class="_S1fGoBO5EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_TsEJUBO5EeaWKdiwT8okVw" base_Class="_TsDiQBO5EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_VP2QQBO5EeaWKdiwT8okVw" base_Class="_VP1pMBO5EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_VvHmMBO5EeaWKdiwT8okVw" base_Class="_VvG_IBO5EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_Z6GY4BO5EeaWKdiwT8okVw" base_Class="_Z6Fx0BO5EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_adjrQBO5EeaWKdiwT8okVw" base_Class="_adjEMBO5EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_6EFQQBO9EeaWKdiwT8okVw" base_Class="_6EEpMBO9EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_6W43gBO9EeaWKdiwT8okVw" base_Class="_6W4QcBO9EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_6mPiIBO9EeaWKdiwT8okVw" base_Class="_6mO7EBO9EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_C-kCgBO_EeaWKdiwT8okVw" base_Class="_C-jbcBO_EeaWKdiwT8okVw"/>
+  <Blocks:Block xmi:id="_E9BTQBO_EeaWKdiwT8okVw" base_Class="_E9AsMBO_EeaWKdiwT8okVw"/>
+  <Requirements:Requirement xmi:id="_t_OCUBPgEeaWKdiwT8okVw" text="The Mission Unit shall develop L1A algorithm to process L0 products." id="L2B-SYS-732" base_Class="_t_B1EBPgEeaWKdiwT8okVw"/>
+  <Requirements:Requirement xmi:id="_wNhF4BPgEeaWKdiwT8okVw" text="The Mission Unit shall develop L1B algorithm to process L1A products." id="L2B-SYS-733" base_Class="_wNge0BPgEeaWKdiwT8okVw"/>
+  <Requirements:Requirement xmi:id="_58NRYRPjEeaWKdiwT8okVw" text="The Mission Unit shall develop L2 algorithm to process L1A products." id="L2B-SYS-734" base_Class="_58NRYBPjEeaWKdiwT8okVw"/>
 </xmi:XMI>

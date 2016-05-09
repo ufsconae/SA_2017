@@ -16,7 +16,13 @@
         <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
       </axis>
       <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_kIiKlPz2EeWWH817x0Adtw" element="property_of_stereotype:/SysML::Requirements::Requirement::text">
-        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_DDOrsPz4EeWWH817x0Adtw" name="axisWidth" intValue="656"/>
+        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_DDOrsPz4EeWWH817x0Adtw" name="axisWidth" intValue="784"/>
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
+      </axis>
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_YM7XEAWwEea9i7Pqul4slw" element="property_of_stereotype:/SysML::Requirements::Requirement::derived">
+        <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
+      </axis>
+      <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_YM7XEQWwEea9i7Pqul4slw" element="property_of_stereotype:/SysML::Requirements::Requirement::derivedFrom">
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
       </axis>
     </columnAxisProvidersHistory>

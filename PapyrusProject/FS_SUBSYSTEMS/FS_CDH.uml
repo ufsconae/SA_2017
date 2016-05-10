@@ -466,6 +466,43 @@
       <packagedElement xmi:type="uml:Usage" xmi:id="_RawO0BX6Eea4itIoBH-MTA" client="_kdTbAAWZEeaRM-Du8o1hOg" supplier="_5TPcQBX5Eea4itIoBH-MTA"/>
       <packagedElement xmi:type="uml:Usage" xmi:id="_R3FlgBX6Eea4itIoBH-MTA" client="_kdTbAAWZEeaRM-Du8o1hOg" supplier="_91zogBX5Eea4itIoBH-MTA"/>
       <packagedElement xmi:type="uml:Usage" xmi:id="_UCFQ4BYPEeaJtvdXHwPksg" name="HK" client="_KKHvQAJxEeaCSucAKdgDDQ" supplier="_MTf0kBYPEeaJtvdXHwPksg"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_WRvQABa3EeaO0Ls0_Xfk7w" name="Receive Telecommand"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_YWVlABa3EeaO0Ls0_Xfk7w" name="Distribute Command"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_aqW2EBa3EeaO0Ls0_Xfk7w" memberEnd="_aqkRcBa3EeaO0Ls0_Xfk7w _aqk4gBa3EeaO0Ls0_Xfk7w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aqXdIBa3EeaO0Ls0_Xfk7w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aqXdIRa3EeaO0Ls0_Xfk7w" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_aqkRcBa3EeaO0Ls0_Xfk7w" name="receive telecommand" type="_WRvQABa3EeaO0Ls0_Xfk7w" association="_aqW2EBa3EeaO0Ls0_Xfk7w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_aqk4gBa3EeaO0Ls0_Xfk7w" name="ground segment" type="_JIJI4AVmEeadIoYsHc90eg" association="_aqW2EBa3EeaO0Ls0_Xfk7w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_bCAhEBa3EeaO0Ls0_Xfk7w" memberEnd="_bCBIIRa3EeaO0Ls0_Xfk7w _bCBIIha3EeaO0Ls0_Xfk7w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bCAhERa3EeaO0Ls0_Xfk7w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bCBIIBa3EeaO0Ls0_Xfk7w" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bCBIIRa3EeaO0Ls0_Xfk7w" name="cd&amp;h" type="_dsnegAJxEeaCSucAKdgDDQ" association="_bCAhEBa3EeaO0Ls0_Xfk7w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_bCBIIha3EeaO0Ls0_Xfk7w" name="receive telecommand" type="_WRvQABa3EeaO0Ls0_Xfk7w" association="_bCAhEBa3EeaO0Ls0_Xfk7w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_baPa4Ba3EeaO0Ls0_Xfk7w" memberEnd="_baQpAha3EeaO0Ls0_Xfk7w _baRQEBa3EeaO0Ls0_Xfk7w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_baQpABa3EeaO0Ls0_Xfk7w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_baQpARa3EeaO0Ls0_Xfk7w" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_baQpAha3EeaO0Ls0_Xfk7w" name="cd&amp;h" type="_dsnegAJxEeaCSucAKdgDDQ" association="_baPa4Ba3EeaO0Ls0_Xfk7w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_baRQEBa3EeaO0Ls0_Xfk7w" name="distribute command" type="_YWVlABa3EeaO0Ls0_Xfk7w" association="_baPa4Ba3EeaO0Ls0_Xfk7w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_b6JqABa3EeaO0Ls0_Xfk7w" memberEnd="_b6KREha3EeaO0Ls0_Xfk7w _b6KRExa3EeaO0Ls0_Xfk7w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_b6KREBa3EeaO0Ls0_Xfk7w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_b6KRERa3EeaO0Ls0_Xfk7w" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_b6KREha3EeaO0Ls0_Xfk7w" name="subsystems" type="_KKHvQAJxEeaCSucAKdgDDQ" association="_b6JqABa3EeaO0Ls0_Xfk7w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_b6KRExa3EeaO0Ls0_Xfk7w" name="distribute command" type="_YWVlABa3EeaO0Ls0_Xfk7w" association="_b6JqABa3EeaO0Ls0_Xfk7w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_o76QIBa3EeaO0Ls0_Xfk7w" memberEnd="_o763MRa3EeaO0Ls0_Xfk7w _o763Mha3EeaO0Ls0_Xfk7w">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_o76QIRa3EeaO0Ls0_Xfk7w" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_o763MBa3EeaO0Ls0_Xfk7w" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_o763MRa3EeaO0Ls0_Xfk7w" name="run algorithms" type="_H9GNEAWdEeaRM-Du8o1hOg" association="_o76QIBa3EeaO0Ls0_Xfk7w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_o763Mha3EeaO0Ls0_Xfk7w" name="cd&amp;h" type="_dsnegAJxEeaCSucAKdgDDQ" association="_o76QIBa3EeaO0Ls0_Xfk7w"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_SdZswAGwEeajHqwUCOgvUA" name="ArchitectureDiagram">
       <packagedElement xmi:type="uml:Class" xmi:id="_NF-zgBXlEea4itIoBH-MTA" name="C&amp;DH">
@@ -1106,6 +1143,43 @@ Normal mode
         <node xmi:type="uml:CentralBufferNode" xmi:id="_DFoEgAchEeaCsux1JeAI0w" name="Error = 1" incoming="__gDPgAchEeaCsux1JeAI0w" outgoing="__93z8AchEeaCsux1JeAI0w">
           <upperBound xmi:type="uml:LiteralInteger" xmi:id="_DForkAchEeaCsux1JeAI0w" value="1"/>
         </node>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_zg0ZUBa3EeaO0Ls0_Xfk7w" name="Distribute Commands" node="_4qNVABa3EeaO0Ls0_Xfk7w _6om7YBa3EeaO0Ls0_Xfk7w _BBnE0Ba4EeaO0Ls0_Xfk7w _H-VmYBa4EeaO0Ls0_Xfk7w _J7LGgBa4EeaO0Ls0_Xfk7w _MhfBcBa4EeaO0Ls0_Xfk7w _PwNnQBa4EeaO0Ls0_Xfk7w">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_AUjxkBa4EeaO0Ls0_Xfk7w" target="_6om7YBa3EeaO0Ls0_Xfk7w" source="_4qNVABa3EeaO0Ls0_Xfk7w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_HVCxwBa4EeaO0Ls0_Xfk7w" target="_BBnE0Ba4EeaO0Ls0_Xfk7w" source="_6om7YBa3EeaO0Ls0_Xfk7w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_JVip4Ba4EeaO0Ls0_Xfk7w" target="_H-VmYBa4EeaO0Ls0_Xfk7w" source="_BBnE0Ba4EeaO0Ls0_Xfk7w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_L9m4UBa4EeaO0Ls0_Xfk7w" target="_J7LGgBa4EeaO0Ls0_Xfk7w" source="_H-VmYBa4EeaO0Ls0_Xfk7w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_RGNJ0Ba4EeaO0Ls0_Xfk7w" target="_MhfBcBa4EeaO0Ls0_Xfk7w" source="_J7LGgBa4EeaO0Ls0_Xfk7w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_RfhowBa4EeaO0Ls0_Xfk7w" target="_PwNnQBa4EeaO0Ls0_Xfk7w" source="_MhfBcBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_4qNVABa3EeaO0Ls0_Xfk7w" name="Init" outgoing="_AUjxkBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_6om7YBa3EeaO0Ls0_Xfk7w" name="Get Next Command from buffer" incoming="_AUjxkBa4EeaO0Ls0_Xfk7w" outgoing="_HVCxwBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_BBnE0Ba4EeaO0Ls0_Xfk7w" name="Open subsystem communication channel" incoming="_HVCxwBa4EeaO0Ls0_Xfk7w" outgoing="_JVip4Ba4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_H-VmYBa4EeaO0Ls0_Xfk7w" name="Send command" incoming="_JVip4Ba4EeaO0Ls0_Xfk7w" outgoing="_L9m4UBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_J7LGgBa4EeaO0Ls0_Xfk7w" name="Get ACK message" incoming="_L9m4UBa4EeaO0Ls0_Xfk7w" outgoing="_RGNJ0Ba4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_MhfBcBa4EeaO0Ls0_Xfk7w" name="Get output of command execution" incoming="_RGNJ0Ba4EeaO0Ls0_Xfk7w" outgoing="_RfhowBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_PwNnQBa4EeaO0Ls0_Xfk7w" name="End" incoming="_RfhowBa4EeaO0Ls0_Xfk7w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_VMu6UBa4EeaO0Ls0_Xfk7w" name="Receive Telecommands" node="_ZAccgBa4EeaO0Ls0_Xfk7w _Z_AWgBa4EeaO0Ls0_Xfk7w _cGUoUBa4EeaO0Ls0_Xfk7w _fQfeQBa4EeaO0Ls0_Xfk7w _hGCDkBa4EeaO0Ls0_Xfk7w _p-XWMBa4EeaO0Ls0_Xfk7w _vjfLoBa4EeaO0Ls0_Xfk7w _xr0KEBa4EeaO0Ls0_Xfk7w _z318wBa4EeaO0Ls0_Xfk7w _23MCwBa4EeaO0Ls0_Xfk7w">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4N6lIBa4EeaO0Ls0_Xfk7w" target="_Z_AWgBa4EeaO0Ls0_Xfk7w" source="_ZAccgBa4EeaO0Ls0_Xfk7w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_698cwBa4EeaO0Ls0_Xfk7w" target="_cGUoUBa4EeaO0Ls0_Xfk7w" source="_Z_AWgBa4EeaO0Ls0_Xfk7w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_7qINUBa4EeaO0Ls0_Xfk7w" target="_fQfeQBa4EeaO0Ls0_Xfk7w" source="_cGUoUBa4EeaO0Ls0_Xfk7w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_8Hk-UBa4EeaO0Ls0_Xfk7w" target="_hGCDkBa4EeaO0Ls0_Xfk7w" source="_fQfeQBa4EeaO0Ls0_Xfk7w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_8dlqkBa4EeaO0Ls0_Xfk7w" target="_p-XWMBa4EeaO0Ls0_Xfk7w" source="_hGCDkBa4EeaO0Ls0_Xfk7w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_87XywBa4EeaO0Ls0_Xfk7w" target="_vjfLoBa4EeaO0Ls0_Xfk7w" source="_p-XWMBa4EeaO0Ls0_Xfk7w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_9fd-UBa4EeaO0Ls0_Xfk7w" target="_xr0KEBa4EeaO0Ls0_Xfk7w" source="_vjfLoBa4EeaO0Ls0_Xfk7w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_-WrTIBa4EeaO0Ls0_Xfk7w" target="_z318wBa4EeaO0Ls0_Xfk7w" source="_vjfLoBa4EeaO0Ls0_Xfk7w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_-wPCoBa4EeaO0Ls0_Xfk7w" target="_z318wBa4EeaO0Ls0_Xfk7w" source="_xr0KEBa4EeaO0Ls0_Xfk7w"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="__9-BEBa4EeaO0Ls0_Xfk7w" target="_23MCwBa4EeaO0Ls0_Xfk7w" source="_z318wBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_ZAccgBa4EeaO0Ls0_Xfk7w" name="Init" outgoing="_4N6lIBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_Z_AWgBa4EeaO0Ls0_Xfk7w" name="Open UHF comm channel" incoming="_4N6lIBa4EeaO0Ls0_Xfk7w" outgoing="_698cwBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_cGUoUBa4EeaO0Ls0_Xfk7w" name="Receive telecommands" incoming="_698cwBa4EeaO0Ls0_Xfk7w" outgoing="_7qINUBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_fQfeQBa4EeaO0Ls0_Xfk7w" name="Decode commands" incoming="_7qINUBa4EeaO0Ls0_Xfk7w" outgoing="_8Hk-UBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_hGCDkBa4EeaO0Ls0_Xfk7w" name="Check CRC" incoming="_8Hk-UBa4EeaO0Ls0_Xfk7w" outgoing="_8dlqkBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_p-XWMBa4EeaO0Ls0_Xfk7w" name="Store Commands" incoming="_8dlqkBa4EeaO0Ls0_Xfk7w" outgoing="_87XywBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_vjfLoBa4EeaO0Ls0_Xfk7w" name="is time tagged?" incoming="_87XywBa4EeaO0Ls0_Xfk7w" outgoing="_9fd-UBa4EeaO0Ls0_Xfk7w _-WrTIBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_xr0KEBa4EeaO0Ls0_Xfk7w" name="Command Schedulling Operations" incoming="_9fd-UBa4EeaO0Ls0_Xfk7w" outgoing="_-wPCoBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_z318wBa4EeaO0Ls0_Xfk7w" name="Move Command to Execution buffer" incoming="_-WrTIBa4EeaO0Ls0_Xfk7w _-wPCoBa4EeaO0Ls0_Xfk7w" outgoing="__9-BEBa4EeaO0Ls0_Xfk7w"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_23MCwBa4EeaO0Ls0_Xfk7w" name="End" incoming="__9-BEBa4EeaO0Ls0_Xfk7w"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sKAVMAGtEeajHqwUCOgvUA">

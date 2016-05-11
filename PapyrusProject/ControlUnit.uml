@@ -27,9 +27,7 @@
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_MEfP0P90EeWdU9Mpd1PczA" name="DeriveReqt2" client="_YY_ykPgaEeWrWMXdyrR5uQ">
         <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_MfiNEP90EeWdU9Mpd1PczA" name="DeriveReqt3" client="_f2hZcPgtEeWISYGibq9i4A">
-        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_MfiNEP90EeWdU9Mpd1PczA" name="DeriveReqt3" client="_f2hZcPgtEeWISYGibq9i4A" supplier="_L7U7gPgbEeWrWMXdyrR5uQ"/>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_M46WYP90EeWdU9Mpd1PczA" name="DeriveReqt4" client="_MzWh4P28EeWad7IgZOVsfA">
         <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_78BcsPwsEeWZO5s3t9VRdw"/>
       </packagedElement>
@@ -126,10 +124,33 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_L-s7cA4bEeamoLR2pjZu6w" name="ActivityDiagram">
-      <packagedElement xmi:type="uml:Activity" xmi:id="_WAo6cA4bEeamoLR2pjZu6w" name="PlanOperaciones" group="_OStI8A4cEeamoLR2pjZu6w _X4iawA4cEeamoLR2pjZu6w _Fm4L0A4dEeamoLR2pjZu6w">
-        <group xmi:type="uml:ActivityPartition" xmi:id="_OStI8A4cEeamoLR2pjZu6w" name="Operador"/>
-        <group xmi:type="uml:ActivityPartition" xmi:id="_X4iawA4cEeamoLR2pjZu6w" name="MissionCenter"/>
-        <group xmi:type="uml:ActivityPartition" xmi:id="_Fm4L0A4dEeamoLR2pjZu6w" name="MissionDB"/>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_WAo6cA4bEeamoLR2pjZu6w" name="PlanOperaciones" node="_aYXB0BXgEeavYYkBEbJMzQ _jqWxoBXgEeavYYkBEbJMzQ _9nV4EBXgEeavYYkBEbJMzQ _W-MLkBXhEeavYYkBEbJMzQ _G9TscBXiEeavYYkBEbJMzQ _wyYF4BXiEeavYYkBEbJMzQ _C50MYBXjEeavYYkBEbJMzQ _QsnN4BXjEeavYYkBEbJMzQ _e9i84BXjEeavYYkBEbJMzQ _RwQxUBXlEeavYYkBEbJMzQ" group="_OStI8A4cEeamoLR2pjZu6w _X4iawA4cEeamoLR2pjZu6w _Fm4L0A4dEeamoLR2pjZu6w _5B2zUBXjEeavYYkBEbJMzQ">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ngMawBXgEeavYYkBEbJMzQ" name="pedido" target="_jqWxoBXgEeavYYkBEbJMzQ" source="_aYXB0BXgEeavYYkBEbJMzQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_NVPUUBXhEeavYYkBEbJMzQ" name="Consulta" target="_9nV4EBXgEeavYYkBEbJMzQ" source="_jqWxoBXgEeavYYkBEbJMzQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_b7kEgBXhEeavYYkBEbJMzQ" name="Obtengo P.Pasada" target="_W-MLkBXhEeavYYkBEbJMzQ" source="_9nV4EBXgEeavYYkBEbJMzQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_OIh9ABXiEeavYYkBEbJMzQ" name="Enviar" target="_W-MLkBXhEeavYYkBEbJMzQ" source="_G9TscBXiEeavYYkBEbJMzQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_5qbrsBXiEeavYYkBEbJMzQ" target="_wyYF4BXiEeavYYkBEbJMzQ" source="_W-MLkBXhEeavYYkBEbJMzQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Ny_VYBXjEeavYYkBEbJMzQ" name="SI" target="_C50MYBXjEeavYYkBEbJMzQ" source="_wyYF4BXiEeavYYkBEbJMzQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_T92VIBXjEeavYYkBEbJMzQ" target="_QsnN4BXjEeavYYkBEbJMzQ" source="_C50MYBXjEeavYYkBEbJMzQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_GCDTMBXkEeavYYkBEbJMzQ" name="NO" target="_e9i84BXjEeavYYkBEbJMzQ" source="_wyYF4BXiEeavYYkBEbJMzQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Q3H_UBXkEeavYYkBEbJMzQ" target="_QsnN4BXjEeavYYkBEbJMzQ" source="_e9i84BXjEeavYYkBEbJMzQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_eNUu8BXlEeavYYkBEbJMzQ" name="obtengo" target="_W-MLkBXhEeavYYkBEbJMzQ" source="_RwQxUBXlEeavYYkBEbJMzQ"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_OStI8A4cEeamoLR2pjZu6w" name="Operador" node="_aYXB0BXgEeavYYkBEbJMzQ _jqWxoBXgEeavYYkBEbJMzQ _W-MLkBXhEeavYYkBEbJMzQ _wyYF4BXiEeavYYkBEbJMzQ _C50MYBXjEeavYYkBEbJMzQ _QsnN4BXjEeavYYkBEbJMzQ"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_X4iawA4cEeamoLR2pjZu6w" name="Orbita" node="_G9TscBXiEeavYYkBEbJMzQ">
+          <subpartition xmi:type="uml:ActivityPartition" xmi:id="_2djqkBXjEeavYYkBEbJMzQ" name="Orbita"/>
+        </group>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_Fm4L0A4dEeamoLR2pjZu6w" name="MissionDB" node="_9nV4EBXgEeavYYkBEbJMzQ _RwQxUBXlEeavYYkBEbJMzQ"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_5B2zUBXjEeavYYkBEbJMzQ" name="Mission Unit"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_aYXB0BXgEeavYYkBEbJMzQ" name="Inicio" outgoing="_ngMawBXgEeavYYkBEbJMzQ" inPartition="_OStI8A4cEeamoLR2pjZu6w"/>
+        <node xmi:type="uml:CreateObjectAction" xmi:id="_jqWxoBXgEeavYYkBEbJMzQ" name="Plan de Pasada" incoming="_ngMawBXgEeavYYkBEbJMzQ" outgoing="_NVPUUBXhEeavYYkBEbJMzQ" inPartition="_OStI8A4cEeamoLR2pjZu6w"/>
+        <node xmi:type="uml:CreateObjectAction" xmi:id="_9nV4EBXgEeavYYkBEbJMzQ" name="Plan Pasada" incoming="_NVPUUBXhEeavYYkBEbJMzQ" outgoing="_b7kEgBXhEeavYYkBEbJMzQ" inPartition="_Fm4L0A4dEeamoLR2pjZu6w"/>
+        <node xmi:type="uml:CreateObjectAction" xmi:id="_W-MLkBXhEeavYYkBEbJMzQ" name="Analizar Plan" incoming="_b7kEgBXhEeavYYkBEbJMzQ _OIh9ABXiEeavYYkBEbJMzQ _eNUu8BXlEeavYYkBEbJMzQ" outgoing="_5qbrsBXiEeavYYkBEbJMzQ" inPartition="_OStI8A4cEeamoLR2pjZu6w"/>
+        <node xmi:type="uml:CreateObjectAction" xmi:id="_G9TscBXiEeavYYkBEbJMzQ" name="Datos Orbitales" outgoing="_OIh9ABXiEeavYYkBEbJMzQ" inPartition="_X4iawA4cEeamoLR2pjZu6w"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_wyYF4BXiEeavYYkBEbJMzQ" name="Es Posible?" incoming="_5qbrsBXiEeavYYkBEbJMzQ" outgoing="_Ny_VYBXjEeavYYkBEbJMzQ _GCDTMBXkEeavYYkBEbJMzQ" inPartition="_OStI8A4cEeamoLR2pjZu6w"/>
+        <node xmi:type="uml:ValueSpecificationAction" xmi:id="_C50MYBXjEeavYYkBEbJMzQ" name="Generar Plan Final de Pasada" incoming="_Ny_VYBXjEeavYYkBEbJMzQ" outgoing="_T92VIBXjEeavYYkBEbJMzQ" inPartition="_OStI8A4cEeamoLR2pjZu6w"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_QsnN4BXjEeavYYkBEbJMzQ" name="Fin" incoming="_T92VIBXjEeavYYkBEbJMzQ _Q3H_UBXkEeavYYkBEbJMzQ" inPartition="_OStI8A4cEeamoLR2pjZu6w"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_e9i84BXjEeavYYkBEbJMzQ" name="Informo &quot;No Es Posible Plan de Pasada&quot;" incoming="_GCDTMBXkEeavYYkBEbJMzQ" outgoing="_Q3H_UBXkEeavYYkBEbJMzQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_RwQxUBXlEeavYYkBEbJMzQ" name="Telemetria HK" outgoing="_eNUu8BXlEeavYYkBEbJMzQ" inPartition="_Fm4L0A4dEeamoLR2pjZu6w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Activity" xmi:id="_IgnZEA4dEeamoLR2pjZu6w" name="PlanFinalPasada">
         <ownedBehavior xmi:type="uml:Activity" xmi:id="_DXeDEA4fEeamoLR2pjZu6w" name="ControlCenter"/>

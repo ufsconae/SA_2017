@@ -74,6 +74,36 @@
     <include xmi:type="uml:Include" xmi:id="_S-sp8BcPEeaXSI-gjrG7ng" addition="_s_eyoBcMEeaXSI-gjrG7ng"/>
     <include xmi:type="uml:Include" xmi:id="_DjpbwBcQEeaXSI-gjrG7ng" addition="_s_eyoBcMEeaXSI-gjrG7ng"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_JJ4PABcREeaXSI-gjrG7ng" name="CDH"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_KIOtoBcREeaXSI-gjrG7ng" name="SEU Mgmt">
+    <include xmi:type="uml:Include" xmi:id="_gPzBsBcREeaXSI-gjrG7ng" addition="_T9F58BcREeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_NsCLkBcREeaXSI-gjrG7ng" name="Latchup Mgmt"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_T9F58BcREeaXSI-gjrG7ng" name="MemoryIntegrity Mgmt"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cfkRUBcREeaXSI-gjrG7ng" memberEnd="_cfk4YhcREeaXSI-gjrG7ng _cfk4YxcREeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cfk4YBcREeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cfk4YRcREeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cfk4YhcREeaXSI-gjrG7ng" name="memoryintegrity mgmt" type="_T9F58BcREeaXSI-gjrG7ng" association="_cfkRUBcREeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cfk4YxcREeaXSI-gjrG7ng" name="cdh" type="_JJ4PABcREeaXSI-gjrG7ng" association="_cfkRUBcREeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_c-wHsBcREeaXSI-gjrG7ng" memberEnd="_c-wuwhcREeaXSI-gjrG7ng _c-xV0BcREeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_c-wuwBcREeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_c-wuwRcREeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_c-wuwhcREeaXSI-gjrG7ng" name="latchup mgmt" type="_NsCLkBcREeaXSI-gjrG7ng" association="_c-wHsBcREeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_c-xV0BcREeaXSI-gjrG7ng" name="cdh" type="_JJ4PABcREeaXSI-gjrG7ng" association="_c-wHsBcREeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dqQi0BcREeaXSI-gjrG7ng" memberEnd="_dqRw8RcREeaXSI-gjrG7ng _dqRw8hcREeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dqRJ4BcREeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dqRw8BcREeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dqRw8RcREeaXSI-gjrG7ng" name="memoryintegrity mgmt" type="_T9F58BcREeaXSI-gjrG7ng" association="_dqQi0BcREeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_dqRw8hcREeaXSI-gjrG7ng" name="seu mgmt" type="_KIOtoBcREeaXSI-gjrG7ng" association="_dqQi0BcREeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_hY9pMBcREeaXSI-gjrG7ng" name="Voting procedure">
+    <include xmi:type="uml:Include" xmi:id="_lL_O4BcREeaXSI-gjrG7ng" addition="_KIOtoBcREeaXSI-gjrG7ng"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-7oXMBXwEea4itIoBH-MTA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-7vE4BXwEea4itIoBH-MTA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>

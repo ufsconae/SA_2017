@@ -162,6 +162,59 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_cANJ4RcTEeaXSI-gjrG7ng" name="actor4" type="_WgYEIBcTEeaXSI-gjrG7ng" association="_cAMi0BcTEeaXSI-gjrG7ng"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_cANJ4hcTEeaXSI-gjrG7ng" name="obt generation" type="_GlswIBcTEeaXSI-gjrG7ng" association="_cAMi0BcTEeaXSI-gjrG7ng"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_TZ3JsBcUEeaXSI-gjrG7ng" name="CDH"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_TuQsYBcUEeaXSI-gjrG7ng" name="Conrol Algorithms Mgmt"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Va3YIBcUEeaXSI-gjrG7ng" name="TT&amp;C Control algorithm">
+    <include xmi:type="uml:Include" xmi:id="_ao0qwBcUEeaXSI-gjrG7ng" addition="_TuQsYBcUEeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_VvngIBcUEeaXSI-gjrG7ng" name="ACDS control Algorithm">
+    <include xmi:type="uml:Include" xmi:id="_bFW1wBcUEeaXSI-gjrG7ng" addition="_TuQsYBcUEeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_WSIXUBcUEeaXSI-gjrG7ng" name="Payload control Algorithm">
+    <include xmi:type="uml:Include" xmi:id="_bhXcUBcUEeaXSI-gjrG7ng" addition="_TuQsYBcUEeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_XAfSIBcUEeaXSI-gjrG7ng" name="Power Cotrol Algorith">
+    <include xmi:type="uml:Include" xmi:id="_aL6sUBcUEeaXSI-gjrG7ng" addition="_TuQsYBcUEeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Y7EvgBcUEeaXSI-gjrG7ng" memberEnd="_Y7FWkhcUEeaXSI-gjrG7ng _Y7F9oBcUEeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Y7FWkBcUEeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Y7FWkRcUEeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Y7FWkhcUEeaXSI-gjrG7ng" name="usecase2" type="_TuQsYBcUEeaXSI-gjrG7ng" association="_Y7EvgBcUEeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Y7F9oBcUEeaXSI-gjrG7ng" name="actor5" type="_TZ3JsBcUEeaXSI-gjrG7ng" association="_Y7EvgBcUEeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_bzxa8BcUEeaXSI-gjrG7ng" name="Pwer OBC"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_cNcfMBcUEeaXSI-gjrG7ng" name="TT&amp;C"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_cldWkBcUEeaXSI-gjrG7ng" name="ACDS OBC"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_c70oIBcUEeaXSI-gjrG7ng" name="PayLoad OBC"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eOAowBcUEeaXSI-gjrG7ng" memberEnd="_eOBP0hcUEeaXSI-gjrG7ng _eOBP0xcUEeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eOBP0BcUEeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eOBP0RcUEeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eOBP0hcUEeaXSI-gjrG7ng" name="actor6" type="_bzxa8BcUEeaXSI-gjrG7ng" association="_eOAowBcUEeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_eOBP0xcUEeaXSI-gjrG7ng" name="usecase6" type="_XAfSIBcUEeaXSI-gjrG7ng" association="_eOAowBcUEeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fGo54BcUEeaXSI-gjrG7ng" memberEnd="_fGpg8hcUEeaXSI-gjrG7ng _fGqIABcUEeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fGpg8BcUEeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fGpg8RcUEeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fGpg8hcUEeaXSI-gjrG7ng" name="actor7" type="_cNcfMBcUEeaXSI-gjrG7ng" association="_fGo54BcUEeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fGqIABcUEeaXSI-gjrG7ng" name="usecase3" type="_Va3YIBcUEeaXSI-gjrG7ng" association="_fGo54BcUEeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fs3MYBcUEeaXSI-gjrG7ng" memberEnd="_fs3zcBcUEeaXSI-gjrG7ng _fs3zcRcUEeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fs3MYRcUEeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fs3MYhcUEeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fs3zcBcUEeaXSI-gjrG7ng" name="actor8" type="_cldWkBcUEeaXSI-gjrG7ng" association="_fs3MYBcUEeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_fs3zcRcUEeaXSI-gjrG7ng" name="usecase4" type="_VvngIBcUEeaXSI-gjrG7ng" association="_fs3MYBcUEeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_glig0BcUEeaXSI-gjrG7ng" memberEnd="_gljH4BcUEeaXSI-gjrG7ng _gljH4RcUEeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_glig0RcUEeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_glig0hcUEeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gljH4BcUEeaXSI-gjrG7ng" name="actor9" type="_c70oIBcUEeaXSI-gjrG7ng" association="_glig0BcUEeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_gljH4RcUEeaXSI-gjrG7ng" name="usecase5" type="_WSIXUBcUEeaXSI-gjrG7ng" association="_glig0BcUEeaXSI-gjrG7ng"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-7oXMBXwEea4itIoBH-MTA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-7vE4BXwEea4itIoBH-MTA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>

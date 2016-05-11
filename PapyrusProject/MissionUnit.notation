@@ -2231,6 +2231,22 @@
           <element xsi:nil="true"/>
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_O92DOBeJEeaPSow6UwJajg" x="190" y="101"/>
         </children>
+        <children xmi:type="notation:Shape" xmi:id="_OilI4hecEeaPSow6UwJajg" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_OilI4xecEeaPSow6UwJajg" showTitle="true"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_OilI5RecEeaPSow6UwJajg" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Port" href="MissionUnit.uml#_znPCQBO1EeaupMsSc_JFqg"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OilI5BecEeaPSow6UwJajg" x="190" y="59"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_OipaVhecEeaPSow6UwJajg" type="StereotypeComment">
+          <styles xmi:type="notation:TitleStyle" xmi:id="_OipaVxecEeaPSow6UwJajg" showTitle="true"/>
+          <styles xmi:type="notation:EObjectValueStyle" xmi:id="_OipaWRecEeaPSow6UwJajg" name="BASE_ELEMENT">
+            <eObjectValue xmi:type="uml:Port" href="MissionUnit.uml#_0KoqQBO1EeaupMsSc_JFqg"/>
+          </styles>
+          <element xsi:nil="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OipaWBecEeaPSow6UwJajg" x="190" y="101"/>
+        </children>
         <styles xmi:type="notation:TitleStyle" xmi:id="_QZHUYRFUEeak_5lhOjdy1A"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_QivxgBFUEeak_5lhOjdy1A" type="StereotypeLabel">
@@ -2462,7 +2478,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_cW8LcRLMEeaoiaVY6tukow" y="-30"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_cW8ygBLMEeaoiaVY6tukow" type="linklabel_uml_connector_label">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_cW8ygRLMEeaoiaVY6tukow" x="2" y="-21"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_cW8ygRLMEeaoiaVY6tukow" x="13" y="-16"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_cW8yghLMEeaoiaVY6tukow" type="linklabel_uml_connector_source_multiplicity">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_cW8ygxLMEeaoiaVY6tukow" y="10"/>
@@ -2959,7 +2975,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_3nW94RO3EeaupMsSc_JFqg" y="-30"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_3nW94hO3EeaupMsSc_JFqg" type="linklabel_uml_connector_label">
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_3nW94xO3EeaupMsSc_JFqg" y="-10"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_3nW94xO3EeaupMsSc_JFqg" x="-16" y="-1"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_3nW95BO3EeaupMsSc_JFqg" type="linklabel_uml_connector_source_multiplicity">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_3nW95RO3EeaupMsSc_JFqg" y="10"/>
@@ -3092,6 +3108,26 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_O92DPBeJEeaPSow6UwJajg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O92DPReJEeaPSow6UwJajg"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_O92DPheJEeaPSow6UwJajg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_OilI5hecEeaPSow6UwJajg" type="StereotypeCommentLink" source="_znfg8BO1EeaupMsSc_JFqg" target="_OilI4hecEeaPSow6UwJajg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_OilI5xecEeaPSow6UwJajg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_OilI6xecEeaPSow6UwJajg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Port" href="MissionUnit.uml#_znPCQBO1EeaupMsSc_JFqg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OilI6BecEeaPSow6UwJajg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OilI6RecEeaPSow6UwJajg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OilI6hecEeaPSow6UwJajg"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_OipaWhecEeaPSow6UwJajg" type="StereotypeCommentLink" source="_0K5wABO1EeaupMsSc_JFqg" target="_OipaVhecEeaPSow6UwJajg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_OipaWxecEeaPSow6UwJajg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_OipaXxecEeaPSow6UwJajg" name="BASE_ELEMENT">
+        <eObjectValue xmi:type="uml:Port" href="MissionUnit.uml#_0KoqQBO1EeaupMsSc_JFqg"/>
+      </styles>
+      <element xsi:nil="true"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OipaXBecEeaPSow6UwJajg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OipaXRecEeaPSow6UwJajg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OipaXhecEeaPSow6UwJajg"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_OEJekBO5EeaWKdiwT8okVw" type="BlockDefinition" name="SystemOfInterestDiagram" measurementUnit="Pixel">

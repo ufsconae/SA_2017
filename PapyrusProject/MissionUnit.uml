@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements http://www.eclipse.org/papyrus/0.7.0/SysML#//requirements">
   <uml:Model xmi:id="_TxyLIPf_EeWab4iQ1I7RWQ" name="MissionUnit">
     <packagedElement xmi:type="uml:Model" xmi:id="_cWcEEPgQEeWLKsanECnEMg" name="RequirementsL2B">
       <packagedElement xmi:type="uml:Class" xmi:id="_Ni9TgP20EeWFwtaYqXT6rw" name="CALIBRATION_PLATFORM"/>
@@ -43,9 +43,6 @@ computer science and the general community)</body>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_FdzsMP9zEeWdU9Mpd1PczA" name="DeriveReqt12" client="_O4b4sP20EeWFwtaYqXT6rw">
         <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Abstraction" xmi:id="_GAErwP9zEeWdU9Mpd1PczA" name="DeriveReqt13" client="_OjI-IP20EeWFwtaYqXT6rw">
-        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Abstraction" xmi:id="_IIaRQP9zEeWdU9Mpd1PczA" name="DeriveReqt14" client="_aFaHcP20EeWFwtaYqXT6rw">
         <supplier xmi:type="uml:Class" href="_GroundSegment.uml#__9pfEPwsEeWZO5s3t9VRdw"/>
       </packagedElement>
@@ -56,6 +53,25 @@ computer science and the general community)</body>
       <packagedElement xmi:type="uml:Class" xmi:id="_t_B1EBPgEeaWKdiwT8okVw" name="PROCESSOR_L1A"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_wNge0BPgEeaWKdiwT8okVw" name="PROCESSOR_L1B"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_58NRYBPjEeaWKdiwT8okVw" name="PROCESSOR_L2"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_0AEjQBeKEeaPSow6UwJajg" name="DeriveReqt17" client="_OjI-IP20EeWFwtaYqXT6rw">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_1Kd50BeKEeaPSow6UwJajg" name="DeriveReqt19" client="_wNge0BPgEeaWKdiwT8okVw">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_4sOJUBeKEeaPSow6UwJajg" name="DeriveReqt20" client="_58NRYBPjEeaWKdiwT8okVw">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_8MwQ0BeKEeaPSow6UwJajg" name="DeriveReqt21" client="_nVbZUAMVEeam46Rh5krVVg">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_81z04BeKEeaPSow6UwJajg" name="DeriveReqt22" client="_t_B1EBPgEeaWKdiwT8okVw">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_M6Fe4BeNEeaPSow6UwJajg" name="SUPPORT"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_hQLOQBeNEeaPSow6UwJajg" name="DeriveReqt23" client="_M6Fe4BeNEeaPSow6UwJajg">
+        <supplier xmi:type="uml:Class" href="_GroundSegment.uml#_4nCd4PwsEeWZO5s3t9VRdw"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_W1Kh8PgSEeWLKsanECnEMg" name="UseCaseDiagram">
       <packagedElement xmi:type="uml:Package" xmi:id="_rUl0gBLiEeaoiaVY6tukow" name="Mission Unit">
@@ -121,7 +137,6 @@ computer science and the general community)</body>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_YnWCcBO3EeaupMsSc_JFqg" name="flowport22" aggregation="composite"/>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_r8CmQBO3EeaupMsSc_JFqg" name="Science User" aggregation="composite"/>
       <ownedAttribute xmi:type="uml:Port" xmi:id="_sld9wBO3EeaupMsSc_JFqg" name="flowport24" aggregation="composite"/>
-      <ownedAttribute xmi:type="uml:Port" xmi:id="_swSPMBPOEeaWKdiwT8okVw" name="Port1" aggregation="composite"/>
       <ownedConnector xmi:type="uml:Connector" xmi:id="_pjya0BFZEeak_5lhOjdy1A" name="TL/TLMY">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_pjzo8BFZEeak_5lhOjdy1A" partWithPort="_arnNABFWEeak_5lhOjdy1A" role="_z_MrwBO0EeaupMsSc_JFqg"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_pjzo8RFZEeak_5lhOjdy1A" role="_weiBYBO0EeaupMsSc_JFqg"/>
@@ -505,7 +520,7 @@ computer science and the general community)</body>
   <Requirements:Requirement xmi:id="_SgFU0P20EeWFwtaYqXT6rw" text="The Mission Unit shall supply acquisition planning." id="L2B-SYS-727" base_Class="_SgEtwP20EeWFwtaYqXT6rw"/>
   <Requirements:Requirement xmi:id="_Y8msUP20EeWFwtaYqXT6rw" text="The Mission Unit shall implement a mission level database which shall be the repository and the interface with Control Unit and Ground Station." id="L2B-SYS-728" base_Class="_Y8mFQP20EeWFwtaYqXT6rw"/>
   <Requirements:Requirement xmi:id="_aFaHcf20EeWFwtaYqXT6rw" text="The Mission Unit shall download science data via the ground station." id="L2B-SYS-729" base_Class="_aFaHcP20EeWFwtaYqXT6rw"/>
-  <Requirements:Requirement xmi:id="_crVn4f20EeWFwtaYqXT6rw" text="The Mission Unit shall bring SA2017 community access through a web platform on a regular basis." id="L2B-SYS-730" base_Class="_crVn4P20EeWFwtaYqXT6rw"/>
+  <Requirements:Requirement xmi:id="_crVn4f20EeWFwtaYqXT6rw" text="The Mission Unit shall bring FS2017 community access through a web platform on a regular basis." id="L2B-SYS-730" base_Class="_crVn4P20EeWFwtaYqXT6rw"/>
   <Requirements:DeriveReqt xmi:id="_8CuR0P9yEeWdU9Mpd1PczA" base_Abstraction="_7_QHEP9yEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_8iq9MP9yEeWdU9Mpd1PczA" base_Abstraction="_8fGr0P9yEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_BNtwAP9zEeWdU9Mpd1PczA" base_Abstraction="_BKnYsP9zEeWdU9Mpd1PczA"/>
@@ -514,7 +529,6 @@ computer science and the general community)</body>
   <Requirements:DeriveReqt xmi:id="_C-9rMP9zEeWdU9Mpd1PczA" base_Abstraction="_C76-QP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_Dm84QP9zEeWdU9Mpd1PczA" base_Abstraction="_DjulIP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_FhU6QP9zEeWdU9Mpd1PczA" base_Abstraction="_FdzsMP9zEeWdU9Mpd1PczA"/>
-  <Requirements:DeriveReqt xmi:id="_GDFjgP9zEeWdU9Mpd1PczA" base_Abstraction="_GAErwP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_ILpLcP9zEeWdU9Mpd1PczA" base_Abstraction="_IIaRQP9zEeWdU9Mpd1PczA"/>
   <Requirements:DeriveReqt xmi:id="_JWUO0P9zEeWdU9Mpd1PczA" base_Abstraction="_JTTXEP9zEeWdU9Mpd1PczA"/>
   <Requirements:Requirement xmi:id="_nVd1kAMVEeam46Rh5krVVg" text="The Mission Unit shall develop L0 algorithm to process raw data." id="L2B-SYS-731" base_Class="_nVbZUAMVEeam46Rh5krVVg"/>
@@ -567,5 +581,11 @@ computer science and the general community)</body>
   <Requirements:Requirement xmi:id="_t_OCUBPgEeaWKdiwT8okVw" text="The Mission Unit shall develop L1A algorithm to process L0 products." id="L2B-SYS-732" base_Class="_t_B1EBPgEeaWKdiwT8okVw"/>
   <Requirements:Requirement xmi:id="_wNhF4BPgEeaWKdiwT8okVw" text="The Mission Unit shall develop L1B algorithm to process L1A products." id="L2B-SYS-733" base_Class="_wNge0BPgEeaWKdiwT8okVw"/>
   <Requirements:Requirement xmi:id="_58NRYRPjEeaWKdiwT8okVw" text="The Mission Unit shall develop L2 algorithm to process L1A products." id="L2B-SYS-734" base_Class="_58NRYBPjEeaWKdiwT8okVw"/>
-  <ActionLanguage:TextualRepresentation xmi:id="_njwgEBcoEea3P_1lxXKNuw" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
+  <Requirements:DeriveReqt xmi:id="_0BQ2EBeKEeaPSow6UwJajg" base_Abstraction="_0AEjQBeKEeaPSow6UwJajg"/>
+  <Requirements:DeriveReqt xmi:id="_1LvFIBeKEeaPSow6UwJajg" base_Abstraction="_1Kd50BeKEeaPSow6UwJajg"/>
+  <Requirements:DeriveReqt xmi:id="_4tcRUBeKEeaPSow6UwJajg" base_Abstraction="_4sOJUBeKEeaPSow6UwJajg"/>
+  <Requirements:DeriveReqt xmi:id="_8N8joBeKEeaPSow6UwJajg" base_Abstraction="_8MwQ0BeKEeaPSow6UwJajg"/>
+  <Requirements:DeriveReqt xmi:id="_83DLABeKEeaPSow6UwJajg" base_Abstraction="_81z04BeKEeaPSow6UwJajg"/>
+  <Requirements:Requirement xmi:id="_M6GtABeNEeaPSow6UwJajg" text="The Mission Unit shall provide support, related to access, calibration requests and products download, to science users" base_Class="_M6Fe4BeNEeaPSow6UwJajg"/>
+  <Requirements:DeriveReqt xmi:id="_hRcZkBeNEeaPSow6UwJajg" base_Abstraction="_hQLOQBeNEeaPSow6UwJajg"/>
 </xmi:XMI>

@@ -12,7 +12,7 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_k-nBgPz3EeWWH817x0Adtw" name="CORTEX-ACCESS"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_qMWRsPz3EeWWH817x0Adtw" name="UHF-ANTENNA"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_udk2UPz3EeWWH817x0Adtw" name="UHF-EQUIPMENT"/>
-    <packagedElement xmi:type="uml:Class" xmi:id="_zFMhsPz3EeWWH817x0Adtw" name="DOWNLINK-TLMY"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zFMhsPz3EeWWH817x0Adtw" name="STORE-TLMY"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_4B4eIPz3EeWWH817x0Adtw" name="SUPPORT"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_9Y_FsPz3EeWWH817x0Adtw" name="VALIDATION"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_MXrYsP2fEeWmqevIwVQGpw" name="UPLINK-TLCMD"/>
@@ -399,7 +399,7 @@
   <Requirements:Requirement xmi:id="_ERIesPz3EeWWH817x0Adtw" text="The Ground Station shall manage the use of the 3,6 m antenna with S-band through the CONAE Ground Station." id="L2B-SYS-701" base_Class="_ERH3oPz3EeWWH817x0Adtw"/>
   <Requirements:Requirement xmi:id="_M3PY4Pz3EeWWH817x0Adtw" text="The Ground Station shall control the CONAE Ground Station assures at least 80% sucessfull about the total pass." id="L2B-SYS-702" base_Class="_M3Ox0Pz3EeWWH817x0Adtw"/>
   <Requirements:Requirement xmi:id="_SnijkPz3EeWWH817x0Adtw" text="The Ground Station shall control the availability of the resources agreed with CONAE Ground Station for use them at the required moment." id="L2B-SYS-703" base_Class="_Snh8gPz3EeWWH817x0Adtw"/>
-  <Requirements:Requirement xmi:id="_ep9MkPz3EeWWH817x0Adtw" text="The S-band antenna. belonging to CONAE Ground Station shall be used to acquire science data and housekeeping telemetry." id="L2B-SYD-704" base_Class="_ep8lgPz3EeWWH817x0Adtw"/>
+  <Requirements:Requirement xmi:id="_ep9MkPz3EeWWH817x0Adtw" text="The S-band antenna, belonging to CONAE Ground Station, shall be used to acquire science data and housekeeping telemetry." id="L2B-SYD-704" base_Class="_ep8lgPz3EeWWH817x0Adtw"/>
   <Requirements:Requirement xmi:id="_k-nokPz3EeWWH817x0Adtw" text="The Ground Station shall access to Crotex belonging to CONAE Ground Station to acquire the digital data obtained of the S-band antenna and input them into a cetralized database." id="L2B-SYS-705" base_Class="_k-nBgPz3EeWWH817x0Adtw"/>
   <Requirements:Requirement xmi:id="_qMWRsfz3EeWWH817x0Adtw" text="The Ground Station shall have one UHF antenna with its necessary equipment to do the telemetry downlink and the telecommand uplink." id="L2B-SYS-706" base_Class="_qMWRsPz3EeWWH817x0Adtw"/>
   <Requirements:Requirement xmi:id="_udk2Ufz3EeWWH817x0Adtw" text="The equipment related to UHF antenna shall allow to access it through the TCP/IP protocol." id="L2B-SYS-707" base_Class="_udk2UPz3EeWWH817x0Adtw"/>

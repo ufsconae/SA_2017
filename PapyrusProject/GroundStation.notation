@@ -7,16 +7,16 @@
     <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#/"/>
     <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_kIiKkfz2EeWWH817x0Adtw" description="Provides the columns of the tables with a default configuration" name="Requirements Feature Columns Provider">
       <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_kIiKkvz2EeWWH817x0Adtw" element="property_of_stereotype:/SysML::Requirements::Requirement::id">
-        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_ELQDsPz4EeWWH817x0Adtw" name="axisWidth" intValue="151"/>
+        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_ELQDsPz4EeWWH817x0Adtw" name="axisWidth" intValue="130"/>
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
       </axis>
       <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_kIiKk_z2EeWWH817x0Adtw">
-        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_D3LRIPz4EeWWH817x0Adtw" name="axisWidth" intValue="219"/>
+        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_D3LRIPz4EeWWH817x0Adtw" name="axisWidth" intValue="152"/>
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.0"/>
         <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
       </axis>
       <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_kIiKlPz2EeWWH817x0Adtw" element="property_of_stereotype:/SysML::Requirements::Requirement::text">
-        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_DDOrsPz4EeWWH817x0Adtw" name="axisWidth" intValue="784"/>
+        <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_DDOrsPz4EeWWH817x0Adtw" name="axisWidth" intValue="883"/>
         <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.sysml.nattable.requirement.config/configs/requirement.nattableconfiguration#//@columnHeaderAxisConfiguration/@axisManagers.1"/>
       </axis>
       <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_YM7XEAWwEea9i7Pqul4slw" element="property_of_stereotype:/SysML::Requirements::Requirement::derived">
@@ -27,6 +27,9 @@
       </axis>
     </columnAxisProvidersHistory>
     <rowAxisProvidersHistory xmi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_kIiKlfz2EeWWH817x0Adtw" description="Provides the requirements directly owned by the context of the table" name="Requirement Axis Provider" disconnectSlave="true"/>
+    <localRowHeaderAxisConfiguration xmi:type="nattableaxisconfiguration:LocalTableHeaderAxisConfiguration" xmi:id="_NYgEwBeDEeak9YK3-q1Plw" indexStyle="NUMERIC">
+      <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_NYgr0BeDEeak9YK3-q1Plw" name="rowLabelWidth" intValue="174"/>
+    </localRowHeaderAxisConfiguration>
   </nattable:Table>
   <notation:Diagram xmi:id="_Qm99gPz4EeWWH817x0Adtw" type="RequirementDiagram" name="Ground Station Requirements Diagram" measurementUnit="Pixel">
     <children xmi:type="notation:Shape" xmi:id="_SMr-IPz4EeWWH817x0Adtw" type="shape_sysml_requirement_as_classifier">
@@ -1213,7 +1216,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rarOIv2IEeWUKMypLyLlCw"/>
       </children>
       <element xmi:type="uml:Class" href="GroundStation.uml#_udk2UPz3EeWWH817x0Adtw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ST5ZYfz4EeWWH817x0Adtw" x="829" y="62"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ST5ZYfz4EeWWH817x0Adtw" x="829" y="62" width="129"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_ST-R4Pz4EeWWH817x0Adtw" type="StereotypeComment">
       <children xmi:type="notation:BasicCompartment" xmi:id="_ST-R6vz4EeWWH817x0Adtw" type="StereotypeCompartment">
@@ -2310,6 +2313,11 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_zpJ20wcdEeaPoMVAaBtLiQ" type="5024"/>
           <children xmi:type="notation:BasicCompartment" xmi:id="_zpJ21AcdEeaPoMVAaBtLiQ" type="7016">
             <children xmi:type="notation:Shape" xmi:id="_8XeR0AcdEeaPoMVAaBtLiQ" type="3012" fillColor="10011046">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mpLpYBeEEeak9YK3-q1Plw" source="PapyrusHyperLink_Object" references="_SSuUsPz4EeWWH817x0Adtw">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mpLpYReEEeak9YK3-q1Plw" key="tooltip_text"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mpLpYheEEeak9YK3-q1Plw" key="pageName" value="PapyrusHyperLink_Object"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mpLpYxeEEeak9YK3-q1Plw" key="is_default_navigation" value="false"/>
+              </eAnnotations>
               <children xmi:type="notation:DecorationNode" xmi:id="_8Xe44AcdEeaPoMVAaBtLiQ" type="5022"/>
               <children xmi:type="notation:DecorationNode" xmi:id="_8Xe44QcdEeaPoMVAaBtLiQ" type="6046">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_8Xe44gcdEeaPoMVAaBtLiQ" y="5"/>
@@ -2323,6 +2331,11 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8XeR0QcdEeaPoMVAaBtLiQ" x="133" y="33" width="290" height="49"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_DJmF4AceEeaPoMVAaBtLiQ" type="3012" fillColor="10011046">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_owjlkBeEEeak9YK3-q1Plw" source="PapyrusHyperLink_Object" references="_SSdO8Pz4EeWWH817x0Adtw">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_owjlkReEEeak9YK3-q1Plw" key="tooltip_text"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_owjlkheEEeak9YK3-q1Plw" key="pageName" value="PapyrusHyperLink_Object"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_owjlkxeEEeak9YK3-q1Plw" key="is_default_navigation" value="false"/>
+              </eAnnotations>
               <children xmi:type="notation:DecorationNode" xmi:id="_DJmF4gceEeaPoMVAaBtLiQ" type="5022"/>
               <children xmi:type="notation:DecorationNode" xmi:id="_DJmF4wceEeaPoMVAaBtLiQ" type="6046">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_DJmF5AceEeaPoMVAaBtLiQ" y="5"/>
@@ -2336,6 +2349,11 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DJmF4QceEeaPoMVAaBtLiQ" x="134" y="99" width="287" height="43"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_HCj7gAceEeaPoMVAaBtLiQ" type="3012" fillColor="10011046">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_smzeYBeEEeak9YK3-q1Plw" source="PapyrusHyperLink_Object" references="_STIkYPz4EeWWH817x0Adtw">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_smzeYReEEeak9YK3-q1Plw" key="tooltip_text"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_smzeYheEEeak9YK3-q1Plw" key="pageName" value="PapyrusHyperLink_Object"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_smzeYxeEEeak9YK3-q1Plw" key="is_default_navigation" value="false"/>
+              </eAnnotations>
               <children xmi:type="notation:DecorationNode" xmi:id="_HCj7ggceEeaPoMVAaBtLiQ" type="5022"/>
               <children xmi:type="notation:DecorationNode" xmi:id="_HCj7gwceEeaPoMVAaBtLiQ" type="6046">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_HCj7hAceEeaPoMVAaBtLiQ" y="5"/>
@@ -2349,6 +2367,11 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HCj7gQceEeaPoMVAaBtLiQ" x="145" y="160" width="266" height="46"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_MEF7sAceEeaPoMVAaBtLiQ" type="3012" fillColor="10011046">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vmeUgBeEEeak9YK3-q1Plw" source="PapyrusHyperLink_Object" references="_STIkYPz4EeWWH817x0Adtw">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vmeUgReEEeak9YK3-q1Plw" key="tooltip_text"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vmeUgheEEeak9YK3-q1Plw" key="pageName" value="PapyrusHyperLink_Object"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vmeUgxeEEeak9YK3-q1Plw" key="is_default_navigation" value="false"/>
+              </eAnnotations>
               <children xmi:type="notation:DecorationNode" xmi:id="_MEF7sgceEeaPoMVAaBtLiQ" type="5022"/>
               <children xmi:type="notation:DecorationNode" xmi:id="_MEF7swceEeaPoMVAaBtLiQ" type="6046">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_MEF7tAceEeaPoMVAaBtLiQ" y="5"/>
@@ -2362,6 +2385,11 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MEF7sQceEeaPoMVAaBtLiQ" x="122" y="222" width="312" height="44"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_Uq3kQAceEeaPoMVAaBtLiQ" type="3012" fillColor="10011046">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rEuSgBeCEeak9YK3-q1Plw" source="PapyrusHyperLink_Object" references="_STZDEPz4EeWWH817x0Adtw">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rEuSgReCEeak9YK3-q1Plw" key="tooltip_text"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rEuSgheCEeak9YK3-q1Plw" key="pageName" value="PapyrusHyperLink_Object"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rEuSgxeCEeak9YK3-q1Plw" key="is_default_navigation" value="false"/>
+              </eAnnotations>
               <children xmi:type="notation:DecorationNode" xmi:id="_Uq3kQgceEeaPoMVAaBtLiQ" type="5022"/>
               <children xmi:type="notation:DecorationNode" xmi:id="_Uq3kQwceEeaPoMVAaBtLiQ" type="6046">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_Uq3kRAceEeaPoMVAaBtLiQ" y="5"/>
@@ -2375,6 +2403,11 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Uq3kQQceEeaPoMVAaBtLiQ" x="159" y="286" width="238" height="45"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_yIlmgAceEeaPoMVAaBtLiQ" type="3012" fillColor="10011046">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CUzb4BeFEeak9YK3-q1Plw" source="PapyrusHyperLink_Object" references="_STZDEPz4EeWWH817x0Adtw">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CUzb4ReFEeak9YK3-q1Plw" key="tooltip_text"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CUzb4heFEeak9YK3-q1Plw" key="pageName" value="PapyrusHyperLink_Object"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CUzb4xeFEeak9YK3-q1Plw" key="is_default_navigation" value="false"/>
+              </eAnnotations>
               <children xmi:type="notation:DecorationNode" xmi:id="_yIlmggceEeaPoMVAaBtLiQ" type="5022"/>
               <children xmi:type="notation:DecorationNode" xmi:id="_yIlmgwceEeaPoMVAaBtLiQ" type="6046">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_yIlmhAceEeaPoMVAaBtLiQ" y="5"/>
@@ -2388,6 +2421,11 @@
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yIlmgQceEeaPoMVAaBtLiQ" x="384" y="396" height="45"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_E_e0AAcfEeaPoMVAaBtLiQ" type="3012" fillColor="10011046">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hk-8EBeFEeak9YK3-q1Plw" source="PapyrusHyperLink_Object" references="_STZDEPz4EeWWH817x0Adtw">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hk-8EReFEeak9YK3-q1Plw" key="tooltip_text"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hk-8EheFEeak9YK3-q1Plw" key="pageName" value="PapyrusHyperLink_Object"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Hk-8ExeFEeak9YK3-q1Plw" key="is_default_navigation" value="false"/>
+              </eAnnotations>
               <children xmi:type="notation:DecorationNode" xmi:id="_E_e0AgcfEeaPoMVAaBtLiQ" type="5022"/>
               <children xmi:type="notation:DecorationNode" xmi:id="_E_e0AwcfEeaPoMVAaBtLiQ" type="6046">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_E_e0BAcfEeaPoMVAaBtLiQ" y="5"/>
@@ -2410,6 +2448,11 @@
           <children xmi:type="notation:DecorationNode" xmi:id="_5mFvUwcdEeaPoMVAaBtLiQ" type="5024"/>
           <children xmi:type="notation:BasicCompartment" xmi:id="_5mFvVAcdEeaPoMVAaBtLiQ" type="7016">
             <children xmi:type="notation:Shape" xmi:id="_NnDt0AcfEeaPoMVAaBtLiQ" type="3012" fillColor="12621752">
+              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_81R4IBeEEeak9YK3-q1Plw" source="PapyrusHyperLink_Object" references="_SUIp8Pz4EeWWH817x0Adtw">
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_81R4IReEEeak9YK3-q1Plw" key="tooltip_text"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_81R4IheEEeak9YK3-q1Plw" key="pageName" value="PapyrusHyperLink_Object"/>
+                <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_81R4IxeEEeak9YK3-q1Plw" key="is_default_navigation" value="false"/>
+              </eAnnotations>
               <children xmi:type="notation:DecorationNode" xmi:id="_NnDt0gcfEeaPoMVAaBtLiQ" type="5022"/>
               <children xmi:type="notation:DecorationNode" xmi:id="_NnDt0wcfEeaPoMVAaBtLiQ" type="6046">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_NnDt1AcfEeaPoMVAaBtLiQ" y="5"/>
@@ -2429,6 +2472,11 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5mFvUgcdEeaPoMVAaBtLiQ" x="33" y="521" width="311" height="180"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_7ehlsAcfEeaPoMVAaBtLiQ" type="3012" fillColor="12560536">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4ShJgBeCEeak9YK3-q1Plw" source="PapyrusHyperLink_Object" references="_SMr-IPz4EeWWH817x0Adtw">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4ShJgReCEeak9YK3-q1Plw" key="tooltip_text"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4ShJgheCEeak9YK3-q1Plw" key="pageName" value="PapyrusHyperLink_Object"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4ShJgxeCEeak9YK3-q1Plw" key="is_default_navigation" value="false"/>
+          </eAnnotations>
           <children xmi:type="notation:DecorationNode" xmi:id="_7eiMwAcfEeaPoMVAaBtLiQ" type="5022"/>
           <children xmi:type="notation:DecorationNode" xmi:id="_7eiMwQcfEeaPoMVAaBtLiQ" type="6046">
             <layoutConstraint xmi:type="notation:Location" xmi:id="_7eiMwgcfEeaPoMVAaBtLiQ" y="5"/>
@@ -2442,6 +2490,16 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7ehlsQcfEeaPoMVAaBtLiQ" x="279" y="26" width="429" height="74"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_IkgkgAcgEeaPoMVAaBtLiQ" type="3012" fillColor="12560536">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gghMkBeFEeak9YK3-q1Plw" source="PapyrusHyperLink_Object" references="_ST5ZYPz4EeWWH817x0Adtw">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gghMkReFEeak9YK3-q1Plw" key="tooltip_text"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gghMkheFEeak9YK3-q1Plw" key="pageName" value="PapyrusHyperLink_Object"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gghMkxeFEeak9YK3-q1Plw" key="is_default_navigation" value="false"/>
+          </eAnnotations>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gghzoBeFEeak9YK3-q1Plw" source="PapyrusHyperLink_Object" references="_STqI0Pz4EeWWH817x0Adtw">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gghzoReFEeak9YK3-q1Plw" key="tooltip_text"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gghzoheFEeak9YK3-q1Plw" key="pageName" value="PapyrusHyperLink_Object"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gghzoxeFEeak9YK3-q1Plw" key="is_default_navigation" value="false"/>
+          </eAnnotations>
           <children xmi:type="notation:DecorationNode" xmi:id="_IkgkggcgEeaPoMVAaBtLiQ" type="5022"/>
           <children xmi:type="notation:DecorationNode" xmi:id="_IkgkgwcgEeaPoMVAaBtLiQ" type="6046">
             <layoutConstraint xmi:type="notation:Location" xmi:id="_IkgkhAcgEeaPoMVAaBtLiQ" y="5"/>
@@ -2455,6 +2513,16 @@
           <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IkgkgQcgEeaPoMVAaBtLiQ" x="157" y="147" width="206"/>
         </children>
         <children xmi:type="notation:Shape" xmi:id="_LXXtsAcgEeaPoMVAaBtLiQ" type="3012" fillColor="12560536">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nT6zABeFEeak9YK3-q1Plw" source="PapyrusHyperLink_Object" references="_7yCmsP2fEeWmqevIwVQGpw">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nT6zAReFEeak9YK3-q1Plw" key="tooltip_text"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nT6zAheFEeak9YK3-q1Plw" key="pageName" value="PapyrusHyperLink_Object"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nT6zAxeFEeak9YK3-q1Plw" key="is_default_navigation" value="false"/>
+          </eAnnotations>
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nT7aEBeFEeak9YK3-q1Plw" source="PapyrusHyperLink_Object" references="_ST5ZYPz4EeWWH817x0Adtw">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nT7aEReFEeak9YK3-q1Plw" key="tooltip_text"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nT7aEheFEeak9YK3-q1Plw" key="pageName" value="PapyrusHyperLink_Object"/>
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nT7aExeFEeak9YK3-q1Plw" key="is_default_navigation" value="false"/>
+          </eAnnotations>
           <children xmi:type="notation:DecorationNode" xmi:id="_LXXtsgcgEeaPoMVAaBtLiQ" type="5022"/>
           <children xmi:type="notation:DecorationNode" xmi:id="_LXXtswcgEeaPoMVAaBtLiQ" type="6046">
             <layoutConstraint xmi:type="notation:Location" xmi:id="_LXXttAcgEeaPoMVAaBtLiQ" y="5"/>

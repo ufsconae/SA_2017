@@ -104,6 +104,64 @@
   <packagedElement xmi:type="uml:UseCase" xmi:id="_hY9pMBcREeaXSI-gjrG7ng" name="Voting procedure">
     <include xmi:type="uml:Include" xmi:id="_lL_O4BcREeaXSI-gjrG7ng" addition="_KIOtoBcREeaXSI-gjrG7ng"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_GQG6oBcTEeaXSI-gjrG7ng" name="CDH"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_GlswIBcTEeaXSI-gjrG7ng" name="OBT Generation"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_HYKu4BcTEeaXSI-gjrG7ng" name="Run Control algorihms"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JcqWMBcTEeaXSI-gjrG7ng" memberEnd="_JcrkUBcTEeaXSI-gjrG7ng _JcrkURcTEeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Jcq9QBcTEeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Jcq9QRcTEeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JcrkUBcTEeaXSI-gjrG7ng" name="usecase1" type="_GlswIBcTEeaXSI-gjrG7ng" association="_JcqWMBcTEeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JcrkURcTEeaXSI-gjrG7ng" name="cdh" type="_GQG6oBcTEeaXSI-gjrG7ng" association="_JcqWMBcTEeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NBGtUBcTEeaXSI-gjrG7ng" memberEnd="_NBHUYhcTEeaXSI-gjrG7ng _NBH7cBcTEeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NBHUYBcTEeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NBHUYRcTEeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NBHUYhcTEeaXSI-gjrG7ng" name="usecase2" type="_HYKu4BcTEeaXSI-gjrG7ng" association="_NBGtUBcTEeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NBH7cBcTEeaXSI-gjrG7ng" name="cdh" type="_GQG6oBcTEeaXSI-gjrG7ng" association="_NBGtUBcTEeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_RgaKMBcTEeaXSI-gjrG7ng" name="UseCase1"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_VD-XkBcTEeaXSI-gjrG7ng" name="Payload"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_V0LFcBcTEeaXSI-gjrG7ng" name="ACDS"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_WLO6kBcTEeaXSI-gjrG7ng" name="TT&amp;C"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_WgYEIBcTEeaXSI-gjrG7ng" name="Actor4"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_W-C3kBcTEeaXSI-gjrG7ng" name="Power"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Zh9l0BcTEeaXSI-gjrG7ng" memberEnd="_Zh-M4hcTEeaXSI-gjrG7ng _Zh-z8BcTEeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Zh-M4BcTEeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Zh-M4RcTEeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Zh-M4hcTEeaXSI-gjrG7ng" name="actor5" type="_W-C3kBcTEeaXSI-gjrG7ng" association="_Zh9l0BcTEeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Zh-z8BcTEeaXSI-gjrG7ng" name="obt generation" type="_GlswIBcTEeaXSI-gjrG7ng" association="_Zh9l0BcTEeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aPuqwBcTEeaXSI-gjrG7ng" memberEnd="_aPvR0hcTEeaXSI-gjrG7ng _aPv44BcTEeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aPvR0BcTEeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aPvR0RcTEeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_aPvR0hcTEeaXSI-gjrG7ng" name="actor1" type="_VD-XkBcTEeaXSI-gjrG7ng" association="_aPuqwBcTEeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_aPv44BcTEeaXSI-gjrG7ng" name="obt generation" type="_GlswIBcTEeaXSI-gjrG7ng" association="_aPuqwBcTEeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ayq_wBcTEeaXSI-gjrG7ng" memberEnd="_ayrm0hcTEeaXSI-gjrG7ng _ayrm0xcTEeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ayrm0BcTEeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ayrm0RcTEeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ayrm0hcTEeaXSI-gjrG7ng" name="actor2" type="_V0LFcBcTEeaXSI-gjrG7ng" association="_ayq_wBcTEeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ayrm0xcTEeaXSI-gjrG7ng" name="obt generation" type="_GlswIBcTEeaXSI-gjrG7ng" association="_ayq_wBcTEeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bPOY4BcTEeaXSI-gjrG7ng" memberEnd="_bPO_8hcTEeaXSI-gjrG7ng _bPO_8xcTEeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bPO_8BcTEeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bPO_8RcTEeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bPO_8hcTEeaXSI-gjrG7ng" name="actor3" type="_WLO6kBcTEeaXSI-gjrG7ng" association="_bPOY4BcTEeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_bPO_8xcTEeaXSI-gjrG7ng" name="obt generation" type="_GlswIBcTEeaXSI-gjrG7ng" association="_bPOY4BcTEeaXSI-gjrG7ng"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cAMi0BcTEeaXSI-gjrG7ng" memberEnd="_cANJ4RcTEeaXSI-gjrG7ng _cANJ4hcTEeaXSI-gjrG7ng">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cAMi0RcTEeaXSI-gjrG7ng" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cANJ4BcTEeaXSI-gjrG7ng" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cANJ4RcTEeaXSI-gjrG7ng" name="actor4" type="_WgYEIBcTEeaXSI-gjrG7ng" association="_cAMi0BcTEeaXSI-gjrG7ng"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_cANJ4hcTEeaXSI-gjrG7ng" name="obt generation" type="_GlswIBcTEeaXSI-gjrG7ng" association="_cAMi0BcTEeaXSI-gjrG7ng"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-7oXMBXwEea4itIoBH-MTA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-7vE4BXwEea4itIoBH-MTA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>

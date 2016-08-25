@@ -75,6 +75,11 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="_XiCbQAWVEeaRM-Du8o1hOg" annotatedElement="_RM8KcAGwEeajHqwUCOgvUA">
         <body>processing telecommand that come from ground segment</body>
       </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_0RXkcGrVEeaRA8X2rSx7Yg" annotatedElement="_Jnk4IActEeaCsux1JeAI0w">
+        <body>cmd entrada
+
+</body>
+      </ownedComment>
       <packagedElement xmi:type="uml:Actor" xmi:id="_KKHvQAJxEeaCSucAKdgDDQ" name="Subsystems"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_dsnegAJxEeaCSucAKdgDDQ" name="CD&amp;H">
         <generalization xmi:type="uml:Generalization" xmi:id="_Mtk4kAJzEeaCSucAKdgDDQ" general="_KKHvQAJxEeaCSucAKdgDDQ"/>
@@ -358,27 +363,27 @@
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HQN_MQctEeaCsux1JeAI0w" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_HQOmQActEeaCsux1JeAI0w" name="process telemetry" type="_2PzLIAcsEeaCsux1JeAI0w" association="_HQNYIActEeaCsux1JeAI0w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_HQOmQQctEeaCsux1JeAI0w" name="c&amp;dh" type="_dsnegAJxEeaCSucAKdgDDQ" association="_HQNYIActEeaCsux1JeAI0w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_HQOmQQctEeaCsux1JeAI0w" name="c&amp;dh" type="_Aqw9UGrGEeaRA8X2rSx7Yg" association="_HQNYIActEeaCsux1JeAI0w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_HnUQkActEeaCsux1JeAI0w" memberEnd="_HnU3ogctEeaCsux1JeAI0w _HnVesActEeaCsux1JeAI0w">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HnU3oActEeaCsux1JeAI0w" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HnU3oQctEeaCsux1JeAI0w" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_HnU3ogctEeaCsux1JeAI0w" name="process housekeeping" type="_4gvTAAcsEeaCsux1JeAI0w" association="_HnUQkActEeaCsux1JeAI0w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_HnVesActEeaCsux1JeAI0w" name="c&amp;dh" type="_dsnegAJxEeaCSucAKdgDDQ" association="_HnUQkActEeaCsux1JeAI0w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_HnVesActEeaCsux1JeAI0w" name="c&amp;dh" type="_Aqw9UGrGEeaRA8X2rSx7Yg" association="_HnUQkActEeaCsux1JeAI0w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_H_CNAActEeaCsux1JeAI0w" memberEnd="_H_CNAwctEeaCsux1JeAI0w _H_CNBActEeaCsux1JeAI0w">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_H_CNAQctEeaCsux1JeAI0w" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_H_CNAgctEeaCsux1JeAI0w" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_H_CNAwctEeaCsux1JeAI0w" name="fdir" type="_686agAcsEeaCsux1JeAI0w" association="_H_CNAActEeaCsux1JeAI0w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_H_CNBActEeaCsux1JeAI0w" name="c&amp;dh" type="_dsnegAJxEeaCSucAKdgDDQ" association="_H_CNAActEeaCsux1JeAI0w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_H_CNBActEeaCsux1JeAI0w" name="c&amp;dh" type="_Aqw9UGrGEeaRA8X2rSx7Yg" association="_H_CNAActEeaCsux1JeAI0w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_Jnk4IActEeaCsux1JeAI0w" memberEnd="_JnlfMgctEeaCsux1JeAI0w _JnlfMwctEeaCsux1JeAI0w">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JnlfMActEeaCsux1JeAI0w" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JnlfMQctEeaCsux1JeAI0w" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_JnlfMgctEeaCsux1JeAI0w" name="ground segment" type="_JIJI4AVmEeadIoYsHc90eg" association="_Jnk4IActEeaCsux1JeAI0w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_JnlfMgctEeaCsux1JeAI0w" name="ground segment" type="_dXmXIAJ5EeaCSucAKdgDDQ" association="_Jnk4IActEeaCsux1JeAI0w"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_JnlfMwctEeaCsux1JeAI0w" name="fdir" type="_686agAcsEeaCsux1JeAI0w" association="_Jnk4IActEeaCsux1JeAI0w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_KG2OEActEeaCsux1JeAI0w" memberEnd="_KG3cMQctEeaCsux1JeAI0w _KG4DQActEeaCsux1JeAI0w">
@@ -392,50 +397,35 @@
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aPDnwQctEeaCsux1JeAI0w" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aPDnwgctEeaCsux1JeAI0w" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_aPEO0ActEeaCsux1JeAI0w" name="send to ground segment" type="_VGcvMActEeaCsux1JeAI0w" association="_aPDnwActEeaCsux1JeAI0w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_aPEO0ActEeaCsux1JeAI0w" name="send to ground segment" type="_cfNFcActEeaCsux1JeAI0w" association="_aPDnwActEeaCsux1JeAI0w"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_aPEO0QctEeaCsux1JeAI0w" name="ttc" type="_dXmXIAJ5EeaCSucAKdgDDQ" association="_aPDnwActEeaCsux1JeAI0w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_akRCwActEeaCsux1JeAI0w" memberEnd="_akRCwwctEeaCsux1JeAI0w _akRCxActEeaCsux1JeAI0w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_akRCwQctEeaCsux1JeAI0w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_akRCwgctEeaCsux1JeAI0w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_akRCwwctEeaCsux1JeAI0w" name="send to ground segment" type="_VGcvMActEeaCsux1JeAI0w" association="_akRCwActEeaCsux1JeAI0w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_akRCxActEeaCsux1JeAI0w" name="ground segment" type="_JIJI4AVmEeadIoYsHc90eg" association="_akRCwActEeaCsux1JeAI0w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_jZUX4ActEeaCsux1JeAI0w" memberEnd="_jZUX4wctEeaCsux1JeAI0w _jZUX5ActEeaCsux1JeAI0w">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jZUX4QctEeaCsux1JeAI0w" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jZUX4gctEeaCsux1JeAI0w" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_jZUX4wctEeaCsux1JeAI0w" name="process telecommand" type="_cfNFcActEeaCsux1JeAI0w" association="_jZUX4ActEeaCsux1JeAI0w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_jZUX5ActEeaCsux1JeAI0w" name="c&amp;dh" type="_dsnegAJxEeaCSucAKdgDDQ" association="_jZUX4ActEeaCsux1JeAI0w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_pstokActEeaCsux1JeAI0w" memberEnd="_pstokwctEeaCsux1JeAI0w _pstolActEeaCsux1JeAI0w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pstokQctEeaCsux1JeAI0w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pstokgctEeaCsux1JeAI0w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_pstokwctEeaCsux1JeAI0w" name="c&amp;dh" type="_dsnegAJxEeaCSucAKdgDDQ" association="_pstokActEeaCsux1JeAI0w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_pstolActEeaCsux1JeAI0w" name="process science data" type="_nTj_4ActEeaCsux1JeAI0w" association="_pstokActEeaCsux1JeAI0w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_wqZMYActEeaCsux1JeAI0w" memberEnd="_wqZzcgctEeaCsux1JeAI0w _wqaagActEeaCsux1JeAI0w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wqZzcActEeaCsux1JeAI0w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wqZzcQctEeaCsux1JeAI0w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_wqZzcgctEeaCsux1JeAI0w" name="payload" type="_g1e3cAJyEeaCSucAKdgDDQ" association="_wqZMYActEeaCsux1JeAI0w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_wqaagActEeaCsux1JeAI0w" name="process science data" type="_nTj_4ActEeaCsux1JeAI0w" association="_wqZMYActEeaCsux1JeAI0w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_jZUX5ActEeaCsux1JeAI0w" name="c&amp;dh" type="_Aqw9UGrGEeaRA8X2rSx7Yg" association="_jZUX4ActEeaCsux1JeAI0w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="__8d-QAsdEeaL5u6tReUKjg" name="CD&amp;H Software System">
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_nTj_4ActEeaCsux1JeAI0w" name="Process Science Data">
-          <include xmi:type="uml:Include" xmi:id="_x_IxwActEeaCsux1JeAI0w" addition="_VGcvMActEeaCsux1JeAI0w"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_4gvTAAcsEeaCsux1JeAI0w" name="Housekeeping Processing">
-          <include xmi:type="uml:Include" xmi:id="_ZWJp0ActEeaCsux1JeAI0w" addition="_VGcvMActEeaCsux1JeAI0w"/>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_jf9kIGrSEeaRA8X2rSx7Yg" annotatedElement="_nABR4GrPEeaRA8X2rSx7Yg">
+          <body>&lt;&lt;extend>>: time tagged
+</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_PkSRIGrYEeaRA8X2rSx7Yg" annotatedElement="_jmXU0GrXEeaRA8X2rSx7Yg">
+          <body>control On/off - PID - Scrubbing
+
+</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_4gvTAAcsEeaCsux1JeAI0w" name="Housekeeping Data Acquisition">
+          <include xmi:type="uml:Include" xmi:id="_QrVrsGrLEeaRA8X2rSx7Yg" addition="_2PzLIAcsEeaCsux1JeAI0w"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_2PzLIAcsEeaCsux1JeAI0w" name="Telemetry Processing">
-          <include xmi:type="uml:Include" xmi:id="_ZDE80ActEeaCsux1JeAI0w" addition="_VGcvMActEeaCsux1JeAI0w"/>
+          <include xmi:type="uml:Include" xmi:id="_Qm324GrVEeaRA8X2rSx7Yg" addition="_L2NEkGrSEeaRA8X2rSx7Yg"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_VGcvMActEeaCsux1JeAI0w" name="Interface with Ground Segment"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_cfNFcActEeaCsux1JeAI0w" name="Process Telecommand">
-          <include xmi:type="uml:Include" xmi:id="_i5-JcActEeaCsux1JeAI0w" addition="_VGcvMActEeaCsux1JeAI0w"/>
+          <extend xmi:type="uml:Extend" xmi:id="_qZTh4GrPEeaRA8X2rSx7Yg" extendedCase="_zHj9YGrNEeaRA8X2rSx7Yg" extensionLocation="_qZTh4WrPEeaRA8X2rSx7Yg"/>
+          <include xmi:type="uml:Include" xmi:id="_9Qmp8GrNEeaRA8X2rSx7Yg" addition="_zHj9YGrNEeaRA8X2rSx7Yg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_JaDvgAsdEeaL5u6tReUKjg" name="FDIR Module" URI="">
           <packagedElement xmi:type="uml:UseCase" xmi:id="_yk6zkAVlEeadIoYsHc90eg" name="Failure Detect">
@@ -460,8 +450,29 @@
           <packagedElement xmi:type="uml:UseCase" xmi:id="_LRnW0AVmEeadIoYsHc90eg" name="FDIR Abort">
             <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_PNkPAAVmEeadIoYsHc90eg" name="ExtensionPoint1"/>
           </packagedElement>
-          <packagedElement xmi:type="uml:UseCase" xmi:id="_686agAcsEeaCsux1JeAI0w" name="FDIR"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_686agAcsEeaCsux1JeAI0w" name="FDIR">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_RWb2IGrWEeaRA8X2rSx7Yg" annotatedElement="_686agAcsEeaCsux1JeAI0w">
+            <body>envia comandos</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_TdC9UGrWEeaRA8X2rSx7Yg" annotatedElement="_686agAcsEeaCsux1JeAI0w">
+            <body>consulta housekeeping</body>
+          </ownedComment>
+          <extend xmi:type="uml:Extend" xmi:id="_-Zd10GrVEeaRA8X2rSx7Yg" extendedCase="_zHj9YGrNEeaRA8X2rSx7Yg" extensionLocation="_-Zec4GrVEeaRA8X2rSx7Yg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_u_K2kGrLEeaRA8X2rSx7Yg" name="TimeTagged Cmds exploration">
+          <extend xmi:type="uml:Extend" xmi:id="__Wuo8GrNEeaRA8X2rSx7Yg" extendedCase="_zHj9YGrNEeaRA8X2rSx7Yg" extensionLocation="__W5BAGrNEeaRA8X2rSx7Yg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_yfDy8GrNEeaRA8X2rSx7Yg" name="UseCase1"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_zHj9YGrNEeaRA8X2rSx7Yg" name="send cmd">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="__W5BAGrNEeaRA8X2rSx7Yg" name="ExtensionPoint1"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_qZTh4WrPEeaRA8X2rSx7Yg" name="ExtensionPoint2"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_-Zec4GrVEeaRA8X2rSx7Yg" name="ExtensionPoint3"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_L2NEkGrSEeaRA8X2rSx7Yg" name="send telemetry">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ZuEMQGrSEeaRA8X2rSx7Yg" name="ExtensionPoint1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_jmXU0GrXEeaRA8X2rSx7Yg" name="Algoritmos Control Plataforma"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_RawO0BX6Eea4itIoBH-MTA" client="_kdTbAAWZEeaRM-Du8o1hOg" supplier="_5TPcQBX5Eea4itIoBH-MTA"/>
       <packagedElement xmi:type="uml:Usage" xmi:id="_R3FlgBX6Eea4itIoBH-MTA" client="_kdTbAAWZEeaRM-Du8o1hOg" supplier="_91zogBX5Eea4itIoBH-MTA"/>
@@ -505,6 +516,71 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_fbbJABcSEeaXSI-gjrG7ng" name="Actor1"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_iPVbEBcSEeaXSI-gjrG7ng" name="Actor2"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mjBYYGrFEeaRA8X2rSx7Yg" memberEnd="_mjIGEGrFEeaRA8X2rSx7Yg _mjItIGrFEeaRA8X2rSx7Yg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mjHfAGrFEeaRA8X2rSx7Yg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mjHfAWrFEeaRA8X2rSx7Yg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_mjIGEGrFEeaRA8X2rSx7Yg" name="ground segment" type="_JIJI4AVmEeadIoYsHc90eg" association="_mjBYYGrFEeaRA8X2rSx7Yg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_mjItIGrFEeaRA8X2rSx7Yg" name="ttc" type="_dXmXIAJ5EeaCSucAKdgDDQ" association="_mjBYYGrFEeaRA8X2rSx7Yg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_Aqw9UGrGEeaRA8X2rSx7Yg" name="time"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_C4jRQGrLEeaRA8X2rSx7Yg" name="MM o Obc Payload"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_BiyiwGrMEeaRA8X2rSx7Yg" memberEnd="_BizJ0GrMEeaRA8X2rSx7Yg _BizJ0WrMEeaRA8X2rSx7Yg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BiyiwWrMEeaRA8X2rSx7Yg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BiyiwmrMEeaRA8X2rSx7Yg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_BizJ0GrMEeaRA8X2rSx7Yg" name="tt cmd exploration" type="_u_K2kGrLEeaRA8X2rSx7Yg" association="_BiyiwGrMEeaRA8X2rSx7Yg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_BizJ0WrMEeaRA8X2rSx7Yg" name="time" type="_Aqw9UGrGEeaRA8X2rSx7Yg" association="_BiyiwGrMEeaRA8X2rSx7Yg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Qn8HgGrNEeaRA8X2rSx7Yg" memberEnd="_Qn8Hg2rNEeaRA8X2rSx7Yg _Qn8ukGrNEeaRA8X2rSx7Yg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Qn8HgWrNEeaRA8X2rSx7Yg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Qn8HgmrNEeaRA8X2rSx7Yg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Qn8Hg2rNEeaRA8X2rSx7Yg" name="subsystems" type="_KKHvQAJxEeaCSucAKdgDDQ" association="_Qn8HgGrNEeaRA8X2rSx7Yg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Qn8ukGrNEeaRA8X2rSx7Yg" name="timetagged cmds exploration" type="_u_K2kGrLEeaRA8X2rSx7Yg" association="_Qn8HgGrNEeaRA8X2rSx7Yg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_RWvuQGrNEeaRA8X2rSx7Yg" memberEnd="_RWvuQ2rNEeaRA8X2rSx7Yg _RWwVUGrNEeaRA8X2rSx7Yg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RWvuQWrNEeaRA8X2rSx7Yg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RWvuQmrNEeaRA8X2rSx7Yg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_RWvuQ2rNEeaRA8X2rSx7Yg" name="subsystems" type="_KKHvQAJxEeaCSucAKdgDDQ" association="_RWvuQGrNEeaRA8X2rSx7Yg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_RWwVUGrNEeaRA8X2rSx7Yg" name="process telecommand" type="_cfNFcActEeaCsux1JeAI0w" association="_RWvuQGrNEeaRA8X2rSx7Yg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ANM98GrOEeaRA8X2rSx7Yg" memberEnd="_ANM982rOEeaRA8X2rSx7Yg _ANNlAGrOEeaRA8X2rSx7Yg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ANM98WrOEeaRA8X2rSx7Yg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ANM98mrOEeaRA8X2rSx7Yg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ANM982rOEeaRA8X2rSx7Yg" name="subsystems" type="_KKHvQAJxEeaCSucAKdgDDQ" association="_ANM98GrOEeaRA8X2rSx7Yg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ANNlAGrOEeaRA8X2rSx7Yg" name="send cmd" type="_zHj9YGrNEeaRA8X2rSx7Yg" association="_ANM98GrOEeaRA8X2rSx7Yg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_nABR4GrPEeaRA8X2rSx7Yg" memberEnd="_nABR42rPEeaRA8X2rSx7Yg _nAB48GrPEeaRA8X2rSx7Yg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nABR4WrPEeaRA8X2rSx7Yg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nABR4mrPEeaRA8X2rSx7Yg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_nABR42rPEeaRA8X2rSx7Yg" name="mm o obc payload" type="_C4jRQGrLEeaRA8X2rSx7Yg" association="_nABR4GrPEeaRA8X2rSx7Yg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_nAB48GrPEeaRA8X2rSx7Yg" name="process telecommand" type="_cfNFcActEeaCsux1JeAI0w" association="_nABR4GrPEeaRA8X2rSx7Yg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_-SYTMGrREeaRA8X2rSx7Yg" memberEnd="_-SZhUGrREeaRA8X2rSx7Yg _-SZhUWrREeaRA8X2rSx7Yg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-SY6QGrREeaRA8X2rSx7Yg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-SY6QWrREeaRA8X2rSx7Yg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_-SZhUGrREeaRA8X2rSx7Yg" name="mm " type="_C4jRQGrLEeaRA8X2rSx7Yg" association="_-SYTMGrREeaRA8X2rSx7Yg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_-SZhUWrREeaRA8X2rSx7Yg" name="telemetry processing" type="_2PzLIAcsEeaCsux1JeAI0w" association="_-SYTMGrREeaRA8X2rSx7Yg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XlR60GrSEeaRA8X2rSx7Yg" memberEnd="_XlSh4mrSEeaRA8X2rSx7Yg _XlSh42rSEeaRA8X2rSx7Yg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XlSh4GrSEeaRA8X2rSx7Yg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XlSh4WrSEeaRA8X2rSx7Yg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_XlSh4mrSEeaRA8X2rSx7Yg" name="ttc" type="_dXmXIAJ5EeaCSucAKdgDDQ" association="_XlR60GrSEeaRA8X2rSx7Yg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_XlSh42rSEeaRA8X2rSx7Yg" name="send telemetry" type="_L2NEkGrSEeaRA8X2rSx7Yg" association="_XlR60GrSEeaRA8X2rSx7Yg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_1FYJYGrXEeaRA8X2rSx7Yg" memberEnd="_1FYJY2rXEeaRA8X2rSx7Yg _1FYwcGrXEeaRA8X2rSx7Yg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1FYJYWrXEeaRA8X2rSx7Yg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1FYJYmrXEeaRA8X2rSx7Yg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_1FYJY2rXEeaRA8X2rSx7Yg" name="algoritmos de control" type="_jmXU0GrXEeaRA8X2rSx7Yg" association="_1FYJYGrXEeaRA8X2rSx7Yg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_1FYwcGrXEeaRA8X2rSx7Yg" name="time" type="_Aqw9UGrGEeaRA8X2rSx7Yg" association="_1FYJYGrXEeaRA8X2rSx7Yg"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_SdZswAGwEeajHqwUCOgvUA" name="ArchitectureDiagram">
       <packagedElement xmi:type="uml:Class" xmi:id="_NF-zgBXlEea4itIoBH-MTA" name="C&amp;DH">
@@ -1084,9 +1160,9 @@ depend of the
       </packagedElement>
       <packagedElement xmi:type="uml:StateMachine" xmi:id="_H0JfsAWNEeaUXvHpBJhe8Q" name="CD&amp;H Modes">
         <region xmi:type="uml:Region" xmi:id="_Jd7g8AWNEeaUXvHpBJhe8Q" name="Region1">
-          <transition xmi:type="uml:Transition" xmi:id="_aiTbkBbeEea8YKobXlI6Tw" source="_NYDn0BbeEea8YKobXlI6Tw" target="_Jfpy4BbeEea8YKobXlI6Tw"/>
-          <transition xmi:type="uml:Transition" xmi:id="_bK8v8BbeEea8YKobXlI6Tw" name="GC: OK Commissioning" source="_Jfpy4BbeEea8YKobXlI6Tw" target="_O5ovUBbeEea8YKobXlI6Tw"/>
-          <transition xmi:type="uml:Transition" xmi:id="_iE-i0BbeEea8YKobXlI6Tw" name="GC: Back to Commissioning" source="_O5ovUBbeEea8YKobXlI6Tw" target="_Jfpy4BbeEea8YKobXlI6Tw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_aiTbkBbeEea8YKobXlI6Tw" source="_NYDn0BbeEea8YKobXlI6Tw" target="_O5ovUBbeEea8YKobXlI6Tw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_bK8v8BbeEea8YKobXlI6Tw" name="GC: OK Commissioning" target="_O5ovUBbeEea8YKobXlI6Tw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_iE-i0BbeEea8YKobXlI6Tw" name="GC: Back to Commissioning" source="_O5ovUBbeEea8YKobXlI6Tw"/>
           <transition xmi:type="uml:Transition" xmi:id="_qrXJ0BbeEea8YKobXlI6Tw" name="GC: OK Safe Mode" source="_O5ovUBbeEea8YKobXlI6Tw" target="_SwDAMBbeEea8YKobXlI6Tw"/>
           <transition xmi:type="uml:Transition" xmi:id="_u3xf4BbeEea8YKobXlI6Tw" name="Failure" source="_SwDAMBbeEea8YKobXlI6Tw" target="_O5ovUBbeEea8YKobXlI6Tw"/>
           <transition xmi:type="uml:Transition" xmi:id="_3BWPEBbeEea8YKobXlI6Tw" name="End Of Maint. GC: OK maint" source="_SwDAMBbeEea8YKobXlI6Tw" target="_VaDvYBbeEea8YKobXlI6Tw"/>
@@ -1095,11 +1171,13 @@ depend of the
           <transition xmi:type="uml:Transition" xmi:id="_GlYksBbfEea8YKobXlI6Tw" name="End of Acq" source="_UDryUBbeEea8YKobXlI6Tw" target="_VaDvYBbeEea8YKobXlI6Tw"/>
           <transition xmi:type="uml:Transition" xmi:id="_NDf3oBbfEea8YKobXlI6Tw" name="Acq data" source="_VaDvYBbeEea8YKobXlI6Tw" target="_UDryUBbeEea8YKobXlI6Tw"/>
           <transition xmi:type="uml:Transition" xmi:id="_mPUm4BbfEea8YKobXlI6Tw" name="Failure" source="_UDryUBbeEea8YKobXlI6Tw" target="_O5ovUBbeEea8YKobXlI6Tw"/>
-          <subvertex xmi:type="uml:State" xmi:id="_Jfpy4BbeEea8YKobXlI6Tw" name="Commissioning"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_NYDn0BbeEea8YKobXlI6Tw" name="Start"/>
           <subvertex xmi:type="uml:State" xmi:id="_O5ovUBbeEea8YKobXlI6Tw" name="Safe Mode">
             <ownedComment xmi:type="uml:Comment" xmi:id="_RqUHMBbeEea8YKobXlI6Tw">
               <body></body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_9VAxYGrkEeaRA8X2rSx7Yg" annotatedElement="_O5ovUBbeEea8YKobXlI6Tw">
+              <body>eventos anormales</body>
             </ownedComment>
           </subvertex>
           <subvertex xmi:type="uml:State" xmi:id="_SwDAMBbeEea8YKobXlI6Tw" name="Maintenance"/>

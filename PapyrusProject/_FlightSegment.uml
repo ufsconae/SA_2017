@@ -54,6 +54,10 @@
           <end xmi:type="uml:ConnectorEnd" xmi:id="_uPpSAAi-Eea7tqq8NETspQ" partWithPort="_8kzTcAcuEeafd7GiqJXkMg" role="_ZJvWoAi7Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_uPpSAQi-Eea7tqq8NETspQ" role="_pkFpMAi7Eea7tqq8NETspQ"/>
         </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_5j9sAGrAEeax3omSjm9JUA" name="TLMY">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_5kAvUGrAEeax3omSjm9JUA" partWithPort="_scOQwAi3Eea7tqq8NETspQ" role="_yQqUkAi3Eea7tqq8NETspQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_5kBWYGrAEeax3omSjm9JUA" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_1aS_AAi3Eea7tqq8NETspQ"/>
+        </ownedConnector>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_-ViSQAcjEeafd7GiqJXkMg" name="Association1" memberEnd="_9HLBsAcjEeafd7GiqJXkMg _-ViSQwcjEeafd7GiqJXkMg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-ViSQQcjEeafd7GiqJXkMg" source="org.eclipse.papyrus">
@@ -144,7 +148,6 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_sm_WUwi3Eea7tqq8NETspQ" name="fs" type="_LWXusAJrEeaJW-cSZfJk0g" association="_sm_WUAi3Eea7tqq8NETspQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_48uj8Ai3Eea7tqq8NETspQ" name="TLMY" client="_yQqUkAi3Eea7tqq8NETspQ" supplier="_1aS_AAi3Eea7tqq8NETspQ"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_dAMyMAi4Eea7tqq8NETspQ" name="TC" client="_VKZ6oAi4Eea7tqq8NETspQ" supplier="_NpuXcAi4Eea7tqq8NETspQ"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_gpBdkAi5Eea7tqq8NETspQ" name="Science data/Stored TLMY (TBC)" client="_PHaoAAi5Eea7tqq8NETspQ" supplier="_S3XEgAi5Eea7tqq8NETspQ"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_gDerEAi6Eea7tqq8NETspQ" name="Science data/Stored TLMY (TBC)" client="_SYZbIAi6Eea7tqq8NETspQ" supplier="_ZjOqIAi6Eea7tqq8NETspQ"/>
@@ -317,4 +320,5 @@
   <Blocks:NestedConnectorEnd xmi:id="_4TVWwAi5Eea7tqq8NETspQ" propertyPath="_g0NMQAcsEeafd7GiqJXkMg _5HFa8AckEeafd7GiqJXkMg" base_ConnectorEnd="_4TUvsQi5Eea7tqq8NETspQ"/>
   <Blocks:NestedConnectorEnd xmi:id="_qDmsMgi6Eea7tqq8NETspQ" propertyPath="_g0NMQAcsEeafd7GiqJXkMg _g428YAckEeafd7GiqJXkMg _scOQwAi3Eea7tqq8NETspQ" base_ConnectorEnd="_qDmsMAi6Eea7tqq8NETspQ"/>
   <Blocks:NestedConnectorEnd xmi:id="_uPpSAgi-Eea7tqq8NETspQ" propertyPath="_MmWg8AcuEeafd7GiqJXkMg _8kzTcAcuEeafd7GiqJXkMg" base_ConnectorEnd="_uPpSAAi-Eea7tqq8NETspQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_5kB9cGrAEeax3omSjm9JUA" propertyPath="_g428YAckEeafd7GiqJXkMg _scOQwAi3Eea7tqq8NETspQ" base_ConnectorEnd="_5kAvUGrAEeax3omSjm9JUA"/>
 </xmi:XMI>

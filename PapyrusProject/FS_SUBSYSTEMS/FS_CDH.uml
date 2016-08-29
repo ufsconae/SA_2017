@@ -386,13 +386,6 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_JnlfMgctEeaCsux1JeAI0w" name="ground segment" type="_dXmXIAJ5EeaCSucAKdgDDQ" association="_Jnk4IActEeaCsux1JeAI0w"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_JnlfMwctEeaCsux1JeAI0w" name="fdir" type="_686agAcsEeaCsux1JeAI0w" association="_Jnk4IActEeaCsux1JeAI0w"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_KG2OEActEeaCsux1JeAI0w" memberEnd="_KG3cMQctEeaCsux1JeAI0w _KG4DQActEeaCsux1JeAI0w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KG21IActEeaCsux1JeAI0w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KG3cMActEeaCsux1JeAI0w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_KG3cMQctEeaCsux1JeAI0w" name="subsystems" type="_KKHvQAJxEeaCSucAKdgDDQ" association="_KG2OEActEeaCsux1JeAI0w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_KG4DQActEeaCsux1JeAI0w" name="process housekeeping" type="_4gvTAAcsEeaCsux1JeAI0w" association="_KG2OEActEeaCsux1JeAI0w"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_aPDnwActEeaCsux1JeAI0w" memberEnd="_aPEO0ActEeaCsux1JeAI0w _aPEO0QctEeaCsux1JeAI0w">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aPDnwQctEeaCsux1JeAI0w" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aPDnwgctEeaCsux1JeAI0w" key="nature" value="UML_Nature"/>
@@ -408,10 +401,6 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_jZUX5ActEeaCsux1JeAI0w" name="c&amp;dh" type="_Aqw9UGrGEeaRA8X2rSx7Yg" association="_jZUX4ActEeaCsux1JeAI0w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="__8d-QAsdEeaL5u6tReUKjg" name="CD&amp;H Software System">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_jf9kIGrSEeaRA8X2rSx7Yg" annotatedElement="_nABR4GrPEeaRA8X2rSx7Yg">
-          <body>&lt;&lt;extend>>: time tagged
-</body>
-        </ownedComment>
         <ownedComment xmi:type="uml:Comment" xmi:id="_PkSRIGrYEeaRA8X2rSx7Yg" annotatedElement="_jmXU0GrXEeaRA8X2rSx7Yg">
           <body>control On/off - PID - Scrubbing
 
@@ -419,12 +408,15 @@
         </ownedComment>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_4gvTAAcsEeaCsux1JeAI0w" name="Housekeeping Data Acquisition">
           <include xmi:type="uml:Include" xmi:id="_QrVrsGrLEeaRA8X2rSx7Yg" addition="_2PzLIAcsEeaCsux1JeAI0w"/>
+          <include xmi:type="uml:Include" xmi:id="_8Y3j4G3yEeaRA8X2rSx7Yg" addition="_zHj9YGrNEeaRA8X2rSx7Yg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_2PzLIAcsEeaCsux1JeAI0w" name="Telemetry Processing">
           <include xmi:type="uml:Include" xmi:id="_Qm324GrVEeaRA8X2rSx7Yg" addition="_L2NEkGrSEeaRA8X2rSx7Yg"/>
+          <include xmi:type="uml:Include" xmi:id="_jSv-kG3zEeaRA8X2rSx7Yg" addition="_epvzIG3zEeaRA8X2rSx7Yg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_cfNFcActEeaCsux1JeAI0w" name="Process Telecommand">
           <extend xmi:type="uml:Extend" xmi:id="_qZTh4GrPEeaRA8X2rSx7Yg" extendedCase="_zHj9YGrNEeaRA8X2rSx7Yg" extensionLocation="_qZTh4WrPEeaRA8X2rSx7Yg"/>
+          <extend xmi:type="uml:Extend" xmi:id="_mlxOgG3zEeaRA8X2rSx7Yg" extendedCase="_epvzIG3zEeaRA8X2rSx7Yg" extensionLocation="_mlx1kG3zEeaRA8X2rSx7Yg"/>
           <include xmi:type="uml:Include" xmi:id="_9Qmp8GrNEeaRA8X2rSx7Yg" addition="_zHj9YGrNEeaRA8X2rSx7Yg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_JaDvgAsdEeaL5u6tReUKjg" name="FDIR Module" URI="">
@@ -473,6 +465,9 @@
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ZuEMQGrSEeaRA8X2rSx7Yg" name="ExtensionPoint1"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_jmXU0GrXEeaRA8X2rSx7Yg" name="Algoritmos Control Plataforma"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_epvzIG3zEeaRA8X2rSx7Yg" name="MMSafe">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_mlx1kG3zEeaRA8X2rSx7Yg" name="ExtensionPoint1"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_RawO0BX6Eea4itIoBH-MTA" client="_kdTbAAWZEeaRM-Du8o1hOg" supplier="_5TPcQBX5Eea4itIoBH-MTA"/>
       <packagedElement xmi:type="uml:Usage" xmi:id="_R3FlgBX6Eea4itIoBH-MTA" client="_kdTbAAWZEeaRM-Du8o1hOg" supplier="_91zogBX5Eea4itIoBH-MTA"/>
@@ -524,7 +519,6 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_mjItIGrFEeaRA8X2rSx7Yg" name="ttc" type="_dXmXIAJ5EeaCSucAKdgDDQ" association="_mjBYYGrFEeaRA8X2rSx7Yg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_Aqw9UGrGEeaRA8X2rSx7Yg" name="time"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_C4jRQGrLEeaRA8X2rSx7Yg" name="MM o Obc Payload"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_BiyiwGrMEeaRA8X2rSx7Yg" memberEnd="_BizJ0GrMEeaRA8X2rSx7Yg _BizJ0WrMEeaRA8X2rSx7Yg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BiyiwWrMEeaRA8X2rSx7Yg" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BiyiwmrMEeaRA8X2rSx7Yg" key="nature" value="UML_Nature"/>
@@ -553,20 +547,6 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_ANM982rOEeaRA8X2rSx7Yg" name="subsystems" type="_KKHvQAJxEeaCSucAKdgDDQ" association="_ANM98GrOEeaRA8X2rSx7Yg"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_ANNlAGrOEeaRA8X2rSx7Yg" name="send cmd" type="_zHj9YGrNEeaRA8X2rSx7Yg" association="_ANM98GrOEeaRA8X2rSx7Yg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_nABR4GrPEeaRA8X2rSx7Yg" memberEnd="_nABR42rPEeaRA8X2rSx7Yg _nAB48GrPEeaRA8X2rSx7Yg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nABR4WrPEeaRA8X2rSx7Yg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_nABR4mrPEeaRA8X2rSx7Yg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_nABR42rPEeaRA8X2rSx7Yg" name="mm o obc payload" type="_C4jRQGrLEeaRA8X2rSx7Yg" association="_nABR4GrPEeaRA8X2rSx7Yg"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_nAB48GrPEeaRA8X2rSx7Yg" name="process telecommand" type="_cfNFcActEeaCsux1JeAI0w" association="_nABR4GrPEeaRA8X2rSx7Yg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_-SYTMGrREeaRA8X2rSx7Yg" memberEnd="_-SZhUGrREeaRA8X2rSx7Yg _-SZhUWrREeaRA8X2rSx7Yg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-SY6QGrREeaRA8X2rSx7Yg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-SY6QWrREeaRA8X2rSx7Yg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_-SZhUGrREeaRA8X2rSx7Yg" name="mm " type="_C4jRQGrLEeaRA8X2rSx7Yg" association="_-SYTMGrREeaRA8X2rSx7Yg"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_-SZhUWrREeaRA8X2rSx7Yg" name="telemetry processing" type="_2PzLIAcsEeaCsux1JeAI0w" association="_-SYTMGrREeaRA8X2rSx7Yg"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_XlR60GrSEeaRA8X2rSx7Yg" memberEnd="_XlSh4mrSEeaRA8X2rSx7Yg _XlSh42rSEeaRA8X2rSx7Yg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XlSh4GrSEeaRA8X2rSx7Yg" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XlSh4WrSEeaRA8X2rSx7Yg" key="nature" value="UML_Nature"/>
@@ -580,6 +560,13 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_1FYJY2rXEeaRA8X2rSx7Yg" name="algoritmos de control" type="_jmXU0GrXEeaRA8X2rSx7Yg" association="_1FYJYGrXEeaRA8X2rSx7Yg"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_1FYwcGrXEeaRA8X2rSx7Yg" name="time" type="_Aqw9UGrGEeaRA8X2rSx7Yg" association="_1FYJYGrXEeaRA8X2rSx7Yg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_S5ppMG3zEeaRA8X2rSx7Yg" memberEnd="_S5ppM23zEeaRA8X2rSx7Yg _S5ppNG3zEeaRA8X2rSx7Yg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S5ppMW3zEeaRA8X2rSx7Yg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S5ppMm3zEeaRA8X2rSx7Yg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_S5ppM23zEeaRA8X2rSx7Yg" name="subsystems" type="_KKHvQAJxEeaCSucAKdgDDQ" association="_S5ppMG3zEeaRA8X2rSx7Yg"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_S5ppNG3zEeaRA8X2rSx7Yg" name="housekeeping data acquisition" type="_4gvTAAcsEeaCsux1JeAI0w" association="_S5ppMG3zEeaRA8X2rSx7Yg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_SdZswAGwEeajHqwUCOgvUA" name="ArchitectureDiagram">
@@ -1404,6 +1391,19 @@ Normal mode
         <node xmi:type="uml:OpaqueAction" xmi:id="_z318wBa4EeaO0Ls0_Xfk7w" name="Move Command to Execution buffer" incoming="_-WrTIBa4EeaO0Ls0_Xfk7w _-wPCoBa4EeaO0Ls0_Xfk7w" outgoing="__9-BEBa4EeaO0Ls0_Xfk7w"/>
         <node xmi:type="uml:ActivityFinalNode" xmi:id="_23MCwBa4EeaO0Ls0_Xfk7w" name="End" incoming="__9-BEBa4EeaO0Ls0_Xfk7w"/>
       </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_JRUiMG3hEeaRA8X2rSx7Yg" name="Interaction1">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_kcy1AG3hEeaRA8X2rSx7Yg" name="CDH" coveredBy="_VL458G3lEeaRA8X2rSx7Yg _xJdioW3mEeaRA8X2rSx7Yg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_k6ZXAG3hEeaRA8X2rSx7Yg" name="TMyStorage" coveredBy="_VL458W3lEeaRA8X2rSx7Yg _xJeJsG3mEeaRA8X2rSx7Yg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_lWoAAG3hEeaRA8X2rSx7Yg" name="Lifeline1"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_l4U-4G3hEeaRA8X2rSx7Yg" name="ADCS"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_r4nJgG3lEeaRA8X2rSx7Yg" name="Lifeline2"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xJdioW3mEeaRA8X2rSx7Yg" name="MessageSend0" covered="_kcy1AG3hEeaRA8X2rSx7Yg" message="_xJdioG3mEeaRA8X2rSx7Yg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xJeJsG3mEeaRA8X2rSx7Yg" name="MessageRecv0" covered="_k6ZXAG3hEeaRA8X2rSx7Yg" message="_xJdioG3mEeaRA8X2rSx7Yg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VL458G3lEeaRA8X2rSx7Yg" name="MessageSend" covered="_kcy1AG3hEeaRA8X2rSx7Yg" message="_VL4S4G3lEeaRA8X2rSx7Yg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VL458W3lEeaRA8X2rSx7Yg" name="MessageRecv" covered="_k6ZXAG3hEeaRA8X2rSx7Yg" message="_VL4S4G3lEeaRA8X2rSx7Yg"/>
+      <message xmi:type="uml:Message" xmi:id="_VL4S4G3lEeaRA8X2rSx7Yg" name="getListTmyADCS()" receiveEvent="_VL458W3lEeaRA8X2rSx7Yg" sendEvent="_VL458G3lEeaRA8X2rSx7Yg"/>
+      <message xmi:type="uml:Message" xmi:id="_xJdioG3mEeaRA8X2rSx7Yg" name="GetListFrequency(ADCS)" receiveEvent="_xJeJsG3mEeaRA8X2rSx7Yg" sendEvent="_xJdioW3mEeaRA8X2rSx7Yg"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sKAVMAGtEeajHqwUCOgvUA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sKAVMQGtEeajHqwUCOgvUA" source="http://www.eclipse.org/uml2/2.0.0/UML">

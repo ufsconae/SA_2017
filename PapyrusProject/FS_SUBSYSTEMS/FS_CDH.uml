@@ -406,6 +406,19 @@
 
 </body>
         </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_VpcPQG3-EeaTJ4aDE3sUoA" annotatedElement="_cfNFcActEeaCsux1JeAI0w">
+          <body>knowing if RT cmd
+TT cmd, etc
+</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_oJK58G3-EeaTJ4aDE3sUoA" annotatedElement="_m4-dYG3-EeaTJ4aDE3sUoA">
+          <body>IF RT CMD
+</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_81YN0G3_EeaTJ4aDE3sUoA" annotatedElement="_pVYY8G3_EeaTJ4aDE3sUoA">
+          <body>If TT CMD
+</body>
+        </ownedComment>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_4gvTAAcsEeaCsux1JeAI0w" name="Housekeeping Data Acquisition">
           <include xmi:type="uml:Include" xmi:id="_QrVrsGrLEeaRA8X2rSx7Yg" addition="_2PzLIAcsEeaCsux1JeAI0w"/>
           <include xmi:type="uml:Include" xmi:id="_8Y3j4G3yEeaRA8X2rSx7Yg" addition="_zHj9YGrNEeaRA8X2rSx7Yg"/>
@@ -417,6 +430,8 @@
         <packagedElement xmi:type="uml:UseCase" xmi:id="_cfNFcActEeaCsux1JeAI0w" name="Process Telecommand">
           <extend xmi:type="uml:Extend" xmi:id="_qZTh4GrPEeaRA8X2rSx7Yg" extendedCase="_zHj9YGrNEeaRA8X2rSx7Yg" extensionLocation="_qZTh4WrPEeaRA8X2rSx7Yg"/>
           <extend xmi:type="uml:Extend" xmi:id="_mlxOgG3zEeaRA8X2rSx7Yg" extendedCase="_epvzIG3zEeaRA8X2rSx7Yg" extensionLocation="_mlx1kG3zEeaRA8X2rSx7Yg"/>
+          <extend xmi:type="uml:Extend" xmi:id="_m4-dYG3-EeaTJ4aDE3sUoA" extendedCase="_zHj9YGrNEeaRA8X2rSx7Yg" extensionLocation="_m5BgsG3-EeaTJ4aDE3sUoA"/>
+          <extend xmi:type="uml:Extend" xmi:id="_pVYY8G3_EeaTJ4aDE3sUoA" extendedCase="_jcyN4G3_EeaTJ4aDE3sUoA" extensionLocation="_pVZnEG3_EeaTJ4aDE3sUoA"/>
           <include xmi:type="uml:Include" xmi:id="_9Qmp8GrNEeaRA8X2rSx7Yg" addition="_zHj9YGrNEeaRA8X2rSx7Yg"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Package" xmi:id="_JaDvgAsdEeaL5u6tReUKjg" name="FDIR Module" URI="">
@@ -454,12 +469,16 @@
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_u_K2kGrLEeaRA8X2rSx7Yg" name="TimeTagged Cmds exploration">
           <extend xmi:type="uml:Extend" xmi:id="__Wuo8GrNEeaRA8X2rSx7Yg" extendedCase="_zHj9YGrNEeaRA8X2rSx7Yg" extensionLocation="__W5BAGrNEeaRA8X2rSx7Yg"/>
+          <extend xmi:type="uml:Extend" xmi:id="_DjLikG4AEeaTJ4aDE3sUoA" extendedCase="_zHj9YGrNEeaRA8X2rSx7Yg" extensionLocation="_DjNXwG4AEeaTJ4aDE3sUoA"/>
+          <include xmi:type="uml:Include" xmi:id="_7YZ5gG3_EeaTJ4aDE3sUoA" addition="_lnLo4G3_EeaTJ4aDE3sUoA"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_yfDy8GrNEeaRA8X2rSx7Yg" name="UseCase1"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_zHj9YGrNEeaRA8X2rSx7Yg" name="send cmd">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_zHj9YGrNEeaRA8X2rSx7Yg" name="Send CMD">
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="__W5BAGrNEeaRA8X2rSx7Yg" name="ExtensionPoint1"/>
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_qZTh4WrPEeaRA8X2rSx7Yg" name="ExtensionPoint2"/>
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_-Zec4GrVEeaRA8X2rSx7Yg" name="ExtensionPoint3"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_m5BgsG3-EeaTJ4aDE3sUoA" name="ExtensionPoint4"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_DjNXwG4AEeaTJ4aDE3sUoA" name="ExtensionPoint5"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_L2NEkGrSEeaRA8X2rSx7Yg" name="send telemetry">
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ZuEMQGrSEeaRA8X2rSx7Yg" name="ExtensionPoint1"/>
@@ -468,40 +487,17 @@
         <packagedElement xmi:type="uml:UseCase" xmi:id="_epvzIG3zEeaRA8X2rSx7Yg" name="MMSafe">
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_mlx1kG3zEeaRA8X2rSx7Yg" name="ExtensionPoint1"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_FDz5wG3-EeaTJ4aDE3sUoA" name="TLCMD Reception">
+          <include xmi:type="uml:Include" xmi:id="_ULlxMG3-EeaTJ4aDE3sUoA" addition="_cfNFcActEeaCsux1JeAI0w"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_jcyN4G3_EeaTJ4aDE3sUoA" name="Save TT CMD">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_pVZnEG3_EeaTJ4aDE3sUoA" name="ExtensionPoint1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_lnLo4G3_EeaTJ4aDE3sUoA" name="Read TT CMD Memory"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_RawO0BX6Eea4itIoBH-MTA" client="_kdTbAAWZEeaRM-Du8o1hOg" supplier="_5TPcQBX5Eea4itIoBH-MTA"/>
       <packagedElement xmi:type="uml:Usage" xmi:id="_R3FlgBX6Eea4itIoBH-MTA" client="_kdTbAAWZEeaRM-Du8o1hOg" supplier="_91zogBX5Eea4itIoBH-MTA"/>
       <packagedElement xmi:type="uml:Usage" xmi:id="_UCFQ4BYPEeaJtvdXHwPksg" name="HK" client="_KKHvQAJxEeaCSucAKdgDDQ" supplier="_MTf0kBYPEeaJtvdXHwPksg"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_WRvQABa3EeaO0Ls0_Xfk7w" name="Receive Telecommand"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_YWVlABa3EeaO0Ls0_Xfk7w" name="Distribute Command"/>
-      <packagedElement xmi:type="uml:Association" xmi:id="_aqW2EBa3EeaO0Ls0_Xfk7w" memberEnd="_aqkRcBa3EeaO0Ls0_Xfk7w _aqk4gBa3EeaO0Ls0_Xfk7w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aqXdIBa3EeaO0Ls0_Xfk7w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aqXdIRa3EeaO0Ls0_Xfk7w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_aqkRcBa3EeaO0Ls0_Xfk7w" name="receive telecommand" type="_WRvQABa3EeaO0Ls0_Xfk7w" association="_aqW2EBa3EeaO0Ls0_Xfk7w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_aqk4gBa3EeaO0Ls0_Xfk7w" name="ground segment" type="_JIJI4AVmEeadIoYsHc90eg" association="_aqW2EBa3EeaO0Ls0_Xfk7w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_bCAhEBa3EeaO0Ls0_Xfk7w" memberEnd="_bCBIIRa3EeaO0Ls0_Xfk7w _bCBIIha3EeaO0Ls0_Xfk7w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bCAhERa3EeaO0Ls0_Xfk7w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bCBIIBa3EeaO0Ls0_Xfk7w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_bCBIIRa3EeaO0Ls0_Xfk7w" name="cd&amp;h" type="_dsnegAJxEeaCSucAKdgDDQ" association="_bCAhEBa3EeaO0Ls0_Xfk7w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_bCBIIha3EeaO0Ls0_Xfk7w" name="receive telecommand" type="_WRvQABa3EeaO0Ls0_Xfk7w" association="_bCAhEBa3EeaO0Ls0_Xfk7w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_baPa4Ba3EeaO0Ls0_Xfk7w" memberEnd="_baQpAha3EeaO0Ls0_Xfk7w _baRQEBa3EeaO0Ls0_Xfk7w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_baQpABa3EeaO0Ls0_Xfk7w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_baQpARa3EeaO0Ls0_Xfk7w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_baQpAha3EeaO0Ls0_Xfk7w" name="cd&amp;h" type="_dsnegAJxEeaCSucAKdgDDQ" association="_baPa4Ba3EeaO0Ls0_Xfk7w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_baRQEBa3EeaO0Ls0_Xfk7w" name="distribute command" type="_YWVlABa3EeaO0Ls0_Xfk7w" association="_baPa4Ba3EeaO0Ls0_Xfk7w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_b6JqABa3EeaO0Ls0_Xfk7w" memberEnd="_b6KREha3EeaO0Ls0_Xfk7w _b6KRExa3EeaO0Ls0_Xfk7w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_b6KREBa3EeaO0Ls0_Xfk7w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_b6KRERa3EeaO0Ls0_Xfk7w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_b6KREha3EeaO0Ls0_Xfk7w" name="subsystems" type="_KKHvQAJxEeaCSucAKdgDDQ" association="_b6JqABa3EeaO0Ls0_Xfk7w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_b6KRExa3EeaO0Ls0_Xfk7w" name="distribute command" type="_YWVlABa3EeaO0Ls0_Xfk7w" association="_b6JqABa3EeaO0Ls0_Xfk7w"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_o76QIBa3EeaO0Ls0_Xfk7w" memberEnd="_o763MRa3EeaO0Ls0_Xfk7w _o763Mha3EeaO0Ls0_Xfk7w">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_o76QIRa3EeaO0Ls0_Xfk7w" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_o763MBa3EeaO0Ls0_Xfk7w" key="nature" value="UML_Nature"/>
@@ -567,6 +563,13 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_S5ppM23zEeaRA8X2rSx7Yg" name="subsystems" type="_KKHvQAJxEeaCSucAKdgDDQ" association="_S5ppMG3zEeaRA8X2rSx7Yg"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_S5ppNG3zEeaRA8X2rSx7Yg" name="housekeeping data acquisition" type="_4gvTAAcsEeaCsux1JeAI0w" association="_S5ppMG3zEeaRA8X2rSx7Yg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_KoDlcG3-EeaTJ4aDE3sUoA" name="Send TLCMD" memberEnd="_KoHP0G3-EeaTJ4aDE3sUoA _KoH24G3-EeaTJ4aDE3sUoA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KoGBsG3-EeaTJ4aDE3sUoA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KoGBsW3-EeaTJ4aDE3sUoA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_KoHP0G3-EeaTJ4aDE3sUoA" name="tlcmd reception" type="_FDz5wG3-EeaTJ4aDE3sUoA" association="_KoDlcG3-EeaTJ4aDE3sUoA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_KoH24G3-EeaTJ4aDE3sUoA" name="ttc" type="_dXmXIAJ5EeaCSucAKdgDDQ" association="_KoDlcG3-EeaTJ4aDE3sUoA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_SdZswAGwEeajHqwUCOgvUA" name="ArchitectureDiagram">

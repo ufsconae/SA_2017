@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks">
   <uml:Model xmi:id="_dUEbsAGtEeajHqwUCOgvUA" name="ADCS_RootElement">
-    <packagedElement xmi:type="uml:Model" xmi:id="_hHfqAAGtEeajHqwUCOgvUA" name="ADCS_RequerimentDiagram"/>
-    <packagedElement xmi:type="uml:Model" xmi:id="_qedHcAGvEeajHqwUCOgvUA" name="ADCS_BehaviorDiagram" URI="">
-      <packagedElement xmi:type="uml:Association" xmi:id="_fh2M4HBxEear_bx8eKlYhQ" memberEnd="_fh2z8nBxEear_bx8eKlYhQ _fh2z83BxEear_bx8eKlYhQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fh2z8HBxEear_bx8eKlYhQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fh2z8XBxEear_bx8eKlYhQ" key="nature" value="SysML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_fh2z83BxEear_bx8eKlYhQ" name="system of interest: adc subsystem_1" type="_aUfqIHBkEear_bx8eKlYhQ" association="_fh2M4HBxEear_bx8eKlYhQ"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_sgM5sHBxEear_bx8eKlYhQ" memberEnd="_sgNgwnBxEear_bx8eKlYhQ _sgOH0HBxEear_bx8eKlYhQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sgNgwHBxEear_bx8eKlYhQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sgNgwXBxEear_bx8eKlYhQ" key="nature" value="SysML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_sgOH0HBxEear_bx8eKlYhQ" name="system of interest: adc subsystem_1" type="_aUfqIHBkEear_bx8eKlYhQ" association="_sgM5sHBxEear_bx8eKlYhQ"/>
-      </packagedElement>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Model" xmi:id="_xrc5oAGvEeajHqwUCOgvUA" name="ADCS_StructureDiagram" URI="">
-      <packagedElement xmi:type="uml:Package" xmi:id="_XYRwoHBkEear_bx8eKlYhQ" name="Subsystem Relations" URI="">
+    <packagedElement xmi:type="uml:Model" xmi:id="_hHfqAAGtEeajHqwUCOgvUA" name="ADCS_RequerimentDiagrams"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_qedHcAGvEeajHqwUCOgvUA" name="ADCS_BehaviorDiagrams" URI=""/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_xrc5oAGvEeajHqwUCOgvUA" name="ADCS_StructureDiagrams" URI="">
+      <packagedElement xmi:type="uml:Package" xmi:id="_XYRwoHBkEear_bx8eKlYhQ" name="SubsystemRelations" URI="">
         <packagedElement xmi:type="uml:Class" xmi:id="_aUfqIHBkEear_bx8eKlYhQ" name="System of Interest: ADC Subsystem">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_fh2z8nBxEear_bx8eKlYhQ" name="EPS" type="_YZ6IkHBrEear_bx8eKlYhQ" aggregation="shared" association="_fh2M4HBxEear_bx8eKlYhQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_sgNgwnBxEear_bx8eKlYhQ" name="C&amp;DH" type="_RayFMHBpEear_bx8eKlYhQ" aggregation="shared" association="_sgM5sHBxEear_bx8eKlYhQ"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_RayFMHBpEear_bx8eKlYhQ" name="Interoperating System: C&amp;DH Subsystem"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_YZ6IkHBrEear_bx8eKlYhQ" name="Interoperating System: EPS Subsystem"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_sgM5sHBxEear_bx8eKlYhQ" memberEnd="_sgNgwnBxEear_bx8eKlYhQ _sgOH0HBxEear_bx8eKlYhQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sgNgwHBxEear_bx8eKlYhQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sgNgwXBxEear_bx8eKlYhQ" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_sgOH0HBxEear_bx8eKlYhQ" name="system of interest: adc subsystem_1" type="_aUfqIHBkEear_bx8eKlYhQ" association="_sgM5sHBxEear_bx8eKlYhQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_fh2M4HBxEear_bx8eKlYhQ" memberEnd="_fh2z8nBxEear_bx8eKlYhQ _fh2z83BxEear_bx8eKlYhQ">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fh2z8HBxEear_bx8eKlYhQ" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fh2z8XBxEear_bx8eKlYhQ" key="nature" value="SysML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_fh2z83BxEear_bx8eKlYhQ" name="system of interest: adc subsystem_1" type="_aUfqIHBkEear_bx8eKlYhQ" association="_fh2M4HBxEear_bx8eKlYhQ"/>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dWQNAAGtEeajHqwUCOgvUA">

@@ -34,15 +34,15 @@
         <ownedAttribute xmi:type="uml:Port" xmi:id="_ChKKwAi8Eea7tqq8NETspQ" name="I2C_from_POBC" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_O1RAsAi8Eea7tqq8NETspQ" name="Camera_Link_to_POBC" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_Ub__sAi8Eea7tqq8NETspQ" name="Camera_Link_from_NIR/SWIR" aggregation="composite"/>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_xD04kAi4Eea7tqq8NETspQ" name="TC/TLMY">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_xD04kAi4Eea7tqq8NETspQ" name="C/HK">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_xD1foAi4Eea7tqq8NETspQ" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_VKZ6oAi4Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_xD1foQi4Eea7tqq8NETspQ" partWithPort="_V-eScAckEeafd7GiqJXkMg" role="_qOk4AAi4Eea7tqq8NETspQ"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_ETfLYAi5Eea7tqq8NETspQ" name="TC/TLMY">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_ETfLYAi5Eea7tqq8NETspQ" name="C/HK">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_ETfycAi5Eea7tqq8NETspQ" partWithPort="_9HLBsAcjEeafd7GiqJXkMg" role="_BEccgAi5Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_ETfycQi5Eea7tqq8NETspQ" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_VKZ6oAi4Eea7tqq8NETspQ"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_4TUIoAi5Eea7tqq8NETspQ" name="TC/TMLY/Stored TLMY (TBC)">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_4TUIoAi5Eea7tqq8NETspQ" name="C/HK/Stored TLMY">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_4TUvsAi5Eea7tqq8NETspQ" partWithPort="_QF-0EAcvEeafd7GiqJXkMg" role="_t1dCoAi5Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_4TUvsQi5Eea7tqq8NETspQ" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_g5u6cAi2Eea7tqq8NETspQ"/>
         </ownedConnector>
@@ -54,7 +54,7 @@
           <end xmi:type="uml:ConnectorEnd" xmi:id="_uPpSAAi-Eea7tqq8NETspQ" partWithPort="_8kzTcAcuEeafd7GiqJXkMg" role="_ZJvWoAi7Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_uPpSAQi-Eea7tqq8NETspQ" role="_pkFpMAi7Eea7tqq8NETspQ"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_5j9sAGrAEeax3omSjm9JUA" name="TLMY">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_5j9sAGrAEeax3omSjm9JUA" name="TC/TLMY/HK">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_5kAvUGrAEeax3omSjm9JUA" partWithPort="_scOQwAi3Eea7tqq8NETspQ" role="_yQqUkAi3Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_5kBWYGrAEeax3omSjm9JUA" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_1aS_AAi3Eea7tqq8NETspQ"/>
         </ownedConnector>
@@ -140,7 +140,7 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_bJNQ0wi3Eea7tqq8NETspQ" name="fs" type="_LWXusAJrEeaJW-cSZfJk0g" association="_bJNQ0Ai3Eea7tqq8NETspQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_prsC0Ai3Eea7tqq8NETspQ" name="TLMY" visibility="public" client="_lkcgoAi3Eea7tqq8NETspQ" supplier="_Mxp8cAi3Eea7tqq8NETspQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_prsC0Ai3Eea7tqq8NETspQ" name="HK" visibility="public" client="_lkcgoAi3Eea7tqq8NETspQ" supplier="_Mxp8cAi3Eea7tqq8NETspQ"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_sm-IMAi3Eea7tqq8NETspQ" name="Block10"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_sm_WUAi3Eea7tqq8NETspQ" name="Association11" memberEnd="_scOQwAi3Eea7tqq8NETspQ _sm_WUwi3Eea7tqq8NETspQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sm_WUQi3Eea7tqq8NETspQ" source="org.eclipse.papyrus">
@@ -148,9 +148,9 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_sm_WUwi3Eea7tqq8NETspQ" name="fs" type="_LWXusAJrEeaJW-cSZfJk0g" association="_sm_WUAi3Eea7tqq8NETspQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_dAMyMAi4Eea7tqq8NETspQ" name="TC" client="_VKZ6oAi4Eea7tqq8NETspQ" supplier="_NpuXcAi4Eea7tqq8NETspQ"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_gpBdkAi5Eea7tqq8NETspQ" name="Science data/Stored TLMY (TBC)" client="_PHaoAAi5Eea7tqq8NETspQ" supplier="_S3XEgAi5Eea7tqq8NETspQ"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_gDerEAi6Eea7tqq8NETspQ" name="Science data/Stored TLMY (TBC)" client="_SYZbIAi6Eea7tqq8NETspQ" supplier="_ZjOqIAi6Eea7tqq8NETspQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_dAMyMAi4Eea7tqq8NETspQ" name="C" client="_VKZ6oAi4Eea7tqq8NETspQ" supplier="_NpuXcAi4Eea7tqq8NETspQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_gpBdkAi5Eea7tqq8NETspQ" name="Science data/Stored TLMY" client="_PHaoAAi5Eea7tqq8NETspQ" supplier="_S3XEgAi5Eea7tqq8NETspQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_gDerEAi6Eea7tqq8NETspQ" name="Science data/Stored TLMY " client="_SYZbIAi6Eea7tqq8NETspQ" supplier="_ZjOqIAi6Eea7tqq8NETspQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_f0LRkAMZEeaA6aMLnBNluA" name="FS_UseCases">
       <packagedElement xmi:type="uml:Package" xmi:id="_YtT5YAWGEeaGWcutooOurQ" name="FS">

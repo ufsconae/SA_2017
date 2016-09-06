@@ -144,43 +144,43 @@ publish all data and information
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_JjdyMP_wEeW0M5ET-0aZsw" name="SEC" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="__ViwMP_wEeW0M5ET-0aZsw" name="Control Unit_" type="_vx4CoP2uEeWZ6PYrGLcTxA" aggregation="composite" association="__okZ4P_wEeW0M5ET-0aZsw"/>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_ziWJ8P22EeWZ6PYrGLcTxA" name="Tlmy/Telecommand">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_ziWJ8P22EeWZ6PYrGLcTxA" name="Tlmy/Telecommand (TCP/IP)">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_ziWJ8f22EeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_whxU4P22EeWZ6PYrGLcTxA"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_ziWJ8v22EeWZ6PYrGLcTxA" partWithPort="__ViwMP_wEeW0M5ET-0aZsw" role="_HH218P_xEeW0M5ET-0aZsw"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_DJHOAP24EeWZ6PYrGLcTxA" name="Orbital Products Generation/Orbital product Queries/Adquisition Request-Response">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_DJHOAP24EeWZ6PYrGLcTxA" name="Orbital Products Generation/Orbital product (TCP/IP)">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_DJHOAf24EeWZ6PYrGLcTxA" partWithPort="__ViwMP_wEeW0M5ET-0aZsw" role="_IDewsP_xEeW0M5ET-0aZsw"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_DJHOAv24EeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_9GYPgP23EeWZ6PYrGLcTxA"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_-MSK0P27EeWZ6PYrGLcTxA" name="Tlmy/Telecommands">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_-MSK0P27EeWZ6PYrGLcTxA" name="Tlmy/Telecommands(TCP/IP)">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_-MSK0f27EeWZ6PYrGLcTxA" partWithPort="_9rNxAP2uEeWZ6PYrGLcTxA" role="_9KIKQP27EeWZ6PYrGLcTxA"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_-MSK0v27EeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_3eRM8P22EeWZ6PYrGLcTxA"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_GyNe0P28EeWZ6PYrGLcTxA" name="Science data">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_GyNe0P28EeWZ6PYrGLcTxA" name="Science data (TCP/IP)">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_GyOF4P28EeWZ6PYrGLcTxA" partWithPort="_9rNxAP2uEeWZ6PYrGLcTxA" role="_8En6wP27EeWZ6PYrGLcTxA"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_GyOF4f28EeWZ6PYrGLcTxA" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_ci8ZgP23EeWZ6PYrGLcTxA"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_R14MEP52EeWH8ZFDcq738Q" name="Tlmy/Telecommand">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_R14MEP52EeWH8ZFDcq738Q" name="Tlmy/Telecommand (UHF)">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_R14zIP52EeWH8ZFDcq738Q" role="_NqPO8P2uEeWZ6PYrGLcTxA"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_R14zIf52EeWH8ZFDcq738Q" partWithPort="_9rNxAP2uEeWZ6PYrGLcTxA" role="_QQ81oP52EeWH8ZFDcq738Q"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_StrWwP52EeWH8ZFDcq738Q" name="Science Data/Stored Tlmy (TBC)">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_StrWwP52EeWH8ZFDcq738Q" name="Science Data/Stored Tlmy (FTP)">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_Str90P52EeWH8ZFDcq738Q" role="_GSfocP52EeWH8ZFDcq738Q"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_Str90f52EeWH8ZFDcq738Q" partWithPort="_9rNxAP2uEeWZ6PYrGLcTxA" role="_PfKzYP52EeWH8ZFDcq738Q"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_dzJZ4P53EeWH8ZFDcq738Q" name="Science Products">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_dzJZ4P53EeWH8ZFDcq738Q" name="Science Products (http)">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_dzJZ4f53EeWH8ZFDcq738Q" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_Klf5QP53EeWH8ZFDcq738Q"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_dzJZ4v53EeWH8ZFDcq738Q" role="_T3_YUP53EeWH8ZFDcq738Q"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_eb1KgP53EeWH8ZFDcq738Q" name="Adquisition/Calibration Request">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_eb1KgP53EeWH8ZFDcq738Q" name="Adquisition/Calibration Request (http)">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_eb1xkP53EeWH8ZFDcq738Q" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_HvxpUP53EeWH8ZFDcq738Q"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_eb1xkf53EeWH8ZFDcq738Q" role="_SRZ1AP53EeWH8ZFDcq738Q"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_fhVaAP53EeWH8ZFDcq738Q" name="General Mission Information">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_fhVaAP53EeWH8ZFDcq738Q" name="General Mission Information (http)">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_fhWBEP53EeWH8ZFDcq738Q" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_YUCs4P53EeWH8ZFDcq738Q"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_fhWoIP53EeWH8ZFDcq738Q" role="_ZItEAP53EeWH8ZFDcq738Q"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_8o8pYP53EeWH8ZFDcq738Q" name="Support Request/Response">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_8o8pYP53EeWH8ZFDcq738Q" name="Support Request/Response (http)">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_8o9QcP53EeWH8ZFDcq738Q" partWithPort="_vSy58P2uEeWZ6PYrGLcTxA" role="_5ypKoP53EeWH8ZFDcq738Q"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_8o9Qcf53EeWH8ZFDcq738Q" role="_6h_j8P53EeWH8ZFDcq738Q"/>
         </ownedConnector>
@@ -240,7 +240,7 @@ publish all data and information
           <end xmi:type="uml:ConnectorEnd" xmi:id="_q83sMAM4Eeam46Rh5krVVg" role="_HvxpUP53EeWH8ZFDcq738Q"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_q83sMQM4Eeam46Rh5krVVg" role="_60VwoAM3Eeam46Rh5krVVg"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_rjiqoAM4Eeam46Rh5krVVg" name="Connector7">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_rjiqoAM4Eeam46Rh5krVVg" name="TCP/IP">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_rjiqoQM4Eeam46Rh5krVVg" role="_ci8ZgP23EeWZ6PYrGLcTxA"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_rjiqogM4Eeam46Rh5krVVg" role="_60VwoAM3Eeam46Rh5krVVg"/>
         </ownedConnector>

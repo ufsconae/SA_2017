@@ -1397,18 +1397,17 @@ Normal mode
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_JRUiMG3hEeaRA8X2rSx7Yg" name="Interaction_Telemetry_ADCS">
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_kcy1AG3hEeaRA8X2rSx7Yg" name="CDH" coveredBy="_VL458G3lEeaRA8X2rSx7Yg _wV0fYG4LEeaRA8X2rSx7Yg _wV0fYm4LEeaRA8X2rSx7Yg _wV0fYW4LEeaRA8X2rSx7Yg _m_ZIQG4bEeaQRbPnMaNwgg _WsUwIG4gEeaQRbPnMaNwgg _bFBOsG4gEeaQRbPnMaNwgg _XzTw4G4hEeaQRbPnMaNwgg _tRo6sG4hEeaQRbPnMaNwgg _tRo6sW4hEeaQRbPnMaNwgg _HAKHUG4iEeaQRbPnMaNwgg _iKDFwW4iEeaQRbPnMaNwgg _SoEmoG4XEeaQRbPnMaNwgg _-TQ4YG4QEeaQRbPnMaNwgg _SoEmoW4XEeaQRbPnMaNwgg _-TTUoG4QEeaQRbPnMaNwgg"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_k6ZXAG3hEeaRA8X2rSx7Yg" name="TMyLookUpTable" coveredBy="_VL458W3lEeaRA8X2rSx7Yg _SoEmoG4XEeaQRbPnMaNwgg _-TQ4YG4QEeaQRbPnMaNwgg _SoEmoW4XEeaQRbPnMaNwgg _-TTUoG4QEeaQRbPnMaNwgg"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_lWoAAG3hEeaRA8X2rSx7Yg" name="ADCS" coveredBy="_SoEmoG4XEeaQRbPnMaNwgg _SoEmoW4XEeaQRbPnMaNwgg _-TQ4YG4QEeaQRbPnMaNwgg _-TTUoG4QEeaQRbPnMaNwgg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_kcy1AG3hEeaRA8X2rSx7Yg" name="TmyTask" coveredBy="_VL458G3lEeaRA8X2rSx7Yg _wV0fYG4LEeaRA8X2rSx7Yg _wV0fYm4LEeaRA8X2rSx7Yg _wV0fYW4LEeaRA8X2rSx7Yg _m_ZIQG4bEeaQRbPnMaNwgg _WsUwIG4gEeaQRbPnMaNwgg _bFBOsG4gEeaQRbPnMaNwgg _XzTw4G4hEeaQRbPnMaNwgg _tRo6sG4hEeaQRbPnMaNwgg _tRo6sW4hEeaQRbPnMaNwgg _HAKHUG4iEeaQRbPnMaNwgg _iKDFwW4iEeaQRbPnMaNwgg _SoEmoG4XEeaQRbPnMaNwgg _-TQ4YG4QEeaQRbPnMaNwgg _SoEmoW4XEeaQRbPnMaNwgg _-TTUoG4QEeaQRbPnMaNwgg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_k6ZXAG3hEeaRA8X2rSx7Yg" name="TMyLookUpTable" coveredBy="_VL458W3lEeaRA8X2rSx7Yg _SoEmoG4XEeaQRbPnMaNwgg _-TQ4YG4QEeaQRbPnMaNwgg _SoEmoW4XEeaQRbPnMaNwgg _-TTUoG4QEeaQRbPnMaNwgg _qOXcIG4PEeaQRbPnMaNwgg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_lWoAAG3hEeaRA8X2rSx7Yg" name="ADCS/EPS Task" coveredBy="_SoEmoG4XEeaQRbPnMaNwgg _SoEmoW4XEeaQRbPnMaNwgg _-TQ4YG4QEeaQRbPnMaNwgg _-TTUoG4QEeaQRbPnMaNwgg"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_xhkmMG4eEeaQRbPnMaNwgg" name="BufferWrite" coveredBy="_SoEmoG4XEeaQRbPnMaNwgg _-TQ4YG4QEeaQRbPnMaNwgg _SoEmoW4XEeaQRbPnMaNwgg _-TTUoG4QEeaQRbPnMaNwgg _WsUwIW4gEeaQRbPnMaNwgg"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_ylGfwG4eEeaQRbPnMaNwgg" name="BufferRead" coveredBy="_SoEmoG4XEeaQRbPnMaNwgg _-TQ4YG4QEeaQRbPnMaNwgg _SoEmoW4XEeaQRbPnMaNwgg _-TTUoG4QEeaQRbPnMaNwgg _bFBOsW4gEeaQRbPnMaNwgg"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_tjsJcG4gEeaQRbPnMaNwgg" name="CDH_Storage" coveredBy="_SoEmoG4XEeaQRbPnMaNwgg _SoEmoW4XEeaQRbPnMaNwgg _XzTw4W4hEeaQRbPnMaNwgg"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_u6u04G4gEeaQRbPnMaNwgg" name="TT&amp;C" coveredBy="_SoEmoG4XEeaQRbPnMaNwgg _SoEmoW4XEeaQRbPnMaNwgg _HAKHUW4iEeaQRbPnMaNwgg _iKDs0G4iEeaQRbPnMaNwgg"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VL458W3lEeaRA8X2rSx7Yg" name="MessageRecv" covered="_k6ZXAG3hEeaRA8X2rSx7Yg" message="_VL4S4G3lEeaRA8X2rSx7Yg"/>
-      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_wV0fYW4LEeaRA8X2rSx7Yg" name="ActionExecSpec0" covered="_kcy1AG3hEeaRA8X2rSx7Yg" finish="_wV0fYm4LEeaRA8X2rSx7Yg" start="_wV0fYG4LEeaRA8X2rSx7Yg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_u6u04G4gEeaQRbPnMaNwgg" name="TT&amp;C Task" coveredBy="_SoEmoG4XEeaQRbPnMaNwgg _SoEmoW4XEeaQRbPnMaNwgg _HAKHUW4iEeaQRbPnMaNwgg _iKDs0G4iEeaQRbPnMaNwgg"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VL458G3lEeaRA8X2rSx7Yg" name="MessageSend" covered="_kcy1AG3hEeaRA8X2rSx7Yg" message="_VL4S4G3lEeaRA8X2rSx7Yg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VL458W3lEeaRA8X2rSx7Yg" name="MessageRecv" covered="_k6ZXAG3hEeaRA8X2rSx7Yg" message="_VL4S4G3lEeaRA8X2rSx7Yg"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qOW1EG4PEeaQRbPnMaNwgg" name="MessageSend0" message="_qOU_4G4PEeaQRbPnMaNwgg"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qOXcIG4PEeaQRbPnMaNwgg" name="MessageRecv0" message="_qOU_4G4PEeaQRbPnMaNwgg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qOXcIG4PEeaQRbPnMaNwgg" name="MessageRecv0" covered="_k6ZXAG3hEeaRA8X2rSx7Yg" message="_qOU_4G4PEeaQRbPnMaNwgg"/>
       <fragment xmi:type="uml:CombinedFragment" xmi:id="_SoEmoG4XEeaQRbPnMaNwgg" name="Frecuency 1...n" covered="_lWoAAG3hEeaRA8X2rSx7Yg _xhkmMG4eEeaQRbPnMaNwgg _ylGfwG4eEeaQRbPnMaNwgg _u6u04G4gEeaQRbPnMaNwgg _tjsJcG4gEeaQRbPnMaNwgg _k6ZXAG3hEeaRA8X2rSx7Yg _kcy1AG3hEeaRA8X2rSx7Yg" interactionOperator="loop">
         <operand xmi:type="uml:InteractionOperand" xmi:id="_SoEmoW4XEeaQRbPnMaNwgg" name="InteractionOperand" covered="_lWoAAG3hEeaRA8X2rSx7Yg _xhkmMG4eEeaQRbPnMaNwgg _ylGfwG4eEeaQRbPnMaNwgg _u6u04G4gEeaQRbPnMaNwgg _tjsJcG4gEeaQRbPnMaNwgg _k6ZXAG3hEeaRA8X2rSx7Yg _kcy1AG3hEeaRA8X2rSx7Yg">
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8mRAgG4PEeaQRbPnMaNwgg" name="MessageSend1" message="_8mPyYG4PEeaQRbPnMaNwgg"/>
@@ -1451,15 +1450,16 @@ Normal mode
           </guard>
         </operand>
       </fragment>
-      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_wV0fYm4LEeaRA8X2rSx7Yg" name="ActionExecSpec0Finish" covered="_kcy1AG3hEeaRA8X2rSx7Yg" execution="_wV0fYW4LEeaRA8X2rSx7Yg"/>
+      <fragment xmi:type="uml:ActionExecutionSpecification" xmi:id="_wV0fYW4LEeaRA8X2rSx7Yg" name="ActionExecSpec0" covered="_kcy1AG3hEeaRA8X2rSx7Yg" finish="_wV0fYm4LEeaRA8X2rSx7Yg" start="_wV0fYG4LEeaRA8X2rSx7Yg"/>
       <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_wV0fYG4LEeaRA8X2rSx7Yg" name="ActionExecSpec0Start" covered="_kcy1AG3hEeaRA8X2rSx7Yg" execution="_wV0fYW4LEeaRA8X2rSx7Yg"/>
-      <message xmi:type="uml:Message" xmi:id="_VL4S4G3lEeaRA8X2rSx7Yg" name="geTmyList(ADCS)" receiveEvent="_VL458W3lEeaRA8X2rSx7Yg" sendEvent="_VL458G3lEeaRA8X2rSx7Yg"/>
+      <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_wV0fYm4LEeaRA8X2rSx7Yg" name="ActionExecSpec0Finish" covered="_kcy1AG3hEeaRA8X2rSx7Yg" execution="_wV0fYW4LEeaRA8X2rSx7Yg"/>
+      <message xmi:type="uml:Message" xmi:id="_VL4S4G3lEeaRA8X2rSx7Yg" name="geTmyList(ADCS/EPS)" receiveEvent="_VL458W3lEeaRA8X2rSx7Yg" sendEvent="_VL458G3lEeaRA8X2rSx7Yg"/>
       <message xmi:type="uml:Message" xmi:id="_qOU_4G4PEeaQRbPnMaNwgg" name="split_by_Frecuency()" receiveEvent="_qOXcIG4PEeaQRbPnMaNwgg" sendEvent="_qOW1EG4PEeaQRbPnMaNwgg"/>
-      <message xmi:type="uml:Message" xmi:id="_8mPyYG4PEeaQRbPnMaNwgg" name="FreeRTOS_open( &quot;/I2C0/&quot;, NULL )" receiveEvent="_8mRAgW4PEeaQRbPnMaNwgg" sendEvent="_8mRAgG4PEeaQRbPnMaNwgg"/>
-      <message xmi:type="uml:Message" xmi:id="_Am49UG4QEeaQRbPnMaNwgg" name="Close()" receiveEvent="_Am6LcG4QEeaQRbPnMaNwgg" sendEvent="_Am5kYG4QEeaQRbPnMaNwgg"/>
-      <message xmi:type="uml:Message" xmi:id="_bsqQwG4QEeaQRbPnMaNwgg" name="FreeRTOS_write( xOpenPort, cBuffer, BUFFER_SIZE )" receiveEvent="_bsre4G4QEeaQRbPnMaNwgg" sendEvent="_bsq30G4QEeaQRbPnMaNwgg"/>
-      <message xmi:type="uml:Message" xmi:id="_nCn0sG4WEeaQRbPnMaNwgg" name="FreeRTOS_ioctl(...);" receiveEvent="_nCpp4G4WEeaQRbPnMaNwgg" sendEvent="_nCpC0G4WEeaQRbPnMaNwgg"/>
-      <message xmi:type="uml:Message" xmi:id="_m_YhMG4bEeaQRbPnMaNwgg" name="FreeRTOS_read( xOpenPort, cBuffer, BUFFER_SIZE )" receiveEvent="_m_ZvUG4bEeaQRbPnMaNwgg" sendEvent="_m_ZIQG4bEeaQRbPnMaNwgg"/>
+      <message xmi:type="uml:Message" xmi:id="_8mPyYG4PEeaQRbPnMaNwgg" name="_openPort( &quot;/I2C0/&quot;, NULL )" receiveEvent="_8mRAgW4PEeaQRbPnMaNwgg" sendEvent="_8mRAgG4PEeaQRbPnMaNwgg"/>
+      <message xmi:type="uml:Message" xmi:id="_Am49UG4QEeaQRbPnMaNwgg" name="_closePort()" receiveEvent="_Am6LcG4QEeaQRbPnMaNwgg" sendEvent="_Am5kYG4QEeaQRbPnMaNwgg"/>
+      <message xmi:type="uml:Message" xmi:id="_bsqQwG4QEeaQRbPnMaNwgg" name="_portWrite( openPort, cBuffer, BUFFER_SIZE )" receiveEvent="_bsre4G4QEeaQRbPnMaNwgg" sendEvent="_bsq30G4QEeaQRbPnMaNwgg"/>
+      <message xmi:type="uml:Message" xmi:id="_nCn0sG4WEeaQRbPnMaNwgg" name="_portConfig(...);" receiveEvent="_nCpp4G4WEeaQRbPnMaNwgg" sendEvent="_nCpC0G4WEeaQRbPnMaNwgg"/>
+      <message xmi:type="uml:Message" xmi:id="_m_YhMG4bEeaQRbPnMaNwgg" name="_portRead( openPort, cBuffer, BUFFER_SIZE )" receiveEvent="_m_ZvUG4bEeaQRbPnMaNwgg" sendEvent="_m_ZIQG4bEeaQRbPnMaNwgg"/>
       <message xmi:type="uml:Message" xmi:id="_WsUJEG4gEeaQRbPnMaNwgg" name="SetBuffer()" receiveEvent="_WsUwIW4gEeaQRbPnMaNwgg" sendEvent="_WsUwIG4gEeaQRbPnMaNwgg"/>
       <message xmi:type="uml:Message" xmi:id="_bFAnoG4gEeaQRbPnMaNwgg" name="SetBuffer()" receiveEvent="_bFBOsW4gEeaQRbPnMaNwgg" sendEvent="_bFBOsG4gEeaQRbPnMaNwgg"/>
       <message xmi:type="uml:Message" xmi:id="_XzTJ0G4hEeaQRbPnMaNwgg" name="SaveTmy(TmyFrame)" receiveEvent="_XzTw4W4hEeaQRbPnMaNwgg" sendEvent="_XzTw4G4hEeaQRbPnMaNwgg"/>

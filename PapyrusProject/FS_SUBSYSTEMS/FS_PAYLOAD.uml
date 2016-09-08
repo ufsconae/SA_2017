@@ -1,16 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows">
   <uml:Model xmi:id="__M-24AGtEeajHqwUCOgvUA" name="RootElement">
     <packagedElement xmi:type="uml:Model" xmi:id="_72GVAAI5EeagKebOtQfZOg" name="Requirements"/>
     <packagedElement xmi:type="uml:Model" xmi:id="_-MtnEAI5EeagKebOtQfZOg" name="UseCases"/>
     <packagedElement xmi:type="uml:Model" xmi:id="__Of0MAI5EeagKebOtQfZOg" name="ArchitectueDiagram">
-      <packagedElement xmi:type="uml:Class" xmi:id="_SOf5cHRAEea8nrIsS5Fh4g" name="Payload"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_L1RUQHRFEea8nrIsS5Fh4g" name="S band transmitter"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_PlW6sHRFEea8nrIsS5Fh4g" name="NIR/SWIR Camera"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_UVqoAHRFEea8nrIsS5Fh4g" name="DCS"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_Y9HpYHRHEea8nrIsS5Fh4g" name="CDH"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_dwaZQHRHEea8nrIsS5Fh4g" name="Command manager"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_sScfUHRHEea8nrIsS5Fh4g" name="Block1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_L1RUQHRFEea8nrIsS5Fh4g" name="S band transmitter">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_90rA0HXEEea8nrIsS5Fh4g" name="SPI" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_PlW6sHRFEea8nrIsS5Fh4g" name="NIR/SWIR Camera">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_AB0N0HXFEea8nrIsS5Fh4g" name="Camera Link" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_UVqoAHRFEea8nrIsS5Fh4g" name="DCS">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="__ls5kHXEEea8nrIsS5Fh4g" name="I2C" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Y9HpYHRHEea8nrIsS5Fh4g" name="CDH">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_ueVwAHXEEea8nrIsS5Fh4g" name="I2C" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_NexXoHXEEea8nrIsS5Fh4g" name="Payload Software">
+        <packagedElement xmi:type="uml:Class" xmi:id="_4oiagHXBEea8nrIsS5Fh4g" name="MM Manager">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_9XCCkHXEEea8nrIsS5Fh4g" name="SPI" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_WSx5A3XGEea8nrIsS5Fh4g" name="control modes_1" type="_8cwTAHXBEea8nrIsS5Fh4g" association="_WSx5AHXGEea8nrIsS5Fh4g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_sScfUHRHEea8nrIsS5Fh4g" name="Control Modes">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_U0BcBHXGEea8nrIsS5Fh4g" name="command manager_1" type="_dwaZQHRHEea8nrIsS5Fh4g" association="_U0BcAHXGEea8nrIsS5Fh4g"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VOMPgXXGEea8nrIsS5Fh4g" name="camera manager_1" type="_8cwTAHXBEea8nrIsS5Fh4g" association="_VOLocHXGEea8nrIsS5Fh4g"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_WowJAHXGEea8nrIsS5Fh4g" name="dcs manager_1" type="_AUjrAHXCEea8nrIsS5Fh4g" association="_Wovh8HXGEea8nrIsS5Fh4g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AUjrAHXCEea8nrIsS5Fh4g" name="DCS Manager">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_-SdJAHXEEea8nrIsS5Fh4g" name="I2C" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_WowJAXXGEea8nrIsS5Fh4g" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_Wovh8HXGEea8nrIsS5Fh4g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_8cwTAHXBEea8nrIsS5Fh4g" name="Camera Manager">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VOMPgnXGEea8nrIsS5Fh4g" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_VOLocHXGEea8nrIsS5Fh4g"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ckPQA3XGEea8nrIsS5Fh4g" name="frame grabber_1" type="_pC67EHXCEea8nrIsS5Fh4g" association="_ckPQAHXGEea8nrIsS5Fh4g"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_WSx5BHXGEea8nrIsS5Fh4g" name="mm manager_1" type="_4oiagHXBEea8nrIsS5Fh4g" association="_WSx5AHXGEea8nrIsS5Fh4g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_dwaZQHRHEea8nrIsS5Fh4g" name="Command Manager">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_8uDXAHXEEea8nrIsS5Fh4g" name="I2C" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_U0BcA3XGEea8nrIsS5Fh4g" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_U0BcAHXGEea8nrIsS5Fh4g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_pC67EHXCEea8nrIsS5Fh4g" name="Frame Grabber">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_Ai_oQHXFEea8nrIsS5Fh4g" name="Camera Link" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ckPQBHXGEea8nrIsS5Fh4g" name="camera manager_1" type="_8cwTAHXBEea8nrIsS5Fh4g" association="_ckPQAHXGEea8nrIsS5Fh4g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_Q9qOcHXGEea8nrIsS5Fh4g" name="Camera Data" client="_9XCCkHXEEea8nrIsS5Fh4g" supplier="_90rA0HXEEea8nrIsS5Fh4g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_QNgj4HXGEea8nrIsS5Fh4g" name="CMD" client="_ueVwAHXEEea8nrIsS5Fh4g" supplier="_8uDXAHXEEea8nrIsS5Fh4g"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_TeRKAHXGEea8nrIsS5Fh4g" name="Camera Data" client="_AB0N0HXFEea8nrIsS5Fh4g" supplier="_Ai_oQHXFEea8nrIsS5Fh4g"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_T49h8HXGEea8nrIsS5Fh4g" name="DCS Data" client="__ls5kHXEEea8nrIsS5Fh4g" supplier="_-SdJAHXEEea8nrIsS5Fh4g"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_U0BcAHXGEea8nrIsS5Fh4g" name="CMD" memberEnd="_U0BcA3XGEea8nrIsS5Fh4g _U0BcBHXGEea8nrIsS5Fh4g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U0BcAXXGEea8nrIsS5Fh4g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U0BcAnXGEea8nrIsS5Fh4g" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_VOLocHXGEea8nrIsS5Fh4g" name="CMD" memberEnd="_VOMPgXXGEea8nrIsS5Fh4g _VOMPgnXGEea8nrIsS5Fh4g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VOLocXXGEea8nrIsS5Fh4g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VOMPgHXGEea8nrIsS5Fh4g" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_WSx5AHXGEea8nrIsS5Fh4g" name="CMD/Camera Data" memberEnd="_WSx5A3XGEea8nrIsS5Fh4g _WSx5BHXGEea8nrIsS5Fh4g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WSx5AXXGEea8nrIsS5Fh4g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WSx5AnXGEea8nrIsS5Fh4g" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Wovh8HXGEea8nrIsS5Fh4g" name="CMD" memberEnd="_WowJAHXGEea8nrIsS5Fh4g _WowJAXXGEea8nrIsS5Fh4g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Wovh8XXGEea8nrIsS5Fh4g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Wovh8nXGEea8nrIsS5Fh4g" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ckPQAHXGEea8nrIsS5Fh4g" name="CMD/Camera Data" memberEnd="_ckPQA3XGEea8nrIsS5Fh4g _ckPQBHXGEea8nrIsS5Fh4g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ckPQAXXGEea8nrIsS5Fh4g" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ckPQAnXGEea8nrIsS5Fh4g" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="__OpDwAGtEeajHqwUCOgvUA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__OpDwQGtEeajHqwUCOgvUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -79,11 +141,22 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_neZmMLX8EduFmqQsrNB9lw"/>
     </profileApplication>
   </uml:Model>
-  <Blocks:Block xmi:id="_SOjj0HRAEea8nrIsS5Fh4g" base_Class="_SOf5cHRAEea8nrIsS5Fh4g"/>
   <Blocks:Block xmi:id="_L1R7UHRFEea8nrIsS5Fh4g" base_Class="_L1RUQHRFEea8nrIsS5Fh4g"/>
   <Blocks:Block xmi:id="_PlXhwHRFEea8nrIsS5Fh4g" base_Class="_PlW6sHRFEea8nrIsS5Fh4g"/>
   <Blocks:Block xmi:id="_UVrPEHRFEea8nrIsS5Fh4g" base_Class="_UVqoAHRFEea8nrIsS5Fh4g"/>
   <Blocks:Block xmi:id="_Y9JekHRHEea8nrIsS5Fh4g" base_Class="_Y9HpYHRHEea8nrIsS5Fh4g"/>
   <Blocks:Block xmi:id="_dwbnYHRHEea8nrIsS5Fh4g" base_Class="_dwaZQHRHEea8nrIsS5Fh4g"/>
   <Blocks:Block xmi:id="_sSdtcHRHEea8nrIsS5Fh4g" base_Class="_sScfUHRHEea8nrIsS5Fh4g"/>
+  <Blocks:Block xmi:id="_4oiagXXBEea8nrIsS5Fh4g" base_Class="_4oiagHXBEea8nrIsS5Fh4g"/>
+  <Blocks:Block xmi:id="_8cwTAXXBEea8nrIsS5Fh4g" base_Class="_8cwTAHXBEea8nrIsS5Fh4g"/>
+  <Blocks:Block xmi:id="_AUkSEHXCEea8nrIsS5Fh4g" base_Class="_AUjrAHXCEea8nrIsS5Fh4g"/>
+  <Blocks:Block xmi:id="_pC7iIHXCEea8nrIsS5Fh4g" base_Class="_pC67EHXCEea8nrIsS5Fh4g"/>
+  <PortAndFlows:FlowPort xmi:id="_ueWXEHXEEea8nrIsS5Fh4g" base_Port="_ueVwAHXEEea8nrIsS5Fh4g"/>
+  <PortAndFlows:FlowPort xmi:id="_8uD-EHXEEea8nrIsS5Fh4g" base_Port="_8uDXAHXEEea8nrIsS5Fh4g"/>
+  <PortAndFlows:FlowPort xmi:id="_9XCpoHXEEea8nrIsS5Fh4g" base_Port="_9XCCkHXEEea8nrIsS5Fh4g"/>
+  <PortAndFlows:FlowPort xmi:id="_90rn4HXEEea8nrIsS5Fh4g" base_Port="_90rA0HXEEea8nrIsS5Fh4g"/>
+  <PortAndFlows:FlowPort xmi:id="_-SdwEHXEEea8nrIsS5Fh4g" base_Port="_-SdJAHXEEea8nrIsS5Fh4g"/>
+  <PortAndFlows:FlowPort xmi:id="__ltgoHXEEea8nrIsS5Fh4g" base_Port="__ls5kHXEEea8nrIsS5Fh4g"/>
+  <PortAndFlows:FlowPort xmi:id="_AB0N0XXFEea8nrIsS5Fh4g" base_Port="_AB0N0HXFEea8nrIsS5Fh4g"/>
+  <PortAndFlows:FlowPort xmi:id="_Ai_oQXXFEea8nrIsS5Fh4g" base_Port="_Ai_oQHXFEea8nrIsS5Fh4g"/>
 </xmi:XMI>

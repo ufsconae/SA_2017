@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows">
   <uml:Model xmi:id="_dUEbsAGtEeajHqwUCOgvUA" name="ADCS_RootElement">
     <packagedElement xmi:type="uml:Model" xmi:id="_hHfqAAGtEeajHqwUCOgvUA" name="ADCS_RequerimentDiagrams"/>
     <packagedElement xmi:type="uml:Model" xmi:id="_qedHcAGvEeajHqwUCOgvUA" name="ADCS_BehaviorDiagrams" URI=""/>
@@ -25,17 +25,53 @@
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_QGIx0HUcEeahA6pEsSfe5g" name="ADCSubsystem" URI="">
-        <packagedElement xmi:type="uml:Class" xmi:id="_e5vJAHUcEeahA6pEsSfe5g" name="Housekeeping Processing "/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_3QT00HUoEeahA6pEsSfe5g" name="Communication Module"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_p5ehIHUpEeahA6pEsSfe5g" name="Command Processing"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_-jjjgHUpEeahA6pEsSfe5g" name="ADCS Control Modes"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_UUQPsHUqEeahA6pEsSfe5g" name="Attitude Determination"/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_Y2nnoHUqEeahA6pEsSfe5g" name="Attitude Control "/>
-        <packagedElement xmi:type="uml:Class" xmi:id="_0btlQHUzEeahA6pEsSfe5g" name="Stack Command Execution"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_e5vJAHUcEeahA6pEsSfe5g" name="Housekeeping Processing ">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_owaTIHXgEeaXnqac8Ti9rA" name="flowport1" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_NByy0HXnEeaXnqac8Ti9rA" name="flowport2" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_HASRcHXpEeaXnqac8Ti9rA" name="flowport3" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_nG3zYHXpEeaXnqac8Ti9rA" name="flowport4" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3QT00HUoEeahA6pEsSfe5g" name="Communication Module">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_NQF8QHXhEeaXnqac8Ti9rA" name="flowport1" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_mFC04HXnEeaXnqac8Ti9rA" name="flowport2" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_-qPB8HXnEeaXnqac8Ti9rA" name="flowport3" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_p5ehIHUpEeahA6pEsSfe5g" name="Command Manager">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_MzFzAHXoEeaXnqac8Ti9rA" name="flowport1" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_lBfzkHXvEeaXnqac8Ti9rA" name="flowport2" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_Nb0GQHXwEeaXnqac8Ti9rA" name="flowport3" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-jjjgHUpEeahA6pEsSfe5g" name="ADCS Control Modes">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_kpxz8HXrEeaXnqac8Ti9rA" name="flowport1" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_lZO68HXrEeaXnqac8Ti9rA" name="flowport2" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_C9V5EHXsEeaXnqac8Ti9rA" name="flowport3" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UUQPsHUqEeahA6pEsSfe5g" name="Attitude Determination">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_rkqNUHXpEeaXnqac8Ti9rA" name="flowport1" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_GDy-kHXqEeaXnqac8Ti9rA" name="flowport2" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_fc_mAHXrEeaXnqac8Ti9rA" name="flowport3" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Y2nnoHUqEeahA6pEsSfe5g" name="Attitude Control ">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_41YcgHXpEeaXnqac8Ti9rA" name="flowport1" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_f9QacHXrEeaXnqac8Ti9rA" name="flowport2" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_TrIeUHXnEeaXnqac8Ti9rA" name="HK" client="_NByy0HXnEeaXnqac8Ti9rA" supplier="_mFC04HXnEeaXnqac8Ti9rA"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_zNlYcHXnEeaXnqac8Ti9rA" name="TLMY" client="_NQF8QHXhEeaXnqac8Ti9rA" supplier="_BVc40HUpEeahA6pEsSfe5g"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_PdwpgHXoEeaXnqac8Ti9rA" name="CMD" client="_-qPB8HXnEeaXnqac8Ti9rA" supplier="_MzFzAHXoEeaXnqac8Ti9rA"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_uOO3oHXpEeaXnqac8Ti9rA" name="Measurments/States" client="_nG3zYHXpEeaXnqac8Ti9rA" supplier="_rkqNUHXpEeaXnqac8Ti9rA"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_O8hSwHXqEeaXnqac8Ti9rA" name="Current Behavior " client="_GDy-kHXqEeaXnqac8Ti9rA" supplier="_41YcgHXpEeaXnqac8Ti9rA"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_qozXIHXrEeaXnqac8Ti9rA" name="CMD" client="_kpxz8HXrEeaXnqac8Ti9rA" supplier="_fc_mAHXrEeaXnqac8Ti9rA"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_y70WMHXrEeaXnqac8Ti9rA" name="CMD" client="_lZO68HXrEeaXnqac8Ti9rA" supplier="_f9QacHXrEeaXnqac8Ti9rA"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_EieOYHXtEeaXnqac8Ti9rA" name="CMD" client="_MzFzAHXoEeaXnqac8Ti9rA" supplier="_C9V5EHXsEeaXnqac8Ti9rA"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_pFGL4HXvEeaXnqac8Ti9rA" name="CMD" client="_f9QacHXrEeaXnqac8Ti9rA" supplier="_lBfzkHXvEeaXnqac8Ti9rA"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_PfxiEHXwEeaXnqac8Ti9rA" client="_Nb0GQHXwEeaXnqac8Ti9rA" supplier="_LHT_AHUqEeahA6pEsSfe5g"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_9VZEEHUlEeahA6pEsSfe5g" name="Sensors"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_BVc40HUpEeahA6pEsSfe5g" name="C&amp;DH"/>
       <packagedElement xmi:type="uml:Actor" xmi:id="_LHT_AHUqEeahA6pEsSfe5g" name="Actuators"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_tF0NIHXgEeaXnqac8Ti9rA" name="HK" client="_9VZEEHUlEeahA6pEsSfe5g" supplier="_owaTIHXgEeaXnqac8Ti9rA"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_1F0FYHXnEeaXnqac8Ti9rA" name="CMD" client="_BVc40HUpEeahA6pEsSfe5g" supplier="_NQF8QHXhEeaXnqac8Ti9rA"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_KVqR0HXpEeaXnqac8Ti9rA" name="HK" client="_LHT_AHUqEeahA6pEsSfe5g" supplier="_HASRcHXpEeaXnqac8Ti9rA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dWQNAAGtEeajHqwUCOgvUA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dWRbIAGtEeajHqwUCOgvUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -113,5 +149,22 @@
   <Blocks:Block xmi:id="_-jkKkHUpEeahA6pEsSfe5g" base_Class="_-jjjgHUpEeahA6pEsSfe5g"/>
   <Blocks:Block xmi:id="_UUQ2wHUqEeahA6pEsSfe5g" base_Class="_UUQPsHUqEeahA6pEsSfe5g"/>
   <Blocks:Block xmi:id="_Y2oOsHUqEeahA6pEsSfe5g" base_Class="_Y2nnoHUqEeahA6pEsSfe5g"/>
-  <Blocks:Block xmi:id="_0buMUHUzEeahA6pEsSfe5g" base_Class="_0btlQHUzEeahA6pEsSfe5g"/>
+  <PortAndFlows:FlowPort xmi:id="_owcvYHXgEeaXnqac8Ti9rA" base_Port="_owaTIHXgEeaXnqac8Ti9rA" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_NQGjUHXhEeaXnqac8Ti9rA" base_Port="_NQF8QHXhEeaXnqac8Ti9rA"/>
+  <PortAndFlows:FlowPort xmi:id="_NB0oAHXnEeaXnqac8Ti9rA" base_Port="_NByy0HXnEeaXnqac8Ti9rA" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_mFDb8HXnEeaXnqac8Ti9rA" base_Port="_mFC04HXnEeaXnqac8Ti9rA" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_-qPpAHXnEeaXnqac8Ti9rA" base_Port="_-qPB8HXnEeaXnqac8Ti9rA" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_MzGaEHXoEeaXnqac8Ti9rA" base_Port="_MzFzAHXoEeaXnqac8Ti9rA"/>
+  <PortAndFlows:FlowPort xmi:id="_HATfkHXpEeaXnqac8Ti9rA" base_Port="_HASRcHXpEeaXnqac8Ti9rA" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_nG5okHXpEeaXnqac8Ti9rA" base_Port="_nG3zYHXpEeaXnqac8Ti9rA" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_rkqNUXXpEeaXnqac8Ti9rA" base_Port="_rkqNUHXpEeaXnqac8Ti9rA" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_41a4wHXpEeaXnqac8Ti9rA" base_Port="_41YcgHXpEeaXnqac8Ti9rA" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_GDzloHXqEeaXnqac8Ti9rA" base_Port="_GDy-kHXqEeaXnqac8Ti9rA" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_fdANEHXrEeaXnqac8Ti9rA" base_Port="_fc_mAHXrEeaXnqac8Ti9rA" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_f9RBgHXrEeaXnqac8Ti9rA" base_Port="_f9QacHXrEeaXnqac8Ti9rA"/>
+  <PortAndFlows:FlowPort xmi:id="_kpybAHXrEeaXnqac8Ti9rA" base_Port="_kpxz8HXrEeaXnqac8Ti9rA" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_lZPiAHXrEeaXnqac8Ti9rA" base_Port="_lZO68HXrEeaXnqac8Ti9rA" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_C9WgIHXsEeaXnqac8Ti9rA" base_Port="_C9V5EHXsEeaXnqac8Ti9rA" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_lBhBsHXvEeaXnqac8Ti9rA" base_Port="_lBfzkHXvEeaXnqac8Ti9rA" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_Nb0GQXXwEeaXnqac8Ti9rA" base_Port="_Nb0GQHXwEeaXnqac8Ti9rA" direction="out"/>
 </xmi:XMI>

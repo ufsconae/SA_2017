@@ -24,6 +24,18 @@
           <ownedEnd xmi:type="uml:Property" xmi:id="_fh2z83BxEear_bx8eKlYhQ" name="system of interest: adc subsystem_1" type="_aUfqIHBkEear_bx8eKlYhQ" association="_fh2M4HBxEear_bx8eKlYhQ"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_QGIx0HUcEeahA6pEsSfe5g" name="ADCSubsystem" URI="">
+        <packagedElement xmi:type="uml:Class" xmi:id="_e5vJAHUcEeahA6pEsSfe5g" name="Housekeeping Processing "/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3QT00HUoEeahA6pEsSfe5g" name="Communication Module"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_p5ehIHUpEeahA6pEsSfe5g" name="Command Processing"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-jjjgHUpEeahA6pEsSfe5g" name="ADCS Control Modes"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UUQPsHUqEeahA6pEsSfe5g" name="Attitude Determination"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Y2nnoHUqEeahA6pEsSfe5g" name="Attitude Control "/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_0btlQHUzEeahA6pEsSfe5g" name="Stack Command Execution"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_9VZEEHUlEeahA6pEsSfe5g" name="Sensors"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_BVc40HUpEeahA6pEsSfe5g" name="C&amp;DH"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_LHT_AHUqEeahA6pEsSfe5g" name="Actuators"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dWQNAAGtEeajHqwUCOgvUA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dWRbIAGtEeajHqwUCOgvUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -95,4 +107,11 @@
   <Blocks:Block xmi:id="_aUhfUHBkEear_bx8eKlYhQ" base_Class="_aUfqIHBkEear_bx8eKlYhQ"/>
   <Blocks:Block xmi:id="_Raz6YHBpEear_bx8eKlYhQ" base_Class="_RayFMHBpEear_bx8eKlYhQ"/>
   <Blocks:Block xmi:id="_YZ6voHBrEear_bx8eKlYhQ" base_Class="_YZ6IkHBrEear_bx8eKlYhQ"/>
+  <Blocks:Block xmi:id="_e5wXIHUcEeahA6pEsSfe5g" base_Class="_e5vJAHUcEeahA6pEsSfe5g"/>
+  <Blocks:Block xmi:id="_3QUb4HUoEeahA6pEsSfe5g" base_Class="_3QT00HUoEeahA6pEsSfe5g"/>
+  <Blocks:Block xmi:id="_p5fIMHUpEeahA6pEsSfe5g" base_Class="_p5ehIHUpEeahA6pEsSfe5g"/>
+  <Blocks:Block xmi:id="_-jkKkHUpEeahA6pEsSfe5g" base_Class="_-jjjgHUpEeahA6pEsSfe5g"/>
+  <Blocks:Block xmi:id="_UUQ2wHUqEeahA6pEsSfe5g" base_Class="_UUQPsHUqEeahA6pEsSfe5g"/>
+  <Blocks:Block xmi:id="_Y2oOsHUqEeahA6pEsSfe5g" base_Class="_Y2nnoHUqEeahA6pEsSfe5g"/>
+  <Blocks:Block xmi:id="_0buMUHUzEeahA6pEsSfe5g" base_Class="_0btlQHUzEeahA6pEsSfe5g"/>
 </xmi:XMI>

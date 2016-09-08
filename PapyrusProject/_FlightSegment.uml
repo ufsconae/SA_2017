@@ -28,21 +28,15 @@
         <ownedAttribute xmi:type="uml:Port" xmi:id="_ZjOqIAi6Eea7tqq8NETspQ" name="SBAND_downlink" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_mDBLoAi6Eea7tqq8NETspQ" name="UHF_link" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_oPK6IAi6Eea7tqq8NETspQ" name="UHF_link" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_ZJvWoAi7Eea7tqq8NETspQ" name="Port1" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_pkFpMAi7Eea7tqq8NETspQ" name="UHF_link" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_87gw4Ai7Eea7tqq8NETspQ" name="I2C_to_DCS" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_ChKKwAi8Eea7tqq8NETspQ" name="I2C_from_POBC" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_O1RAsAi8Eea7tqq8NETspQ" name="Camera_Link_to_POBC" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_Ub__sAi8Eea7tqq8NETspQ" name="Camera_Link_from_NIR/SWIR" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_-L-18HW2Eea8nrIsS5Fh4g" name="GPIO" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_-swAsHW2Eea8nrIsS5Fh4g" name="Port3" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_JsTegHW3Eea8nrIsS5Fh4g" name="Port4" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_Wwo3gHW3Eea8nrIsS5Fh4g" name="Port5" aggregation="composite"/>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_xD04kAi4Eea7tqq8NETspQ" name="CMD/HK">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_xD1foAi4Eea7tqq8NETspQ" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_VKZ6oAi4Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_xD1foQi4Eea7tqq8NETspQ" partWithPort="_V-eScAckEeafd7GiqJXkMg" role="_qOk4AAi4Eea7tqq8NETspQ"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_4TUIoAi5Eea7tqq8NETspQ" name="CMD/TLMY (TBD)">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_4TUIoAi5Eea7tqq8NETspQ" name="CMD/TLMY (TBD)/HK">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_4TUvsAi5Eea7tqq8NETspQ" partWithPort="_QF-0EAcvEeafd7GiqJXkMg" role="_t1dCoAi5Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_4TUvsQi5Eea7tqq8NETspQ" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_g5u6cAi2Eea7tqq8NETspQ"/>
         </ownedConnector>
@@ -50,25 +44,9 @@
           <end xmi:type="uml:ConnectorEnd" xmi:id="_qDmsMAi6Eea7tqq8NETspQ" partWithPort="_scOQwAi3Eea7tqq8NETspQ" role="_mDBLoAi6Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_qDmsMQi6Eea7tqq8NETspQ" role="_oPK6IAi6Eea7tqq8NETspQ"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_uPoq8Ai-Eea7tqq8NETspQ" name="DCS data">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_uPpSAAi-Eea7tqq8NETspQ" partWithPort="_8kzTcAcuEeafd7GiqJXkMg" role="_ZJvWoAi7Eea7tqq8NETspQ"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_uPpSAQi-Eea7tqq8NETspQ" role="_pkFpMAi7Eea7tqq8NETspQ"/>
-        </ownedConnector>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_5j9sAGrAEeax3omSjm9JUA" name="TC/TLMY/HK">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_5kAvUGrAEeax3omSjm9JUA" partWithPort="_scOQwAi3Eea7tqq8NETspQ" role="_yQqUkAi3Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_5kBWYGrAEeax3omSjm9JUA" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_1aS_AAi3Eea7tqq8NETspQ"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_DLI3kHW3Eea8nrIsS5Fh4g" name="HK (TBD)">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_DLKswHW3Eea8nrIsS5Fh4g" partWithPort="_KUWzsAcvEeafd7GiqJXkMg" role="_-swAsHW2Eea8nrIsS5Fh4g"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_DLKswXW3Eea8nrIsS5Fh4g" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_-L-18HW2Eea8nrIsS5Fh4g"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_KU1eIHW3Eea8nrIsS5Fh4g" name="HK">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_KU2FMHW3Eea8nrIsS5Fh4g" partWithPort="_QF-0EAcvEeafd7GiqJXkMg" role="_JsTegHW3Eea8nrIsS5Fh4g"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_KU2FMXW3Eea8nrIsS5Fh4g" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_-L-18HW2Eea8nrIsS5Fh4g"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_UO7d0HW5Eea8nrIsS5Fh4g" name="HK">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_UO7d0XW5Eea8nrIsS5Fh4g" partWithPort="_8kzTcAcuEeafd7GiqJXkMg" role="_Wwo3gHW3Eea8nrIsS5Fh4g"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_UO7d0nW5Eea8nrIsS5Fh4g" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_-L-18HW2Eea8nrIsS5Fh4g"/>
         </ownedConnector>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_KgTNoHW_Eea8nrIsS5Fh4g" name="CMD/HK">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_KgT0sHW_Eea8nrIsS5Fh4g" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_VKZ6oAi4Eea7tqq8NETspQ"/>
@@ -165,7 +143,7 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_sm_WUwi3Eea7tqq8NETspQ" name="fs" type="_LWXusAJrEeaJW-cSZfJk0g" association="_sm_WUAi3Eea7tqq8NETspQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_dAMyMAi4Eea7tqq8NETspQ" name="CMD" client="_VKZ6oAi4Eea7tqq8NETspQ" supplier="_NpuXcAi4Eea7tqq8NETspQ"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_gpBdkAi5Eea7tqq8NETspQ" name="Camera data/Stored TLMY (TBD)" client="_PHaoAAi5Eea7tqq8NETspQ" supplier="_S3XEgAi5Eea7tqq8NETspQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_gpBdkAi5Eea7tqq8NETspQ" name="Science data/Stored TLMY (TBD)" client="_PHaoAAi5Eea7tqq8NETspQ" supplier="_S3XEgAi5Eea7tqq8NETspQ"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_gDerEAi6Eea7tqq8NETspQ" name="Camera data/Stored TLMY " client="_SYZbIAi6Eea7tqq8NETspQ" supplier="_ZjOqIAi6Eea7tqq8NETspQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_f0LRkAMZEeaA6aMLnBNluA" name="FS_UseCases">
@@ -294,12 +272,5 @@
   <Blocks:NestedConnectorEnd xmi:id="_4TUvsgi5Eea7tqq8NETspQ" propertyPath="_MmWg8AcuEeafd7GiqJXkMg _QF-0EAcvEeafd7GiqJXkMg" base_ConnectorEnd="_4TUvsAi5Eea7tqq8NETspQ"/>
   <Blocks:NestedConnectorEnd xmi:id="_4TVWwAi5Eea7tqq8NETspQ" propertyPath="_g0NMQAcsEeafd7GiqJXkMg _5HFa8AckEeafd7GiqJXkMg" base_ConnectorEnd="_4TUvsQi5Eea7tqq8NETspQ"/>
   <Blocks:NestedConnectorEnd xmi:id="_qDmsMgi6Eea7tqq8NETspQ" propertyPath="_g0NMQAcsEeafd7GiqJXkMg _g428YAckEeafd7GiqJXkMg _scOQwAi3Eea7tqq8NETspQ" base_ConnectorEnd="_qDmsMAi6Eea7tqq8NETspQ"/>
-  <Blocks:NestedConnectorEnd xmi:id="_uPpSAgi-Eea7tqq8NETspQ" propertyPath="_MmWg8AcuEeafd7GiqJXkMg _8kzTcAcuEeafd7GiqJXkMg" base_ConnectorEnd="_uPpSAAi-Eea7tqq8NETspQ"/>
   <Blocks:NestedConnectorEnd xmi:id="_5kB9cGrAEeax3omSjm9JUA" propertyPath="_g428YAckEeafd7GiqJXkMg _scOQwAi3Eea7tqq8NETspQ" base_ConnectorEnd="_5kAvUGrAEeax3omSjm9JUA"/>
-  <Blocks:NestedConnectorEnd xmi:id="_DLLT0HW3Eea8nrIsS5Fh4g" propertyPath="_MmWg8AcuEeafd7GiqJXkMg _KUWzsAcvEeafd7GiqJXkMg" base_ConnectorEnd="_DLKswHW3Eea8nrIsS5Fh4g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_DLLT0XW3Eea8nrIsS5Fh4g" propertyPath="_g0NMQAcsEeafd7GiqJXkMg _5HFa8AckEeafd7GiqJXkMg" base_ConnectorEnd="_DLKswXW3Eea8nrIsS5Fh4g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_KU2FMnW3Eea8nrIsS5Fh4g" propertyPath="_MmWg8AcuEeafd7GiqJXkMg _QF-0EAcvEeafd7GiqJXkMg" base_ConnectorEnd="_KU2FMHW3Eea8nrIsS5Fh4g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_KU2FM3W3Eea8nrIsS5Fh4g" propertyPath="_g0NMQAcsEeafd7GiqJXkMg _5HFa8AckEeafd7GiqJXkMg" base_ConnectorEnd="_KU2FMXW3Eea8nrIsS5Fh4g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_UO7d03W5Eea8nrIsS5Fh4g" propertyPath="_MmWg8AcuEeafd7GiqJXkMg _8kzTcAcuEeafd7GiqJXkMg" base_ConnectorEnd="_UO7d0XW5Eea8nrIsS5Fh4g"/>
-  <Blocks:NestedConnectorEnd xmi:id="_UO8E4HW5Eea8nrIsS5Fh4g" propertyPath="_g0NMQAcsEeafd7GiqJXkMg _5HFa8AckEeafd7GiqJXkMg" base_ConnectorEnd="_UO7d0nW5Eea8nrIsS5Fh4g"/>
 </xmi:XMI>

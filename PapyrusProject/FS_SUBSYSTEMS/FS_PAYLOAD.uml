@@ -24,9 +24,12 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_sScfUHRHEea8nrIsS5Fh4g" name="Control Modes">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_XcVXsHXqEeaJ0ugIRWJBdw" name="camera manager_1" type="_8cwTAHXBEea8nrIsS5Fh4g" association="_XcTigHXqEeaJ0ugIRWJBdw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_YMLgQnXqEeaJ0ugIRWJBdw" name="dcs manager_1" type="_AUjrAHXCEea8nrIsS5Fh4g" association="_YMKSIHXqEeaJ0ugIRWJBdw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5AZDknXyEeaJ0ugIRWJBdw" name="mm manager_1" type="_4oiagHXBEea8nrIsS5Fh4g" association="_5AYcgHXyEeaJ0ugIRWJBdw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_IWXSknX0EeaJ0ugIRWJBdw" name="process hk pobc_1" type="_DSrywHXzEeaJ0ugIRWJBdw" association="_IWWrgHX0EeaJ0ugIRWJBdw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_AUjrAHXCEea8nrIsS5Fh4g" name="DCS Manager">
           <ownedAttribute xmi:type="uml:Port" xmi:id="_y3eowHXrEeaJ0ugIRWJBdw" name="I2C" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_noNPwnXyEeaJ0ugIRWJBdw" name="mm manager_1" type="_4oiagHXBEea8nrIsS5Fh4g" association="_noMosHXyEeaJ0ugIRWJBdw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_8cwTAHXBEea8nrIsS5Fh4g" name="Camera Manager">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ckPQA3XGEea8nrIsS5Fh4g" name="frame grabber_1" type="_pC67EHXCEea8nrIsS5Fh4g" association="_ckPQAHXGEea8nrIsS5Fh4g"/>
@@ -40,13 +43,17 @@
           <ownedAttribute xmi:type="uml:Port" xmi:id="_Ai_oQHXFEea8nrIsS5Fh4g" name="Camera Link" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ckPQBHXGEea8nrIsS5Fh4g" name="camera manager_1" type="_8cwTAHXBEea8nrIsS5Fh4g" association="_ckPQAHXGEea8nrIsS5Fh4g"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Usage" xmi:id="_Q9qOcHXGEea8nrIsS5Fh4g" name="Camera Data" client="_9XCCkHXEEea8nrIsS5Fh4g" supplier="_90rA0HXEEea8nrIsS5Fh4g"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_Q9qOcHXGEea8nrIsS5Fh4g" name="Science Data" client="_9XCCkHXEEea8nrIsS5Fh4g" supplier="_90rA0HXEEea8nrIsS5Fh4g"/>
         <packagedElement xmi:type="uml:Usage" xmi:id="_-21BkHXpEeaJ0ugIRWJBdw" name="CMD" client="_y3eowHXrEeaJ0ugIRWJBdw" supplier="_2RJTQHXrEeaJ0ugIRWJBdw"/>
         <packagedElement xmi:type="uml:Usage" xmi:id="__ivFUHXpEeaJ0ugIRWJBdw" name="CMD" client="_Ai_oQHXFEea8nrIsS5Fh4g" supplier="_AB0N0HXFEea8nrIsS5Fh4g"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DSrywHXzEeaJ0ugIRWJBdw" name="Process HK">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_KF7ywHX0EeaJ0ugIRWJBdw" name="I2C" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_W_5u0HX0EeaJ0ugIRWJBdw" name="HK" client="_KF7ywHX0EeaJ0ugIRWJBdw" supplier="_ueVwAHXEEea8nrIsS5Fh4g"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_QNgj4HXGEea8nrIsS5Fh4g" name="CMD" client="_ueVwAHXEEea8nrIsS5Fh4g" supplier="_8uDXAHXEEea8nrIsS5Fh4g"/>
       <packagedElement xmi:type="uml:Usage" xmi:id="_TeRKAHXGEea8nrIsS5Fh4g" name="Camera Data" client="_AB0N0HXFEea8nrIsS5Fh4g" supplier="_Ai_oQHXFEea8nrIsS5Fh4g"/>
-      <packagedElement xmi:type="uml:Association" xmi:id="_WSx5AHXGEea8nrIsS5Fh4g" name="CMD/Camera Data" memberEnd="_WSx5A3XGEea8nrIsS5Fh4g _WSx5BHXGEea8nrIsS5Fh4g">
+      <packagedElement xmi:type="uml:Association" xmi:id="_WSx5AHXGEea8nrIsS5Fh4g" name="Camera Data" memberEnd="_WSx5A3XGEea8nrIsS5Fh4g _WSx5BHXGEea8nrIsS5Fh4g">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WSx5AXXGEea8nrIsS5Fh4g" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WSx5AnXGEea8nrIsS5Fh4g" key="nature" value="SysML_Nature"/>
         </eAnnotations>
@@ -73,6 +80,25 @@
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Y1VyAnXqEeaJ0ugIRWJBdw" key="nature" value="SysML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_Y1VyBHXqEeaJ0ugIRWJBdw" name="command manager_1" type="_dwaZQHRHEea8nrIsS5Fh4g" association="_Y1VyAHXqEeaJ0ugIRWJBdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_iHQIoHXyEeaJ0ugIRWJBdw" name="CDS Data" client="_2RJTQHXrEeaJ0ugIRWJBdw" supplier="_y3eowHXrEeaJ0ugIRWJBdw"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_noMosHXyEeaJ0ugIRWJBdw" name="DCS Data" memberEnd="_noNPwnXyEeaJ0ugIRWJBdw _noN20HXyEeaJ0ugIRWJBdw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_noNPwHXyEeaJ0ugIRWJBdw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_noNPwXXyEeaJ0ugIRWJBdw" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_noN20HXyEeaJ0ugIRWJBdw" name="dcs manager_1" type="_AUjrAHXCEea8nrIsS5Fh4g" association="_noMosHXyEeaJ0ugIRWJBdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_5AYcgHXyEeaJ0ugIRWJBdw" name="CMD" memberEnd="_5AZDknXyEeaJ0ugIRWJBdw _5AZDk3XyEeaJ0ugIRWJBdw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5AZDkHXyEeaJ0ugIRWJBdw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5AZDkXXyEeaJ0ugIRWJBdw" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_5AZDk3XyEeaJ0ugIRWJBdw" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_5AYcgHXyEeaJ0ugIRWJBdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_IWWrgHX0EeaJ0ugIRWJBdw" name="CMD" memberEnd="_IWXSknX0EeaJ0ugIRWJBdw _IWXSk3X0EeaJ0ugIRWJBdw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IWXSkHX0EeaJ0ugIRWJBdw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IWXSkXX0EeaJ0ugIRWJBdw" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_IWXSk3X0EeaJ0ugIRWJBdw" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_IWWrgHX0EeaJ0ugIRWJBdw"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="__OpDwAGtEeajHqwUCOgvUA">
@@ -160,4 +186,6 @@
   <PortAndFlows:FlowPort xmi:id="_Ai_oQXXFEea8nrIsS5Fh4g" base_Port="_Ai_oQHXFEea8nrIsS5Fh4g" direction="in"/>
   <PortAndFlows:FlowPort xmi:id="_y3gd8HXrEeaJ0ugIRWJBdw" base_Port="_y3eowHXrEeaJ0ugIRWJBdw" direction="out"/>
   <PortAndFlows:FlowPort xmi:id="_2RJ6UHXrEeaJ0ugIRWJBdw" base_Port="_2RJTQHXrEeaJ0ugIRWJBdw" direction="in"/>
+  <Blocks:Block xmi:id="_DStA4HXzEeaJ0ugIRWJBdw" base_Class="_DSrywHXzEeaJ0ugIRWJBdw"/>
+  <PortAndFlows:FlowPort xmi:id="_KF7ywXX0EeaJ0ugIRWJBdw" base_Port="_KF7ywHX0EeaJ0ugIRWJBdw" direction="out"/>
 </xmi:XMI>

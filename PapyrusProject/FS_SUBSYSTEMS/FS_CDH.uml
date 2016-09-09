@@ -1696,6 +1696,38 @@ Normal mode
       <ownedEnd xmi:type="uml:Property" xmi:id="_RkSBVHa9EeaCaKWk3pkMSw" name="block6" type="_Ku420Ha9EeaCaKWk3pkMSw" association="_RkSBUXa9EeaCaKWk3pkMSw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_TeMJQHa9EeaCaKWk3pkMSw" name="Actor3"/>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_PzMzUHa_EeaCaKWk3pkMSw" name="Seq_diagram_Frequency_Telemetry">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_Z5UHsHa_EeaCaKWk3pkMSw" name="GroundSegment" coveredBy="_p2G7kHa_EeaCaKWk3pkMSw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_aYmEsHa_EeaCaKWk3pkMSw" name="Task_Telecomand" coveredBy="_p2G7kXa_EeaCaKWk3pkMSw _uy93IHa_EeaCaKWk3pkMSw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_as45sHa_EeaCaKWk3pkMSw" name="Table_Freq" coveredBy="_uy-eMHa_EeaCaKWk3pkMSw _CnqJoHbAEeaCaKWk3pkMSw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_9HfssHa_EeaCaKWk3pkMSw" name="Task_Hk_i" coveredBy="_CnpikHbAEeaCaKWk3pkMSw _UDcrEHbAEeaCaKWk3pkMSw _XqpbQHbAEeaCaKWk3pkMSw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_-aTYYHa_EeaCaKWk3pkMSw" name="Subsystem_i" coveredBy="_UDdSIHbAEeaCaKWk3pkMSw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_RebwoHbAEeaCaKWk3pkMSw" name="BufferHk" coveredBy="_rFmYEHbAEeaCaKWk3pkMSw _rFm_IHbAEeaCaKWk3pkMSw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_p2G7kHa_EeaCaKWk3pkMSw" name="MessageSend" covered="_Z5UHsHa_EeaCaKWk3pkMSw" message="_p2GUgHa_EeaCaKWk3pkMSw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_p2G7kXa_EeaCaKWk3pkMSw" name="MessageRecv" covered="_aYmEsHa_EeaCaKWk3pkMSw" message="_p2GUgHa_EeaCaKWk3pkMSw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uy93IHa_EeaCaKWk3pkMSw" name="MessageSend0" covered="_aYmEsHa_EeaCaKWk3pkMSw" message="_uy8pAHa_EeaCaKWk3pkMSw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uy-eMHa_EeaCaKWk3pkMSw" name="MessageRecv0" covered="_as45sHa_EeaCaKWk3pkMSw" message="_uy8pAHa_EeaCaKWk3pkMSw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_CnpikHbAEeaCaKWk3pkMSw" name="MessageSend1" covered="_9HfssHa_EeaCaKWk3pkMSw" message="_CnoUcHbAEeaCaKWk3pkMSw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_CnqJoHbAEeaCaKWk3pkMSw" name="MessageRecv1" covered="_as45sHa_EeaCaKWk3pkMSw" message="_CnoUcHbAEeaCaKWk3pkMSw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UDcrEHbAEeaCaKWk3pkMSw" name="MessageSend2" covered="_9HfssHa_EeaCaKWk3pkMSw" message="_UDbc8HbAEeaCaKWk3pkMSw"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UDdSIHbAEeaCaKWk3pkMSw" name="MessageRecv2" covered="_-aTYYHa_EeaCaKWk3pkMSw" message="_UDbc8HbAEeaCaKWk3pkMSw"/>
+      <fragment xmi:type="uml:CombinedFragment" xmi:id="_rFmYEHbAEeaCaKWk3pkMSw" covered="_RebwoHbAEeaCaKWk3pkMSw" interactionOperator="critical">
+        <operand xmi:type="uml:InteractionOperand" xmi:id="_rFm_IHbAEeaCaKWk3pkMSw" name="InteractionOperand" covered="_RebwoHbAEeaCaKWk3pkMSw">
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XqrQcHbAEeaCaKWk3pkMSw" name="MessageRecv3" message="_Xqo0MHbAEeaCaKWk3pkMSw"/>
+          <guard xmi:type="uml:InteractionConstraint" xmi:id="_rFnmMHbAEeaCaKWk3pkMSw">
+            <specification xmi:type="uml:LiteralString" xmi:id="_rFnmMXbAEeaCaKWk3pkMSw" value="undefined"/>
+            <maxint xmi:type="uml:LiteralInteger" xmi:id="_rFnmM3bAEeaCaKWk3pkMSw" value="1"/>
+            <minint xmi:type="uml:LiteralInteger" xmi:id="_rFnmMnbAEeaCaKWk3pkMSw"/>
+          </guard>
+        </operand>
+      </fragment>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XqpbQHbAEeaCaKWk3pkMSw" name="MessageSend3" covered="_9HfssHa_EeaCaKWk3pkMSw" message="_Xqo0MHbAEeaCaKWk3pkMSw"/>
+      <message xmi:type="uml:Message" xmi:id="_p2GUgHa_EeaCaKWk3pkMSw" name="TelecommadChangeFreqArrived()" receiveEvent="_p2G7kXa_EeaCaKWk3pkMSw" sendEvent="_p2G7kHa_EeaCaKWk3pkMSw"/>
+      <message xmi:type="uml:Message" xmi:id="_uy8pAHa_EeaCaKWk3pkMSw" name="Update()" receiveEvent="_uy-eMHa_EeaCaKWk3pkMSw" sendEvent="_uy93IHa_EeaCaKWk3pkMSw"/>
+      <message xmi:type="uml:Message" xmi:id="_CnoUcHbAEeaCaKWk3pkMSw" name="ReadFreq(FreqSubsystem)" receiveEvent="_CnqJoHbAEeaCaKWk3pkMSw" sendEvent="_CnpikHbAEeaCaKWk3pkMSw"/>
+      <message xmi:type="uml:Message" xmi:id="_UDbc8HbAEeaCaKWk3pkMSw" name="Get_Hk(&amp;dataSubystem)" receiveEvent="_UDdSIHbAEeaCaKWk3pkMSw" sendEvent="_UDcrEHbAEeaCaKWk3pkMSw"/>
+      <message xmi:type="uml:Message" xmi:id="_Xqo0MHbAEeaCaKWk3pkMSw" name="Build&amp;Write_dataFrame(dataSubsystem)" receiveEvent="_XqrQcHbAEeaCaKWk3pkMSw" sendEvent="_XqpbQHbAEeaCaKWk3pkMSw"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sKAVMAGtEeajHqwUCOgvUA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sKAVMQGtEeajHqwUCOgvUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>

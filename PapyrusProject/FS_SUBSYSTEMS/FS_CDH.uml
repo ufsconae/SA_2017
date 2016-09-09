@@ -1617,6 +1617,85 @@ Normal mode
       <message xmi:type="uml:Message" xmi:id="_r_W9gHazEeaCaKWk3pkMSw" name="Send(Frame)" receiveEvent="_r_YysHazEeaCaKWk3pkMSw" sendEvent="_r_YLoHazEeaCaKWk3pkMSw"/>
       <message xmi:type="uml:Message" xmi:id="_3mBeoHazEeaCaKWk3pkMSw" name="Send(Frame)" receiveEvent="_3mCswHazEeaCaKWk3pkMSw" sendEvent="_3mCFsHazEeaCaKWk3pkMSw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yZk40Ha8EeaCaKWk3pkMSw" name="Internal Block Diagram -Hk&amp; Telemetry">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_DnPesHa9EeaCaKWk3pkMSw" name="MM-Payload" type="_DzlRkHa9EeaCaKWk3pkMSw" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Kk2KAHa9EeaCaKWk3pkMSw" name="part1" type="_Ku420Ha9EeaCaKWk3pkMSw" aggregation="composite" association="_Ku5d4Ha9EeaCaKWk3pkMSw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_OGRCUHa9EeaCaKWk3pkMSw" name="TT&amp;C-UHF" type="_OPSbcHa9EeaCaKWk3pkMSw" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TUjFEHa9EeaCaKWk3pkMSw" name="Subsystem: i:1...n" type="_TeMJQHa9EeaCaKWk3pkMSw" aggregation="composite"/>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_YvHa4Ha-EeaCaKWk3pkMSw">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_YvHa4Xa-EeaCaKWk3pkMSw" role="_RbQBIHa9EeaCaKWk3pkMSw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_YvHa4na-EeaCaKWk3pkMSw" role="_TUjFEHa9EeaCaKWk3pkMSw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_cFjLMHa-EeaCaKWk3pkMSw">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_cFjyQHa-EeaCaKWk3pkMSw" role="_DnPesHa9EeaCaKWk3pkMSw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_cFkZUHa-EeaCaKWk3pkMSw" partWithPort="_L10CoHa9EeaCaKWk3pkMSw" role="_Gbn1YHa-EeaCaKWk3pkMSw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_focqMHa-EeaCaKWk3pkMSw">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_fodRQHa-EeaCaKWk3pkMSw" role="_OGRCUHa9EeaCaKWk3pkMSw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_fodRQXa-EeaCaKWk3pkMSw" partWithPort="_L10CoHa9EeaCaKWk3pkMSw" role="_Gbn1YHa-EeaCaKWk3pkMSw"/>
+      </ownedConnector>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_85WqYHa8EeaCaKWk3pkMSw" name="Block2"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_-l-kQHa8EeaCaKWk3pkMSw" name="Block3"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="__xAM8Ha8EeaCaKWk3pkMSw" name="Block4"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_AqlgUHa9EeaCaKWk3pkMSw" name="Block5"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_DzlRkHa9EeaCaKWk3pkMSw" name="Actor1"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Ku420Ha9EeaCaKWk3pkMSw" name="Block6">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_L10CoHa9EeaCaKWk3pkMSw" name="Task_Frame_Tmy" type="_MBMMMHa9EeaCaKWk3pkMSw" aggregation="composite" association="_MBMzQHa9EeaCaKWk3pkMSw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_M2xJUHa9EeaCaKWk3pkMSw" name="Buffer_HK" type="_NA58wHa9EeaCaKWk3pkMSw" aggregation="composite" association="_NA6j0Xa9EeaCaKWk3pkMSw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm1hoHa9EeaCaKWk3pkMSw" name="Buffer_Frequency" type="_Qw7RwHa9EeaCaKWk3pkMSw" aggregation="composite" association="_Qw740Ha9EeaCaKWk3pkMSw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_RbQBIHa9EeaCaKWk3pkMSw" name="Task_Hk: i:1...n" type="_RkRaQHa9EeaCaKWk3pkMSw" aggregation="composite" association="_RkSBUXa9EeaCaKWk3pkMSw"/>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_WzQLIHa-EeaCaKWk3pkMSw">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_WzQyMHa-EeaCaKWk3pkMSw" role="_L10CoHa9EeaCaKWk3pkMSw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_WzQyMXa-EeaCaKWk3pkMSw" role="_M2xJUHa9EeaCaKWk3pkMSw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_Z_docHa-EeaCaKWk3pkMSw">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_Z_docXa-EeaCaKWk3pkMSw" role="_M2xJUHa9EeaCaKWk3pkMSw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_Z_docna-EeaCaKWk3pkMSw" role="_RbQBIHa9EeaCaKWk3pkMSw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_bSO34Ha-EeaCaKWk3pkMSw">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_bSPe8Ha-EeaCaKWk3pkMSw" role="_RbQBIHa9EeaCaKWk3pkMSw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_bSPe8Xa-EeaCaKWk3pkMSw" role="_Qm1hoHa9EeaCaKWk3pkMSw"/>
+      </ownedConnector>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Ku5d4Ha9EeaCaKWk3pkMSw" name="Association1" memberEnd="_Kk2KAHa9EeaCaKWk3pkMSw _Ku5d43a9EeaCaKWk3pkMSw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ku5d4Xa9EeaCaKWk3pkMSw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ku5d4na9EeaCaKWk3pkMSw" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ku5d43a9EeaCaKWk3pkMSw" name="internal block diagram -hk&amp; telemetry" type="_yZk40Ha8EeaCaKWk3pkMSw" association="_Ku5d4Ha9EeaCaKWk3pkMSw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_MBMMMHa9EeaCaKWk3pkMSw" name="Block7">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_Gbn1YHa-EeaCaKWk3pkMSw" name="i2c" aggregation="composite"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MBMzQHa9EeaCaKWk3pkMSw" name="Association2" memberEnd="_L10CoHa9EeaCaKWk3pkMSw _MBMzQ3a9EeaCaKWk3pkMSw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MBMzQXa9EeaCaKWk3pkMSw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MBMzQna9EeaCaKWk3pkMSw" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_MBMzQ3a9EeaCaKWk3pkMSw" name="block6" type="_Ku420Ha9EeaCaKWk3pkMSw" association="_MBMzQHa9EeaCaKWk3pkMSw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_NA58wHa9EeaCaKWk3pkMSw" name="Block8"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NA6j0Xa9EeaCaKWk3pkMSw" name="Association3" memberEnd="_M2xJUHa9EeaCaKWk3pkMSw _NA6j1Ha9EeaCaKWk3pkMSw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NA6j0na9EeaCaKWk3pkMSw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NA6j03a9EeaCaKWk3pkMSw" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_NA6j1Ha9EeaCaKWk3pkMSw" name="block6" type="_Ku420Ha9EeaCaKWk3pkMSw" association="_NA6j0Xa9EeaCaKWk3pkMSw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_OPSbcHa9EeaCaKWk3pkMSw" name="Actor2"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Qw7RwHa9EeaCaKWk3pkMSw" name="Block9"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Qw740Ha9EeaCaKWk3pkMSw" name="Association4" memberEnd="_Qm1hoHa9EeaCaKWk3pkMSw _Qw7403a9EeaCaKWk3pkMSw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Qw740Xa9EeaCaKWk3pkMSw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Qw740na9EeaCaKWk3pkMSw" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Qw7403a9EeaCaKWk3pkMSw" name="block6" type="_Ku420Ha9EeaCaKWk3pkMSw" association="_Qw740Ha9EeaCaKWk3pkMSw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RkRaQHa9EeaCaKWk3pkMSw" name="Block10"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RkSBUXa9EeaCaKWk3pkMSw" name="Association5" memberEnd="_RbQBIHa9EeaCaKWk3pkMSw _RkSBVHa9EeaCaKWk3pkMSw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RkSBUna9EeaCaKWk3pkMSw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RkSBU3a9EeaCaKWk3pkMSw" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RkSBVHa9EeaCaKWk3pkMSw" name="block6" type="_Ku420Ha9EeaCaKWk3pkMSw" association="_RkSBUXa9EeaCaKWk3pkMSw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_TeMJQHa9EeaCaKWk3pkMSw" name="Actor3"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sKAVMAGtEeajHqwUCOgvUA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sKAVMQGtEeajHqwUCOgvUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>
@@ -1773,4 +1852,17 @@ Normal mode
   <PortAndFlows:FlowPort xmi:id="_3iQQUHTvEea8nrIsS5Fh4g" base_Port="_3iEqIHTvEea8nrIsS5Fh4g" direction="in"/>
   <PortAndFlows:FlowPort xmi:id="_gBe6gHXoEeaJ0ugIRWJBdw" base_Port="_gBapEHXoEeaJ0ugIRWJBdw" direction="out"/>
   <PortAndFlows:FlowPort xmi:id="_q71IMHXoEeaJ0ugIRWJBdw" base_Port="_q70hIHXoEeaJ0ugIRWJBdw" direction="out"/>
+  <Blocks:Block xmi:id="_yZmG8Ha8EeaCaKWk3pkMSw" base_Class="_yZk40Ha8EeaCaKWk3pkMSw"/>
+  <Blocks:Block xmi:id="_85WqYXa8EeaCaKWk3pkMSw" base_Class="_85WqYHa8EeaCaKWk3pkMSw"/>
+  <Blocks:Block xmi:id="_-l_LUHa8EeaCaKWk3pkMSw" base_Class="_-l-kQHa8EeaCaKWk3pkMSw"/>
+  <Blocks:Block xmi:id="__xAM8Xa8EeaCaKWk3pkMSw" base_Class="__xAM8Ha8EeaCaKWk3pkMSw"/>
+  <Blocks:Block xmi:id="_AqmHYHa9EeaCaKWk3pkMSw" base_Class="_AqlgUHa9EeaCaKWk3pkMSw"/>
+  <Blocks:Block xmi:id="_Ku420Xa9EeaCaKWk3pkMSw" base_Class="_Ku420Ha9EeaCaKWk3pkMSw"/>
+  <Blocks:Block xmi:id="_MBMMMXa9EeaCaKWk3pkMSw" base_Class="_MBMMMHa9EeaCaKWk3pkMSw"/>
+  <Blocks:Block xmi:id="_NA6j0Ha9EeaCaKWk3pkMSw" base_Class="_NA58wHa9EeaCaKWk3pkMSw"/>
+  <Blocks:Block xmi:id="_Qw7RwXa9EeaCaKWk3pkMSw" base_Class="_Qw7RwHa9EeaCaKWk3pkMSw"/>
+  <Blocks:Block xmi:id="_RkSBUHa9EeaCaKWk3pkMSw" base_Class="_RkRaQHa9EeaCaKWk3pkMSw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_YvIB8Ha-EeaCaKWk3pkMSw" propertyPath="_Kk2KAHa9EeaCaKWk3pkMSw" base_ConnectorEnd="_YvHa4Xa-EeaCaKWk3pkMSw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_cFkZUXa-EeaCaKWk3pkMSw" propertyPath="_Kk2KAHa9EeaCaKWk3pkMSw _L10CoHa9EeaCaKWk3pkMSw" base_ConnectorEnd="_cFkZUHa-EeaCaKWk3pkMSw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_fodRQna-EeaCaKWk3pkMSw" propertyPath="_Kk2KAHa9EeaCaKWk3pkMSw _L10CoHa9EeaCaKWk3pkMSw" base_ConnectorEnd="_fodRQXa-EeaCaKWk3pkMSw"/>
 </xmi:XMI>

@@ -1728,6 +1728,35 @@ Normal mode
       <message xmi:type="uml:Message" xmi:id="_UDbc8HbAEeaCaKWk3pkMSw" name="Get_Hk(&amp;dataSubystem)" receiveEvent="_UDdSIHbAEeaCaKWk3pkMSw" sendEvent="_UDcrEHbAEeaCaKWk3pkMSw"/>
       <message xmi:type="uml:Message" xmi:id="_Xqo0MHbAEeaCaKWk3pkMSw" name="Build&amp;Write_dataFrame(dataSubsystem)" receiveEvent="_XqrQcHbAEeaCaKWk3pkMSw" sendEvent="_XqpbQHbAEeaCaKWk3pkMSw"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_n3A_YHbEEealkZ7wscn3Wg" name="Interaction1">
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_puu5gHbFEealkZ7wscn3Wg" name="TaskHk-Eps"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_puu5gXbFEealkZ7wscn3Wg" name="TT&amp;C-UHF"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_puvgkHbFEealkZ7wscn3Wg" name="Payload"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_puvgkXbFEealkZ7wscn3Wg" name="Eps"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_puvgknbFEealkZ7wscn3Wg" name="MM-Payload"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_puvgk3bFEealkZ7wscn3Wg" name="TaskHk-TT&amp;c"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_puvglHbFEealkZ7wscn3Wg" name="Task-HkPayload"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_puwHoHbFEealkZ7wscn3Wg" name="ADCS"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_puwHoXbFEealkZ7wscn3Wg" name="TaskHk-Adcs"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_Ad8cYHbGEealkZ7wscn3Wg" name="Task_Hk_i"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_Ad9DcHbGEealkZ7wscn3Wg" name="Subsystem_i"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_E8fEQHbGEealkZ7wscn3Wg" name="Task_Hk_i_1" coveredBy="_YHzpoHbGEealkZ7wscn3Wg _bunYQHbGEealkZ7wscn3Wg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_E8fEQXbGEealkZ7wscn3Wg" name="Subsystem_i_1" coveredBy="_YHzpoXbGEealkZ7wscn3Wg _m38dIHbGEealkZ7wscn3Wg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_MUyHgHbGEealkZ7wscn3Wg" name="Buffer_Subsystem_HK_i" coveredBy="_bunYQXbGEealkZ7wscn3Wg _gNGVwXbGEealkZ7wscn3Wg"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_QIitAHbGEealkZ7wscn3Wg" name="ControlAlgorithm_i" coveredBy="_gNGVwHbGEealkZ7wscn3Wg _m372EHbGEealkZ7wscn3Wg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YHzpoHbGEealkZ7wscn3Wg" name="MessageSend" covered="_E8fEQHbGEealkZ7wscn3Wg" message="_YHzCkHbGEealkZ7wscn3Wg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_YHzpoXbGEealkZ7wscn3Wg" name="MessageRecv" covered="_E8fEQXbGEealkZ7wscn3Wg" message="_YHzCkHbGEealkZ7wscn3Wg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_bunYQHbGEealkZ7wscn3Wg" name="MessageSend0" covered="_E8fEQHbGEealkZ7wscn3Wg" message="_buljEHbGEealkZ7wscn3Wg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_bunYQXbGEealkZ7wscn3Wg" name="MessageRecv0" covered="_MUyHgHbGEealkZ7wscn3Wg" message="_buljEHbGEealkZ7wscn3Wg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_gNGVwHbGEealkZ7wscn3Wg" name="MessageSend1" covered="_QIitAHbGEealkZ7wscn3Wg" message="_gNFusHbGEealkZ7wscn3Wg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_gNGVwXbGEealkZ7wscn3Wg" name="MessageRecv1" covered="_MUyHgHbGEealkZ7wscn3Wg" message="_gNFusHbGEealkZ7wscn3Wg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_m372EHbGEealkZ7wscn3Wg" name="MessageSend2" covered="_QIitAHbGEealkZ7wscn3Wg" message="_m36A4HbGEealkZ7wscn3Wg"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_m38dIHbGEealkZ7wscn3Wg" name="MessageRecv2" covered="_E8fEQXbGEealkZ7wscn3Wg" message="_m36A4HbGEealkZ7wscn3Wg"/>
+      <message xmi:type="uml:Message" xmi:id="_YHzCkHbGEealkZ7wscn3Wg" name="GetHk()" receiveEvent="_YHzpoXbGEealkZ7wscn3Wg" sendEvent="_YHzpoHbGEealkZ7wscn3Wg"/>
+      <message xmi:type="uml:Message" xmi:id="_buljEHbGEealkZ7wscn3Wg" name="WriteHK_i()" receiveEvent="_bunYQXbGEealkZ7wscn3Wg" sendEvent="_bunYQHbGEealkZ7wscn3Wg"/>
+      <message xmi:type="uml:Message" xmi:id="_gNFusHbGEealkZ7wscn3Wg" name="Read_HK_i()" receiveEvent="_gNGVwXbGEealkZ7wscn3Wg" sendEvent="_gNGVwHbGEealkZ7wscn3Wg"/>
+      <message xmi:type="uml:Message" xmi:id="_m36A4HbGEealkZ7wscn3Wg" name="control_i()" receiveEvent="_m38dIHbGEealkZ7wscn3Wg" sendEvent="_m372EHbGEealkZ7wscn3Wg"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sKAVMAGtEeajHqwUCOgvUA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sKAVMQGtEeajHqwUCOgvUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/0.7.0/SysML#/"/>

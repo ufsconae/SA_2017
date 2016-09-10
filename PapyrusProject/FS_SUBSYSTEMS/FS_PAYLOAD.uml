@@ -2,7 +2,24 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows">
   <uml:Model xmi:id="__M-24AGtEeajHqwUCOgvUA" name="RootElement">
     <packagedElement xmi:type="uml:Model" xmi:id="_72GVAAI5EeagKebOtQfZOg" name="Requirements"/>
-    <packagedElement xmi:type="uml:Model" xmi:id="_-MtnEAI5EeagKebOtQfZOg" name="UseCases"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_-MtnEAI5EeagKebOtQfZOg" name="UseCases">
+      <packagedElement xmi:type="uml:Actor" xmi:id="_3jdnsHdUEeamQZcPhcSvkw" name="C&amp;DH"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_6R15gHdUEeamQZcPhcSvkw" name="S Band Transmitter"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_zXXlQHdVEeamQZcPhcSvkw" memberEnd="_zYEv4HdVEeamQZcPhcSvkw _zYEv4XdVEeamQZcPhcSvkw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zXcdwHdVEeamQZcPhcSvkw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zXcdwXdVEeamQZcPhcSvkw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_zYEv4HdVEeamQZcPhcSvkw" name="enviar comandos" type="_MP9E4HdVEeamQZcPhcSvkw" association="_zXXlQHdVEeamQZcPhcSvkw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_zYEv4XdVEeamQZcPhcSvkw" name="c&amp;dh" type="_3jdnsHdUEeamQZcPhcSvkw" association="_zXXlQHdVEeamQZcPhcSvkw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_S08xAHdXEeamQZcPhcSvkw" memberEnd="_S0_NQHdXEeamQZcPhcSvkw _S0_NQXdXEeamQZcPhcSvkw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S08xAXdXEeamQZcPhcSvkw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S08xAndXEeamQZcPhcSvkw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_S0_NQHdXEeamQZcPhcSvkw" name="transmitir datos ciencia" type="_akYMwHdVEeamQZcPhcSvkw" association="_S08xAHdXEeamQZcPhcSvkw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_S0_NQXdXEeamQZcPhcSvkw" name="s band transmitter" type="_6R15gHdUEeamQZcPhcSvkw" association="_S08xAHdXEeamQZcPhcSvkw"/>
+      </packagedElement>
+    </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="__Of0MAI5EeagKebOtQfZOg" name="ArchitectueDiagram">
       <packagedElement xmi:type="uml:Class" xmi:id="_L1RUQHRFEea8nrIsS5Fh4g" name="S band transmitter">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_90rA0HXEEea8nrIsS5Fh4g" name="SPI" aggregation="composite"/>
@@ -50,6 +67,32 @@
           <ownedAttribute xmi:type="uml:Port" xmi:id="_KF7ywHX0EeaJ0ugIRWJBdw" name="I2C" aggregation="composite"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Usage" xmi:id="_W_5u0HX0EeaJ0ugIRWJBdw" name="HK" client="_KF7ywHX0EeaJ0ugIRWJBdw" supplier="_ueVwAHXEEea8nrIsS5Fh4g"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_MP9E4HdVEeamQZcPhcSvkw" name="Enviar comandos">
+          <extend xmi:type="uml:Extend" xmi:id="_HFHiQHdWEeamQZcPhcSvkw" extendedCase="_fZHuIHdVEeamQZcPhcSvkw" extensionLocation="_HFMawHdWEeamQZcPhcSvkw"/>
+          <extend xmi:type="uml:Extend" xmi:id="_H-QJsHdWEeamQZcPhcSvkw" extendedCase="_QqbFEHdVEeamQZcPhcSvkw" extensionLocation="_H-Sl8HdWEeamQZcPhcSvkw"/>
+          <extend xmi:type="uml:Extend" xmi:id="_OYN8cHdWEeamQZcPhcSvkw" extendedCase="_OJfZYHdVEeamQZcPhcSvkw" extensionLocation="_OYN8cXdWEeamQZcPhcSvkw"/>
+          <extend xmi:type="uml:Extend" xmi:id="_imnIYHdWEeamQZcPhcSvkw" extendedCase="_SQxiYHdWEeamQZcPhcSvkw" extensionLocation="_imnIYXdWEeamQZcPhcSvkw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_OJfZYHdVEeamQZcPhcSvkw" name="Solicitar Housekeeping">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_OYN8cXdWEeamQZcPhcSvkw" name="ExtensionPoint1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_QqbFEHdVEeamQZcPhcSvkw" name="Gestionar DCS">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_H-Sl8HdWEeamQZcPhcSvkw" name="ExtensionPoint1"/>
+          <include xmi:type="uml:Include" xmi:id="_ys2zMHdWEeamQZcPhcSvkw" addition="_jSInEHdVEeamQZcPhcSvkw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_akYMwHdVEeamQZcPhcSvkw" name="Transmitir datos ciencia">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_R6RRcHdXEeamQZcPhcSvkw" name="ExtensionPoint1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_fZHuIHdVEeamQZcPhcSvkw" name="Gestionar cámara">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_HFMawHdWEeamQZcPhcSvkw" name="ExtensionPoint1"/>
+          <include xmi:type="uml:Include" xmi:id="_sCB58HdWEeamQZcPhcSvkw" addition="_jSInEHdVEeamQZcPhcSvkw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_jSInEHdVEeamQZcPhcSvkw" name="Almacenar datos ciencia">
+          <extend xmi:type="uml:Extend" xmi:id="_R6O1MHdXEeamQZcPhcSvkw" extendedCase="_akYMwHdVEeamQZcPhcSvkw" extensionLocation="_R6RRcHdXEeamQZcPhcSvkw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_SQxiYHdWEeamQZcPhcSvkw" name="Gestionar modos de funcionamiento">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_imnIYXdWEeamQZcPhcSvkw" name="ExtensionPoint1"/>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_QNgj4HXGEea8nrIsS5Fh4g" name="CMD" client="_ueVwAHXEEea8nrIsS5Fh4g" supplier="_8uDXAHXEEea8nrIsS5Fh4g"/>
       <packagedElement xmi:type="uml:Usage" xmi:id="_TeRKAHXGEea8nrIsS5Fh4g" name="Camera Data" client="_AB0N0HXFEea8nrIsS5Fh4g" supplier="_Ai_oQHXFEea8nrIsS5Fh4g"/>

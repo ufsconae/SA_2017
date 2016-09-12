@@ -6,8 +6,8 @@
     <packagedElement xmi:type="uml:Model" xmi:id="_xrc5oAGvEeajHqwUCOgvUA" name="ADCS_StructureDiagrams" URI="">
       <packagedElement xmi:type="uml:Package" xmi:id="_XYRwoHBkEear_bx8eKlYhQ" name="SubsystemRelations" URI="">
         <packagedElement xmi:type="uml:Class" xmi:id="_aUfqIHBkEear_bx8eKlYhQ" name="System of Interest: ADC Subsystem">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_fh2z8nBxEear_bx8eKlYhQ" name="EPS" type="_YZ6IkHBrEear_bx8eKlYhQ" aggregation="shared" association="_fh2M4HBxEear_bx8eKlYhQ"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_sgNgwnBxEear_bx8eKlYhQ" name="C&amp;DH" type="_RayFMHBpEear_bx8eKlYhQ" aggregation="shared" association="_sgM5sHBxEear_bx8eKlYhQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_fh2z8nBxEear_bx8eKlYhQ" name="Power Supply" type="_YZ6IkHBrEear_bx8eKlYhQ" aggregation="shared" association="_fh2M4HBxEear_bx8eKlYhQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sgNgwnBxEear_bx8eKlYhQ" name="OBC" type="_RayFMHBpEear_bx8eKlYhQ" aggregation="shared" association="_sgM5sHBxEear_bx8eKlYhQ"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_RayFMHBpEear_bx8eKlYhQ" name="Interoperating System: C&amp;DH Subsystem"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_YZ6IkHBrEear_bx8eKlYhQ" name="Interoperating System: EPS Subsystem"/>
@@ -106,6 +106,26 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_Q555lHX3EeaJ0ugIRWJBdw" name="attitude determination_1" type="_UUQPsHUqEeahA6pEsSfe5g" association="_Q555kHX3EeaJ0ugIRWJBdw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_gD1GEHX3EeaJ0ugIRWJBdw" name="HK" client="_9VZEEHUlEeahA6pEsSfe5g" supplier="_owaTIHXgEeaXnqac8Ti9rA"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_RLrjoHj4Eea1_4B3_SwwhQ" name="ADC's HW Units">
+        <packagedElement xmi:type="uml:Class" xmi:id="_eDSvQHj4Eea1_4B3_SwwhQ" name="CubeComputer(ACP)">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_LeWMY3kDEea1_4B3_SwwhQ" name="Interface Board (Actuators and Sensors)" type="_nJs6IHj4Eea1_4B3_SwwhQ" aggregation="composite" association="_LeWMYHkDEea1_4B3_SwwhQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QAZbQnkDEea1_4B3_SwwhQ" name="Additional Sensor Board" type="_I2drgHkAEea1_4B3_SwwhQ" aggregation="composite" association="_QAY0MHkDEea1_4B3_SwwhQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_nJs6IHj4Eea1_4B3_SwwhQ" name="CubeControl "/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_I2drgHkAEea1_4B3_SwwhQ" name="CubeSense"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_LeWMYHkDEea1_4B3_SwwhQ" memberEnd="_LeWMY3kDEea1_4B3_SwwhQ _LeWzcHkDEea1_4B3_SwwhQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LeWMYXkDEea1_4B3_SwwhQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LeWMYnkDEea1_4B3_SwwhQ" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_LeWzcHkDEea1_4B3_SwwhQ" name="cubecomputer(acp)_1" type="_eDSvQHj4Eea1_4B3_SwwhQ" association="_LeWMYHkDEea1_4B3_SwwhQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_QAY0MHkDEea1_4B3_SwwhQ" memberEnd="_QAZbQnkDEea1_4B3_SwwhQ _QAaCUHkDEea1_4B3_SwwhQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QAZbQHkDEea1_4B3_SwwhQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QAZbQXkDEea1_4B3_SwwhQ" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_QAaCUHkDEea1_4B3_SwwhQ" name="cubecomputer(acp)_1" type="_eDSvQHj4Eea1_4B3_SwwhQ" association="_QAY0MHkDEea1_4B3_SwwhQ"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dWQNAAGtEeajHqwUCOgvUA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dWRbIAGtEeajHqwUCOgvUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -186,4 +206,7 @@
   <PortAndFlows:FlowPort xmi:id="_owcvYHXgEeaXnqac8Ti9rA" base_Port="_owaTIHXgEeaXnqac8Ti9rA" direction="in"/>
   <PortAndFlows:FlowPort xmi:id="_NQGjUHXhEeaXnqac8Ti9rA" base_Port="_NQF8QHXhEeaXnqac8Ti9rA"/>
   <PortAndFlows:FlowPort xmi:id="_Nb0GQXXwEeaXnqac8Ti9rA" base_Port="_Nb0GQHXwEeaXnqac8Ti9rA" direction="out"/>
+  <Blocks:Block xmi:id="_eDT9YHj4Eea1_4B3_SwwhQ" base_Class="_eDSvQHj4Eea1_4B3_SwwhQ"/>
+  <Blocks:Block xmi:id="_nJthMHj4Eea1_4B3_SwwhQ" base_Class="_nJs6IHj4Eea1_4B3_SwwhQ"/>
+  <Blocks:Block xmi:id="_I2e5oHkAEea1_4B3_SwwhQ" base_Class="_I2drgHkAEea1_4B3_SwwhQ"/>
 </xmi:XMI>

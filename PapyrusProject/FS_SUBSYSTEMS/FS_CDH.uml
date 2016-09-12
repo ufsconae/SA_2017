@@ -1821,7 +1821,7 @@ Normal mode
       <message xmi:type="uml:Message" xmi:id="_7fFf4HjtEea3Fp-Xzp2_WQ" name="Control()" receiveEvent="_7fH8IHjtEea3Fp-Xzp2_WQ" sendEvent="_7fGuAHjtEea3Fp-Xzp2_WQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_z-vB8HjvEeaOqM31cI-Pbw" name="EPS_Control">
-      <packagedElement xmi:type="uml:Activity" xmi:id="_DjWmYHjwEeaOqM31cI-Pbw" name="EPS_Control" node="_Uo6jsHjxEeaOqM31cI-Pbw _eRMFgHjxEeaOqM31cI-Pbw _-DOTwHjxEeaOqM31cI-Pbw _p2fD8HkNEeaOqM31cI-Pbw _vOzMcHkNEeaOqM31cI-Pbw _TikEAHkPEeaOqM31cI-Pbw _WOxLkHkPEeaOqM31cI-Pbw">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_DjWmYHjwEeaOqM31cI-Pbw" name="EPS_Control_Algorithm" node="_Uo6jsHjxEeaOqM31cI-Pbw _eRMFgHjxEeaOqM31cI-Pbw _-DOTwHjxEeaOqM31cI-Pbw _p2fD8HkNEeaOqM31cI-Pbw _vOzMcHkNEeaOqM31cI-Pbw _TikEAHkPEeaOqM31cI-Pbw _WOxLkHkPEeaOqM31cI-Pbw">
         <ownedComment xmi:type="uml:Comment" xmi:id="_J7yaMHkTEeaOqM31cI-Pbw">
           <body>Critical
 Safe
@@ -1839,7 +1839,7 @@ Full = HW</body>
         <node xmi:type="uml:FlowFinalNode" xmi:id="_-DOTwHjxEeaOqM31cI-Pbw" name="Fin" incoming="_tkP4sHkZEeaOqM31cI-Pbw"/>
         <node xmi:type="uml:DecisionNode" xmi:id="_p2fD8HkNEeaOqM31cI-Pbw" name="Modo EPS?" incoming="_cFSWMHkTEeaOqM31cI-Pbw" outgoing="_LtmS4HkPEeaOqM31cI-Pbw _Zk2WkHkPEeaOqM31cI-Pbw _klGbIHkTEeaOqM31cI-Pbw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_vOzMcHkNEeaOqM31cI-Pbw" name="Correr actividades rutinarias" incoming="_LtmS4HkPEeaOqM31cI-Pbw" outgoing="_tkP4sHkZEeaOqM31cI-Pbw"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_TikEAHkPEeaOqM31cI-Pbw" name="Cambiar Modo de CDH a SEGURO" incoming="_klGbIHkTEeaOqM31cI-Pbw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_TikEAHkPEeaOqM31cI-Pbw" name="Cambiar Modo de CDH a Seguro" incoming="_klGbIHkTEeaOqM31cI-Pbw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_WOxLkHkPEeaOqM31cI-Pbw" name="Cambiar Modo de CDH a Supervivencia" incoming="_Zk2WkHkPEeaOqM31cI-Pbw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_Mxfw8HjwEeaOqM31cI-Pbw" name="Actividades_Periodicas_CDH">

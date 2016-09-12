@@ -1833,32 +1833,22 @@ Full = HW</body>
         <edge xmi:type="uml:ControlFlow" xmi:id="_Zk2WkHkPEeaOqM31cI-Pbw" name="Critical (V&lt;VCritical) " target="_WOxLkHkPEeaOqM31cI-Pbw" source="_p2fD8HkNEeaOqM31cI-Pbw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_cFSWMHkTEeaOqM31cI-Pbw" name="HK" target="_p2fD8HkNEeaOqM31cI-Pbw" source="_eRMFgHjxEeaOqM31cI-Pbw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_klGbIHkTEeaOqM31cI-Pbw" name="Safe (VCritical&lt;V&lt;VSafe) " target="_TikEAHkPEeaOqM31cI-Pbw" source="_p2fD8HkNEeaOqM31cI-Pbw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_tkP4sHkZEeaOqM31cI-Pbw" target="_-DOTwHjxEeaOqM31cI-Pbw" source="_vOzMcHkNEeaOqM31cI-Pbw"/>
         <node xmi:type="uml:InitialNode" xmi:id="_Uo6jsHjxEeaOqM31cI-Pbw" name="Inicio periodico" outgoing="_pF92sHjxEeaOqM31cI-Pbw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_eRMFgHjxEeaOqM31cI-Pbw" name="Extraer HK" incoming="_pF92sHjxEeaOqM31cI-Pbw" outgoing="_cFSWMHkTEeaOqM31cI-Pbw"/>
-        <node xmi:type="uml:FlowFinalNode" xmi:id="_-DOTwHjxEeaOqM31cI-Pbw" name="Fin"/>
+        <node xmi:type="uml:FlowFinalNode" xmi:id="_-DOTwHjxEeaOqM31cI-Pbw" name="Fin" incoming="_tkP4sHkZEeaOqM31cI-Pbw"/>
         <node xmi:type="uml:DecisionNode" xmi:id="_p2fD8HkNEeaOqM31cI-Pbw" name="Modo EPS?" incoming="_cFSWMHkTEeaOqM31cI-Pbw" outgoing="_LtmS4HkPEeaOqM31cI-Pbw _Zk2WkHkPEeaOqM31cI-Pbw _klGbIHkTEeaOqM31cI-Pbw"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_vOzMcHkNEeaOqM31cI-Pbw" name="Correr actividades rutinarias" incoming="_LtmS4HkPEeaOqM31cI-Pbw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_vOzMcHkNEeaOqM31cI-Pbw" name="Correr actividades rutinarias" incoming="_LtmS4HkPEeaOqM31cI-Pbw" outgoing="_tkP4sHkZEeaOqM31cI-Pbw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_TikEAHkPEeaOqM31cI-Pbw" name="Cambiar Modo de CDH a SEGURO" incoming="_klGbIHkTEeaOqM31cI-Pbw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_WOxLkHkPEeaOqM31cI-Pbw" name="Cambiar Modo de CDH a Supervivencia" incoming="_Zk2WkHkPEeaOqM31cI-Pbw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_Mxfw8HjwEeaOqM31cI-Pbw" name="Operaciones_CDH">
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_XuVR8HjwEeaOqM31cI-Pbw" name="Buscar HK"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_bSD3YHjwEeaOqM31cI-Pbw" name="Comparar HK con la tabla de paramatros">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Mxfw8HjwEeaOqM31cI-Pbw" name="Actividades_Periodicas_CDH">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_XuVR8HjwEeaOqM31cI-Pbw" name="Algoritmos de control de Actitud"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_bSD3YHjwEeaOqM31cI-Pbw" name="Algoritmos de control de Termico">
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_NKtFsHjxEeaOqM31cI-Pbw" name="ExtensionPoint1"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_gTkpcHjwEeaOqM31cI-Pbw" name="Tomar acciones">
-          <extend xmi:type="uml:Extend" xmi:id="_NKseoHjxEeaOqM31cI-Pbw" extendedCase="_bSD3YHjwEeaOqM31cI-Pbw" extensionLocation="_NKtFsHjxEeaOqM31cI-Pbw"/>
-          <include xmi:type="uml:Include" xmi:id="_5eFKEHjwEeaOqM31cI-Pbw" addition="_nmuG8HjwEeaOqM31cI-Pbw"/>
-          <include xmi:type="uml:Include" xmi:id="_6LnlgHjwEeaOqM31cI-Pbw" addition="_qktiEHjwEeaOqM31cI-Pbw"/>
-          <include xmi:type="uml:Include" xmi:id="_6-IAgHjwEeaOqM31cI-Pbw" addition="_skGm8HjwEeaOqM31cI-Pbw"/>
-          <include xmi:type="uml:Include" xmi:id="_7noQgHjwEeaOqM31cI-Pbw" addition="_2eaT8HjwEeaOqM31cI-Pbw"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_nmuG8HjwEeaOqM31cI-Pbw" name="Identificar unidad de falla"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_qktiEHjwEeaOqM31cI-Pbw" name="Decidir acción correctiva"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_skGm8HjwEeaOqM31cI-Pbw" name="Selecionar comandos"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_2eaT8HjwEeaOqM31cI-Pbw" name="Notificar anomalia"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_8-1UAHjwEeaOqM31cI-Pbw" name="Notificar ejecución: &quot;VAS BIEN&quot;"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_UHsJIHj1EeaOqM31cI-Pbw" name="Analizar HK historico"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_8-1UAHjwEeaOqM31cI-Pbw" name="Scrubbing"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_UHsJIHj1EeaOqM31cI-Pbw" name="Algoritmos de control de EPS"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_QsgN8HjwEeaOqM31cI-Pbw" name="CDH"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_abe0sHjwEeaOqM31cI-Pbw" memberEnd="_abgp4HjwEeaOqM31cI-Pbw _abhQ8HjwEeaOqM31cI-Pbw">
@@ -1892,6 +1882,22 @@ Full = HW</body>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_b7p0snj1EeaOqM31cI-Pbw" name="analizar hk historico" type="_UHsJIHj1EeaOqM31cI-Pbw" association="_b7pNoHj1EeaOqM31cI-Pbw"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_b7p0s3j1EeaOqM31cI-Pbw" name="eps_algoritmo" type="_QsgN8HjwEeaOqM31cI-Pbw" association="_b7pNoHj1EeaOqM31cI-Pbw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_yg-t4HkYEeaOqM31cI-Pbw" name="ADCS"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_2zMJ8HkYEeaOqM31cI-Pbw" memberEnd="_2zMJ83kYEeaOqM31cI-Pbw _2zMxAHkYEeaOqM31cI-Pbw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2zMJ8XkYEeaOqM31cI-Pbw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2zMJ8nkYEeaOqM31cI-Pbw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_2zMJ83kYEeaOqM31cI-Pbw" name="algoritmos de control de actitud" type="_XuVR8HjwEeaOqM31cI-Pbw" association="_2zMJ8HkYEeaOqM31cI-Pbw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_2zMxAHkYEeaOqM31cI-Pbw" name="adcs" type="_yg-t4HkYEeaOqM31cI-Pbw" association="_2zMJ8HkYEeaOqM31cI-Pbw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_4ENF4HkYEeaOqM31cI-Pbw" name="Termal SS"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_BN3ZEHkZEeaOqM31cI-Pbw" memberEnd="_BN4nMnkZEeaOqM31cI-Pbw _BN5OQHkZEeaOqM31cI-Pbw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BN4nMHkZEeaOqM31cI-Pbw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BN4nMXkZEeaOqM31cI-Pbw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_BN4nMnkZEeaOqM31cI-Pbw" name="algoritmos de control de termico" type="_bSD3YHjwEeaOqM31cI-Pbw" association="_BN3ZEHkZEeaOqM31cI-Pbw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_BN5OQHkZEeaOqM31cI-Pbw" name="termal" type="_4ENF4HkYEeaOqM31cI-Pbw" association="_BN3ZEHkZEeaOqM31cI-Pbw"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sKAVMAGtEeajHqwUCOgvUA">

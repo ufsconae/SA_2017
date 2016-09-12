@@ -368,7 +368,6 @@ computer science and the general community)</body>
       <edge xmi:type="uml:ControlFlow" xmi:id="_suZ4oBcrEea3P_1lxXKNuw" target="_fWrCgBcrEea3P_1lxXKNuw" source="_Q37hABcrEea3P_1lxXKNuw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_u_Gv8BcrEea3P_1lxXKNuw" target="_izUIgBcrEea3P_1lxXKNuw" source="_fWrCgBcrEea3P_1lxXKNuw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_w-Ng8BcrEea3P_1lxXKNuw" target="_lKVqQBcrEea3P_1lxXKNuw" source="_izUIgBcrEea3P_1lxXKNuw"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_mnjHwBcuEea3P_1lxXKNuw" target="_cdknEBcuEea3P_1lxXKNuw" source="_k3FPsBcuEea3P_1lxXKNuw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_1MpI4BcuEea3P_1lxXKNuw" target="_k3FPsBcuEea3P_1lxXKNuw" source="_t_oIkBcuEea3P_1lxXKNuw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_CR_OgBcvEea3P_1lxXKNuw" target="_-OVy4BcuEea3P_1lxXKNuw" source="_lKVqQBcrEea3P_1lxXKNuw"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_HukL8BcvEea3P_1lxXKNuw" name="Yes" target="_t_oIkBcuEea3P_1lxXKNuw" source="_-OVy4BcuEea3P_1lxXKNuw"/>
@@ -381,8 +380,8 @@ computer science and the general community)</body>
       <node xmi:type="uml:CreateObjectAction" xmi:id="_fWrCgBcrEea3P_1lxXKNuw" name="Read Instruments Data Package" incoming="_suZ4oBcrEea3P_1lxXKNuw" outgoing="_u_Gv8BcrEea3P_1lxXKNuw" inPartition="_HStTMBcrEea3P_1lxXKNuw"/>
       <node xmi:type="uml:CreateObjectAction" xmi:id="_izUIgBcrEea3P_1lxXKNuw" name="Extract L0" incoming="_u_Gv8BcrEea3P_1lxXKNuw" outgoing="_w-Ng8BcrEea3P_1lxXKNuw" inPartition="_JwZdoBcrEea3P_1lxXKNuw"/>
       <node xmi:type="uml:CreateObjectAction" xmi:id="_lKVqQBcrEea3P_1lxXKNuw" name="Check L0 data consistency" incoming="_w-Ng8BcrEea3P_1lxXKNuw" outgoing="_CR_OgBcvEea3P_1lxXKNuw" inPartition="_JwZdoBcrEea3P_1lxXKNuw"/>
-      <node xmi:type="uml:ActivityFinalNode" xmi:id="_cdknEBcuEea3P_1lxXKNuw" name="Activity Final" incoming="_mnjHwBcuEea3P_1lxXKNuw" inPartition="_CrKgUBcrEea3P_1lxXKNuw"/>
-      <node xmi:type="uml:CreateObjectAction" xmi:id="_k3FPsBcuEea3P_1lxXKNuw" name="Report L0 production oder status" incoming="_1MpI4BcuEea3P_1lxXKNuw _KB4SYBcvEea3P_1lxXKNuw" outgoing="_mnjHwBcuEea3P_1lxXKNuw" inPartition="_CrKgUBcrEea3P_1lxXKNuw"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_cdknEBcuEea3P_1lxXKNuw" name="Activity Final" inPartition="_CrKgUBcrEea3P_1lxXKNuw"/>
+      <node xmi:type="uml:CreateObjectAction" xmi:id="_k3FPsBcuEea3P_1lxXKNuw" name="Report L0 production oder status" incoming="_1MpI4BcuEea3P_1lxXKNuw _KB4SYBcvEea3P_1lxXKNuw" inPartition="_CrKgUBcrEea3P_1lxXKNuw"/>
       <node xmi:type="uml:CreateObjectAction" xmi:id="_t_oIkBcuEea3P_1lxXKNuw" name="Save L0 files" incoming="_HukL8BcvEea3P_1lxXKNuw" outgoing="_1MpI4BcuEea3P_1lxXKNuw" inPartition="_HStTMBcrEea3P_1lxXKNuw"/>
       <node xmi:type="uml:DecisionNode" xmi:id="_-OVy4BcuEea3P_1lxXKNuw" name="Approved QA data consistency?" incoming="_CR_OgBcvEea3P_1lxXKNuw" outgoing="_HukL8BcvEea3P_1lxXKNuw _KB4SYBcvEea3P_1lxXKNuw" inPartition="_JwZdoBcrEea3P_1lxXKNuw"/>
     </packagedElement>

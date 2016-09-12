@@ -28,21 +28,15 @@
         <ownedAttribute xmi:type="uml:Port" xmi:id="_ZjOqIAi6Eea7tqq8NETspQ" name="SBAND_downlink" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_mDBLoAi6Eea7tqq8NETspQ" name="UHF_link" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_oPK6IAi6Eea7tqq8NETspQ" name="UHF_link" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_ZJvWoAi7Eea7tqq8NETspQ" name="Port1" aggregation="composite"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_pkFpMAi7Eea7tqq8NETspQ" name="UHF_link" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_87gw4Ai7Eea7tqq8NETspQ" name="I2C_to_DCS" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_ChKKwAi8Eea7tqq8NETspQ" name="I2C_from_POBC" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_O1RAsAi8Eea7tqq8NETspQ" name="Camera_Link_to_POBC" aggregation="composite"/>
         <ownedAttribute xmi:type="uml:Port" xmi:id="_Ub__sAi8Eea7tqq8NETspQ" name="Camera_Link_from_NIR/SWIR" aggregation="composite"/>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_xD04kAi4Eea7tqq8NETspQ" name="TC/TLMY">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_xD04kAi4Eea7tqq8NETspQ" name="CMD/HK">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_xD1foAi4Eea7tqq8NETspQ" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_VKZ6oAi4Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_xD1foQi4Eea7tqq8NETspQ" partWithPort="_V-eScAckEeafd7GiqJXkMg" role="_qOk4AAi4Eea7tqq8NETspQ"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_ETfLYAi5Eea7tqq8NETspQ" name="TC/TLMY">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_ETfycAi5Eea7tqq8NETspQ" partWithPort="_9HLBsAcjEeafd7GiqJXkMg" role="_BEccgAi5Eea7tqq8NETspQ"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_ETfycQi5Eea7tqq8NETspQ" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_VKZ6oAi4Eea7tqq8NETspQ"/>
-        </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_4TUIoAi5Eea7tqq8NETspQ" name="TC/TMLY/Stored TLMY (TBC)">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_4TUIoAi5Eea7tqq8NETspQ" name="CMD/TLMY (TBD)/HK">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_4TUvsAi5Eea7tqq8NETspQ" partWithPort="_QF-0EAcvEeafd7GiqJXkMg" role="_t1dCoAi5Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_4TUvsQi5Eea7tqq8NETspQ" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_g5u6cAi2Eea7tqq8NETspQ"/>
         </ownedConnector>
@@ -50,9 +44,13 @@
           <end xmi:type="uml:ConnectorEnd" xmi:id="_qDmsMAi6Eea7tqq8NETspQ" partWithPort="_scOQwAi3Eea7tqq8NETspQ" role="_mDBLoAi6Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_qDmsMQi6Eea7tqq8NETspQ" role="_oPK6IAi6Eea7tqq8NETspQ"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_uPoq8Ai-Eea7tqq8NETspQ" name="DCS data">
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_uPpSAAi-Eea7tqq8NETspQ" partWithPort="_8kzTcAcuEeafd7GiqJXkMg" role="_ZJvWoAi7Eea7tqq8NETspQ"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_uPpSAQi-Eea7tqq8NETspQ" role="_pkFpMAi7Eea7tqq8NETspQ"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_5j9sAGrAEeax3omSjm9JUA" name="TC/TLMY/HK">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_5kAvUGrAEeax3omSjm9JUA" partWithPort="_scOQwAi3Eea7tqq8NETspQ" role="_yQqUkAi3Eea7tqq8NETspQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_5kBWYGrAEeax3omSjm9JUA" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_1aS_AAi3Eea7tqq8NETspQ"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_KgTNoHW_Eea8nrIsS5Fh4g" name="CMD/HK">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_KgT0sHW_Eea8nrIsS5Fh4g" partWithPort="_5HFa8AckEeafd7GiqJXkMg" role="_VKZ6oAi4Eea7tqq8NETspQ"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_KgT0sXW_Eea8nrIsS5Fh4g" partWithPort="_9HLBsAcjEeafd7GiqJXkMg" role="_BEccgAi5Eea7tqq8NETspQ"/>
         </ownedConnector>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_-ViSQAcjEeafd7GiqJXkMg" name="Association1" memberEnd="_9HLBsAcjEeafd7GiqJXkMg _-ViSQwcjEeafd7GiqJXkMg">
@@ -93,11 +91,11 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_8kzTcAcuEeafd7GiqJXkMg" name="DCS Transceiver" type="_LWXusAJrEeaJW-cSZfJk0g" aggregation="composite" association="_80OPgAcuEeafd7GiqJXkMg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_KUWzsAcvEeafd7GiqJXkMg" name="NIR/SWIR Camera" type="_LWXusAJrEeaJW-cSZfJk0g" aggregation="composite" association="_KgCfQAcvEeafd7GiqJXkMg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_QF-0EAcvEeafd7GiqJXkMg" name="Payload OBC" type="_LWXusAJrEeaJW-cSZfJk0g" aggregation="composite" association="_QPswwQcvEeafd7GiqJXkMg"/>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_FdL3AAi8Eea7tqq8NETspQ" name="TC/TLMY/DCS data">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_FdL3AAi8Eea7tqq8NETspQ" name="CMD/HK/DCS data">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_FdL3AQi8Eea7tqq8NETspQ" partWithPort="_QF-0EAcvEeafd7GiqJXkMg" role="_87gw4Ai7Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_FdMeEAi8Eea7tqq8NETspQ" partWithPort="_8kzTcAcuEeafd7GiqJXkMg" role="_ChKKwAi8Eea7tqq8NETspQ"/>
         </ownedConnector>
-        <ownedConnector xmi:type="uml:Connector" xmi:id="_azPOkAi8Eea7tqq8NETspQ" name="Camera data">
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_azPOkAi8Eea7tqq8NETspQ" name="CMD/HK/Camera data">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_azP1oAi8Eea7tqq8NETspQ" partWithPort="_KUWzsAcvEeafd7GiqJXkMg" role="_O1RAsAi8Eea7tqq8NETspQ"/>
           <end xmi:type="uml:ConnectorEnd" xmi:id="_azP1oQi8Eea7tqq8NETspQ" partWithPort="_QF-0EAcvEeafd7GiqJXkMg" role="_Ub__sAi8Eea7tqq8NETspQ"/>
         </ownedConnector>
@@ -136,7 +134,7 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_bJNQ0wi3Eea7tqq8NETspQ" name="fs" type="_LWXusAJrEeaJW-cSZfJk0g" association="_bJNQ0Ai3Eea7tqq8NETspQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_prsC0Ai3Eea7tqq8NETspQ" name="TLMY" visibility="public" client="_lkcgoAi3Eea7tqq8NETspQ" supplier="_Mxp8cAi3Eea7tqq8NETspQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_prsC0Ai3Eea7tqq8NETspQ" name="HK" visibility="public" client="_lkcgoAi3Eea7tqq8NETspQ" supplier="_Mxp8cAi3Eea7tqq8NETspQ"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_sm-IMAi3Eea7tqq8NETspQ" name="Block10"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_sm_WUAi3Eea7tqq8NETspQ" name="Association11" memberEnd="_scOQwAi3Eea7tqq8NETspQ _sm_WUwi3Eea7tqq8NETspQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sm_WUQi3Eea7tqq8NETspQ" source="org.eclipse.papyrus">
@@ -144,61 +142,33 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_sm_WUwi3Eea7tqq8NETspQ" name="fs" type="_LWXusAJrEeaJW-cSZfJk0g" association="_sm_WUAi3Eea7tqq8NETspQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_48uj8Ai3Eea7tqq8NETspQ" name="TLMY" client="_yQqUkAi3Eea7tqq8NETspQ" supplier="_1aS_AAi3Eea7tqq8NETspQ"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_dAMyMAi4Eea7tqq8NETspQ" name="TC" client="_VKZ6oAi4Eea7tqq8NETspQ" supplier="_NpuXcAi4Eea7tqq8NETspQ"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_gpBdkAi5Eea7tqq8NETspQ" name="Science data/Stored TLMY (TBC)" client="_PHaoAAi5Eea7tqq8NETspQ" supplier="_S3XEgAi5Eea7tqq8NETspQ"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_gDerEAi6Eea7tqq8NETspQ" name="Science data/Stored TLMY (TBC)" client="_SYZbIAi6Eea7tqq8NETspQ" supplier="_ZjOqIAi6Eea7tqq8NETspQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_dAMyMAi4Eea7tqq8NETspQ" name="CMD" client="_VKZ6oAi4Eea7tqq8NETspQ" supplier="_NpuXcAi4Eea7tqq8NETspQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_gpBdkAi5Eea7tqq8NETspQ" name="Science data/Stored TLMY (TBD)" client="_PHaoAAi5Eea7tqq8NETspQ" supplier="_S3XEgAi5Eea7tqq8NETspQ"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_gDerEAi6Eea7tqq8NETspQ" name="Camera data/Stored TLMY " client="_SYZbIAi6Eea7tqq8NETspQ" supplier="_ZjOqIAi6Eea7tqq8NETspQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_f0LRkAMZEeaA6aMLnBNluA" name="FS_UseCases">
-      <packagedElement xmi:type="uml:Package" xmi:id="_YtT5YAWGEeaGWcutooOurQ" name="MMP">
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_rlQaUAWHEeaGWcutooOurQ" name="Enviar datos ciencia">
-          <include xmi:type="uml:Include" xmi:id="_ZcQYIAWIEeaGWcutooOurQ" addition="_IWzTEAWIEeaGWcutooOurQ"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_YtT5YAWGEeaGWcutooOurQ" name="FS">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_swDZgAWHEeaGWcutooOurQ" name="Procesar telemetria subsistemas y payload">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Z8tQwGrIEea_IMzGjSywSg" name="ExtensionPoint1"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_swDZgAWHEeaGWcutooOurQ" name="Enviar telemetria">
-          <include xmi:type="uml:Include" xmi:id="_xOrrgAWIEeaGWcutooOurQ" addition="_nx4Z4AWIEeaGWcutooOurQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_DNi6QAWIEeaGWcutooOurQ" name="Bajar datos ciencia">
+          <include xmi:type="uml:Include" xmi:id="_iwDLIGrHEea_IMzGjSywSg" addition="_IRGAEGrHEea_IMzGjSywSg"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_DNi6QAWIEeaGWcutooOurQ" name="Recibir datos ciencia">
-          <include xmi:type="uml:Include" xmi:id="_aXkw4AWIEeaGWcutooOurQ" addition="_SwRoUAWIEeaGWcutooOurQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_dkKBoAWIEeaGWcutooOurQ" name="Bajar telemetria">
+          <include xmi:type="uml:Include" xmi:id="_w6klkGrGEea_IMzGjSywSg" addition="_swDZgAWHEeaGWcutooOurQ"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_dkKBoAWIEeaGWcutooOurQ" name="Recibir Telemetria">
-          <include xmi:type="uml:Include" xmi:id="_vUNi4AWIEeaGWcutooOurQ" addition="_nh75YAWIEeaGWcutooOurQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_0k6AcAWIEeaGWcutooOurQ" name="Enviar telecomandos">
+          <include xmi:type="uml:Include" xmi:id="_9jLE0GrGEea_IMzGjSywSg" addition="_1796AAWIEeaGWcutooOurQ"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_0k6AcAWIEeaGWcutooOurQ" name="Enviar comandos">
-          <include xmi:type="uml:Include" xmi:id="_n2h-cAWKEeaGWcutooOurQ" addition="_gpa3gAWKEeaGWcutooOurQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_1796AAWIEeaGWcutooOurQ" name="Procesar telecomandos">
+          <extend xmi:type="uml:Extend" xmi:id="_ZfeiMGrIEea_IMzGjSywSg" extendedCase="_IRGAEGrHEea_IMzGjSywSg" extensionLocation="_ZffwUGrIEea_IMzGjSywSg"/>
+          <extend xmi:type="uml:Extend" xmi:id="_Z8spsGrIEea_IMzGjSywSg" extendedCase="_swDZgAWHEeaGWcutooOurQ" extensionLocation="_Z8tQwGrIEea_IMzGjSywSg"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_1796AAWIEeaGWcutooOurQ" name="Recibir comandos">
-          <include xmi:type="uml:Include" xmi:id="_ndB5UAWKEeaGWcutooOurQ" addition="_2yDYAAWJEeaGWcutooOurQ"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Package" xmi:id="_JCELsAWKEeaGWcutooOurQ" name="OBC">
-          <packagedElement xmi:type="uml:UseCase" xmi:id="_SwRoUAWIEeaGWcutooOurQ" name="Consultar datos ciencia">
-            <include xmi:type="uml:Include" xmi:id="_ZJkawAWKEeaGWcutooOurQ" addition="_UuVlkAWKEeaGWcutooOurQ"/>
-          </packagedElement>
-          <packagedElement xmi:type="uml:UseCase" xmi:id="_IWzTEAWIEeaGWcutooOurQ" name="Almacenar datos ciencia">
-            <include xmi:type="uml:Include" xmi:id="_Yo59sAWKEeaGWcutooOurQ" addition="_UuVlkAWKEeaGWcutooOurQ"/>
-          </packagedElement>
-          <packagedElement xmi:type="uml:UseCase" xmi:id="_nh75YAWIEeaGWcutooOurQ" name="Consultar telemetria">
-            <include xmi:type="uml:Include" xmi:id="_YR06cAWKEeaGWcutooOurQ" addition="_SGBfgAWKEeaGWcutooOurQ"/>
-          </packagedElement>
-          <packagedElement xmi:type="uml:UseCase" xmi:id="_nx4Z4AWIEeaGWcutooOurQ" name="Almacenar telemetria">
-            <include xmi:type="uml:Include" xmi:id="_X8YO4AWKEeaGWcutooOurQ" addition="_SGBfgAWKEeaGWcutooOurQ"/>
-          </packagedElement>
-          <packagedElement xmi:type="uml:UseCase" xmi:id="_2yDYAAWJEeaGWcutooOurQ" name="Gestionar comandos"/>
-          <packagedElement xmi:type="uml:UseCase" xmi:id="_SGBfgAWKEeaGWcutooOurQ" name="Gestionar telemetria"/>
-          <packagedElement xmi:type="uml:UseCase" xmi:id="_UuVlkAWKEeaGWcutooOurQ" name="Gestionar datos ciencia"/>
-          <packagedElement xmi:type="uml:UseCase" xmi:id="_gpa3gAWKEeaGWcutooOurQ" name="Almacenar comandos">
-            <include xmi:type="uml:Include" xmi:id="_obH5QAWKEeaGWcutooOurQ" addition="_2yDYAAWJEeaGWcutooOurQ"/>
-          </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_IRGAEGrHEea_IMzGjSywSg" name="Adquirir datos ciencia">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ZffwUGrIEea_IMzGjSywSg" name="ExtensionPoint1"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_ggeTsAWGEeaGWcutooOurQ" name="Ground Segment"/>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_iOetoAWGEeaGWcutooOurQ" name="Payload"/>
-      <packagedElement xmi:type="uml:Association" xmi:id="_BrU5kAWIEeaGWcutooOurQ" memberEnd="_BrWuwAWIEeaGWcutooOurQ _BrWuwQWIEeaGWcutooOurQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_BrWHsAWIEeaGWcutooOurQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_BrWHsQWIEeaGWcutooOurQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_BrWuwAWIEeaGWcutooOurQ" name="enviar datos ciencia" type="_rlQaUAWHEeaGWcutooOurQ" association="_BrU5kAWIEeaGWcutooOurQ"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_BrWuwQWIEeaGWcutooOurQ" name="payload" type="_iOetoAWGEeaGWcutooOurQ" association="_BrU5kAWIEeaGWcutooOurQ"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_GBBHcAWIEeaGWcutooOurQ" memberEnd="_GBBuggWIEeaGWcutooOurQ _GBBugwWIEeaGWcutooOurQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GBBugAWIEeaGWcutooOurQ" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GBBugQWIEeaGWcutooOurQ" key="nature" value="UML_Nature"/>
@@ -206,26 +176,12 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_GBBuggWIEeaGWcutooOurQ" name="recibir datos ciencia" type="_DNi6QAWIEeaGWcutooOurQ" association="_GBBHcAWIEeaGWcutooOurQ"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_GBBugwWIEeaGWcutooOurQ" name="ground segment" type="_ggeTsAWGEeaGWcutooOurQ" association="_GBBHcAWIEeaGWcutooOurQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_uVX8EAWIEeaGWcutooOurQ" memberEnd="_uVYjIgWIEeaGWcutooOurQ _uVYjIwWIEeaGWcutooOurQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uVYjIAWIEeaGWcutooOurQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uVYjIQWIEeaGWcutooOurQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_uVYjIgWIEeaGWcutooOurQ" name="enviar telemetria" type="_swDZgAWHEeaGWcutooOurQ" association="_uVX8EAWIEeaGWcutooOurQ"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_uVYjIwWIEeaGWcutooOurQ" name="payload" type="_iOetoAWGEeaGWcutooOurQ" association="_uVX8EAWIEeaGWcutooOurQ"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_ux0ngAWIEeaGWcutooOurQ" memberEnd="_ux1OkAWIEeaGWcutooOurQ _ux1OkQWIEeaGWcutooOurQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ux0ngQWIEeaGWcutooOurQ" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ux0nggWIEeaGWcutooOurQ" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_ux1OkAWIEeaGWcutooOurQ" name="recibir telemetria" type="_dkKBoAWIEeaGWcutooOurQ" association="_ux0ngAWIEeaGWcutooOurQ"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_ux1OkQWIEeaGWcutooOurQ" name="ground segment" type="_ggeTsAWGEeaGWcutooOurQ" association="_ux0ngAWIEeaGWcutooOurQ"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_3YrvoAWIEeaGWcutooOurQ" memberEnd="_3YsWsgWIEeaGWcutooOurQ _3YsWswWIEeaGWcutooOurQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3YsWsAWIEeaGWcutooOurQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3YsWsQWIEeaGWcutooOurQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_3YsWsgWIEeaGWcutooOurQ" name="recibir comandos" type="_1796AAWIEeaGWcutooOurQ" association="_3YrvoAWIEeaGWcutooOurQ"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_3YsWswWIEeaGWcutooOurQ" name="payload" type="_iOetoAWGEeaGWcutooOurQ" association="_3YrvoAWIEeaGWcutooOurQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_31iDsAWIEeaGWcutooOurQ" memberEnd="_31iDswWIEeaGWcutooOurQ _31iDtAWIEeaGWcutooOurQ">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_31iDsQWIEeaGWcutooOurQ" source="org.eclipse.papyrus">
@@ -316,5 +272,5 @@
   <Blocks:NestedConnectorEnd xmi:id="_4TUvsgi5Eea7tqq8NETspQ" propertyPath="_MmWg8AcuEeafd7GiqJXkMg _QF-0EAcvEeafd7GiqJXkMg" base_ConnectorEnd="_4TUvsAi5Eea7tqq8NETspQ"/>
   <Blocks:NestedConnectorEnd xmi:id="_4TVWwAi5Eea7tqq8NETspQ" propertyPath="_g0NMQAcsEeafd7GiqJXkMg _5HFa8AckEeafd7GiqJXkMg" base_ConnectorEnd="_4TUvsQi5Eea7tqq8NETspQ"/>
   <Blocks:NestedConnectorEnd xmi:id="_qDmsMgi6Eea7tqq8NETspQ" propertyPath="_g0NMQAcsEeafd7GiqJXkMg _g428YAckEeafd7GiqJXkMg _scOQwAi3Eea7tqq8NETspQ" base_ConnectorEnd="_qDmsMAi6Eea7tqq8NETspQ"/>
-  <Blocks:NestedConnectorEnd xmi:id="_uPpSAgi-Eea7tqq8NETspQ" propertyPath="_MmWg8AcuEeafd7GiqJXkMg _8kzTcAcuEeafd7GiqJXkMg" base_ConnectorEnd="_uPpSAAi-Eea7tqq8NETspQ"/>
+  <Blocks:NestedConnectorEnd xmi:id="_5kB9cGrAEeax3omSjm9JUA" propertyPath="_g428YAckEeafd7GiqJXkMg _scOQwAi3Eea7tqq8NETspQ" base_ConnectorEnd="_5kAvUGrAEeax3omSjm9JUA"/>
 </xmi:XMI>

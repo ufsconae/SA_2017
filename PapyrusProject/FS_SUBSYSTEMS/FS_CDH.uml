@@ -1550,9 +1550,9 @@ Normal mode
       <fragment xmi:type="uml:CombinedFragment" xmi:id="_Szjm8Ha0EeaCaKWk3pkMSw" name="CombinedFragment" covered="_d4rI8HauEeaCaKWk3pkMSw" interactionOperator="critical">
         <operand xmi:type="uml:InteractionOperand" xmi:id="_SzmDMHa0EeaCaKWk3pkMSw" name="InteractionOperand" covered="_d4rI8HauEeaCaKWk3pkMSw">
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_beEAUHaxEeaCaKWk3pkMSw" name="MessageRecv5" message="_beCLIHaxEeaCaKWk3pkMSw"/>
-          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_vQU0cHayEeaCaKWk3pkMSw" name="MessageRecv14" message="_vQTmUHayEeaCaKWk3pkMSw"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_i3-0MHaxEeaCaKWk3pkMSw" name="MessageRecv6" message="_i39mEHaxEeaCaKWk3pkMSw"/>
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FuF3cHayEeaCaKWk3pkMSw" name="MessageRecv9" message="_FuECQHayEeaCaKWk3pkMSw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_vQU0cHayEeaCaKWk3pkMSw" name="MessageRecv14" message="_vQTmUHayEeaCaKWk3pkMSw"/>
           <guard xmi:type="uml:InteractionConstraint" xmi:id="_SzmDMXa0EeaCaKWk3pkMSw">
             <specification xmi:type="uml:LiteralString" xmi:id="_SzmDMna0EeaCaKWk3pkMSw" value="undefined"/>
             <maxint xmi:type="uml:LiteralInteger" xmi:id="_SzmqQXa0EeaCaKWk3pkMSw" value="1"/>
@@ -1800,22 +1800,32 @@ Normal mode
       <ownedEnd xmi:type="uml:Property" xmi:id="_TaIIQ3jkEea3Fp-Xzp2_WQ" name="block6" type="_Ku420Ha9EeaCaKWk3pkMSw" association="_TaIIQHjkEea3Fp-Xzp2_WQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_s8hnoHjoEea3Fp-Xzp2_WQ" name="Seq Diagram Hk and Control Alg">
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_993owHjoEea3Fp-Xzp2_WQ" name="Task_Hk_i" coveredBy="_qHdFsHjtEea3Fp-Xzp2_WQ _w8wJkHjtEea3Fp-Xzp2_WQ"/>
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_x7aT8HkeEea3Fp-Xzp2_WQ" name="if flag==TRUE">
+        <specification xmi:type="uml:LiteralString" xmi:id="_x7biEHkeEea3Fp-Xzp2_WQ" value=""/>
+      </ownedRule>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_993owHjoEea3Fp-Xzp2_WQ" name="Task_Hk_i" coveredBy="_qHdFsHjtEea3Fp-Xzp2_WQ _w8wJkHjtEea3Fp-Xzp2_WQ _a60GIHkeEea3Fp-Xzp2_WQ"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_-iG-QHjoEea3Fp-Xzp2_WQ" name="Subsistem_i" coveredBy="_qHdswHjtEea3Fp-Xzp2_WQ _7fH8IHjtEea3Fp-Xzp2_WQ"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_-4F1UHjoEea3Fp-Xzp2_WQ" name="Buffer_subsystem_i:0..n" coveredBy="_w8wwoHjtEea3Fp-Xzp2_WQ _3AaVIHjtEea3Fp-Xzp2_WQ"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="__Q9BQHjoEea3Fp-Xzp2_WQ" name="ControlAlgorithn_i" coveredBy="_3AZuEXjtEea3Fp-Xzp2_WQ _7fGuAHjtEea3Fp-Xzp2_WQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="__Q9BQHjoEea3Fp-Xzp2_WQ" name="ControlAlgorithn_i"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_NqgGoHkeEea3Fp-Xzp2_WQ" name="Bool_flag_Hk" coveredBy="_a60GIXkeEea3Fp-Xzp2_WQ"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qHdFsHjtEea3Fp-Xzp2_WQ" name="MessageSend" covered="_993owHjoEea3Fp-Xzp2_WQ" message="_qHceoHjtEea3Fp-Xzp2_WQ"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_qHdswHjtEea3Fp-Xzp2_WQ" name="MessageRecv" covered="_-iG-QHjoEea3Fp-Xzp2_WQ" message="_qHceoHjtEea3Fp-Xzp2_WQ"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_w8wJkHjtEea3Fp-Xzp2_WQ" name="MessageSend0" covered="_993owHjoEea3Fp-Xzp2_WQ" message="_w8u7cHjtEea3Fp-Xzp2_WQ"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_w8wwoHjtEea3Fp-Xzp2_WQ" name="MessageRecv0" covered="_-4F1UHjoEea3Fp-Xzp2_WQ" message="_w8u7cHjtEea3Fp-Xzp2_WQ"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3AZuEXjtEea3Fp-Xzp2_WQ" name="MessageSend1" covered="__Q9BQHjoEea3Fp-Xzp2_WQ" message="_3AZuEHjtEea3Fp-Xzp2_WQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_a60GIHkeEea3Fp-Xzp2_WQ" name="MessageSend1" covered="_993owHjoEea3Fp-Xzp2_WQ" message="_a6zfEHkeEea3Fp-Xzp2_WQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_a60GIXkeEea3Fp-Xzp2_WQ" name="MessageRecv1" covered="_NqgGoHkeEea3Fp-Xzp2_WQ" message="_a6zfEHkeEea3Fp-Xzp2_WQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SDpRIXkeEea3Fp-Xzp2_WQ" name="MessageSend3" message="_SDpRIHkeEea3Fp-Xzp2_WQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SDpRInkeEea3Fp-Xzp2_WQ" name="MessageRecv3" message="_SDpRIHkeEea3Fp-Xzp2_WQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3AZuEXjtEea3Fp-Xzp2_WQ" name="MessageSend1" message="_3AZuEHjtEea3Fp-Xzp2_WQ"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3AaVIHjtEea3Fp-Xzp2_WQ" name="MessageRecv1" covered="_-4F1UHjoEea3Fp-Xzp2_WQ" message="_3AZuEHjtEea3Fp-Xzp2_WQ"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7fGuAHjtEea3Fp-Xzp2_WQ" name="MessageSend2" covered="__Q9BQHjoEea3Fp-Xzp2_WQ" message="_7fFf4HjtEea3Fp-Xzp2_WQ"/>
+      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7fGuAHjtEea3Fp-Xzp2_WQ" name="MessageSend2" message="_7fFf4HjtEea3Fp-Xzp2_WQ"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7fH8IHjtEea3Fp-Xzp2_WQ" name="MessageRecv2" covered="_-iG-QHjoEea3Fp-Xzp2_WQ" message="_7fFf4HjtEea3Fp-Xzp2_WQ"/>
       <message xmi:type="uml:Message" xmi:id="_qHceoHjtEea3Fp-Xzp2_WQ" name="Get_HK()" receiveEvent="_qHdswHjtEea3Fp-Xzp2_WQ" sendEvent="_qHdFsHjtEea3Fp-Xzp2_WQ"/>
       <message xmi:type="uml:Message" xmi:id="_w8u7cHjtEea3Fp-Xzp2_WQ" name="WriteHk_i()" receiveEvent="_w8wwoHjtEea3Fp-Xzp2_WQ" sendEvent="_w8wJkHjtEea3Fp-Xzp2_WQ"/>
       <message xmi:type="uml:Message" xmi:id="_3AZuEHjtEea3Fp-Xzp2_WQ" name="ReadHk_i()" receiveEvent="_3AaVIHjtEea3Fp-Xzp2_WQ" sendEvent="_3AZuEXjtEea3Fp-Xzp2_WQ"/>
       <message xmi:type="uml:Message" xmi:id="_7fFf4HjtEea3Fp-Xzp2_WQ" name="Control()" receiveEvent="_7fH8IHjtEea3Fp-Xzp2_WQ" sendEvent="_7fGuAHjtEea3Fp-Xzp2_WQ"/>
+      <message xmi:type="uml:Message" xmi:id="_SDpRIHkeEea3Fp-Xzp2_WQ" name="Read_flag()" receiveEvent="_SDpRInkeEea3Fp-Xzp2_WQ" sendEvent="_SDpRIXkeEea3Fp-Xzp2_WQ"/>
+      <message xmi:type="uml:Message" xmi:id="_a6zfEHkeEea3Fp-Xzp2_WQ" name="Write_Flag_i(True)" receiveEvent="_a60GIXkeEea3Fp-Xzp2_WQ" sendEvent="_a60GIHkeEea3Fp-Xzp2_WQ"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sKAVMAGtEeajHqwUCOgvUA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sKAVMQGtEeajHqwUCOgvUA" source="http://www.eclipse.org/uml2/2.0.0/UML">

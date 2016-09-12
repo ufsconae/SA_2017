@@ -1537,7 +1537,7 @@ Normal mode
     <packagedElement xmi:type="uml:Interaction" xmi:id="_LRd9QHauEeaCaKWk3pkMSw" name="Sequence Diagram Hk &amp; Telemetry Procesing">
       <lifeline xmi:type="uml:Lifeline" xmi:id="_dOzFgHauEeaCaKWk3pkMSw" name="Task_Frame_tmy" coveredBy="_eUhlMHazEeaCaKWk3pkMSw _jtM6EHazEeaCaKWk3pkMSw _r_YLoHazEeaCaKWk3pkMSw _3mCFsHazEeaCaKWk3pkMSw"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_dldSAHauEeaCaKWk3pkMSw" name="MM-Payload" coveredBy="_3mCswHazEeaCaKWk3pkMSw"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_d4rI8HauEeaCaKWk3pkMSw" name="BufferHK" coveredBy="_eUg-IHazEeaCaKWk3pkMSw _jtNhIHazEeaCaKWk3pkMSw _Szjm8Ha0EeaCaKWk3pkMSw _SzmDMHa0EeaCaKWk3pkMSw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_d4rI8HauEeaCaKWk3pkMSw" name="BufferHk_DataFrame" coveredBy="_eUg-IHazEeaCaKWk3pkMSw _jtNhIHazEeaCaKWk3pkMSw _Szjm8Ha0EeaCaKWk3pkMSw _SzmDMHa0EeaCaKWk3pkMSw"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_eLIx8HauEeaCaKWk3pkMSw" name="TaskHk-Adcs" coveredBy="_gA0PQHawEeaCaKWk3pkMSw _GXyKIHaxEeaCaKWk3pkMSw _Qh7C4HaxEeaCaKWk3pkMSw _beDZQHaxEeaCaKWk3pkMSw"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_ehQy8HauEeaCaKWk3pkMSw" name="TaskHk-Eps" coveredBy="_mzKFwHawEeaCaKWk3pkMSw _i3-NIHaxEeaCaKWk3pkMSw _v-1VsHaxEeaCaKWk3pkMSw _yKxBwXaxEeaCaKWk3pkMSw"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_h2zycHauEeaCaKWk3pkMSw" name="TaskHk-TT&amp;c" coveredBy="_p4vWoHawEeaCaKWk3pkMSw _FuFQYHayEeaCaKWk3pkMSw _J7d20HayEeaCaKWk3pkMSw _Mlw54HayEeaCaKWk3pkMSw"/>
@@ -1642,9 +1642,11 @@ Normal mode
     <packagedElement xmi:type="uml:Actor" xmi:id="_DzlRkHa9EeaCaKWk3pkMSw" name="Actor1"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_Ku420Ha9EeaCaKWk3pkMSw" name="Block6">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_L10CoHa9EeaCaKWk3pkMSw" name="Task_Frame_Tmy" type="_MBMMMHa9EeaCaKWk3pkMSw" aggregation="composite" association="_MBMzQHa9EeaCaKWk3pkMSw"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_M2xJUHa9EeaCaKWk3pkMSw" name="Buffer_HK" type="_NA58wHa9EeaCaKWk3pkMSw" aggregation="composite" association="_NA6j0Xa9EeaCaKWk3pkMSw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_M2xJUHa9EeaCaKWk3pkMSw" name="BufferHK_dataFrame" type="_NA58wHa9EeaCaKWk3pkMSw" aggregation="composite" association="_NA6j0Xa9EeaCaKWk3pkMSw"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_Qm1hoHa9EeaCaKWk3pkMSw" name="Buffer_Frequency" type="_Qw7RwHa9EeaCaKWk3pkMSw" aggregation="composite" association="_Qw740Ha9EeaCaKWk3pkMSw"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_RbQBIHa9EeaCaKWk3pkMSw" name="Task_Hk: i:1...n" type="_RkRaQHa9EeaCaKWk3pkMSw" aggregation="composite" association="_RkSBUXa9EeaCaKWk3pkMSw"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_KFU8EHjkEea3Fp-Xzp2_WQ" name="Buffer_Hk_Control_Algorithm_i:0..n" type="_KVXjMHjkEea3Fp-Xzp2_WQ" aggregation="composite" association="_KVamgHjkEea3Fp-Xzp2_WQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_TPatEHjkEea3Fp-Xzp2_WQ" name="Task_Control_Algorithm_i:0..n" type="_TaGTEHjkEea3Fp-Xzp2_WQ" aggregation="composite" association="_TaIIQHjkEea3Fp-Xzp2_WQ"/>
       <ownedConnector xmi:type="uml:Connector" xmi:id="_WzQLIHa-EeaCaKWk3pkMSw">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_WzQyMHa-EeaCaKWk3pkMSw" role="_L10CoHa9EeaCaKWk3pkMSw"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_WzQyMXa-EeaCaKWk3pkMSw" role="_M2xJUHa9EeaCaKWk3pkMSw"/>
@@ -1656,6 +1658,14 @@ Normal mode
       <ownedConnector xmi:type="uml:Connector" xmi:id="_bSO34Ha-EeaCaKWk3pkMSw">
         <end xmi:type="uml:ConnectorEnd" xmi:id="_bSPe8Ha-EeaCaKWk3pkMSw" role="_RbQBIHa9EeaCaKWk3pkMSw"/>
         <end xmi:type="uml:ConnectorEnd" xmi:id="_bSPe8Xa-EeaCaKWk3pkMSw" role="_Qm1hoHa9EeaCaKWk3pkMSw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_h0oC8HjkEea3Fp-Xzp2_WQ">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_h0pREHjkEea3Fp-Xzp2_WQ" role="_RbQBIHa9EeaCaKWk3pkMSw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_h0p4IHjkEea3Fp-Xzp2_WQ" role="_KFU8EHjkEea3Fp-Xzp2_WQ"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_j01AIHjkEea3Fp-Xzp2_WQ">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_j01nMHjkEea3Fp-Xzp2_WQ" role="_TPatEHjkEea3Fp-Xzp2_WQ"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_j01nMXjkEea3Fp-Xzp2_WQ" role="_KFU8EHjkEea3Fp-Xzp2_WQ"/>
       </ownedConnector>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_Ku5d4Ha9EeaCaKWk3pkMSw" name="Association1" memberEnd="_Kk2KAHa9EeaCaKWk3pkMSw _Ku5d43a9EeaCaKWk3pkMSw">
@@ -1728,7 +1738,7 @@ Normal mode
       <message xmi:type="uml:Message" xmi:id="_UDbc8HbAEeaCaKWk3pkMSw" name="Get_Hk(&amp;dataSubystem)" receiveEvent="_UDdSIHbAEeaCaKWk3pkMSw" sendEvent="_UDcrEHbAEeaCaKWk3pkMSw"/>
       <message xmi:type="uml:Message" xmi:id="_Xqo0MHbAEeaCaKWk3pkMSw" name="Build&amp;Write_dataFrame(dataSubsystem)" receiveEvent="_XqrQcHbAEeaCaKWk3pkMSw" sendEvent="_XqpbQHbAEeaCaKWk3pkMSw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Interaction" xmi:id="_n3A_YHbEEealkZ7wscn3Wg" name="Interaction1">
+    <packagedElement xmi:type="uml:Interaction" xmi:id="_n3A_YHbEEealkZ7wscn3Wg" name="Seq_diagram_HK&amp;ControlAlgorithms">
       <lifeline xmi:type="uml:Lifeline" xmi:id="_puu5gHbFEealkZ7wscn3Wg" name="TaskHk-Eps"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_puu5gXbFEealkZ7wscn3Wg" name="TT&amp;C-UHF"/>
       <lifeline xmi:type="uml:Lifeline" xmi:id="_puvgkHbFEealkZ7wscn3Wg" name="Payload"/>
@@ -1756,6 +1766,20 @@ Normal mode
       <message xmi:type="uml:Message" xmi:id="_buljEHbGEealkZ7wscn3Wg" name="WriteHK_i()" receiveEvent="_bunYQXbGEealkZ7wscn3Wg" sendEvent="_bunYQHbGEealkZ7wscn3Wg"/>
       <message xmi:type="uml:Message" xmi:id="_gNFusHbGEealkZ7wscn3Wg" name="Read_HK_i()" receiveEvent="_gNGVwXbGEealkZ7wscn3Wg" sendEvent="_gNGVwHbGEealkZ7wscn3Wg"/>
       <message xmi:type="uml:Message" xmi:id="_m36A4HbGEealkZ7wscn3Wg" name="control_i()" receiveEvent="_m38dIHbGEealkZ7wscn3Wg" sendEvent="_m372EHbGEealkZ7wscn3Wg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KVXjMHjkEea3Fp-Xzp2_WQ" name="Block11"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KVamgHjkEea3Fp-Xzp2_WQ" name="Association6" memberEnd="_KFU8EHjkEea3Fp-Xzp2_WQ _KVamg3jkEea3Fp-Xzp2_WQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KVamgXjkEea3Fp-Xzp2_WQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KVamgnjkEea3Fp-Xzp2_WQ" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KVamg3jkEea3Fp-Xzp2_WQ" name="block6" type="_Ku420Ha9EeaCaKWk3pkMSw" association="_KVamgHjkEea3Fp-Xzp2_WQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TaGTEHjkEea3Fp-Xzp2_WQ" name="Block12"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_TaIIQHjkEea3Fp-Xzp2_WQ" name="Association7" memberEnd="_TPatEHjkEea3Fp-Xzp2_WQ _TaIIQ3jkEea3Fp-Xzp2_WQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TaIIQXjkEea3Fp-Xzp2_WQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TaIIQnjkEea3Fp-Xzp2_WQ" key="nature" value="SysML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_TaIIQ3jkEea3Fp-Xzp2_WQ" name="block6" type="_Ku420Ha9EeaCaKWk3pkMSw" association="_TaIIQHjkEea3Fp-Xzp2_WQ"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sKAVMAGtEeajHqwUCOgvUA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sKAVMQGtEeajHqwUCOgvUA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -1923,7 +1947,9 @@ Normal mode
   <Blocks:Block xmi:id="_NA6j0Ha9EeaCaKWk3pkMSw" base_Class="_NA58wHa9EeaCaKWk3pkMSw"/>
   <Blocks:Block xmi:id="_Qw7RwXa9EeaCaKWk3pkMSw" base_Class="_Qw7RwHa9EeaCaKWk3pkMSw"/>
   <Blocks:Block xmi:id="_RkSBUHa9EeaCaKWk3pkMSw" base_Class="_RkRaQHa9EeaCaKWk3pkMSw"/>
-  <Blocks:NestedConnectorEnd xmi:id="_YvIB8Ha-EeaCaKWk3pkMSw" propertyPath="_Kk2KAHa9EeaCaKWk3pkMSw" base_ConnectorEnd="_YvHa4Xa-EeaCaKWk3pkMSw"/>
   <Blocks:NestedConnectorEnd xmi:id="_cFkZUXa-EeaCaKWk3pkMSw" propertyPath="_Kk2KAHa9EeaCaKWk3pkMSw _L10CoHa9EeaCaKWk3pkMSw" base_ConnectorEnd="_cFkZUHa-EeaCaKWk3pkMSw"/>
   <Blocks:NestedConnectorEnd xmi:id="_fodRQna-EeaCaKWk3pkMSw" propertyPath="_Kk2KAHa9EeaCaKWk3pkMSw _L10CoHa9EeaCaKWk3pkMSw" base_ConnectorEnd="_fodRQXa-EeaCaKWk3pkMSw"/>
+  <Blocks:NestedConnectorEnd xmi:id="_Gj9uIHjkEea3Fp-Xzp2_WQ" propertyPath="_Kk2KAHa9EeaCaKWk3pkMSw" base_ConnectorEnd="_YvHa4Xa-EeaCaKWk3pkMSw"/>
+  <Blocks:Block xmi:id="_KVYxUHjkEea3Fp-Xzp2_WQ" base_Class="_KVXjMHjkEea3Fp-Xzp2_WQ"/>
+  <Blocks:Block xmi:id="_TaG6IHjkEea3Fp-Xzp2_WQ" base_Class="_TaGTEHjkEea3Fp-Xzp2_WQ"/>
 </xmi:XMI>

@@ -1707,20 +1707,39 @@ Normal mode
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_TeMJQHa9EeaCaKWk3pkMSw" name="Actor3"/>
     <packagedElement xmi:type="uml:Interaction" xmi:id="_PzMzUHa_EeaCaKWk3pkMSw" name="Seq_diagram_Frequency_Telemetry">
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_Z5UHsHa_EeaCaKWk3pkMSw" name="TT&amp;C" coveredBy="_p2G7kHa_EeaCaKWk3pkMSw"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_aYmEsHa_EeaCaKWk3pkMSw" name="Task_Telecomand" coveredBy="_p2G7kXa_EeaCaKWk3pkMSw _uy93IHa_EeaCaKWk3pkMSw"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_as45sHa_EeaCaKWk3pkMSw" name="Table_Freq" coveredBy="_uy-eMHa_EeaCaKWk3pkMSw _CnqJoHbAEeaCaKWk3pkMSw"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_9HfssHa_EeaCaKWk3pkMSw" name="Task_Hk_i" coveredBy="_CnpikHbAEeaCaKWk3pkMSw _UDcrEHbAEeaCaKWk3pkMSw _XqpbQHbAEeaCaKWk3pkMSw"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_-aTYYHa_EeaCaKWk3pkMSw" name="Subsystem_i" coveredBy="_UDdSIHbAEeaCaKWk3pkMSw"/>
-      <lifeline xmi:type="uml:Lifeline" xmi:id="_RebwoHbAEeaCaKWk3pkMSw" name="BufferHk" coveredBy="_rFmYEHbAEeaCaKWk3pkMSw _rFm_IHbAEeaCaKWk3pkMSw"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_p2G7kHa_EeaCaKWk3pkMSw" name="MessageSend" covered="_Z5UHsHa_EeaCaKWk3pkMSw" message="_p2GUgHa_EeaCaKWk3pkMSw"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_p2G7kXa_EeaCaKWk3pkMSw" name="MessageRecv" covered="_aYmEsHa_EeaCaKWk3pkMSw" message="_p2GUgHa_EeaCaKWk3pkMSw"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uy93IHa_EeaCaKWk3pkMSw" name="MessageSend0" covered="_aYmEsHa_EeaCaKWk3pkMSw" message="_uy8pAHa_EeaCaKWk3pkMSw"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uy-eMHa_EeaCaKWk3pkMSw" name="MessageRecv0" covered="_as45sHa_EeaCaKWk3pkMSw" message="_uy8pAHa_EeaCaKWk3pkMSw"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_CnpikHbAEeaCaKWk3pkMSw" name="MessageSend1" covered="_9HfssHa_EeaCaKWk3pkMSw" message="_CnoUcHbAEeaCaKWk3pkMSw"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_CnqJoHbAEeaCaKWk3pkMSw" name="MessageRecv1" covered="_as45sHa_EeaCaKWk3pkMSw" message="_CnoUcHbAEeaCaKWk3pkMSw"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UDcrEHbAEeaCaKWk3pkMSw" name="MessageSend2" covered="_9HfssHa_EeaCaKWk3pkMSw" message="_UDbc8HbAEeaCaKWk3pkMSw"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UDdSIHbAEeaCaKWk3pkMSw" name="MessageRecv2" covered="_-aTYYHa_EeaCaKWk3pkMSw" message="_UDbc8HbAEeaCaKWk3pkMSw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_Z5UHsHa_EeaCaKWk3pkMSw" name="TT&amp;C" coveredBy="_GPkKcHjvEea3Fp-Xzp2_WQ _GPkxgHjvEea3Fp-Xzp2_WQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_aYmEsHa_EeaCaKWk3pkMSw" name="Task_Telecomand" coveredBy="_GPkKcHjvEea3Fp-Xzp2_WQ _GPkxgHjvEea3Fp-Xzp2_WQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_as45sHa_EeaCaKWk3pkMSw" name="Table_Freq" coveredBy="_GPkKcHjvEea3Fp-Xzp2_WQ _GPkxgHjvEea3Fp-Xzp2_WQ _J0kiQHjvEea3Fp-Xzp2_WQ _J0lJUHjvEea3Fp-Xzp2_WQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_9HfssHa_EeaCaKWk3pkMSw" name="Task_Hk_i" coveredBy="_CnpikHbAEeaCaKWk3pkMSw _UDcrEHbAEeaCaKWk3pkMSw _XqpbQHbAEeaCaKWk3pkMSw _J0kiQHjvEea3Fp-Xzp2_WQ _J0lJUHjvEea3Fp-Xzp2_WQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_-aTYYHa_EeaCaKWk3pkMSw" name="Subsystem_i" coveredBy="_UDdSIHbAEeaCaKWk3pkMSw _J0kiQHjvEea3Fp-Xzp2_WQ _J0lJUHjvEea3Fp-Xzp2_WQ"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_RebwoHbAEeaCaKWk3pkMSw" name="BufferHk" coveredBy="_rFmYEHbAEeaCaKWk3pkMSw _rFm_IHbAEeaCaKWk3pkMSw _J0kiQHjvEea3Fp-Xzp2_WQ _J0lJUHjvEea3Fp-Xzp2_WQ"/>
+      <fragment xmi:type="uml:CombinedFragment" xmi:id="_GPkKcHjvEea3Fp-Xzp2_WQ" name="CombinedFragment" covered="_aYmEsHa_EeaCaKWk3pkMSw _Z5UHsHa_EeaCaKWk3pkMSw _as45sHa_EeaCaKWk3pkMSw" interactionOperator="alt">
+        <operand xmi:type="uml:InteractionOperand" xmi:id="_GPkxgHjvEea3Fp-Xzp2_WQ" name="InteractionOperand" covered="_aYmEsHa_EeaCaKWk3pkMSw _Z5UHsHa_EeaCaKWk3pkMSw _as45sHa_EeaCaKWk3pkMSw">
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_p2G7kHa_EeaCaKWk3pkMSw" name="MessageSend" message="_p2GUgHa_EeaCaKWk3pkMSw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_p2G7kXa_EeaCaKWk3pkMSw" name="MessageRecv" message="_p2GUgHa_EeaCaKWk3pkMSw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uy93IHa_EeaCaKWk3pkMSw" name="MessageSend0" message="_uy8pAHa_EeaCaKWk3pkMSw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uy-eMHa_EeaCaKWk3pkMSw" name="MessageRecv0" message="_uy8pAHa_EeaCaKWk3pkMSw"/>
+          <guard xmi:type="uml:InteractionConstraint" xmi:id="_GPkxgXjvEea3Fp-Xzp2_WQ">
+            <specification xmi:type="uml:LiteralString" xmi:id="_GPlYkHjvEea3Fp-Xzp2_WQ" value="undefined"/>
+            <maxint xmi:type="uml:LiteralInteger" xmi:id="_GPlYknjvEea3Fp-Xzp2_WQ" value="1"/>
+            <minint xmi:type="uml:LiteralInteger" xmi:id="_GPlYkXjvEea3Fp-Xzp2_WQ"/>
+          </guard>
+        </operand>
+      </fragment>
+      <fragment xmi:type="uml:CombinedFragment" xmi:id="_J0kiQHjvEea3Fp-Xzp2_WQ" name="CombinedFragment0" covered="_as45sHa_EeaCaKWk3pkMSw _-aTYYHa_EeaCaKWk3pkMSw _9HfssHa_EeaCaKWk3pkMSw _RebwoHbAEeaCaKWk3pkMSw" interactionOperator="loop">
+        <operand xmi:type="uml:InteractionOperand" xmi:id="_J0lJUHjvEea3Fp-Xzp2_WQ" name="InteractionOperand" covered="_as45sHa_EeaCaKWk3pkMSw _-aTYYHa_EeaCaKWk3pkMSw _9HfssHa_EeaCaKWk3pkMSw _RebwoHbAEeaCaKWk3pkMSw">
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_CnpikHbAEeaCaKWk3pkMSw" name="MessageSend1" covered="_9HfssHa_EeaCaKWk3pkMSw" message="_CnoUcHbAEeaCaKWk3pkMSw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_CnqJoHbAEeaCaKWk3pkMSw" name="MessageRecv1" message="_CnoUcHbAEeaCaKWk3pkMSw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UDcrEHbAEeaCaKWk3pkMSw" name="MessageSend2" covered="_9HfssHa_EeaCaKWk3pkMSw" message="_UDbc8HbAEeaCaKWk3pkMSw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UDdSIHbAEeaCaKWk3pkMSw" name="MessageRecv2" covered="_-aTYYHa_EeaCaKWk3pkMSw" message="_UDbc8HbAEeaCaKWk3pkMSw"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XqpbQHbAEeaCaKWk3pkMSw" name="MessageSend3" covered="_9HfssHa_EeaCaKWk3pkMSw" message="_Xqo0MHbAEeaCaKWk3pkMSw"/>
+          <guard xmi:type="uml:InteractionConstraint" xmi:id="_J0lJUXjvEea3Fp-Xzp2_WQ">
+            <specification xmi:type="uml:LiteralString" xmi:id="_J0lJUnjvEea3Fp-Xzp2_WQ" value="undefined"/>
+            <maxint xmi:type="uml:LiteralInteger" xmi:id="_J0lwYXjvEea3Fp-Xzp2_WQ" value="1"/>
+            <minint xmi:type="uml:LiteralInteger" xmi:id="_J0lwYHjvEea3Fp-Xzp2_WQ"/>
+          </guard>
+        </operand>
+      </fragment>
       <fragment xmi:type="uml:CombinedFragment" xmi:id="_rFmYEHbAEeaCaKWk3pkMSw" covered="_RebwoHbAEeaCaKWk3pkMSw" interactionOperator="critical">
         <operand xmi:type="uml:InteractionOperand" xmi:id="_rFm_IHbAEeaCaKWk3pkMSw" name="InteractionOperand" covered="_RebwoHbAEeaCaKWk3pkMSw">
           <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XqrQcHbAEeaCaKWk3pkMSw" name="MessageRecv3" message="_Xqo0MHbAEeaCaKWk3pkMSw"/>
@@ -1731,7 +1750,6 @@ Normal mode
           </guard>
         </operand>
       </fragment>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XqpbQHbAEeaCaKWk3pkMSw" name="MessageSend3" covered="_9HfssHa_EeaCaKWk3pkMSw" message="_Xqo0MHbAEeaCaKWk3pkMSw"/>
       <message xmi:type="uml:Message" xmi:id="_p2GUgHa_EeaCaKWk3pkMSw" name="TelecommadChangeFreqArrived()" receiveEvent="_p2G7kXa_EeaCaKWk3pkMSw" sendEvent="_p2G7kHa_EeaCaKWk3pkMSw"/>
       <message xmi:type="uml:Message" xmi:id="_uy8pAHa_EeaCaKWk3pkMSw" name="Update()" receiveEvent="_uy-eMHa_EeaCaKWk3pkMSw" sendEvent="_uy93IHa_EeaCaKWk3pkMSw"/>
       <message xmi:type="uml:Message" xmi:id="_CnoUcHbAEeaCaKWk3pkMSw" name="ReadFreq(FreqSubsystem)" receiveEvent="_CnqJoHbAEeaCaKWk3pkMSw" sendEvent="_CnpikHbAEeaCaKWk3pkMSw"/>

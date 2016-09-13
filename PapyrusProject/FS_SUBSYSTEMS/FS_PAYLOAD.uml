@@ -145,7 +145,7 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_wZgJIHdZEeamQZcPhcSvkw" name="ActivityDiagrams">
-      <packagedElement xmi:type="uml:Activity" xmi:id="_0CoL8HdZEeamQZcPhcSvkw" name="SW-PAYLOAD" node="_qYX3sHdaEeamQZcPhcSvkw _r73qwHdaEeamQZcPhcSvkw _zRHaAHdaEeamQZcPhcSvkw _3AywwHdaEeamQZcPhcSvkw ___H9sHdaEeamQZcPhcSvkw _EqzCoHdbEeamQZcPhcSvkw _G6sBoHdbEeamQZcPhcSvkw _MzKQ4HdbEeamQZcPhcSvkw _RyVgoHdbEeamQZcPhcSvkw _X1sxQHdbEeamQZcPhcSvkw _0vK28HdbEeamQZcPhcSvkw _GlKLoHddEeamQZcPhcSvkw _mZuzsHdhEeamQZcPhcSvkw _yy3TkHdhEeamQZcPhcSvkw _MV1-kHdiEeamQZcPhcSvkw _H7IpgHjxEeaq-9yjX003Mw _LXbxQHjxEeaq-9yjX003Mw">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_0CoL8HdZEeamQZcPhcSvkw" name="SW-PAYLOAD" node="_qYX3sHdaEeamQZcPhcSvkw _zRHaAHdaEeamQZcPhcSvkw _3AywwHdaEeamQZcPhcSvkw ___H9sHdaEeamQZcPhcSvkw _EqzCoHdbEeamQZcPhcSvkw _G6sBoHdbEeamQZcPhcSvkw _MzKQ4HdbEeamQZcPhcSvkw _RyVgoHdbEeamQZcPhcSvkw _X1sxQHdbEeamQZcPhcSvkw _0vK28HdbEeamQZcPhcSvkw _GlKLoHddEeamQZcPhcSvkw _mZuzsHdhEeamQZcPhcSvkw _yy3TkHdhEeamQZcPhcSvkw _MV1-kHdiEeamQZcPhcSvkw _H7IpgHjxEeaq-9yjX003Mw _LXbxQHjxEeaq-9yjX003Mw">
         <edge xmi:type="uml:ControlFlow" xmi:id="_8jThoHdbEeamQZcPhcSvkw" target="_3AywwHdaEeamQZcPhcSvkw" source="_qYX3sHdaEeamQZcPhcSvkw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_9jHY0HdbEeamQZcPhcSvkw" target="_LXbxQHjxEeaq-9yjX003Mw" source="_3AywwHdaEeamQZcPhcSvkw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_-TPOMHdbEeamQZcPhcSvkw" target="_EqzCoHdbEeamQZcPhcSvkw" source="_zRHaAHdaEeamQZcPhcSvkw"/>
@@ -159,15 +159,14 @@
         <edge xmi:type="uml:ControlFlow" xmi:id="_lCamAHdiEeamQZcPhcSvkw" target="_MV1-kHdiEeamQZcPhcSvkw" source="_mZuzsHdhEeamQZcPhcSvkw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_lnTbwHdiEeamQZcPhcSvkw" target="_yy3TkHdhEeamQZcPhcSvkw" source="_MV1-kHdiEeamQZcPhcSvkw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_mHTxgHdiEeamQZcPhcSvkw" name="SI" target="_zRHaAHdaEeamQZcPhcSvkw" source="_yy3TkHdhEeamQZcPhcSvkw"/>
-        <edge xmi:type="uml:ControlFlow" xmi:id="_qvzmoHdiEeamQZcPhcSvkw" name="NO" target="_r73qwHdaEeamQZcPhcSvkw" source="_yy3TkHdhEeamQZcPhcSvkw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_hKYIAHdjEeamQZcPhcSvkw" name="clasificar comando" target="_0vK28HdbEeamQZcPhcSvkw" source="_EqzCoHdbEeamQZcPhcSvkw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_JCQcAHdkEeamQZcPhcSvkw" target="_H7IpgHjxEeaq-9yjX003Mw" source="_X1sxQHdbEeamQZcPhcSvkw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_JvYAsHdkEeamQZcPhcSvkw" target="_H7IpgHjxEeaq-9yjX003Mw" source="_GlKLoHddEeamQZcPhcSvkw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_KsBPIHdkEeamQZcPhcSvkw" target="_H7IpgHjxEeaq-9yjX003Mw" source="_RyVgoHdbEeamQZcPhcSvkw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_oucg8HdkEeamQZcPhcSvkw" target="_MV1-kHdiEeamQZcPhcSvkw" source="_H7IpgHjxEeaq-9yjX003Mw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_pD_gwHjxEeaq-9yjX003Mw" target="_mZuzsHdhEeamQZcPhcSvkw" source="_LXbxQHjxEeaq-9yjX003Mw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_niblIHmmEeaq-9yjX003Mw" name="NO" target="_LXbxQHjxEeaq-9yjX003Mw" source="_yy3TkHdhEeamQZcPhcSvkw"/>
         <node xmi:type="uml:InitialNode" xmi:id="_qYX3sHdaEeamQZcPhcSvkw" name="Start" outgoing="_8jThoHdbEeamQZcPhcSvkw"/>
-        <node xmi:type="uml:FlowFinalNode" xmi:id="_r73qwHdaEeamQZcPhcSvkw" name="End" incoming="_qvzmoHdiEeamQZcPhcSvkw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_zRHaAHdaEeamQZcPhcSvkw" name="Procesar comando de C&amp;DH" incoming="_mHTxgHdiEeamQZcPhcSvkw" outgoing="_-TPOMHdbEeamQZcPhcSvkw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_3AywwHdaEeamQZcPhcSvkw" name="Realizar configuracion inicial" incoming="_8jThoHdbEeamQZcPhcSvkw" outgoing="_9jHY0HdbEeamQZcPhcSvkw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="___H9sHdaEeamQZcPhcSvkw" name="Solicitar Hosekeeping POBC, NIR/SWIR, DCS" incoming="_AmGBoHdcEeamQZcPhcSvkw" outgoing="_Jn0rYHddEeamQZcPhcSvkw"/>
@@ -179,10 +178,10 @@
         <node xmi:type="uml:DecisionNode" xmi:id="_0vK28HdbEeamQZcPhcSvkw" name="¿Tipo comando?" incoming="_hKYIAHdjEeamQZcPhcSvkw" outgoing="_AmGBoHdcEeamQZcPhcSvkw _Voak4HdcEeamQZcPhcSvkw _Ij17UHdcEeamQZcPhcSvkw _DNp5wHdcEeamQZcPhcSvkw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_GlKLoHddEeamQZcPhcSvkw" name="Enviar HK a CDH" incoming="_Jn0rYHddEeamQZcPhcSvkw" outgoing="_JvYAsHdkEeamQZcPhcSvkw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_mZuzsHdhEeamQZcPhcSvkw" name="Almacenar comandos en buffer" incoming="_pD_gwHjxEeaq-9yjX003Mw" outgoing="_lCamAHdiEeamQZcPhcSvkw"/>
-        <node xmi:type="uml:DecisionNode" xmi:id="_yy3TkHdhEeamQZcPhcSvkw" name="¿Existen comandos en buffer?" incoming="_lnTbwHdiEeamQZcPhcSvkw" outgoing="_mHTxgHdiEeamQZcPhcSvkw _qvzmoHdiEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_yy3TkHdhEeamQZcPhcSvkw" name="¿Existen comandos en buffer?" incoming="_lnTbwHdiEeamQZcPhcSvkw" outgoing="_mHTxgHdiEeamQZcPhcSvkw _niblIHmmEeaq-9yjX003Mw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_MV1-kHdiEeamQZcPhcSvkw" name="Extraer comando" incoming="_lCamAHdiEeamQZcPhcSvkw _oucg8HdkEeamQZcPhcSvkw" outgoing="_lnTbwHdiEeamQZcPhcSvkw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_H7IpgHjxEeaq-9yjX003Mw" name="Registrar comando ejecutado" incoming="_KsBPIHdkEeamQZcPhcSvkw _JCQcAHdkEeamQZcPhcSvkw _JvYAsHdkEeamQZcPhcSvkw" outgoing="_oucg8HdkEeamQZcPhcSvkw"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_LXbxQHjxEeaq-9yjX003Mw" name="Recibir secuencia de comandos" incoming="_9jHY0HdbEeamQZcPhcSvkw" outgoing="_pD_gwHjxEeaq-9yjX003Mw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_LXbxQHjxEeaq-9yjX003Mw" name="Recibir secuencia de comandos" incoming="_9jHY0HdbEeamQZcPhcSvkw _niblIHmmEeaq-9yjX003Mw" outgoing="_pD_gwHjxEeaq-9yjX003Mw"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_RgMPoHd6EeamQZcPhcSvkw" name="StateMachines">

@@ -1860,7 +1860,7 @@ Full = HW</body>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_8-1UAHjwEeaOqM31cI-Pbw" name="Scrubbing"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_UHsJIHj1EeaOqM31cI-Pbw" name="Algoritmos de control de EPS"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Actor" xmi:id="_QsgN8HjwEeaOqM31cI-Pbw" name="CDH"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_QsgN8HjwEeaOqM31cI-Pbw" name="RTC"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_abe0sHjwEeaOqM31cI-Pbw" memberEnd="_abgp4HjwEeaOqM31cI-Pbw _abhQ8HjwEeaOqM31cI-Pbw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_abgC0HjwEeaOqM31cI-Pbw" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_abgC0XjwEeaOqM31cI-Pbw" key="nature" value="UML_Nature"/>
@@ -1908,6 +1908,14 @@ Full = HW</body>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_BN4nMnkZEeaOqM31cI-Pbw" name="algoritmos de control de termico" type="_bSD3YHjwEeaOqM31cI-Pbw" association="_BN3ZEHkZEeaOqM31cI-Pbw"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_BN5OQHkZEeaOqM31cI-Pbw" name="termal" type="_4ENF4HkYEeaOqM31cI-Pbw" association="_BN3ZEHkZEeaOqM31cI-Pbw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_N8VaQHneEeacLIXAGNf6JQ" name="EPS"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_O1HcYHneEeacLIXAGNf6JQ" memberEnd="_O1MU4HneEeacLIXAGNf6JQ _O1M78HneEeacLIXAGNf6JQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_O1IqgHneEeacLIXAGNf6JQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_O1IqgXneEeacLIXAGNf6JQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_O1MU4HneEeacLIXAGNf6JQ" name="algoritmos de control de eps" type="_UHsJIHj1EeaOqM31cI-Pbw" association="_O1HcYHneEeacLIXAGNf6JQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_O1M78HneEeacLIXAGNf6JQ" name="eps" type="_N8VaQHneEeacLIXAGNf6JQ" association="_O1HcYHneEeacLIXAGNf6JQ"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sKAVMAGtEeajHqwUCOgvUA">

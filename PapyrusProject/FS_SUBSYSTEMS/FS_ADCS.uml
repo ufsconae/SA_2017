@@ -2,7 +2,26 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows">
   <uml:Model xmi:id="_dUEbsAGtEeajHqwUCOgvUA" name="ADCS_RootElement">
     <packagedElement xmi:type="uml:Model" xmi:id="_hHfqAAGtEeajHqwUCOgvUA" name="ADCS_RequerimentDiagrams"/>
-    <packagedElement xmi:type="uml:Model" xmi:id="_qedHcAGvEeajHqwUCOgvUA" name="ADCS_BehaviorDiagrams" URI=""/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_qedHcAGvEeajHqwUCOgvUA" name="ADCS_BehaviorDiagrams" URI="">
+      <packagedElement xmi:type="uml:StateMachine" xmi:id="_k6OgUHlEEeayxMP9GgmG8w" name="StatesOfADCS">
+        <region xmi:type="uml:Region" xmi:id="_qz2mIHlEEeayxMP9GgmG8w" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_3QshUHlEEeayxMP9GgmG8w" source="_u3ieAHlEEeayxMP9GgmG8w" target="_zM3fgHlEEeayxMP9GgmG8w"/>
+          <transition xmi:type="uml:Transition" xmi:id="_t2PuMHlGEeayxMP9GgmG8w" source="_zM3fgHlEEeayxMP9GgmG8w" target="_7qVbEHlEEeayxMP9GgmG8w"/>
+          <transition xmi:type="uml:Transition" xmi:id="_fWpboHlHEeayxMP9GgmG8w" source="_7qVbEHlEEeayxMP9GgmG8w" target="_zM3fgHlEEeayxMP9GgmG8w"/>
+          <transition xmi:type="uml:Transition" xmi:id="_f-4gUHlHEeayxMP9GgmG8w" source="_7qVbEHlEEeayxMP9GgmG8w" target="_TNgKcHlFEeayxMP9GgmG8w"/>
+          <transition xmi:type="uml:Transition" xmi:id="_gZzhwHlHEeayxMP9GgmG8w" source="_TNgKcHlFEeayxMP9GgmG8w" target="_7qVbEHlEEeayxMP9GgmG8w"/>
+          <transition xmi:type="uml:Transition" xmi:id="_6J1xUHlHEeayxMP9GgmG8w" source="_TNgKcHlFEeayxMP9GgmG8w" target="_zM3fgHlEEeayxMP9GgmG8w"/>
+          <transition xmi:type="uml:Transition" xmi:id="_cW_XIHlIEeayxMP9GgmG8w" source="_TNgKcHlFEeayxMP9GgmG8w" target="_WN-xgHlIEeayxMP9GgmG8w"/>
+          <transition xmi:type="uml:Transition" xmi:id="_xw1pkHlIEeayxMP9GgmG8w" source="_WN-xgHlIEeayxMP9GgmG8w" target="_pvkh0HlIEeayxMP9GgmG8w"/>
+          <subvertex xmi:type="uml:State" xmi:id="_zM3fgHlEEeayxMP9GgmG8w" name="SafeHold"/>
+          <subvertex xmi:type="uml:State" xmi:id="_7qVbEHlEEeayxMP9GgmG8w" name="AttitudeAdquisition"/>
+          <subvertex xmi:type="uml:State" xmi:id="_TNgKcHlFEeayxMP9GgmG8w" name="NominalOperation"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_u3ieAHlEEeayxMP9GgmG8w" name="Init"/>
+          <subvertex xmi:type="uml:State" xmi:id="_WN-xgHlIEeayxMP9GgmG8w" name="DeOrbit (TBC)"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_pvkh0HlIEeayxMP9GgmG8w" name="End"/>
+        </region>
+      </packagedElement>
+    </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_xrc5oAGvEeajHqwUCOgvUA" name="ADCS_StructureDiagrams" URI="">
       <packagedElement xmi:type="uml:Package" xmi:id="_XYRwoHBkEear_bx8eKlYhQ" name="SubsystemRelations" URI="">
         <packagedElement xmi:type="uml:Class" xmi:id="_aUfqIHBkEear_bx8eKlYhQ" name="System of Interest: ADC Subsystem">

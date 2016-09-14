@@ -43,6 +43,7 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_YMLgQnXqEeaJ0ugIRWJBdw" name="dcs manager_1" type="_AUjrAHXCEea8nrIsS5Fh4g" association="_YMKSIHXqEeaJ0ugIRWJBdw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_5AZDknXyEeaJ0ugIRWJBdw" name="mm manager_1" type="_4oiagHXBEea8nrIsS5Fh4g" association="_5AYcgHXyEeaJ0ugIRWJBdw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_IWXSknX0EeaJ0ugIRWJBdw" name="process hk pobc_1" type="_DSrywHXzEeaJ0ugIRWJBdw" association="_IWWrgHX0EeaJ0ugIRWJBdw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_l9zvoHp1EeaE9sLyPa3ZSQ" name="pattern recognition_1" type="_WwVf4Hp1EeaE9sLyPa3ZSQ" association="_l9x6cHp1EeaE9sLyPa3ZSQ"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_AUjrAHXCEea8nrIsS5Fh4g" name="DCS Manager">
           <ownedAttribute xmi:type="uml:Port" xmi:id="_y3eowHXrEeaJ0ugIRWJBdw" name="I2C" aggregation="composite"/>
@@ -68,30 +69,48 @@
         </packagedElement>
         <packagedElement xmi:type="uml:Usage" xmi:id="_W_5u0HX0EeaJ0ugIRWJBdw" name="HK" client="_KF7ywHX0EeaJ0ugIRWJBdw" supplier="_ueVwAHXEEea8nrIsS5Fh4g"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_MP9E4HdVEeamQZcPhcSvkw" name="Enviar comandos">
-          <extend xmi:type="uml:Extend" xmi:id="_HFHiQHdWEeamQZcPhcSvkw" extendedCase="_fZHuIHdVEeamQZcPhcSvkw" extensionLocation="_HFMawHdWEeamQZcPhcSvkw"/>
-          <extend xmi:type="uml:Extend" xmi:id="_H-QJsHdWEeamQZcPhcSvkw" extendedCase="_QqbFEHdVEeamQZcPhcSvkw" extensionLocation="_H-Sl8HdWEeamQZcPhcSvkw"/>
-          <extend xmi:type="uml:Extend" xmi:id="_OYN8cHdWEeamQZcPhcSvkw" extendedCase="_OJfZYHdVEeamQZcPhcSvkw" extensionLocation="_OYN8cXdWEeamQZcPhcSvkw"/>
-          <extend xmi:type="uml:Extend" xmi:id="_imnIYHdWEeamQZcPhcSvkw" extendedCase="_SQxiYHdWEeamQZcPhcSvkw" extensionLocation="_imnIYXdWEeamQZcPhcSvkw"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_gDkJUHp2EeaE9sLyPa3ZSQ" name="ExtensionPoint1"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_gq3Z4Hp2EeaE9sLyPa3ZSQ" name="ExtensionPoint2"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_hFA_QHp2EeaE9sLyPa3ZSQ" name="ExtensionPoint3"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_hkV_kHp2EeaE9sLyPa3ZSQ" name="ExtensionPoint4"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_h7484Xp2EeaE9sLyPa3ZSQ" name="ExtensionPoint5"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_iTXBsXp2EeaE9sLyPa3ZSQ" name="ExtensionPoint6"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_OJfZYHdVEeamQZcPhcSvkw" name="Solicitar Housekeeping">
+          <extend xmi:type="uml:Extend" xmi:id="_gDi7MHp2EeaE9sLyPa3ZSQ" extendedCase="_MP9E4HdVEeamQZcPhcSvkw" extensionLocation="_gDkJUHp2EeaE9sLyPa3ZSQ"/>
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_OYN8cXdWEeamQZcPhcSvkw" name="ExtensionPoint1"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_QqbFEHdVEeamQZcPhcSvkw" name="Gestionar DCS">
+          <extend xmi:type="uml:Extend" xmi:id="_hFAYMHp2EeaE9sLyPa3ZSQ" extendedCase="_MP9E4HdVEeamQZcPhcSvkw" extensionLocation="_hFA_QHp2EeaE9sLyPa3ZSQ"/>
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_H-Sl8HdWEeamQZcPhcSvkw" name="ExtensionPoint1"/>
           <include xmi:type="uml:Include" xmi:id="_ys2zMHdWEeamQZcPhcSvkw" addition="_jSInEHdVEeamQZcPhcSvkw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_akYMwHdVEeamQZcPhcSvkw" name="Transmitir datos ciencia">
+          <extend xmi:type="uml:Extend" xmi:id="_kAdcsHp2EeaE9sLyPa3ZSQ" extendedCase="_jSInEHdVEeamQZcPhcSvkw" extensionLocation="_kAeDwHp2EeaE9sLyPa3ZSQ"/>
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_R6RRcHdXEeamQZcPhcSvkw" name="ExtensionPoint1"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_fZHuIHdVEeamQZcPhcSvkw" name="Gestionar cámara">
+          <extend xmi:type="uml:Extend" xmi:id="_gq2y0Hp2EeaE9sLyPa3ZSQ" extendedCase="_MP9E4HdVEeamQZcPhcSvkw" extensionLocation="_gq3Z4Hp2EeaE9sLyPa3ZSQ"/>
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_HFMawHdWEeamQZcPhcSvkw" name="ExtensionPoint1"/>
           <include xmi:type="uml:Include" xmi:id="_sCB58HdWEeamQZcPhcSvkw" addition="_jSInEHdVEeamQZcPhcSvkw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_jSInEHdVEeamQZcPhcSvkw" name="Almacenar datos ciencia">
-          <extend xmi:type="uml:Extend" xmi:id="_R6O1MHdXEeamQZcPhcSvkw" extendedCase="_akYMwHdVEeamQZcPhcSvkw" extensionLocation="_R6RRcHdXEeamQZcPhcSvkw"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_kAeDwHp2EeaE9sLyPa3ZSQ" name="ExtensionPoint1"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_LxRfYHp3EeaE9sLyPa3ZSQ" name="ExtensionPoint2"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_SQxiYHdWEeamQZcPhcSvkw" name="Gestionar modos de funcionamiento">
+          <extend xmi:type="uml:Extend" xmi:id="_iTXBsHp2EeaE9sLyPa3ZSQ" extendedCase="_MP9E4HdVEeamQZcPhcSvkw" extensionLocation="_iTXBsXp2EeaE9sLyPa3ZSQ"/>
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_imnIYXdWEeamQZcPhcSvkw" name="ExtensionPoint1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_WwVf4Hp1EeaE9sLyPa3ZSQ" name="Pattern recognition"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_-TW-MHp1EeaE9sLyPa3ZSQ" name="Testear modulos">
+          <extend xmi:type="uml:Extend" xmi:id="_hkVYgHp2EeaE9sLyPa3ZSQ" extendedCase="_MP9E4HdVEeamQZcPhcSvkw" extensionLocation="_hkV_kHp2EeaE9sLyPa3ZSQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_FiBkUHp2EeaE9sLyPa3ZSQ" name="Configurar modulos">
+          <extend xmi:type="uml:Extend" xmi:id="_h7484Hp2EeaE9sLyPa3ZSQ" extendedCase="_MP9E4HdVEeamQZcPhcSvkw" extensionLocation="_h7484Xp2EeaE9sLyPa3ZSQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_lRHzUHp2EeaE9sLyPa3ZSQ" name="Reconocer patrones en imagenes">
+          <extend xmi:type="uml:Extend" xmi:id="_LxQRQHp3EeaE9sLyPa3ZSQ" extendedCase="_jSInEHdVEeamQZcPhcSvkw" extensionLocation="_LxRfYHp3EeaE9sLyPa3ZSQ"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_QNgj4HXGEea8nrIsS5Fh4g" name="CMD" client="_ueVwAHXEEea8nrIsS5Fh4g" supplier="_8uDXAHXEEea8nrIsS5Fh4g"/>
@@ -143,9 +162,15 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_IWXSk3X0EeaJ0ugIRWJBdw" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_IWWrgHX0EeaJ0ugIRWJBdw"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_l9x6cHp1EeaE9sLyPa3ZSQ" name="CMD" memberEnd="_l9zvoHp1EeaE9sLyPa3ZSQ _l90WsHp1EeaE9sLyPa3ZSQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l9zIkHp1EeaE9sLyPa3ZSQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l9zIkXp1EeaE9sLyPa3ZSQ" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_l90WsHp1EeaE9sLyPa3ZSQ" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_l9x6cHp1EeaE9sLyPa3ZSQ"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_wZgJIHdZEeamQZcPhcSvkw" name="ActivityDiagrams">
-      <packagedElement xmi:type="uml:Activity" xmi:id="_0CoL8HdZEeamQZcPhcSvkw" name="SW-PAYLOAD" node="_qYX3sHdaEeamQZcPhcSvkw _zRHaAHdaEeamQZcPhcSvkw _3AywwHdaEeamQZcPhcSvkw ___H9sHdaEeamQZcPhcSvkw _EqzCoHdbEeamQZcPhcSvkw _G6sBoHdbEeamQZcPhcSvkw _MzKQ4HdbEeamQZcPhcSvkw _RyVgoHdbEeamQZcPhcSvkw _X1sxQHdbEeamQZcPhcSvkw _0vK28HdbEeamQZcPhcSvkw _GlKLoHddEeamQZcPhcSvkw _mZuzsHdhEeamQZcPhcSvkw _yy3TkHdhEeamQZcPhcSvkw _MV1-kHdiEeamQZcPhcSvkw _H7IpgHjxEeaq-9yjX003Mw _LXbxQHjxEeaq-9yjX003Mw">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_0CoL8HdZEeamQZcPhcSvkw" name="SW-PAYLOAD" node="_qYX3sHdaEeamQZcPhcSvkw _zRHaAHdaEeamQZcPhcSvkw _3AywwHdaEeamQZcPhcSvkw ___H9sHdaEeamQZcPhcSvkw _EqzCoHdbEeamQZcPhcSvkw _G6sBoHdbEeamQZcPhcSvkw _MzKQ4HdbEeamQZcPhcSvkw _RyVgoHdbEeamQZcPhcSvkw _X1sxQHdbEeamQZcPhcSvkw _0vK28HdbEeamQZcPhcSvkw _GlKLoHddEeamQZcPhcSvkw _mZuzsHdhEeamQZcPhcSvkw _yy3TkHdhEeamQZcPhcSvkw _MV1-kHdiEeamQZcPhcSvkw _H7IpgHjxEeaq-9yjX003Mw _LXbxQHjxEeaq-9yjX003Mw _gi1NUHp4EeaE9sLyPa3ZSQ _CXmvYHp5EeaE9sLyPa3ZSQ _RytLcHp5EeaE9sLyPa3ZSQ _VT7PcHp5EeaE9sLyPa3ZSQ _XJOkMHp5EeaE9sLyPa3ZSQ">
         <edge xmi:type="uml:ControlFlow" xmi:id="_8jThoHdbEeamQZcPhcSvkw" target="_3AywwHdaEeamQZcPhcSvkw" source="_qYX3sHdaEeamQZcPhcSvkw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_9jHY0HdbEeamQZcPhcSvkw" target="_LXbxQHjxEeaq-9yjX003Mw" source="_3AywwHdaEeamQZcPhcSvkw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_-TPOMHdbEeamQZcPhcSvkw" target="_EqzCoHdbEeamQZcPhcSvkw" source="_zRHaAHdaEeamQZcPhcSvkw"/>
@@ -164,24 +189,37 @@
         <edge xmi:type="uml:ControlFlow" xmi:id="_JvYAsHdkEeamQZcPhcSvkw" target="_H7IpgHjxEeaq-9yjX003Mw" source="_GlKLoHddEeamQZcPhcSvkw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_KsBPIHdkEeamQZcPhcSvkw" target="_H7IpgHjxEeaq-9yjX003Mw" source="_RyVgoHdbEeamQZcPhcSvkw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_oucg8HdkEeamQZcPhcSvkw" target="_MV1-kHdiEeamQZcPhcSvkw" source="_H7IpgHjxEeaq-9yjX003Mw"/>
-        <edge xmi:type="uml:ControlFlow" xmi:id="_pD_gwHjxEeaq-9yjX003Mw" target="_mZuzsHdhEeamQZcPhcSvkw" source="_LXbxQHjxEeaq-9yjX003Mw"/>
-        <edge xmi:type="uml:ControlFlow" xmi:id="_niblIHmmEeaq-9yjX003Mw" name="NO" target="_LXbxQHjxEeaq-9yjX003Mw" source="_yy3TkHdhEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_pD_gwHjxEeaq-9yjX003Mw" target="_mZuzsHdhEeamQZcPhcSvkw" source="_gi1NUHp4EeaE9sLyPa3ZSQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_niblIHmmEeaq-9yjX003Mw" name="NO" target="_LXbxQHjxEeaq-9yjX003Mw" source="_gi1NUHp4EeaE9sLyPa3ZSQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_msn2EHp4EeaE9sLyPa3ZSQ" target="_gi1NUHp4EeaE9sLyPa3ZSQ" source="_LXbxQHjxEeaq-9yjX003Mw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_F3JYYHp5EeaE9sLyPa3ZSQ" name="NO" target="_CXmvYHp5EeaE9sLyPa3ZSQ" source="_yy3TkHdhEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_kg2soHp5EeaE9sLyPa3ZSQ" name="reconocimiento de imagen" target="_RytLcHp5EeaE9sLyPa3ZSQ" source="_0vK28HdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_moUvcHp5EeaE9sLyPa3ZSQ" name="testear" target="_VT7PcHp5EeaE9sLyPa3ZSQ" source="_0vK28HdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ngqssHp5EeaE9sLyPa3ZSQ" name="configurar" target="_XJOkMHp5EeaE9sLyPa3ZSQ" source="_0vK28HdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_P0928Hp6EeaE9sLyPa3ZSQ" target="_H7IpgHjxEeaq-9yjX003Mw" source="_RytLcHp5EeaE9sLyPa3ZSQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_QPyKsHp6EeaE9sLyPa3ZSQ" target="_H7IpgHjxEeaq-9yjX003Mw" source="_VT7PcHp5EeaE9sLyPa3ZSQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Qob7QHp6EeaE9sLyPa3ZSQ" target="_H7IpgHjxEeaq-9yjX003Mw" source="_XJOkMHp5EeaE9sLyPa3ZSQ"/>
         <node xmi:type="uml:InitialNode" xmi:id="_qYX3sHdaEeamQZcPhcSvkw" name="Start" outgoing="_8jThoHdbEeamQZcPhcSvkw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_zRHaAHdaEeamQZcPhcSvkw" name="Procesar comando de C&amp;DH" incoming="_mHTxgHdiEeamQZcPhcSvkw" outgoing="_-TPOMHdbEeamQZcPhcSvkw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_3AywwHdaEeamQZcPhcSvkw" name="Realizar configuracion inicial" incoming="_8jThoHdbEeamQZcPhcSvkw" outgoing="_9jHY0HdbEeamQZcPhcSvkw"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="___H9sHdaEeamQZcPhcSvkw" name="Solicitar Hosekeeping POBC, NIR/SWIR, DCS" incoming="_AmGBoHdcEeamQZcPhcSvkw" outgoing="_Jn0rYHddEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="___H9sHdaEeamQZcPhcSvkw" name="Solicitar Hosekeeping modulos" incoming="_AmGBoHdcEeamQZcPhcSvkw" outgoing="_Jn0rYHddEeamQZcPhcSvkw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_EqzCoHdbEeamQZcPhcSvkw" name="Gestionar modos de funcionamiento" incoming="_-TPOMHdbEeamQZcPhcSvkw" outgoing="_hKYIAHdjEeamQZcPhcSvkw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_G6sBoHdbEeamQZcPhcSvkw" name="Solicitar adquisicion NIR/SWIR" incoming="_DNp5wHdcEeamQZcPhcSvkw" outgoing="_3JegwHdcEeamQZcPhcSvkw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_MzKQ4HdbEeamQZcPhcSvkw" name="Solicitar adquisicion DCS" incoming="_Ij17UHdcEeamQZcPhcSvkw" outgoing="_3g47MHdcEeamQZcPhcSvkw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_RyVgoHdbEeamQZcPhcSvkw" name="Almacenar datos ciencia en MM" incoming="_3JegwHdcEeamQZcPhcSvkw _3g47MHdcEeamQZcPhcSvkw" outgoing="_KsBPIHdkEeamQZcPhcSvkw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_X1sxQHdbEeamQZcPhcSvkw" name="Enviar datos ciencia a Transmisor banda S" incoming="_Voak4HdcEeamQZcPhcSvkw" outgoing="_JCQcAHdkEeamQZcPhcSvkw"/>
-        <node xmi:type="uml:DecisionNode" xmi:id="_0vK28HdbEeamQZcPhcSvkw" name="¿Tipo comando?" incoming="_hKYIAHdjEeamQZcPhcSvkw" outgoing="_AmGBoHdcEeamQZcPhcSvkw _Voak4HdcEeamQZcPhcSvkw _Ij17UHdcEeamQZcPhcSvkw _DNp5wHdcEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_0vK28HdbEeamQZcPhcSvkw" name="¿Tipo comando?" incoming="_hKYIAHdjEeamQZcPhcSvkw" outgoing="_AmGBoHdcEeamQZcPhcSvkw _Voak4HdcEeamQZcPhcSvkw _Ij17UHdcEeamQZcPhcSvkw _DNp5wHdcEeamQZcPhcSvkw _kg2soHp5EeaE9sLyPa3ZSQ _moUvcHp5EeaE9sLyPa3ZSQ _ngqssHp5EeaE9sLyPa3ZSQ"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_GlKLoHddEeamQZcPhcSvkw" name="Enviar HK a CDH" incoming="_Jn0rYHddEeamQZcPhcSvkw" outgoing="_JvYAsHdkEeamQZcPhcSvkw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_mZuzsHdhEeamQZcPhcSvkw" name="Almacenar comandos en buffer" incoming="_pD_gwHjxEeaq-9yjX003Mw" outgoing="_lCamAHdiEeamQZcPhcSvkw"/>
-        <node xmi:type="uml:DecisionNode" xmi:id="_yy3TkHdhEeamQZcPhcSvkw" name="¿Existen comandos en buffer?" incoming="_lnTbwHdiEeamQZcPhcSvkw" outgoing="_mHTxgHdiEeamQZcPhcSvkw _niblIHmmEeaq-9yjX003Mw"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_yy3TkHdhEeamQZcPhcSvkw" name="¿Existen comandos en buffer?" incoming="_lnTbwHdiEeamQZcPhcSvkw" outgoing="_mHTxgHdiEeamQZcPhcSvkw _F3JYYHp5EeaE9sLyPa3ZSQ"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_MV1-kHdiEeamQZcPhcSvkw" name="Extraer comando" incoming="_lCamAHdiEeamQZcPhcSvkw _oucg8HdkEeamQZcPhcSvkw" outgoing="_lnTbwHdiEeamQZcPhcSvkw"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_H7IpgHjxEeaq-9yjX003Mw" name="Registrar comando ejecutado" incoming="_KsBPIHdkEeamQZcPhcSvkw _JCQcAHdkEeamQZcPhcSvkw _JvYAsHdkEeamQZcPhcSvkw" outgoing="_oucg8HdkEeamQZcPhcSvkw"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_LXbxQHjxEeaq-9yjX003Mw" name="Recibir secuencia de comandos" incoming="_9jHY0HdbEeamQZcPhcSvkw _niblIHmmEeaq-9yjX003Mw" outgoing="_pD_gwHjxEeaq-9yjX003Mw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_H7IpgHjxEeaq-9yjX003Mw" name="Registrar comando ejecutado" incoming="_KsBPIHdkEeamQZcPhcSvkw _JCQcAHdkEeamQZcPhcSvkw _JvYAsHdkEeamQZcPhcSvkw _P0928Hp6EeaE9sLyPa3ZSQ _QPyKsHp6EeaE9sLyPa3ZSQ _Qob7QHp6EeaE9sLyPa3ZSQ" outgoing="_oucg8HdkEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_LXbxQHjxEeaq-9yjX003Mw" name="Recibir secuencia de comandos" incoming="_9jHY0HdbEeamQZcPhcSvkw _niblIHmmEeaq-9yjX003Mw" outgoing="_msn2EHp4EeaE9sLyPa3ZSQ"/>
+        <node xmi:type="uml:ForkNode" xmi:id="_gi1NUHp4EeaE9sLyPa3ZSQ" name="Recibir comandos" incoming="_msn2EHp4EeaE9sLyPa3ZSQ" outgoing="_pD_gwHjxEeaq-9yjX003Mw _niblIHmmEeaq-9yjX003Mw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_CXmvYHp5EeaE9sLyPa3ZSQ" name="Dormir tarea" incoming="_F3JYYHp5EeaE9sLyPa3ZSQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_RytLcHp5EeaE9sLyPa3ZSQ" name="Reconocimiento de imagenes" incoming="_kg2soHp5EeaE9sLyPa3ZSQ" outgoing="_P0928Hp6EeaE9sLyPa3ZSQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_VT7PcHp5EeaE9sLyPa3ZSQ" name="Testear modulos" incoming="_moUvcHp5EeaE9sLyPa3ZSQ" outgoing="_QPyKsHp6EeaE9sLyPa3ZSQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_XJOkMHp5EeaE9sLyPa3ZSQ" name="Configurar modulos" incoming="_ngqssHp5EeaE9sLyPa3ZSQ" outgoing="_Qob7QHp6EeaE9sLyPa3ZSQ"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_RgMPoHd6EeamQZcPhcSvkw" name="StateMachines">
@@ -310,4 +348,5 @@ The PAYLOAD shall have a Send Data mode in which the POBC retreaves science data
   <PortAndFlows:FlowPort xmi:id="_2RJ6UHXrEeaJ0ugIRWJBdw" base_Port="_2RJTQHXrEeaJ0ugIRWJBdw" direction="in"/>
   <Blocks:Block xmi:id="_DStA4HXzEeaJ0ugIRWJBdw" base_Class="_DSrywHXzEeaJ0ugIRWJBdw"/>
   <PortAndFlows:FlowPort xmi:id="_KF7ywXX0EeaJ0ugIRWJBdw" base_Port="_KF7ywHX0EeaJ0ugIRWJBdw" direction="out"/>
+  <Blocks:Block xmi:id="_WwZxUHp1EeaE9sLyPa3ZSQ" base_Class="_WwVf4Hp1EeaE9sLyPa3ZSQ"/>
 </xmi:XMI>

@@ -3,7 +3,7 @@
   <uml:Model xmi:id="_dUEbsAGtEeajHqwUCOgvUA" name="ADCS_RootElement">
     <packagedElement xmi:type="uml:Model" xmi:id="_hHfqAAGtEeajHqwUCOgvUA" name="ADCS_RequerimentDiagrams"/>
     <packagedElement xmi:type="uml:Model" xmi:id="_qedHcAGvEeajHqwUCOgvUA" name="ADCS_BehaviorDiagrams" URI="">
-      <packagedElement xmi:type="uml:StateMachine" xmi:id="_k6OgUHlEEeayxMP9GgmG8w" name="StatesOfADCS">
+      <packagedElement xmi:type="uml:StateMachine" xmi:id="_k6OgUHlEEeayxMP9GgmG8w" name="ADC: Modes">
         <region xmi:type="uml:Region" xmi:id="_qz2mIHlEEeayxMP9GgmG8w" name="Region1">
           <transition xmi:type="uml:Transition" xmi:id="_3QshUHlEEeayxMP9GgmG8w" source="_u3ieAHlEEeayxMP9GgmG8w" target="_zM3fgHlEEeayxMP9GgmG8w"/>
           <transition xmi:type="uml:Transition" xmi:id="_t2PuMHlGEeayxMP9GgmG8w" source="_zM3fgHlEEeayxMP9GgmG8w" target="_7qVbEHlEEeayxMP9GgmG8w"/>
@@ -21,12 +21,26 @@
           <subvertex xmi:type="uml:FinalState" xmi:id="_pvkh0HlIEeayxMP9GgmG8w" name="End"/>
         </region>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_DsIM8HzXEeaaur2OC82LUw" memberEnd="_DsLQQXzXEeaaur2OC82LUw _DsL3UHzXEeaaur2OC82LUw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DsKpMHzXEeaaur2OC82LUw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DsLQQHzXEeaaur2OC82LUw" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_DsL3UHzXEeaaur2OC82LUw" name="system of interest: adc subsystem_1" type="_aUfqIHBkEear_bx8eKlYhQ" association="_DsIM8HzXEeaaur2OC82LUw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ae5vQHzZEeaaur2OC82LUw" memberEnd="_ae69YnzZEeaaur2OC82LUw _ae69Y3zZEeaaur2OC82LUw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ae69YHzZEeaaur2OC82LUw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ae69YXzZEeaaur2OC82LUw" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_ae69Y3zZEeaaur2OC82LUw" name="system of interest: adc subsystem_1" type="_aUfqIHBkEear_bx8eKlYhQ" association="_ae5vQHzZEeaaur2OC82LUw"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_xrc5oAGvEeajHqwUCOgvUA" name="ADCS_StructureDiagrams" URI="">
-      <packagedElement xmi:type="uml:Package" xmi:id="_XYRwoHBkEear_bx8eKlYhQ" name="SubsystemRelations" URI="">
+      <packagedElement xmi:type="uml:Package" xmi:id="_XYRwoHBkEear_bx8eKlYhQ" name="ADC: Interactions" URI="">
         <packagedElement xmi:type="uml:Class" xmi:id="_aUfqIHBkEear_bx8eKlYhQ" name="System of Interest: ADC Subsystem">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_fh2z8nBxEear_bx8eKlYhQ" name="Power Supply" type="_YZ6IkHBrEear_bx8eKlYhQ" aggregation="shared" association="_fh2M4HBxEear_bx8eKlYhQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_sgNgwnBxEear_bx8eKlYhQ" name="OBC" type="_RayFMHBpEear_bx8eKlYhQ" aggregation="shared" association="_sgM5sHBxEear_bx8eKlYhQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DsLQQXzXEeaaur2OC82LUw" name="Space Conditions" type="_byKqwHzVEeaaur2OC82LUw" aggregation="shared" association="_DsIM8HzXEeaaur2OC82LUw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ae69YnzZEeaaur2OC82LUw" name="Simulations Supply" type="_diaOcHzXEeaaur2OC82LUw" aggregation="shared" association="_ae5vQHzZEeaaur2OC82LUw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_RayFMHBpEear_bx8eKlYhQ" name="Interoperating System: C&amp;DH Subsystem"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_YZ6IkHBrEear_bx8eKlYhQ" name="Interoperating System: EPS Subsystem"/>
@@ -42,8 +56,10 @@
           </eAnnotations>
           <ownedEnd xmi:type="uml:Property" xmi:id="_fh2z83BxEear_bx8eKlYhQ" name="system of interest: adc subsystem_1" type="_aUfqIHBkEear_bx8eKlYhQ" association="_fh2M4HBxEear_bx8eKlYhQ"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_byKqwHzVEeaaur2OC82LUw" name="Interoperating System: Space Enviroment"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_diaOcHzXEeaaur2OC82LUw" name="Support System: Simulations"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_QGIx0HUcEeahA6pEsSfe5g" name="ADCSubsystem" URI="">
+      <packagedElement xmi:type="uml:Package" xmi:id="_QGIx0HUcEeahA6pEsSfe5g" name="ADC: SW Functions" URI="">
         <packagedElement xmi:type="uml:Class" xmi:id="_e5vJAHUcEeahA6pEsSfe5g" name="Housekeeping Processing ">
           <ownedAttribute xmi:type="uml:Port" xmi:id="_owaTIHXgEeaXnqac8Ti9rA" name="I2C" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_C1FJYHX2EeaJ0ugIRWJBdw" name="communication module_1" type="_3QT00HUoEeahA6pEsSfe5g" association="_C1EiUHX2EeaJ0ugIRWJBdw"/>
@@ -125,7 +141,7 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_Q555lHX3EeaJ0ugIRWJBdw" name="attitude determination_1" type="_UUQPsHUqEeahA6pEsSfe5g" association="_Q555kHX3EeaJ0ugIRWJBdw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_gD1GEHX3EeaJ0ugIRWJBdw" name="HK" client="_9VZEEHUlEeahA6pEsSfe5g" supplier="_owaTIHXgEeaXnqac8Ti9rA"/>
-      <packagedElement xmi:type="uml:Package" xmi:id="_RLrjoHj4Eea1_4B3_SwwhQ" name="ADC's HW Units">
+      <packagedElement xmi:type="uml:Package" xmi:id="_RLrjoHj4Eea1_4B3_SwwhQ" name="ADC: HW Units" URI="">
         <packagedElement xmi:type="uml:Class" xmi:id="_eDSvQHj4Eea1_4B3_SwwhQ" name="CubeComputer(ACP)">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_0St5onkKEeaHj6iSsjR6lw" name="Interface Board (Actuators and Sensors)" type="_nJs6IHj4Eea1_4B3_SwwhQ" aggregation="shared" association="_0StSkHkKEeaHj6iSsjR6lw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_1EVj0nkKEeaHj6iSsjR6lw" name="Additional Sensor Board" type="_I2drgHkAEea1_4B3_SwwhQ" aggregation="shared" association="_1EU8wHkKEeaHj6iSsjR6lw"/>
@@ -314,4 +330,6 @@
   <Blocks:Block xmi:id="_ETQoQXkPEeaHj6iSsjR6lw" base_Class="_ETQoQHkPEeaHj6iSsjR6lw"/>
   <Blocks:Block xmi:id="_xAaCEHkPEeaHj6iSsjR6lw" base_Class="_xAZbAHkPEeaHj6iSsjR6lw"/>
   <Blocks:Block xmi:id="_xfPTIHkPEeaHj6iSsjR6lw" base_Class="_xfOFAHkPEeaHj6iSsjR6lw"/>
+  <Blocks:Block xmi:id="_bySmkHzVEeaaur2OC82LUw" base_Class="_byKqwHzVEeaaur2OC82LUw"/>
+  <Blocks:Block xmi:id="_dibckHzXEeaaur2OC82LUw" base_Class="_diaOcHzXEeaaur2OC82LUw"/>
 </xmi:XMI>

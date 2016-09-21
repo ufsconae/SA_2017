@@ -234,8 +234,8 @@ The PAYLOAD shall have a science mode in which the POBC send commands to the cam
 The PAYLOAD shall have a Send Data mode in which the POBC retreaves science data from its massive memory storage and sends it to the platform OBC.</body>
         </ownedComment>
         <region xmi:type="uml:Region" xmi:id="_amo2wHd6EeamQZcPhcSvkw" name="Region1">
-          <transition xmi:type="uml:Transition" xmi:id="_W971QHd7EeamQZcPhcSvkw" source="_c5QZoHd6EeamQZcPhcSvkw" target="_0WF3gHd6EeamQZcPhcSvkw"/>
-          <transition xmi:type="uml:Transition" xmi:id="_bbdwgHd7EeamQZcPhcSvkw" name="STATUS OK" source="_0WF3gHd6EeamQZcPhcSvkw" target="_mGCSQHd6EeamQZcPhcSvkw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_W971QHd7EeamQZcPhcSvkw" source="_c5QZoHd6EeamQZcPhcSvkw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_bbdwgHd7EeamQZcPhcSvkw" name="STATUS OK" target="_mGCSQHd6EeamQZcPhcSvkw"/>
           <transition xmi:type="uml:Transition" xmi:id="_oKMF4Hd7EeamQZcPhcSvkw" name="testear" source="_mGCSQHd6EeamQZcPhcSvkw" target="_BJQoAHd7EeamQZcPhcSvkw"/>
           <transition xmi:type="uml:Transition" xmi:id="_ouTfkHd7EeamQZcPhcSvkw" name="transmitir" source="_mGCSQHd6EeamQZcPhcSvkw" target="_fvJosHd6EeamQZcPhcSvkw"/>
           <transition xmi:type="uml:Transition" xmi:id="_xot10Hd7EeamQZcPhcSvkw" name="adquirir" source="_mGCSQHd6EeamQZcPhcSvkw" target="_egL7MHd6EeamQZcPhcSvkw"/>
@@ -244,11 +244,11 @@ The PAYLOAD shall have a Send Data mode in which the POBC retreaves science data
           <transition xmi:type="uml:Transition" xmi:id="_QFMJ4Hd9EeamQZcPhcSvkw" source="_fvJosHd6EeamQZcPhcSvkw" target="_mGCSQHd6EeamQZcPhcSvkw"/>
           <transition xmi:type="uml:Transition" xmi:id="_R1EzIHd9EeamQZcPhcSvkw" source="_CfO8cHd7EeamQZcPhcSvkw" target="_mGCSQHd6EeamQZcPhcSvkw"/>
           <transition xmi:type="uml:Transition" xmi:id="_SquBsHd9EeamQZcPhcSvkw" source="_BJQoAHd7EeamQZcPhcSvkw" target="_mGCSQHd6EeamQZcPhcSvkw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_XmZTMIAdEeaphfZJrBRqrw" source="_c5QZoHd6EeamQZcPhcSvkw" target="_mGCSQHd6EeamQZcPhcSvkw"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_c5QZoHd6EeamQZcPhcSvkw" name="Start"/>
           <subvertex xmi:type="uml:State" xmi:id="_egL7MHd6EeamQZcPhcSvkw" name="Ciencia"/>
           <subvertex xmi:type="uml:State" xmi:id="_fvJosHd6EeamQZcPhcSvkw" name="Transmision"/>
           <subvertex xmi:type="uml:State" xmi:id="_mGCSQHd6EeamQZcPhcSvkw" name="Normal"/>
-          <subvertex xmi:type="uml:State" xmi:id="_0WF3gHd6EeamQZcPhcSvkw" name="Off"/>
           <subvertex xmi:type="uml:State" xmi:id="_BJQoAHd7EeamQZcPhcSvkw" name="Test"/>
           <subvertex xmi:type="uml:State" xmi:id="_CfO8cHd7EeamQZcPhcSvkw" name="Configuracion"/>
         </region>

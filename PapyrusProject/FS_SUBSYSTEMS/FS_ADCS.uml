@@ -33,6 +33,37 @@
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_ae69Y3zZEeaaur2OC82LUw" name="system of interest: adc subsystem_1" type="_aUfqIHBkEear_bx8eKlYhQ" association="_ae5vQHzZEeaaur2OC82LUw"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Activity" xmi:id="_lp93UIGsEeaIW6qGPMqENw" name="ADCS Data Flow" node="_8syyYIGvEeaIW6qGPMqENw _3mH-EIGwEeaIW6qGPMqENw _A_v_4IGxEeaIW6qGPMqENw _UlvIAIGxEeaIW6qGPMqENw _xCVrgIGxEeaIW6qGPMqENw _0P-sMIGxEeaIW6qGPMqENw _4wnl0IGxEeaIW6qGPMqENw _DrpeEIG0EeaIW6qGPMqENw _nDTIIIG0EeaIW6qGPMqENw _zyxO8IG1EeaIW6qGPMqENw _tz5AQIG2EeaIW6qGPMqENw _ASfNEIG4EeaIW6qGPMqENw" group="_uU6t4IGvEeaIW6qGPMqENw _zGIksIGwEeaIW6qGPMqENw _qatQMIGxEeaIW6qGPMqENw _Y8v5oIGzEeaIW6qGPMqENw _t2ihEIG1EeaIW6qGPMqENw _eYcJcIG3EeaIW6qGPMqENw">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_1AcN4IGzEeaIW6qGPMqENw" target="_UlvIAIGxEeaIW6qGPMqENw" source="_A_v_4IGxEeaIW6qGPMqENw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4c9YEIGzEeaIW6qGPMqENw" target="_0P-sMIGxEeaIW6qGPMqENw" source="_xCVrgIGxEeaIW6qGPMqENw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_BDkBgIG0EeaIW6qGPMqENw" target="_8syyYIGvEeaIW6qGPMqENw" source="_3mH-EIGwEeaIW6qGPMqENw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_BbVBQIG0EeaIW6qGPMqENw" target="_A_v_4IGxEeaIW6qGPMqENw" source="_8syyYIGvEeaIW6qGPMqENw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_xua8IIG2EeaIW6qGPMqENw" target="_tz5AQIG2EeaIW6qGPMqENw" source="_0P-sMIGxEeaIW6qGPMqENw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_yKOHUIG2EeaIW6qGPMqENw" target="_DrpeEIG0EeaIW6qGPMqENw" source="_4wnl0IGxEeaIW6qGPMqENw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ypcZ8IG2EeaIW6qGPMqENw" target="_DrpeEIG0EeaIW6qGPMqENw" source="_tz5AQIG2EeaIW6qGPMqENw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_zhCwUIG2EeaIW6qGPMqENw" target="_DrpeEIG0EeaIW6qGPMqENw" source="_A_v_4IGxEeaIW6qGPMqENw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_3PFIUIG2EeaIW6qGPMqENw" target="_DrpeEIG0EeaIW6qGPMqENw" source="_zyxO8IG1EeaIW6qGPMqENw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_4ZcpsIG2EeaIW6qGPMqENw" target="_nDTIIIG0EeaIW6qGPMqENw" source="_DrpeEIG0EeaIW6qGPMqENw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_OOHacIG4EeaIW6qGPMqENw" target="_ASfNEIG4EeaIW6qGPMqENw" source="_nDTIIIG0EeaIW6qGPMqENw"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_uU6t4IGvEeaIW6qGPMqENw" name="Housekeeping Procesing" node="_8syyYIGvEeaIW6qGPMqENw _A_v_4IGxEeaIW6qGPMqENw _UlvIAIGxEeaIW6qGPMqENw"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_zGIksIGwEeaIW6qGPMqENw" name="Sensors" node="_3mH-EIGwEeaIW6qGPMqENw"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_qatQMIGxEeaIW6qGPMqENw" name="Orbit Determination" node="_xCVrgIGxEeaIW6qGPMqENw _0P-sMIGxEeaIW6qGPMqENw _4wnl0IGxEeaIW6qGPMqENw _tz5AQIG2EeaIW6qGPMqENw"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_Y8v5oIGzEeaIW6qGPMqENw" name="Attitude Determination" node="_DrpeEIG0EeaIW6qGPMqENw _nDTIIIG0EeaIW6qGPMqENw"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_t2ihEIG1EeaIW6qGPMqENw" name="ADCS Control Modes" node="_zyxO8IG1EeaIW6qGPMqENw"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_eYcJcIG3EeaIW6qGPMqENw" name="Attitude Control " node="_ASfNEIG4EeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_8syyYIGvEeaIW6qGPMqENw" name="Receive HK Data &amp; Ms." incoming="_BDkBgIG0EeaIW6qGPMqENw" outgoing="_BbVBQIG0EeaIW6qGPMqENw" inPartition="_uU6t4IGvEeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_3mH-EIGwEeaIW6qGPMqENw" name="Send HK Data &amp; Ms." outgoing="_BDkBgIG0EeaIW6qGPMqENw" inPartition="_zGIksIGwEeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_A_v_4IGxEeaIW6qGPMqENw" name="Process HK Data &amp; Ms." incoming="_BbVBQIG0EeaIW6qGPMqENw" outgoing="_1AcN4IGzEeaIW6qGPMqENw _zhCwUIG2EeaIW6qGPMqENw" inPartition="_uU6t4IGvEeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_UlvIAIGxEeaIW6qGPMqENw" name="Storage HK Data &amp; Ms." incoming="_1AcN4IGzEeaIW6qGPMqENw" inPartition="_uU6t4IGvEeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_xCVrgIGxEeaIW6qGPMqENw" name="Receive &amp; Process TLE" outgoing="_4c9YEIGzEeaIW6qGPMqENw" inPartition="_qatQMIGxEeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_0P-sMIGxEeaIW6qGPMqENw" name="Perform Orbit Propagation" incoming="_4c9YEIGzEeaIW6qGPMqENw" outgoing="_xua8IIG2EeaIW6qGPMqENw" inPartition="_qatQMIGxEeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_4wnl0IGxEeaIW6qGPMqENw" name="Provide Parameters" outgoing="_yKOHUIG2EeaIW6qGPMqENw" inPartition="_qatQMIGxEeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_DrpeEIG0EeaIW6qGPMqENw" name="Run Attitude Algorithms" incoming="_yKOHUIG2EeaIW6qGPMqENw _ypcZ8IG2EeaIW6qGPMqENw _zhCwUIG2EeaIW6qGPMqENw _3PFIUIG2EeaIW6qGPMqENw" outgoing="_4ZcpsIG2EeaIW6qGPMqENw" inPartition="_Y8v5oIGzEeaIW6qGPMqENw"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_nDTIIIG0EeaIW6qGPMqENw" name="Is current attitude correct?" incoming="_4ZcpsIG2EeaIW6qGPMqENw" outgoing="_OOHacIG4EeaIW6qGPMqENw" inPartition="_Y8v5oIGzEeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_zyxO8IG1EeaIW6qGPMqENw" name="Get Operation Current Mode" outgoing="_3PFIUIG2EeaIW6qGPMqENw" inPartition="_t2ihEIG1EeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_tz5AQIG2EeaIW6qGPMqENw" name="Get Orbit Elements" incoming="_xua8IIG2EeaIW6qGPMqENw" outgoing="_ypcZ8IG2EeaIW6qGPMqENw" inPartition="_qatQMIGxEeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_ASfNEIG4EeaIW6qGPMqENw" name="Generate Commands " incoming="_OOHacIG4EeaIW6qGPMqENw" inPartition="_eYcJcIG3EeaIW6qGPMqENw"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_xrc5oAGvEeajHqwUCOgvUA" name="ADCS_StructureDiagrams" URI="">
       <packagedElement xmi:type="uml:Package" xmi:id="_XYRwoHBkEear_bx8eKlYhQ" name="ADC: Interactions" URI="">
@@ -150,6 +181,9 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_0St5onkKEeaHj6iSsjR6lw" name="Interface Board (Actuators and Sensors)" type="_nJs6IHj4Eea1_4B3_SwwhQ" aggregation="shared" association="_0StSkHkKEeaHj6iSsjR6lw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_1EVj0nkKEeaHj6iSsjR6lw" name="Additional Sensor Board" type="_I2drgHkAEea1_4B3_SwwhQ" aggregation="shared" association="_1EU8wHkKEeaHj6iSsjR6lw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_jpbx8H6WEeaaJYpFE9m2Hg" name="Additional Rate Sensor" type="_ETQoQHkPEeaHj6iSsjR6lw" aggregation="shared" association="_jpVrUH6WEeaaJYpFE9m2Hg"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_7SfvsIGQEeaIW6qGPMqENw" name="I2C" aggregation="composite">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteArray"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_nJs6IHj4Eea1_4B3_SwwhQ" name="CubeControl ">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_pjH4g3kMEeaHj6iSsjR6lw" name="magnetometers_1" type="_lYE0YHkMEeaHj6iSsjR6lw" aggregation="composite" association="_pjH4gHkMEeaHj6iSsjR6lw">
@@ -312,7 +346,7 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_k6CnsH9mEeabIrvaAw9-Iw" name="ActuatorArray1" type="_ICp9EHkNEeaHj6iSsjR6lw" aggregation="composite" association="_oM5fkH9mEeabIrvaAw9-Iw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_o-3IAH9mEeabIrvaAw9-Iw" name="Actuator" type="_ETQoQHkPEeaHj6iSsjR6lw" aggregation="composite" association="_rqgO4H9mEeabIrvaAw9-Iw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_P6xGgH9oEeabIrvaAw9-Iw" name="part1" type="_iSo4AHkNEeaHj6iSsjR6lw" aggregation="composite" association="_UdttQH9oEeabIrvaAw9-Iw"/>
-        <ownedAttribute xmi:type="uml:Port" xmi:id="_75TfEIAyEeaVCtG_YTYg6g" name="I2C" aggregation="composite">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_adAD4IGREeaIW6qGPMqENw" name="I2C" aggregation="composite">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EByteArray"/>
         </ownedAttribute>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_Fnv6UIAzEeaVCtG_YTYg6g" name="Connector1">
@@ -325,15 +359,15 @@
         </ownedConnector>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_KxgpcIAzEeaVCtG_YTYg6g" name="Connector3">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_KxhQgIAzEeaVCtG_YTYg6g" role="_QpSDQH0AEeaaur2OC82LUw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_KxhQgYAzEeaVCtG_YTYg6g" role="_6JnYQHz_Eeaaur2OC82LUw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_KxhQgYAzEeaVCtG_YTYg6g" partWithPort="_6JnYQHz_Eeaaur2OC82LUw" role="_7SfvsIGQEeaIW6qGPMqENw"/>
         </ownedConnector>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_MMqY0IAzEeaVCtG_YTYg6g" name="Connector4">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_MMqY0YAzEeaVCtG_YTYg6g" role="_AmHsMH0BEeaaur2OC82LUw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_MMqY0oAzEeaVCtG_YTYg6g" role="_6JnYQHz_Eeaaur2OC82LUw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_MMqY0oAzEeaVCtG_YTYg6g" partWithPort="_6JnYQHz_Eeaaur2OC82LUw" role="_7SfvsIGQEeaIW6qGPMqENw"/>
         </ownedConnector>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_MpcbcIAzEeaVCtG_YTYg6g" name="Connector5">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_MpdCgIAzEeaVCtG_YTYg6g" role="_o-3IAH9mEeabIrvaAw9-Iw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_MpdCgYAzEeaVCtG_YTYg6g" role="_6JnYQHz_Eeaaur2OC82LUw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_MpdCgYAzEeaVCtG_YTYg6g" partWithPort="_6JnYQHz_Eeaaur2OC82LUw" role="_7SfvsIGQEeaIW6qGPMqENw"/>
         </ownedConnector>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_OHZAIIAzEeaVCtG_YTYg6g" name="Connector6">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_OHZnMIAzEeaVCtG_YTYg6g" role="_tF7qEH0AEeaaur2OC82LUw"/>
@@ -361,7 +395,7 @@
         </ownedConnector>
         <ownedConnector xmi:type="uml:Connector" xmi:id="_1hmbEIC_EeaxsrClgCZnkw" name="Connector12">
           <end xmi:type="uml:ConnectorEnd" xmi:id="_1ho3UIC_EeaxsrClgCZnkw" role="_6JnYQHz_Eeaaur2OC82LUw"/>
-          <end xmi:type="uml:ConnectorEnd" xmi:id="_1hpeYIC_EeaxsrClgCZnkw" role="_75TfEIAyEeaVCtG_YTYg6g"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_1hpeYIC_EeaxsrClgCZnkw" role="_adAD4IGREeaIW6qGPMqENw"/>
         </ownedConnector>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_DCv8IH0AEeaaur2OC82LUw" name="Association1" memberEnd="_6JnYQHz_Eeaaur2OC82LUw _DCv8I30AEeaaur2OC82LUw">
@@ -587,4 +621,6 @@
   <Blocks:NestedConnectorEnd xmi:id="_U_Q24oAzEeaVCtG_YTYg6g" propertyPath="_QpSDQH0AEeaaur2OC82LUw" base_ConnectorEnd="_U_Q24IAzEeaVCtG_YTYg6g"/>
   <Blocks:NestedConnectorEnd xmi:id="_VZ8nwIAzEeaVCtG_YTYg6g" propertyPath="_QpSDQH0AEeaaur2OC82LUw" base_ConnectorEnd="_VZ8AsIAzEeaVCtG_YTYg6g"/>
   <Blocks:NestedConnectorEnd xmi:id="_WqXGwoAzEeaVCtG_YTYg6g" propertyPath="_QpSDQH0AEeaaur2OC82LUw" base_ConnectorEnd="_WqXGwYAzEeaVCtG_YTYg6g"/>
+  <PortAndFlows:FlowPort xmi:id="_7SjaEIGQEeaIW6qGPMqENw" base_Port="_7SfvsIGQEeaIW6qGPMqENw"/>
+  <PortAndFlows:FlowPort xmi:id="_adAq8IGREeaIW6qGPMqENw" base_Port="_adAD4IGREeaIW6qGPMqENw"/>
 </xmi:XMI>

@@ -67,13 +67,13 @@
         <node xmi:type="uml:OpaqueAction" xmi:id="_4wnl0IGxEeaIW6qGPMqENw" name="Provide parameters" outgoing="_yKOHUIG2EeaIW6qGPMqENw" inPartition="_qatQMIGxEeaIW6qGPMqENw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_DrpeEIG0EeaIW6qGPMqENw" name="Run attitude algorithms" incoming="_yKOHUIG2EeaIW6qGPMqENw _ypcZ8IG2EeaIW6qGPMqENw _zhCwUIG2EeaIW6qGPMqENw _3PFIUIG2EeaIW6qGPMqENw" outgoing="_4ZcpsIG2EeaIW6qGPMqENw" inPartition="_Y8v5oIGzEeaIW6qGPMqENw"/>
         <node xmi:type="uml:DecisionNode" xmi:id="_nDTIIIG0EeaIW6qGPMqENw" name="Is the current attitude correct?" incoming="_4ZcpsIG2EeaIW6qGPMqENw" outgoing="_OOHacIG4EeaIW6qGPMqENw _Y0tksIHDEeanzJtco6pAog"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_zyxO8IG1EeaIW6qGPMqENw" name="Get operation current mode" outgoing="_3PFIUIG2EeaIW6qGPMqENw" inPartition="_t2ihEIG1EeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_zyxO8IG1EeaIW6qGPMqENw" name="Get current mode" outgoing="_3PFIUIG2EeaIW6qGPMqENw" inPartition="_t2ihEIG1EeaIW6qGPMqENw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_tz5AQIG2EeaIW6qGPMqENw" name="Get orbit elements" incoming="_xua8IIG2EeaIW6qGPMqENw" outgoing="_ypcZ8IG2EeaIW6qGPMqENw" inPartition="_qatQMIGxEeaIW6qGPMqENw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_ASfNEIG4EeaIW6qGPMqENw" name="Get values to command" incoming="_OOHacIG4EeaIW6qGPMqENw" outgoing="_-bO24IG_EeaIW6qGPMqENw" inPartition="_eYcJcIG3EeaIW6qGPMqENw"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_2H_OUIG_EeaIW6qGPMqENw" name="Get attitude commands list" incoming="_-bO24IG_EeaIW6qGPMqENw" outgoing="_EHgdMIHAEeaIW6qGPMqENw" inPartition="_yQdjIIG_EeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_2H_OUIG_EeaIW6qGPMqENw" name="Get attitude CMDs list" incoming="_-bO24IG_EeaIW6qGPMqENw" outgoing="_EHgdMIHAEeaIW6qGPMqENw" inPartition="_yQdjIIG_EeaIW6qGPMqENw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_AhUZoIHAEeaIW6qGPMqENw" name="Run orders to command" incoming="_EHgdMIHAEeaIW6qGPMqENw" outgoing="_UACUwIHDEeanzJtco6pAog" inPartition="_criekIG-EeaIW6qGPMqENw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_Q0bUYIHDEeanzJtco6pAog" name="Change current values" incoming="_UACUwIHDEeanzJtco6pAog" outgoing="_QqHFUIHEEeanzJtco6pAog" inPartition="_criekIG-EeaIW6qGPMqENw"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_WLyaoIHDEeanzJtco6pAog" name="Get HK &amp; ms. commands list" incoming="_Y0tksIHDEeanzJtco6pAog _QqHFUIHEEeanzJtco6pAog" outgoing="_AFwiMIHEEeanzJtco6pAog _A0P_4IHEEeanzJtco6pAog" inPartition="_yQdjIIG_EeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_WLyaoIHDEeanzJtco6pAog" name="Get HK &amp; ms. CMDs list" incoming="_Y0tksIHDEeanzJtco6pAog _QqHFUIHEEeanzJtco6pAog" outgoing="_AFwiMIHEEeanzJtco6pAog _A0P_4IHEEeanzJtco6pAog" inPartition="_yQdjIIG_EeaIW6qGPMqENw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_ffR_QIHDEeanzJtco6pAog" name="Get HK data &amp; ms. " incoming="_A0P_4IHEEeanzJtco6pAog" outgoing="_3dUswIHDEeanzJtco6pAog" inPartition="_criekIG-EeaIW6qGPMqENw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_pyJWMIHDEeanzJtco6pAog" name="Get HK data &amp; ms." incoming="_AFwiMIHEEeanzJtco6pAog" outgoing="_2tYdkIHDEeanzJtco6pAog" inPartition="_zGIksIGwEeaIW6qGPMqENw"/>
       </packagedElement>

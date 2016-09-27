@@ -26,9 +26,11 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_PlW6sHRFEea8nrIsS5Fh4g" name="NIR/SWIR Camera">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_AB0N0HXFEea8nrIsS5Fh4g" name="Camera Link" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_37swAIQiEea2kM4a6kr93g" name="trigger" aggregation="composite"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_UVqoAHRFEea8nrIsS5Fh4g" name="DCS">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_2RJTQHXrEeaJ0ugIRWJBdw" name="I2C" aggregation="composite"/>
+        <nestedClassifier xmi:type="uml:Interface" xmi:id="_ty3ygISpEeaGDfVEWwoDWQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_Y9HpYHRHEea8nrIsS5Fh4g" name="CDH">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_ueVwAHXEEea8nrIsS5Fh4g" name="I2C" aggregation="composite"/>
@@ -48,22 +50,25 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_AUjrAHXCEea8nrIsS5Fh4g" name="DCS Manager">
           <ownedAttribute xmi:type="uml:Port" xmi:id="_y3eowHXrEeaJ0ugIRWJBdw" name="I2C" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_noNPwnXyEeaJ0ugIRWJBdw" name="mm manager_1" type="_4oiagHXBEea8nrIsS5Fh4g" association="_noMosHXyEeaJ0ugIRWJBdw"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_fxka8ISpEeaGDfVEWwoDWQ" name="ON/OFF" aggregation="composite"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_8cwTAHXBEea8nrIsS5Fh4g" name="Camera Manager">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ckPQA3XGEea8nrIsS5Fh4g" name="frame grabber_1" type="_pC67EHXCEea8nrIsS5Fh4g" association="_ckPQAHXGEea8nrIsS5Fh4g"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_WSx5BHXGEea8nrIsS5Fh4g" name="mm manager_1" type="_4oiagHXBEea8nrIsS5Fh4g" association="_WSx5AHXGEea8nrIsS5Fh4g"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_4DtwMISpEeaGDfVEWwoDWQ" name="ON/OFF" aggregation="composite"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_dwaZQHRHEea8nrIsS5Fh4g" name="Command Manager">
           <ownedAttribute xmi:type="uml:Port" xmi:id="_8uDXAHXEEea8nrIsS5Fh4g" name="I2C" visibility="public" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_Y1VyA3XqEeaJ0ugIRWJBdw" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_Y1VyAHXqEeaJ0ugIRWJBdw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_pC67EHXCEea8nrIsS5Fh4g" name="Frame Grabber">
-          <ownedAttribute xmi:type="uml:Port" xmi:id="_Ai_oQHXFEea8nrIsS5Fh4g" name="Camera Link" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_Ai_oQHXFEea8nrIsS5Fh4g" name="Camera Link" visibility="public" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ckPQBHXGEea8nrIsS5Fh4g" name="camera manager_1" type="_8cwTAHXBEea8nrIsS5Fh4g" association="_ckPQAHXGEea8nrIsS5Fh4g"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_oH3q4IQiEea2kM4a6kr93g" name="trigger" aggregation="composite"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Usage" xmi:id="_Q9qOcHXGEea8nrIsS5Fh4g" name="Science Data" client="_9XCCkHXEEea8nrIsS5Fh4g" supplier="_90rA0HXEEea8nrIsS5Fh4g"/>
         <packagedElement xmi:type="uml:Usage" xmi:id="_-21BkHXpEeaJ0ugIRWJBdw" name="CMD" client="_y3eowHXrEeaJ0ugIRWJBdw" supplier="_2RJTQHXrEeaJ0ugIRWJBdw"/>
-        <packagedElement xmi:type="uml:Usage" xmi:id="__ivFUHXpEeaJ0ugIRWJBdw" name="CMD" client="_Ai_oQHXFEea8nrIsS5Fh4g" supplier="_AB0N0HXFEea8nrIsS5Fh4g"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="__ivFUHXpEeaJ0ugIRWJBdw" client="_Ai_oQHXFEea8nrIsS5Fh4g" supplier="_AB0N0HXFEea8nrIsS5Fh4g"/>
         <packagedElement xmi:type="uml:Class" xmi:id="_DSrywHXzEeaJ0ugIRWJBdw" name="Processing HK">
           <ownedAttribute xmi:type="uml:Port" xmi:id="_KF7ywHX0EeaJ0ugIRWJBdw" name="I2C" aggregation="composite"/>
         </packagedElement>
@@ -112,6 +117,9 @@
         <packagedElement xmi:type="uml:UseCase" xmi:id="_lRHzUHp2EeaE9sLyPa3ZSQ" name="Reconocer patrones en imagenes">
           <extend xmi:type="uml:Extend" xmi:id="_LxQRQHp3EeaE9sLyPa3ZSQ" extendedCase="_jSInEHdVEeamQZcPhcSvkw" extensionLocation="_LxRfYHp3EeaE9sLyPa3ZSQ"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_BWq1oIQjEea2kM4a6kr93g" client="_oH3q4IQiEea2kM4a6kr93g" supplier="_37swAIQiEea2kM4a6kr93g"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_Lqu9oISrEeaGDfVEWwoDWQ" name="ON/OFF" client="_fxka8ISpEeaGDfVEWwoDWQ" supplier="_CgPZcISqEeaGDfVEWwoDWQ"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_MRW4wISrEeaGDfVEWwoDWQ" name="ON/OFF" client="_4DtwMISpEeaGDfVEWwoDWQ" supplier="_98MmgISpEeaGDfVEWwoDWQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_QNgj4HXGEea8nrIsS5Fh4g" name="CMD" client="_ueVwAHXEEea8nrIsS5Fh4g" supplier="_8uDXAHXEEea8nrIsS5Fh4g"/>
       <packagedElement xmi:type="uml:Usage" xmi:id="_TeRKAHXGEea8nrIsS5Fh4g" name="Camera Data" client="_AB0N0HXFEea8nrIsS5Fh4g" supplier="_Ai_oQHXFEea8nrIsS5Fh4g"/>
@@ -167,6 +175,10 @@
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l9zIkXp1EeaE9sLyPa3ZSQ" key="nature" value="SysML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_l90WsHp1EeaE9sLyPa3ZSQ" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_l9x6cHp1EeaE9sLyPa3ZSQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fqVCYIQYEea2kM4a6kr93g" name="EPS">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_98MmgISpEeaGDfVEWwoDWQ" name="ON/OFF" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_CgPZcISqEeaGDfVEWwoDWQ" name="ON/OFF" aggregation="composite"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_wZgJIHdZEeamQZcPhcSvkw" name="ActivityDiagrams">
@@ -341,11 +353,18 @@ The PAYLOAD shall have a Send Data mode in which the POBC retreaves science data
   <PortAndFlows:FlowPort xmi:id="_8uD-EHXEEea8nrIsS5Fh4g" base_Port="_8uDXAHXEEea8nrIsS5Fh4g" direction="in"/>
   <PortAndFlows:FlowPort xmi:id="_9XCpoHXEEea8nrIsS5Fh4g" base_Port="_9XCCkHXEEea8nrIsS5Fh4g" direction="out"/>
   <PortAndFlows:FlowPort xmi:id="_90rn4HXEEea8nrIsS5Fh4g" base_Port="_90rA0HXEEea8nrIsS5Fh4g" direction="in"/>
-  <PortAndFlows:FlowPort xmi:id="_AB0N0XXFEea8nrIsS5Fh4g" base_Port="_AB0N0HXFEea8nrIsS5Fh4g" direction="out"/>
-  <PortAndFlows:FlowPort xmi:id="_Ai_oQXXFEea8nrIsS5Fh4g" base_Port="_Ai_oQHXFEea8nrIsS5Fh4g" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_AB0N0XXFEea8nrIsS5Fh4g" base_Port="_AB0N0HXFEea8nrIsS5Fh4g"/>
+  <PortAndFlows:FlowPort xmi:id="_Ai_oQXXFEea8nrIsS5Fh4g" base_Port="_Ai_oQHXFEea8nrIsS5Fh4g"/>
   <PortAndFlows:FlowPort xmi:id="_y3gd8HXrEeaJ0ugIRWJBdw" base_Port="_y3eowHXrEeaJ0ugIRWJBdw" direction="out"/>
   <PortAndFlows:FlowPort xmi:id="_2RJ6UHXrEeaJ0ugIRWJBdw" base_Port="_2RJTQHXrEeaJ0ugIRWJBdw" direction="in"/>
   <Blocks:Block xmi:id="_DStA4HXzEeaJ0ugIRWJBdw" base_Class="_DSrywHXzEeaJ0ugIRWJBdw"/>
   <PortAndFlows:FlowPort xmi:id="_KF7ywXX0EeaJ0ugIRWJBdw" base_Port="_KF7ywHX0EeaJ0ugIRWJBdw" direction="out"/>
   <Blocks:Block xmi:id="_WwZxUHp1EeaE9sLyPa3ZSQ" base_Class="_WwVf4Hp1EeaE9sLyPa3ZSQ"/>
+  <Blocks:Block xmi:id="_fqezYIQYEea2kM4a6kr93g" base_Class="_fqVCYIQYEea2kM4a6kr93g"/>
+  <PortAndFlows:FlowPort xmi:id="_oH5gEIQiEea2kM4a6kr93g" base_Port="_oH3q4IQiEea2kM4a6kr93g" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_37tXEIQiEea2kM4a6kr93g" base_Port="_37swAIQiEea2kM4a6kr93g" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_fxuL8ISpEeaGDfVEWwoDWQ" base_Port="_fxka8ISpEeaGDfVEWwoDWQ" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_4Du-UISpEeaGDfVEWwoDWQ" base_Port="_4DtwMISpEeaGDfVEWwoDWQ" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_98N0oISpEeaGDfVEWwoDWQ" base_Port="_98MmgISpEeaGDfVEWwoDWQ" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_CgROoISqEeaGDfVEWwoDWQ" base_Port="_CgPZcISqEeaGDfVEWwoDWQ" direction="in"/>
 </xmi:XMI>

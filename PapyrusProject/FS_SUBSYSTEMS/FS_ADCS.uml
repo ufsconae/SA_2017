@@ -55,13 +55,23 @@
         <edge xmi:type="uml:ControlFlow" xmi:id="_OXTdgITrEeaQMe7pUpaa8w" target="_pyJWMIHDEeanzJtco6pAog" source="_Guc1wITrEeaQMe7pUpaa8w"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_zeS-QITrEeaQMe7pUpaa8w" target="_qIbbEITrEeaQMe7pUpaa8w" source="_UlvIAIGxEeaIW6qGPMqENw"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_E99bMIV9EeaHusyGdIinlw" target="_4wnl0IGxEeaIW6qGPMqENw" source="_DrpeEIG0EeaIW6qGPMqENw"/>
-        <group xmi:type="uml:ActivityPartition" xmi:id="_uU6t4IGvEeaIW6qGPMqENw" name="Housekeeping Procesing" node="_A_v_4IGxEeaIW6qGPMqENw _UlvIAIGxEeaIW6qGPMqENw _qIbbEITrEeaQMe7pUpaa8w"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_uU6t4IGvEeaIW6qGPMqENw" name="Housekeeping Procesing" node="_A_v_4IGxEeaIW6qGPMqENw _UlvIAIGxEeaIW6qGPMqENw _qIbbEITrEeaQMe7pUpaa8w">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_I3kUkIV-EeaHusyGdIinlw" annotatedElement="_qIbbEITrEeaQMe7pUpaa8w">
+            <body>Se envian datos adicionales (TBC)
+</body>
+          </ownedComment>
+        </group>
         <group xmi:type="uml:ActivityPartition" xmi:id="_qatQMIGxEeaIW6qGPMqENw" name="Orbit Determination" node="_xCVrgIGxEeaIW6qGPMqENw _0P-sMIGxEeaIW6qGPMqENw _4wnl0IGxEeaIW6qGPMqENw _tz5AQIG2EeaIW6qGPMqENw"/>
         <group xmi:type="uml:ActivityPartition" xmi:id="_Y8v5oIGzEeaIW6qGPMqENw" name="Attitude Determination" node="_DrpeEIG0EeaIW6qGPMqENw"/>
         <group xmi:type="uml:ActivityPartition" xmi:id="_t2ihEIG1EeaIW6qGPMqENw" name="ADCS Control Modes" node="_zyxO8IG1EeaIW6qGPMqENw"/>
         <group xmi:type="uml:ActivityPartition" xmi:id="_eYcJcIG3EeaIW6qGPMqENw" name="Attitude Control " node="_ASfNEIG4EeaIW6qGPMqENw"/>
         <group xmi:type="uml:ActivityPartition" xmi:id="_criekIG-EeaIW6qGPMqENw" name="Actuators" node="_AhUZoIHAEeaIW6qGPMqENw _Q0bUYIHDEeanzJtco6pAog _ffR_QIHDEeanzJtco6pAog"/>
-        <group xmi:type="uml:ActivityPartition" xmi:id="_zGIksIGwEeaIW6qGPMqENw" name="Sensors" node="_pyJWMIHDEeanzJtco6pAog _Guc1wITrEeaQMe7pUpaa8w"/>
+        <group xmi:type="uml:ActivityPartition" xmi:id="_zGIksIGwEeaIW6qGPMqENw" name="Sensors" node="_pyJWMIHDEeanzJtco6pAog _Guc1wITrEeaQMe7pUpaa8w">
+          <ownedComment xmi:type="uml:Comment" xmi:id="__tZOkIV-EeaHusyGdIinlw" annotatedElement="_Guc1wITrEeaQMe7pUpaa8w">
+            <body>Se iniciará por la ejecución de una interrupción (TBC)
+</body>
+          </ownedComment>
+        </group>
         <group xmi:type="uml:ActivityPartition" xmi:id="_yQdjIIG_EeaIW6qGPMqENw" name="Command Manager" node="_2H_OUIG_EeaIW6qGPMqENw _WLyaoIHDEeanzJtco6pAog"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_A_v_4IGxEeaIW6qGPMqENw" name="Process HK data &amp; ms." incoming="_3dUswIHDEeanzJtco6pAog" outgoing="_1AcN4IGzEeaIW6qGPMqENw _zhCwUIG2EeaIW6qGPMqENw" inPartition="_uU6t4IGvEeaIW6qGPMqENw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_UlvIAIGxEeaIW6qGPMqENw" name="Storage HK data &amp; ms." incoming="_1AcN4IGzEeaIW6qGPMqENw" outgoing="_zeS-QITrEeaQMe7pUpaa8w" inPartition="_uU6t4IGvEeaIW6qGPMqENw"/>
@@ -80,7 +90,38 @@
         <node xmi:type="uml:OpaqueAction" xmi:id="_ffR_QIHDEeanzJtco6pAog" name="Get HK data &amp; ms. " incoming="_8SplQITqEeaQMe7pUpaa8w" outgoing="_3dUswIHDEeanzJtco6pAog" inPartition="_criekIG-EeaIW6qGPMqENw"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_pyJWMIHDEeanzJtco6pAog" name="Get HK data &amp; ms." incoming="_OXTdgITrEeaQMe7pUpaa8w" outgoing="_8SplQITqEeaQMe7pUpaa8w" inPartition="_zGIksIGwEeaIW6qGPMqENw"/>
         <node xmi:type="uml:InitialNode" xmi:id="_Guc1wITrEeaQMe7pUpaa8w" name="Start" incoming="_AFwiMIHEEeanzJtco6pAog" outgoing="_OXTdgITrEeaQMe7pUpaa8w" inPartition="_zGIksIGwEeaIW6qGPMqENw"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_qIbbEITrEeaQMe7pUpaa8w" name="Send HK data" incoming="_zeS-QITrEeaQMe7pUpaa8w" inPartition="_uU6t4IGvEeaIW6qGPMqENw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_qIbbEITrEeaQMe7pUpaa8w" name="Send HK data to C&amp;DH" incoming="_zeS-QITrEeaQMe7pUpaa8w" inPartition="_uU6t4IGvEeaIW6qGPMqENw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:StateMachine" xmi:id="_83vlMIWAEeaHusyGdIinlw" name="Nominal Operation">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_0nA2YIWGEeaS7NkX15jPxw" name="Go to AttitudeAcquisition Mode" kind="exitPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_07J6YIWGEeaS7NkX15jPxw" name="Go to SafeHold Mode" kind="exitPoint"/>
+        <region xmi:type="uml:Region" xmi:id="_AG0wUIWBEeaHusyGdIinlw" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_XPFFUIWBEeaHusyGdIinlw" source="_OvebwIWBEeaHusyGdIinlw" target="_RdL_MIWBEeaHusyGdIinlw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_a7J8MIWGEeal0sIWfjQHlQ" name="Calibration" source="_RdL_MIWBEeaHusyGdIinlw" target="_aSziwIWGEeal0sIWfjQHlQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_eVTH0IWGEeal0sIWfjQHlQ" source="_aSziwIWGEeal0sIWfjQHlQ" target="_cd46QIWGEeal0sIWfjQHlQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_e84sQIWGEeal0sIWfjQHlQ" source="_aSziwIWGEeal0sIWfjQHlQ" target="_c-OnMIWGEeal0sIWfjQHlQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_fXyfkIWGEeal0sIWfjQHlQ" source="_aSziwIWGEeal0sIWfjQHlQ" target="_dOBWsIWGEeal0sIWfjQHlQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_f0HPMIWGEeal0sIWfjQHlQ" name="Science data acquisition" source="_RdL_MIWBEeaHusyGdIinlw" target="_dcNjsIWGEeal0sIWfjQHlQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_gLxhQIWGEeal0sIWfjQHlQ" name="Maximze Energy" source="_RdL_MIWBEeaHusyGdIinlw" target="_dyy3sIWGEeal0sIWfjQHlQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_jQi50IWGEeal0sIWfjQHlQ" source="_cd46QIWGEeal0sIWfjQHlQ" target="_itcMwIWGEeal0sIWfjQHlQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_jpovQIWGEeal0sIWfjQHlQ" source="_c-OnMIWGEeal0sIWfjQHlQ" target="_itcMwIWGEeal0sIWfjQHlQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_kHBO0IWGEeal0sIWfjQHlQ" source="_dOBWsIWGEeal0sIWfjQHlQ" target="_itcMwIWGEeal0sIWfjQHlQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_koAcAIWGEeal0sIWfjQHlQ" source="_dcNjsIWGEeal0sIWfjQHlQ" target="_itcMwIWGEeal0sIWfjQHlQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_0GfjQIWGEeaS7NkX15jPxw" source="_itcMwIWGEeal0sIWfjQHlQ" target="_zpJf8IWGEeaS7NkX15jPxw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_2pnAQIWGEeaS7NkX15jPxw" name="OK" source="_zpJf8IWGEeaS7NkX15jPxw" target="_0nA2YIWGEeaS7NkX15jPxw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_3HsDYIWGEeaS7NkX15jPxw" name="ERROR" source="_zpJf8IWGEeaS7NkX15jPxw" target="_07J6YIWGEeaS7NkX15jPxw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_jIy2kIWHEeaS7NkX15jPxw" source="_dyy3sIWGEeal0sIWfjQHlQ" target="_itcMwIWGEeal0sIWfjQHlQ"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_OvebwIWBEeaHusyGdIinlw" name="Start"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_RdL_MIWBEeaHusyGdIinlw" name="What's the nominal operation?" kind="choice"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_aSziwIWGEeal0sIWfjQHlQ" name="What's the calibration type?" kind="choice"/>
+          <subvertex xmi:type="uml:State" xmi:id="_cd46QIWGEeal0sIWfjQHlQ" name="Lunar"/>
+          <subvertex xmi:type="uml:State" xmi:id="_c-OnMIWGEeal0sIWfjQHlQ" name="ColdSky"/>
+          <subvertex xmi:type="uml:State" xmi:id="_dOBWsIWGEeal0sIWfjQHlQ" name="Terrestrial"/>
+          <subvertex xmi:type="uml:State" xmi:id="_dcNjsIWGEeal0sIWfjQHlQ" name="ImageAcquisition"/>
+          <subvertex xmi:type="uml:State" xmi:id="_dyy3sIWGEeal0sIWfjQHlQ" name="PowerSafe"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_itcMwIWGEeal0sIWfjQHlQ" name="Exit Conditions" kind="join"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_zpJf8IWGEeaS7NkX15jPxw" name="What's the status?" kind="choice"/>
+        </region>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_xrc5oAGvEeajHqwUCOgvUA" name="ADCS_StructureDiagrams" URI="">

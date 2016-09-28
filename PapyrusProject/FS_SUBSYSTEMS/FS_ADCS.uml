@@ -95,6 +95,7 @@
       <packagedElement xmi:type="uml:StateMachine" xmi:id="_83vlMIWAEeaHusyGdIinlw" name="Nominal Operation">
         <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_0nA2YIWGEeaS7NkX15jPxw" name="Go to AttitudeAcquisition Mode" kind="exitPoint"/>
         <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_07J6YIWGEeaS7NkX15jPxw" name="Go to SafeHold Mode" kind="exitPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_M59gEIWLEeaS7NkX15jPxw" name="Go to DeOrbit Mode" kind="exitPoint"/>
         <region xmi:type="uml:Region" xmi:id="_AG0wUIWBEeaHusyGdIinlw" name="Region1">
           <transition xmi:type="uml:Transition" xmi:id="_XPFFUIWBEeaHusyGdIinlw" source="_OvebwIWBEeaHusyGdIinlw" target="_RdL_MIWBEeaHusyGdIinlw"/>
           <transition xmi:type="uml:Transition" xmi:id="_a7J8MIWGEeal0sIWfjQHlQ" name="Calibration" source="_RdL_MIWBEeaHusyGdIinlw" target="_aSziwIWGEeal0sIWfjQHlQ"/>
@@ -102,7 +103,7 @@
           <transition xmi:type="uml:Transition" xmi:id="_e84sQIWGEeal0sIWfjQHlQ" source="_aSziwIWGEeal0sIWfjQHlQ" target="_c-OnMIWGEeal0sIWfjQHlQ"/>
           <transition xmi:type="uml:Transition" xmi:id="_fXyfkIWGEeal0sIWfjQHlQ" source="_aSziwIWGEeal0sIWfjQHlQ" target="_dOBWsIWGEeal0sIWfjQHlQ"/>
           <transition xmi:type="uml:Transition" xmi:id="_f0HPMIWGEeal0sIWfjQHlQ" name="Science data acquisition" source="_RdL_MIWBEeaHusyGdIinlw" target="_dcNjsIWGEeal0sIWfjQHlQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_gLxhQIWGEeal0sIWfjQHlQ" name="Maximze Energy" source="_RdL_MIWBEeaHusyGdIinlw" target="_dyy3sIWGEeal0sIWfjQHlQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_gLxhQIWGEeal0sIWfjQHlQ" name="Maximize energy" source="_RdL_MIWBEeaHusyGdIinlw" target="_dyy3sIWGEeal0sIWfjQHlQ"/>
           <transition xmi:type="uml:Transition" xmi:id="_jQi50IWGEeal0sIWfjQHlQ" source="_cd46QIWGEeal0sIWfjQHlQ" target="_itcMwIWGEeal0sIWfjQHlQ"/>
           <transition xmi:type="uml:Transition" xmi:id="_jpovQIWGEeal0sIWfjQHlQ" source="_c-OnMIWGEeal0sIWfjQHlQ" target="_itcMwIWGEeal0sIWfjQHlQ"/>
           <transition xmi:type="uml:Transition" xmi:id="_kHBO0IWGEeal0sIWfjQHlQ" source="_dOBWsIWGEeal0sIWfjQHlQ" target="_itcMwIWGEeal0sIWfjQHlQ"/>
@@ -111,6 +112,11 @@
           <transition xmi:type="uml:Transition" xmi:id="_2pnAQIWGEeaS7NkX15jPxw" name="OK" source="_zpJf8IWGEeaS7NkX15jPxw" target="_0nA2YIWGEeaS7NkX15jPxw"/>
           <transition xmi:type="uml:Transition" xmi:id="_3HsDYIWGEeaS7NkX15jPxw" name="ERROR" source="_zpJf8IWGEeaS7NkX15jPxw" target="_07J6YIWGEeaS7NkX15jPxw"/>
           <transition xmi:type="uml:Transition" xmi:id="_jIy2kIWHEeaS7NkX15jPxw" source="_dyy3sIWGEeal0sIWfjQHlQ" target="_itcMwIWGEeal0sIWfjQHlQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_he1HwIWKEeaS7NkX15jPxw" name="End Operations" source="_RdL_MIWBEeaHusyGdIinlw" target="_cd3vUIWKEeaS7NkX15jPxw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_9wtpAIWKEeaS7NkX15jPxw" source="_cd3vUIWKEeaS7NkX15jPxw" target="_itcMwIWGEeal0sIWfjQHlQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_QRJeUIWLEeaS7NkX15jPxw" name="END" source="_zpJf8IWGEeaS7NkX15jPxw" target="_M59gEIWLEeaS7NkX15jPxw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_BWWcgIWXEeaS7NkX15jPxw" name="Earth contact" source="_RdL_MIWBEeaHusyGdIinlw" target="_58WJEIWWEeaS7NkX15jPxw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_GC32AIWXEeaS7NkX15jPxw" source="_58WJEIWWEeaS7NkX15jPxw" target="_itcMwIWGEeal0sIWfjQHlQ"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_OvebwIWBEeaHusyGdIinlw" name="Start"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_RdL_MIWBEeaHusyGdIinlw" name="What's the nominal operation?" kind="choice"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_aSziwIWGEeal0sIWfjQHlQ" name="What's the calibration type?" kind="choice"/>
@@ -121,6 +127,8 @@
           <subvertex xmi:type="uml:State" xmi:id="_dyy3sIWGEeal0sIWfjQHlQ" name="PowerSafe"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_itcMwIWGEeal0sIWfjQHlQ" name="Exit Conditions" kind="join"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_zpJf8IWGEeaS7NkX15jPxw" name="What's the status?" kind="choice"/>
+          <subvertex xmi:type="uml:State" xmi:id="_cd3vUIWKEeaS7NkX15jPxw" name="Mode (TBD)"/>
+          <subvertex xmi:type="uml:State" xmi:id="_58WJEIWWEeaS7NkX15jPxw" name="GS Communication"/>
         </region>
       </packagedElement>
     </packagedElement>

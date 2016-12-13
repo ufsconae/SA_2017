@@ -45,7 +45,6 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_YMLgQnXqEeaJ0ugIRWJBdw" name="dcs manager_1" type="_AUjrAHXCEea8nrIsS5Fh4g" association="_YMKSIHXqEeaJ0ugIRWJBdw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_5AZDknXyEeaJ0ugIRWJBdw" name="mm manager_1" type="_4oiagHXBEea8nrIsS5Fh4g" association="_5AYcgHXyEeaJ0ugIRWJBdw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_IWXSknX0EeaJ0ugIRWJBdw" name="process hk pobc_1" type="_DSrywHXzEeaJ0ugIRWJBdw" association="_IWWrgHX0EeaJ0ugIRWJBdw"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_l9zvoHp1EeaE9sLyPa3ZSQ" name="pattern recognition_1" type="_WwVf4Hp1EeaE9sLyPa3ZSQ" association="_l9x6cHp1EeaE9sLyPa3ZSQ"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_AUjrAHXCEea8nrIsS5Fh4g" name="DCS Manager">
           <ownedAttribute xmi:type="uml:Port" xmi:id="_y3eowHXrEeaJ0ugIRWJBdw" name="I2C" aggregation="composite"/>
@@ -107,7 +106,6 @@
           <extend xmi:type="uml:Extend" xmi:id="_iTXBsHp2EeaE9sLyPa3ZSQ" extendedCase="_MP9E4HdVEeamQZcPhcSvkw" extensionLocation="_iTXBsXp2EeaE9sLyPa3ZSQ"/>
           <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_imnIYXdWEeamQZcPhcSvkw" name="ExtensionPoint1"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_WwVf4Hp1EeaE9sLyPa3ZSQ" name="Pattern recognition"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_-TW-MHp1EeaE9sLyPa3ZSQ" name="Testear modulos">
           <extend xmi:type="uml:Extend" xmi:id="_hkVYgHp2EeaE9sLyPa3ZSQ" extendedCase="_MP9E4HdVEeamQZcPhcSvkw" extensionLocation="_hkV_kHp2EeaE9sLyPa3ZSQ"/>
         </packagedElement>
@@ -169,12 +167,6 @@
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IWXSkXX0EeaJ0ugIRWJBdw" key="nature" value="SysML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_IWXSk3X0EeaJ0ugIRWJBdw" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_IWWrgHX0EeaJ0ugIRWJBdw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_l9x6cHp1EeaE9sLyPa3ZSQ" name="CMD" memberEnd="_l9zvoHp1EeaE9sLyPa3ZSQ _l90WsHp1EeaE9sLyPa3ZSQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_l9zIkHp1EeaE9sLyPa3ZSQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_l9zIkXp1EeaE9sLyPa3ZSQ" key="nature" value="SysML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_l90WsHp1EeaE9sLyPa3ZSQ" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_l9x6cHp1EeaE9sLyPa3ZSQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_fqVCYIQYEea2kM4a6kr93g" name="EPS">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_98MmgISpEeaGDfVEWwoDWQ" name="ON/OFF" aggregation="composite"/>
@@ -356,7 +348,6 @@ The PAYLOAD shall have a Send Data mode in which the POBC retreaves science data
   <PortAndFlows:FlowPort xmi:id="_2RJ6UHXrEeaJ0ugIRWJBdw" base_Port="_2RJTQHXrEeaJ0ugIRWJBdw" direction="in"/>
   <Blocks:Block xmi:id="_DStA4HXzEeaJ0ugIRWJBdw" base_Class="_DSrywHXzEeaJ0ugIRWJBdw"/>
   <PortAndFlows:FlowPort xmi:id="_KF7ywXX0EeaJ0ugIRWJBdw" base_Port="_KF7ywHX0EeaJ0ugIRWJBdw" direction="out"/>
-  <Blocks:Block xmi:id="_WwZxUHp1EeaE9sLyPa3ZSQ" base_Class="_WwVf4Hp1EeaE9sLyPa3ZSQ"/>
   <Blocks:Block xmi:id="_fqezYIQYEea2kM4a6kr93g" base_Class="_fqVCYIQYEea2kM4a6kr93g"/>
   <PortAndFlows:FlowPort xmi:id="_oH5gEIQiEea2kM4a6kr93g" base_Port="_oH3q4IQiEea2kM4a6kr93g" direction="out"/>
   <PortAndFlows:FlowPort xmi:id="_37tXEIQiEea2kM4a6kr93g" base_Port="_37swAIQiEea2kM4a6kr93g" direction="in"/>

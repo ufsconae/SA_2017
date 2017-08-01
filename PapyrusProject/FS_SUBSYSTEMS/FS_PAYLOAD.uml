@@ -2,16 +2,35 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks" xmlns:PortAndFlows="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks http://www.eclipse.org/papyrus/0.7.0/SysML#//blocks http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows http://www.eclipse.org/papyrus/0.7.0/SysML#//portandflows">
   <uml:Model xmi:id="__M-24AGtEeajHqwUCOgvUA" name="RootElement">
     <packagedElement xmi:type="uml:Model" xmi:id="_72GVAAI5EeagKebOtQfZOg" name="Requirements"/>
-    <packagedElement xmi:type="uml:Model" xmi:id="_-MtnEAI5EeagKebOtQfZOg" name="UseCases"/>
+    <packagedElement xmi:type="uml:Model" xmi:id="_-MtnEAI5EeagKebOtQfZOg" name="UseCases">
+      <packagedElement xmi:type="uml:Actor" xmi:id="_3jdnsHdUEeamQZcPhcSvkw" name="C&amp;DH"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_6R15gHdUEeamQZcPhcSvkw" name="S Band Transmitter"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_zXXlQHdVEeamQZcPhcSvkw" memberEnd="_zYEv4HdVEeamQZcPhcSvkw _zYEv4XdVEeamQZcPhcSvkw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zXcdwHdVEeamQZcPhcSvkw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zXcdwXdVEeamQZcPhcSvkw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_zYEv4HdVEeamQZcPhcSvkw" name="enviar comandos" type="_MP9E4HdVEeamQZcPhcSvkw" association="_zXXlQHdVEeamQZcPhcSvkw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_zYEv4XdVEeamQZcPhcSvkw" name="c&amp;dh" type="_3jdnsHdUEeamQZcPhcSvkw" association="_zXXlQHdVEeamQZcPhcSvkw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_S08xAHdXEeamQZcPhcSvkw" memberEnd="_S0_NQHdXEeamQZcPhcSvkw _S0_NQXdXEeamQZcPhcSvkw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S08xAXdXEeamQZcPhcSvkw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S08xAndXEeamQZcPhcSvkw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_S0_NQHdXEeamQZcPhcSvkw" name="transmitir datos ciencia" type="_akYMwHdVEeamQZcPhcSvkw" association="_S08xAHdXEeamQZcPhcSvkw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_S0_NQXdXEeamQZcPhcSvkw" name="s band transmitter" type="_6R15gHdUEeamQZcPhcSvkw" association="_S08xAHdXEeamQZcPhcSvkw"/>
+      </packagedElement>
+    </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="__Of0MAI5EeagKebOtQfZOg" name="ArchitectueDiagram">
       <packagedElement xmi:type="uml:Class" xmi:id="_L1RUQHRFEea8nrIsS5Fh4g" name="S band transmitter">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_90rA0HXEEea8nrIsS5Fh4g" name="SPI" aggregation="composite"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_PlW6sHRFEea8nrIsS5Fh4g" name="NIR/SWIR Camera">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_AB0N0HXFEea8nrIsS5Fh4g" name="Camera Link" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_37swAIQiEea2kM4a6kr93g" name="trigger" aggregation="composite"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_UVqoAHRFEea8nrIsS5Fh4g" name="DCS">
-        <ownedAttribute xmi:type="uml:Port" xmi:id="__ls5kHXEEea8nrIsS5Fh4g" name="I2C" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_2RJTQHXrEeaJ0ugIRWJBdw" name="I2C" aggregation="composite"/>
+        <nestedClassifier xmi:type="uml:Interface" xmi:id="_ty3ygISpEeaGDfVEWwoDWQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_Y9HpYHRHEea8nrIsS5Fh4g" name="CDH">
         <ownedAttribute xmi:type="uml:Port" xmi:id="_ueVwAHXEEea8nrIsS5Fh4g" name="I2C" aggregation="composite"/>
@@ -22,56 +41,218 @@
           <ownedAttribute xmi:type="uml:Property" xmi:id="_WSx5A3XGEea8nrIsS5Fh4g" name="control modes_1" type="_8cwTAHXBEea8nrIsS5Fh4g" association="_WSx5AHXGEea8nrIsS5Fh4g"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_sScfUHRHEea8nrIsS5Fh4g" name="Control Modes">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_U0BcBHXGEea8nrIsS5Fh4g" name="command manager_1" type="_dwaZQHRHEea8nrIsS5Fh4g" association="_U0BcAHXGEea8nrIsS5Fh4g"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_VOMPgXXGEea8nrIsS5Fh4g" name="camera manager_1" type="_8cwTAHXBEea8nrIsS5Fh4g" association="_VOLocHXGEea8nrIsS5Fh4g"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_WowJAHXGEea8nrIsS5Fh4g" name="dcs manager_1" type="_AUjrAHXCEea8nrIsS5Fh4g" association="_Wovh8HXGEea8nrIsS5Fh4g"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XcVXsHXqEeaJ0ugIRWJBdw" name="camera manager_1" type="_8cwTAHXBEea8nrIsS5Fh4g" association="_XcTigHXqEeaJ0ugIRWJBdw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YMLgQnXqEeaJ0ugIRWJBdw" name="dcs manager_1" type="_AUjrAHXCEea8nrIsS5Fh4g" association="_YMKSIHXqEeaJ0ugIRWJBdw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_5AZDknXyEeaJ0ugIRWJBdw" name="mm manager_1" type="_4oiagHXBEea8nrIsS5Fh4g" association="_5AYcgHXyEeaJ0ugIRWJBdw"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_IWXSknX0EeaJ0ugIRWJBdw" name="process hk pobc_1" type="_DSrywHXzEeaJ0ugIRWJBdw" association="_IWWrgHX0EeaJ0ugIRWJBdw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_AUjrAHXCEea8nrIsS5Fh4g" name="DCS Manager">
-          <ownedAttribute xmi:type="uml:Port" xmi:id="_-SdJAHXEEea8nrIsS5Fh4g" name="I2C" aggregation="composite"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_WowJAXXGEea8nrIsS5Fh4g" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_Wovh8HXGEea8nrIsS5Fh4g"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_y3eowHXrEeaJ0ugIRWJBdw" name="I2C" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_noNPwnXyEeaJ0ugIRWJBdw" name="mm manager_1" type="_4oiagHXBEea8nrIsS5Fh4g" association="_noMosHXyEeaJ0ugIRWJBdw"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_fxka8ISpEeaGDfVEWwoDWQ" name="ON/OFF" aggregation="composite"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_8cwTAHXBEea8nrIsS5Fh4g" name="Camera Manager">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_VOMPgnXGEea8nrIsS5Fh4g" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_VOLocHXGEea8nrIsS5Fh4g"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ckPQA3XGEea8nrIsS5Fh4g" name="frame grabber_1" type="_pC67EHXCEea8nrIsS5Fh4g" association="_ckPQAHXGEea8nrIsS5Fh4g"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_WSx5BHXGEea8nrIsS5Fh4g" name="mm manager_1" type="_4oiagHXBEea8nrIsS5Fh4g" association="_WSx5AHXGEea8nrIsS5Fh4g"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_4DtwMISpEeaGDfVEWwoDWQ" name="ON/OFF" aggregation="composite"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_dwaZQHRHEea8nrIsS5Fh4g" name="Command Manager">
-          <ownedAttribute xmi:type="uml:Port" xmi:id="_8uDXAHXEEea8nrIsS5Fh4g" name="I2C" aggregation="composite"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_U0BcA3XGEea8nrIsS5Fh4g" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_U0BcAHXGEea8nrIsS5Fh4g"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_8uDXAHXEEea8nrIsS5Fh4g" name="I2C" visibility="public" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Y1VyA3XqEeaJ0ugIRWJBdw" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_Y1VyAHXqEeaJ0ugIRWJBdw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_pC67EHXCEea8nrIsS5Fh4g" name="Frame Grabber">
-          <ownedAttribute xmi:type="uml:Port" xmi:id="_Ai_oQHXFEea8nrIsS5Fh4g" name="Camera Link" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_Ai_oQHXFEea8nrIsS5Fh4g" name="Camera Link" visibility="public" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_ckPQBHXGEea8nrIsS5Fh4g" name="camera manager_1" type="_8cwTAHXBEea8nrIsS5Fh4g" association="_ckPQAHXGEea8nrIsS5Fh4g"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_oH3q4IQiEea2kM4a6kr93g" name="trigger" aggregation="composite"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Usage" xmi:id="_Q9qOcHXGEea8nrIsS5Fh4g" name="Camera Data" client="_9XCCkHXEEea8nrIsS5Fh4g" supplier="_90rA0HXEEea8nrIsS5Fh4g"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_Q9qOcHXGEea8nrIsS5Fh4g" name="Science Data" client="_9XCCkHXEEea8nrIsS5Fh4g" supplier="_90rA0HXEEea8nrIsS5Fh4g"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_-21BkHXpEeaJ0ugIRWJBdw" name="CMD" client="_y3eowHXrEeaJ0ugIRWJBdw" supplier="_2RJTQHXrEeaJ0ugIRWJBdw"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="__ivFUHXpEeaJ0ugIRWJBdw" client="_Ai_oQHXFEea8nrIsS5Fh4g" supplier="_AB0N0HXFEea8nrIsS5Fh4g"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DSrywHXzEeaJ0ugIRWJBdw" name="Processing HK">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_KF7ywHX0EeaJ0ugIRWJBdw" name="I2C" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_W_5u0HX0EeaJ0ugIRWJBdw" name="HK" client="_KF7ywHX0EeaJ0ugIRWJBdw" supplier="_ueVwAHXEEea8nrIsS5Fh4g"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_MP9E4HdVEeamQZcPhcSvkw" name="Enviar comandos">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_gDkJUHp2EeaE9sLyPa3ZSQ" name="ExtensionPoint1"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_gq3Z4Hp2EeaE9sLyPa3ZSQ" name="ExtensionPoint2"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_hFA_QHp2EeaE9sLyPa3ZSQ" name="ExtensionPoint3"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_hkV_kHp2EeaE9sLyPa3ZSQ" name="ExtensionPoint4"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_h7484Xp2EeaE9sLyPa3ZSQ" name="ExtensionPoint5"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_iTXBsXp2EeaE9sLyPa3ZSQ" name="ExtensionPoint6"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_OJfZYHdVEeamQZcPhcSvkw" name="Solicitar Housekeeping">
+          <extend xmi:type="uml:Extend" xmi:id="_gDi7MHp2EeaE9sLyPa3ZSQ" extendedCase="_MP9E4HdVEeamQZcPhcSvkw" extensionLocation="_gDkJUHp2EeaE9sLyPa3ZSQ"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_OYN8cXdWEeamQZcPhcSvkw" name="ExtensionPoint1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_QqbFEHdVEeamQZcPhcSvkw" name="Gestionar DCS">
+          <extend xmi:type="uml:Extend" xmi:id="_hFAYMHp2EeaE9sLyPa3ZSQ" extendedCase="_MP9E4HdVEeamQZcPhcSvkw" extensionLocation="_hFA_QHp2EeaE9sLyPa3ZSQ"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_H-Sl8HdWEeamQZcPhcSvkw" name="ExtensionPoint1"/>
+          <include xmi:type="uml:Include" xmi:id="_ys2zMHdWEeamQZcPhcSvkw" addition="_jSInEHdVEeamQZcPhcSvkw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_akYMwHdVEeamQZcPhcSvkw" name="Transmitir datos ciencia">
+          <extend xmi:type="uml:Extend" xmi:id="_kAdcsHp2EeaE9sLyPa3ZSQ" extendedCase="_jSInEHdVEeamQZcPhcSvkw" extensionLocation="_kAeDwHp2EeaE9sLyPa3ZSQ"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_R6RRcHdXEeamQZcPhcSvkw" name="ExtensionPoint1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_fZHuIHdVEeamQZcPhcSvkw" name="Gestionar cámara">
+          <extend xmi:type="uml:Extend" xmi:id="_gq2y0Hp2EeaE9sLyPa3ZSQ" extendedCase="_MP9E4HdVEeamQZcPhcSvkw" extensionLocation="_gq3Z4Hp2EeaE9sLyPa3ZSQ"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_HFMawHdWEeamQZcPhcSvkw" name="ExtensionPoint1"/>
+          <include xmi:type="uml:Include" xmi:id="_sCB58HdWEeamQZcPhcSvkw" addition="_jSInEHdVEeamQZcPhcSvkw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_jSInEHdVEeamQZcPhcSvkw" name="Almacenar datos ciencia">
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_kAeDwHp2EeaE9sLyPa3ZSQ" name="ExtensionPoint1"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_LxRfYHp3EeaE9sLyPa3ZSQ" name="ExtensionPoint2"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_SQxiYHdWEeamQZcPhcSvkw" name="Gestionar modos de funcionamiento">
+          <extend xmi:type="uml:Extend" xmi:id="_iTXBsHp2EeaE9sLyPa3ZSQ" extendedCase="_MP9E4HdVEeamQZcPhcSvkw" extensionLocation="_iTXBsXp2EeaE9sLyPa3ZSQ"/>
+          <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_imnIYXdWEeamQZcPhcSvkw" name="ExtensionPoint1"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_-TW-MHp1EeaE9sLyPa3ZSQ" name="Testear modulos">
+          <extend xmi:type="uml:Extend" xmi:id="_hkVYgHp2EeaE9sLyPa3ZSQ" extendedCase="_MP9E4HdVEeamQZcPhcSvkw" extensionLocation="_hkV_kHp2EeaE9sLyPa3ZSQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_FiBkUHp2EeaE9sLyPa3ZSQ" name="Configurar modulos">
+          <extend xmi:type="uml:Extend" xmi:id="_h7484Hp2EeaE9sLyPa3ZSQ" extendedCase="_MP9E4HdVEeamQZcPhcSvkw" extensionLocation="_h7484Xp2EeaE9sLyPa3ZSQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_lRHzUHp2EeaE9sLyPa3ZSQ" name="Reconocer patrones en imagenes">
+          <extend xmi:type="uml:Extend" xmi:id="_LxQRQHp3EeaE9sLyPa3ZSQ" extendedCase="_jSInEHdVEeamQZcPhcSvkw" extensionLocation="_LxRfYHp3EeaE9sLyPa3ZSQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_BWq1oIQjEea2kM4a6kr93g" client="_oH3q4IQiEea2kM4a6kr93g" supplier="_37swAIQiEea2kM4a6kr93g"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_Lqu9oISrEeaGDfVEWwoDWQ" name="ON/OFF" client="_fxka8ISpEeaGDfVEWwoDWQ" supplier="_CgPZcISqEeaGDfVEWwoDWQ"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_MRW4wISrEeaGDfVEWwoDWQ" name="ON/OFF" client="_4DtwMISpEeaGDfVEWwoDWQ" supplier="_98MmgISpEeaGDfVEWwoDWQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Usage" xmi:id="_QNgj4HXGEea8nrIsS5Fh4g" name="CMD" client="_ueVwAHXEEea8nrIsS5Fh4g" supplier="_8uDXAHXEEea8nrIsS5Fh4g"/>
       <packagedElement xmi:type="uml:Usage" xmi:id="_TeRKAHXGEea8nrIsS5Fh4g" name="Camera Data" client="_AB0N0HXFEea8nrIsS5Fh4g" supplier="_Ai_oQHXFEea8nrIsS5Fh4g"/>
-      <packagedElement xmi:type="uml:Usage" xmi:id="_T49h8HXGEea8nrIsS5Fh4g" name="DCS Data" client="__ls5kHXEEea8nrIsS5Fh4g" supplier="_-SdJAHXEEea8nrIsS5Fh4g"/>
-      <packagedElement xmi:type="uml:Association" xmi:id="_U0BcAHXGEea8nrIsS5Fh4g" name="CMD" memberEnd="_U0BcA3XGEea8nrIsS5Fh4g _U0BcBHXGEea8nrIsS5Fh4g">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U0BcAXXGEea8nrIsS5Fh4g" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U0BcAnXGEea8nrIsS5Fh4g" key="nature" value="SysML_Nature"/>
-        </eAnnotations>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_VOLocHXGEea8nrIsS5Fh4g" name="CMD" memberEnd="_VOMPgXXGEea8nrIsS5Fh4g _VOMPgnXGEea8nrIsS5Fh4g">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VOLocXXGEea8nrIsS5Fh4g" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VOMPgHXGEea8nrIsS5Fh4g" key="nature" value="SysML_Nature"/>
-        </eAnnotations>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_WSx5AHXGEea8nrIsS5Fh4g" name="CMD/Camera Data" memberEnd="_WSx5A3XGEea8nrIsS5Fh4g _WSx5BHXGEea8nrIsS5Fh4g">
+      <packagedElement xmi:type="uml:Association" xmi:id="_WSx5AHXGEea8nrIsS5Fh4g" name="Camera Data" memberEnd="_WSx5A3XGEea8nrIsS5Fh4g _WSx5BHXGEea8nrIsS5Fh4g">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WSx5AXXGEea8nrIsS5Fh4g" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WSx5AnXGEea8nrIsS5Fh4g" key="nature" value="SysML_Nature"/>
-        </eAnnotations>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_Wovh8HXGEea8nrIsS5Fh4g" name="CMD" memberEnd="_WowJAHXGEea8nrIsS5Fh4g _WowJAXXGEea8nrIsS5Fh4g">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Wovh8XXGEea8nrIsS5Fh4g" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Wovh8nXGEea8nrIsS5Fh4g" key="nature" value="SysML_Nature"/>
         </eAnnotations>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_ckPQAHXGEea8nrIsS5Fh4g" name="CMD/Camera Data" memberEnd="_ckPQA3XGEea8nrIsS5Fh4g _ckPQBHXGEea8nrIsS5Fh4g">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ckPQAXXGEea8nrIsS5Fh4g" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ckPQAnXGEea8nrIsS5Fh4g" key="nature" value="SysML_Nature"/>
         </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XcTigHXqEeaJ0ugIRWJBdw" name="CMD" memberEnd="_XcVXsHXqEeaJ0ugIRWJBdw _XcV-wHXqEeaJ0ugIRWJBdw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XcUwoHXqEeaJ0ugIRWJBdw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XcUwoXXqEeaJ0ugIRWJBdw" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_XcV-wHXqEeaJ0ugIRWJBdw" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_XcTigHXqEeaJ0ugIRWJBdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_YMKSIHXqEeaJ0ugIRWJBdw" name="CMD" memberEnd="_YMLgQnXqEeaJ0ugIRWJBdw _YMMHUHXqEeaJ0ugIRWJBdw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YMLgQHXqEeaJ0ugIRWJBdw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YMLgQXXqEeaJ0ugIRWJBdw" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_YMMHUHXqEeaJ0ugIRWJBdw" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_YMKSIHXqEeaJ0ugIRWJBdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Y1VyAHXqEeaJ0ugIRWJBdw" name="CMD" memberEnd="_Y1VyA3XqEeaJ0ugIRWJBdw _Y1VyBHXqEeaJ0ugIRWJBdw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Y1VyAXXqEeaJ0ugIRWJBdw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Y1VyAnXqEeaJ0ugIRWJBdw" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Y1VyBHXqEeaJ0ugIRWJBdw" name="command manager_1" type="_dwaZQHRHEea8nrIsS5Fh4g" association="_Y1VyAHXqEeaJ0ugIRWJBdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_iHQIoHXyEeaJ0ugIRWJBdw" name="CDS Data" client="_2RJTQHXrEeaJ0ugIRWJBdw" supplier="_y3eowHXrEeaJ0ugIRWJBdw"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_noMosHXyEeaJ0ugIRWJBdw" name="DCS Data" memberEnd="_noNPwnXyEeaJ0ugIRWJBdw _noN20HXyEeaJ0ugIRWJBdw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_noNPwHXyEeaJ0ugIRWJBdw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_noNPwXXyEeaJ0ugIRWJBdw" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_noN20HXyEeaJ0ugIRWJBdw" name="dcs manager_1" type="_AUjrAHXCEea8nrIsS5Fh4g" association="_noMosHXyEeaJ0ugIRWJBdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_5AYcgHXyEeaJ0ugIRWJBdw" name="CMD" memberEnd="_5AZDknXyEeaJ0ugIRWJBdw _5AZDk3XyEeaJ0ugIRWJBdw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5AZDkHXyEeaJ0ugIRWJBdw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5AZDkXXyEeaJ0ugIRWJBdw" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_5AZDk3XyEeaJ0ugIRWJBdw" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_5AYcgHXyEeaJ0ugIRWJBdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_IWWrgHX0EeaJ0ugIRWJBdw" name="CMD" memberEnd="_IWXSknX0EeaJ0ugIRWJBdw _IWXSk3X0EeaJ0ugIRWJBdw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IWXSkHX0EeaJ0ugIRWJBdw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IWXSkXX0EeaJ0ugIRWJBdw" key="nature" value="SysML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_IWXSk3X0EeaJ0ugIRWJBdw" name="control modes_1" type="_sScfUHRHEea8nrIsS5Fh4g" association="_IWWrgHX0EeaJ0ugIRWJBdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_fqVCYIQYEea2kM4a6kr93g" name="EPS">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_98MmgISpEeaGDfVEWwoDWQ" name="ON/OFF" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_CgPZcISqEeaGDfVEWwoDWQ" name="ON/OFF" aggregation="composite"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_wZgJIHdZEeamQZcPhcSvkw" name="ActivityDiagrams">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_0CoL8HdZEeamQZcPhcSvkw" name="SW-PAYLOAD" node="_qYX3sHdaEeamQZcPhcSvkw _zRHaAHdaEeamQZcPhcSvkw _3AywwHdaEeamQZcPhcSvkw ___H9sHdaEeamQZcPhcSvkw _EqzCoHdbEeamQZcPhcSvkw _G6sBoHdbEeamQZcPhcSvkw _MzKQ4HdbEeamQZcPhcSvkw _RyVgoHdbEeamQZcPhcSvkw _X1sxQHdbEeamQZcPhcSvkw _0vK28HdbEeamQZcPhcSvkw _GlKLoHddEeamQZcPhcSvkw _yy3TkHdhEeamQZcPhcSvkw _MV1-kHdiEeamQZcPhcSvkw _H7IpgHjxEeaq-9yjX003Mw _LXbxQHjxEeaq-9yjX003Mw _CXmvYHp5EeaE9sLyPa3ZSQ _RytLcHp5EeaE9sLyPa3ZSQ _VT7PcHp5EeaE9sLyPa3ZSQ _XJOkMHp5EeaE9sLyPa3ZSQ">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_8jThoHdbEeamQZcPhcSvkw" target="_3AywwHdaEeamQZcPhcSvkw" source="_qYX3sHdaEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_9jHY0HdbEeamQZcPhcSvkw" target="_LXbxQHjxEeaq-9yjX003Mw" source="_3AywwHdaEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_-TPOMHdbEeamQZcPhcSvkw" target="_0vK28HdbEeamQZcPhcSvkw" source="_zRHaAHdaEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_AmGBoHdcEeamQZcPhcSvkw" name="recolectar HK" target="___H9sHdaEeamQZcPhcSvkw" source="_0vK28HdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_DNp5wHdcEeamQZcPhcSvkw" name="adquisicion NIR/SWIR" target="_G6sBoHdbEeamQZcPhcSvkw" source="_0vK28HdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Ij17UHdcEeamQZcPhcSvkw" name="adquisicion DCS" target="_MzKQ4HdbEeamQZcPhcSvkw" source="_0vK28HdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Voak4HdcEeamQZcPhcSvkw" name="enviar datos a transmisor" target="_X1sxQHdbEeamQZcPhcSvkw" source="_0vK28HdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_3JegwHdcEeamQZcPhcSvkw" target="_RyVgoHdbEeamQZcPhcSvkw" source="_G6sBoHdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_3g47MHdcEeamQZcPhcSvkw" target="_RyVgoHdbEeamQZcPhcSvkw" source="_MzKQ4HdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Jn0rYHddEeamQZcPhcSvkw" target="_GlKLoHddEeamQZcPhcSvkw" source="___H9sHdaEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_lnTbwHdiEeamQZcPhcSvkw" target="_yy3TkHdhEeamQZcPhcSvkw" source="_MV1-kHdiEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_mHTxgHdiEeamQZcPhcSvkw" name="SI" target="_zRHaAHdaEeamQZcPhcSvkw" source="_yy3TkHdhEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_hKYIAHdjEeamQZcPhcSvkw" name="cambio de modo" target="_EqzCoHdbEeamQZcPhcSvkw" source="_0vK28HdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_JCQcAHdkEeamQZcPhcSvkw" target="_H7IpgHjxEeaq-9yjX003Mw" source="_X1sxQHdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_JvYAsHdkEeamQZcPhcSvkw" target="_H7IpgHjxEeaq-9yjX003Mw" source="_GlKLoHddEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_KsBPIHdkEeamQZcPhcSvkw" target="_H7IpgHjxEeaq-9yjX003Mw" source="_RyVgoHdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_oucg8HdkEeamQZcPhcSvkw" target="_MV1-kHdiEeamQZcPhcSvkw" source="_H7IpgHjxEeaq-9yjX003Mw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_F3JYYHp5EeaE9sLyPa3ZSQ" name="NO" target="_CXmvYHp5EeaE9sLyPa3ZSQ" source="_yy3TkHdhEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_kg2soHp5EeaE9sLyPa3ZSQ" name="reconocimiento de patrones" target="_RytLcHp5EeaE9sLyPa3ZSQ" source="_0vK28HdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_moUvcHp5EeaE9sLyPa3ZSQ" name="testear" target="_VT7PcHp5EeaE9sLyPa3ZSQ" source="_0vK28HdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ngqssHp5EeaE9sLyPa3ZSQ" name="configurar" target="_XJOkMHp5EeaE9sLyPa3ZSQ" source="_0vK28HdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_P0928Hp6EeaE9sLyPa3ZSQ" target="_H7IpgHjxEeaq-9yjX003Mw" source="_RytLcHp5EeaE9sLyPa3ZSQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_QPyKsHp6EeaE9sLyPa3ZSQ" target="_H7IpgHjxEeaq-9yjX003Mw" source="_VT7PcHp5EeaE9sLyPa3ZSQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Qob7QHp6EeaE9sLyPa3ZSQ" target="_H7IpgHjxEeaq-9yjX003Mw" source="_XJOkMHp5EeaE9sLyPa3ZSQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_g27b8HqiEeaE9sLyPa3ZSQ" target="_H7IpgHjxEeaq-9yjX003Mw" source="_EqzCoHdbEeamQZcPhcSvkw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_rdhnMHqiEeaE9sLyPa3ZSQ" target="_MV1-kHdiEeamQZcPhcSvkw" source="_LXbxQHjxEeaq-9yjX003Mw"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_qYX3sHdaEeamQZcPhcSvkw" name="Start" outgoing="_8jThoHdbEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_zRHaAHdaEeamQZcPhcSvkw" name="Procesar comando de C&amp;DH" incoming="_mHTxgHdiEeamQZcPhcSvkw" outgoing="_-TPOMHdbEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_3AywwHdaEeamQZcPhcSvkw" name="Realizar configuracion inicial" incoming="_8jThoHdbEeamQZcPhcSvkw" outgoing="_9jHY0HdbEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="___H9sHdaEeamQZcPhcSvkw" name="Solicitar Hosekeeping modulos" incoming="_AmGBoHdcEeamQZcPhcSvkw" outgoing="_Jn0rYHddEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_EqzCoHdbEeamQZcPhcSvkw" name="Gestionar modos de funcionamiento" incoming="_hKYIAHdjEeamQZcPhcSvkw" outgoing="_g27b8HqiEeaE9sLyPa3ZSQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_G6sBoHdbEeamQZcPhcSvkw" name="Solicitar adquisicion NIR/SWIR" incoming="_DNp5wHdcEeamQZcPhcSvkw" outgoing="_3JegwHdcEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_MzKQ4HdbEeamQZcPhcSvkw" name="Solicitar adquisicion DCS" incoming="_Ij17UHdcEeamQZcPhcSvkw" outgoing="_3g47MHdcEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_RyVgoHdbEeamQZcPhcSvkw" name="Almacenar datos ciencia en MM" incoming="_3JegwHdcEeamQZcPhcSvkw _3g47MHdcEeamQZcPhcSvkw" outgoing="_KsBPIHdkEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_X1sxQHdbEeamQZcPhcSvkw" name="Enviar datos ciencia a Transmisor banda S" incoming="_Voak4HdcEeamQZcPhcSvkw" outgoing="_JCQcAHdkEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_0vK28HdbEeamQZcPhcSvkw" name="¿Tipo comando?" incoming="_-TPOMHdbEeamQZcPhcSvkw" outgoing="_AmGBoHdcEeamQZcPhcSvkw _Voak4HdcEeamQZcPhcSvkw _Ij17UHdcEeamQZcPhcSvkw _DNp5wHdcEeamQZcPhcSvkw _kg2soHp5EeaE9sLyPa3ZSQ _moUvcHp5EeaE9sLyPa3ZSQ _ngqssHp5EeaE9sLyPa3ZSQ _hKYIAHdjEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_GlKLoHddEeamQZcPhcSvkw" name="Enviar HK a CDH" incoming="_Jn0rYHddEeamQZcPhcSvkw" outgoing="_JvYAsHdkEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_yy3TkHdhEeamQZcPhcSvkw" name="¿Existen comandos en buffer?" incoming="_lnTbwHdiEeamQZcPhcSvkw" outgoing="_mHTxgHdiEeamQZcPhcSvkw _F3JYYHp5EeaE9sLyPa3ZSQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_MV1-kHdiEeamQZcPhcSvkw" name="Extraer comando buffer" incoming="_oucg8HdkEeamQZcPhcSvkw _rdhnMHqiEeaE9sLyPa3ZSQ" outgoing="_lnTbwHdiEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_H7IpgHjxEeaq-9yjX003Mw" name="Registrar comando ejecutado" incoming="_KsBPIHdkEeamQZcPhcSvkw _JCQcAHdkEeamQZcPhcSvkw _JvYAsHdkEeamQZcPhcSvkw _P0928Hp6EeaE9sLyPa3ZSQ _QPyKsHp6EeaE9sLyPa3ZSQ _Qob7QHp6EeaE9sLyPa3ZSQ _g27b8HqiEeaE9sLyPa3ZSQ" outgoing="_oucg8HdkEeamQZcPhcSvkw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_LXbxQHjxEeaq-9yjX003Mw" name="Recibir secuencia de comandos" incoming="_9jHY0HdbEeamQZcPhcSvkw" outgoing="_rdhnMHqiEeaE9sLyPa3ZSQ">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_0coQMHqiEeaE9sLyPa3ZSQ" annotatedElement="_LXbxQHjxEeaq-9yjX003Mw">
+            <body>Existe una interrupcion que va registrando los nuevos comandos constantemente en un buffer.</body>
+          </ownedComment>
+        </node>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_CXmvYHp5EeaE9sLyPa3ZSQ" name="Dormir tarea" incoming="_F3JYYHp5EeaE9sLyPa3ZSQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_RytLcHp5EeaE9sLyPa3ZSQ" name="Reconocimiento de patrones" incoming="_kg2soHp5EeaE9sLyPa3ZSQ" outgoing="_P0928Hp6EeaE9sLyPa3ZSQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_VT7PcHp5EeaE9sLyPa3ZSQ" name="Testear modulos" incoming="_moUvcHp5EeaE9sLyPa3ZSQ" outgoing="_QPyKsHp6EeaE9sLyPa3ZSQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_XJOkMHp5EeaE9sLyPa3ZSQ" name="Configurar modulos" incoming="_ngqssHp5EeaE9sLyPa3ZSQ" outgoing="_Qob7QHp6EeaE9sLyPa3ZSQ"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_RgMPoHd6EeamQZcPhcSvkw" name="StateMachines">
+      <packagedElement xmi:type="uml:StateMachine" xmi:id="_WuhVsHd6EeamQZcPhcSvkw" name="SW-PAYLOAD-Modes">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_7r6OgHd6EeamQZcPhcSvkw" annotatedElement="_WuhVsHd6EeamQZcPhcSvkw">
+          <body>The PAYLOAD shall provide the following modes of operation: 1- Off, 2- Standby, 3-Test, 4-Configuration, 5-Science, 6-Send Data&#xD;
+The PAYLOAD shall have an Off Mode in which the POBC starts and its status is verified (TBC)&#xD;
+The PAYLOAD shall have a Normal mode in which the POBC waits for commands from Platform.&#xD;
+The PAYLOAD shall have a Test mode in which the camera and DCS are tested (TBC)&#xD;
+The PAYLOAD shall have a Configuration mode in which parameteres in the camera and DCS are configurated (TBC)&#xD;
+The PAYLOAD shall have a science mode in which the POBC send commands to the camera and/or DCS to acquire science data.&#xD;
+The PAYLOAD shall have a Send Data mode in which the POBC retreaves science data from its massive memory storage and sends it to the platform OBC.</body>
+        </ownedComment>
+        <region xmi:type="uml:Region" xmi:id="_amo2wHd6EeamQZcPhcSvkw" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_W971QHd7EeamQZcPhcSvkw" source="_c5QZoHd6EeamQZcPhcSvkw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_bbdwgHd7EeamQZcPhcSvkw" name="STATUS OK" target="_mGCSQHd6EeamQZcPhcSvkw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_oKMF4Hd7EeamQZcPhcSvkw" name="testear" source="_mGCSQHd6EeamQZcPhcSvkw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_ouTfkHd7EeamQZcPhcSvkw" name="transmitir" source="_mGCSQHd6EeamQZcPhcSvkw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_xot10Hd7EeamQZcPhcSvkw" name="adquirir" source="_mGCSQHd6EeamQZcPhcSvkw" target="_egL7MHd6EeamQZcPhcSvkw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_yLlc4Hd8EeamQZcPhcSvkw" name="configurar" source="_mGCSQHd6EeamQZcPhcSvkw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_OmhzgHd9EeamQZcPhcSvkw" name="recibir" source="_egL7MHd6EeamQZcPhcSvkw" target="_mGCSQHd6EeamQZcPhcSvkw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_QFMJ4Hd9EeamQZcPhcSvkw" target="_mGCSQHd6EeamQZcPhcSvkw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_R1EzIHd9EeamQZcPhcSvkw" target="_mGCSQHd6EeamQZcPhcSvkw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_SquBsHd9EeamQZcPhcSvkw" target="_mGCSQHd6EeamQZcPhcSvkw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_XmZTMIAdEeaphfZJrBRqrw" source="_c5QZoHd6EeamQZcPhcSvkw" target="_mGCSQHd6EeamQZcPhcSvkw"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_c5QZoHd6EeamQZcPhcSvkw" name="Start"/>
+          <subvertex xmi:type="uml:State" xmi:id="_egL7MHd6EeamQZcPhcSvkw" name="Ciencia"/>
+          <subvertex xmi:type="uml:State" xmi:id="_mGCSQHd6EeamQZcPhcSvkw" name="Normal"/>
+        </region>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="__OpDwAGtEeajHqwUCOgvUA">
@@ -140,6 +321,12 @@
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML_PROFILES/SysML.profile.uml#_neZmMLX8EduFmqQsrNB9lw"/>
     </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_hVpFYHd6EeamQZcPhcSvkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hVrhoHd6EeamQZcPhcSvkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
   </uml:Model>
   <Blocks:Block xmi:id="_L1R7UHRFEea8nrIsS5Fh4g" base_Class="_L1RUQHRFEea8nrIsS5Fh4g"/>
   <Blocks:Block xmi:id="_PlXhwHRFEea8nrIsS5Fh4g" base_Class="_PlW6sHRFEea8nrIsS5Fh4g"/>
@@ -151,12 +338,21 @@
   <Blocks:Block xmi:id="_8cwTAXXBEea8nrIsS5Fh4g" base_Class="_8cwTAHXBEea8nrIsS5Fh4g"/>
   <Blocks:Block xmi:id="_AUkSEHXCEea8nrIsS5Fh4g" base_Class="_AUjrAHXCEea8nrIsS5Fh4g"/>
   <Blocks:Block xmi:id="_pC7iIHXCEea8nrIsS5Fh4g" base_Class="_pC67EHXCEea8nrIsS5Fh4g"/>
-  <PortAndFlows:FlowPort xmi:id="_ueWXEHXEEea8nrIsS5Fh4g" base_Port="_ueVwAHXEEea8nrIsS5Fh4g"/>
-  <PortAndFlows:FlowPort xmi:id="_8uD-EHXEEea8nrIsS5Fh4g" base_Port="_8uDXAHXEEea8nrIsS5Fh4g"/>
-  <PortAndFlows:FlowPort xmi:id="_9XCpoHXEEea8nrIsS5Fh4g" base_Port="_9XCCkHXEEea8nrIsS5Fh4g"/>
-  <PortAndFlows:FlowPort xmi:id="_90rn4HXEEea8nrIsS5Fh4g" base_Port="_90rA0HXEEea8nrIsS5Fh4g"/>
-  <PortAndFlows:FlowPort xmi:id="_-SdwEHXEEea8nrIsS5Fh4g" base_Port="_-SdJAHXEEea8nrIsS5Fh4g"/>
-  <PortAndFlows:FlowPort xmi:id="__ltgoHXEEea8nrIsS5Fh4g" base_Port="__ls5kHXEEea8nrIsS5Fh4g"/>
+  <PortAndFlows:FlowPort xmi:id="_ueWXEHXEEea8nrIsS5Fh4g" base_Port="_ueVwAHXEEea8nrIsS5Fh4g" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_8uD-EHXEEea8nrIsS5Fh4g" base_Port="_8uDXAHXEEea8nrIsS5Fh4g" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_9XCpoHXEEea8nrIsS5Fh4g" base_Port="_9XCCkHXEEea8nrIsS5Fh4g" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_90rn4HXEEea8nrIsS5Fh4g" base_Port="_90rA0HXEEea8nrIsS5Fh4g" direction="in"/>
   <PortAndFlows:FlowPort xmi:id="_AB0N0XXFEea8nrIsS5Fh4g" base_Port="_AB0N0HXFEea8nrIsS5Fh4g"/>
   <PortAndFlows:FlowPort xmi:id="_Ai_oQXXFEea8nrIsS5Fh4g" base_Port="_Ai_oQHXFEea8nrIsS5Fh4g"/>
+  <PortAndFlows:FlowPort xmi:id="_y3gd8HXrEeaJ0ugIRWJBdw" base_Port="_y3eowHXrEeaJ0ugIRWJBdw" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_2RJ6UHXrEeaJ0ugIRWJBdw" base_Port="_2RJTQHXrEeaJ0ugIRWJBdw" direction="in"/>
+  <Blocks:Block xmi:id="_DStA4HXzEeaJ0ugIRWJBdw" base_Class="_DSrywHXzEeaJ0ugIRWJBdw"/>
+  <PortAndFlows:FlowPort xmi:id="_KF7ywXX0EeaJ0ugIRWJBdw" base_Port="_KF7ywHX0EeaJ0ugIRWJBdw" direction="out"/>
+  <Blocks:Block xmi:id="_fqezYIQYEea2kM4a6kr93g" base_Class="_fqVCYIQYEea2kM4a6kr93g"/>
+  <PortAndFlows:FlowPort xmi:id="_oH5gEIQiEea2kM4a6kr93g" base_Port="_oH3q4IQiEea2kM4a6kr93g" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_37tXEIQiEea2kM4a6kr93g" base_Port="_37swAIQiEea2kM4a6kr93g" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_fxuL8ISpEeaGDfVEWwoDWQ" base_Port="_fxka8ISpEeaGDfVEWwoDWQ" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_4Du-UISpEeaGDfVEWwoDWQ" base_Port="_4DtwMISpEeaGDfVEWwoDWQ" direction="out"/>
+  <PortAndFlows:FlowPort xmi:id="_98N0oISpEeaGDfVEWwoDWQ" base_Port="_98MmgISpEeaGDfVEWwoDWQ" direction="in"/>
+  <PortAndFlows:FlowPort xmi:id="_CgROoISqEeaGDfVEWwoDWQ" base_Port="_CgPZcISqEeaGDfVEWwoDWQ" direction="in"/>
 </xmi:XMI>
